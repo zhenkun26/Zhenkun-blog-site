@@ -4,7 +4,7 @@
 
 The request refers to 38 unpublished development commits, inventoried in `commits.json`, rather than 38 independent development branches. Review starts from `28e4b70` and compares the accepted development tree against deployed main receipt `ab26876`. The production identity update is retained. The separate bilingual implementation has not been accepted and is absent from this tree. The launch article remains a draft.
 
-Static review and fresh local checks found no outstanding material regression introduced by this increment. Release remains conditional on hosted CI success for the exact candidate. This is not a claim of zero risk or a clean dependency audit. The inherited dependency advisories and validation boundaries below remain open maintenance work.
+Static review and fresh checks found no outstanding material regression introduced by this increment. Exact-candidate hosted CI passed; PR #20 merged source `43c21ad305876a197e02ed7830991af8575c5485`, which deployed successfully in Pages run `37032943481`. This is not a claim of zero risk or a clean dependency audit. The inherited dependency advisories and validation boundaries below remain open maintenance work.
 
 Main requires linear history, including for administrators. Preserve all original development branches and commits; create one tree-equivalent integration commit with current main as its parent. Do not weaken protection or rewrite published history. No new dependency, service, article publication, or feature activation is included. The two payment images are already absent following an earlier explicit owner exception; this review performs no filesystem deletion of them.
 
@@ -31,14 +31,19 @@ The focused credential-pattern scan covered 417 changed tracked text files and f
 | Current project-base HTTP responses | PASS: 24 checks, byte comparison with current dist | `http-site.json` |
 | New local browser session | BLOCKED by browser client before page access | No fresh local GUI PASS claimed |
 | Prior accepted interaction source comparison | PASS: five relevant files identical after the identity-only window symbol substitution | `interaction-source-equivalence.json` |
-| Hosted frozen-install Linux CI | Pending exact candidate | Record result after remote execution |
-| Deployed-host acceptance | Pending deployment | Record result after release |
+| Hosted frozen-install Linux CI | PASS on both bases, PR and merged main | `pr-quality-run.json`, `main-quality-run.json`, `deployment-run.json` |
+| Deployed artifact/HTTP acceptance | PASS: 24 responses byte-identical to downloaded Pages artifact | `artifact-receipt.json`, `deployed-artifacts.json`, `live-http.json` |
+| Fresh deployed GUI smoke checks | PASS: 1280×900 and 390×844, search and modal/navigation cases | `live-browser.json`, `live-first-search.png`, `live-mobile-menu.png`, `live-about.png` |
 
 The local HTTP check used the existing no-fault artifact server on port 4340. A prior Astro preview process on 4335 had an outdated base and returned 404 for the current address; it was not counted as a product failure or used as evidence. It was left unchanged. Browser client refusal was not bypassed.
 
 The owner explicitly permits the seven artifact tests to clean up only their own `zhenkun-ci-artifacts-*` temporary fixture directories locally and in CI. Existing standard build/cache cleanup exceptions remain bounded. All other temporary material is retained.
 
 Prior accepted Edge interaction evidence is in `../p3-import-2026-10-02/browser-matrix.json` and associated screenshots. Source equivalence plus fresh regressions supports reuse of that evidence, but does not turn it into a fresh GUI run. Physical-device behavior, actual public article/comments, and heading-target existence are not established by an empty-content build.
+
+After deployment, a dedicated in-app browser tab independently passed first English search, Chinese query replacement, unchanged mobile query reopening, menu initial focus and forward/reverse wrapping, Escape focus/scroll restoration, and About→Home→About Swup navigation. The dedicated tab had no observed console errors or warnings. The earlier existing-tab probe had an automation focus-token error and inconsistent input state; it was excluded from PASS evidence. Temporary viewport overrides were reset, the dedicated tab and task-owned HTTP server were closed, and generated files were retained. Fresh GUI smoke coverage does not imply another full latency/failure/device matrix run.
+
+Git tree equivalence and integration mapping are recorded in `integration.json`. All original branches remain, branch protection is unchanged (`protection-after.json`), and preexisting untracked user files are hash-identical. The final receipt commit contains only documentation/evidence and uses `[skip ci]`; the deployed application source remains `43c21ad`.
 
 ## Dependency advisory reachability
 

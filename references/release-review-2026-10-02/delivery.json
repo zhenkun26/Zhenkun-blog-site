@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "productionSource": "43c21ad305876a197e02ed7830991af8575c5485",
+  "pullRequest": "https://github.com/zhenkun26/Zhenkun-blog-site/pull/20",
+  "site": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+  "originalDevelopmentCommits": 38,
+  "localTests": 151,
+  "liveHttpComparisons": 24,
+  "sourceHashGuard": "PASS",
+  "userWorkPreservation": "PASS",
+  "branchProtection": "UNCHANGED",
+  "originalBranches": "PRESERVED",
+  "remainingRisks": [
+    "50 inherited dependency advisory records; no version upgrades",
+    "Physical-device/theme-animation acceptance not established",
+    "Public article/comments and bilingual candidate excluded"
+  ],
+  "finalReceiptScope": "Documentation and evidence only; deployed source unchanged"
+}

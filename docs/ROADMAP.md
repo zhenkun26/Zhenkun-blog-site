@@ -66,11 +66,11 @@
 
 - [x] 审查报告与证据：`references/audit-2026-10-01/report.md`
 - [x] Evaluated remediation proposal: `references/audit-2026-10-01/remediation-plan.md`; packets A–E separate author cleanup, deployment/feed correctness, interaction, dependencies/delivery, and reader experience.
-- [x] Authorized local template cleanup: upstream contact/payment/account values cleared, schemas/components retained, empty hero links hidden, video disabled. Fresh check/type-check and desktop/mobile dev rendering PASS; production delivery is not complete.
-- [x] Complete local author-asset cleanup and production acceptance after the owner's exact tool/two-file exceptions: only the two payment-code originals removed; templates retained. Fresh check/type-check, both complete builds, artifact/HTTP and desktop/mobile preview acceptance PASS. Evidence: `references/refactor-2026-10-01/author-cleanup.md`. Remote deployment remains separate.
+- [x] Authorized local template cleanup: upstream contact/payment/account values cleared, schemas/components retained, empty hero links hidden, video disabled. Fresh check/type-check and desktop/mobile dev rendering PASS at local acceptance; production delivery is now complete through PR #20 (see the current checkpoint).
+- [x] Complete local author-asset cleanup and production acceptance after the owner's exact tool/two-file exceptions: only the two payment-code originals removed; templates retained. Fresh check/type-check, both complete builds, artifact/HTTP and desktop/mobile preview acceptance PASS. Evidence: `references/refactor-2026-10-01/author-cleanup.md`. Subsequent production delivery is recorded under PR #20 in the current checkpoint.
 - Historical F04–F07 execution evidence (2026-10-02): isolated P2 的 116 回归、双 base/HTTP/合成 OG/Edge 原始材料留在 `references/engineering-2026-10-02/report.md`；**当前接纳状态只见 M8/P2 与 G1**，不以本历史条目宣布原分支接纳或上线。
 - F02 first-search / F03 mobile modal keyboard 的执行、最终验收与未验证项统一见 M8/P3；不保留另一份“未实现”状态。
-- [ ] Dependency reachability assessment and targeted upgrades; frozen, checked deployment artifact — proposed, no dependency or workflow changes
+- [ ] Targeted dependency upgrades remain open. Current advisory reachability was reviewed for the static deployment in `references/release-review-2026-10-02/report.md`; frozen installation, full hosted quality gates and checked deployment artifacts now PASS. No dependency versions were changed.
 - [ ] Production empty state and accessibility follow-up — proposed; draft publication still requires owner review
 
 ## M6 Reference assessment and architecture direction (planning complete; local implementation started in M8)
@@ -98,6 +98,8 @@
 
 `docs/REFACTOR_PLAN.md` 保留 P0–P7 的原范围；本节是唯一任务状态。新增 P2.5 质量门与 P8 双语调查，不重编号已有任务。顺序：完成 G1 候选接纳 → P3 最终验收 → P2.5 三项独立 CI 改动 → 已确认站主资料独立配置；P4 与真实文章 P5 按依赖验收，P6/P7 的可选集成与视觉另行选择。用户已授权继续本地开发，G1 不因该授权或 fetch 自动完成。
 
+The local-acceptance entries below retain their original scope and commit evidence. Their accepted production changes are now published through PR #20 at `43c21ad`; see G4 and the completed development release checkpoint. P8-I1 application code remains unaccepted and excluded.
+
 - [x] P0 上游个人资料/支付素材清理：`059d22816dbedf946de96edaccc85d2d556dcdbe`，保留框架模板与 MIT 来源署名。证据：`references/refactor-2026-10-01/publication-contract.md`、`references/refactor-2026-10-01/payment-asset-removal.json`。
 - [x] P1 article/Wiki 契约本地接纳：`57bed16360c915c17e45ebaf9ac11540c961741e`。发布资格、ID、URL、源输入准入、原生 Markdown/MDX 预检和消费者统一；74 项回归、类型/完整检查、双 base 完整构建及相应产物/HTTP/浏览器证据，见 `references/refactor-2026-10-01/publication-contract.md`。真实公开文章仍属 P5。
 - [x] P2 本地整合接纳（G1 完成，仅 LOCAL）：原仓库已有本地 review ref `refs/heads/codex/review-p2-deployment-contracts` → `baf9b2d29310c7b32f6c23934802be3cc54ba022`；其父提交为 `a32502b06cb83c7a2d14d03eafc25d1947c56efc`，共同 P1 基线为 `57bed16360c915c17e45ebaf9ac11540c961741e`。此次从原仓库该 ref 建立独立 detached 源码视图，重跑 120/120 原生回归 PASS；原活动分支已守卫后以 `--ff-only` 整合独立复核通过的 `ad1a04f20ac5d92f64aacfa5bdf90767f6e5f421`。P2 范围为 public/emitted media、全局 OG/过滤页 canonical、禁用路由与 sitemap、RSS UTC 日期/频道和 robots base；HTTP 200 stub 限制继续单列。证据：`references/plan-reconciliation-2026-10-02/g1-evidence.json`、`native-tests-120.log`。
@@ -118,10 +120,10 @@
 
 | 门 | 决策与范围 | 当前状态 / 下一条件 |
 |---|---|---|
-| G1 候选接纳 | 是否将独立复核的 P2 整合进原工作分支 | **完成，仅 LOCAL**：独立复核精确 ad1a04f PASS（120 回归、498 production files、30 evidence hashes、168 historical blobs、50 P3 文件与 .workbuddy）；守卫原 ac4be59/clean tracked/index/目标 SHA/保护哈希后，本地 `--ff-only` 接纳 ad1a04f。G1 不代表远端 main/部署或 P3 接纳；GUI/物理设备、Linux/干净安装、真实文章/评论及 HTTP 200 stub 限制仍保留。 |
+| G1 候选接纳 | 是否将独立复核的 P2 整合进原工作分支 | **本地接纳完成，后续已随 PR #20 发布**：独立复核精确 ad1a04f PASS（120 回归、498 production files、30 evidence hashes、168 historical blobs、50 P3 文件与 .workbuddy）；守卫原 ac4be59/clean tracked/index/目标 SHA/保护哈希后，本地 `--ff-only` 接纳 ad1a04f。G1 原接纳不代表远端发布；本次 Linux/干净安装与线上 GUI/部署证据见 G4。物理设备、真实文章/评论及 HTTP 200 stub 限制仍保留。 |
 | G2 产品范围 | 可选模块保留/关闭，是否接受当前 stub 限制 | **进行中**：P4 有界开关矩阵经精确复核已本地接纳，保留13个 HTTP200 stub/四个公开 gallery 文件限制；giscus 沿 ADR-XB-005 已启用，真实文章/评论与其他启用服务交互未验收。其他服务/模块不新增启用。 |
 | G3 内容与地址 | 真实文章、公开附件、永久链接；身份资料映射 | **进行中**：Zhenkun 资料经精确复核、直接批准已本地接纳；旧身份分离提案 superseded。P5 现有 blog-launch 草稿仍待内容/附件/地址审核。资料接纳不等于文章发布。 |
-| G4 对外操作 | 分别授权推送、合并、部署及目标，分支保护/必需检查或权限变更 | **仅名称/地址交付已授权**：本次更名以线上 main 为基线独立发布；38 个本地开发提交及双语候选仍未获本轮发布授权。其余工程发布门保持 OPEN。 |
+| G4 对外操作 | 分别授权推送、合并、部署及目标，分支保护/必需检查或权限变更 | **本次38项工程交付完成**：用户明确授权审查通过后提交、合并与发布；PR #20 已合并，`43c21ad` 在 Pages run `37032943481` 成功部署并通过线上验收。原分支与保护保留；双语候选、文章公开和依赖升级仍在本次发布范围之外。 |
 | G5 写作与视觉 | Obsidian/Blog Space 采用方式；每项视觉改动 | **未开始**：P6 仍为可选；P7 一项一审，Logo 暂缓。 |
 | G6 双语细节 | 默认语言、偏好记忆、语言路径、缺译交互、英文资料、选定译文 | **完成，五点方向已批准**：站主对“保留中文网址、英文用 `/en/`；默认中文并记住选择；缺译明确提示；先做首页、About和界面文案；同篇中英文共用评论”回复“可以”，精确转交记录在 `references/g6-owner-approval-2026-10-02/approval.json`。后续明确要求两套单语言UI，中文无需英文、英文无需中文；保留proper names和中文/EN选择器。父任务明确转交英文bio已接受，记录见 `monolingual-ui.json`；未批准真实文章翻译/公开或远端giscus操作。首个LOCAL增量见P8-I1。 |
 
@@ -131,27 +133,29 @@
 
 | 顺序 | 检查 | 通过标准 |
 |---|---|---|
-| 1 环境 | 固定运行时/包管理器、干净安装、锁文件约束 | 记录版本，frozen 安装不改锁；补 Linux。此次只复用已有依赖跑 native tests，未做干净安装；先前仓库外 shell 报 pnpm 12.3.4；进入当前 package 后实际为声明的 pnpm 11.22.0（本次已验证）。这仍不证明干净安装。 |
-| 2 静态 | 格式/改动范围、TypeScript/Astro、发布/URL/生命周期契约回归 | 适用检查无错误；现存 hints 逐项分级，不写成“零问题”。此次 P2 fresh 120/120 原生回归 PASS，其他旧日志按 SHA 保留为历史证据。 |
+| 1 环境 | 固定运行时/包管理器、干净安装、锁文件约束 | 记录版本，frozen 安装不改锁。2026-10-02 发布复核已在 GitHub Ubuntu runner 以 Node 24.20.0、pnpm 11.22.0 对双 base 完成 frozen 干净安装和全部质量检查；证据见当前断点。 |
+| 2 静态 | 格式/改动范围、TypeScript/Astro、发布/URL/生命周期契约回归 | 适用检查无错误；现存 hints 逐项分级，不写成“零问题”。本次发布 fresh 151/151 原生回归、全源 Biome、精确 TypeScript 与 Astro 检查 PASS；其他旧日志按 SHA 保留为历史证据。 |
 | 3 完整构建 | `/` 与 `/Zhenkun-blog-site/` | 使用正式完整脚本链，包含生成步骤、Astro 与 Pagefind；不能用单独 astro build 代替。 |
 | 4 产物 | URL、公开资格、RSS/sitemap/robots、OG/图片及本地 HTTP | 无重复 base/错误 origin；仅合格内容入索引；OG 1200×630；草稿/关闭项负向断言。HTTP 状态、404 内容和 meta refresh 分开检查，不把当前 HTTP 200 stub 当真 404；不写死 sitemap 项数。 |
 | 5 交互 | 搜索、菜单、主题/导航 | 首次/重复/并发/清空/失败/退出、键盘与窄屏、SPA 往返均有实际浏览器证据；Chrome、Edge、手机模拟/实体设备及 viewport/version 分开记录。双语矩阵待 P8 调查决策后确定。 |
-| 6 发布门 | 独立复核、批准、远端精确 SHA/必需检查、部署后真实 URL | 本地接纳/已复核/批准/已发布分别记录；G3/G4 齐全才发布，检查线上响应/资源。当前步骤未执行，不因历史 main 流水线成功关闭本候选。 |
+| 6 发布门 | 独立复核、批准、远端精确 SHA/必需检查、部署后真实 URL | 本地接纳/已复核/批准/已发布分别记录；G3/G4 齐全才发布，检查线上响应/资源。本次38项候选已按明确授权完成精确 PR/main CI、部署产物和线上 HTTP/GUI 验收；不扩展为双语候选或真实文章/评论接纳。 |
 
 两种 base 都检查：首页/公开样例/静态资源/canonical/OG/feed 的正向 URL；草稿、禁用模块、同名 Wiki、私有 metadata/附件的负向边界；RSS 日期/robots/sitemap/图像字节；慢网、缺资源、旧查询、重复监听、焦点与滚动锁。真实库目前只有一篇 draft、零公开文章；获准 synthetic 样例的证据不得代替真实文章/评论验收。
 
 ## 当前断点
 
-### Active release review — 2026-10-02
+### Completed development release — 2026-10-02
 
-- [ ] Review and publish the 38 existing development commits, as explicitly authorized by the owner conditional on resolving material release risks. Review source starts at `28e4b70`; production base is `ab26876`. The original 38 commits are inventoried in `references/release-review-2026-10-02/commits.json`.
+- [x] Review and publish the 38 existing development commits, as explicitly authorized by the owner conditional on resolving material release risks. Review source starts at `28e4b70`; production base is `ab26876`. The original 38 commits are inventoried in `references/release-review-2026-10-02/commits.json`. PR #20 merged and published source `43c21ad305876a197e02ed7830991af8575c5485`.
 - Scope: accepted P0/P1/P2/P3/P2.5/P4 and owner-profile changes, plus existing planning/evidence records and the completed identity update. The separate unaccepted bilingual implementation is not included. The launch article remains `draft: true`; no new feature activation, service or dependency is authorized.
-- Main requires linear history. Preserve existing branches and commits, construct a source-equivalent squash candidate directly on current main, and require successful hosted PR quality checks before merging/deploying. No protection setting is weakened.
+- Main requires linear history. Original development branches/commits are preserved. Candidate `4d200ac` and merged source `43c21ad` are tree-equivalent to reviewed `294d13d`; three hosted PR checks passed before squash merge. No protection setting was changed. Local main was fast-forwarded to the merged source; the final delivery receipt changes documentation/evidence only.
 - Fresh code review covers publication admission/visibility, Wiki paths, media/canonical/feed URLs, Pagefind/session lifecycle, modal keyboard behavior, capability guards, owner data, CI and changed tracked evidence. Focused secret-pattern scan found no matches in 417 changed text files; this is not an exhaustive credential guarantee.
 - Review repair: pin the standalone Biome action to the declared installed `2.5.11`, replacing `latest` so its results do not drift from the full quality gate. No package or lockfile change.
-- Fresh local checks PASS: 151 native tests, Astro (257 files, zero errors/warnings, 12 retained hints), TypeScript, Biome (298 files), both complete production builds, artifact contracts and 24 current project-base HTTP checks. New local browser access is BLOCKED by the browser client; prior accepted interaction sources are equivalent after the identity-only symbol replacement, with the distinction recorded in the review report. Hosted CI and deployed-host acceptance remain pending.
+- Fresh local checks PASS: 151 native tests, Astro (257 files, zero errors/warnings, 12 retained hints), TypeScript, Biome (298 files), both complete production builds, artifact contracts and 24 current project-base HTTP checks. New local browser access was BLOCKED by the browser client; prior accepted interaction sources were compared, without claiming a fresh local GUI run.
+- Hosted PR run `37032444740`, merged-main run `37032942965`, and Pages run `37032943481` PASS, including Linux frozen installation and both full quality bases. Downloaded Pages artifact `11238841086` passed the artifact verifier; all 24 deployed HTTP checks match that exact artifact byte-for-byte. Fresh deployed GUI checks PASS at 1280×900 and 390×844: first/replacement search, mobile query reopen, keyboard focus wrap/Escape restoration, background inert/scroll restoration and About→Home→About Swup navigation. Evidence: `live-browser.json`, `live-http.json`, `artifact-receipt.json` and screenshots under `references/release-review-2026-10-02/`.
 - Dependency audit remains non-clean: 50 inherited advisory records (24 high, 19 moderate, 7 low). Dependency declarations and lockfile are identical to production. The reviewed static deployment has no identified visitor-controlled production exploit; build-time trusted-input and supply-chain risks remain. Reachability, primary sources and limits are recorded in `references/release-review-2026-10-02/report.md`; no dependency upgrade is included.
 - The owner explicitly approved cleanup only of the `zhenkun-ci-artifacts-*` directories created by the seven artifact tests, both locally and in CI. No source, dependency or user directory is covered. Existing standard build/cache exceptions remain unchanged. Review-only temporary evidence is retained.
+- Current delivery is complete; no release approval remains pending for these 38 commits. Separate next work remains P8-I1 independent bilingual review, P5 owner-approved public article/comment acceptance, and targeted dependency maintenance. Physical-device/theme-animation acceptance is not implied by the deployed smoke checks. Preexisting `.workbuddy` files remain unchanged and untracked.
 
 
 ### Completed identity delivery — 2026-10-02

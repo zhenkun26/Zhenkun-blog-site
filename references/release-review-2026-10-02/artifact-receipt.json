@@ -1,0 +1,8 @@
+{
+  "pagesArtifactId": 11238841086,
+  "pagesArtifactRun": 37032943481,
+  "sha256": "6e5f8e5ee69d35b3a4fc80003269736ffe88aa859eb8c9b11cab980552f2342c",
+  "regularFiles": 253,
+  "validation": "Artifact contract PASS; 24 live HTTP responses byte-identical to extracted Pages artifact",
+  "extractionRecovery": "Host Python lacks tarfile.extractall(filter=...). After that API error, all archive paths and types were validated, rejecting absolute/traversal/link entries, then regular files copied with exclusive creation into a new ignored directory. No files deleted or overwritten."
+}

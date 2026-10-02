@@ -1,0 +1,11 @@
+{
+  "sourceReviewCommit": "294d13d8e7e91c0ea8bdfd80c21dda9eaaebd5c7",
+  "mainBase": "ab26876d82888d6fd9275724756bda28ee3442bc",
+  "releaseCandidate": "4d200ac9884808cfc16fd2a042c8f53c074b298f",
+  "tree": "c4d60e283bf8c8229f1b5a0666a6145d5e408138",
+  "treeEquivalent": true,
+  "linearCommitCount": 1,
+  "mergeCommit": "43c21ad305876a197e02ed7830991af8575c5485",
+  "githubPullRequest": "https://github.com/zhenkun26/Zhenkun-blog-site/pull/20",
+  "mergedTreeEquivalent": true
+}

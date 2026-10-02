@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "Deployed-host smoke checks in a dedicated Codex in-app browser tab; not physical-device acceptance",
+  "source": "43c21ad305876a197e02ed7830991af8575c5485",
+  "checkedAt": "2026-10-02T16:27:43.303884+00:00",
+  "desktopViewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "cases": [
+    {
+      "case": "fresh English first query Zhenkun",
+      "result": "About page returned"
+    },
+    {
+      "case": "replacement Chinese query",
+      "result": "About page returned"
+    },
+    {
+      "case": "mobile menu initial focus",
+      "result": "Close menu button focused"
+    },
+    {
+      "case": "Shift+Tab and Tab wrap",
+      "result": "Close -> About -> Close"
+    },
+    {
+      "case": "modal background",
+      "result": "inert attribute count 24 while open; computed body overflow hidden"
+    },
+    {
+      "case": "Escape recovery",
+      "result": "Menu trigger focused, computed body overflow visible, inert count returned to 4 retained inactive controls"
+    },
+    {
+      "case": "Swup About -> Home -> About",
+      "result": "Correct final headings and URLs; menu closed and remained usable"
+    },
+    {
+      "case": "mobile search close/reopen after Swup",
+      "result": "Chinese query result retained and About returned on reopening"
+    }
+  ],
+  "dedicatedTabConsoleErrors": [],
+  "dedicatedTabConsoleWarnings": [],
+  "screenshots": [
+    "live-first-search.png",
+    "live-mobile-menu.png",
+    "live-about.png"
+  ],
+  "cleanup": "Temporary viewport reset; dedicated test tab and task-owned artifact server closed; generated files retained.",
+  "earlierInconclusiveProbe": "An existing user tab produced a clipboard focus-token mismatch and inconsistent input/focus state. It was excluded from PASS evidence; a fresh dedicated tab completed all recorded checks."
+}

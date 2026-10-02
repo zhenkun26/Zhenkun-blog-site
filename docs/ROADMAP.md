@@ -1,4 +1,4 @@
-# Xiayi-blog 路线图（单一任务状态源）
+# Zhenkun-blog-site 路线图（单一任务状态源）
 
 > 规则：任务状态只有 未开始 / 进行中 / 完成（完成必须附验证证据）。每次会话结束更新本文件；跨会话恢复先读本文件。当前断点见文末。
 
@@ -17,8 +17,8 @@
 
 逐项拍板，每项一个 commit：
 
-- [x] 站点信息：title / subtitle / description / keywords / site_url / siteStartDate → 用户定稿已应用（"夏翌的随记小站 / 记录、思考与灵感"），GitHub Pages URL
-- [x] 头像与资料（文字部分）：profileConfig 昵称"夏翌 · Xiayi"、bio 代拟、GitHub/邮箱/RSS 链接 → **头像已替换为用户图**（2026-09-06，assets/images/xiayi/avatar.avif）
+- [x] 站点信息：title / subtitle / description / keywords / site_url / siteStartDate → 用户定稿已应用（"Zhenkun / 记录、思考与灵感"），GitHub Pages URL
+- [x] 头像与资料（文字部分）：profileConfig 昵称"Zhenkun"、bio 代拟、GitHub/邮箱/RSS 链接 → **头像已替换为用户图**（2026-09-06，assets/images/zhenkun/avatar.avif）
 - [x] 图片素材入库：用户图 6 张统一转 AVIF 新增（头像 1 + 桌面壁纸 3 + 手机壁纸 2），上游原图未动，壁纸未启用待 M4
 - [x] 清理演示内容 1/4：关于我页 → 用户审核定稿已上线（含气象×AI 背景段落）
 - [x] 清理演示内容 2/4：演示文章 → 语法参考 7 篇+7 图移 `references/firefly-syntax-examples/`；推广/演示 15 文件删除（commit 082fdd1）
@@ -39,7 +39,7 @@
 - [x] site_url 与 sitemap / RSS 对齐 → siteConfig 早已指向 Pages URL
 - [x] workflow 文件 + 首次部署验证 → 上游 deploy.yml 触发分支改 main；**push 触发首次部署 59s 成功**
 
-验收标准：**PASS** — 线上 https://zhenkun26.github.io/Xiayi-blog/ 首页/关于页 200，标题正确，资源带子路径前缀；截图 `references/m3-live-first-deploy-1280x720.png`。
+验收标准：**PASS** — 线上 https://zhenkun26.github.io/Zhenkun-blog-site/ 首页/关于页 200，标题正确，资源带子路径前缀；截图 `references/m3-live-first-deploy-1280x720.png`。
 
 ## M4 外观逐项迭代（参考 rainzt.cn，未开始）
 
@@ -64,9 +64,18 @@
 
 ## 当前断点
 
+### Active delivery — 2026-10-02
+
+- [ ] Publish the owner-requested `Zhenkun-blog-site` identity and Pages base. This production patch starts from `bc21bfd92dd7081f2cf0acbec80d446f9d02c7de` and excludes the 38 local development commits.
+- Scope: repository/site URLs, giscus repository slug (stable IDs preserved), public author name, author asset directory and text references. The launch article remains a draft. No dependency declaration, lockfile, permission or feature change is included.
+- Compatibility: GitHub native repository redirect; local directory symlink; the old website address is released at the owner’s request; no account-site repository is created.
+- Verification: PASS — installed Astro check (253 files, zero errors/warnings), exact TypeScript declaration gate, all eight declared production build stages, fresh new-base canonical/title checks, empty public metadata and Pagefind output. Validation used existing dependencies directly after pnpm safely refused dependency reinitialization; no install was retried. Existing unrelated production defects remain outside this name-only patch. Delivery: ready for authorized remote rename and deployment.
+
+### Earlier checkpoint
+
 - 里程碑：M4 外观迭代进行中（横幅文案、主题切换动画完成；logo 搁置）
 - 状态：giscus 已按 ADR-XB-005 启用；主题切换 HiDPI 修复 `7faf3f1` 已获用户授权推送并上线，实体浏览器动画最终验收待完成；首篇文章仍为 draft，待用户审核；favicon/公告文案欠着。
 - 下一项：在实体 Chrome/Edge 刷新线上站点验收主题切换。文章审核通过后再发布；其余外观候选暂不推进。
-- 上线证据（2026-09-06）：[Pages run 34032507630](https://github.com/zhenkun26/Xiayi-blog/actions/runs/34032507630) SUCCESS，build 43s / deploy 10s；线上首页与 `LightDarkSwitch.DDOGg_t7.js` 获取成功，脚本包含百分比半径换算与 `--theme-reveal-start` / `--theme-reveal-end`，确认已替换旧资源。本轮 `pnpm type-check` 再次 PASS。此条文档提交使用 `[skip ci]`，避免仅记录部署结果再次触发相同站点构建。
+- 上线证据（2026-09-06）：[Pages run 34032507630](https://github.com/zhenkun26/Zhenkun-blog-site/actions/runs/34032507630) SUCCESS，build 43s / deploy 10s；线上首页与 `LightDarkSwitch.DDOGg_t7.js` 获取成功，脚本包含百分比半径换算与 `--theme-reveal-start` / `--theme-reveal-end`，确认已替换旧资源。本轮 `pnpm type-check` 再次 PASS。此条文档提交使用 `[skip ci]`，避免仅记录部署结果再次触发相同站点构建。
 - 本次交接证据：生产预览 `http://127.0.0.1:4322/` 已运行；内置 Chromium 最终 circle(%) 中间帧 `references/m4-theme-percent-production.png`；实体 Edge 关于页切换终态 `references/m4-theme-percent-edge.png`（原生截图未捕获中间帧，圆心最终验收仍保留为待办）。
 - 已知待办：M4 启用已入库壁纸（backgroundWallpaper.ts，桌面 3 张/手机 2 张已备好）

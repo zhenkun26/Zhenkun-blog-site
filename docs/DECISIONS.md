@@ -1,4 +1,4 @@
-# Xiayi-blog 技术决策记录
+# Zhenkun-blog-site 技术决策记录
 
 > 本文件只记录影响项目结构、技术选型和部署方式的取舍。格式沿用 auto-coding 的 ADR 规范（背景 / 候选方案 / 选择 / 放弃 / 验证 / 改判条件）。
 
@@ -25,7 +25,7 @@
 
 - **背景**：用户要求杜绝散乱文件与多余隐藏文件夹；同时需要跨会话记忆与流程文档支撑长期迭代。
 - **候选方案**：独立 AI 记忆目录（如 ai_pipeline/）；全部并入 docs/；不做约束任其散落。
-- **选择**：项目文档集中在 `docs/`（ROADMAP / PROCESS / DECISIONS，ERROR_MEMORY 按需创建）；参考材料进 `references/`；自建脚本进 `scripts/`（`xiayi-` 前缀与上游脚本区分）；临时产物进 `tmp/` 或 `/tmp`（gitignore）。上游自带的 AGENTS.md / CLAUDE.md / docs 内容保持原位，项目约定追加在 AGENTS.md 尾部。
+- **选择**：项目文档集中在 `docs/`（ROADMAP / PROCESS / DECISIONS，ERROR_MEMORY 按需创建）；参考材料进 `references/`；自建脚本进 `scripts/`（`zhenkun-` 前缀与上游脚本区分）；临时产物进 `tmp/` 或 `/tmp`（gitignore）。上游自带的 AGENTS.md / CLAUDE.md / docs 内容保持原位，项目约定追加在 AGENTS.md 尾部。
 - **放弃**：新建顶层记忆目录；在仓库外存放项目文件；覆盖上游文档。
 - **验证**：AGENTS.md 尾部"项目约定"小节；`.gitignore` 追加 `tmp/`。
 - **改判条件**：references/ 或 scripts/ 规模膨胀到影响检索时，再评估细分。
@@ -41,12 +41,12 @@
 
 ## ADR-XB-004：GitHub Pages 部署方案与 base 路径处理
 
-- **背景**：站点部署到 `https://zhenkun26.github.io/Xiayi-blog/`（项目页子路径）。本地开发希望保持根路径；上游自带 GitHub Pages workflow（触发分支 master，本仓库主分支为 main）。
-- **候选方案**：固定 `base: "/Xiayi-blog/"`（本地 URL 变丑）；构建时用环境变量注入 base（本地根路径、CI 子路径）；换用户主站 `zhenkun26.github.io` 根路径部署。
-- **选择**：环境变量注入——`astro.config.mjs` 中 `base: process.env.DEPLOY_BASE ?? "/"`，deploy.yml 构建任务注入 `DEPLOY_BASE: /Xiayi-blog/`；deploy.yml/build.yml 触发分支改为 main。
+- **背景**：站点部署到 `https://zhenkun26.github.io/Zhenkun-blog-site/`（项目页子路径）。本地开发希望保持根路径；上游自带 GitHub Pages workflow（触发分支 master，本仓库主分支为 main）。
+- **候选方案**：固定 `base: "/Zhenkun-blog-site/"`（本地 URL 变丑）；构建时用环境变量注入 base（本地根路径、CI 子路径）；换用户主站 `zhenkun26.github.io` 根路径部署。
+- **选择**：环境变量注入——`astro.config.mjs` 中 `base: process.env.DEPLOY_BASE ?? "/"`，deploy.yml 构建任务注入 `DEPLOY_BASE: /Zhenkun-blog-site/`；deploy.yml/build.yml 触发分支改为 main。
 - **放弃**：固定 base（影响本地体验）；主站仓库部署（多站点共存不灵活）。
 - **组件偏离**：上游三个组件（Profile.astro / Announcement.astro / BannerHomeTextOverlay.astro）渲染配置链接时未走 base-aware 的 `url()` 工具，已补上（网络地址/mailto 行为不变）。上游更新时此处可能有轻微冲突，属已知维护成本。
-- **验证**：本地 `DEPLOY_BASE=/Xiayi-blog/ pnpm build` 通过；dist 全站 HTML 无裸根路径链接；`pnpm check` 0 错误。**线上验证 PASS**——push 触发首次部署 59s 成功，https://zhenkun26.github.io/Xiayi-blog/ 首页/关于页 200，标题与资源前缀正确。
+- **验证**：本地 `DEPLOY_BASE=/Zhenkun-blog-site/ pnpm build` 通过；dist 全站 HTML 无裸根路径链接；`pnpm check` 0 错误。**线上验证 PASS**——push 触发首次部署 59s 成功，https://zhenkun26.github.io/Zhenkun-blog-site/ 首页/关于页 200，标题与资源前缀正确。
 - **改判条件**：GitHub Pages 子路径方案出现无法修复的资源加载问题，或未来购买自定义域名（根路径部署，届时可移除 DEPLOY_BASE 注入）。
 
 ## ADR-XB-005：评论系统选型 giscus
@@ -60,6 +60,15 @@
   5. Artalk：需自托管服务器，排除。
 - **选择**：giscus。理由：与"GitHub Pages + 公开仓库 + 无服务器"的现有架构零摩擦；隐私与数据主权最好；技术向读者 GitHub 渗透率高。**用户批准（2026-09-06）**。
 - **放弃**：Waline/Twikoo（服务端运维成本与当前阶段不匹配，未来评论量起来可再评估）；Disqus/Artalk（访问性/部署成本）。
-- **执行记录**：仓库 Discussions 已启用；giscus App 已由用户授权安装（仅 Xiayi-blog 单仓库，权限=元数据读+Discussions 读写）；repoId `R_kgDOUPSsrQ` / 分类 Announcements `DIC_kwDOUPSsrc4DE942` 已配置至 `commentConfig.ts`（type: giscus）。
+- **执行记录**：仓库 Discussions 已启用；giscus App 已由用户授权安装（仅 Zhenkun-blog-site 单仓库，权限=元数据读+Discussions 读写）；repoId `R_kgDOUPSsrQ` / 分类 Announcements `DIC_kwDOUPSsrc4DE942` 已配置至 `commentConfig.ts`（type: giscus）。
 - **验证**：测试文章页评论区完整渲染 PASS（表情/评论计数/输入框/使用 GitHub 登录按钮），截图 `references/m5-giscus-working.png`；`gh api` 直查 installation 端点的 401 为端点鉴权要求，非安装问题。
 - **改判条件**：读者反馈 GitHub 登录门槛过高（非技术访客评论受阻），届时补 Waline 作为替代并保留 giscus 数据。
+
+
+## ADR-XB-015: Repository identity and address compatibility
+
+- **Status**: Accepted by the owner on 2026-10-02.
+- **Decision**: Use `Zhenkun-blog-site` for the checkout, repository and Pages base, and Zhenkun for the public author. Preserve the separate existing blog-example fork.
+- **Scope**: Deliver only the name/address change from the current production main. Local refactoring and bilingual candidates retain their independent acceptance and release gates. Preserve repository/discussion IDs and Git history.
+- **Compatibility**: A local symlink and native GitHub repository redirect preserve existing access. The owner subsequently chose to release the old website address and use only the new Pages URL; no additional compatibility repository is created.
+- **Records**: Historical text is normalized at the owner's request; original measurement bytes remain available in the commits cited by those records. Fresh validation is recorded in ROADMAP.

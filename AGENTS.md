@@ -35,13 +35,13 @@ Do not commit secrets, tokens, or service keys in config files. Keep deployment-
 
 ---
 
-# Xiayi-blog 项目约定（追加于上游 AGENTS.md 之上）
+# Zhenkun-blog-site 项目约定（追加于上游 AGENTS.md 之上）
 
 > 本节是博客项目的仓库规则。与上文主题开发指引冲突时以本节为准，且冲突解决需在 `docs/DECISIONS.md` 记录 ADR。
 
 ## 项目定位
 
-- 这是 Xiayi 的个人博客，底座为 CuteLeaf/Firefly（Astro 7 + Svelte 5 + Tailwind），专注中文内容与中文社区。
+- 这是 Zhenkun 的个人博客，底座为 CuteLeaf/Firefly（Astro 7 + Svelte 5 + Tailwind），专注中文内容与中文社区。
 - 上游仓库保留为 git remote `upstream`（分支 `master`）；本地 `main` 在 Firefly 历史之上叠加自有提交，message 延续 Conventional Commits。
 
 ## 文档索引（单一状态源）
@@ -57,7 +57,7 @@ Do not commit secrets, tokens, or service keys in config files. Keep deployment-
 
 - 仓库根 = 博客本体；不新增顶层目录，除非 ADR 批准。
 - `docs/` 只放项目方法论文档；上游的 README 翻译与图片保持原位不动。
-- `references/` 放参考材料（对标站点截图、上游文档摘录）；`scripts/` 放自建脚本，用 `xiayi-` 前缀与上游脚本区分。
+- `references/` 放参考材料（对标站点截图、上游文档摘录）；`scripts/` 放自建脚本，用 `zhenkun-` 前缀与上游脚本区分。
 - 临时产物（截图草稿、实验文件）一律 `/tmp` 或仓库 `tmp/`（已 gitignore）；不得散落在仓库外或根目录，会话结束前清理。
 
 ## 记忆与恢复协议（假设每次轮次之间都会失忆）

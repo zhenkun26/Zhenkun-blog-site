@@ -2,6 +2,9 @@
 import Comment from "@/components/comment/index.astro";
 import { commentConfig, dynamicConfig, siteConfig } from "@/config";
 import Layout from "@/layouts/Layout.astro";
+import { getNotFoundPath } from "@/utils/deployment-contract";
+
+const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
 
 if (
 	!siteConfig.pages.dynamic ||
@@ -9,7 +12,7 @@ if (
 	!commentConfig.type ||
 	commentConfig.type === "none"
 ) {
-	return Astro.redirect("/404/");
+	return Astro.redirect(notFoundPath);
 }
 ---
 

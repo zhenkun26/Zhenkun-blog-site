@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "taskPreviewPid": 58064,
+  "verifiedCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node /Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/bin/astro.mjs preview --port 4342 --host 127.0.0.1 --json",
+  "port": 4342,
+  "portListenerCountAfterStop": 0,
+  "method": "Exact-PID SIGTERM after command/port guards; Astro stop reported no server while listener remained",
+  "browser": "Own tab closed and emulated viewport reset; other tabs untouched",
+  "cleanupScope": "Task-created preview only"
+}

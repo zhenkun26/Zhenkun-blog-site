@@ -1,0 +1,19 @@
+{
+  "authorization": "Owner explicitly authorized exactly these two upstream payment images on 2026-10-01.",
+  "files": [
+    {
+      "path": "public/assets/images/sponsor/alipay.png",
+      "sha256": "2a2fb3ea51c56e29a30acfd89372ae6c7f0e01d32b54d2463de78dd374e7ad35",
+      "bytes": 4292
+    },
+    {
+      "path": "public/assets/images/sponsor/wechat.png",
+      "sha256": "18216b6334af2d83f5cc26a9f91d867f94693f78ba69b5baa2eb130468178787",
+      "bytes": 128000
+    }
+  ],
+  "remaining": [
+    false,
+    false
+  ]
+}

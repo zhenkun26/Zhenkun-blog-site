@@ -1,0 +1,103 @@
+{
+  "results": [
+    {
+      "name": "Astro check",
+      "command": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "args": [
+        "node_modules/astro/bin/astro.mjs",
+        "check"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "TypeScript",
+      "command": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "args": [
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--isolatedDeclarations"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "npx tsx scripts/generate-github-card-data.ts",
+      "command": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "args": [
+        "--import",
+        "tsx",
+        "scripts/generate-github-card-data.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "npx tsx scripts/generate-lqips.ts",
+      "command": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "args": [
+        "--import",
+        "tsx",
+        "scripts/generate-lqips.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "npx tsx scripts/generate-vndb-covers.ts",
+      "command": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "args": [
+        "--import",
+        "tsx",
+        "scripts/generate-vndb-covers.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "astro build",
+      "command": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "args": [
+        "node_modules/astro/bin/astro.mjs",
+        "build"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "npx tsx scripts/prune-pio-assets.ts",
+      "command": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "args": [
+        "--import",
+        "tsx",
+        "scripts/prune-pio-assets.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "npx tsx scripts/subset-fonts.ts",
+      "command": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "args": [
+        "--import",
+        "tsx",
+        "scripts/subset-fonts.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "npx tsx scripts/minify-inline-scripts.ts",
+      "command": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "args": [
+        "--import",
+        "tsx",
+        "scripts/minify-inline-scripts.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "npx tsx scripts/run-pagefind.ts",
+      "command": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "args": [
+        "--import",
+        "tsx",
+        "scripts/run-pagefind.ts"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "limitation": "Existing dependencies; direct installed commands. No dependency setup or pnpm install was retried."
+}

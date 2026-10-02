@@ -1,0 +1,200 @@
+{
+  "status": "PASS",
+  "verificationRole": "Implementer execution and fresh read-only guards; independent profile review pending",
+  "baseline": "a3d1a9a80b5acbe305720dbc09d28af23c8247d8",
+  "source": "f0ea5164ab7e0ccc34ecfc478c6c3e5813a50db7",
+  "branch": "codex/profile-zhenkun",
+  "sourceFiles": {
+    "src/config/profileConfig.ts": "93e3a581ef2d76324e360b6657d05c354abb1dc7d4434bb3e00509393c2413a8",
+    "src/config/siteConfig.ts": "eb0c7f8fc631882938ba01b4234ea407759a9ab8be3bdcbf5e6909441f826f0d",
+    "src/content/spec/about.md": "a7a7a2b1680ce0e7c8e209af1c213d8afcbb6c8610362b1768221418cf9a35de",
+    "src/pages/about.astro": "4f69d211fa8301317a3a76e0f2f0b0bc6eb390cc7971c3f538f4cac55d820d45"
+  },
+  "preservedSourceFiles": {
+    "src/content/posts/blog-launch.md": "354d0d65385f644756c72c1a8b0b72ccc7237ef5b3495fd763ec515377235ce9",
+    "src/components/layout/Footer.astro": "ab2fe977ed3dbe03dbef067e1ba6b0d2a6a4d963d51a5d57b7fe730102a7f3a3",
+    "src/pages/og/[...slug].ts": "9e63d019015ea5f18a94b35740d2a5fa28a663a0723c9b5f384fa8e4786f8d86",
+    "LICENSE": "d403e8d1dc09f7088b029a65b37895cce1a5802c086321c2df3a28ba779399f6"
+  },
+  "original": {
+    "head": "a3d1a9a80b5acbe305720dbc09d28af23c8247d8",
+    "branch": "codex/refactor-publication-contracts",
+    "trackedClean": true,
+    "main": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de",
+    "origin": "github.com/zhenkun26/Zhenkun-blog-site",
+    "upstream": "github.com/CuteLeaf/Firefly"
+  },
+  "protection": {
+    "isolatedHead": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+    "unchangedP3Files": 50,
+    "workbuddySha256": "9eb1658b6b811558b721aad3ac1f64e14bbbffde9854c2ac7d1a4c949d74d89d"
+  },
+  "ownerDirection": {
+    "source": "Parent relayed exact user correction",
+    "sentinel": "Sentinel_f04a413208d08191a4e56aa919a1bbc7",
+    "ownerTimestamp": "2026-10-02 09:28 UTC",
+    "acceptedIdentity": "Site display/title/navbar and author all Zhenkun"
+  },
+  "checks": [
+    {
+      "command": "./node_modules/.bin/biome ci ./src --max-diagnostics=0",
+      "exitCode": 0,
+      "files": 298
+    },
+    {
+      "command": "node --test scripts/zhenkun-test-*.mjs",
+      "exitCode": 0,
+      "pass": 147,
+      "fail": 0
+    },
+    {
+      "command": "./node_modules/.bin/tsc --noEmit --isolatedDeclarations",
+      "exitCode": 0
+    },
+    {
+      "command": "./node_modules/.bin/astro check",
+      "exitCode": 0,
+      "files": 257,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 12
+    },
+    {
+      "command": "node --import tsx references/owner-profile-2026-10-02/config-audit.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "NODE_ENV=production DEPLOY_BASE=/Zhenkun-blog-site/ node references/owner-profile-2026-10-02/run-declared-build.mjs",
+      "exitCode": 0,
+      "declaredStagesPassed": 8
+    },
+    {
+      "command": "python3 references/owner-profile-2026-10-02/artifact-audit.py",
+      "exitCode": 0,
+      "routes": 6
+    },
+    {
+      "command": "node scripts/zhenkun-verify-ci-artifacts.mjs --base /Zhenkun-blog-site/",
+      "exitCode": 0
+    },
+    {
+      "command": "CUA selected Edge GUI DOM/screenshots",
+      "status": "PASS",
+      "desktop": "1462x839 DPR2",
+      "mobileEmulation": "390x844 DPR1"
+    }
+  ],
+  "build": {
+    "node": "v24.20.0",
+    "base": "/Zhenkun-blog-site/",
+    "stages": [
+      {
+        "declaredStage": "pnpm exec tsx scripts/generate-github-card-data.ts",
+        "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+        "actualArgs": [
+          "--import",
+          "tsx",
+          "scripts/generate-github-card-data.ts"
+        ],
+        "exitCode": 0
+      },
+      {
+        "declaredStage": "pnpm exec tsx scripts/generate-lqips.ts",
+        "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+        "actualArgs": [
+          "--import",
+          "tsx",
+          "scripts/generate-lqips.ts"
+        ],
+        "exitCode": 0
+      },
+      {
+        "declaredStage": "pnpm exec tsx scripts/generate-vndb-covers.ts",
+        "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+        "actualArgs": [
+          "--import",
+          "tsx",
+          "scripts/generate-vndb-covers.ts"
+        ],
+        "exitCode": 0
+      },
+      {
+        "declaredStage": "astro build",
+        "actualCommand": "/Users/zhenkun/Documents/Codex/2026-10-02/task/tmp/zhenkun-g1/review/node_modules/.bin/astro",
+        "actualArgs": [
+          "build"
+        ],
+        "exitCode": 0
+      },
+      {
+        "declaredStage": "pnpm exec tsx scripts/prune-pio-assets.ts",
+        "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+        "actualArgs": [
+          "--import",
+          "tsx",
+          "scripts/prune-pio-assets.ts"
+        ],
+        "exitCode": 0
+      },
+      {
+        "declaredStage": "pnpm exec tsx scripts/subset-fonts.ts",
+        "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+        "actualArgs": [
+          "--import",
+          "tsx",
+          "scripts/subset-fonts.ts"
+        ],
+        "exitCode": 0
+      },
+      {
+        "declaredStage": "pnpm exec tsx scripts/minify-inline-scripts.ts",
+        "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+        "actualArgs": [
+          "--import",
+          "tsx",
+          "scripts/minify-inline-scripts.ts"
+        ],
+        "exitCode": 0
+      },
+      {
+        "declaredStage": "pnpm exec tsx scripts/run-pagefind.ts",
+        "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+        "actualArgs": [
+          "--import",
+          "tsx",
+          "scripts/run-pagefind.ts"
+        ],
+        "exitCode": 0
+      }
+    ],
+    "artifactFiles": 252,
+    "artifactManifestSha256": "107a966f36ddc4087f4d3961ab49cc2aa68175c301fdf3715bdc39dd3f615dff",
+    "boundary": "All declared stages via installed direct binaries/tsx import loader. No pnpm shim, install or clean Linux/hosted execution."
+  },
+  "cleanup": {
+    "status": "PASS",
+    "taskPreviewPid": 58064,
+    "verifiedCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node /Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/bin/astro.mjs preview --port 4342 --host 127.0.0.1 --json",
+    "port": 4342,
+    "portListenerCountAfterStop": 0,
+    "method": "Exact-PID SIGTERM after command/port guards; Astro stop reported no server while listener remained",
+    "browser": "Own tab closed and emulated viewport reset; other tabs untouched",
+    "cleanupScope": "Task-created preview only"
+  },
+  "notRun": [
+    "Root-base rebuild for this profile packet",
+    "fresh per-route HTTP byte matrix",
+    "literal pnpm build",
+    "frozen/clean installation",
+    "Linux and hosted Actions",
+    "required-check compatibility",
+    "physical phone",
+    "real article OG PNG/comment",
+    "remote push/main merge/deployment"
+  ],
+  "retainedDiagnostics": [
+    "build-subpath-sandbox-failed.log",
+    "build-stages-sandbox-failed.json",
+    "preview-stop.log"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "canonicalCheckpoint": "795e7d1d3e0cd4ea4de1dd41c83e40d3f5ca647c",
+  "candidateSync": "259bc9a9d07441893eccb81bdfd7081265dd3520",
+  "testedSource": "a353c2ee800bbff2865541288ea04308c245cdc5",
+  "canonicalChange": [
+    "docs/ROADMAP.md"
+  ],
+  "candidateSyncDifferenceFromTestedSource": [
+    "docs/ROADMAP.md"
+  ],
+  "main": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de",
+  "protectedFilesUnchanged": 50,
+  "workbuddyUnchanged": true,
+  "boundary": "Canonical task-state checkpoint only; local documentation sync into candidate. No P4 application source integrated into original, main change, remote write or deployment."
+}

@@ -1,0 +1,51 @@
+{
+  "observed_at_utc": "2026-10-02T08:48:07.303190+00:00",
+  "base": "c6118323cd7e82e03304eb391b5ea95db951019e",
+  "tested_implementation_source": "13f8956e09ef1baa07ef855be4ffa774650b6675",
+  "candidate_branch": "codex/review-p25-ci",
+  "implementation_commits": {
+    "A": "6242cc809095a1dfa50b971eb777f57be167284e",
+    "B": "ac96dcc9df8680788582cf41c1655e1e55041c1b",
+    "C": "13f8956e09ef1baa07ef855be4ffa774650b6675"
+  },
+  "changed_implementation_files": {
+    ".github/workflows/biome.yml": "33cbf141222532cd82d314e83e59a03cb5e15a74db91b896425f08a2254b82ab",
+    ".github/workflows/build.yml": "da6de8fdd628729020f12f1b6c9fe8a2e43d430f400f8a1591e31c407d237db9",
+    ".github/workflows/deploy.yml": "e9d72195581fe307fce286e0b37d5b20af3d38c03a59d3a73f6cba524297a913",
+    "scripts/zhenkun-test-ci-artifacts.mjs": "ddc6e38c0aeadacac1a7c7899522db2604c2d4c0b8aa7aea4f477af74a778420",
+    "scripts/zhenkun-verify-ci-artifacts.mjs": "9ef4d445290c348c1ab7f6bb6221f0d0e482213e5d0d6625be8d451733ad7580"
+  },
+  "source_content_dependency_lock_unchanged": [
+    "src",
+    "public",
+    "package.json",
+    "pnpm-lock.yaml",
+    "astro.config.mjs",
+    "biome.json",
+    "tsconfig.json"
+  ],
+  "canonical": {
+    "head": "c6118323cd7e82e03304eb391b5ea95db951019e",
+    "branch": "codex/refactor-publication-contracts",
+    "tracked_worktree": "clean",
+    "main": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de"
+  },
+  "protected_isolated_p3": {
+    "head": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+    "files_matched": 50,
+    "workbuddy_sha256": "9eb1658b6b811558b721aad3ac1f64e14bbbffde9854c2ac7d1a4c949d74d89d"
+  },
+  "prior_p3_evidence_unchanged": true,
+  "dependencies": "Existing untracked node_modules symlink reused; no package installation or dependency changes",
+  "retained_artifact_source": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+  "retained_artifact_base": "/Zhenkun-blog-site/",
+  "not_performed": [
+    "push",
+    "remote main merge",
+    "deploy",
+    "content publication",
+    "GitHub permission/settings changes",
+    "dependency installation",
+    "profile or language changes"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "images": [
+    {
+      "evidence": "fixture-artifacts-root.json",
+      "url": "https://zhenkun26.github.io/_astro/avatar.Vt-Igtud.avif",
+      "format": "heif",
+      "width": 1080,
+      "height": 1079,
+      "decodedBytes": 3495960
+    },
+    {
+      "evidence": "fixture-artifacts-root.json",
+      "url": "https://zhenkun26.github.io/_astro/firefly-light.DZ-mS7Sc.png",
+      "format": "png",
+      "width": 192,
+      "height": 192,
+      "decodedBytes": 147456
+    },
+    {
+      "evidence": "fixture-artifacts-root.json",
+      "url": "https://zhenkun26.github.io/og/protocol-probe.png",
+      "format": "png",
+      "width": 1200,
+      "height": 630,
+      "decodedBytes": 2268000
+    },
+    {
+      "evidence": "artifacts-subpath-final.json",
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/avatar.Vt-Igtud.avif",
+      "format": "heif",
+      "width": 1080,
+      "height": 1079,
+      "decodedBytes": 3495960
+    },
+    {
+      "evidence": "artifacts-subpath-final.json",
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/firefly-light.DZ-mS7Sc.png",
+      "format": "png",
+      "width": 192,
+      "height": 192,
+      "decodedBytes": 147456
+    }
+  ]
+}

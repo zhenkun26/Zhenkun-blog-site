@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "canonicalCheckpoint": "795e7d1d3e0cd4ea4de1dd41c83e40d3f5ca647c",
+  "candidateSync": "259bc9a9d07441893eccb81bdfd7081265dd3520",
+  "taskStateOwner": "/Users/zhenkun/GitHub/Zhenkun-blog-site/docs/ROADMAP.md",
+  "candidateRoadmap": "Canonical revision synchronized unchanged; source integration remains pending independent review",
+  "documentSHA256": {
+    "docs/ARCHITECTURE.md": "5e4ce57efdc44d50916a21c60d11735ec936d5c31aaade769c816b95ed585b0b",
+    "docs/DECISIONS.md": "9ebd5b1c5eabcf24ebfc99b5a0e103bed5a6670990d610474da9bd7ceec3515e",
+    "docs/ERROR_MEMORY.md": "a9769ad3a80a0d99523d49a9e4a4fe0cc918abc4a8d4fdf386f2f6f53bee1874",
+    "docs/ROADMAP.md": "37dd75cf83ccbfd42b6d24a2b74b1462f6e729a2373866b510a61acac51ff56e"
+  },
+  "relativeLinks": [
+    {
+      "source": "docs/ARCHITECTURE.md",
+      "target": "ROADMAP.md"
+    },
+    {
+      "source": "docs/ARCHITECTURE.md",
+      "target": "DECISIONS.md"
+    },
+    {
+      "source": "docs/ARCHITECTURE.md",
+      "target": "../references/comparison-2026-10-01/report.md"
+    },
+    {
+      "source": "docs/ARCHITECTURE.md",
+      "target": "PROCESS.md"
+    },
+    {
+      "source": "docs/ARCHITECTURE.md",
+      "target": "REFACTOR_PLAN.md"
+    },
+    {
+      "source": "docs/ARCHITECTURE.md",
+      "target": "../references/p4-capabilities-2026-10-02/report.md"
+    },
+    {
+      "source": "docs/ARCHITECTURE.md",
+      "target": "../references/p4-capabilities-2026-10-02/feature-matrix.md"
+    },
+    {
+      "source": "docs/ARCHITECTURE.md",
+      "target": "../references/authoring-2026-10-01/report.md"
+    },
+    {
+      "source": "docs/ARCHITECTURE.md",
+      "target": "REFACTOR_PLAN.md"
+    },
+    {
+      "source": "docs/DECISIONS.md",
+      "target": "../references/comparison-2026-10-01/report.md"
+    },
+    {
+      "source": "docs/DECISIONS.md",
+      "target": "ARCHITECTURE.md"
+    },
+    {
+      "source": "docs/DECISIONS.md",
+      "target": "../references/authoring-2026-10-01/report.md"
+    },
+    {
+      "source": "docs/DECISIONS.md",
+      "target": "ARCHITECTURE.md"
+    },
+    {
+      "source": "docs/DECISIONS.md",
+      "target": "REFACTOR_PLAN.md"
+    },
+    {
+      "source": "docs/DECISIONS.md",
+      "target": "../references/authoring-2026-10-01/wiki-probe.md"
+    },
+    {
+      "source": "docs/DECISIONS.md",
+      "target": "../references/refactor-2026-10-01/publication-contract.md"
+    },
+    {
+      "source": "docs/DECISIONS.md",
+      "target": "../references/p4-capabilities-2026-10-02/report.md"
+    },
+    {
+      "source": "references/p4-capabilities-2026-10-02/report.md",
+      "target": "feature-matrix.md"
+    },
+    {
+      "source": "references/p4-capabilities-2026-10-02/report.md",
+      "target": "canonical-checkpoint.json"
+    },
+    {
+      "source": "references/p4-capabilities-2026-10-02/feature-matrix.md",
+      "target": "../../docs/ROADMAP.md"
+    },
+    {
+      "source": "references/p4-capabilities-2026-10-02/feature-matrix.md",
+      "target": "config-inventory.json"
+    },
+    {
+      "source": "references/p4-capabilities-2026-10-02/feature-matrix.md",
+      "target": "artifacts-v2-subpath.json"
+    },
+    {
+      "source": "references/p4-capabilities-2026-10-02/feature-matrix.md",
+      "target": "pagefind-runtime-subpath.json"
+    },
+    {
+      "source": "references/p4-capabilities-2026-10-02/feature-matrix.md",
+      "target": "report.md"
+    }
+  ],
+  "noNewTopLevelDirectory": true,
+  "noDuplicateFeatureSwitchMap": true,
+  "sourceFilesEqualTestedSnapshot": 491,
+  "sourceDigest": "4e0110a0de32d7273526a79c3aedd8160052174dc56f1db437cd95c3e5eeb0d2"
+}

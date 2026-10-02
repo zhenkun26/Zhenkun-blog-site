@@ -1,0 +1,35 @@
+{
+  "status": "LOCAL_P4_ACCEPTED",
+  "originalHeadBefore": "795e7d1d3e0cd4ea4de1dd41c83e40d3f5ca647c",
+  "acceptedCandidate": "b0017e24ce813fb43fefb3046737660e8e70a5ad",
+  "branch": "codex/refactor-publication-contracts",
+  "method": "Guarded --ff-only from freshly pinned local review ref",
+  "review": {
+    "outcome": "PASS",
+    "exactCandidate": "b0017e24ce813fb43fefb3046737660e8e70a5ad",
+    "provenance": "Parent-relayed independent 6.1 Sol review: 151 tests, TS, Biome299, artifacts/hashes/27 configs/protected files; not rerun or invented by acceptance script"
+  },
+  "authorization": "Current delegated instruction explicitly requests guarded LOCAL FF after that exact independent review; no remote publication",
+  "freshAcceptanceChecks": [
+    "HEAD/branch/clean tracked+index",
+    "exact review ref/ancestry",
+    "491 source file hashes",
+    "47 evidence hashes",
+    "50 protected files/status",
+    ".workbuddy hash",
+    "main unchanged"
+  ],
+  "main": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de",
+  "protectedFiles": 50,
+  "workbuddySHA256": "9eb1658b6b811558b721aad3ac1f64e14bbbffde9854c2ac7d1a4c949d74d89d",
+  "evidenceManifestSHA256": "b6a55752e72c3e3f5e347499af50e478c85ce04f8d375f4acd093246cdc6169d",
+  "limits": [
+    "13 HTTP200/meta-refresh stubs",
+    "four public gallery assets",
+    "giscus real article/comment interaction untested",
+    "default-browser Pagefind behavior not proven by Node probe",
+    "Linux frozen/hosted CI/required checks open",
+    "production delivery/article publication open"
+  ],
+  "remoteWrite": false
+}

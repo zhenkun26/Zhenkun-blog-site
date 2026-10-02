@@ -1,0 +1,34 @@
+{
+  "status": "PASS_LOCAL_ACCEPTANCE_ONLY",
+  "from": "a3d1a9a80b5acbe305720dbc09d28af23c8247d8",
+  "target": "7ec53a2a7d9557ecbda89319e55c48d3fdca2e66",
+  "source": "f0ea5164ab7e0ccc34ecfc478c6c3e5813a50db7",
+  "branch": "codex/refactor-publication-contracts",
+  "main": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de",
+  "directOwnerApproval": {
+    "question": "Exact local a3d1a9a -> 7ec53a2 fast-forward; no push/deploy/main change",
+    "answer": "批准这次精确本地 fast-forward",
+    "questionCall": "call_69mFVcDYMlcGvYvSL1gYUvWI"
+  },
+  "initialAutoReview": {
+    "status": "REJECTED_BEFORE_EXECUTION",
+    "reason": "Prior direct FF approval covered only 6f551119, not this new target",
+    "resolution": "Fresh direct human approval of 7ec53a2; same guarded action then approved"
+  },
+  "independentReviewRelayedByParent": {
+    "target": "7ec53a2a7d9557ecbda89319e55c48d3fdca2e66",
+    "result": "PASS",
+    "reported": "all 9 rendered pages identity; exact bio/email/GH/directions;147 native/Biome298zero/TS/assertions/artifacts/hashes"
+  },
+  "freshDirectlyObserved": {
+    "expectedHeadsBranchTrackedClean": true,
+    "ancestor": true,
+    "evidenceHashes": 27,
+    "protectedP3Files": 50,
+    "workbuddyPreserved": true,
+    "localFetch": true,
+    "ffOnlyApplied": true,
+    "mainUnchanged": true
+  },
+  "boundary": "Review measurements are parent-relayed. Acceptance freshly verifies bytes/Git/preservation and applies exact approved FF. P4 implementation remains separate. No production acceptance."
+}

@@ -32,6 +32,7 @@ import {
 } from "@/constants/constants";
 import { defaultFavicons } from "@/constants/icon";
 import type { Favicon } from "@/types/config";
+import { getGeneratedOgUrl } from "@/utils/deployment-contract";
 import { isHomePage } from "@/utils/layout-utils";
 import { getAuthorAvatarUrl, getSiteLogo } from "@/utils/schema-image";
 import { buildSiteGraph, toAbsoluteUrl } from "@/utils/schema-utils";
@@ -137,7 +138,11 @@ let ogImageWidth: number | undefined;
 let ogImageHeight: number | undefined;
 const isGeneratedOg = siteConfig.post.generateOgImages && postSlug;
 if (isGeneratedOg) {
-	ogImageUrl = new URL(`/og/${postSlug}.png`, Astro.site).toString();
+	ogImageUrl = getGeneratedOgUrl(
+		postSlug,
+		Astro.site ?? siteConfig.site_url,
+		import.meta.env.BASE_URL,
+	);
 	ogImageWidth = 1200;
 	ogImageHeight = 630;
 } else if (postCoverImage) {

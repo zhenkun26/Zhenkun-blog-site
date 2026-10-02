@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "base": "/Zhenkun-blog-site/",
+  "version": {
+    "protocolVersion": "1.3",
+    "product": "Edg/154.0.4258.48",
+    "revision": "@80bb122d4912059dc0cf309273bbe3191ae80a62",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0",
+    "jsVersion": "15.4.11.6"
+  },
+  "mode": "Headless existing Microsoft Edge, separate temporary profile; CDP; no CUA/GUI acceptance",
+  "viewport": {
+    "width": 1462,
+    "height": 792,
+    "dpr": 2
+  },
+  "blocked_external_hosts": [],
+  "observations": [
+    {
+      "route": "",
+      "state": {
+        "href": "http://127.0.0.1:4339/Zhenkun-blog-site/",
+        "title": "Zhenkun - 记录、思考与灵感",
+        "width": 1462,
+        "height": 792,
+        "dpr": 2,
+        "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+        "og": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/firefly-light.DZ-mS7Sc.png",
+        "bodyText": "Zhenkun",
+        "images": [
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/_astro/firefly-light.DZ-mS7Sc_nBpgE.webp",
+            "complete": true,
+            "width": 1462
+          },
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/assets/music/cover/109951169585655912.webp",
+            "complete": true,
+            "width": 512
+          },
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/_astro/d1.v_J1gD3P_127q7A.webp",
+            "complete": true,
+            "width": 1462
+          },
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/_astro/avatar.Vt-Igtud_2vW54x.webp",
+            "complete": true,
+            "width": 350
+          },
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/assets/music/cover/109951169585655912.webp",
+            "complete": true,
+            "width": 512
+          },
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/_astro/avatar.Vt-Igtud_2vW54x.webp",
+            "complete": true,
+            "width": 350
+          }
+        ],
+        "dark": false
+      },
+      "theme_roundtrip": "PASS",
+      "switched": {
+        "dark": true,
+        "bodyInert": false,
+        "scrollWidth": 1447
+      }
+    },
+    {
+      "route": "about/",
+      "state": {
+        "href": "http://127.0.0.1:4339/Zhenkun-blog-site/about/",
+        "title": "关于我 - Zhenkun",
+        "width": 1462,
+        "height": 792,
+        "dpr": 2,
+        "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/about/",
+        "og": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/firefly-light.DZ-mS7Sc.png",
+        "bodyText": "关于我\n关于我 / About Me#\n\n你好，我是 Zhenkun。\n\n在代码与生活之间，随手记下灵感与思考——这里是我的随记小站。\n\n我非计算机科班出身，在学习探索气象学科知识的同时，自学并动手实践深度学习、RAG、Agent 等 AI 领域的项目。\n\n✍️ 这里写什么#\n技术学习：踩过的坑、跑通的方案、值得复用的笔记\n项目实践：把想法做成东西的过程与复盘\n随记与灵感：日常里那些值得记下来的念头\n🛠️ 关于本站#\n\n本站基于 Firefly（Fuwari 的二次开发主题）构建，Astro 驱动，部署在 GitHub Pages。\n\nGitHub：@zhenkun26\n邮箱：zzk26personal@163.com\n\n感谢你的来访！如果某篇笔记恰好对你有用，那就再好不过了。",
+        "images": [
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/_astro/firefly-light.DZ-mS7Sc_nBpgE.webp",
+            "complete": true,
+            "width": 1462
+          },
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/assets/music/cover/109951169585655912.webp",
+            "complete": true,
+            "width": 512
+          },
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/_astro/d5.z7QGp_dj_XGeCE.webp",
+            "complete": true,
+            "width": 1462
+          },
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/_astro/avatar.Vt-Igtud_2vW54x.webp",
+            "complete": true,
+            "width": 350
+          },
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/assets/music/cover/109951169585655912.webp",
+            "complete": true,
+            "width": 512
+          },
+          {
+            "src": "http://127.0.0.1:4339/Zhenkun-blog-site/_astro/avatar.Vt-Igtud_2vW54x.webp",
+            "complete": true,
+            "width": 350
+          }
+        ],
+        "dark": false
+      },
+      "theme_roundtrip": "PASS",
+      "switched": {
+        "dark": true,
+        "bodyInert": false,
+        "scrollWidth": 1447
+      }
+    },
+    {
+      "route": "friends/",
+      "redirect": {
+        "href": "http://127.0.0.1:4339/Zhenkun-blog-site/404.html",
+        "title": "404 - Zhenkun",
+        "text": "Zhenkun\n主页\n文章\n归档\n分类\n标签\n系列\n关于我\n找不到相关结果。\n使一颗心免于哀伤\n\n知更鸟 / HOYO-MiX / Chevy\n\n0:00\n/\n0:00\n暂无歌词\n404\nZhenkun\n在代码与生活之间，随手记下灵感与思考。\n公告\n欢迎来到我的博客！这是一则示例公告。\n了解更多\n音乐\n使一颗心免于哀伤\n\n知更鸟 / HOYO-MiX / Chevy\n\n0:00\n/\n0:00\n暂无歌词\n分类\n标签\n归档\n0\n更多\n404\n404\n页面未找到\n\n抱歉，您访问的页面不存在或已被移动。\n\n返回首页\n站点统计\n文章\n0\n分类\n0\n标签\n0\n总字数\n0\n运行时长\n28\n天\n最后活动\n0\n天前\n站点信息\n构建平台\nLocal\n博客版本\nFirefly v6.16.7\n文章许可\nCC BY-NC-SA 4.0\n站点域名\nzhenkun26.github.io/Zhenkun-blog-site\nFirefly\nv6.16.7\nAstro\nv7.2.10\nNode\nv24.20.0\npnpm\nv11.22.0\n构建时间\n2026年10月2日 14:35:53\n系统信息\nmacOS / ARM6"
+      },
+      "limit": "Static stub returns HTTP 200; final browser location 404.html does not prove a server 404."
+    }
+  ],
+  "limits": [
+    "No physical-device/GUI accessibility acceptance",
+    "No P3 search/menu acceptance",
+    "Theme end states verified; no claim about physical-browser animation origin"
+  ]
+}

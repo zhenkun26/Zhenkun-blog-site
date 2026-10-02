@@ -1,4 +1,5 @@
 import { getSortedPosts } from "@/utils/content-utils";
+import { getPostUrlBySlug } from "@/utils/url-utils";
 
 export async function GET(): Promise<Response> {
 	const posts = await getSortedPosts();
@@ -6,6 +7,7 @@ export async function GET(): Promise<Response> {
 	const allPostsData = posts
 		.map((post) => ({
 			id: post.id,
+			url: getPostUrlBySlug(post.id),
 			title: post.data.title,
 			description: post.data.description,
 			published: post.data.published.getTime(),

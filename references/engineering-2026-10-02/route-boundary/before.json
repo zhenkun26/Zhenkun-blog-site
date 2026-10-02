@@ -1,0 +1,8 @@
+{
+  "base": "/about/",
+  "logicalRoute": "/about/",
+  "caller": "src/utils/schema-utils.ts:toAbsoluteUrl",
+  "observed": "https://zhenkun26.github.io/about/",
+  "expected": "https://zhenkun26.github.io/about/about/",
+  "status": "FAIL"
+}

@@ -1,0 +1,27 @@
+{
+  "auditV1": {
+    "status": "FAIL",
+    "log": "artifact-audit-subpath.log",
+    "cause": "Raw Pagefind URL is /about/, not deployment-prefixed"
+  },
+  "auditV2": {
+    "status": "PASS",
+    "log": "artifact-audit-subpath-v2.log",
+    "httpByteChecks": 33
+  },
+  "transportReadInterruption": {
+    "status": "RECOVERED",
+    "subsequentHead": "a353c2ee800bbff2865541288ea04308c245cdc5",
+    "remainingPreviewListeners": 0
+  },
+  "checkpointGuardFirstAttempt": {
+    "status": "FAIL_BEFORE_WRITE",
+    "exitCode": 128,
+    "message": "ls-tree: pathspec magic exclude not supported"
+  },
+  "checkpointGuardRecovery": {
+    "status": "PASS",
+    "evidence": "canonical-checkpoint.json"
+  },
+  "boundary": "Actual tool/probe failures are retained separately from application outcomes."
+}

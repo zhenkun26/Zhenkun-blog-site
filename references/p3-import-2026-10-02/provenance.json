@@ -1,0 +1,105 @@
+{
+  "observed_at_utc": "2026-10-02T07:00:47.245811+00:00",
+  "accepted_base": "cb667956b7785ad7f553768628907cb20e6d1693",
+  "g1_accepted_candidate": "ad1a04f20ac5d92f64aacfa5bdf90767f6e5f421",
+  "original_dirty_source": "/Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site",
+  "source_git_head": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+  "files": {
+    "src/components/controls/Search.svelte": {
+      "source_sha256": "e4da9eb1597f8511fcc56677ca51e213cf16161e2349926222fedc8d36ee3eb3",
+      "base_sha256": "bee465aa2c2d7ad7d36e7aa936b4a94b942666fde6ac7b08373d10c36694026b",
+      "final_sha256": "e4da9eb1597f8511fcc56677ca51e213cf16161e2349926222fedc8d36ee3eb3"
+    },
+    "src/components/layout/NavMenuPanel.astro": {
+      "source_sha256": "b913c395a5f63c7dd4126a21673365d7c6b503b653a58e419bb7427e2921ea64",
+      "base_sha256": "e31e2764cf196bf4b5b090ac167d7cc7113cc71f277223ff6275c0b249370b85",
+      "final_sha256": "6361c0b3bea96272c497f7e339d8ef7298e2d1044e354f183d6840d93d157da4"
+    },
+    "src/global.d.ts": {
+      "source_sha256": "c031736a7e225907f93e0c0d8932e0bd6acda9695becb1af703f2a3909e815dd",
+      "base_sha256": "e31fe12eb9ebd53017a1acbbd72280f8dbef6ec1dfcb045499fba92b4e32c484",
+      "final_sha256": "c031736a7e225907f93e0c0d8932e0bd6acda9695becb1af703f2a3909e815dd"
+    },
+    "src/utils/floating-panel-utils.ts": {
+      "source_sha256": "9110b6b4d698529d01c3d32e1a708f6c3db96f79917cdd51429645f28b8c0413",
+      "base_sha256": "1485a11692a0882da2a44e0a5a5a59698bcd7bd82277e38e64b34d8a6da5db95",
+      "final_sha256": "9110b6b4d698529d01c3d32e1a708f6c3db96f79917cdd51429645f28b8c0413"
+    },
+    "src/utils/swup-transitions.ts": {
+      "source_sha256": "5f2dda245bbd6ce9370994f075a56f9c1fdbb7b46315d9138d23b0aa1ff7a43f",
+      "base_sha256": "468b10cb79b3cde0381e573d87ebf3880d5d3df5005f0bc1bdba96c8e793db56",
+      "final_sha256": "5f2dda245bbd6ce9370994f075a56f9c1fdbb7b46315d9138d23b0aa1ff7a43f"
+    },
+    "src/utils/search-session.ts": {
+      "source_sha256": "51860abe774f5428dddbc2ad36af18ad75abaed4ad9a78b7692ad7a6c1db9792",
+      "base_sha256": null,
+      "final_sha256": "51860abe774f5428dddbc2ad36af18ad75abaed4ad9a78b7692ad7a6c1db9792"
+    },
+    "scripts/zhenkun-test-search-session.mjs": {
+      "source_sha256": "47a707f872fb0790bc9a80ef6d99407713c3178b0762c1c7f6b4d0b0410aed54",
+      "base_sha256": null,
+      "final_sha256": "47a707f872fb0790bc9a80ef6d99407713c3178b0762c1c7f6b4d0b0410aed54"
+    },
+    "scripts/zhenkun-test-nav-menu.mjs": {
+      "source_sha256": "eff578f98e1d6ab032667aca02575bb89b85979e1db8afccf7470159c9f50df5",
+      "base_sha256": null,
+      "final_sha256": "eff578f98e1d6ab032667aca02575bb89b85979e1db8afccf7470159c9f50df5"
+    },
+    "scripts/zhenkun-preview-faults.py": {
+      "source_sha256": "deb4d719f3b3ddec23d6e02dfc2f4199e8959be0531b0576c99387b2e9c2a83f",
+      "base_sha256": null,
+      "final_sha256": "deb4d719f3b3ddec23d6e02dfc2f4199e8959be0531b0576c99387b2e9c2a83f"
+    }
+  },
+  "docs_policy": "Do not copy source ROADMAP/DECISIONS/ERROR_MEMORY; canonical base retained. P3 ERROR_MEMORY appended separately only as reviewed delta. Historical dated evidence is not fresh acceptance.",
+  "modified_patch_sha256": "68417cb64a8eea890a54af3d17c8a4b86f53769aa92ba8dd404eeea9839f4b48",
+  "historical_evidence_sha256": {
+    "references/p3-2026-10-02/accepted-browser.json": "1b5e5d921e8832d83f8433ed7eeb6bfd732dd4a3f29f01537bb7e59a0d5919d0",
+    "references/p3-2026-10-02/accepted-menu.png": "a12e3c3aa839b4f95f847bde38ef6388ca6c6858ad4691bbb844c82110bfadde",
+    "references/p3-2026-10-02/after-browser-initial.json": "6ec658c4feef2eac2d2f4cd99beed8386d060afceae9bc43b168f8072a6038f3",
+    "references/p3-2026-10-02/after-first-query.png": "751211d889b3a4d947e3e6fe851b81e2482a6aa2389c025ec9d1d152eca55c5f",
+    "references/p3-2026-10-02/after-menu.png": "b4ecfb15a997385af5909e088324f76b210a7ce593886c5c2d8b6d420dc64179",
+    "references/p3-2026-10-02/after-mobile-search.png": "6394c787683388917790472c1014b080b6f9a3e6dde784bbd3067176dee3ae62",
+    "references/p3-2026-10-02/astro-check-accepted.log": "5dd593d029945597b272c6512f702a79925aca032e3d7465c2616aef70223af6",
+    "references/p3-2026-10-02/astro-check-final.log": "eb2773d324d1c6a0d5c67efcedc3a9d943c3337aae19492ebe69ad544e93fc0b",
+    "references/p3-2026-10-02/astro-check.log": "55cdccadde75b420cc34b641900e7547f3d78dd36f1415b78a39746e1bcd777d",
+    "references/p3-2026-10-02/baseline-preview-stop.log": "b8423e268d104c39833567bb9beabe24585b2315a367e1801fd969f0db1cbba0",
+    "references/p3-2026-10-02/baseline-preview.log": "7085317024aa3f8a91d7de0136c6dd95db5bbfb37491d167f892aba1cb4c580f",
+    "references/p3-2026-10-02/before-browser.json": "3cf8b1dfc541129946a8dca2baa26a34962ffa68fcb3f0fe59dc37373ccf5761",
+    "references/p3-2026-10-02/before-menu.png": "93694ac7a92c63e2dc5e540d9f859a972533a1479426aa7ddd8cc4e591d4aee7",
+    "references/p3-2026-10-02/biome-final.log": "8ebdbbf1d108d7b8e4a0ca3abc92efa938491eebfed1592007ac31ecc3f951ac",
+    "references/p3-2026-10-02/biome-nav-final.log": "c624c7e12756f007408a50a674375aae670394be44aaf205db94c5b20c1a4775",
+    "references/p3-2026-10-02/biome-test-final.log": "19b9d38fa0e6a3f9491b4ea17a66217a61eefc97de16accd2a499a6de85b417d",
+    "references/p3-2026-10-02/biome.log": "4baa3c13d7c7358f3ee8e05775bc44b1c52745fb75c8bb5c9969569ddfccc2c8",
+    "references/p3-2026-10-02/build-subpath-accepted.log": "51e74f2e4d89db03bc9c9f20e374251851eda34880ed69d8dcab92704468d694",
+    "references/p3-2026-10-02/build-subpath-final.log": "a26e091a56c66b7f6a6c77abf8b63d011c3657e1b53b4e0a480d0539856d693e",
+    "references/p3-2026-10-02/build-subpath.log": "0aa836f96deb2fc1a7d7950418387da745e29bb912cd538c3a25e1e3d69d27fd",
+    "references/p3-2026-10-02/deployment-artifacts-final.json": "a855594eb65d1a3228e941595f268d74f10fd9f1190ea462633762793d9a46ef",
+    "references/p3-2026-10-02/deployment-artifacts.json": "4dd79133afe30f7578cab4295b7d6094ce927d847d2a9e09c648dc0ba17608dc",
+    "references/p3-2026-10-02/failure-http.log": "95f666e1865f96c232d09b12a3abd3c8cf9ac2b51cf810cfa69ace3e150ac17e",
+    "references/p3-2026-10-02/native-tests-accepted.log": "674cabc49b3e821d3af0c949a8bd5e2977f57d0dd5ead2abbe0e86704cf468c1",
+    "references/p3-2026-10-02/native-tests-final.log": "f086804abde7ec2dfab870e84636a33648cca3885c38ac24d788ea6a70992719",
+    "references/p3-2026-10-02/native-tests.log": "a4160680d2b62650f1d8dd303c0658f05a631fc797eeb0c8b82d706226bf277f",
+    "references/p3-2026-10-02/nav-menu-tests.log": "cde48b1c34f8c8386f125e49f1f0009d0043e0e62755a65bdc271b8beb4772be",
+    "references/p3-2026-10-02/next-owner-requirements.md": "61454d667da198a3a258751ff9e8fda5c35e866812916cdf406bda987a1ea657",
+    "references/p3-2026-10-02/preview-accepted.log": "86e95efa0ad705d588917538b086e741a247132995e5c032e4a72a5329ad1f69",
+    "references/p3-2026-10-02/preview-final.log": "217ed9c4cbe3777870c72f023a6f2ee8226451c5068b19d66cf7f2a83066e45b",
+    "references/p3-2026-10-02/preview-stop-for-final-build.log": "e9067ba59ed5408e31f35a033345bb73e7620157e33685011626d12a2a5baf6a",
+    "references/p3-2026-10-02/preview-stop-for-guard.log": "717a71cdb987f48dd49fde4c87f22cc07cdeb6610ad3e311c798f4dbeb9c1b3c",
+    "references/p3-2026-10-02/preview.log": "b01fedaff6936d8d674296204b59be4317b62fd40e95a4274d9d7a069767b24c",
+    "references/p3-2026-10-02/search-and-pre-guard-browser.json": "43bd70025705b62fa3ed3946fcc40cc03a9009fa2014ad8646e81e2e7154ad3b",
+    "references/p3-2026-10-02/search-session-tests.log": "717d773c50167d89a224432b1933db00be44ac073981cebb6fbc07e998af44c9",
+    "references/p3-2026-10-02/slow-http-resumed.log": "5c17b2e242a916bd52662f871b118471aa6bf31aa9d333533cc6f6ef5b1f9119",
+    "references/p3-2026-10-02/slow-http.log": "28e8a16b39bda7efa199e19e160afc32cbf25ba508c69489aca75b41edbc020a",
+    "references/p3-2026-10-02/type-check-accepted.log": "ca8f4ac3289d0dcb73cf6fb4ab668b1f4d0a8a60cebe23fdd87c996243cc91c8",
+    "references/p3-2026-10-02/type-check-final.log": "ca8f4ac3289d0dcb73cf6fb4ab668b1f4d0a8a60cebe23fdd87c996243cc91c8",
+    "references/p3-2026-10-02/type-check.log": "ca8f4ac3289d0dcb73cf6fb4ab668b1f4d0a8a60cebe23fdd87c996243cc91c8"
+  },
+  "final_source_commit": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+  "implementation_commits": {
+    "search": "f2d0c264b72d264b669a13e318e02bdf26f55319",
+    "menu": "099eebc26955a10dfb6da08aa9d2f20982233a65",
+    "formatting_only": "278165033a8ad422f6403ac07e02f7af19e6ab24"
+  },
+  "formatting_delta": "Only two blank lines in NavMenuPanel.astro lose trailing spaces. Original imported hashes and patch retained; 55 compiled subpath client JS files match browser build."
+}

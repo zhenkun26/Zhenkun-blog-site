@@ -1,0 +1,22 @@
+07:10:07 [types] Generated 16ms
+07:10:07 [build] output: "static"
+07:10:07 [build] mode: "static"
+07:10:07 [build] directory: /Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/tmp/p8-astro-locale-fixture/dist-raw-site-root/
+07:10:07 [build] Collecting build info...
+07:10:07 [build] ✓ Completed in 27ms.
+07:10:07 [build] Building static entrypoints...
+07:10:07 [vite] ✓ built in 81ms
+07:10:07 [vite] ✓ built in 5ms
+07:10:07 [build] Rearranging server assets...
+
+ generating static routes 
+07:10:07   ├─ /about/index.html (+5ms) 
+07:10:07   ├─ /en/about/index.html (+1ms) 
+07:10:07   ├─ /en/index.html (+1ms) 
+07:10:07   ├─ /solo/index.html (+1ms) 
+07:10:07   ├─ /index.html (+1ms) 
+07:10:07 ✓ Completed in 18ms.
+
+07:10:07 [build] ✓ Completed in 118ms.
+07:10:07 [build] 5 page(s) built in 146ms
+07:10:07 [build] Complete!

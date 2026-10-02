@@ -1,0 +1,34 @@
+{
+  "localSourceBase": "31fb5379bed20016c19401b0067ba12abc211d0a",
+  "productionCommit": "a47c836107cc029690a0fa46334d8676674848c0",
+  "repositoryId": 1358212269,
+  "repository": "https://github.com/zhenkun26/Zhenkun-blog-site",
+  "site": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+  "deploymentRun": 37029800697,
+  "deployment": "PASS",
+  "localNativeTests": {
+    "passed": 144,
+    "excluded": "7 fixture-cleanup tests were not run locally because they delete temporary files."
+  },
+  "localAstro": {
+    "files": 257,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 12
+  },
+  "localTypeScript": "PASS: --noEmit --isolatedDeclarations",
+  "localBuilds": [
+    "/",
+    "/Zhenkun-blog-site/"
+  ],
+  "productionValidation": "Installed check/type commands plus all eight declared stages PASS; hosted build/deploy PASS. No local dependency reinstall.",
+  "browser": "In-app browser Home -> About navigation, updated title/name/new URL and visible content verified; live-about.png.",
+  "scopeLimits": [
+    "38 previously local development commits are excluded from production.",
+    "Launch post remains draft; no new article/comment acceptance.",
+    "Old website released by owner choice; no account Pages repository created.",
+    "Historical text is normalized; original measurement bytes remain in Git.",
+    "Binary screenshots and Git history were not rewritten."
+  ],
+  "remoteMainFinalCommit": "ab26876d82888d6fd9275724756bda28ee3442bc"
+}

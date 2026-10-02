@@ -1,0 +1,55 @@
+{
+  "scope": "Documentation-only reference assessment and architecture proposal",
+  "acceptedCaptures": 24,
+  "rejectedCaptures": 4,
+  "acceptedFiles": [
+    "references/comparison-2026-10-01/cuteleaf/01-home.jpg",
+    "references/comparison-2026-10-01/rainzt/02-home-ready.jpg",
+    "references/comparison-2026-10-01/rainzt/03-article-list.jpg",
+    "references/comparison-2026-10-01/cuteleaf/02-reading.jpg",
+    "references/comparison-2026-10-01/cuteleaf/03-immersive-reading.jpg",
+    "references/comparison-2026-10-01/cuteleaf/04-display-settings.jpg",
+    "references/comparison-2026-10-01/rainzt/04-navigation.jpg",
+    "references/comparison-2026-10-01/cuteleaf/05-first-search.jpg",
+    "references/comparison-2026-10-01/cuteleaf/06-search-retry.jpg",
+    "references/comparison-2026-10-01/rainzt/06-friends-feed-ready.jpg",
+    "references/comparison-2026-10-01/cuteleaf/07-filtered-archive.jpg",
+    "references/comparison-2026-10-01/rainzt/07-about.jpg",
+    "references/comparison-2026-10-01/rainzt/08-project-cards.jpg",
+    "references/comparison-2026-10-01/cuteleaf/08-mobile-home.jpg",
+    "references/comparison-2026-10-01/cuteleaf/09-mobile-menu.jpg",
+    "references/comparison-2026-10-01/rainzt/11-mobile-home-ready.jpg",
+    "references/comparison-2026-10-01/rainzt/12-mobile-menu.jpg",
+    "references/comparison-2026-10-01/cuteleaf/10-mobile-menu-focus-escape.jpg",
+    "references/comparison-2026-10-01/rainzt/13-mobile-search.jpg",
+    "references/comparison-2026-10-01/rainzt/14-reading.jpg",
+    "references/comparison-2026-10-01/rainzt/15-reading-body.jpg",
+    "references/comparison-2026-10-01/rainzt/16-display-settings.jpg",
+    "references/comparison-2026-10-01/cuteleaf/11-projects.jpg",
+    "references/comparison-2026-10-01/rainzt/17-mobile-reading.jpg"
+  ],
+  "rejectedLocalFiles": [
+    "references/comparison-2026-10-01/rainzt/01-home.jpg",
+    "references/comparison-2026-10-01/rainzt/05-friends-feed.jpg",
+    "references/comparison-2026-10-01/rainzt/09-mobile-home.jpg",
+    "references/comparison-2026-10-01/rainzt/10-menu-after-viewport.jpg"
+  ],
+  "missingCaptures": [],
+  "documentIssues": [],
+  "gitDiffCheck": {
+    "exitCode": 0,
+    "output": ""
+  },
+  "rawIntake": {
+    "path": "/Users/zhenkun/GitHub/Zhenkun-blog-site/tmp/asset-intake/raw",
+    "ignored": true,
+    "evidence": ".gitignore:52:tmp/\t/Users/zhenkun/GitHub/Zhenkun-blog-site/tmp/asset-intake/raw/example.jpg"
+  },
+  "applicationChecks": "NOT_APPLICABLE; no application edits in this increment",
+  "productionBuild": "BLOCKED for earlier cleanup under no-filesystem-deletion instruction",
+  "sourceWorkingDiffSha256": "de9e9715d62c7ead9e3bd1add42e007ad77d5bc6ea0052c990e1615a07f7b189",
+  "sourceCommitStaging": "Not included in the documentation increment",
+  "sourceWorkingDiffPreserved": true,
+  "independentReview": "PASS: architecture, public-source version/capability boundaries, and asset contracts reviewed; requested corrections applied",
+  "deliveryScope": "Local docs/evidence commit; prior application source diff excluded; rejected local captures excluded; no push/deployment"
+}

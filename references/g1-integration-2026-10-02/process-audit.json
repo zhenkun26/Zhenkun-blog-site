@@ -1,0 +1,184 @@
+{
+  "observed_at_utc": "2026-10-02T06:41:33.059695+00:00",
+  "tested_source_commit": "8416068b9505b4cd235d4acf0de87b0c54d4fb09",
+  "canonical_base": "ac4be592811cc7450c73806bca5d98c5be2babdb",
+  "reviewed_p2": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+  "commit_mapping": {
+    "a32502b06cb83c7a2d14d03eafc25d1947c56efc": "3fc7039e65e8d48414ffba86d1574e3f9dbd1acf",
+    "baf9b2d29310c7b32f6c23934802be3cc54ba022": "c3f30ce276c73eb92233ec209d57062b212b0fea"
+  },
+  "production_equivalence": {
+    "files": 498,
+    "equal_git_mode_blob_and_sha256": true,
+    "intentional_nonproduction_differences": [
+      "AGENTS.md hierarchy/current-language direction",
+      "docs/ROADMAP.md canonical conflicts/whole-file acceptance state",
+      "docs/DECISIONS.md ADR009/010 precedence",
+      "additional dated review/integration evidence"
+    ]
+  },
+  "protected": {
+    "original_head": "ac4be592811cc7450c73806bca5d98c5be2babdb",
+    "original_tracked_tree_index_clean": true,
+    "workbuddy_unchanged": true,
+    "isolated_p3_head": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+    "p3_files_hashes_unchanged": 50,
+    "main": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de",
+    "original_review_ref": "baf9b2d29310c7b32f6c23934802be3cc54ba022"
+  },
+  "process_audit": [
+    {
+      "area": "AGENTS hierarchy",
+      "result": "PASS",
+      "evidence": "Only root AGENTS applies; no checkout .agents/skills/nested AGENTS. User instruction precedes Zhenkun appendices, then upstream guidance; no permission/security relaxation."
+    },
+    {
+      "area": "Single task state",
+      "result": "PASS",
+      "evidence": "M8/P2/G1 current state pending; M5 incoming accepted line replaced by historical evidence link; stale P3 not-implemented removed. DOCX and older checkout ROADMAP remain snapshots; candidate is proposed canonical revision until local integration. No separate status document."
+    },
+    {
+      "area": "ADR authority",
+      "result": "PASS",
+      "evidence": "ADR010 explicitly supersedes historical ADR003 language direction for feasibility only; current AGENTS language wording coordinated. ADR009 describes conflict rationale without a live task checklist."
+    },
+    {
+      "area": "ERROR_MEMORY",
+      "result": "PASS",
+      "evidence": "Exact byte equality to baf9b2d; only committed P2 relocated-runtime/preview and route-collision entries imported. Existing actionable error/recovery/prevention records retained; no uncommitted P3 record copied."
+    },
+    {
+      "area": "SHA-bound evidence",
+      "result": "PASS",
+      "evidence": "498 production file mode/blob/hash equality, tested_source_commit, original-to-cherry-pick mapping and new logs; all historical evidence/hash files unchanged."
+    },
+    {
+      "area": "Approval/privacy/publication",
+      "result": "PASS",
+      "evidence": "Existing draft remains true; source/content/lock/workflows/security equivalent P2. No remote push/main merge/deploy/service/credential change/private upload. External browser requests blocked; task-specific temporary profiles only."
+    },
+    {
+      "area": "G1 precedes P3",
+      "result": "PASS",
+      "evidence": "G1 and P3 unchecked; original active branch held ac4be59. Candidate sent for independent review before acceptance/fast-forward or P3 continuation."
+    }
+  ],
+  "verification": {
+    "native": {
+      "tests": 120,
+      "pass": 120,
+      "fail": 0
+    },
+    "typescript_after_astro_sync": "PASS",
+    "astro": {
+      "files": 256,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 12
+    },
+    "biome": {
+      "files": 8,
+      "status": "PASS",
+      "fixes": 0
+    },
+    "full_build_root": "PASS",
+    "full_build_subpath": "PASS",
+    "artifact_http": {
+      "artifacts-root.json": {
+        "status": "PASS",
+        "base": "/",
+        "http_requests": 0
+      },
+      "artifacts-subpath.json": {
+        "status": "PASS",
+        "base": "/Zhenkun-blog-site/",
+        "http_requests": 0
+      },
+      "http-root.json": {
+        "status": "PASS",
+        "base": "/",
+        "http_requests": 24
+      },
+      "http-subpath.json": {
+        "status": "PASS",
+        "base": "/Zhenkun-blog-site/",
+        "http_requests": 24
+      }
+    },
+    "browser": {
+      "edge-root.json": {
+        "status": "PASS",
+        "mode": "Headless existing Microsoft Edge, separate temporary profile; CDP; no CUA/GUI acceptance",
+        "product": "Edg/154.0.4258.48",
+        "scenarios": 3
+      },
+      "edge-subpath.json": {
+        "status": "PASS",
+        "mode": "Headless existing Microsoft Edge, separate temporary profile; CDP; no CUA/GUI acceptance",
+        "product": "Edg/154.0.4258.48",
+        "scenarios": 3
+      }
+    }
+  },
+  "recovery_observations": [
+    "Executor transport disconnected during first conflict-resolution attempt; recovered read-only status before rerunning mutation; original remained unchanged.",
+    "Fresh clone first tsc failed because Astro content types not generated. Standard pnpm check performed sync; affected tsc rerun passed without source change.",
+    "Initial task-owned CDP probe quote escaping caused SyntaxError; fixed only probe, rerun passed.",
+    "Initial subpath preview omitted runtime DEPLOY_BASE; artifact check passed but HTTP 404/browser wrong canonical exposed the preview configuration. Task-owned server stopped, matching base restarted; affected HTTP/browser rerun passed."
+  ],
+  "limits": [
+    "Headless Edge/CDP, desktop 1462x792 DPR2 only; CUA transport closed, GUI and physical device not verified.",
+    "Home/About media/canonical/theme end-state roundtrip and disabled-friends base/404 redirect only; no P3 search/menu or physical animation-origin acceptance.",
+    "Empty public corpus, no new real/synthetic article publication; historical synthetic OG/collision proofs remain tied to original commits.",
+    "No fresh dependency install/Linux/remote/deployed acceptance.",
+    "Independent review and G1 acceptance pending; original active branch unchanged."
+  ],
+  "environment": {
+    "os": "macOS-26.5-arm64-arm-64bit",
+    "node": "v24.20.0",
+    "pnpm_in_package": "11.22.0",
+    "dependencies": "existing runtime symlink, no installation"
+  },
+  "browser_probe_sha256": "cab2e11cc8bf8529133b30aeedf400f904dd1d20985687bdac32ceb53acfc764",
+  "evidence_sha256": {
+    "preview-root.log": "8389abb33a0a49751a83a987080e011c6d3e05dc81a8d146d5d3344574acafb4",
+    "http-subpath.json": "e03bc9e8e6168c32975311d56920ada12781b2b879f47d2483065f342e0e5e01",
+    "type-check-after-sync.log": "ca8f4ac3289d0dcb73cf6fb4ab668b1f4d0a8a60cebe23fdd87c996243cc91c8",
+    "artifacts-subpath.json": "f9718ef038674dbc7e17424f670fe2d1e11bcca4450c4f1e92cfb7ef9cc867a9",
+    "http-subpath-initial-error.log": "433b0f51beead45cf9836b81c91b5dbe3da282e4c918731b22e5de6e120c93ba",
+    "preview-subpath-stop.log": "f69bb1aae3cc382c86323925c159339e173edfa49077d2e02f946751e9b77e9b",
+    "preview-subpath-initial-stop.log": "bda6f8b6a3e6effd0c6bacb9a95ff7d2f2c5b006b9f103d698cc4d14fd43b56e",
+    "preview-subpath.log": "bcceef9d5a647201a9ddd946cc7ef4cb8e5d6884ebd77b07273ae8f03bb6e874",
+    "conflict-resolutions.json": "058883b86732926aaa29ed81447be3165037a7a4d41ad54fe35d33def32ce60f",
+    "edge-subpath.log": "5927db3e4ac043cf8a4aab0f0ae4bbe2275d708c65e695066e66ab00eea1e9d5",
+    "browser-initial-probe-error.log": "325a642d0ffbb09e615878913e67c03d6dcc434b1c4bc7b3067f0bd5b1320ae0",
+    "type-check.log": "ae0fb0c318e252a83e083ed5bd824a72e296357925ac6ee7a4abb6ca410333a2",
+    "biome.log": "0b14cbef442b107d67b7923da24d45ddbec534c3ba4ae002c1e94f4dde6fd719",
+    "astro-check.log": "8af90674a0fe8e11543dee2bcb80f3dc550622ec2e737d5b7a9fdc92b7772f97",
+    "edge-root.log": "8683d00f5b74a6c3aa560687017c534fdd922f32d6fbb8ca35ecb8f7e720e4b8",
+    "browser-subpath-initial-error.log": "946d80e30b413d7c805acd0a25ae646b283f7ac28affa1ec48d53979092d53f1",
+    "edge-root-about.png": "8594524139c01d37563bb6d764b7b23c977ec6fda327dbdbb40444bd9d4ec631",
+    "edge-root.json": "e6f5b5e9bae5a81b2a3324469f242f540787fbc29d69e3e185280b0b5e55f089",
+    "http-root.json": "02d2e6e23c8a4afeaa546b4c3836f5ee4bd5c1b787234ad77899ad097ddd003d",
+    "edge-subpath-about.png": "e04ed4468ef0523e21fc54296d6ea09508557789415f08078d8b821699401d1f",
+    "native-tests.log": "ffc6301a44a800d6a16493a528d1ddd2bc6d8b198d33ad0acd22d06d40f02313",
+    "preview-root-stop.log": "3e14dd6fef58d387c86ceaf8d310740776e976f0e82ffa4e37ea3f7a80b53a40",
+    "source-snapshot.json": "6030e9f9f2812f6431003af12e22bac21ba3635be4d144bec94c3cc233a8a571",
+    "edge-subpath.json": "2617daabf985c2d7287f9eafd8bd722f0c3c0fed8f68c6b3b270cab38d6b3507",
+    "build-root.log": "d1ea4ff505d5d39f7816e52ec9d364a0466e29d1ceef605b1ae79a31e3587a7e",
+    "artifacts-root.json": "6578bf79f3ac7becf0fef81fa541cf7f0bb5b72f7957327e64c452742a852764",
+    "edge-subpath-home.png": "81cde803681d785af8efc19e15559f8479f1457ec20882b4ef0684be76e69bad",
+    "preview-subpath-correct-base.log": "73160faa3979af418d433612ab30da759a9d666588d23c285ed4dd8958da7d06",
+    "edge-root-home.png": "c9dff89482461ad854e445ee271004ca7e996f04870d6b0df509af1233c22ead",
+    "build-subpath.log": "bbda31e976b106146db0732699b46c58f44447b6936ecd84416b86d00164f4d6"
+  },
+  "historical_evidence_blobs_preserved": 168,
+  "governance_diffs_after_test_snapshot": [
+    "docs/ROADMAP.md final checkpoint/verification records",
+    "dated integration evidence only; no production change"
+  ],
+  "visual_inspection": [
+    "edge-root-about.png inspected: expected About content/avatar/brand visible, no blank capture",
+    "edge-subpath-home.png inspected: expected empty-public-corpus Home/avatar/brand visible"
+  ]
+}

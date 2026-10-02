@@ -55,7 +55,6 @@ const heatmapWeekTemplate = i18n(I18nKey.calendarHeatmapWeek);
 const currentLang = siteConfig.lang || "en";
 
 const calendarDataUrl = url("/api/allPostMeta.json");
-const postUrlPrefix = url("/posts/");
 ---
 
 <WidgetLayout name={i18n(I18nKey.calendar)} showTitle={showTitle} id="calendar-widget" class={className} style={style}>
@@ -121,7 +120,7 @@ const postUrlPrefix = url("/posts/");
   </div>
 </WidgetLayout>
 
-<script is:inline data-swup-ignore-script define:vars={{ monthNames, weekDays, yearText, currentLang, calendarDataUrl, postUrlPrefix, heatmapWeekTemplate }}>
+<script is:inline data-swup-ignore-script define:vars={{ monthNames, weekDays, yearText, currentLang, calendarDataUrl, heatmapWeekTemplate }}>
   // State variables
   let displayYear = new Date().getFullYear();
   let displayMonth = new Date().getMonth();
@@ -133,7 +132,7 @@ const postUrlPrefix = url("/posts/");
   async function fetchData() {
     try {
       // 使用缓存避免 swup 导航时重复请求
-      if (window.__allPostMetaCache) {
+      if (Array.isArray(window.__allPostMetaCache) && window.__allPostMetaCache.every(post => typeof post.url === 'string')) {
         allPostsData = window.__allPostMetaCache;
       } else {
         const response = await fetch(calendarDataUrl);
@@ -150,7 +149,7 @@ const postUrlPrefix = url("/posts/");
         if (!postDateMap[dateKey]) {
           postDateMap[dateKey] = [];
         }
-        postDateMap[dateKey].push({ id: post.id, title: post.title, published: post.published });
+        postDateMap[dateKey].push({ id: post.id, url: post.url, title: post.title, published: post.published });
         yearsSet.add(date.getFullYear());
       });
       
@@ -460,6 +459,25 @@ const postUrlPrefix = url("/posts/");
     });
   }
   
+  // Use the server-generated URL and text nodes instead of HTML interpolation.
+  function createCalendarPostLink(post) {
+    const date = new Date(post.published);
+    const link = document.createElement('a');
+    link.href = post.url;
+    link.className = 'flex justify-between items-center text-sm text-neutral-700 dark:text-neutral-300 hover:text-(--primary) dark:hover:text-(--primary) transition-colors px-2 py-1 rounded-sm hover:bg-(--btn-plain-bg-hover)';
+
+    const title = document.createElement('span');
+    title.className = 'truncate';
+    title.textContent = post.title;
+
+    const published = document.createElement('span');
+    published.className = 'text-xs text-neutral-500 dark:text-neutral-400 ml-2 whitespace-nowrap';
+    published.textContent = `${date.getMonth() + 1}-${date.getDate()}`;
+
+    link.append(title, published);
+    return link;
+  }
+
   // 显示当月所有文章
   function showMonthlyPosts(currentMonthPosts) {
     const postsWrapper = document.getElementById('calendar-posts');
@@ -471,15 +489,7 @@ const postUrlPrefix = url("/posts/");
     }
     
     if (postsList) {
-      postsList.innerHTML = currentMonthPosts.map(post => {
-        const date = new Date(post.published);
-        const dateStr = `${date.getMonth() + 1}-${date.getDate()}`;
-        return `
-        <a href="${postUrlPrefix}${post.id}/" class="flex justify-between items-center text-sm text-neutral-700 dark:text-neutral-300 hover:text-(--primary) dark:hover:text-(--primary) transition-colors px-2 py-1 rounded-sm hover:bg-(--btn-plain-bg-hover)">
-          <span class="truncate">${post.title}</span>
-          <span class="text-xs text-neutral-500 dark:text-neutral-400 ml-2 whitespace-nowrap">${dateStr}</span>
-        </a>
-      `}).join('');
+      postsList.replaceChildren(...currentMonthPosts.map(createCalendarPostLink));
       
       // 显示/隐藏分割线
       if (divider) {
@@ -531,15 +541,7 @@ const postUrlPrefix = url("/posts/");
           }
 
           // 渲染文章列表
-          postsList.innerHTML = posts.map(post => {
-            const date = new Date(post.published);
-            const dateStr = `${date.getMonth() + 1}-${date.getDate()}`;
-            return `
-            <a href="${postUrlPrefix}${post.id}/" class="flex justify-between items-center text-sm text-neutral-700 dark:text-neutral-300 hover:text-(--primary) dark:hover:text-(--primary) transition-colors px-2 py-1 rounded-sm hover:bg-(--btn-plain-bg-hover)">
-              <span class="truncate">${post.title}</span>
-              <span class="text-xs text-neutral-500 dark:text-neutral-400 ml-2 whitespace-nowrap">${dateStr}</span>
-            </a>
-          `}).join('');
+          postsList.replaceChildren(...posts.map(createCalendarPostLink));
           
           // 显示分割线
           if (divider) {

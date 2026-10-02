@@ -1,0 +1,21 @@
+scripts/zhenkun-verify-ci-artifacts.mjs format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    32 32 │       assert.ok(language.page_count > 0, "Pagefind language has no pages");
+    33 33 │       assert.ok(
+    34    │ - → → → statSync(resolve(directory,·`pagefind/pagefind.${language.hash}.pf_meta`)).size·>
+    35    │ - → → → → 0,
+       34 │ + → → → statSync(resolve(directory,·`pagefind/pagefind.${language.hash}.pf_meta`))
+       35 │ + → → → → .size·>·0,
+    36 36 │         "Pagefind metadata is empty",
+    37 37 │       );
+  
+
+Checked 2 files in 3ms. No fixes applied.
+Found 1 error.
+check ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+

@@ -1,0 +1,153 @@
+$ pnpm exec tsx scripts/generate-github-card-data.ts && pnpm exec tsx scripts/generate-lqips.ts && pnpm exec tsx scripts/generate-vndb-covers.ts && astro build && pnpm exec tsx scripts/prune-pio-assets.ts && pnpm exec tsx scripts/subset-fonts.ts && pnpm exec tsx scripts/minify-inline-scripts.ts && pnpm exec tsx scripts/run-pagefind.ts
+[GITHUB-CARD] Cached 0 repositories (0 refreshed).
+Loaded 23 existing entries from src/constants/lqips.json
+Found 23 images, 0 new to process.
+
+Done! Processed 0/0 new images. Total: 23. Output: src/constants/lqips.json
+[VNDB] Page not enabled, skipping cover download
+01:05:24 [content] Syncing content
+01:05:24 [content] Astro config changed
+01:05:24 [content] Clearing content store
+01:05:24 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/dynamic"
+01:05:24 [content] Synced content
+01:05:24 [types] Generated 221ms
+01:05:24 [build] output: "static"
+01:05:24 [build] mode: "static"
+01:05:24 [build] directory: /Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/dist/
+01:05:24 [build] Collecting build info...
+01:05:24 [build] ✓ Completed in 300ms.
+01:05:24 [build] Building static entrypoints...
+01:05:25 [WARN] [astro-icon] Failed to load icons from "src/icons": ENOENT: no such file or directory, scandir 'src/icons/'
+01:05:25 [assets] Copying fonts (22 files)...
+01:05:26 [vite] ✓ built in 1.29s
+01:05:26 [WARN] [vite] [plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+01:05:26 [vite] ✓ built in 436ms
+01:05:26 [build] Rearranging server assets...
+
+ generating static routes 
+01:05:26   ├─ /404.html (+39ms) 
+01:05:26   ├─ /about/index.html (+8ms) 
+01:05:26   ├─ /api/allPostMeta.json (+1ms) 
+01:05:26   ├─ /api/dynamic.jsonThe collection "dynamic" does not exist or is empty. Please check your content config file for errors.
+ (+1ms) 
+01:05:26   ├─ /archive/index.html (+8ms) 
+01:05:27   ├─ /bangumi/index.html (+3ms) 
+01:05:27   ├─ /bilibili/index.html (+1ms) 
+01:05:27   ├─ /booknav/index.html (+1ms) 
+01:05:27   ├─ /categories/index.html (+7ms) 
+01:05:27   ├─ /dynamic/comments/index.html (+1ms) 
+01:05:27   ├─ /dynamic/index.html (+3ms) 
+01:05:27   ├─ /friends/index.html (+1ms) 
+01:05:27   ├─ /gallery/firefly-2026/index.html (+1ms) 
+01:05:27   ├─ /gallery/encrypted-test/index.html (+0ms) 
+01:05:27   ├─ /gallery/index.html (+1ms) 
+01:05:27   ├─ /guestbook/index.html (+1ms) 
+01:05:27   ├─ /myanimelist/index.html (+1ms) 
+01:05:27   ├─ /robots.txt (+1ms) 
+01:05:27   ├─ /rss/index.html (+8ms) 
+01:05:27   ├─ /rss.xml (+66ms) 
+01:05:27   ├─ /search/index.html (+7ms) 
+01:05:27   ├─ /series/index.html (+7ms) 
+01:05:27   ├─ /sponsor/index.html (+1ms) 
+01:05:27   ├─ /tags/index.html (+6ms) 
+01:05:27   ├─ /vndb/index.html (+1ms) 
+01:05:27   ├─ /index.html (+7ms) 
+01:05:27 ✓ Completed in 435ms.
+
+ generating optimized images 
+01:05:27   ▶ /_astro/avatar.Vt-Igtud_2vW54x.webp (reused cache entry) (+1ms) (1/32)
+01:05:27   ▶ /_astro/m2.DdvPaSds_Z1EVf4m.webp (reused cache entry) (+1ms) (2/32)
+01:05:27   ▶ /_astro/m3.D3bdkV68_12YOaU.webp (reused cache entry) (+2ms) (3/32)
+01:05:27   ▶ /_astro/m4.DzLJp29g_1CTWMR.webp (reused cache entry) (+2ms) (4/32)
+01:05:27   ▶ /_astro/m6.Ca2EuEDu_2tgGXw.webp (reused cache entry) (+2ms) (5/32)
+01:05:27   ▶ /_astro/m1.DEh_M2ue_Z45Tzi.webp (reused cache entry) (+2ms) (6/32)
+01:05:27   ▶ /_astro/d2.G7EObyHu_1XtIQO.webp (reused cache entry) (+3ms) (7/32)
+01:05:27   ▶ /_astro/d1.v_J1gD3P_1UrLaz.webp (reused cache entry) (+3ms) (8/32)
+01:05:27   ▶ /_astro/d3.CGCRs0-H_Z1wq2df.webp (reused cache entry) (+3ms) (9/32)
+01:05:27   ▶ /_astro/m5.UNwLEw9O_Z1eFw7t.webp (reused cache entry) (+3ms) (10/32)
+01:05:27   ▶ /_astro/m2.DdvPaSds_Z1tyk6U.webp (reused cache entry) (+3ms) (11/32)
+01:05:27   ▶ /_astro/avatar.Vt-Igtud_2ttoFu.webp (reused cache entry) (+3ms) (12/32)
+01:05:27   ▶ /_astro/m3.D3bdkV68_Pi8s3.webp (reused cache entry) (+2ms) (13/32)
+01:05:27   ▶ /_astro/m4.DzLJp29g_1g44So.webp (reused cache entry) (+2ms) (14/32)
+01:05:27   ▶ /_astro/m6.Ca2EuEDu_Z1dIssL.webp (reused cache entry) (+2ms) (15/32)
+01:05:27   ▶ /_astro/m1.DEh_M2ue_ZgMAia.webp (reused cache entry) (+2ms) (16/32)
+01:05:27   ▶ /_astro/d2.G7EObyHu_Z2kChfu.webp (reused cache entry) (+2ms) (17/32)
+01:05:27   ▶ /_astro/m5.UNwLEw9O_1L3vXN.webp (reused cache entry) (+3ms) (18/32)
+01:05:27   ▶ /_astro/d1.v_J1gD3P_127q7A.webp (reused cache entry) (+3ms) (19/32)
+01:05:27   ▶ /_astro/d4.Brgr35k-_2i4b8v.webp (reused cache entry) (+3ms) (20/32)
+01:05:27   ▶ /_astro/d3.CGCRs0-H_ZKkTvC.webp (reused cache entry) (+4ms) (21/32)
+01:05:27   ▶ /_astro/firefly-light.DZ-mS7Sc_PH18e.webp (reused cache entry) (+3ms) (22/32)
+01:05:27   ▶ /_astro/d5.z7QGp_dj_cB6V2.webp (reused cache entry) (+3ms) (23/32)
+01:05:27   ▶ /_astro/firefly-dark.b7MsfgPt_Z13pTQ1.webp (reused cache entry) (+3ms) (24/32)
+01:05:27   ▶ /_astro/d6.DetxM4Sl_ZUoP1q.webp (reused cache entry) (+3ms) (25/32)
+01:05:27   ▶ /_astro/firefly-light.DZ-mS7Sc_nBpgE.webp (reused cache entry) (+0ms) (26/32)
+01:05:27   ▶ /_astro/firefly-dark.b7MsfgPt_Z1MtPoa.webp (reused cache entry) (+1ms) (27/32)
+01:05:27   ▶ /_astro/firefly-light.DZ-mS7Sc_Z25VpTL.webp (reused cache entry) (+1ms) (28/32)
+01:05:27   ▶ /_astro/firefly-dark.b7MsfgPt_17Vg7f.webp (reused cache entry) (+0ms) (29/32)
+01:05:27   ▶ /_astro/d5.z7QGp_dj_XGeCE.webp (reused cache entry) (+1ms) (30/32)
+01:05:27   ▶ /_astro/d4.Brgr35k-_1oIP5w.webp (reused cache entry) (+2ms) (31/32)
+01:05:27   ▶ /_astro/d6.DetxM4Sl_Z9jHjN.webp (reused cache entry) (+1ms) (32/32)
+01:05:27 ✓ Completed in 9ms.
+
+01:05:27 [build] ✓ Completed in 2.24s.
+01:05:27 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+01:05:27 [build] 22 page(s) built in 2.56s
+01:05:27 [build] Complete!
+🎎 Pruning unused mascot assets in dist/...
+   ✂ pio (14.62 MiB)
+   ✂ _astro/Live2DWidget.astro_astro_type_script_index_0_lang.CnuKuERK.js (0.63 MiB)
+✨ Pruned 2 mascot assets, freed 15.26 MiB
+🔤 Font subsetting started...
+   ⏭ Skipping '--font-greatvibes' — not referenced in selected or any font region.
+   No local fonts with subset: true found. Skipping.
+🗜 Minifying inline scripts in dist/...
+✨ Minified 259 inline scripts in 9/22 HTML files, saved 378.7 KiB
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 22 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+13 pages found without an <html> element. 
+Pages without an outer <html> element will not be processed by default. 
+If adding this element is not possible, use the root selector config to target a different root element.
+  * "/booknav/" has no <html> element
+  * "/vndb/" has no <html> element
+  * "/dynamic/comments/" has no <html> element
+  * "/dynamic/" has no <html> element
+  * "/bangumi/" has no <html> element
+  * "/bilibili/" has no <html> element
+  * "/gallery/" has no <html> element
+  * "/gallery/firefly-2026/" has no <html> element
+  * "/gallery/encrypted-test/" has no <html> element
+  * "/myanimelist/" has no <html> element
+  * "/sponsor/" has no <html> element
+  * "/guestbook/" has no <html> element
+  * "/friends/" has no <html> element
+
+[Reading languages]
+Discovered 1 language: zh-cn
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 1 page
+  Indexed 117 words
+  Indexed 0 filters
+  Indexed 0 sorts
+Note: Pagefind doesn't support stemming for the language zh-cn. 
+Search will still work, but will not match across root words.
+Note: Pagefind doesn't support stemming for the language zh-cn. 
+Search will still work, but will not match across root words.
+
+Finished in 0.115 seconds

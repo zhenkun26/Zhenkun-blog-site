@@ -1,0 +1,27 @@
+
+DevTools listening on ws://127.0.0.1:52321/devtools/browser/31c5896e-2264-47ef-9132-c42f2d40e573
+[31976:316319:1002/023425.363600:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316389:1002/023425.363821:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316319:1002/023425.363998:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316389:1002/023425.364044:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316319:1002/023425.364127:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316389:1002/023425.364180:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316319:1002/023425.526390:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316389:1002/023425.526438:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316319:1002/023425.536790:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316389:1002/023425.536834:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316319:1002/023425.537649:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316389:1002/023425.537696:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316319:1002/023425.538343:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316389:1002/023425.538378:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316319:1002/023425.542766:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[31976:316389:1002/023425.542838:ERROR:ui/display/mac/cv_display_link_mac.mm:188] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+Trying to load the allocator multiple times. This is *not* supported.
+[31977:316359:1002/023429.783636:ERROR:net/socket/ssl_client_socket_impl.cc:963] handshake failed; returned -1, SSL error code 1, net_error -100
+[31977:316359:1002/023429.784585:ERROR:net/socket/ssl_client_socket_impl.cc:963] handshake failed; returned -1, SSL error code 1, net_error -100
+[31977:316359:1002/023429.787119:ERROR:net/socket/ssl_client_socket_impl.cc:963] handshake failed; returned -1, SSL error code 1, net_error -100
+[31977:316359:1002/023429.787362:ERROR:net/socket/ssl_client_socket_impl.cc:963] handshake failed; returned -1, SSL error code 1, net_error -100
+[31977:316359:1002/023434.183049:ERROR:net/socket/ssl_client_socket_impl.cc:963] handshake failed; returned -1, SSL error code 1, net_error -100
+[31977:316359:1002/023434.187708:ERROR:net/socket/ssl_client_socket_impl.cc:963] handshake failed; returned -1, SSL error code 1, net_error -100
+[31977:316359:1002/023434.810122:ERROR:net/socket/ssl_client_socket_impl.cc:963] handshake failed; returned -1, SSL error code 1, net_error -100
+[31977:316359:1002/023434.810971:ERROR:net/socket/ssl_client_socket_impl.cc:963] handshake failed; returned -1, SSL error code 1, net_error -100

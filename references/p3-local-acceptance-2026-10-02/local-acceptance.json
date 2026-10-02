@@ -1,0 +1,21 @@
+{
+  "observed_at_utc": "2026-10-02T08:28:07.264508+00:00",
+  "before": "cb667956b7785ad7f553768628907cb20e6d1693",
+  "accepted_reviewed_candidate": "289cb6183d16b6cac62c18c84758c02bc8fb6289",
+  "method": "Guarded local git fetch from candidate clone then merge --ff-only; branch/tracked-index/ancestry/50 dirty hashes/workbuddy matched before and after fetch.",
+  "approval_source": "Parent task 01a0f183-dacb-71a2-a112-cf72600050d6 supplied independent exact-SHA LOCAL approval.",
+  "independent_reported_checks": [
+    "140 native tests",
+    "direct installed TypeScript/Biome",
+    "subpath artifacts + 24 HTTP",
+    "actual Edge first query/modal cancel/Tab wrap/Escape focus/inert release",
+    "502 production entries/nine changes/55 client JS/evidence/protected hashes"
+  ],
+  "verification_boundary": "These are independent reviewer claims supplied by parent, not newly rerun implementer tests. Guards/local fast-forward are directly verified here.",
+  "limits": [
+    "Post-resize locator first click can miss; screenshot-grounded pointer/cold mobile pass; physical resize/orientation unverified",
+    "Reviewer pnpm wrapper attempted dependency setup and was sandbox-blocked; no installation; denied path not retried",
+    "No production release acceptance or remote action"
+  ],
+  "main_unchanged": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de"
+}

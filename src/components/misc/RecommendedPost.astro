@@ -126,7 +126,7 @@ function renderRandomPosts() {
   var apiUrl = container.dataset.apiUrl;
   var currentId = container.dataset.currentId;
   var relatedIds = JSON.parse(container.dataset.relatedIds || '[]');
-  var excludeSet = {};
+  var excludeSet = Object.create(null);
   excludeSet[currentId] = true;
   for (var i = 0; i < relatedIds.length; i++) excludeSet[relatedIds[i]] = true;
 
@@ -134,7 +134,7 @@ function renderRandomPosts() {
     var emptyTemplate = document.getElementById('random-posts-empty');
     container.innerHTML = '';
     var candidates = allPosts.filter(function(p) {
-      return !excludeSet[p.id] && !p.password;
+      return !excludeSet[p.id] && !p.password && typeof p.url === 'string';
     });
 
     // Fisher-Yates shuffle
@@ -160,13 +160,10 @@ function renderRandomPosts() {
     container.className = 'flex-1';
 
     var fragment = document.createDocumentFragment();
-    var base = apiUrl.replace(/\/api\/allPostMeta\.json$/, '');
 
     picked.forEach(function(post, idx) {
-      var href = base + '/posts/' + post.id + '/';
-
       var a = document.createElement('a');
-      a.href = href;
+      a.href = post.url;
       a.className = 'group flex items-center gap-3 px-3 py-3 -mx-1 rounded-lg transition-all hover:bg-black/5 dark:hover:bg-white/5 active:scale-[0.98]'
         + (idx < picked.length - 1 ? ' border-b border-dashed border-(--line-divider)' : '');
 
@@ -219,7 +216,9 @@ function renderRandomPosts() {
   }
 
   // 使用缓存避免 swup 导航时重复请求
-  if (window.__allPostMetaCache) {
+  if (Array.isArray(window.__allPostMetaCache) && window.__allPostMetaCache.every(function(post) {
+    return typeof post.url === 'string';
+  })) {
     render(window.__allPostMetaCache);
   } else {
     fetch(apiUrl)

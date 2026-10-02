@@ -6,11 +6,14 @@ import { commentConfig, dynamicConfig, siteConfig } from "@/config";
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import { getNotFoundPath } from "@/utils/deployment-contract";
 import "@/styles/dynamic.css";
 import { url } from "@/utils/url-utils";
 
+const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+
 if (!siteConfig.pages.dynamic) {
-	return Astro.redirect("/404/");
+	return Astro.redirect(notFoundPath);
 }
 
 const title = dynamicConfig.title || i18n(I18nKey.dynamic);

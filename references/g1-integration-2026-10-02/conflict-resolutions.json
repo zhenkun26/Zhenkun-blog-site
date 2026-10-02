@@ -1,0 +1,26 @@
+[
+  {
+    "commit": "a32502b06cb83c7a2d14d03eafc25d1947c56efc",
+    "conflict_path": "docs/ROADMAP.md",
+    "blocks": 1,
+    "stages": {
+      "1": "c9386cc4aa7b8a647d59f18b39f18309739ab9f6c6a00318503f66223c81b2bc",
+      "2": "838bd9344615bcc0a6e5496e47c0ddd7cb47ce33912d346907e07c1cd9a0ca89",
+      "3": "d7170abe0a8e4e74270dfc1e2d8a5ce4d4d26da9e148f1b5b2e650eed8d70477"
+    },
+    "resolution_sha256": "243640e51703bbd76cc036f934f22c5974b1edf7b24cbf1e192b8d25da892253",
+    "rationale": "Canonical P0-P8/P2.5/G1-G6, safeguards and historical scopes retained. Incoming live P2 acceptance/next-P3 assertions superseded by pending G1; concrete P2 scope reconciled into canonical P2 entry. Incoming 116/root+subpath/HTTP/browser provenance already represented by canonical historical-evidence paragraph and all original dated evidence imported intact; no second live roadmap copied."
+  },
+  {
+    "commit": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+    "conflict_path": "docs/ROADMAP.md",
+    "blocks": 1,
+    "stages": {
+      "1": "d7170abe0a8e4e74270dfc1e2d8a5ce4d4d26da9e148f1b5b2e650eed8d70477",
+      "2": "243640e51703bbd76cc036f934f22c5974b1edf7b24cbf1e192b8d25da892253",
+      "3": "8a1a7f45c5a4a877ad6ea87cf1d97e01a773eab8665ea80780322462f684412f"
+    },
+    "resolution_sha256": "f9ace055db31004d02dbef7b58c8d8aa6f127a5f008b9780539e575e1bb624ab",
+    "rationale": "Retain canonical G1 pending, P3 preservation, P2.5/P8 scope and approval gates. Add incoming route/base collision semantics, route-boundary evidence, exact historical checks and root/HTTP/browser limits to existing dated P2 paragraph; reject obsolete live next-P3 declaration. ERROR_MEMORY and original followup evidence append unchanged."
+  }
+]

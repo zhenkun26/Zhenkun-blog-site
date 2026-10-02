@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/zhenkun/Documents/Codex/2026-10-02/task/tmp/zhenkun-g1/p4-policy/references/p4-capabilities-2026-10-02/artifact-audit.py", line 78, in <module>
+    assert fragment['url'] == base + 'about/', fragment['url']
+AssertionError: /about/

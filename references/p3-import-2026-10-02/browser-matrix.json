@@ -1,0 +1,573 @@
+{
+  "testedSource": "099eebc26955a10dfb6da08aa9d2f20982233a65",
+  "browser": "Edge extension",
+  "root": [
+    {
+      "scenario": "first actual Pagefind query",
+      "state": {
+        "dpr": 2,
+        "height": 839,
+        "href": "http://127.0.0.1:4339/",
+        "links": [
+          "http://127.0.0.1:4339/about/"
+        ],
+        "panel": "关于我\n我非计算机科班出身，在学习探索气象学科知识的同时，自学并动手实践",
+        "query": "气象",
+        "width": 1462
+      }
+    },
+    {
+      "scenario": "rapid replacement ends at latest real query",
+      "query": null,
+      "state": {
+        "links": [
+          "http://127.0.0.1:4339/about/"
+        ],
+        "query": "气象"
+      }
+    },
+    {
+      "scenario": "no matching result",
+      "state": {
+        "links": 0,
+        "panel": "找不到相关结果。",
+        "query": "zzzhenkunprobenone"
+      }
+    },
+    {
+      "case": "search after Swup result navigation",
+      "pass": true,
+      "url": "http://127.0.0.1:4339/about/",
+      "result": "关于我\n我非计算机科班出身，在学习探索气象学科知识的同时，自学并动手实践",
+      "diagnostic": "Result title is localized 关于我; use panel href rather than English title."
+    },
+    {
+      "case": "Escape closes desktop search",
+      "pass": true
+    },
+    {
+      "case": "mobile query close",
+      "state": {
+        "closed": true,
+        "inert": true
+      }
+    },
+    {
+      "case": "mobile unchanged query reopen",
+      "pass": true,
+      "result": "关于我\n我非计算机科班出身，在学习探索气象学科知识的同时，自学并动手实践"
+    },
+    {
+      "case": "modal keyboard wrap and Escape",
+      "last": {
+        "href": "/about/",
+        "tag": "A"
+      },
+      "first": {
+        "label": "关闭菜单"
+      },
+      "escape": {
+        "backgroundInert": false,
+        "focus": "nav-menu-switch",
+        "locked": false,
+        "menuClosed": true
+      }
+    },
+    {
+      "case": "menu scrim closes",
+      "state": {
+        "closed": true,
+        "focus": "nav-menu-switch",
+        "locked": false
+      }
+    },
+    {
+      "case": "20 repeated Swup menu navigations",
+      "pass": true,
+      "cycles": [
+        {
+          "cycle": 1,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/"
+        },
+        {
+          "cycle": 2,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/about/"
+        },
+        {
+          "cycle": 3,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/"
+        },
+        {
+          "cycle": 4,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/about/"
+        },
+        {
+          "cycle": 5,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/"
+        },
+        {
+          "cycle": 6,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/about/"
+        },
+        {
+          "cycle": 7,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/"
+        },
+        {
+          "cycle": 8,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/about/"
+        },
+        {
+          "cycle": 9,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/"
+        },
+        {
+          "cycle": 10,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/about/"
+        },
+        {
+          "cycle": 11,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/"
+        },
+        {
+          "cycle": 12,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/about/"
+        },
+        {
+          "cycle": 13,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/"
+        },
+        {
+          "cycle": 14,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/about/"
+        },
+        {
+          "cycle": 15,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/"
+        },
+        {
+          "cycle": 16,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/about/"
+        },
+        {
+          "cycle": 17,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/"
+        },
+        {
+          "cycle": 18,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/about/"
+        },
+        {
+          "cycle": 19,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/"
+        },
+        {
+          "cycle": 20,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/about/"
+        }
+      ]
+    },
+    {
+      "case": "accordion single toggle after 20 SPA visits",
+      "before": "false",
+      "after": "true",
+      "pass": true
+    },
+    {
+      "case": "1023 to 1024 breakpoint closes modal",
+      "at1023": {
+        "closed": false,
+        "locked": true,
+        "width": 1023
+      },
+      "at1024": {
+        "backgroundInert": false,
+        "closed": true,
+        "locked": false,
+        "width": 1024
+      }
+    },
+    {
+      "case": "slow Pagefind first query loading",
+      "state": {
+        "query": "气象",
+        "text": "正在搜索..."
+      }
+    },
+    {
+      "case": "slow Pagefind first query eventual actual result",
+      "pass": true,
+      "result": "关于我\n我非计算机科班出身，在学习探索气象学科知识的同时，自学并动手实践",
+      "diagnostic": "20s result wait expired; following DOM observation confirmed result without retyping. Multiple Pagefind assets each delayed 1.5s."
+    },
+    {
+      "case": "slow query replaced by no-match",
+      "pass": true,
+      "query": "zzzhenkunprobenone",
+      "results": 0
+    },
+    {
+      "case": "Pagefind 503 settled state",
+      "pass": true,
+      "panel": "找不到相关结果。",
+      "logs": [
+        {
+          "level": "error",
+          "message": "Failed to load Pagefind: Error: Pagefind script not found: 503\n    at loadPagefind (http://127.0.0.1:4341/:28:204)",
+          "timestamp": "2026-10-02T07:25:10.254Z",
+          "url": "http://127.0.0.1:4341/"
+        }
+      ]
+    },
+    {
+      "case": "whitespace clears failed search",
+      "state": {
+        "closed": true,
+        "inert": true,
+        "results": 0
+      }
+    }
+  ],
+  "subpath": [
+    {
+      "case": "first actual Pagefind query with deployment base",
+      "pass": true,
+      "href": "/Zhenkun-blog-site/about/",
+      "viewport": {
+        "dpr": 2,
+        "height": 839,
+        "width": 1462
+      }
+    },
+    {
+      "case": "rapid replacement retains final query",
+      "pass": true
+    },
+    {
+      "case": "actual result Swup navigation stays in base",
+      "url": "http://127.0.0.1:4339/Zhenkun-blog-site/about/",
+      "pass": true
+    },
+    {
+      "case": "search after SPA result navigation",
+      "pass": true
+    },
+    {
+      "case": "mobile close retains query",
+      "closed": "true"
+    },
+    {
+      "case": "mobile unchanged query reopen",
+      "pass": true
+    },
+    {
+      "case": "cold mobile single toggle",
+      "before": "true",
+      "after": "false",
+      "pass": true
+    },
+    {
+      "case": "dark mobile modal wrap Escape",
+      "initialDark": false,
+      "themeDark": true,
+      "last": {
+        "href": "/Zhenkun-blog-site/about/",
+        "tag": "A"
+      },
+      "first": "关闭菜单",
+      "escape": {
+        "backgroundInert": false,
+        "closed": true,
+        "focus": "nav-menu-switch",
+        "locked": false
+      }
+    },
+    {
+      "case": "dark menu scrim closes",
+      "state": {
+        "closed": true,
+        "locked": false,
+        "url": "/Zhenkun-blog-site/about/"
+      }
+    },
+    {
+      "case": "20 repeated Swup menu navigations",
+      "pass": true,
+      "cycles": [
+        {
+          "cycle": 1,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/"
+        },
+        {
+          "cycle": 2,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/about/"
+        },
+        {
+          "cycle": 3,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/"
+        },
+        {
+          "cycle": 4,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/about/"
+        },
+        {
+          "cycle": 5,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/"
+        },
+        {
+          "cycle": 6,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/about/"
+        },
+        {
+          "cycle": 7,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/"
+        },
+        {
+          "cycle": 8,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/about/"
+        },
+        {
+          "cycle": 9,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/"
+        },
+        {
+          "cycle": 10,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/about/"
+        },
+        {
+          "cycle": 11,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/"
+        },
+        {
+          "cycle": 12,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/about/"
+        },
+        {
+          "cycle": 13,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/"
+        },
+        {
+          "cycle": 14,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/about/"
+        },
+        {
+          "cycle": 15,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/"
+        },
+        {
+          "cycle": 16,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/about/"
+        },
+        {
+          "cycle": 17,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/"
+        },
+        {
+          "cycle": 18,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/about/"
+        },
+        {
+          "cycle": 19,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/"
+        },
+        {
+          "cycle": 20,
+          "backgroundInert": false,
+          "closed": true,
+          "locked": false,
+          "url": "/Zhenkun-blog-site/about/"
+        }
+      ]
+    },
+    {
+      "case": "accordion single toggle after 20 visits",
+      "before": "false",
+      "after": "true",
+      "pass": true
+    },
+    {
+      "case": "1023 to 1024 breakpoint release",
+      "at1023": {
+        "closed": false,
+        "locked": true,
+        "width": 1023
+      },
+      "at1024": {
+        "backgroundInert": false,
+        "closed": true,
+        "locked": false,
+        "width": 1024
+      }
+    },
+    {
+      "case": "normal viewport and light theme restored",
+      "state": {
+        "dark": false,
+        "height": 839,
+        "width": 1462
+      }
+    },
+    {
+      "case": "slow first query loading",
+      "state": {
+        "panel": "正在搜索...",
+        "query": "气象"
+      }
+    },
+    {
+      "case": "slow first query eventual actual result",
+      "pass": true,
+      "href": "/Zhenkun-blog-site/about/",
+      "diagnostic": "Result wait deadline expired; next DOM observation confirmed correct result without another edit. Pagefind assets delayed separately."
+    },
+    {
+      "case": "slow query clear replacement",
+      "pass": true,
+      "results": 0
+    },
+    {
+      "case": "Pagefind 503 settled state",
+      "pass": true,
+      "panel": "找不到相关结果。",
+      "logs": [
+        {
+          "level": "error",
+          "message": "Failed to load Pagefind: Error: Pagefind script not found: 503\n    at loadPagefind (http://127.0.0.1:4341/Zhenkun-blog-site/:28:215)",
+          "timestamp": "2026-10-02T07:34:54.249Z",
+          "url": "http://127.0.0.1:4341/Zhenkun-blog-site/"
+        }
+      ]
+    },
+    {
+      "case": "whitespace clears failed query",
+      "state": {
+        "closed": true,
+        "inert": true,
+        "results": 0
+      }
+    }
+  ],
+  "diagnostics": [
+    "Exact heading and English result locators did not match localized title/permalink; corrected to content regex and actual href.",
+    "Readonly scope does not expose navigator; browser version read from installed Edge metadata.",
+    "After desktop Escape and immediate viewport change, first mobile switch click left closed; cold-mobile direct reload single click passed. Responsive focus transition remains a narrow unclassified observation for review.",
+    "Menu click during theme-revealing snapshot had no effect; after html:not(.theme-revealing), dark-menu scenario passed. Theme animation origin not tested."
+  ]
+}

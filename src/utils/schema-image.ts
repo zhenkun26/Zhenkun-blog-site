@@ -3,7 +3,7 @@ import type { ImageMetadata } from "astro";
 import { profileConfig } from "@/config/profileConfig";
 import { siteConfig } from "@/config/siteConfig";
 import { defaultFavicons } from "@/constants/icon";
-import { url } from "./url-utils";
+import { getPublicAssetUrl } from "./deployment-contract";
 
 // 构建期一次性收集 src 下的图片资源，用于把 src 相对路径解析成 Astro 构建后的真实 URL。
 // 本模块只被服务端 .astro 组件导入（构建期），不要被客户端 .svelte 引用，
@@ -54,7 +54,7 @@ export async function toAbsoluteImageInfo(
 		return { url: src };
 	}
 	if (src.startsWith("/")) {
-		return { url: new URL(url(src), base).toString() };
+		return { url: getPublicAssetUrl(src, base, import.meta.env.BASE_URL) };
 	}
 	return getLocalImageInfo(src, basePath, base);
 }
@@ -81,7 +81,7 @@ async function getLocalImageInfo(
 	const img = await loadLocalImage(src, basePath);
 	if (!img) return null;
 	return {
-		url: new URL(url(img.src), base).toString(),
+		url: new URL(img.src, base).toString(),
 		width: img.width,
 		height: img.height,
 	};
@@ -134,7 +134,11 @@ async function getFaviconAsLogo(): Promise<{
 	if (/^https?:|^\/\//.test(favicon.src) || favicon.src.startsWith("data:")) {
 		logoUrl = favicon.src;
 	} else if (favicon.src.startsWith("/")) {
-		logoUrl = new URL(url(favicon.src), siteConfig.site_url).toString();
+		logoUrl = getPublicAssetUrl(
+			favicon.src,
+			siteConfig.site_url,
+			import.meta.env.BASE_URL,
+		);
 	} else {
 		logoUrl = await toAbsoluteImageUrl(favicon.src, "", siteConfig.site_url);
 	}

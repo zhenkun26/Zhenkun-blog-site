@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/scripts/zhenkun-verify-deployment.py", line 146, in <module>
+    assert feed.findtext("channel/link") == origin + base, feed.findtext("channel/link")
+AssertionError: https://zhenkun26.github.io/Zhenkun-blog-site/

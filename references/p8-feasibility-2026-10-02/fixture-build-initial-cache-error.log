@@ -1,0 +1,4 @@
+07:06:51 [vite] Re-optimizing dependencies because vite config has changed
+EPERM: operation not permitted, unlink '/Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/tmp/p8-astro-locale-fixture/node_modules/.vite/deps/_metadata.json'
+  Stack trace:
+

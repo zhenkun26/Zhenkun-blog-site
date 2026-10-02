@@ -1,7 +1,10 @@
 import { expressiveCodeConfig, navbarMode, siteConfig } from "@/config";
 import type { WALLPAPER_MODE } from "@/types/config";
 import { scheduleContentOverflowEnhancements } from "@/utils/content-overflow-utils";
-import { initializeFloatingPanels } from "@/utils/floating-panel-utils";
+import {
+	closeFloatingPanels,
+	initializeFloatingPanels,
+} from "@/utils/floating-panel-utils";
 import {
 	syncFullscreenBlur,
 	syncFullscreenOverlays,
@@ -149,6 +152,7 @@ function registerSwupHooks(): void {
 		}
 	});
 	window.swup.hooks.on("visit:start", (visit: { to: { url: string } }) => {
+		closeFloatingPanels();
 		// Start progress bar（WAAPI 合成线程动画，不强制回流）
 		startProgressBar();
 
@@ -240,6 +244,7 @@ function registerSwupHooks(): void {
 		}
 	});
 	window.swup.hooks.on("page:view", () => {
+		initializeFloatingPanels();
 		// 更新网格列数和侧边栏组件可见性
 		updateMainGridCols();
 		updateSidebarComponentsVisibility();

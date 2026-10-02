@@ -1,0 +1,239 @@
+scripts/zhenkun-test-deployment.mjs format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+    28  28 │     const prefix = base === "/" ? "" : "/Zhenkun-blog-site";
+    29  29 │     for (const route of [
+    30     │ - → → "booknav/",·"friends/",·"sponsor/",·"guestbook/",·"bangumi/",·"vndb/",
+    31     │ - → → "myanimelist/",·"gallery/",·"gallery/album/",·"bilibili/",·"dynamic/",
+    32     │ - → → "dynamic/comments/",·"404/",·"404.html",
+        30 │ + → → "booknav/",
+        31 │ + → → "friends/",
+        32 │ + → → "sponsor/",
+        33 │ + → → "guestbook/",
+        34 │ + → → "bangumi/",
+        35 │ + → → "vndb/",
+        36 │ + → → "myanimelist/",
+        37 │ + → → "gallery/",
+        38 │ + → → "gallery/album/",
+        39 │ + → → "bilibili/",
+        40 │ + → → "dynamic/",
+        41 │ + → → "dynamic/comments/",
+        42 │ + → → "404/",
+        43 │ + → → "404.html",
+    33  44 │     ]) {
+    34  45 │       test(`${base} sitemap excludes closed ${route}`, () => {
+    35     │ - → → → assert.equal(isPageInSitemap(`${origin}${base}${route}`,·base,·closed,·true),·false);
+        46 │ + → → → assert.equal(
+        47 │ + → → → → isPageInSitemap(`${origin}${base}${route}`,·base,·closed,·true),
+        48 │ + → → → → false,
+        49 │ + → → → );
+    36  50 │       });
+    37  51 │     }
+    38  52 │     test(`${base} enabled parent admits its child; unrelated routes survive`, () => {
+    39     │ - → → assert.equal(isPageInSitemap(`${origin}${base}gallery/album/`,·base,·{...closed,·gallery:·true},·true),·true);
+    40     │ - → → for·(const·route·of·["",·"about/",·"archive/",·"search/",·"posts/article/",·"friendship/"])·{
+    41     │ - → → → assert.equal(isPageInSitemap(`${origin}${base}${route}`,·base,·closed,·true),·true);
+        53 │ + → → assert.equal(
+        54 │ + → → → isPageInSitemap(
+        55 │ + → → → → `${origin}${base}gallery/album/`,
+        56 │ + → → → → base,
+        57 │ + → → → → {·...closed,·gallery:·true·},
+        58 │ + → → → → true,
+        59 │ + → → → ),
+        60 │ + → → → true,
+        61 │ + → → );
+        62 │ + → → for·(const·route·of·[
+        63 │ + → → → "",
+        64 │ + → → → "about/",
+        65 │ + → → → "archive/",
+        66 │ + → → → "search/",
+        67 │ + → → → "posts/article/",
+        68 │ + → → → "friendship/",
+        69 │ + → → ])·{
+        70 │ + → → → assert.equal(
+        71 │ + → → → → isPageInSitemap(`${origin}${base}${route}`,·base,·closed,·true),
+        72 │ + → → → → true,
+        73 │ + → → → );
+    42  74 │       }
+    43  75 │     });
+    44  76 │     test(`${base} comments require both the parent and comment capability`, () => {
+    45  77 │       const page = `${origin}${base}dynamic/comments/`;
+    46     │ - → → assert.equal(isPageInSitemap(page,·base,·{...closed,·dynamic:·true},·false),·false);
+    47     │ - → → assert.equal(isPageInSitemap(page,·base,·{...closed,·dynamic:·true},·true),·true);
+        78 │ + → → assert.equal(
+        79 │ + → → → isPageInSitemap(page,·base,·{·...closed,·dynamic:·true·},·false),
+        80 │ + → → → false,
+        81 │ + → → );
+        82 │ + → → assert.equal(
+        83 │ + → → → isPageInSitemap(page,·base,·{·...closed,·dynamic:·true·},·true),
+        84 │ + → → → true,
+        85 │ + → → );
+    48  86 │     });
+    49  87 │     test(`${base} public images accept one existing base prefix`, () => {
+    50     │ - → → assert.equal(getPublicAssetUrl("/favicon/logo.png",·origin,·base),·`${origin}${prefix}/favicon/logo.png`);
+    51     │ - → → assert.equal(getPublicAssetUrl(`${prefix}/favicon/logo.png`,·`${origin}/Zhenkun-blog-site/`,·base),·`${origin}${prefix}/favicon/logo.png`);
+    52     │ - → → for·(const·remote·of·["https://cdn.test/image.png",·"//cdn.test/image.png",·"data:image/png;base64,AQ=="])·{
+        88 │ + → → assert.equal(
+        89 │ + → → → getPublicAssetUrl("/favicon/logo.png",·origin,·base),
+        90 │ + → → → `${origin}${prefix}/favicon/logo.png`,
+        91 │ + → → );
+        92 │ + → → assert.equal(
+        93 │ + → → → getPublicAssetUrl(
+        94 │ + → → → → `${prefix}/favicon/logo.png`,
+        95 │ + → → → → `${origin}/Zhenkun-blog-site/`,
+        96 │ + → → → → base,
+        97 │ + → → → ),
+        98 │ + → → → `${origin}${prefix}/favicon/logo.png`,
+        99 │ + → → );
+       100 │ + → → for·(const·remote·of·[
+       101 │ + → → → "https://cdn.test/image.png",
+       102 │ + → → → "//cdn.test/image.png",
+       103 │ + → → → "data:image/png;base64,AQ==",
+       104 │ + → → ])·{
+    53 105 │         assert.equal(getPublicAssetUrl(remote, origin, base), remote);
+    54 106 │       }
+    55 107 │     });
+    56 108 │     test(`${base} OG uses literal encoded identity under the deployment base`, () => {
+    57     │ - → → assert.equal(getGeneratedOgUrl("notes/中文·index.md",·origin,·base),·`${origin}${prefix}/og/notes/%E4%B8%AD%E6%96%87%20index.md.png`);
+       109 │ + → → assert.equal(
+       110 │ + → → → getGeneratedOgUrl("notes/中文·index.md",·origin,·base),
+       111 │ + → → → `${origin}${prefix}/og/notes/%E4%B8%AD%E6%96%87%20index.md.png`,
+       112 │ + → → );
+    58 113 │       assert.throws(() => getGeneratedOgUrl("../escape", origin, base));
+    59 114 │     });
+    ······ │ 
+    61 116 │       for (const route of ["archive/", "search/"]) {
+    62 117 │         const page = new URL(`${origin}${base}${route}?q=abc#section`);
+    63     │ - → → → assert.equal(getDeploymentCanonicalUrl(page,·base),·`${origin}${base}${route}`);
+       118 │ + → → → assert.equal(
+       119 │ + → → → → getDeploymentCanonicalUrl(page,·base),
+       120 │ + → → → → `${origin}${base}${route}`,
+       121 │ + → → → );
+    64 122 │         assert.equal(page.search, "?q=abc");
+    65 123 │         assert.equal(page.hash, "#section");
+    66 124 │       }
+    67     │ - → → assert.equal(getDeploymentCanonicalUrl(new·URL(`${origin}${base}2/?keep=1`),·base),·`${origin}${base}2/?keep=1`);
+       125 │ + → → assert.equal(
+       126 │ + → → → getDeploymentCanonicalUrl(new·URL(`${origin}${base}2/?keep=1`),·base),
+       127 │ + → → → `${origin}${base}2/?keep=1`,
+       128 │ + → → );
+    68 129 │     });
+    69 130 │     test(`${base} error destination points at the emitted static file`, () => {
+    ······ │ 
+    73 134 │   
+    74 135 │   test("base stripping is segment aware and strips only once", () => {
+    75     │ - → assert.equal(getLogicalPathname("/Zhenkun-blog-site/Zhenkun-blog-site/search/",·"/Zhenkun-blog-site/"),·"/Zhenkun-blog-site/search/");
+    76     │ - → assert.equal(getLogicalPathname("/Zhenkun-blog-siteger/search/",·"/Zhenkun-blog-site/"),·null);
+    77     │ - → assert.equal(isPageInSitemap(`${origin}/gallery/`,·"/Zhenkun-blog-site/",·closed,·true),·false);
+    78     │ - → assert.equal(getPublicAssetUrl("/Zhenkun-blog-siteger/logo.png",·origin,·"/Zhenkun-blog-site/"),·`${origin}/Zhenkun-blog-site/Zhenkun-blog-siteger/logo.png`);
+    79     │ - → assert.equal(getGeneratedOgUrl("og/article",·origin,·"/og/"),·`${origin}/og/og/og/article.png`);
+       136 │ + → assert.equal(
+       137 │ + → → getLogicalPathname("/Zhenkun-blog-site/Zhenkun-blog-site/search/",·"/Zhenkun-blog-site/"),
+       138 │ + → → "/Zhenkun-blog-site/search/",
+       139 │ + → );
+       140 │ + → assert.equal(
+       141 │ + → → getLogicalPathname("/Zhenkun-blog-siteger/search/",·"/Zhenkun-blog-site/"),
+       142 │ + → → null,
+       143 │ + → );
+       144 │ + → assert.equal(
+       145 │ + → → isPageInSitemap(`${origin}/gallery/`,·"/Zhenkun-blog-site/",·closed,·true),
+       146 │ + → → false,
+       147 │ + → );
+       148 │ + → assert.equal(
+       149 │ + → → getPublicAssetUrl("/Zhenkun-blog-siteger/logo.png",·origin,·"/Zhenkun-blog-site/"),
+       150 │ + → → `${origin}/Zhenkun-blog-site/Zhenkun-blog-siteger/logo.png`,
+       151 │ + → );
+       152 │ + → assert.equal(
+       153 │ + → → getGeneratedOgUrl("og/article",·origin,·"/og/"),
+       154 │ + → → `${origin}/og/og/og/article.png`,
+       155 │ + → );
+    80 156 │   });
+    81 157 │   
+    82 158 │   test("public asset traversal and unsafe bases fail", () => {
+    83     │ - → assert.throws(()·=>·getPublicAssetUrl("/%2e%2e/secret",·origin,·"/Zhenkun-blog-site/"));
+       159 │ + → assert.throws(()·=>
+       160 │ + → → getPublicAssetUrl("/%2e%2e/secret",·origin,·"/Zhenkun-blog-site/"),
+  3 more lines truncated
+  
+
+src/utils/deployment-contract.ts format ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Formatter would have printed the following content:
+  
+     3  3 │   
+     4  4 │   /** Strip only the configured leading base, never a matching route segment. */
+     5    │ - export·function·getLogicalPathname(pathname:·string,·base:·string):·string·|·null·{
+        5 │ + export·function·getLogicalPathname(
+        6 │ + → pathname:·string,
+        7 │ + → base:·string,
+        8 │ + ):·string·|·null·{
+     6  9 │     const prefix = withDeploymentBase("/", base).replace(/\/$/, "");
+     7 10 │     if (!prefix) return pathname;
+    ····· │ 
+    32 35 │     assertSafePostId(id);
+    33 36 │     const encodedId = id.split("/").map(encodeURIComponent).join("/");
+    34    │ - → return·new·URL(withDeploymentBase(`/og/${encodedId}.png`,·base),·site).toString();
+       37 │ + → return·new·URL(
+       38 │ + → → withDeploymentBase(`/og/${encodedId}.png`,·base),
+       39 │ + → → site,
+       40 │ + → ).toString();
+    35 41 │   }
+    36 42 │   
+  
+
+src/utils/schema-utils.ts:1:1 assist/source/organizeImports  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Sort these imports.
+  
+  > 1 │ import type { ProfileConfig, SiteConfig } from "@/types/config";
+      │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 2 │ import { getSearchUrl, url } from "./url-utils";
+  > 3 │ import { getPublicAssetUrl } from "./deployment-contract";
+      │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    4 │ 
+    5 │ /**
+  
+  i Safe fix: Organize imports and exports (Biome)
+  
+      1   1 │   import type { ProfileConfig, SiteConfig } from "@/types/config";
+      2     │ - import·{·getSearchUrl,·url·}·from·"./url-utils";
+      3     │ - import·{·getPublicAssetUrl·}·from·"./deployment-contract";
+          2 │ + import·{·getPublicAssetUrl·}·from·"./deployment-contract";
+          3 │ + import·{·getSearchUrl,·url·}·from·"./url-utils";
+      4   4 │   
+      5   5 │   /**
+  
+
+src/utils/url-utils.ts:1:1 assist/source/organizeImports  FIXABLE  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Sort these imports.
+  
+  > 1 │ import I18nKey from "@i18n/i18nKey";
+      │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 2 │ import { i18n } from "@i18n/translation";
+  > 3 │ import { getPostPath, withDeploymentBase } from "./post-contract";
+  > 4 │ import { getDeploymentCanonicalUrl } from "./deployment-contract";
+      │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    5 │ 
+    6 │ /**
+  
+  i Safe fix: Organize imports and exports (Biome)
+  
+     1  1 │   import I18nKey from "@i18n/i18nKey";
+     2  2 │   import { i18n } from "@i18n/translation";
+     3    │ - import·{·getPostPath,·withDeploymentBase·}·from·"./post-contract";
+     4    │ - import·{·getDeploymentCanonicalUrl·}·from·"./deployment-contract";
+        3 │ + import·{·getDeploymentCanonicalUrl·}·from·"./deployment-contract";
+        4 │ + import·{·getPostPath,·withDeploymentBase·}·from·"./post-contract";
+     5  5 │   
+     6  6 │   /**
+  
+
+Checked 6 files in 13ms. No fixes applied.
+Found 4 errors.
+check ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+

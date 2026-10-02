@@ -17,7 +17,6 @@ import {
 	getCategoryUrl,
 	getFileDirFromPath,
 	getPostUrlBySlug,
-	removeFileExtension,
 } from "@utils/url-utils";
 import { Icon } from "astro-icon/components";
 import dayjs from "dayjs";
@@ -54,8 +53,7 @@ const showPostActionCard = siteConfig.post.share || showSponsorButton;
 export async function getStaticPaths() {
 	const blogEntries = await getSortedPosts();
 	return blogEntries.map((entry) => {
-		// 将 id 转换为 slug（移除扩展名）以匹配路由参数
-		const slug = removeFileExtension(entry.id);
+		const slug = entry.id;
 		return {
 			params: { slug },
 			props: { entry },
@@ -145,9 +143,11 @@ const breadcrumbItems = [
 if (entry.data.category) {
 	breadcrumbItems.push({
 		name: entry.data.category,
-		url:
-			toAbsoluteUrl(getCategoryUrl(entry.data.category), siteConfig.site_url) ??
+		// getCategoryUrl already returns a deployment-prefixed route.
+		url: new URL(
+			getCategoryUrl(entry.data.category),
 			siteConfig.site_url,
+		).toString(),
 	});
 }
 breadcrumbItems.push({ name: entry.data.title, url: Astro.url.toString() });

@@ -1,0 +1,19 @@
+{
+  "method": "Codex in-app Chromium production preview; DOM/title/viewport measurements and inspected PNG captures",
+  "root": {
+    "base": "/",
+    "desktop": {"width":1280,"height":720,"scrollWidth":1265,"postLinks":0,"imagesLoaded":true,"screenshot":"root-home-desktop.png","accepted":true},
+    "mobile": {"width":390,"height":844,"scrollWidth":375,"postLinks":0,"heroLinks":[{"label":"RSS","href":"/rss/"}],"screenshot":"root-home-mobile.png","accepted":true},
+    "rssMobile": {"width":390,"height":844,"scrollWidth":375,"postLinks":0,"title":"RSS 订阅 - Zhenkun","mainOpacity":"1","screenshot":"root-rss-mobile-stable.png","accepted":true}
+  },
+  "subpath": {
+    "base": "/Zhenkun-blog-site/",
+    "desktop": {"width":1280,"height":720,"scrollWidth":1265,"postLinks":0,"imagesLoaded":true,"heroLinks":[{"label":"RSS","href":"/Zhenkun-blog-site/rss/"}],"heroOpacity":"1","heroAncestorsVisible":true,"screenshot":"subpath-home-desktop-stable.png","accepted":true},
+    "mobile": {"width":390,"height":844,"scrollWidth":375,"postLinks":0,"heroLinks":[{"label":"RSS","href":"/Zhenkun-blog-site/rss/"}],"mainOpacity":"1","screenshot":"subpath-home-mobile.png","accepted":true}
+  },
+  "rejected": [
+    {"screenshot":"root-rss-mobile.png","accepted":false,"reason":"Captured during Swup opacity transition; stable replacement retained separately."},
+    {"screenshot":"subpath-home-desktop.png","accepted":false,"reason":"Hero reveal still hid the subtitle/RSS icon; stable replacement verifies ancestors at opacity 1."}
+  ],
+  "limitations": ["Current public article cohort is empty", "In-app Chromium only; no physical device or deployed-host claim", "No live published-post/recommendation/comment acceptance", "Existing P2 protocol and P3 search/menu defects are outside this scoped result"]
+}

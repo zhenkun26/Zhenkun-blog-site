@@ -37,11 +37,11 @@ Do not commit secrets, tokens, or service keys in config files. Keep deployment-
 
 # Zhenkun-blog-site 项目约定（追加于上游 AGENTS.md 之上）
 
-> 本节是博客项目的仓库规则。与上文主题开发指引冲突时以本节为准，且冲突解决需在 `docs/DECISIONS.md` 记录 ADR。
+> 本节是博客项目的仓库规则。用户当前明确指令优先于项目约定；在项目约定内，本节优先于上游主题开发指引。技术/方向取舍以 DECISIONS 的最新适用 ADR 为准（superseded 条目保留历史），任务状态只看 ROADMAP；冲突协调写入 ADR，不由历史快照恢复已撤回的方向。
 
 ## 项目定位
 
-- 这是 Zhenkun 的个人博客，底座为 CuteLeaf/Firefly（Astro 7 + Svelte 5 + Tailwind），专注中文内容与中文社区。
+- 这是公共品牌与作者均为 Zhenkun 的个人博客（仓库与站点路径为 Zhenkun-blog-site），底座为 CuteLeaf/Firefly（Astro 7 + Svelte 5 + Tailwind）。G6 已批准中文原 URL、英文 /en/ 与两套单语言 UI；Home/About 首增量沿 ADR-XB-014，精确任务/接纳状态只看 canonical ROADMAP，不由旧调查措辞恢复待确认状态。
 - 上游仓库保留为 git remote `upstream`（分支 `master`）；本地 `main` 在 Firefly 历史之上叠加自有提交，message 延续 Conventional Commits。
 
 ## 文档索引（单一状态源）

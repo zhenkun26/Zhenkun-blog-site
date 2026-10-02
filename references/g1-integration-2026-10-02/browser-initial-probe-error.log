@@ -1,0 +1,1 @@
+Initial browser probe failed in Runtime.evaluate with SyntaxError: missing ) after argument list; selector quote escaping in test instrumentation was incorrect. No application change. Replaced selector expression with meta attribute lookup, then reran affected browser probe.

@@ -11,11 +11,11 @@ interface Props {
 const processedLinks = Astro.props.links;
 const navTitle = siteConfig.navbar.title || siteConfig.title;
 ---
-<div id="nav-menu-panel" class:list={["float-panel-closed fixed inset-0 z-1100"]} data-floating-panel data-floating-panel-trigger="nav-menu-switch" data-floating-panel-scroll-lock inert aria-hidden="true">
+<div id="nav-menu-panel" class:list={["float-panel-closed fixed inset-0 z-1100"]} data-floating-panel data-floating-panel-modal data-floating-panel-trigger="nav-menu-switch" data-floating-panel-scroll-lock inert aria-hidden="true">
     <!-- 遮罩（scrim）：点击关闭 -->
     <div class="mobile-menu-scrim" aria-hidden="true"></div>
     <!-- 抽屉：MD3 侧边导航，右侧滑入，占满整高，内部滚动 -->
-    <aside class="mobile-menu-drawer" role="dialog" aria-modal="true" aria-label="导航菜单">
+    <aside class="mobile-menu-drawer" role="dialog" aria-modal="true" aria-label="导航菜单" tabindex="-1">
         <header class="mobile-menu-header">
             <span class="mobile-menu-title">{navTitle}</span>
             <button type="button" class="mobile-menu-close" aria-label="关闭菜单">
@@ -294,36 +294,34 @@ const navTitle = siteConfig.navbar.title || siteConfig.title;
 </style>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const mobileDropdowns = document.querySelectorAll("[data-mobile-dropdown]");
-        mobileDropdowns.forEach((dropdown) => {
-            const trigger = dropdown.querySelector("[data-mobile-dropdown-trigger]");
-            const submenu = dropdown.querySelector("[data-mobile-submenu]");
-            if (!trigger || !submenu) return;
+    // Swup reruns page scripts. Keep document delegates singular across visits.
+    if (!window.__zhenkunNavMenuInit) {
+        window.__zhenkunNavMenuInit = true;
+        document.addEventListener("DOMContentLoaded", markActiveNav);
 
-            trigger.addEventListener("click", (e) => {
-                e.preventDefault();
-                const isExpanded = dropdown.getAttribute("data-expanded") === "true";
-                mobileDropdowns.forEach((other) => {
-                    if (other !== dropdown) setDropdownExpanded(other, false);
-                });
-                setDropdownExpanded(dropdown, !isExpanded);
+        // 当前页高亮 + 含当前页的父级自动展开（Swup 切页后重扫）
+        document.addEventListener("astro:page-load", markActiveNav);
+        document.addEventListener("swup:contentReplaced", markActiveNav);
+
+        // 委托同时覆盖关闭、路由和手风琴，避免 SPA 替换后留下失效的节点监听。
+        document.addEventListener("click", (e) => {
+            const t = e.target;
+            if (!(t instanceof Element)) return;
+            if (t.closest(".mobile-menu-scrim, .mobile-menu-close, .mobile-menu-list a[href]")) {
+                document.getElementById("nav-menu-panel")?.classList.add("float-panel-closed");
+            }
+            const trigger = t.closest("[data-mobile-dropdown-trigger]");
+            const dropdown = trigger?.closest("[data-mobile-dropdown]");
+            if (!dropdown) return;
+            e.preventDefault();
+            const isExpanded = dropdown.getAttribute("data-expanded") === "true";
+            document.querySelectorAll("[data-mobile-dropdown]").forEach((other) => {
+                if (other !== dropdown) setDropdownExpanded(other, false);
             });
+            setDropdownExpanded(dropdown, !isExpanded);
         });
-        markActiveNav();
-    });
-
-    // 当前页高亮 + 含当前页的父级自动展开（Swup 切页后重扫）
-    document.addEventListener("astro:page-load", markActiveNav);
-    document.addEventListener("swup:contentReplaced", markActiveNav);
-
-    // 遮罩点击 / 关闭按钮：文档级委托监听，跨 Swup 替换也有效
-    document.addEventListener("click", (e) => {
-        const t = e.target;
-        if (t instanceof Element && t.closest(".mobile-menu-scrim, .mobile-menu-close")) {
-            document.getElementById("nav-menu-panel")?.classList.add("float-panel-closed");
-        }
-    });
+    }
+    markActiveNav();
 
     function markActiveNav() {
         const path = location.pathname;

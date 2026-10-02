@@ -1,0 +1,48 @@
+{
+  "source": "f0ea5164ab7e0ccc34ecfc478c6c3e5813a50db7",
+  "status": "PASS",
+  "browser": "Selected Edge GUI; version not freshly queried here",
+  "desktopHome": {
+    "title": "Zhenkun - 记录、思考与灵感",
+    "viewport": {
+      "width": 1462,
+      "height": 839,
+      "dpr": 2
+    },
+    "author": "Zhenkun",
+    "siteName": "Zhenkun",
+    "overflow": false,
+    "screenshot": "home-desktop.jpg"
+  },
+  "desktopAbout": {
+    "meta": {
+      "author": "Zhenkun",
+      "description": "探索气象学、人工智能与计算机科学的交叉，记录学习、实践与生活。",
+      "siteName": "Zhenkun"
+    },
+    "overflow": false,
+    "text": "关于我\n关于我 / About Me#\n\n你好，我是 Zhenkun，这里是我的随记小站。\n\n探索气象学、人工智能与计算机科学的交叉，记录学习、实践与生活。\n\n我非计算机科班出身，在学习探索气象学科知识的同时，自学并动手实践深度学习、RAG、Agent 等 AI 领域的项目。\n\n✍️ 这里写什么#\nAI\n大气科学\n生活随笔\n🛠️ 关于本站#\n\n本站基于 Firefly（Fuwari 的二次开发主题）构建，Astro 驱动，部署在 GitHub Pages。\n\nGitHub：@zhenkun26\n邮箱：zhenkunz25@gmail.com\n\n感谢你的来访！如果某篇笔记恰好对你有用，那就再好不过了。",
+    "title": "关于我 - Zhenkun",
+    "url": "http://127.0.0.1:4342/Zhenkun-blog-site/about/",
+    "viewport": {
+      "dpr": 2,
+      "height": 839,
+      "width": 1462
+    }
+  },
+  "mobileAbout": {
+    "author": "Zhenkun",
+    "navbar": "Zhenkun\n请输入搜索关键词。\n使一颗心免于哀伤\n\n知更鸟 / HOYO-MiX / Chevy\n\n0:00\n/\n0:00\n暂无歌词",
+    "overflow": false,
+    "siteName": "Zhenkun",
+    "text": "关于我\n关于我 / About Me#\n\n你好，我是 Zhenkun，这里是我的随记小站。\n\n探索气象学、人工智能与计算机科学的交叉，记录学习、实践与生活。\n\n我非计算机科班出身，在学习探索气象学科知识的同时，自学并动手实践深度学习、RAG、Agent 等 AI 领域的项目。\n\n✍️ 这里写什么#\nAI\n大气科学\n生活随笔\n🛠️ 关于本站#\n\n本站基于 Firefly（Fuwari 的二次开发主题）构建，Astro 驱动，部署在 GitHub Pages。\n\nGitHub：@zhenkun26\n邮箱：zhenkunz25@gmail.com\n\n感谢你的来访！如果某篇笔记恰好对你有用，那就再好不过了。",
+    "title": "关于我 - Zhenkun",
+    "url": "http://127.0.0.1:4342/Zhenkun-blog-site/about/",
+    "viewport": {
+      "dpr": 1,
+      "height": 844,
+      "width": 390
+    }
+  },
+  "scope": "Actual desktop Home/About and cold emulated 390x844 About. No external contact click, real article OG PNG, physical device or production deployment claim."
+}

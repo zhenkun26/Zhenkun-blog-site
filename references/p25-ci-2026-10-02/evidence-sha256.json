@@ -1,0 +1,22 @@
+{
+  "references/p25-ci-2026-10-02/biome-baseline-readable.log": "fc5bc8b716d886b6109c5f66d5295a6fef577650b80e6ea8a7624753440dd246",
+  "references/p25-ci-2026-10-02/biome-baseline.log": "7a7c736675f038901ea65c162766fd94af7024cb570067178354149767d9b9af",
+  "references/p25-ci-2026-10-02/biome-new-scripts-final.log": "926eef8f9606e3b1d491d4d82c678ffac912b835eca66ada8e821274f12af6c0",
+  "references/p25-ci-2026-10-02/biome-new-scripts-format.log": "149879ccc5c125e8b62242cdee850a6b0f1491ec25c42ce36ae904c7da9036c6",
+  "references/p25-ci-2026-10-02/biome-new-scripts-pass.log": "2da747d3f669e92026c1ee66c469df054276c8f3e4ccb6be41e3f5334b5db9df",
+  "references/p25-ci-2026-10-02/biome-new-scripts.log": "e51747fd8e73a9ee67031969096d6c990c5db332054c2856263d5cc9e20ce424",
+  "references/p25-ci-2026-10-02/native-tests-accepted.log": "c661ae5a0206af7234474b0338905762a23f2028cc36e8af233e23a06497fa7c",
+  "references/p25-ci-2026-10-02/native-tests-final.log": "fb191b9f74f7b31d5e853e3302834ed79ba2167cea54092dfb4f097d1a08cd4a",
+  "references/p25-ci-2026-10-02/native-tests.log": "cd39c16c6acbb96c46ac06123d6ce8c3609bc26ee5cb2f212cda6a2f7b590f11",
+  "references/p25-ci-2026-10-02/report.md": "fb421d3054c0f3c6d277ac9807a342f8071103bd40514b180eae70e1bd834294",
+  "references/p25-ci-2026-10-02/retained-subpath-artifacts-pass.json": "154e0b8aee95b69eb7b0e48a4546bb5aa8c242b6d9da35528c35910a6e1dbe1a",
+  "references/p25-ci-2026-10-02/retained-subpath-artifacts.json": "154e0b8aee95b69eb7b0e48a4546bb5aa8c242b6d9da35528c35910a6e1dbe1a",
+  "references/p25-ci-2026-10-02/source-snapshot.json": "6c2103f83b7effc746b8dc5bfc035c6a9747df93a3604e10f506404ff9d11194",
+  "references/p25-ci-2026-10-02/type-check-pass.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "references/p25-ci-2026-10-02/type-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "references/p25-ci-2026-10-02/workflow-audit.json": "f39a5e23ae727a16740e64d18da14aab182ea5e444b29444d748a22c60ba582e",
+  "references/p25-ci-2026-10-02/workflow-audit.mjs": "cd6d2757aa4446dc7930db3cd04b45a01519677ced8f7ac645d28d6b25cb4539",
+  "docs/ROADMAP.md": "a6e64e5aad1d5403ddc977993902872106a9b31ccd979e353669d1f6a99f408a",
+  "docs/DECISIONS.md": "1107602aa96de4e9979c558cb971efce543d5123a9fa7565ce2626f7f0a11d1c",
+  "docs/ERROR_MEMORY.md": "5544a48810f546ea727470b6ceb9d0fb988f1f596e99d9d0eb12b8874c71ff10"
+}

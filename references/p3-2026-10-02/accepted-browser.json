@@ -1,0 +1,339 @@
+{
+  "menuOpen": {
+    "backgroundInert": [
+      "SCRIPT",
+      "progress-bar",
+      "SCRIPT",
+      "config-carrier",
+      "SCRIPT",
+      "AUDIO",
+      "top-row",
+      "wallpaper-wrapper",
+      "DIV",
+      "DIV",
+      "SCRIPT",
+      "playlist-item-template",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "heatmap-tooltip",
+      "swup-announcer"
+    ],
+    "dpr": 1,
+    "focusedClass": "mobile-menu-close",
+    "focusedId": "",
+    "focusedTag": "BUTTON",
+    "focusedText": "",
+    "height": 844,
+    "insideMenu": true,
+    "menuClosed": false,
+    "menuHidden": "false",
+    "scrollLocked": true,
+    "triggerExpanded": "true",
+    "width": 390
+  },
+  "shiftTabWrap": {
+    "backgroundInert": [
+      "SCRIPT",
+      "progress-bar",
+      "SCRIPT",
+      "config-carrier",
+      "SCRIPT",
+      "AUDIO",
+      "top-row",
+      "wallpaper-wrapper",
+      "DIV",
+      "DIV",
+      "SCRIPT",
+      "playlist-item-template",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "heatmap-tooltip",
+      "swup-announcer"
+    ],
+    "dpr": 1,
+    "focusedClass": "mobile-menu-item",
+    "focusedId": "",
+    "focusedTag": "A",
+    "focusedText": "关于我",
+    "height": 844,
+    "insideMenu": true,
+    "menuClosed": false,
+    "menuHidden": "false",
+    "scrollLocked": true,
+    "triggerExpanded": "true",
+    "width": 390
+  },
+  "tabWrap": {
+    "backgroundInert": [
+      "SCRIPT",
+      "progress-bar",
+      "SCRIPT",
+      "config-carrier",
+      "SCRIPT",
+      "AUDIO",
+      "top-row",
+      "wallpaper-wrapper",
+      "DIV",
+      "DIV",
+      "SCRIPT",
+      "playlist-item-template",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "heatmap-tooltip",
+      "swup-announcer"
+    ],
+    "dpr": 1,
+    "focusedClass": "mobile-menu-close",
+    "focusedId": "",
+    "focusedTag": "BUTTON",
+    "focusedText": "",
+    "height": 844,
+    "insideMenu": true,
+    "menuClosed": false,
+    "menuHidden": "false",
+    "scrollLocked": true,
+    "triggerExpanded": "true",
+    "width": 390
+  },
+  "accordionOpen": {
+    "hidden": "false",
+    "inert": false
+  },
+  "archiveRoute": {
+    "backgroundInert": [
+      "nav-menu-panel"
+    ],
+    "dpr": 1,
+    "focusedClass": "min-h-screen dynamic-navbar",
+    "focusedId": "",
+    "focusedTag": "BODY",
+    "focusedText": "[body]",
+    "height": 844,
+    "insideMenu": false,
+    "menuClosed": true,
+    "menuHidden": "true",
+    "scrollLocked": false,
+    "triggerExpanded": "false",
+    "width": 390,
+    "url": "http://127.0.0.1:4336/Zhenkun-blog-site/archive/"
+  },
+  "accordionBeforeSpaClick": "false",
+  "accordionFirstSpaClick": "true",
+  "accordionSecondSpaClick": "false",
+  "aboutRoute": {
+    "backgroundInert": [
+      "nav-menu-panel"
+    ],
+    "dpr": 1,
+    "focusedClass": "min-h-screen dynamic-navbar",
+    "focusedId": "",
+    "focusedTag": "BODY",
+    "focusedText": "[body]",
+    "height": 844,
+    "insideMenu": false,
+    "menuClosed": true,
+    "menuHidden": "true",
+    "scrollLocked": false,
+    "triggerExpanded": "false",
+    "width": 390
+  },
+  "searchAfterSpa": {
+    "ariaHidden": "false",
+    "closed": false,
+    "links": [
+      "/Zhenkun-blog-site/about/"
+    ],
+    "text": "  关于我  我非计算机科班出身，在学习探索气象学科知识的同时，自学并动手实践  "
+  },
+  "searchClosedAfterSpa": {
+    "ariaHidden": "true",
+    "closed": true,
+    "links": [],
+    "text": "  找不到相关结果。"
+  },
+  "reopenAfterSpa": {
+    "ariaHidden": "false",
+    "closed": false,
+    "links": [
+      "/Zhenkun-blog-site/about/"
+    ],
+    "text": "  关于我  我非计算机科班出身，在学习探索气象学科知识的同时，自学并动手实践  "
+  },
+  "resultClick": {
+    "state": {
+      "ariaHidden": "true",
+      "closed": true,
+      "links": [],
+      "text": "  请输入搜索关键词。"
+    },
+    "url": "http://127.0.0.1:4336/Zhenkun-blog-site/about/"
+  },
+  "thirdVisitAccordionBefore": "false",
+  "thirdVisitAccordionAfter": "true",
+  "menuEscape": {
+    "backgroundInert": [
+      "nav-menu-panel"
+    ],
+    "dpr": 1,
+    "focusedClass": "btn-plain scale-animation rounded-lg w-9 h-9 md:w-11 md:h-11 active:scale-90 lg:hidden!",
+    "focusedId": "nav-menu-switch",
+    "focusedTag": "BUTTON",
+    "focusedText": "",
+    "height": 844,
+    "insideMenu": false,
+    "menuClosed": true,
+    "menuHidden": "true",
+    "scrollLocked": false,
+    "triggerExpanded": "false",
+    "width": 390
+  },
+  "scrim": {
+    "backgroundInert": [
+      "nav-menu-panel"
+    ],
+    "dpr": 1,
+    "focusedClass": "btn-plain scale-animation rounded-lg w-9 h-9 md:w-11 md:h-11 active:scale-90 lg:hidden!",
+    "focusedId": "nav-menu-switch",
+    "focusedTag": "BUTTON",
+    "focusedText": "",
+    "height": 844,
+    "insideMenu": false,
+    "menuClosed": true,
+    "menuHidden": "true",
+    "scrollLocked": false,
+    "triggerExpanded": "false",
+    "width": 390,
+    "urlUnchanged": true
+  },
+  "closeButton": {
+    "backgroundInert": [
+      "nav-menu-panel"
+    ],
+    "dpr": 1,
+    "focusedClass": "btn-plain scale-animation rounded-lg w-9 h-9 md:w-11 md:h-11 active:scale-90 lg:hidden!",
+    "focusedId": "nav-menu-switch",
+    "focusedTag": "BUTTON",
+    "focusedText": "",
+    "height": 844,
+    "insideMenu": false,
+    "menuClosed": true,
+    "menuHidden": "true",
+    "scrollLocked": false,
+    "triggerExpanded": "false",
+    "width": 390
+  },
+  "belowBreakpoint": {
+    "backgroundInert": [
+      "SCRIPT",
+      "progress-bar",
+      "SCRIPT",
+      "config-carrier",
+      "SCRIPT",
+      "AUDIO",
+      "top-row",
+      "wallpaper-wrapper",
+      "DIV",
+      "DIV",
+      "SCRIPT",
+      "playlist-item-template",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "SCRIPT",
+      "heatmap-tooltip",
+      "swup-announcer"
+    ],
+    "dpr": 1,
+    "focusedClass": "mobile-menu-close",
+    "focusedId": "",
+    "focusedTag": "BUTTON",
+    "focusedText": "",
+    "height": 844,
+    "insideMenu": true,
+    "menuClosed": false,
+    "menuHidden": "false",
+    "scrollLocked": true,
+    "triggerExpanded": "true",
+    "width": 1023
+  },
+  "atBreakpoint": {
+    "backgroundInert": [
+      "nav-menu-panel"
+    ],
+    "dpr": 1,
+    "focusedClass": "min-h-screen dynamic-navbar",
+    "focusedId": "",
+    "focusedTag": "BODY",
+    "focusedText": "[body]",
+    "height": 844,
+    "insideMenu": false,
+    "menuClosed": true,
+    "menuHidden": "true",
+    "scrollLocked": false,
+    "triggerExpanded": "false",
+    "width": 1024
+  },
+  "defaultViewport": {
+    "dpr": 2,
+    "height": 792,
+    "width": 1462
+  },
+  "viewportTargetDiagnostic": {
+    "rejectedAtBreakpoint": {
+      "backgroundInert": [
+        "SCRIPT",
+        "progress-bar",
+        "SCRIPT",
+        "config-carrier",
+        "SCRIPT",
+        "AUDIO",
+        "top-row",
+        "wallpaper-wrapper",
+        "DIV",
+        "DIV",
+        "SCRIPT",
+        "playlist-item-template",
+        "SCRIPT",
+        "SCRIPT",
+        "SCRIPT",
+        "SCRIPT",
+        "SCRIPT",
+        "SCRIPT",
+        "SCRIPT",
+        "heatmap-tooltip",
+        "swup-announcer"
+      ],
+      "dpr": 1,
+      "focusedClass": "mobile-menu-close",
+      "focusedId": "",
+      "focusedTag": "BUTTON",
+      "focusedText": "",
+      "height": 844,
+      "insideMenu": true,
+      "menuClosed": false,
+      "menuHidden": "false",
+      "scrollLocked": true,
+      "triggerExpanded": "true",
+      "width": 390
+    },
+    "note": "Capability targeted an older surviving task tab; width remained 390. Not a breakpoint acceptance."
+  }
+}

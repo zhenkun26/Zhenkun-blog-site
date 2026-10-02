@@ -12,7 +12,7 @@ export const profileConfig: ProfileConfig = {
 	name: "Zhenkun",
 
 	// 个人签名
-	bio: "在代码与生活之间，随手记下灵感与思考。",
+	bio: "探索气象学、人工智能与计算机科学的交叉，记录学习、实践与生活。",
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons
@@ -30,7 +30,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Email",
 			icon: "fa7-solid:envelope",
-			url: "mailto:zzk26personal@163.com",
+			url: "mailto:zhenkunz25@gmail.com",
 			showName: false,
 		},
 		{

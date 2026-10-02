@@ -1,0 +1,18 @@
+{
+  "observed_at_utc": "2026-10-02T06:58:02.212536+00:00",
+  "branch": "codex/refactor-publication-contracts",
+  "from": "ac4be592811cc7450c73806bca5d98c5be2babdb",
+  "to": "ad1a04f20ac5d92f64aacfa5bdf90767f6e5f421",
+  "method": "git fetch local exact SHA; git merge --ff-only exact SHA",
+  "review": "Independent reviewer PASS exact ad1a04f; source/evidence/protected hashes and native120 independently verified",
+  "guards": "Original branch/head, clean tracked tree/index, exact FETCH_HEAD/target, ancestry, protected P3/.workbuddy/evidence hashes checked immediately before local fast-forward",
+  "remote_mutation": false,
+  "p3_acceptance": false,
+  "release_limits": [
+    "GUI/physical devices",
+    "Linux/fresh install",
+    "real article/comment interaction",
+    "HTTP200 static stub limitation",
+    "push/main/deploy/publication scope separate"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "heroSlots": [
+    {
+      "name": "GitHub",
+      "configured": false
+    },
+    {
+      "name": "Email",
+      "configured": false
+    },
+    {
+      "name": "Sponsor",
+      "configured": false
+    },
+    {
+      "name": "RSS",
+      "configured": true
+    }
+  ],
+  "sponsorMethodSlots": 4,
+  "enabledSponsorMethods": 0,
+  "sponsorRecords": 0,
+  "disabledFriendSlots": 1,
+  "disabledBookmarkSlots": 1,
+  "thirdPartyIdentitiesConfigured": false,
+  "optionalPagesEnabled": false,
+  "videoEnabled": false
+}

@@ -1,0 +1,19 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+3 !== 2
+
+    at file:///Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/references/p8-feasibility-2026-10-02/astro-locale-fixture.mjs:153:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 3,
+  expected: 2,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v24.20.0

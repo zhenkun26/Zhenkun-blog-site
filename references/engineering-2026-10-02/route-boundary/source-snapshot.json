@@ -1,0 +1,13 @@
+{
+  "base": "a32502b06cb83c7a2d14d03eafc25d1947c56efc",
+  "files": {
+    "docs/ERROR_MEMORY.md": "2fb36eb994e5d185b96b74ecd84e08fb33f09f11d144c2009929450695cc4d26",
+    "docs/ROADMAP.md": "8a1a7f45c5a4a877ad6ea87cf1d97e01a773eab8665ea80780322462f684412f",
+    "references/engineering-2026-10-02/report.md": "72ee1995600c7b7a28fdc586aa94c86f38956791259e9f2698c385fefd66793e",
+    "scripts/zhenkun-test-deployment.mjs": "b9b464154f2eca68a5c518dd0ad1f75edd7bf2c6e7527fbf8068575218cc5041",
+    "scripts/zhenkun-verify-deployment.py": "e14fadc6d770d4afc77cfb0ec1f2af972f51df3f04c9ea83782e9d8453c05fec",
+    "src/pages/posts/[...slug].astro": "c8dfef2d3b674984627458213af8314bd9648747d4f26512ee67fb9e7016cdf4",
+    "src/utils/deployment-contract.ts": "7a201e7d3ee309900c552f19f4abe70da6d94dc93c2f90fa55a215f46940efdf",
+    "src/utils/schema-utils.ts": "2706221355063d3a8d8498572d005fcdaa762c377c18a911573aedfa9299f5b9"
+  }
+}

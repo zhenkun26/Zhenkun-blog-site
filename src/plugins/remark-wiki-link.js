@@ -1,17 +1,22 @@
 /**
  * remark-wiki-link — Obsidian 风格 Wiki Link 插件
- * @author CuteLeaf <xiaye@msn.com>
+ * @author CuteLeaf
  */
 
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { realpathSync, statSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { slug } from "github-slugger";
-import matter from "gray-matter";
-import { getApiUrlList, processCoverImageSync } from "../utils/image-utils";
+import {
+	getPostPath,
+	isPostVisible,
+	withDeploymentBase,
+} from "../utils/post-contract.ts";
+import { readWikiPosts, WikiPostIndex } from "../utils/wiki-link-index.ts";
 
 const POSTS_DIR = fileURLToPath(new URL("../content/posts/", import.meta.url));
-const MARKDOWN_EXTENSION = /\.(?:md|mdx|markdown)$/i;
+const SOURCE_ASSETS_DIR = fileURLToPath(new URL("../assets/", import.meta.url));
+const MARKDOWN_EXTENSION = /\.(?:md|mdx)$/;
 const WIKI_LINK = /!?\[\[([^[\]\n]+)\]\]/g;
 const STANDALONE_WIKI_LINK = /^\[\[([^[\]\n]+)\]\]$/;
 const SKIPPED_NODE_TYPES = new Set([
@@ -21,192 +26,32 @@ const SKIPPED_NODE_TYPES = new Set([
 	"mdxJsxTextElement",
 ]);
 
-const frontmatterCache = new Map();
-
-function normalizeContentPath(value) {
-	const contentPath = value
-		.trim()
-		.replaceAll("\\", "/")
-		.replace(/^\.?\//, "")
-		.replace(/\/+$/, "")
-		.replace(MARKDOWN_EXTENSION, "");
-	const segments = contentPath.split("/").filter(Boolean);
-
-	if (
-		segments.length === 0 ||
-		segments.some((segment) => segment === "." || segment === "..")
-	) {
-		return "";
+function reportWikiIssue(context, reason, target) {
+	const key = `${reason}:${target}`;
+	if (context.reported.has(key)) return;
+	context.reported.add(key);
+	const message = `Wiki Link "${target}" is ${reason}. Use an unambiguous eligible post or supported Markdown syntax.`;
+	if (context.production) {
+		if (context.file?.fail)
+			context.file.fail(message, undefined, "zhenkun-wiki-link");
+		throw new Error(message);
 	}
-
-	const withoutPrefix = segments[0] === "posts" ? segments.slice(1) : segments;
-
-	return withoutPrefix.length > 0 ? withoutPrefix.join("/") : "";
+	context.file?.message?.(message, undefined, "zhenkun-wiki-link");
+	console.warn(`[remark-wiki-link] ${message}`);
 }
 
-function createPostUrl(contentPath) {
-	const segments = contentPath.split("/");
-
-	if (segments.at(-1)?.toLowerCase() === "index") {
-		segments.pop();
-	}
-
-	const encodedPath = segments
-		.map((segment) => encodeURIComponent(segment))
-		.join("/");
-
-	return `/posts/${encodedPath ? `${encodedPath}/` : ""}`;
-}
-
-/**
- * 由文章文件的绝对路径反推 content path。
- */
-function toContentPath(filePath) {
-	return path
-		.relative(POSTS_DIR, filePath)
-		.replaceAll("\\", "/")
-		.replace(MARKDOWN_EXTENSION, "");
-}
-
-/**
- * 还原 Astro glob loader 生成的 entry.id——也就是文章 URL 的唯一来源。
- * loader 在 schema 校验前先读原始 frontmatter，`slug` 存在时直接作为 id，
- * 否则回退到文件路径。注意 `slug` 不在 posts 的 zod schema 里，
- * 所以它只在这里（直接读 frontmatter）可见，`entry.data` 上取不到。
- */
-function toPostId(meta) {
-	const declaredSlug =
-		typeof meta.data.slug === "string" ? meta.data.slug.trim() : "";
-
-	return declaredSlug || toContentPath(meta.filePath);
-}
-
-function readMetaFile(filePath) {
-	let stats;
-	try {
-		stats = statSync(filePath);
-	} catch {
-		return null;
-	}
-	if (!stats.isFile()) {
-		return null;
-	}
-
-	const cached = frontmatterCache.get(filePath);
-	if (cached && cached.mtimeMs === stats.mtimeMs) {
-		return cached.meta;
-	}
-
-	let data;
-	try {
-		data = matter(readFileSync(filePath, "utf8")).data ?? {};
-	} catch {
-		return null;
-	}
-
-	const meta = { filePath, data };
-	frontmatterCache.set(filePath, { mtimeMs: stats.mtimeMs, meta });
-	return meta;
-}
-
-function collectPostMetas() {
-	const metas = [];
-	const stack = [POSTS_DIR];
-
-	while (stack.length > 0) {
-		const dir = stack.pop();
-		let entries;
-		try {
-			entries = readdirSync(dir, { withFileTypes: true });
-		} catch {
-			// 目录读不到就跳过；注意这里只包住 readdirSync，
-			// 避免把下面的逻辑错误一起吞掉
-			continue;
-		}
-
-		for (const entry of entries) {
-			const fullPath = path.join(dir, entry.name);
-			if (entry.isDirectory()) {
-				stack.push(fullPath);
-				continue;
-			}
-			if (!MARKDOWN_EXTENSION.test(entry.name)) {
-				continue;
-			}
-			const meta = readMetaFile(fullPath);
-			if (meta) {
-				metas.push(meta);
-			}
-		}
-	}
-
-	return metas;
-}
-
-function findMetaBySlug(metas, target) {
-	return (
-		metas.find(
-			(meta) =>
-				typeof meta.data.slug === "string" && meta.data.slug.trim() === target,
-		) ?? null
+function resolveWikiPost(parsed, context) {
+	const result = context.postIndex.resolve(
+		parsed.contentPath,
+		context.production,
 	);
-}
-
-/**
- * 按裸文件名匹配，兼容 Obsidian「尽可能简短的形式」链接格式。
- * 只在全站唯一时接受，重名时要求写出更长的路径。
- */
-function findMetaByBaseName(metas, target) {
-	if (target.includes("/")) {
-		return null;
-	}
-
-	const matches = metas.filter(
-		(meta) =>
-			path.basename(meta.filePath).replace(MARKDOWN_EXTENSION, "") === target,
-	);
-
-	if (matches.length === 1) {
-		return matches[0];
-	}
-	if (matches.length > 1) {
-		console.warn(
-			`[remark-wiki-link] "[[${target}]]" 匹配到多个同名文件，已跳过：${matches
-				.map((meta) => toContentPath(meta.filePath))
-				.join(", ")}。请改写为更长的路径。`,
-		);
-	}
-
+	if (result.status === "resolved") return result.post;
+	reportWikiIssue(context, result.status, parsed.destination);
 	return null;
 }
 
-function readPostMeta(contentPath) {
-	const metas = collectPostMetas();
-
-	// 1. frontmatter slug —— 它就是 Astro 的 entry.id，优先级最高
-	const bySlug = findMetaBySlug(metas, contentPath);
-	if (bySlug) {
-		return bySlug;
-	}
-
-	// 2. 文件路径精确匹配
-	const candidates = [
-		`${contentPath}.md`,
-		`${contentPath}.mdx`,
-		`${contentPath}.markdown`,
-		`${contentPath}/index.md`,
-		`${contentPath}/index.mdx`,
-	];
-
-	for (const candidate of candidates) {
-		const meta = readMetaFile(path.join(POSTS_DIR, candidate));
-		if (meta) {
-			return meta;
-		}
-	}
-
-	// 3. 裸文件名兜底
-	return findMetaByBaseName(metas, contentPath);
+function createPostUrl(id, context) {
+	return withDeploymentBase(getPostPath(id), context.base);
 }
 
 function formatPublishedDate(value) {
@@ -245,14 +90,14 @@ function createCoverNode(meta, resolvedPath, context) {
 	}
 
 	// 随机封面图 API：复用 CoverImage 的 data-api-urls 客户端重试机制
-	// seed 与 PostCard / 文章页保持一致（Astro 的 entry.id 会去掉末尾的 /index）
+	// Use the loader's stable ID, including an explicitly declared /index suffix.
 	if (image === "api") {
-		const seed = resolvedPath.replace(/\/index$/i, "");
-		const firstUrl = processCoverImageSync(image, seed);
+		const seed = resolvedPath;
+		const firstUrl = context.coverApi?.processCoverImageSync(image, seed);
 		if (!firstUrl) {
 			return null;
 		}
-		const apiUrls = getApiUrlList(image, seed);
+		const apiUrls = context.coverApi.getApiUrlList(image, seed);
 		return createElement(
 			"div",
 			{
@@ -269,8 +114,13 @@ function createCoverNode(meta, resolvedPath, context) {
 	}
 
 	// 外链或 public 目录下的封面：直接输出 img，不经过构建期图片管线
-	if (/^(?:https?:)?\/\//i.test(image) || image.startsWith("/")) {
+	if (/^(?:https?:)?\/\//i.test(image)) {
 		return createRemoteCoverImg(image);
+	}
+	if (image.startsWith("/")) {
+		return createRemoteCoverImg(
+			withDeploymentBase(image, context.base, { allowExistingBase: true }),
+		);
 	}
 
 	if (!context.currentDir) {
@@ -278,11 +128,38 @@ function createCoverNode(meta, resolvedPath, context) {
 	}
 
 	const absolutePath = path.resolve(path.dirname(meta.filePath), image);
+	const inApprovedRoot = (candidate) =>
+		[POSTS_DIR, SOURCE_ASSETS_DIR].some((root) => {
+			const relative = path.relative(root, candidate);
+			return (
+				relative !== ".." &&
+				!relative.startsWith(`..${path.sep}`) &&
+				!path.isAbsolute(relative)
+			);
+		});
+	if (!inApprovedRoot(absolutePath)) {
+		reportWikiIssue(
+			context,
+			"a cover outside approved source asset roots",
+			meta.id,
+		);
+		return null;
+	}
+	let resolvedAsset;
 	try {
 		if (!statSync(absolutePath).isFile()) {
 			return null;
 		}
+		resolvedAsset = realpathSync(absolutePath);
 	} catch {
+		return null;
+	}
+	if (!inApprovedRoot(resolvedAsset)) {
+		reportWikiIssue(
+			context,
+			"a cover outside approved source asset roots",
+			meta.id,
+		);
 		return null;
 	}
 
@@ -323,7 +200,7 @@ function parseWikiLinkValue(value) {
 		headingSeparator === -1
 			? ""
 			: destination.slice(headingSeparator + 1).trim();
-	const contentPath = pageName ? normalizeContentPath(pageName) : "";
+	const contentPath = pageName;
 
 	if ((pageName && !contentPath) || (!contentPath && !heading)) {
 		return null;
@@ -348,7 +225,7 @@ function resolveAlias(parsed, meta) {
 		path.basename(parsed.contentPath),
 	]);
 	if (meta) {
-		noise.add(toContentPath(meta.filePath));
+		noise.add(meta.contentPath);
 		noise.add(path.basename(meta.filePath).replace(MARKDOWN_EXTENSION, ""));
 	}
 
@@ -368,12 +245,12 @@ function createText(value) {
 }
 
 function createWikiLinkCard(parsed, context) {
-	const meta = readPostMeta(parsed.contentPath);
+	const meta = resolveWikiPost(parsed, context);
 	if (!meta) {
 		return null;
 	}
 
-	const resolvedPath = toPostId(meta);
+	const resolvedPath = meta.id;
 	const title =
 		resolveAlias(parsed, meta) ||
 		(typeof meta.data.title === "string" && meta.data.title
@@ -445,19 +322,28 @@ function createWikiLinkCard(parsed, context) {
 		"a",
 		{
 			class: "card-wiki-link no-styling",
-			href: createPostUrl(resolvedPath),
+			href: createPostUrl(resolvedPath, context),
 		},
 		children,
 	);
 }
 
-function createWikiLink(value) {
+function createWikiLink(value, context) {
 	const parsed = parseWikiLinkValue(value);
 	if (!parsed) {
 		return null;
 	}
 
-	const meta = parsed.contentPath ? readPostMeta(parsed.contentPath) : null;
+	if (parsed.heading.startsWith("^") || parsed.heading.includes("#")) {
+		reportWikiIssue(
+			context,
+			"unsupported heading/block reference",
+			parsed.destination,
+		);
+		return null;
+	}
+	const meta = parsed.contentPath ? resolveWikiPost(parsed, context) : null;
+	if (parsed.contentPath && !meta) return null;
 	const title =
 		typeof meta?.data.title === "string" && meta.data.title
 			? meta.data.title
@@ -474,9 +360,7 @@ function createWikiLink(value) {
 		}
 	}
 
-	const pageUrl = parsed.contentPath
-		? createPostUrl(meta ? toPostId(meta) : parsed.contentPath)
-		: "";
+	const pageUrl = parsed.contentPath ? createPostUrl(meta.id, context) : "";
 	const url = `${pageUrl}${parsed.heading ? `#${slug(parsed.heading)}` : ""}`;
 
 	return {
@@ -486,17 +370,18 @@ function createWikiLink(value) {
 	};
 }
 
-function replaceWikiLinks(value) {
+function replaceWikiLinks(value, context) {
 	const children = [];
 	let cursor = 0;
 	let changed = false;
 
 	for (const match of value.matchAll(WIKI_LINK)) {
 		if (match[0].startsWith("!")) {
+			reportWikiIssue(context, "an unsupported embed", match[1]);
 			continue;
 		}
 
-		const link = createWikiLink(match[1]);
+		const link = createWikiLink(match[1], context);
 		if (!link) {
 			continue;
 		}
@@ -559,7 +444,7 @@ function transformNode(node, context) {
 		}
 
 		if (child.type === "text") {
-			const replacement = replaceWikiLinks(child.value);
+			const replacement = replaceWikiLinks(child.value, context);
 			if (replacement) {
 				node.children.splice(index, 1, ...replacement);
 				index += replacement.length - 1;
@@ -585,15 +470,32 @@ function transformNode(node, context) {
  * what Obsidian inserts on its own) is treated as noise and ignored, so the
  * post's real title still wins.
  *
- * Targets resolve in three steps: `frontmatter.slug`, then exact file path,
+ * Targets resolve in three steps: exact article ID, then exact source file path,
  * then bare file name (for Obsidian's "shortest path when possible" format,
  * accepted only when unique). URLs are always derived from the resolved
  * post's `entry.id` rather than from the link text, so a bare file name
  * still produces the post's real URL.
+ * Production rejects unresolved/hidden/ambiguous links and unsupported embeds;
+ * development preserves unresolved text with a diagnostic. Source drafts skip
+ * transformation in production. Heading existence remains a separate check.
  */
-export function remarkWikiLink() {
+export function remarkWikiLink({
+	base = "/",
+	production = true,
+	postIndex,
+	coverApi,
+} = {}) {
 	return (tree, file) => {
+		// Astro renders source drafts during collection loading, before route selection.
+		if (!isPostVisible(file?.data?.astro?.frontmatter ?? {}, production))
+			return;
 		const context = {
+			base,
+			production,
+			file,
+			coverApi,
+			postIndex: postIndex ?? new WikiPostIndex(readWikiPosts(POSTS_DIR)),
+			reported: new Set(),
 			currentDir: file?.path ? path.dirname(file.path) : null,
 		};
 		transformNode(tree, context);

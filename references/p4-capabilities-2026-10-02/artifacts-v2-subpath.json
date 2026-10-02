@@ -1,0 +1,235 @@
+{
+  "status": "PASS",
+  "source": "a353c2ee800bbff2865541288ea04308c245cdc5",
+  "base": "/Zhenkun-blog-site/",
+  "regularHtml": [
+    "404.html",
+    "about/index.html",
+    "archive/index.html",
+    "categories/index.html",
+    "index.html",
+    "rss/index.html",
+    "search/index.html",
+    "series/index.html",
+    "tags/index.html"
+  ],
+  "closedStubs": [
+    "bangumi/index.html",
+    "bilibili/index.html",
+    "booknav/index.html",
+    "dynamic/comments/index.html",
+    "dynamic/index.html",
+    "friends/index.html",
+    "gallery/encrypted-test/index.html",
+    "gallery/firefly-2026/index.html",
+    "gallery/index.html",
+    "guestbook/index.html",
+    "myanimelist/index.html",
+    "sponsor/index.html",
+    "vndb/index.html"
+  ],
+  "dynamicEndpoint": {
+    "body": [],
+    "policy": "disabled GET guard before collection/processor, separately executed in-memory regression"
+  },
+  "sitemap": [
+    "https://zhenkun26.github.io/Zhenkun-blog-site/",
+    "https://zhenkun26.github.io/Zhenkun-blog-site/about/",
+    "https://zhenkun26.github.io/Zhenkun-blog-site/archive/",
+    "https://zhenkun26.github.io/Zhenkun-blog-site/categories/",
+    "https://zhenkun26.github.io/Zhenkun-blog-site/rss/",
+    "https://zhenkun26.github.io/Zhenkun-blog-site/search/",
+    "https://zhenkun26.github.io/Zhenkun-blog-site/series/",
+    "https://zhenkun26.github.io/Zhenkun-blog-site/tags/"
+  ],
+  "pagefindFragments": [
+    {
+      "file": "zh-cn_9211846.pf_fragment",
+      "url": "/about/",
+      "word_count": 141,
+      "resolvedRoute": "/Zhenkun-blog-site/about/"
+    }
+  ],
+  "rssItems": 0,
+  "publicPosts": 0,
+  "retainedGalleryAssets": [
+    "gallery/encrypted-test/urls.txt",
+    "gallery/firefly-2026/1.avif",
+    "gallery/firefly-2026/cover.avif",
+    "gallery/firefly-2026/urls.txt"
+  ],
+  "pioArtifactAbsent": true,
+  "http": [
+    {
+      "route": "/Zhenkun-blog-site/404.html",
+      "status": 200,
+      "sha256": "775f47dc9334ea0eacdea94e0d07f52126ef68e6581aef8b49cefbbfd6f4b06c"
+    },
+    {
+      "route": "/Zhenkun-blog-site/about/",
+      "status": 200,
+      "sha256": "0404dd1ac7bc80382b5d7c96622d9985d495992230fa8c9b6a753d25203ea378"
+    },
+    {
+      "route": "/Zhenkun-blog-site/archive/",
+      "status": 200,
+      "sha256": "8988c4f17de60f735cc5109c29bbfe34db1aefae600c5f87a63b2ebd3b7a49da"
+    },
+    {
+      "route": "/Zhenkun-blog-site/bangumi/",
+      "status": 200,
+      "sha256": "ee7fde94803b6a9ce84d74a8be6ab75b9cf14ceb3949ff4e45607e0c17fc483c"
+    },
+    {
+      "route": "/Zhenkun-blog-site/bilibili/",
+      "status": 200,
+      "sha256": "c87c5c21d284ceb8ccd48aa6d8d8c766db866e7e11b654f0401be34d7b5fa676"
+    },
+    {
+      "route": "/Zhenkun-blog-site/booknav/",
+      "status": 200,
+      "sha256": "41a6ace17c51a7238be5932e34212c906e0a66dbc31268902fd817ada0722bec"
+    },
+    {
+      "route": "/Zhenkun-blog-site/categories/",
+      "status": 200,
+      "sha256": "9a1472c6a21f8e1110e2e2df53393af7fa4792afaed2e3a3de696d95853b7a2b"
+    },
+    {
+      "route": "/Zhenkun-blog-site/dynamic/comments/",
+      "status": 200,
+      "sha256": "adf9934525e4a7580f1a8760e692f7877c96707f49cb7af3dd3da7227b7f6996"
+    },
+    {
+      "route": "/Zhenkun-blog-site/dynamic/",
+      "status": 200,
+      "sha256": "606d669f133667df50cacc2dd882d3bf7fa6ef9330cf953a681e359dc9914c56"
+    },
+    {
+      "route": "/Zhenkun-blog-site/friends/",
+      "status": 200,
+      "sha256": "e604da4b261b3112bd26be832f0e306a73b4cc0dc346a0b92896a77ef318d2dd"
+    },
+    {
+      "route": "/Zhenkun-blog-site/gallery/encrypted-test/",
+      "status": 200,
+      "sha256": "0a9c96f6d5504816095df120c98d507a1d7d5c3b3c421ddf492b15c56d056db1"
+    },
+    {
+      "route": "/Zhenkun-blog-site/gallery/firefly-2026/",
+      "status": 200,
+      "sha256": "04d92b9d8adb565c7852c44f16f8e7bb6d444f74a8f4fdbf02dcfc1f63539b45"
+    },
+    {
+      "route": "/Zhenkun-blog-site/gallery/",
+      "status": 200,
+      "sha256": "0b3a73e76542aa97b1f88eb512bb66a1c2843e45e4bdd828f84c41b210a43c32"
+    },
+    {
+      "route": "/Zhenkun-blog-site/guestbook/",
+      "status": 200,
+      "sha256": "2993a63566edeb4f58669ea3ee4cbd789d67bec124e64f6a3086f61cceaecb90"
+    },
+    {
+      "route": "/Zhenkun-blog-site/",
+      "status": 200,
+      "sha256": "313f1edb8d46da6ff60e7e980bcc460b289f39adf446bc31845bb71f0b7e2231"
+    },
+    {
+      "route": "/Zhenkun-blog-site/myanimelist/",
+      "status": 200,
+      "sha256": "4f7f92cdc00bc8603315b188b250dd763481772d65f7761a2c7fe2c88ef516d1"
+    },
+    {
+      "route": "/Zhenkun-blog-site/rss/",
+      "status": 200,
+      "sha256": "d0ffa75a3d652c68b91c5e87d6d3c5f9595f2667e41a896818adca32bc2b50c9"
+    },
+    {
+      "route": "/Zhenkun-blog-site/search/",
+      "status": 200,
+      "sha256": "4341a22c94cc48057606311ac2b9f7a4fe0ecdb92f625a835bebe0b1ed5c8602"
+    },
+    {
+      "route": "/Zhenkun-blog-site/series/",
+      "status": 200,
+      "sha256": "a00e12fe0c241519666208738da2b194487de09d88fdec5b4b39448c91e1d7f4"
+    },
+    {
+      "route": "/Zhenkun-blog-site/sponsor/",
+      "status": 200,
+      "sha256": "f6c66a55a0aa5f1ece2ec9bca7aea78a05176aefbc888e23e15ffbbe13994c07"
+    },
+    {
+      "route": "/Zhenkun-blog-site/tags/",
+      "status": 200,
+      "sha256": "a01bfa14db4e3a30c201556be883887b543917b1d483c8a05abe828a51d0fe92"
+    },
+    {
+      "route": "/Zhenkun-blog-site/vndb/",
+      "status": 200,
+      "sha256": "13797ac5df0fce17b8b1c980a6dd6b9ff8f9fe25035310ff1a09427abfe5e93e"
+    },
+    {
+      "route": "/Zhenkun-blog-site/api/dynamic.json",
+      "status": 200,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "route": "/Zhenkun-blog-site/api/allPostMeta.json",
+      "status": 200,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "route": "/Zhenkun-blog-site/rss.xml",
+      "status": 200,
+      "sha256": "ee92b4a034ca98bc44d7582db291484572d7af533a87907e60babfd9159da0c9"
+    },
+    {
+      "route": "/Zhenkun-blog-site/sitemap-0.xml",
+      "status": 200,
+      "sha256": "730899f16433c54e2e564344b82e9bfc9f7d0d296eed34e69b3228342e507f40"
+    },
+    {
+      "route": "/Zhenkun-blog-site/pagefind/pagefind.js",
+      "status": 200,
+      "sha256": "252d272bd34d483d19a752060f6a065114d15ab12c42d8f905ca565e2768a009"
+    },
+    {
+      "route": "/Zhenkun-blog-site/gallery/encrypted-test/urls.txt",
+      "status": 200,
+      "sha256": "4d1155dd7bdf49a14272b5abe831df74f78f5676579c6dc2adc28fb2eb2b779d"
+    },
+    {
+      "route": "/Zhenkun-blog-site/gallery/firefly-2026/1.avif",
+      "status": 200,
+      "sha256": "2cc0dbc9ce375cb12436e9a2aea91d61c192482751652eef04c2ad5af1d4309c"
+    },
+    {
+      "route": "/Zhenkun-blog-site/gallery/firefly-2026/cover.avif",
+      "status": 200,
+      "sha256": "24784cc8f85560671be3585dbd4fc3fab2f7a4a0dd96ad4558b626bf17cba8a4"
+    },
+    {
+      "route": "/Zhenkun-blog-site/gallery/firefly-2026/urls.txt",
+      "status": 200,
+      "sha256": "4d1155dd7bdf49a14272b5abe831df74f78f5676579c6dc2adc28fb2eb2b779d"
+    },
+    {
+      "route": "/Zhenkun-blog-site/assets/music/使一颗心免于哀伤-哼唱.mp3",
+      "status": 200,
+      "sha256": "9b7528e379a362d5d0b592ef42c3403894ae2f7654121d665cee9bde7408a154"
+    },
+    {
+      "route": "/Zhenkun-blog-site/assets/music/cover/109951169585655912.webp",
+      "status": 200,
+      "sha256": "3d58addf9d5936e892246a9b4bddb7f35a7d21c532fd24c4b182630c8c9cc5fa"
+    }
+  ],
+  "missingRoute": {
+    "route": "/Zhenkun-blog-site/missing-p4-probe/",
+    "status": 404,
+    "sha256": "775f47dc9334ea0eacdea94e0d07f52126ef68e6581aef8b49cefbbfd6f4b06c"
+  },
+  "boundary": "Closed static page stubs are HTTP 200 with meta refresh; source/public assets are retained. No real external comment, enabled service activation, private-storage promise or production acceptance."
+}

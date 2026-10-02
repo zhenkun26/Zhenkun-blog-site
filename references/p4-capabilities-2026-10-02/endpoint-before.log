@@ -1,0 +1,42 @@
+✖ disabled dynamic endpoint returns no configured content and performs no work (40.386959ms)
+✖ disabled dynamic endpoint succeeds without even loading a failing content source (0.309625ms)
+✔ enabled dynamic endpoint preserves real Markdown, image metadata, sorting and JSON schema (2.28075ms)
+✔ enabled dynamic endpoint retains a valid empty collection response (0.161208ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 226.571
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-capabilities.mjs:66:1
+✖ disabled dynamic endpoint returns no configured content and performs no work (40.386959ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + '[{"id":"sentinel","published":1767225600000,"html":"<p>DISABLED_DYNAMIC_SENTINEL</p>","images":[],"searchText":"disabled dynamic sentinel  test location ","pinned":false,"location":"Test Location"}]'
+  - '[]'
+  
+      at TestContext.<anonymous> (file:///Users/zhenkun/Documents/Codex/2026-10-02/task/tmp/zhenkun-g1/p4-policy/scripts/zhenkun-test-capabilities.mjs:71:9)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '[{"id":"sentinel","published":1767225600000,"html":"<p>DISABLED_DYNAMIC_SENTINEL</p>","images":[],"searchText":"disabled dynamic sentinel  test location ","pinned":false,"location":"Test Location"}]',
+    expected: '[]',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-capabilities.mjs:76:1
+✖ disabled dynamic endpoint succeeds without even loading a failing content source (0.309625ms)
+  Error: disabled content must not be read
+      at getCollection (data:text/javascript,%0A%09%09export%20async%20function%20getCollection(name)%20%7B%0A%09%09%09const%20state%20%3D%20globalThis.__zhenkunCapabilityTest%3B%0A%09%09%09state.collectionCalls.push(name)%3B%0A%09%09%09if%20(state.rejectContentRead)%20throw%20new%20Error(%22disabled%20content%20must%20not%20be%20read%22)%3B%0A%09%09%09return%20state.entries%3B%0A%09%09%7D%0A%09:5:39)
+      at GET (file:///Users/zhenkun/Documents/Codex/2026-10-02/task/tmp/zhenkun-g1/p4-policy/src/pages/api/dynamic.json.ts:13:38)
+      at async TestContext.<anonymous> (file:///Users/zhenkun/Documents/Codex/2026-10-02/task/tmp/zhenkun-g1/p4-policy/scripts/zhenkun-test-capabilities.mjs:78:26)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)

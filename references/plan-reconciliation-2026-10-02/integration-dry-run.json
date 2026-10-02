@@ -1,0 +1,32 @@
+[
+  {
+    "commit": "a32502b06cb83c7a2d14d03eafc25d1947c56efc",
+    "parent": "57bed16360c915c17e45ebaf9ac11540c961741e",
+    "path": "docs/ROADMAP.md",
+    "algorithm": "git merge-file --stdout canonical parent candidate",
+    "return_code": 1,
+    "conflict_blocks": 1,
+    "interpretation": "Document-only dry-run; second run assumes first conflict resolved by retaining canonical ROADMAP. No actual cherry-pick/integration."
+  },
+  {
+    "commit": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+    "parent": "a32502b06cb83c7a2d14d03eafc25d1947c56efc",
+    "path": "docs/ROADMAP.md",
+    "algorithm": "git merge-file --stdout canonical parent candidate",
+    "return_code": 1,
+    "conflict_blocks": 1,
+    "interpretation": "Document-only dry-run; second run assumes first conflict resolved by retaining canonical ROADMAP. No actual cherry-pick/integration."
+  },
+  {
+    "commit": "a32502b06cb83c7a2d14d03eafc25d1947c56efc",
+    "path": "docs/ERROR_MEMORY.md",
+    "conflict_blocks": 0,
+    "interpretation": "Current file equals parent (followup assumes first candidate applied); retain candidate append-only history."
+  },
+  {
+    "commit": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+    "path": "docs/ERROR_MEMORY.md",
+    "conflict_blocks": 0,
+    "interpretation": "Current file equals parent (followup assumes first candidate applied); retain candidate append-only history."
+  }
+]

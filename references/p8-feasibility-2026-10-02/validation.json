@@ -1,0 +1,30 @@
+{
+  "status": "PASS_DOCS_ANALYSIS_ONLY",
+  "base": "27e09c220e1ffe16817d5bf02e950a4fbf332b7b",
+  "canonicalCheckpoint": "04cbf0bfbf13ff8a17f0ba66ed2277526b6e5139",
+  "inventory": {
+    "keys": 419,
+    "calls": 510,
+    "hanCandidates": 146
+  },
+  "actualSourceFunctions": "PASS",
+  "syntheticAstro": {
+    "bases": 2,
+    "pagesPerBase": 5,
+    "httpChecks": 12,
+    "searchInitializationCases": 6
+  },
+  "scriptsSyntax": "PASS",
+  "docsDiffCheck": "PASS",
+  "productionSha256Files": 491,
+  "configSha256Files": 27,
+  "protectedSha256Files": 50,
+  "limits": [
+    "Installed Astro 7.2.10/Pagefind 1.5.2 only; no dependency setup or production source/config/content changes.",
+    "Static explicit pages and per-page locale props. Raw existing site URL reproduces path retention/duplication; successful cases use origin-only site plus deployment base, a proposed adapter in the synthetic config only.",
+    "No fallback rewrite or generated missing translation. Astro locale URL helper can construct a nonexistent target; available-pair registry must guard links/hreflang.",
+    "Real emitted Pagefind JS/index/WASM over temporary loopback HTTP in Node with explicit basePath and a minimal html-lang detection seam; the public createInstance language option is empirically ignored in 1.5.2. Browser initial inference, language toggle DOM/focus/persistence/Swup and full theme integration remain untested.",
+    "Five synthetic pages only. Not a production full build, publication-filter proof, translated owner content, screenshots, SEO crawl, Linux/hosted CI or release acceptance."
+  ],
+  "productionTestsAndFullBuild": "Not rerun: no production source/config/content delta; P4 measurements and acceptance remain separately bound."
+}

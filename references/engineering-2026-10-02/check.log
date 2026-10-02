@@ -1,0 +1,71 @@
+$ astro check
+00:13:55 [content] Syncing content
+00:13:55 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/dynamic"
+00:13:55 [content] Synced content
+00:13:55 [types] Generated 221ms
+00:13:55 [check] Getting diagnostics for Astro files in /Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site...
+[96msrc/pages/bangumi.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/bilibili.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/booknav.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/friends.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/guestbook.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/myanimelist.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/sponsor.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/vndb.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/dynamic/comments.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/dynamic/index.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/gallery/[album].astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/pages/gallery/index.astro[0m:[93m2[0m:[93m1[0m - [93mwarning[0m[90m ts(6133): [0m'getNotFoundPath' is declared but its value is never read.
+
+[7m2[0m import { getNotFoundPath } from "@/utils/deployment-contract";
+[7m [0m [93m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+Result (256 files): 
+- 0 errors
+- 0 warnings
+- 12 hints
+

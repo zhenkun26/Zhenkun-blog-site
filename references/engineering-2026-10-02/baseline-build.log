@@ -1,0 +1,26 @@
+[EPERM] EPERM: operation not permitted, symlink '../../../../../../Documents/Codex/2026-10-02/task/zhenkun-blog-site' -> '/Users/zhenkun/.local/share/pnpm/store/v11/projects/d88c99184cf56f14b0fdeda82e6893e5'
+
+pnpm: EPERM: operation not permitted, symlink '../../../../../../Documents/Codex/2026-10-02/task/zhenkun-blog-site' -> '/Users/zhenkun/.local/share/pnpm/store/v11/projects/d88c99184cf56f14b0fdeda82e6893e5'
+    at async Object.symlink (node:internal/fs/promises:1707:10)
+    at async forceSymlink (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:50782:7)
+    at async registerProject (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:181570:3)
+    at async getContext (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:182111:5)
+    at async mutateModules (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:212324:13)
+    at async recursive (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:218905:151)
+    at async recursiveInstallThenUpdateWorkspaceState (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:220034:27)
+    at async Object.handler5 (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:220893:3)
+    at async file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322592:19
+    at async main4 (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322560:30)
+[ERROR] Command failed with exit code 255: /Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node /Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/bin/pnpm.mjs install
+
+pnpm: Command failed with exit code 255: /Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node /Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/bin/pnpm.mjs install
+    at getFinalError (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:89203:14)
+    at makeError (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:91510:21)
+    at getSyncResult (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:93354:10)
+    at spawnSubprocessSync (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:93314:14)
+    at execaCoreSync (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:93244:23)
+    at callBoundExeca (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:95772:23)
+    at boundExeca (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:95749:49)
+    at sync2 (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:95908:10)
+    at runPnpmCli (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:271523:5)
+    at runDepsStatusCheck (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:273323:7)

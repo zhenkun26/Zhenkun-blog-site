@@ -66,10 +66,10 @@
 
 ### Active delivery — 2026-10-02
 
-- [ ] Publish the owner-requested `Zhenkun-blog-site` identity and Pages base. This production patch starts from `bc21bfd92dd7081f2cf0acbec80d446f9d02c7de` and excludes the 38 local development commits.
+- [x] Publish the owner-requested `Zhenkun-blog-site` identity and Pages base. This production patch starts from `bc21bfd92dd7081f2cf0acbec80d446f9d02c7de` and excludes the 38 local development commits.
 - Scope: repository/site URLs, giscus repository slug (stable IDs preserved), public author name, author asset directory and text references. The launch article remains a draft. No dependency declaration, lockfile, permission or feature change is included.
 - Compatibility: GitHub native repository redirect; local directory symlink; the old website address is released at the owner’s request; no account-site repository is created.
-- Verification: PASS — installed Astro check (253 files, zero errors/warnings), exact TypeScript declaration gate, all eight declared production build stages, fresh new-base canonical/title checks, empty public metadata and Pagefind output. Validation used existing dependencies directly after pnpm safely refused dependency reinitialization; no install was retried. Existing unrelated production defects remain outside this name-only patch. Delivery: ready for authorized remote rename and deployment.
+- Verification: PASS — installed Astro check (253 files, zero errors/warnings), exact TypeScript declaration gate, all eight declared production build stages, fresh new-base canonical/title checks, empty public metadata and Pagefind output. Validation used existing dependencies directly after pnpm safely refused dependency reinitialization; no install was retried. Existing unrelated production defects remain outside this name-only patch. Delivery: production commit `a47c836107cc029690a0fa46334d8676674848c0` is live; GitHub Actions run `37029800697` completed successfully. Live Home/About/Archive, feed, sitemap, Pagefind and sampled resources return 200; canonical URLs and the visible author use the new identity. In-app browser Home-to-About navigation and rendering passed. The former website URL returns 404 as requested. GitHub repository redirect and local directory symlink are verified. Repository ID and giscus IDs remain unchanged; the separate existing fork is untouched.
 
 ### Earlier checkpoint
 

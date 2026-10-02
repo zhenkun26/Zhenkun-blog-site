@@ -1,0 +1,85 @@
+{
+  "node": "v24.20.0",
+  "base": "/Zhenkun-blog-site/",
+  "results": [
+    {
+      "declaredStage": "pnpm exec tsx scripts/generate-github-card-data.ts",
+      "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "actualArgs": [
+        "--import",
+        "tsx",
+        "scripts/generate-github-card-data.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "declaredStage": "pnpm exec tsx scripts/generate-lqips.ts",
+      "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "actualArgs": [
+        "--import",
+        "tsx",
+        "scripts/generate-lqips.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "declaredStage": "pnpm exec tsx scripts/generate-vndb-covers.ts",
+      "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "actualArgs": [
+        "--import",
+        "tsx",
+        "scripts/generate-vndb-covers.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "declaredStage": "astro build",
+      "actualCommand": "/Users/zhenkun/Documents/Codex/2026-10-02/task/tmp/zhenkun-g1/review/node_modules/.bin/astro",
+      "actualArgs": [
+        "build"
+      ],
+      "exitCode": 0
+    },
+    {
+      "declaredStage": "pnpm exec tsx scripts/prune-pio-assets.ts",
+      "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "actualArgs": [
+        "--import",
+        "tsx",
+        "scripts/prune-pio-assets.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "declaredStage": "pnpm exec tsx scripts/subset-fonts.ts",
+      "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "actualArgs": [
+        "--import",
+        "tsx",
+        "scripts/subset-fonts.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "declaredStage": "pnpm exec tsx scripts/minify-inline-scripts.ts",
+      "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "actualArgs": [
+        "--import",
+        "tsx",
+        "scripts/minify-inline-scripts.ts"
+      ],
+      "exitCode": 0
+    },
+    {
+      "declaredStage": "pnpm exec tsx scripts/run-pagefind.ts",
+      "actualCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+      "actualArgs": [
+        "--import",
+        "tsx",
+        "scripts/run-pagefind.ts"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "boundary": "All declared stages via installed direct binaries/tsx import loader. No pnpm shim, install or clean Linux/hosted execution."
+}

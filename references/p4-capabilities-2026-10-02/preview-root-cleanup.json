@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "pid": 60328,
+  "verifiedCommand": "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node /Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/bin/astro.mjs preview --port 4343 --host 127.0.0.1 --json",
+  "port": 4343,
+  "remainingListeners": 0,
+  "method": "Exact task PID SIGTERM after command/port guards"
+}

@@ -1,5 +1,7 @@
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
+import { getDeploymentCanonicalUrl } from "./deployment-contract";
+import { getPostPath, withDeploymentBase } from "./post-contract";
 
 /**
  * 移除文件扩展名（.md, .mdx, .markdown）
@@ -34,9 +36,7 @@ function joinUrl(...parts: string[]): string {
 }
 
 export function getPostUrlBySlug(slug: string): string {
-	// 移除文件扩展名（如 .md, .mdx 等）
-	const slugWithoutExt = removeFileExtension(slug);
-	return url(`/posts/${slugWithoutExt}/`);
+	return withDeploymentBase(getPostPath(slug), import.meta.env.BASE_URL);
 }
 
 export function getTagUrl(tag: string): string {
@@ -76,11 +76,7 @@ export function getSearchUrl(query: string): string {
 // 避免 ?tag=/?category=/?q= 这类服务端渲染下会被写进 Astro.url 的重复内容 URL
 // 自我 canonical。分页（/2/）、文章页等无查询串的路径保持原样。
 export function getCanonicalUrl(urlObj: URL): string {
-	const pathname = urlObj.pathname;
-	if (pathname === "/archive/" || pathname === "/search/") {
-		return new URL(pathname, urlObj.origin).toString();
-	}
-	return urlObj.toString();
+	return getDeploymentCanonicalUrl(urlObj, import.meta.env.BASE_URL);
 }
 
 export function url(path: string): string {

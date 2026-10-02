@@ -5,12 +5,15 @@ import { commentConfig, siteConfig, sponsorConfig } from "@/config";
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import { getNotFoundPath } from "@/utils/deployment-contract";
 import { getLqipProps } from "@/utils/lqip-utils";
 import { url } from "@/utils/url-utils";
 
+const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+
 // 检查页面是否启用
 if (!siteConfig.pages.sponsor) {
-	return Astro.redirect("/404/");
+	return Astro.redirect(notFoundPath);
 }
 
 // 检查评论系统是否启用

@@ -1,0 +1,258 @@
+diff --git a/src/components/widget/Announcement.astro b/src/components/widget/Announcement.astro
+index fe05907..421e130 100644
+--- a/src/components/widget/Announcement.astro
++++ b/src/components/widget/Announcement.astro
+@@ -4,8 +4,8 @@ import WidgetLayout from "@/components/common/WidgetLayout.astro";
+ import { announcementConfig } from "@/config/announcementConfig";
+ import I18nKey from "@/i18n/i18nKey";
+ import { i18n } from "@/i18n/translation";
+-import { url } from "@/utils/url-utils";
+ import type { WidgetComponentConfig } from "@/types/config";
++import { url } from "@/utils/url-utils";
+ 
+ const config = announcementConfig;
+ 
+diff --git a/src/config/backgroundWallpaper.ts b/src/config/backgroundWallpaper.ts
+index 4b9d954..f43ad4e 100644
+--- a/src/config/backgroundWallpaper.ts
++++ b/src/config/backgroundWallpaper.ts
+@@ -77,11 +77,7 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
+ 			// 主页横幅主标题字体大小
+ 			titleSize: "3.5rem",
+ 			// 主页横幅副标题
+-			subtitle: [
+-				"记录、思考与灵感",
+-				"写给明天的自己",
+-				"随手记下，慢慢成长",
+-			],
++			subtitle: ["记录、思考与灵感", "写给明天的自己", "随手记下，慢慢成长"],
+ 			// 主页横幅副标题字体大小
+ 			subtitleSize: "1.5rem",
+ 			typewriter: {
+diff --git a/src/layouts/Layout.astro b/src/layouts/Layout.astro
+index 8d16451..300770f 100644
+--- a/src/layouts/Layout.astro
++++ b/src/layouts/Layout.astro
+@@ -32,11 +32,11 @@ import {
+ } from "@/constants/constants";
+ import { defaultFavicons } from "@/constants/icon";
+ import type { Favicon } from "@/types/config";
++import { getGeneratedOgUrl } from "@/utils/deployment-contract";
+ import { isHomePage } from "@/utils/layout-utils";
+ import { getAuthorAvatarUrl, getSiteLogo } from "@/utils/schema-image";
+ import { buildSiteGraph, toAbsoluteUrl } from "@/utils/schema-utils";
+ import { getOgLocale } from "@/utils/site-config-utils";
+-import { getGeneratedOgUrl } from "@/utils/deployment-contract";
+ import { getCanonicalUrl, url } from "@/utils/url-utils";
+ 
+ import "@/styles/main.css";
+diff --git a/src/pages/bangumi.astro b/src/pages/bangumi.astro
+index e786298..082abad 100644
+--- a/src/pages/bangumi.astro
++++ b/src/pages/bangumi.astro
+@@ -1,5 +1,4 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { Icon } from "astro-icon/components";
+ import BangumiGrid from "@/components/pages/bangumi/BangumiGrid.svelte";
+ import { siteConfig } from "@/config";
+@@ -11,6 +10,7 @@ import type {
+ 	UserSubjectCollectionResponse,
+ } from "@/types/bangumi";
+ import { formatDateI18nWithTime } from "@/utils/date-utils";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { filterNsfw, isBangumiNsfw } from "@/utils/nsfw-utils";
+ 
+ const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+diff --git a/src/pages/bilibili.astro b/src/pages/bilibili.astro
+index f326e46..1c466c0 100644
+--- a/src/pages/bilibili.astro
++++ b/src/pages/bilibili.astro
+@@ -1,5 +1,4 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { Icon } from "astro-icon/components";
+ import BilibiliGrid from "@/components/pages/bilibili/BilibiliGrid.svelte";
+ import { siteConfig } from "@/config";
+@@ -9,6 +8,7 @@ import MainGridLayout from "@/layouts/MainGridLayout.astro";
+ import type { StandardizedAnime } from "@/types/bilibili";
+ import { fetchBilibiliList } from "@/utils/bilibili-utils";
+ import { formatDateI18nWithTime } from "@/utils/date-utils";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ 
+ const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+ 
+diff --git a/src/pages/booknav.astro b/src/pages/booknav.astro
+index c284a87..326901d 100644
+--- a/src/pages/booknav.astro
++++ b/src/pages/booknav.astro
+@@ -1,5 +1,4 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { Icon } from "astro-icon/components";
+ import { booknavPageConfig, siteConfig } from "@/config";
+ import I18nKey from "@/i18n/i18nKey";
+@@ -11,6 +10,7 @@ import {
+ 	getEnabledBooknavGroups,
+ 	resolveBooknavIcon,
+ } from "@/utils/booknav-utils";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ 
+ const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+ 
+diff --git a/src/pages/dynamic/comments.astro b/src/pages/dynamic/comments.astro
+index 9f712a7..0963730 100644
+--- a/src/pages/dynamic/comments.astro
++++ b/src/pages/dynamic/comments.astro
+@@ -1,8 +1,8 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import Comment from "@/components/comment/index.astro";
+ import { commentConfig, dynamicConfig, siteConfig } from "@/config";
+ import Layout from "@/layouts/Layout.astro";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ 
+ const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+ 
+diff --git a/src/pages/dynamic/index.astro b/src/pages/dynamic/index.astro
+index af9ac56..cb8e387 100644
+--- a/src/pages/dynamic/index.astro
++++ b/src/pages/dynamic/index.astro
+@@ -1,5 +1,4 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { Icon } from "astro-icon/components";
+ import DynamicFeed from "@/components/pages/dynamic/DynamicFeed.svelte";
+ import DynamicItemTemplate from "@/components/pages/dynamic/DynamicItemTemplate.astro";
+@@ -7,6 +6,7 @@ import { commentConfig, dynamicConfig, siteConfig } from "@/config";
+ import I18nKey from "@/i18n/i18nKey";
+ import { i18n } from "@/i18n/translation";
+ import MainGridLayout from "@/layouts/MainGridLayout.astro";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ import "@/styles/dynamic.css";
+ import { url } from "@/utils/url-utils";
+ 
+diff --git a/src/pages/friends.astro b/src/pages/friends.astro
+index 16bc878..daf9748 100644
+--- a/src/pages/friends.astro
++++ b/src/pages/friends.astro
+@@ -1,5 +1,4 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { getEntry, render } from "astro:content";
+ import Comment from "@components/comment/index.astro";
+ import Markdown from "@components/common/Markdown.astro";
+@@ -13,6 +12,7 @@ import {
+ import I18nKey from "@/i18n/i18nKey";
+ import { i18n } from "@/i18n/translation";
+ import MainGridLayout from "@/layouts/MainGridLayout.astro";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ 
+ const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+ 
+diff --git a/src/pages/gallery/[album].astro b/src/pages/gallery/[album].astro
+index 0976a12..9353cfa 100644
+--- a/src/pages/gallery/[album].astro
++++ b/src/pages/gallery/[album].astro
+@@ -1,5 +1,4 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { Icon } from "astro-icon/components";
+ import EncryptedContent from "@/components/features/EncryptedContent.astro";
+ import PhotoCard from "@/components/pages/gallery/PhotoCard.astro";
+@@ -7,6 +6,7 @@ import { galleryConfig, siteConfig } from "@/config";
+ import I18nKey from "@/i18n/i18nKey";
+ import { i18n } from "@/i18n/translation";
+ import MainGridLayout from "@/layouts/MainGridLayout.astro";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { getAlbumCover, scanAlbumPhotos } from "@/utils/gallery-utils";
+ import { getLqipProps } from "@/utils/lqip-utils";
+ import { url } from "@/utils/url-utils";
+diff --git a/src/pages/gallery/index.astro b/src/pages/gallery/index.astro
+index b3337ab..88a6cca 100644
+--- a/src/pages/gallery/index.astro
++++ b/src/pages/gallery/index.astro
+@@ -1,11 +1,11 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { Icon } from "astro-icon/components";
+ import AlbumCard from "@/components/pages/gallery/AlbumCard.astro";
+ import { galleryConfig, siteConfig } from "@/config";
+ import I18nKey from "@/i18n/i18nKey";
+ import { i18n } from "@/i18n/translation";
+ import MainGridLayout from "@/layouts/MainGridLayout.astro";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { getAlbumCover, scanAlbumPhotos } from "@/utils/gallery-utils";
+ 
+ const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+diff --git a/src/pages/guestbook.astro b/src/pages/guestbook.astro
+index aa0ed44..96cd5fa 100644
+--- a/src/pages/guestbook.astro
++++ b/src/pages/guestbook.astro
+@@ -1,5 +1,4 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { getEntry, render } from "astro:content";
+ import Comment from "@components/comment/index.astro";
+ import Markdown from "@components/common/Markdown.astro";
+@@ -8,6 +7,7 @@ import { commentConfig, siteConfig } from "@/config";
+ import I18nKey from "@/i18n/i18nKey";
+ import { i18n } from "@/i18n/translation";
+ import MainGridLayout from "@/layouts/MainGridLayout.astro";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ 
+ const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+ 
+diff --git a/src/pages/myanimelist.astro b/src/pages/myanimelist.astro
+index 9282b79..758add2 100644
+--- a/src/pages/myanimelist.astro
++++ b/src/pages/myanimelist.astro
+@@ -1,5 +1,4 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { Icon } from "astro-icon/components";
+ import MalGrid from "@/components/pages/mal/MalGrid.svelte";
+ import { siteConfig } from "@/config";
+@@ -8,6 +7,7 @@ import { i18n } from "@/i18n/translation";
+ import MainGridLayout from "@/layouts/MainGridLayout.astro";
+ import type { MalListItem } from "@/types/mal";
+ import { formatDateI18nWithTime } from "@/utils/date-utils";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ import {
+ 	fetchMalList,
+ 	type MalCategory,
+diff --git a/src/pages/sponsor.astro b/src/pages/sponsor.astro
+index 1bd0881..c9e7051 100644
+--- a/src/pages/sponsor.astro
++++ b/src/pages/sponsor.astro
+@@ -1,11 +1,11 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import Comment from "@components/comment/index.astro";
+ import { Icon } from "astro-icon/components";
+ import { commentConfig, siteConfig, sponsorConfig } from "@/config";
+ import I18nKey from "@/i18n/i18nKey";
+ import { i18n } from "@/i18n/translation";
+ import MainGridLayout from "@/layouts/MainGridLayout.astro";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { getLqipProps } from "@/utils/lqip-utils";
+ import { url } from "@/utils/url-utils";
+ 
+diff --git a/src/pages/vndb.astro b/src/pages/vndb.astro
+index 2bfc041..a0a4646 100644
+--- a/src/pages/vndb.astro
++++ b/src/pages/vndb.astro
+@@ -1,5 +1,4 @@
+ ---
+-import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { existsSync } from "node:fs";
+ import path from "node:path";
+ import { Icon } from "astro-icon/components";
+@@ -10,6 +9,7 @@ import { i18n } from "@/i18n/translation";
+ import MainGridLayout from "@/layouts/MainGridLayout.astro";
+ import type { VndbUlistEntry } from "@/types/vndb";
+ import { formatDateI18nWithTime } from "@/utils/date-utils";
++import { getNotFoundPath } from "@/utils/deployment-contract";
+ import { isVndbNsfw } from "@/utils/nsfw-utils";
+ import {
+ 	buildVndbTabs,

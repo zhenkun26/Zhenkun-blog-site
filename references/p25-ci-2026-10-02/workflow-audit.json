@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "kind": "local static audit only",
+  "node": "v24.20.0",
+  "yamlParser": "2.9.0",
+  "workflows": [
+    ".github/workflows/biome.yml",
+    ".github/workflows/build.yml",
+    ".github/workflows/deploy.yml"
+  ],
+  "shellSyntaxChecks": 12,
+  "assertions": [
+    "main triggers",
+    "same-commit reusable quality gate for push and manual deploy",
+    "root and subpath matrix",
+    "runtime/package-manager consistency",
+    "frozen install in both workflows",
+    "formal build entry and Pagefind artifact checks",
+    "unchanged Pages permission/environment/serialization",
+    "no continue-on-error or conditional bypass"
+  ],
+  "notRun": [
+    "GitHub Actions expression evaluator/actionlint",
+    "Linux clean frozen installation",
+    "hosted workflow execution",
+    "new full dual-base builds"
+  ]
+}

@@ -28,3 +28,13 @@
 - 证据四态：PASS / FAIL / BLOCKED / NOT_APPLICABLE；BLOCKED 不得转写为 PASS。
 - 旧会话的验证证据有时效：恢复会话后，重跑关键验证才能在其上继续。
 - 状态矛盾（ROADMAP、聊天记录、工作区不一致）时停止实现，以仓库现实为准。
+
+## Bounded work and recovery
+
+- ROADMAP alone records the active packet, intended outcome, exclusions, working branch/base, affected verification, blockers, and next action. ARCHITECTURE describes contracts; DECISIONS records tradeoffs; neither keeps a copied live task checklist.
+- Recover through AGENTS → ROADMAP → the packet's relevant ADR/error records → live Git status/log/diff. Historical PASS is a snapshot. Recheck affected behavior after source edits and before using it as acceptance for further work.
+- Distinguish external OBSERVED behavior, SOURCE_CONFIRMED implementation, INFERRED recommendations, and UNVERIFIED gaps. A screenshot of a reference, a source configuration, a dev render, a build artifact, and a deployed result establish different facts.
+- Preserve prior working-tree changes. Keep each implementation packet focused; planning completion does not mean source implementation, content publication, feature activation, or deployment is complete. No service endpoint, author record, statistic, or approval may be invented to close a gap.
+- Before a check, inspect its filesystem/network side effects. A build that empties output or staging remains BLOCKED under the no-deletion instruction unless the owner grants an exact tool/file exception recorded in ROADMAP; do not bypass it through another output directory or a wrapper. New dependencies, broader deletion, upstream merging, push, and deployment retain their existing authorization boundaries.
+- Screenshots belong to dated references folders. Verify the intended title/content and actual viewport before accepting them; URL change alone can precede Swup content replacement. Keep rejected captures identified as diagnostics, and do not stage private/transient captures for public delivery. A staging folder is not a backup and is not permission to clean up files.
+- At handoff, update ROADMAP and report changes, evidence, assumptions/risks, and pending authorized actions. ERROR_MEMORY records actual failures and recovery, not a parallel risk register or task board.

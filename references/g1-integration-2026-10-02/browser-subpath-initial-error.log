@@ -1,0 +1,1 @@
+Initial headless subpath probe asserted expected canonical /Zhenkun-blog-site/ but observed /Zhenkun-blog-site/404/. This was the same incorrectly rooted preview configuration; no accepted browser JSON was produced. Restarted preview with matching DEPLOY_BASE and reran.

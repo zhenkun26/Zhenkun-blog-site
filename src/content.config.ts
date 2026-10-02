@@ -2,6 +2,7 @@ import { defineCollection } from "astro:content";
 import type { CollectionConfig } from "astro/content/config";
 import { glob } from "astro/loaders";
 import { type ZodType, z } from "astro/zod";
+import { getPostId } from "./utils/post-contract";
 
 type PostData = {
 	title: string;
@@ -41,7 +42,11 @@ type ContentCollection<T> = CollectionConfig<
 >;
 
 const postsCollection: ContentCollection<PostData> = defineCollection({
-	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/posts" }),
+	loader: glob({
+		pattern: "**/*.{md,mdx}",
+		base: "./src/content/posts",
+		generateId: ({ entry, data }) => getPostId(entry, data),
+	}),
 	schema: z.object({
 		title: z.string(),
 		published: z.date(),

@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "base": "decd04b084c917648163c44225451ad1ceb5ecbe",
+  "typescript": "6.0.3",
+  "files": [
+    {
+      "path": "src/components/widget/Announcement.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/layouts/Layout.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/bangumi.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/bilibili.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/booknav.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/dynamic/comments.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/dynamic/index.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/friends.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/gallery/[album].astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/gallery/index.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/guestbook.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/myanimelist.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/sponsor.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/pages/vndb.astro",
+      "status": "PASS",
+      "invariants": [
+        "template/script/style byte equality",
+        "frontmatter line multiset",
+        "import token multiset",
+        "non-import statement order/token equality"
+      ]
+    },
+    {
+      "path": "src/config/backgroundWallpaper.ts",
+      "status": "PASS",
+      "invariants": [
+        "TypeScript AST equality including property names, array values and order; source positions/trailing comma ignored"
+      ]
+    }
+  ],
+  "sourceUtilityTopLevelAudit": [
+    "deployment-contract.ts and post-contract.ts contain only imports and function declarations"
+  ],
+  "boundary": "Syntax/token/transpile invariants plus reviewed import relocation. Not a production rebuild, runtime behavior equivalence proof or GitHub Actions run."
+}

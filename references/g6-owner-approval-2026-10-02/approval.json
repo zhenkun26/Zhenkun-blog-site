@@ -1,0 +1,21 @@
+{
+  "status": "OWNER_G6_FIVE_POINTS_APPROVED",
+  "sourceThread": "01a0f183-dacb-71a2-a112-cf72600050d6",
+  "proposalSentinel": "Sentinel_1b4c89af7b3881919f12581e7a6ea527",
+  "proposal": "目前等你确认：保留中文网址、英文用 /en/；默认中文并记住选择；缺译明确提示；先做首页、About 和界面文案；同篇中英文共用评论。按这套继续可以吗？",
+  "answerSentinel": "Sentinel_7dbd5f8548588191a5fddeab0bfda59d",
+  "answer": "可以",
+  "approved": [
+    "Preserve Chinese URLs; explicit /en/",
+    "Default Chinese; remember active locale choice locally",
+    "Honest missing-translation presentation",
+    "First Home/About/shared UI increment",
+    "Same translation pair shares stable article comment identity"
+  ],
+  "EnglishBio": "Provisional draft only; exact English copy still needs owner review",
+  "boundary": [
+    "Bounded local isolated implementation and review",
+    "No blog-launch translation/publication",
+    "No push/main merge/deploy/new service/dependency/security change"
+  ]
+}

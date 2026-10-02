@@ -27,6 +27,10 @@ import remarkDirective from "remark-directive"; /* Handle directives */
 import remarkMath from "remark-math";
 import remarkSectionize from "remark-sectionize";
 import {
+	checkPostContent,
+	validatePostSources,
+} from "./scripts/zhenkun-check-content.mjs";
+import {
 	commentConfig,
 	dynamicConfig,
 	expressiveCodeConfig,
@@ -53,7 +57,13 @@ import { remarkMermaid } from "./src/plugins/remark-mermaid.js";
 import { remarkPlantuml } from "./src/plugins/remark-plantuml.js";
 import { remarkReadingTime } from "./src/plugins/remark-reading-time.mjs";
 import { remarkWikiLink } from "./src/plugins/remark-wiki-link.js";
+import { isPageInSitemap } from "./src/utils/deployment-contract.ts";
 import { collectUsedFontCssVars } from "./src/utils/fontHelper";
+import { getApiUrlList, processCoverImageSync } from "./src/utils/image-utils";
+import { assertProductionBuild } from "./src/utils/post-contract.ts";
+
+const deploymentBase = process.env.DEPLOY_BASE ?? "/";
+const production = process.env.NODE_ENV !== "development";
 
 if (process.env.NODE_ENV === "development") {
 	setMaxListeners(20);
@@ -70,8 +80,9 @@ export default defineConfig({
 	site: siteConfig.site_url,
 
 	// GitHub Pages 项目页部署在子路径下；本地开发保持根路径（CI 中注入 DEPLOY_BASE）
-	base: process.env.DEPLOY_BASE ?? "/",
+	base: deploymentBase,
 	trailingSlash: "always",
+	prerenderConflictBehavior: "error",
 
 	// 字体配置 - 只加载实际使用的字体，跳过未引用的以加快构建
 	fonts: (() => {
@@ -118,6 +129,18 @@ export default defineConfig({
 	},
 
 	integrations: [
+		{
+			name: "zhenkun-publication-contracts",
+			hooks: {
+				"astro:config:setup": ({ command }) => {
+					assertProductionBuild(command, process.env.NODE_ENV);
+					validatePostSources();
+				},
+				"astro:build:start": async () => {
+					await checkPostContent({ base: deploymentBase });
+				},
+			},
+		},
 		swup({
 			theme: false,
 			animationClass: "transition-swup-", // see https://swup.js.org/options/#animationselector
@@ -236,51 +259,14 @@ export default defineConfig({
 		}),
 		svelte(),
 		sitemap({
-			filter: (page) => {
-				// 根据页面开关配置过滤sitemap
-				const url = new URL(page);
-				const pathname = url.pathname;
-				if (pathname === "/dynamic/" && !siteConfig.pages.dynamic) {
-					return false;
-				}
-				if (pathname.startsWith("/gallery/") && !siteConfig.pages.gallery) {
-					return false;
-				}
-				if (pathname === "/friends/" && !siteConfig.pages.friends) {
-					return false;
-				}
-				if (pathname === "/guestbook/" && !siteConfig.pages.guestbook) {
-					return false;
-				}
-				if (pathname === "/booknav/" && !siteConfig.pages.booknav) {
-					return false;
-				}
-				if (pathname === "/bilibili/" && !siteConfig.pages.bilibili) {
-					return false;
-				}
-				if (pathname === "/bangumi/" && !siteConfig.pages.bangumi) {
-					return false;
-				}
-				if (pathname === "/vndb/" && !siteConfig.pages.vndb) {
-					return false;
-				}
-				if (pathname === "/myanimelist/" && !siteConfig.pages.mal) {
-					return false;
-				}
-				// 动态页评论嵌入页：评论关闭时重定向到 /404/，不应进 sitemap
-				if (
-					pathname === "/dynamic/comments/" &&
-					(dynamicConfig.showComment === false ||
-						!commentConfig.type ||
-						commentConfig.type === "none")
-				) {
-					return false;
-				}
-				if (pathname === "/sponsor/" && !siteConfig.pages.sponsor) {
-					return false;
-				}
-				return true;
-			},
+			filter: (page) =>
+				isPageInSitemap(
+					page,
+					deploymentBase,
+					siteConfig.pages,
+					dynamicConfig.showComment !== false &&
+						Boolean(commentConfig.type && commentConfig.type !== "none"),
+				),
 		}),
 		mdx(),
 	],
@@ -293,7 +279,14 @@ export default defineConfig({
 					: []),
 				remarkMath,
 				remarkReadingTime,
-				remarkWikiLink,
+				[
+					remarkWikiLink,
+					{
+						base: deploymentBase,
+						production,
+						coverApi: { getApiUrlList, processCoverImageSync },
+					},
+				],
 				remarkImageGrid,
 				remarkExcerpt,
 				remarkDirective,

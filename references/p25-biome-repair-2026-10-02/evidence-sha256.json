@@ -1,0 +1,16 @@
+{
+  "references/p25-biome-repair-2026-10-02/astro-check.log": "9c23938ee3719a66a0a824613f372d8bfdf3d93b4399551fd8444cb720ffeb95",
+  "references/p25-biome-repair-2026-10-02/biome-full-source-readable.log": "fd5a088df45d036e17b31df16584bfe30245be809cdd981351ded0308592b4a0",
+  "references/p25-biome-repair-2026-10-02/biome-full-source.log": "f1530d075ed9632b39d893a49658c3328c2678032791850c3c12ded16b02e947",
+  "references/p25-biome-repair-2026-10-02/native-tests-147.log": "405d8d2b504049df39230e76ea2e477462306ab670d96e49ac347fe2f9e5bc18",
+  "references/p25-biome-repair-2026-10-02/report.md": "4533dfcf804edc80f7bf8be993eb9f59d67ad2122a1488b66f4f1322e2ff4e31",
+  "references/p25-biome-repair-2026-10-02/scoped-fix.log": "2253513f3111cd6163ccdf3efb0b6cf56a3eb508d82067fe2b59b60ebf9c5427",
+  "references/p25-biome-repair-2026-10-02/semantic-audit.json": "b44435312d0ced9440006349c85bda7a2352184b363ab287559fa53178160bb9",
+  "references/p25-biome-repair-2026-10-02/semantic-audit.mjs": "b9e53650f285ab0ba30ecfcea276e38410079e403aa6cf6a87d70a434ea2a234",
+  "references/p25-biome-repair-2026-10-02/source-snapshot.json": "737d3a08ed64a3a429a994f834cf48cad006d858a27a4da1d36e2c816d115788",
+  "references/p25-biome-repair-2026-10-02/source.patch": "5979495682327cabe98ccd2a5d7ae3ebc8664daf69ea63c65e273f1875198980",
+  "references/p25-biome-repair-2026-10-02/type-check.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "docs/ROADMAP.md": "41c35824485986813eec9a8c3c7546acac0ef447759fd9a98e605a1d2f57eb55",
+  "docs/DECISIONS.md": "26183bb51c812d660ca610a5ca8f3d5014d98054c75bef8002edf350db5b02d8",
+  "docs/ERROR_MEMORY.md": "ffdb39799e498d9c314a8532edc651d1598e38c3bb661a75fe61434cb3f15105"
+}

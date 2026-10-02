@@ -1,0 +1,1 @@
+Initial scoped HTTP verification raised urllib.error.HTTPError: HTTP Error 404: Not Found. Actual subpath artifacts had passed; initial preview startup omitted DEPLOY_BASE and served root base. Stopped task-owned preview, restarted with DEPLOY_BASE=/Zhenkun-blog-site/. Production source/build unchanged.

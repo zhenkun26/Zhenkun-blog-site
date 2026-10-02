@@ -1,0 +1,204 @@
+{
+  "status": "PASS",
+  "source": "a353c2ee800bbff2865541288ea04308c245cdc5",
+  "base": "/",
+  "regularHtml": [
+    "404.html",
+    "about/index.html",
+    "archive/index.html",
+    "categories/index.html",
+    "index.html",
+    "rss/index.html",
+    "search/index.html",
+    "series/index.html",
+    "tags/index.html"
+  ],
+  "closedStubs": [
+    "bangumi/index.html",
+    "bilibili/index.html",
+    "booknav/index.html",
+    "dynamic/comments/index.html",
+    "dynamic/index.html",
+    "friends/index.html",
+    "gallery/encrypted-test/index.html",
+    "gallery/firefly-2026/index.html",
+    "gallery/index.html",
+    "guestbook/index.html",
+    "myanimelist/index.html",
+    "sponsor/index.html",
+    "vndb/index.html"
+  ],
+  "dynamicEndpoint": {
+    "body": [],
+    "policy": "disabled GET guard before collection/processor, separately executed in-memory regression"
+  },
+  "sitemap": [
+    "https://zhenkun26.github.io/",
+    "https://zhenkun26.github.io/about/",
+    "https://zhenkun26.github.io/archive/",
+    "https://zhenkun26.github.io/categories/",
+    "https://zhenkun26.github.io/rss/",
+    "https://zhenkun26.github.io/search/",
+    "https://zhenkun26.github.io/series/",
+    "https://zhenkun26.github.io/tags/"
+  ],
+  "pagefindFragments": [
+    {
+      "file": "zh-cn_d0df842.pf_fragment",
+      "url": "/about/",
+      "word_count": 141
+    }
+  ],
+  "rssItems": 0,
+  "publicPosts": 0,
+  "retainedGalleryAssets": [
+    "gallery/encrypted-test/urls.txt",
+    "gallery/firefly-2026/1.avif",
+    "gallery/firefly-2026/cover.avif",
+    "gallery/firefly-2026/urls.txt"
+  ],
+  "pioArtifactAbsent": true,
+  "http": [
+    {
+      "route": "/404.html",
+      "status": 200,
+      "sha256": "f2f0fbcae9ce99df4c3d5049be05f0f11032e8de387745ae6fa43d6e3aad556a"
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "sha256": "4b0ff523b1cf0edabcb8e4011a0f398f919560f9d35f3a11da35378cff81508f"
+    },
+    {
+      "route": "/archive/",
+      "status": 200,
+      "sha256": "acaa410ec9ea8bab5c607386f98700332d025c983e2578a85351c57d8e50d3f0"
+    },
+    {
+      "route": "/bangumi/",
+      "status": 200,
+      "sha256": "ff755d6d047b795cc6f63f3f3e4b121fe3ba92cfe0d7db402a874411e263d6b6"
+    },
+    {
+      "route": "/bilibili/",
+      "status": 200,
+      "sha256": "cc21df5d9a6d7002a7450008931716c832c9d47a6437892f0401859e49699acb"
+    },
+    {
+      "route": "/booknav/",
+      "status": 200,
+      "sha256": "81c7c97f55781744caf8fa8dd6a0cacd29ccbfaeaa17106de73dd59c537f0fdd"
+    },
+    {
+      "route": "/categories/",
+      "status": 200,
+      "sha256": "d5d06188e4caf1608f4153b99102de3c16c0767594faecb947ea03e57b4acb62"
+    },
+    {
+      "route": "/dynamic/comments/",
+      "status": 200,
+      "sha256": "6d962d305a471d4c0848bcf2ae421c305a38d6b7745baec589ae86335a8c8923"
+    },
+    {
+      "route": "/dynamic/",
+      "status": 200,
+      "sha256": "022b6b3283ad10f4e65aeb26b81961c044ac88482580eb944c6d6d46a2a29009"
+    },
+    {
+      "route": "/friends/",
+      "status": 200,
+      "sha256": "a64704ce3fbccffe6db4a517471c8ff6db02c4e14065f5741581df0811488b64"
+    },
+    {
+      "route": "/gallery/encrypted-test/",
+      "status": 200,
+      "sha256": "02bae1ac0cd4e2e95f976ec56e359f137886ddae382504c3f96eb6cc74aeb2b1"
+    },
+    {
+      "route": "/gallery/firefly-2026/",
+      "status": 200,
+      "sha256": "073ec52a646c8a340a270937ff62ec92f32f0fee26013ff555cc449c0338b1f9"
+    },
+    {
+      "route": "/gallery/",
+      "status": 200,
+      "sha256": "05a67a6d7d660181ca91957ccd8674898f98275e514d0cc45ec85b8034e10b73"
+    },
+    {
+      "route": "/guestbook/",
+      "status": 200,
+      "sha256": "250b4f3d11ffd60d0c0fb2a174c38326290cc61349b63143b9cf31d64b6ea566"
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "sha256": "28595180b0a0b62cb60a40eb84af818ecb1a08461efffce4d9c6d793112eaefa"
+    },
+    {
+      "route": "/myanimelist/",
+      "status": 200,
+      "sha256": "22db3aafa45d3fcbe608e79718b80810c4ae6fe4585e9e37ef48f6d508ecb496"
+    },
+    {
+      "route": "/rss/",
+      "status": 200,
+      "sha256": "fcaea4a00470538024f7a07fed9eb548ecc23bc1e79043a0d0c7b1f462e0dd99"
+    },
+    {
+      "route": "/search/",
+      "status": 200,
+      "sha256": "e052f9d5ac9916259209984b2e5436831ae70dc65bd397d42d8da449d30f542c"
+    },
+    {
+      "route": "/series/",
+      "status": 200,
+      "sha256": "996b42fa6a439ea635673127a86b04570fcfeeef5f4f7afdb6f23db32823c1dd"
+    },
+    {
+      "route": "/sponsor/",
+      "status": 200,
+      "sha256": "9d101d059e64e2f7975281d91ff2a950e7def1beb4385c9c81ba0b3f181a0b57"
+    },
+    {
+      "route": "/tags/",
+      "status": 200,
+      "sha256": "448c2f2ea01f98794eee7df9e60a6759b135978b13fd3105ef869f0538873121"
+    },
+    {
+      "route": "/vndb/",
+      "status": 200,
+      "sha256": "f41d28bdcb44235eec79fe486ab62a16c45cc9d0c8169e6a231c1f483140a670"
+    },
+    {
+      "route": "/api/dynamic.json",
+      "status": 200,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "route": "/api/allPostMeta.json",
+      "status": 200,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "route": "/rss.xml",
+      "status": 200,
+      "sha256": "128001b3e0a0f0aebe627b474fcbde7d78e3fc1c41daaab6eba7cbdafa7a3bfa"
+    },
+    {
+      "route": "/sitemap-0.xml",
+      "status": 200,
+      "sha256": "38e28095008e9ed81f5998223a6768ad13ff4aa7c809da0b9aea87bfc0bf8c2a"
+    },
+    {
+      "route": "/pagefind/pagefind.js",
+      "status": 200,
+      "sha256": "252d272bd34d483d19a752060f6a065114d15ab12c42d8f905ca565e2768a009"
+    },
+    {
+      "route": "/gallery/firefly-2026/1.avif",
+      "status": 200,
+      "sha256": "2cc0dbc9ce375cb12436e9a2aea91d61c192482751652eef04c2ad5af1d4309c"
+    }
+  ],
+  "boundary": "Closed static page stubs are HTTP 200 with meta refresh; source/public assets are retained. No real external comment, enabled service activation, private-storage promise or production acceptance."
+}

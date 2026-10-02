@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/api/allPostMeta.json",
+    "status": 200,
+    "bytes": 2,
+    "body": []
+  },
+  {
+    "path": "/rss.xml",
+    "status": 200,
+    "bytes": 438,
+    "body": null
+  },
+  {
+    "path": "/posts/blog-launch/",
+    "status": 404
+  },
+  {
+    "path": "/og/blog-launch.png",
+    "status": 404
+  },
+  {
+    "path": "/assets/images/sponsor/alipay.png",
+    "status": 404
+  },
+  {
+    "path": "/assets/images/sponsor/wechat.png",
+    "status": 404
+  }
+]

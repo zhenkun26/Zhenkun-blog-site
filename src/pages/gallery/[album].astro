@@ -6,13 +6,16 @@ import { galleryConfig, siteConfig } from "@/config";
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import { getNotFoundPath } from "@/utils/deployment-contract";
 import { getAlbumCover, scanAlbumPhotos } from "@/utils/gallery-utils";
 import { getLqipProps } from "@/utils/lqip-utils";
 import { url } from "@/utils/url-utils";
 
+const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+
 // 检查页面是否启用
 if (!siteConfig.pages.gallery) {
-	return Astro.redirect("/404/");
+	return Astro.redirect(notFoundPath);
 }
 
 export function getStaticPaths() {
@@ -25,7 +28,7 @@ const { album: albumId } = Astro.params;
 const albumMeta = galleryConfig.albums.find((a) => a.id === albumId);
 
 if (!albumMeta) {
-	return Astro.redirect("/404/");
+	return Astro.redirect(notFoundPath);
 }
 
 const photos = scanAlbumPhotos(albumMeta.id);

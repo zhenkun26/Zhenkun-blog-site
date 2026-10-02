@@ -1,0 +1,53 @@
+{
+  "source": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+  "sequence": [
+    "About direct load",
+    "desktop query 气象",
+    "Escape",
+    "viewport 390x844",
+    "first mobile search toggle"
+  ],
+  "before": {
+    "closed": false,
+    "focus": "search-input-desktop",
+    "height": 839,
+    "width": 1462
+  },
+  "afterEscape": {
+    "closed": true,
+    "focus": "search-input-desktop",
+    "inert": true
+  },
+  "afterResizeBeforeClick": {
+    "closed": true,
+    "focus": "",
+    "height": 844,
+    "width": 390
+  },
+  "afterFirstClick": {
+    "aria": "false",
+    "closed": true,
+    "focus": "",
+    "inert": true,
+    "panel": "找不到相关结果。"
+  },
+  "firstClickGeometry": {
+    "height": 31.5,
+    "width": 31.5,
+    "x": 235,
+    "y": 15.75
+  },
+  "nativeSemanticClick": {
+    "aria": "true",
+    "closed": false,
+    "focus": "search-switch",
+    "inert": false,
+    "panel": "正在搜索..."
+  },
+  "classification": {
+    "observed": "The immediate post-resize automated locator click did not change DOM state or focus. Fresh AX semantic button click opened it.",
+    "inferred": "Input/hit-test/layout synchronization during viewport override, not a demonstrated search state-machine defect.",
+    "limit": "No event-delivery instrumentation was injected. Real physical resize/orientation first-click behavior remains unverified.",
+    "sourceDecision": "No source fix warranted without an actual delivered-click failure."
+  }
+}

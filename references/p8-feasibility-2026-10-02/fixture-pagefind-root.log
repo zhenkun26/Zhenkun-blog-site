@@ -1,0 +1,29 @@
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "/Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/tmp/p8-astro-locale-fixture"
+Source:       "dist-root"
+Output:       "dist-root/pagefind"
+
+[Walking source directory]
+Found 5 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 2 languages: en, zh-cn
+
+[Building search indexes]
+Total: 
+  Indexed 2 languages
+  Indexed 5 pages
+  Indexed 30 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.114 seconds
+Note: Pagefind doesn't support stemming for the language zh-cn. 
+Search will still work, but will not match across root words.
+Note: Pagefind doesn't support stemming for the language zh-cn. 
+Search will still work, but will not match across root words.

@@ -1,0 +1,266 @@
+{
+  "observed_at_utc": "2026-10-02T07:58:32.195519+00:00",
+  "candidate_state": "STABLE_FOR_INDEPENDENT_REVIEW; IMPLEMENTER_VERIFIED_ONLY; P3_NOT_ACCEPTED",
+  "candidate_branch": "codex/review-p3-interactions",
+  "accepted_base": "cb667956b7785ad7f553768628907cb20e6d1693",
+  "final_source_commit": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+  "browser_http_source_commit": "099eebc26955a10dfb6da08aa9d2f20982233a65",
+  "final_review_target": "The documentation/evidence commit containing this report; obtain exact SHA from git rev-parse HEAD. No self-referential SHA in its own content.",
+  "changes": {
+    "before": "Historical isolated-source evidence records first search cancelled by an inactive responsive input and duplicate accordion listeners after repeated Swup scripts. Kept historical before screenshots/logs; not presented as a fresh baseline replay.",
+    "after": "One query session handles initialization waits, debounce/stale data, clear/close/unmount and same-query mobile reopen. Modal menu traps/restores focus, preserves background inert state, releases scroll lock on close/navigation/desktop breakpoint; single guarded document delegates survive Swup.",
+    "exact_files": "See provenance.json and source-snapshot.json: nine production/test files only; five modified and four added. Final source patch includes added files.",
+    "commits": {
+      "search": "f2d0c264b72d264b669a13e318e02bdf26f55319",
+      "menu": "099eebc26955a10dfb6da08aa9d2f20982233a65",
+      "whitespace_only": "278165033a8ad422f6403ac07e02f7af19e6ab24"
+    },
+    "documentation": "Controlled proposed ROADMAP status, explicit historical ac4be59 wording/G1 label; only original P3 ERROR_MEMORY delta and current actual verification lessons appended. No old ROADMAP copied."
+  },
+  "environment": {
+    "os": "macOS-26.5-arm64-arm-64bit",
+    "node": "v24.20.0",
+    "pnpm": "11.22.0",
+    "dependencies": "Existing node_modules symlink; pnpm_config_verify_deps_before_run=false on reused-runtime pnpm commands. No installation/lock changes.",
+    "public_corpus": "Zero public articles, one indexed About page; blog-launch remains draft true."
+  },
+  "verification": {
+    "native": {
+      "status": "PASS",
+      "source": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+      "tests": 140,
+      "pass": 140,
+      "fail": 0,
+      "command": "node --test scripts/zhenkun-test-publication.mjs scripts/zhenkun-test-deployment.mjs scripts/zhenkun-test-search-session.mjs scripts/zhenkun-test-nav-menu.mjs"
+    },
+    "type_check": {
+      "status": "PASS",
+      "source": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+      "command": "pnpm_config_verify_deps_before_run=false pnpm type-check"
+    },
+    "astro": {
+      "status": "PASS",
+      "source": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+      "command": "pnpm_config_verify_deps_before_run=false pnpm check",
+      "files": 257,
+      "errors": 0,
+      "warnings_summary": 0,
+      "hints": [
+        {
+          "file": "src/pages/bangumi.astro",
+          "line": 16,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/bilibili.astro",
+          "line": 13,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/booknav.astro",
+          "line": 15,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/friends.astro",
+          "line": 17,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/guestbook.astro",
+          "line": 12,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/myanimelist.astro",
+          "line": 18,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/sponsor.astro",
+          "line": 12,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/vndb.astro",
+          "line": 20,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/dynamic/comments.astro",
+          "line": 7,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/dynamic/index.astro",
+          "line": 13,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/gallery/[album].astro",
+          "line": 14,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        },
+        {
+          "file": "src/pages/gallery/index.astro",
+          "line": 11,
+          "column": 7,
+          "code": "TS6133",
+          "message": "'notFoundPath' is declared but its value is never read.",
+          "classification": "Retained nonblocking Astro hint on disabled-module route; unused notFoundPath. Unchanged by P3."
+        }
+      ],
+      "other_console_notice": "[WARN] glob-loader has no dynamic markdown files; known empty disabled dynamic corpus, not counted as a new P3 source failure."
+    },
+    "biome": {
+      "status": "PASS",
+      "source": "099eebc26955a10dfb6da08aa9d2f20982233a65",
+      "files": 6,
+      "fixes": 0,
+      "scope": [
+        "src/global.d.ts",
+        "src/utils/floating-panel-utils.ts",
+        "src/utils/swup-transitions.ts",
+        "src/utils/search-session.ts",
+        "scripts/zhenkun-test-nav-menu.mjs",
+        "scripts/zhenkun-test-search-session.mjs"
+      ],
+      "command": "pnpm_config_verify_deps_before_run=false pnpm exec biome check <six listed files>",
+      "scope_limit": "Astro/Svelte files not included in this six-file Biome result. The six files are unchanged in final source."
+    },
+    "source_docs_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check cb667956b7785ad7f553768628907cb20e6d1693 -- src scripts docs",
+      "limit": "Raw historical/current measurement logs preserve original whitespace; no claim that all log lines pass diff --check."
+    },
+    "full_builds": {
+      "status": "PASS",
+      "source": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+      "root_command": "DEPLOY_BASE=/ pnpm_config_verify_deps_before_run=false pnpm build",
+      "subpath_command": "DEPLOY_BASE=/Zhenkun-blog-site/ pnpm_config_verify_deps_before_run=false pnpm build",
+      "scope": "Official complete package script: generation, Astro, pruning/fonts/minified inline scripts, Pagefind. Exit 0 observed for both. No build rerun during closeout."
+    },
+    "final_artifacts": {
+      "status": "PASS",
+      "source": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+      "root": "artifacts-root-final.json",
+      "subpath": "artifacts-subpath-final.json",
+      "commands": "python3 scripts/zhenkun-verify-deployment.py --base <base> --expected-posts 0"
+    },
+    "http": {
+      "status": "PASS",
+      "source": "099eebc26955a10dfb6da08aa9d2f20982233a65",
+      "requests_each_base": 24,
+      "files": [
+        "http-root.json",
+        "http-subpath.json"
+      ],
+      "scope": "Native local Astro preview, actual artifact bytes. HTTP 200 meta-refresh stubs remain distinct from actual HTTP 404."
+    },
+    "browser": {
+      "status": "PASS_WITH_DOCUMENTED_LIMITS",
+      "source": "099eebc26955a10dfb6da08aa9d2f20982233a65",
+      "tool": "CUA Edge extension, actual GUI",
+      "version": "154.0.4258.48",
+      "desktop": "1462x839 DPR2",
+      "mobile": "390x844 viewport simulation, not physical phone",
+      "breakpoint": [
+        1023,
+        1024
+      ],
+      "matrix": "browser-matrix.json",
+      "scenarios": "First query, rapid replacement/no match/clear/Escape, actual result navigation and search after Swup, mobile unchanged query reopen, actual Pagefind assets delayed 1.5s each, 503 settled state; menu focus/Tab/Shift-Tab/Escape/scrim/button/nav close, background inert and scroll-lock release; 20 Swup navigations EACH base and single accordion transition after them. Root light menu and subpath dark menu with theme restored.",
+      "formatting_relation": "format-equivalence.json: two blank-line whitespace edits only; all 55 subpath client JS assets byte equal to browser-tested build. Not a claim all HTML/inline scripts are byte equal."
+    },
+    "responsive_focus_closeout": {
+      "status": "OBSERVED_AND_CLASSIFIED_WITH_INFERENCE_LIMIT",
+      "source": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+      "file": "responsive-focus-reproduction.json",
+      "observed": "Immediate post-resize locator click left panel closed and active element body; fresh AX semantic search button click opened it, aria-expanded true, inert false, focus search-switch.",
+      "inferred": "Input/hit-test/layout synchronization during emulated viewport override, not a demonstrated delivered-click state-machine failure.",
+      "source_decision": "No speculative source change.",
+      "unverified": "Physical resize/orientation first click and exact event-delivery mechanism."
+    }
+  },
+  "protection": {
+    "original_head": "cb667956b7785ad7f553768628907cb20e6d1693",
+    "original_tracked_tree_index_clean": true,
+    "old_dirty_p3_files_unchanged": 50,
+    "workbuddy_unchanged": true,
+    "base_reference_blobs_unchanged": 204,
+    "copied_old_p3_evidence_files_unchanged": 40,
+    "source_snapshot": "source-snapshot.json"
+  },
+  "process_consistency": [
+    {
+      "area": "Canonical state",
+      "status": "PASS",
+      "evidence": "Original remains cb667956; candidate is proposed canonical revision with P3 unchecked; independent review precedes acceptance. G1 explicitly historical facts separated from P3."
+    },
+    {
+      "area": "Bounded implementation",
+      "status": "PASS",
+      "evidence": "Search/menu separate commits; only two whitespace lines afterward. No product direction/profile/CI/language/content/lock/security/deployment changes."
+    },
+    {
+      "area": "Memory",
+      "status": "PASS",
+      "evidence": "ERROR_MEMORY append only; no whole-file canonical overwrite. Checkpoint is a dated historical interruption measurement, not current task state. Old browser-matrix diagnostic caveats retained and resolved/classified in separate closeout evidence."
+    },
+    {
+      "area": "Source-bound evidence",
+      "status": "PASS",
+      "evidence": "Final source and older browser/HTTP source separately pinned, raw logs and historical hashes retained, client JS equivalence scope explicit."
+    },
+    {
+      "area": "Authorization",
+      "status": "PASS",
+      "evidence": "Only local development/measurement/temporary preview. Original user files/draft preserved; no push/main merge/deploy/private upload/credentials/dependency changes."
+    }
+  ],
+  "unrun": [
+    "Independent P3 review",
+    "Chrome",
+    "Physical phone and physical resize/orientation",
+    "Theme animation origin/intermediate frames",
+    "Fresh dependency installation/Linux",
+    "Real published article/comment workflow",
+    "Remote checks/deployment"
+  ],
+  "next_milestone": "Independent exact-SHA review. Do not accept P3 before review; only afterward consider P2.5 separate CI packets, then confirmed profile.",
+  "cleanup": "All task-created browser tabs closed; normal viewport restored, theme unchanged during closeout; only task-owned preview 44271 stopped. Ports 4339/4340/4341 checked clear.",
+  "known_diagnostics": "Exact localized locators, read-only navigator access and delayed-request deadlines recorded; Python documentation parse failed before any write, then recovered with UTF-8-safe tooling. No evidence has been hidden or converted from unknown to product PASS."
+}

@@ -9,6 +9,7 @@ import { i18n } from "@/i18n/translation";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import type { VndbUlistEntry } from "@/types/vndb";
 import { formatDateI18nWithTime } from "@/utils/date-utils";
+import { getNotFoundPath } from "@/utils/deployment-contract";
 import { isVndbNsfw } from "@/utils/nsfw-utils";
 import {
 	buildVndbTabs,
@@ -16,9 +17,11 @@ import {
 	type VndbTab,
 } from "@/utils/vndb-utils";
 
+const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+
 // 检查页面是否启用
 if (!siteConfig.pages.vndb) {
-	return Astro.redirect("/404/");
+	return Astro.redirect(notFoundPath);
 }
 
 const buildTime = formatDateI18nWithTime(new Date());

@@ -1,0 +1,43 @@
+{
+  "liveBefore": {
+    "buildText": "构建时间",
+    "button": {
+      "x": 1342.015625,
+      "y": 36
+    },
+    "dark": false,
+    "reducedMotion": false,
+    "url": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+    "viewTransitions": false,
+    "viewport": {
+      "dpr": 2,
+      "height": 792,
+      "width": 1462
+    }
+  },
+  "liveAfter": {
+    "dark": true,
+    "end": "",
+    "revealing": false,
+    "start": "",
+    "viewport": {
+      "dpr": 2,
+      "height": 792,
+      "width": 1462
+    }
+  },
+  "returnMid": {
+    "dark": false,
+    "end": "circle(131.00784782104398% at 91.79313440492476% 4.545454545454546%)",
+    "revealing": true,
+    "start": "circle(0% at 91.79313440492476% 4.545454545454546%)"
+  },
+  "liveRestored": {
+    "dark": false,
+    "end": "",
+    "revealing": false,
+    "start": ""
+  },
+  "toolLimit": "DOM inspection does not expose document.getAnimations/startViewTransition; transition observation uses actual class and inline style.",
+  "scope": "Connected Microsoft Edge on Mac, DPR 2; Chrome and physical mobile remain unverified."
+}

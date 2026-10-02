@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "displayName": "Zhenkun",
+  "navbar": "Zhenkun",
+  "author": "Zhenkun",
+  "bio": "探索气象学、人工智能与计算机科学的交叉，记录学习、实践与生活。",
+  "publicLinks": [
+    {
+      "name": "GitHub",
+      "icon": "fa7-brands:github",
+      "url": "https://github.com/zhenkun26",
+      "showName": false
+    },
+    {
+      "name": "Email",
+      "icon": "fa7-solid:envelope",
+      "url": "mailto:zhenkunz25@gmail.com",
+      "showName": false
+    },
+    {
+      "name": "RSS",
+      "icon": "fa7-solid:rss",
+      "url": "/rss/",
+      "showName": false
+    }
+  ],
+  "mainTopics": [
+    "AI",
+    "大气科学",
+    "生活随笔"
+  ],
+  "categories": "Actual public categories remain article-derived; no draft reclassification",
+  "unchanged": {
+    "siteUrl": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+    "avatar": "assets/images/zhenkun/avatar.avif",
+    "logo": {
+      "type": "image",
+      "value": "assets/images/logo/firefly-light.png",
+      "valueDark": "assets/images/logo/firefly-dark.png",
+      "alt": "🍀"
+    },
+    "pageToggles": {
+      "friends": false,
+      "guestbook": false,
+      "dynamic": false,
+      "gallery": false,
+      "booknav": false,
+      "bilibili": false,
+      "bangumi": false,
+      "vndb": false,
+      "mal": false,
+      "sponsor": false
+    },
+    "sourceHashes": [
+      "src/content/posts/blog-launch.md",
+      "src/components/layout/Footer.astro",
+      "src/pages/og/[...slug].ts",
+      "LICENSE"
+    ]
+  },
+  "boundary": "Direct config/source assertions; rendered output checked separately"
+}

@@ -1,12 +1,11 @@
 import type { CollectionEntry } from "astro:content";
-import { getCollection } from "astro:content";
 import * as fs from "node:fs";
 import type { APIContext, GetStaticPaths } from "astro";
 import { googleFonts } from "takumi-js/helpers";
 import { ImageResponse } from "takumi-js/response";
 import { profileConfig } from "@/config/profileConfig";
 import { siteConfig } from "@/config/siteConfig";
-import { removeFileExtension } from "@/utils/url-utils";
+import { getVisiblePosts } from "@/utils/content-utils";
 
 export const prerender = true;
 
@@ -15,12 +14,11 @@ export const getStaticPaths: GetStaticPaths = async () => {
 		return [];
 	}
 
-	const allPosts = await getCollection("posts");
-	const publishedPosts = allPosts.filter((post) => !post.data.draft);
+	// OG output remains public-only even during draft-enabled development previews.
+	const publishedPosts = await getVisiblePosts({ production: true });
 
 	return publishedPosts.map((post) => {
-		// 将 id 转换为 slug（移除扩展名）以匹配路由参数
-		const slug = removeFileExtension(post.id);
+		const slug = post.id;
 		return {
 			params: { slug: `${slug}.png` },
 			props: { post },

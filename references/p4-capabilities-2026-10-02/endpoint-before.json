@@ -1,0 +1,11 @@
+{
+  "source": "7ec53a2a7d9557ecbda89319e55c48d3fdca2e66",
+  "endpoint": "src/pages/api/dynamic.json.ts",
+  "command": "node --test scripts/zhenkun-test-capabilities.mjs",
+  "exitCode": 1,
+  "tests": 4,
+  "pass": 2,
+  "fail": 2,
+  "fixtureScope": "In-memory only; real GET and real installed Markdown processor, config/content module fixtures; no source content or live settings edited",
+  "diagnosis": "Disabled endpoint emits sentinel content and reads a deliberately failing collection; enabled behavior already passes"
+}

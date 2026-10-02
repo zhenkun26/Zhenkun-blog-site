@@ -1,0 +1,40 @@
+{
+  "startingHead": "366f636f8663cf3fef6d3905f0d5a0598e627ee5",
+  "scope": "Composed final P0/P1 source, excluding evidence/docs/dist",
+  "files": {
+    "astro.config.mjs": "c774738fd1e59ce83fc78a46fafe7c47c3ed79cf81c31348a291e3e3b25ac242",
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "scripts/zhenkun-check-content.mjs": "956a78e53295af0455c2e1c48965387036234726d466675aa6fae953db225fe9",
+    "scripts/zhenkun-test-publication.mjs": "7cbad76374e018e8e20d59594ee37e03327cc0063da093c02e71245fccd23ba1",
+    "src/components/comment/index.astro": "a06a5d3fb3823ac0c8416d8ae831d321f8398eef7f1cff2570dce52b2541fdb1",
+    "src/components/layout/BannerHomeTextOverlay.astro": "2cc3d208befe7e903115ac633fd8757093fcf60c8d84061f1c37c27320e82f3c",
+    "src/components/misc/RecommendedPost.astro": "06064dda65ea861f6775fc0868e6b41bca792c4b5e8ecd51849c03b59da58d20",
+    "src/components/widget/Calendar.astro": "5f40674af958ac08e879cf7d1c8e78a825d862e5321ba335799c6441c52526e2",
+    "src/config/backgroundWallpaper.ts": "26f7fb7d1073c78598543672a539e47e48698ad53ced207ad120d001919b4ab7",
+    "src/config/booknavConfig.ts": "ae138a769905209d3a9c03355067eac1b31eaf9f72a143ffd8d1835662b78d51",
+    "src/config/dynamicConfig.ts": "5183c73df904c8c303f17118488927111487638eaaa21b407321b6a25cc60114",
+    "src/config/friendsConfig.ts": "cc10dbe6f96e7221a0c21df5d6c09a1e4e8bea1c1babbb8eb6413de081447793",
+    "src/config/siteConfig.ts": "f3f4e30ec61b7f980d92f0eaf03aa7068a958dcf5b948c2e40e5345c3ef16b59",
+    "src/config/sponsorConfig.ts": "072cf96172ecce025f413060fc9ddbff119a5765f2c3eacd5e13faa43d25b651",
+    "src/constants/lqips.json": "5a42661ed1b6198b5e9505c5cd1a6d5006e366f7b17cd349f0724a0b1eb135cc",
+    "src/content.config.ts": "799843b5e6ede467dff5ffffa18ad8966e4d328e222b75a89d75f39551959117",
+    "src/content/spec/friends.mdx": "b16bdba4980e4c7cd251fd45bc0db3c4b0512781463ed77d8e689eec2d793010",
+    "src/pages/api/allPostMeta.json.ts": "8326eec2327d1b1f978234e576d5ffe9c43dfdce65686b64c1459c7e762277d7",
+    "src/pages/og/[...slug].ts": "9e63d019015ea5f18a94b35740d2a5fa28a663a0723c9b5f384fa8e4786f8d86",
+    "src/pages/posts/[...slug].astro": "8813a9e1aa5a1dbf09274538fd50a5bed98c1dbcc8c0af3ee6ddd56502266822",
+    "src/pages/rss.astro": "b71ad0e154d2f6a8a3eceff5b7b2127d11ac9471d2a1558a344e36134e554d0b",
+    "src/pages/rss.xml.ts": "aee7ae93283888ae4961f84ecdd693a200f1b8ccbd912073717ee4508c909211",
+    "src/plugins/remark-wiki-link.js": "68c98c9b04a939411d890282da3a9345e070dd2859a78b3516506c62736b0108",
+    "src/types/dynamicConfig.ts": "5cf9240038cd8f87b78336c60f6918977795846ad50b54daf59566da0f580b0c",
+    "src/utils/content-utils.ts": "276b4f0b7b46bd9c4d369b4c8cdc37e35afc4998665bbbbf94a6fd63ba84a4a3",
+    "src/utils/memos-adapter.ts": "a324a71930ce2ea609d22507a6e15fa290f051733f36672e555d91a70429794e",
+    "src/utils/post-contract.ts": "11d23c8a1b582c7f085120c3284e3bb0542c3ffee586f83d7a919579533446ea",
+    "src/utils/url-utils.ts": "ba4df2803942b34d6d042c421398540aa8359d7a2f20b99d1c5f8729c876c896",
+    "src/utils/wiki-link-index.ts": "8368eb42806f6612df2488dddb3a46fea37405583a771ba17fd09762e821c05f"
+  },
+  "lockSha256": "4c058ca733b602da6cb01932ed1336309de33de409aac6f37ee2eabb83f4ad3d",
+  "deletedSourceFiles": [
+    "public/assets/images/sponsor/alipay.png",
+    "public/assets/images/sponsor/wechat.png"
+  ]
+}

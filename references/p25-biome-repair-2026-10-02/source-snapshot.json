@@ -1,0 +1,100 @@
+{
+  "observed_at_utc": "2026-10-02T09:07:11.099798+00:00",
+  "base": "decd04b084c917648163c44225451ad1ceb5ecbe",
+  "repair_source": "6e0ca6122271042f1801701732c2ab678f372081",
+  "branch": "codex/review-p25-biome",
+  "source_files_sha256": {
+    "src/components/widget/Announcement.astro": "afc0ad0e7f984e15dea855192077993eb4e3d6487fd687872889565c965795fc",
+    "src/layouts/Layout.astro": "e7fdc4c9601b567a6ba2baae538179da9a7605d3542d32ff07e629e45e196128",
+    "src/pages/bangumi.astro": "231d2d23fa1f03e0dd3f400680aa70d7e3d59cd8cb50763e5ceb074815bf35ae",
+    "src/pages/bilibili.astro": "bbffe3ee3ef526c132d486d0673fccb057bd1048928a24c1f63244ca5d6fe725",
+    "src/pages/booknav.astro": "d19242a8083f0aa04bcf6f1b38fc190315dc4acd5e9ebc8202f2458d8343e545",
+    "src/pages/dynamic/comments.astro": "db461a1b98454e522b753ef686427f91418097cacdc22362cfde3e095296deac",
+    "src/pages/dynamic/index.astro": "db02baade40f6de87c18e54d6fa707638ea63350ef1ae22287c3a2d979d089d4",
+    "src/pages/friends.astro": "12676a3b487c8b639f8a7afe46ce13e037fa3977a80cbeafdb09428c467a8d84",
+    "src/pages/gallery/[album].astro": "745371db964d6f30824dbf2e89dcbe21a854d474f2da23b08c21af9fdc6886a1",
+    "src/pages/gallery/index.astro": "b4015ff4a9ff55559253060ab2d47b774e35659fbf076d9b1a6f1418e5081dad",
+    "src/pages/guestbook.astro": "6591c50418e5f3c089f808f8e578416814620c14e191a7d531ea092b0484b7a6",
+    "src/pages/myanimelist.astro": "0bc473aebb3dd012c1d99be3803e8b3df0bb093763eb7810411f99cdd707711d",
+    "src/pages/sponsor.astro": "6c2e08d2b2029a3169f8011238da9d66f314e113fc8bb3945eda406210a4fd4a",
+    "src/pages/vndb.astro": "cea5548adab5282c776886955bd1c1be2a9007b23ccf1b5c00b1eec1b5fcfd3e",
+    "src/config/backgroundWallpaper.ts": "dbca15419281f3d23274169158a38d81d9e12f0177d6cdb31c6daebe640cc385"
+  },
+  "source_diff_stat": "15 files changed, 15 insertions, 19 deletions",
+  "scope_unchanged": [
+    "workflows",
+    "scripts",
+    "dependencies/package lock",
+    "Biome rules",
+    "content",
+    "public assets"
+  ],
+  "direct_verifications": {
+    "full_source_biome": {
+      "exit_code": 0,
+      "files": 298
+    },
+    "native": {
+      "exit_code": 0,
+      "pass": 147,
+      "fail": 0,
+      "skip": 0
+    },
+    "typescript": {
+      "exit_code": 0,
+      "log_bytes": 0
+    },
+    "astro": {
+      "exit_code": 0,
+      "files": 257,
+      "errors": 0,
+      "warnings": 0,
+      "retained_hints": 12
+    },
+    "semantic_audit": {
+      "exit_code": 0,
+      "files": 15
+    },
+    "source_diff_check": {
+      "exit_code": 0
+    }
+  },
+  "prior_ci_independent_review": {
+    "candidate": "decd04b084c917648163c44225451ad1ceb5ecbe",
+    "source": "Parent task 01a0f183-dacb-71a2-a112-cf72600050d6 supplied exact-SHA acceptance for local CI implementation",
+    "boundary": "Independent reviewer assertions supplied by parent; not newly reproduced hosted runs",
+    "claimed_checks": [
+      "147 native regressions",
+      "static workflow graph/frozen/base/permissions"
+    ]
+  },
+  "canonical": {
+    "head": "c6118323cd7e82e03304eb391b5ea95db951019e",
+    "branch": "codex/refactor-publication-contracts",
+    "tracked_tree": "clean",
+    "main_unchanged": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de"
+  },
+  "protected": {
+    "old_p3_head": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+    "dirty_file_hashes_matched": 50,
+    "workbuddy_sha256": "9eb1658b6b811558b721aad3ac1f64e14bbbffde9854c2ac7d1a4c949d74d89d",
+    "prior_dated_p3_p25_evidence_unchanged": true
+  },
+  "not_run": [
+    "new full build",
+    "Linux clean frozen install",
+    "hosted GitHub Actions/actionlint",
+    "required-check-name/branch-rule audit",
+    "new production artifact/HTTP/browser checks"
+  ],
+  "not_performed": [
+    "install",
+    "denied pnpm route retry",
+    "dependency/rule/value changes",
+    "push",
+    "remote CI trigger",
+    "deploy",
+    "publication",
+    "profile/language changes"
+  ]
+}

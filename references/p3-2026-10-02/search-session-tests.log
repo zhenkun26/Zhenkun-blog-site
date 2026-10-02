@@ -1,0 +1,24 @@
+✔ first query survives lazy backend initialization (11.523875ms)
+✔ rapid edits debounce to the latest query (25.63575ms)
+✔ older search response cannot replace a newer result (17.439833ms)
+✔ older result data cannot replace a newer result (18.816583ms)
+✔ clearing to "" invalidates an in-flight query (12.084333ms)
+✔ clearing to "  \n " invalidates an in-flight query (11.836417ms)
+✔ empty query never loads or searches the backend (6.633625ms)
+✔ zero results complete without leaving a spinner (6.640167ms)
+✔ backend failure clears stale results and permits a retry (18.228375ms)
+✔ stale failure cannot clear the newer success (18.247ms)
+✔ cancel before debounce prevents any backend call (22.625125ms)
+✔ cancel during initialization cannot resurrect a closed panel (13.081125ms)
+✔ dispose before debounce prevents any backend call (22.444333ms)
+✔ dispose during initialization cannot resurrect a closed panel (11.688875ms)
+✔ a new SPA session is independent of disposed work (19.441209ms)
+✔ dispose is idempotent and future edits publish nothing (6.820167ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 316.6045

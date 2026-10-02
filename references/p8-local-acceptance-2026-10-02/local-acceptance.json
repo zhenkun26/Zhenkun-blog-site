@@ -1,0 +1,35 @@
+{
+  "status": "LOCAL_P8_FEASIBILITY_ACCEPTED",
+  "originalHeadBefore": "04cbf0bfbf13ff8a17f0ba66ed2277526b6e5139",
+  "acceptedCandidate": "922a2490b52a501a84aa60b2dacb33422d6aa913",
+  "branch": "codex/refactor-publication-contracts",
+  "method": "Guarded --ff-only via exact local review ref",
+  "applicationDelta": [],
+  "review": {
+    "outcome": "PASS",
+    "exactCandidate": "922a2490b52a501a84aa60b2dacb33422d6aa913",
+    "provenance": "Parent-relayed independent docs-only review: 419 keys/catalog, 510 calls/81 files, 146 heuristic Han candidates/30 files, 292 files, zero parser diagnostics, production/config/protected/evidence match. No new runtime/build tests claimed by this acceptance script."
+  },
+  "authorization": "Current explicit delegated instruction requests guarded local docs-only FF of this exact independent review target; implementation and publication excluded.",
+  "freshChecks": [
+    "exact HEAD/branch/clean tracked+index",
+    "docs/evidence-only delta and ancestry",
+    "491 application SHA256 / 27 config files",
+    "33 P8 evidence files/manifest",
+    "50 protected files/status",
+    ".workbuddy SHA256",
+    "main unchanged"
+  ],
+  "main": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de",
+  "evidenceManifestSHA256": "a587d37359732fcdf3d4b6f63eca51f86aa08e84abedc7a86f3e0aeeb77f85c5",
+  "protectedFiles": 50,
+  "workbuddySHA256": "9eb1658b6b811558b721aad3ac1f64e14bbbffde9854c2ac7d1a4c949d74d89d",
+  "G6": "Owner answer pending; architecture A/default Chinese/preference memory/honest missing translation/first Home-About-UI/English bio/shared comments per pair are proposals only.",
+  "limits": [
+    "No localization/source/schema/article change",
+    "Synthetic Node language seam is not browser acceptance",
+    "Full theme bilingual integration and config-time plugin seam open",
+    "Linux frozen/hosted/required-check/production and real article/comments open"
+  ],
+  "remoteWrite": false
+}

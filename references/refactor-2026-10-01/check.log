@@ -1,0 +1,13 @@
+$ astro check
+23:54:32 [content] Syncing content
+23:54:32 [content] Astro config changed
+23:54:32 [content] Clearing content store
+23:54:32 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/dynamic"
+23:54:32 [content] Synced content
+23:54:32 [types] Generated 225ms
+23:54:32 [check] Getting diagnostics for Astro files in /Users/zhenkun/GitHub/Zhenkun-blog-site...
+Result (255 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

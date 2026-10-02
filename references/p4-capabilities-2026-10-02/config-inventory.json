@@ -1,0 +1,129 @@
+{
+  "status": "PASS_CURRENT_CONFIGURATION",
+  "baseline": "d8eb0cb3ca6eb2c2fa0b703a47721d2a9f6146f1",
+  "source": "a353c2ee800bbff2865541288ea04308c245cdc5",
+  "pageToggles": {
+    "friends": false,
+    "guestbook": false,
+    "dynamic": false,
+    "gallery": false,
+    "booknav": false,
+    "bilibili": false,
+    "bangumi": false,
+    "vndb": false,
+    "mal": false,
+    "sponsor": false
+  },
+  "publicPageEnvOverrides": [],
+  "displaySettingsEnvOverridePresent": false,
+  "visibleNavigation": [
+    {
+      "name": "主页",
+      "url": "/"
+    },
+    {
+      "name": "归档",
+      "url": "/archive/"
+    },
+    {
+      "name": "分类",
+      "url": "/categories/"
+    },
+    {
+      "name": "标签",
+      "url": "/tags/"
+    },
+    {
+      "name": "系列",
+      "url": "/series/"
+    },
+    {
+      "name": "关于我",
+      "url": "/about/"
+    }
+  ],
+  "comment": {
+    "selected": "giscus",
+    "policy": "Already enabled by ADR-XB-005; real approved article interaction untested; settings unchanged"
+  },
+  "dynamic": {
+    "page": false,
+    "memosEnabled": false,
+    "showComment": true,
+    "data": "/api/dynamic.json"
+  },
+  "music": {
+    "navbar": true,
+    "sidebar": true,
+    "mode": "local",
+    "lyrics": false,
+    "localAssetsPresent": [
+      "/assets/music/使一颗心免于哀伤-哼唱.mp3",
+      "/assets/music/cover/109951169585655912.webp"
+    ]
+  },
+  "analytics": {
+    "googleConfigured": false,
+    "clarityConfigured": false,
+    "umamiConfigured": false,
+    "la51Configured": false
+  },
+  "decorative": {
+    "spine": false,
+    "live2d": false,
+    "sakura": false
+  },
+  "displaySettings": {
+    "enable": false,
+    "themeColorSwitchable": false,
+    "layoutSwitchable": false,
+    "cardBorderSwitchable": false,
+    "cardFollowThemeSwitchable": false,
+    "wallpaperModeSwitchable": false,
+    "fullscreenLayoutSwitchable": false,
+    "wavesSwitchable": false,
+    "gradientSwitchable": false,
+    "bannerTitleSwitchable": false,
+    "bannerCarouselSwitchable": false,
+    "overlaySwitchable": false,
+    "sakuraSwitchable": false
+  },
+  "sidebar": {
+    "enabled": true,
+    "announcementConfigured": true
+  },
+  "plantuml": {
+    "enabled": true,
+    "publicArticleDiagramRuntime": "No public article, no current diagram request observed/claimed"
+  },
+  "configHashes": {
+    "src/config/FooterConfig.html": "19a6ca07a2bc9d2f5da709c2dee2aa80e6e1315c79ada863a692a58436cbbee0",
+    "src/config/README.md": "2575ed38474bb4c2831ff71ee54c6b0acf9e2c13e2a4044736435474aea1420f",
+    "src/config/analyticsConfig.ts": "4eebd83f037182a62d00c6b2cfee98b4f53c687357a341301ca834277e91e92d",
+    "src/config/announcementConfig.ts": "7dee5b770f610297a171ba9c81c092cb476a76062b6df260d3b1b1bd3498379a",
+    "src/config/backgroundWallpaper.ts": "dbca15419281f3d23274169158a38d81d9e12f0177d6cdb31c6daebe640cc385",
+    "src/config/booknavConfig.ts": "ae138a769905209d3a9c03355067eac1b31eaf9f72a143ffd8d1835662b78d51",
+    "src/config/commentConfig.ts": "69171757fcf78c74568a92515564cebac1089a1de45bf70fa6afb3747c088beb",
+    "src/config/coverImageConfig.ts": "800d7eba633285844e5329ab97f8638113ef975c5bdc9539266b56a127f55765",
+    "src/config/displaySettingsConfig.ts": "b6326b5254dbc255a4632d84a76d381e4caacb0412e5fa5157135a4069122aed",
+    "src/config/dynamicConfig.ts": "5183c73df904c8c303f17118488927111487638eaaa21b407321b6a25cc60114",
+    "src/config/effectsConfig.ts": "f21371d0348f3ec620cb694fa7b21f661a62c8a4b7efa8a788ebbeaa20fdab9d",
+    "src/config/expressiveCodeConfig.ts": "98486098211fc9185355588f35af50b58eec61ae57f684822d3d95ae6d183aa5",
+    "src/config/fontConfig.ts": "f7add87e8355fcee5889998ca417993d232eea8e405380e4cb8628327dae0b01",
+    "src/config/footerConfig.ts": "1a36a8fe07fd3f1b922fda8c36702c9d5fcd6b235b6ec0c8f86a1dc0aec246e8",
+    "src/config/friendsConfig.ts": "cc10dbe6f96e7221a0c21df5d6c09a1e4e8bea1c1babbb8eb6413de081447793",
+    "src/config/galleryConfig.ts": "e13d76fd78480064cac99e7f9b93b1ccfb69d1429040b819ad791645a3854e1f",
+    "src/config/index.ts": "57ea3871bf2fe6fe48da51652990c9abbe8160c402e47d13684eda082dab1609",
+    "src/config/licenseConfig.ts": "7c4687d6839e927d34f7725985144df77b5d37d8cefe9babbd28e8d643061377",
+    "src/config/mermaidConfig.ts": "507f9039f22d68601b0fa0fd01f042ed3d10690bff466558de7656f233422a7b",
+    "src/config/musicConfig.ts": "d3674eae771c3d8785f763de00004e3062222344ee879c6eee4414828479e2a9",
+    "src/config/navBarConfig.ts": "e7ddb99b77e208f1b689f9223ef53d0fdaaf239beeb1a7e3c8da8678ebca13ae",
+    "src/config/pioConfig.ts": "038e2ca4200a71f71e65081e21eb2135e8b1c2b89b03cd9143a8c2f10fd799cf",
+    "src/config/plantumlConfig.ts": "d5685d679a029214d9dd211e27c9404b6bdaca4b6e5cc24cd3c7c343d005c98b",
+    "src/config/profileConfig.ts": "93e3a581ef2d76324e360b6657d05c354abb1dc7d4434bb3e00509393c2413a8",
+    "src/config/sidebarConfig.ts": "494190b18dc662b850781bb2eb39d87f386f7ffa6aa6e50bd09c4f4b278fea0e",
+    "src/config/siteConfig.ts": "eb0c7f8fc631882938ba01b4234ea407759a9ab8be3bdcbf5e6909441f826f0d",
+    "src/config/sponsorConfig.ts": "072cf96172ecce025f413060fc9ddbff119a5765f2c3eacd5e13faa43d25b651"
+  },
+  "boundary": "Only resolved policy, public local asset paths and hashes are recorded. No credential values, service activation, external fetch or account operation."
+}

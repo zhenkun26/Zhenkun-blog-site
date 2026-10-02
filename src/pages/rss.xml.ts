@@ -6,8 +6,7 @@ import { getContainerRenderer as getSvelteRenderer } from "@astrojs/svelte/conta
 import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import { getSortedPosts } from "@utils/content-utils";
-import { formatDateI18nWithTime } from "@utils/date-utils";
-import { url } from "@utils/url-utils";
+import { getPostUrlBySlug } from "@utils/url-utils";
 import type { APIContext } from "astro";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import sanitizeHtml from "sanitize-html";
@@ -38,7 +37,7 @@ export async function GET(context: APIContext): Promise<Response> {
 				title: post.data.title,
 				pubDate: post.data.published,
 				description: post.data.description || "",
-				link: url(`/posts/${post.id}/`),
+				link: getPostUrlBySlug(post.id),
 				content: i18n(I18nKey.passwordProtectedRss),
 			});
 			continue;
@@ -50,7 +49,7 @@ export async function GET(context: APIContext): Promise<Response> {
 			title: post.data.title,
 			pubDate: post.data.published,
 			description: post.data.description || "",
-			link: url(`/posts/${post.id}/`),
+			link: getPostUrlBySlug(post.id),
 			content: sanitizeHtml(cleanedContent, {
 				allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
 			}),
@@ -59,11 +58,14 @@ export async function GET(context: APIContext): Promise<Response> {
 	return rss({
 		title: siteConfig.title,
 		description: siteConfig.subtitle || "No description",
-		site: context.site ?? "https://firefly.cuteleaf.cn",
+		site: new URL(
+			import.meta.env.BASE_URL,
+			context.site ?? siteConfig.site_url,
+		),
 		customData: `<templateTheme>Firefly</templateTheme>
 		<templateThemeVersion>${pkg.version}</templateThemeVersion>
 		<templateThemeUrl>https://github.com/CuteLeaf/Firefly</templateThemeUrl>
-		<lastBuildDate>${formatDateI18nWithTime(new Date())}</lastBuildDate>`,
+		<lastBuildDate>${new Date().toUTCString()}</lastBuildDate>`,
 		items: feedItems,
 	});
 }

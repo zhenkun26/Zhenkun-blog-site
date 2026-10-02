@@ -1,0 +1,8 @@
+{
+  "userSentinel": "Sentinel_adff893bec38819180ba41cb1c15f8ea",
+  "exactInstruction": "ok，界面一套中文一套英文，中文界面无需英文，英文界面无需中文",
+  "interpretation": "Separate monolingual UI on the first Home/About increment, including rendered common-layout strings and accessible names. Proper names and 中文 / EN chooser remain. Current-locale missing-translation notices; no opposite-language silent fallback.",
+  "EnglishBio": "Exploring the intersection of meteorology, AI, and computer science, and sharing what I learn, build, and experience.",
+  "bioProvenance": "Parent explicitly relays that this ok follows the English bio draft and accepts it for English About wording.",
+  "scope": "First local Home/About/shared UI only; article translations/publication/remote services not authorized."
+}

@@ -1,0 +1,81 @@
+{
+  "status": "PASS_OBSERVED_EXISTING_CONTRACTS",
+  "base": "27e09c220e1ffe16817d5bf02e950a4fbf332b7b",
+  "observations": [
+    {
+      "contract": "actual global i18n(home)",
+      "lang": "zh_CN",
+      "actual": "主页"
+    },
+    {
+      "contract": "actual global i18n(home)",
+      "lang": "en",
+      "actual": "Home"
+    },
+    {
+      "contract": "actual global i18n(home)",
+      "lang": "en_US",
+      "actual": "Home"
+    },
+    {
+      "contract": "actual global i18n(home)",
+      "lang": "zh-CN",
+      "actual": "Home"
+    },
+    {
+      "contract": "actual global i18n(home)",
+      "lang": "unknown",
+      "actual": "Home"
+    },
+    {
+      "contract": "Actual missing English value fallback (temporary in-memory mutation only)",
+      "actual": "主页",
+      "languageMix": true
+    },
+    {
+      "contract": "Actual build-wide locale resolver",
+      "override": "zh-CN",
+      "resolved": "zh_CN",
+      "ogLocale": "zh_CN"
+    },
+    {
+      "contract": "Actual build-wide locale resolver",
+      "override": "en-US",
+      "resolved": "en",
+      "ogLocale": "en_US"
+    },
+    {
+      "contract": "Actual build-wide locale resolver",
+      "override": "invalid",
+      "resolved": "zh_CN",
+      "ogLocale": "zh_CN"
+    },
+    {
+      "contract": "Actual existing deployment helpers on hypothetical locale routes",
+      "deployment": "/",
+      "disabledUnprefixedGalleryIndexable": false,
+      "disabledEnglishGalleryIndexable": true,
+      "existingSearchCanonical": "https://zhenkun26.github.io/search/",
+      "hypotheticalEnglishSearchCanonical": "https://zhenkun26.github.io/en/search/?q=x#test",
+      "interpretation": "Expected scope gap: no English routes exist today. Option A must add locale-aware logical route policy before emitting English routes; not a current Chinese-site regression."
+    },
+    {
+      "contract": "Actual existing deployment helpers on hypothetical locale routes",
+      "deployment": "/Zhenkun-blog-site/",
+      "disabledUnprefixedGalleryIndexable": false,
+      "disabledEnglishGalleryIndexable": true,
+      "existingSearchCanonical": "https://zhenkun26.github.io/Zhenkun-blog-site/search/",
+      "hypotheticalEnglishSearchCanonical": "https://zhenkun26.github.io/Zhenkun-blog-site/en/search/?q=x#test",
+      "interpretation": "Expected scope gap: no English routes exist today. Option A must add locale-aware logical route policy before emitting English routes; not a current Chinese-site regression."
+    },
+    {
+      "contract": "Actual publication ID does not pair/filter by lang",
+      "ids": [
+        "example",
+        "example"
+      ],
+      "interpretation": "Existing lang is metadata, not a translation identity or locale route system."
+    }
+  ],
+  "boundary": "Actual existing functions, in-memory config seam and temporary English-value mutation restored in finally. No repo mutation, feature implementation, article translation or service call."
+}

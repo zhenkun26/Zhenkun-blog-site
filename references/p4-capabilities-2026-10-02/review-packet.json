@@ -1,0 +1,30 @@
+{
+  "testedApplicationSource": "a353c2ee800bbff2865541288ea04308c245cdc5",
+  "canonicalCheckpoint": "795e7d1d3e0cd4ea4de1dd41c83e40d3f5ca647c",
+  "candidateSyncParent": "259bc9a9d07441893eccb81bdfd7081265dd3520",
+  "candidateBranch": "codex/p4-toggle-consistency",
+  "candidatePath": "/Users/zhenkun/Documents/Codex/2026-10-02/task/tmp/zhenkun-g1/p4-policy",
+  "exactReviewHead": "Pin git rev-parse HEAD after this evidence commit; supplied separately in final handoff",
+  "sourceSnapshot": "source-snapshot.json",
+  "sourceDigest": "4e0110a0de32d7273526a79c3aedd8160052174dc56f1db437cd95c3e5eeb0d2",
+  "evidenceManifest": "evidence-sha256.json",
+  "report": "report.md",
+  "featureMatrix": "feature-matrix.md",
+  "implementationDelta": [
+    "scripts/zhenkun-test-capabilities.mjs",
+    "src/pages/api/dynamic.json.ts"
+  ],
+  "sourceIntegrationPerformed": false,
+  "main": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de",
+  "independentReviewPerformed": false,
+  "remoteWritePerformed": false,
+  "buildArtifact": "Ignored dist currently contains deployment-base build; original root artifact archived with hash in successor-validation.json",
+  "remainingBoundaries": [
+    "Independent exact candidate review and applicable acceptance",
+    "Retained HTTP 200 stubs/public assets G2",
+    "Full enabled/unconfigured external provider interaction",
+    "Linux frozen clean install/hosted Actions/required-check compatibility",
+    "Real approved article/comments and production delivery",
+    "P8 feasibility/ADR before bilingual implementation"
+  ]
+}

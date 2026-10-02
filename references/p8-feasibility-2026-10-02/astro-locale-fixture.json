@@ -1,0 +1,484 @@
+{
+  "status": "PASS_SYNTHETIC_ASTRO_DUAL_BASE_LOCALES",
+  "baseCommit": "27e09c220e1ffe16817d5bf02e950a4fbf332b7b",
+  "node": "v24.20.0",
+  "fixtureSources": {
+    "package.json": "287403c9c1e4be00562698eaa9ac398dd8180782d42e33f62bac0dad40bf883b",
+    "astro.config.mjs": "a2f3a30b1b001917b4f8a8b14a3fe9392979220315fc102aa9bca37842e9ad22",
+    "src/layouts/Probe.astro": "d02d85f02b611da9538ae969b6f964d04941a896fe6c772edab86733c23af78c",
+    "src/pages/index.astro": "b4af8f5555b7dd4830c31b2aea8c36625e0bd87c06093e1f600a1b46e741886e",
+    "src/pages/about.astro": "7b669e21a153676b6190a5fec3ecea7cec25ac65b9a8589a1fb4578864c635c6",
+    "src/pages/solo.astro": "bcb371d99c3cac1e9bd79861c121c56646300024f7534f56b3448e07f5c17c40",
+    "src/pages/en/index.astro": "55f97b788b5ca1c784f5912a96529704b9bb3c5a73030343f085379addb5353f",
+    "src/pages/en/about.astro": "f0f93a90ca297e6d7dd7a57be8db80de420c83cfa56a5533716797dc1f2ee31b"
+  },
+  "rawSiteCases": [
+    {
+      "base": "/",
+      "stage": {
+        "name": "Astro existing site URL compatibility probe",
+        "command": [
+          "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+          "/Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/node_modules/astro/bin/astro.mjs",
+          "build"
+        ],
+        "started": "2026-10-02T11:10:06.935Z",
+        "exitCode": 0,
+        "log": "fixture-raw-site-build-root.log"
+      },
+      "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+      "expectedCorrectCanonical": "https://zhenkun26.github.io/",
+      "compatibleWithoutAdapter": false
+    },
+    {
+      "base": "/Zhenkun-blog-site/",
+      "stage": {
+        "name": "Astro existing site URL compatibility probe",
+        "command": [
+          "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+          "/Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/node_modules/astro/bin/astro.mjs",
+          "build"
+        ],
+        "started": "2026-10-02T11:10:07.349Z",
+        "exitCode": 0,
+        "log": "fixture-raw-site-build-subpath.log"
+      },
+      "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/Zhenkun-blog-site/",
+      "expectedCorrectCanonical": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+      "compatibleWithoutAdapter": false
+    }
+  ],
+  "cases": [
+    {
+      "name": "root",
+      "base": "/",
+      "stages": [
+        {
+          "name": "Astro minimal static locale build",
+          "command": [
+            "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+            "/Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/node_modules/astro/bin/astro.mjs",
+            "build"
+          ],
+          "started": "2026-10-02T11:10:07.773Z",
+          "exitCode": 0,
+          "log": "fixture-build-root.log"
+        },
+        {
+          "name": "Pagefind on synthetic localized HTML",
+          "command": [
+            "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+            "/Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/node_modules/pagefind/lib/runner/bin.cjs",
+            "--site",
+            "/Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/tmp/p8-astro-locale-fixture/dist-root"
+          ],
+          "started": "2026-10-02T11:10:08.200Z",
+          "exitCode": 0,
+          "log": "fixture-pagefind-root.log"
+        }
+      ],
+      "metadata": [
+        {
+          "relative": "index.html",
+          "locale": "zh-cn",
+          "canonical": "https://zhenkun26.github.io/",
+          "alternates": [
+            {
+              "lang": "zh-cn",
+              "url": "https://zhenkun26.github.io/"
+            },
+            {
+              "lang": "en",
+              "url": "https://zhenkun26.github.io/en/"
+            }
+          ],
+          "sha256": "6f199f2a13ea86a12fbbc450af4bd986a7078e487a708da367b3689a148f5be0"
+        },
+        {
+          "relative": "about/index.html",
+          "locale": "zh-cn",
+          "canonical": "https://zhenkun26.github.io/about/",
+          "alternates": [
+            {
+              "lang": "zh-cn",
+              "url": "https://zhenkun26.github.io/about/"
+            },
+            {
+              "lang": "en",
+              "url": "https://zhenkun26.github.io/en/about/"
+            }
+          ],
+          "sha256": "1455874a2335def2e15a72abfeffcaf366600467e1551bd09a24fa976875988e"
+        },
+        {
+          "relative": "solo/index.html",
+          "locale": "zh-cn",
+          "canonical": "https://zhenkun26.github.io/solo/",
+          "alternates": [],
+          "sha256": "55346202b324f443d5b6fd95fece7b857f71dce57d3797ebc7e5ac1a205854d7"
+        },
+        {
+          "relative": "en/index.html",
+          "locale": "en",
+          "canonical": "https://zhenkun26.github.io/en/",
+          "alternates": [
+            {
+              "lang": "zh-cn",
+              "url": "https://zhenkun26.github.io/"
+            },
+            {
+              "lang": "en",
+              "url": "https://zhenkun26.github.io/en/"
+            }
+          ],
+          "sha256": "1d85c2dfb8787d695a0ddd0dfa8dfa2d09ba9ea590d7fbe2a120bf9370a45d92"
+        },
+        {
+          "relative": "en/about/index.html",
+          "locale": "en",
+          "canonical": "https://zhenkun26.github.io/en/about/",
+          "alternates": [
+            {
+              "lang": "zh-cn",
+              "url": "https://zhenkun26.github.io/about/"
+            },
+            {
+              "lang": "en",
+              "url": "https://zhenkun26.github.io/en/about/"
+            }
+          ],
+          "sha256": "347ad349521f448614fc9fcf95b87b1dae8459da4b3a5e966d87b66f971783d9"
+        }
+      ],
+      "pagefind": {
+        "version": "1.5.2",
+        "languages": [
+          "zh-cn",
+          "en"
+        ],
+        "search": [
+          {
+            "locale": "unknown",
+            "detection": "No document: language=en option overridden by unknown detection; largest zh-cn index selected",
+            "passedLanguage": "en",
+            "query": "Capability",
+            "count": 3,
+            "urls": [
+              "http://127.0.0.1:61147/",
+              "http://127.0.0.1:61147/about/",
+              "http://127.0.0.1:61147/solo/"
+            ],
+            "crossLanguageQuery": "ENOnlyProbe",
+            "crossLanguageCount": 0
+          },
+          {
+            "locale": "zh-cn",
+            "detection": "Minimal document html-lang seam in a fresh Worker JS/WASM context",
+            "passedLanguage": null,
+            "query": "Capability",
+            "count": 3,
+            "urls": [
+              "http://127.0.0.1:61147/",
+              "http://127.0.0.1:61147/about/",
+              "http://127.0.0.1:61147/solo/"
+            ],
+            "crossLanguageQuery": "ENOnlyProbe",
+            "crossLanguageCount": 0
+          },
+          {
+            "locale": "en",
+            "detection": "Minimal document html-lang seam in a fresh Worker JS/WASM context",
+            "passedLanguage": null,
+            "query": "Capability",
+            "count": 2,
+            "urls": [
+              "http://127.0.0.1:61147/en/",
+              "http://127.0.0.1:61147/en/about/"
+            ],
+            "crossLanguageQuery": "ZXHanProbe",
+            "crossLanguageCount": 0
+          }
+        ]
+      },
+      "httpChecks": [
+        {
+          "url": "http://127.0.0.1:61147/",
+          "status": 200,
+          "sha256": "6f199f2a13ea86a12fbbc450af4bd986a7078e487a708da367b3689a148f5be0"
+        },
+        {
+          "url": "http://127.0.0.1:61147/about/",
+          "status": 200,
+          "sha256": "1455874a2335def2e15a72abfeffcaf366600467e1551bd09a24fa976875988e"
+        },
+        {
+          "url": "http://127.0.0.1:61147/solo/",
+          "status": 200,
+          "sha256": "55346202b324f443d5b6fd95fece7b857f71dce57d3797ebc7e5ac1a205854d7"
+        },
+        {
+          "url": "http://127.0.0.1:61147/en/",
+          "status": 200,
+          "sha256": "1d85c2dfb8787d695a0ddd0dfa8dfa2d09ba9ea590d7fbe2a120bf9370a45d92"
+        },
+        {
+          "url": "http://127.0.0.1:61147/en/about/",
+          "status": 200,
+          "sha256": "347ad349521f448614fc9fcf95b87b1dae8459da4b3a5e966d87b66f971783d9"
+        },
+        {
+          "url": "http://127.0.0.1:61147/en/solo/",
+          "status": 404
+        }
+      ],
+      "serverClosed": true,
+      "emitted": {
+        "about/index.html": "1455874a2335def2e15a72abfeffcaf366600467e1551bd09a24fa976875988e",
+        "en/about/index.html": "347ad349521f448614fc9fcf95b87b1dae8459da4b3a5e966d87b66f971783d9",
+        "en/index.html": "1d85c2dfb8787d695a0ddd0dfa8dfa2d09ba9ea590d7fbe2a120bf9370a45d92",
+        "index.html": "6f199f2a13ea86a12fbbc450af4bd986a7078e487a708da367b3689a148f5be0",
+        "pagefind/fragment/en_7927b61.pf_fragment": "ead354c25bccaef8b65143425c194e57e8dc091c6f362d904aabc131bace1a4f",
+        "pagefind/fragment/en_a38e35f.pf_fragment": "4891502d20d5a9d7fa0eaa27530884becbbfd900caae6fbedd5bbf4e229b8b84",
+        "pagefind/fragment/zh-cn_3762884.pf_fragment": "00cc0a73a15aa4ee627fa7c220866f2de366e1790df076eb028f2449a1cf8307",
+        "pagefind/fragment/zh-cn_b178173.pf_fragment": "17a8f9b9c9fec7e900532a5dfc8fd28cec8ddaa66ed5d7ca931c93f0c968100c",
+        "pagefind/fragment/zh-cn_bdc7311.pf_fragment": "b80bd9939d84a9ca289e4af6e5fa76dec39b0a6dd0aa350485f2aabfe3fa5a14",
+        "pagefind/index/en_63ff76a.pf_index": "58cfd7b68d65e3e2980199d03d8066fe62eb70985758a3ae9d5ebb43fe889206",
+        "pagefind/index/zh-cn_20b5cc6.pf_index": "3942998c016d9348bc34be18247ebafe18fb0db441cea61a63868a6b0fb12004",
+        "pagefind/pagefind-component-ui.css": "de389c7e5d87d6e2b10d65fb1e36e8989a12a2ad8dd6239b7e070d81fb5d8b0d",
+        "pagefind/pagefind-component-ui.js": "958620129dd14bd851805daeb12ce708bd63b9287325d1d5ae6f73a04d1723f8",
+        "pagefind/pagefind-entry.json": "252935177bafa5279e164c99b5878809834cb6505fe6cc98b64a8b69061cb05f",
+        "pagefind/pagefind-highlight.js": "04741266a86911636cefc41c8b407e380dda99b7d208724f700f94cdf57e37b5",
+        "pagefind/pagefind-modular-ui.css": "653ab29e4de5629f6ddf5f6fcdf5d2b3eb539a8c07fff8a56b8ce2156a570788",
+        "pagefind/pagefind-modular-ui.js": "f3efa0f74b305ccab0bc9edc7c09ab69867180b4c43093d84bb9b508ac4ec32c",
+        "pagefind/pagefind-ui.css": "e113b816110ed07b017613e901addfe635350f2a5b84990aa76c91a74b158084",
+        "pagefind/pagefind-ui.js": "2efa93f2e80a199ca742a69bd4cfffabc5c591ebe7763f64f7c655fd00d2209f",
+        "pagefind/pagefind-worker.js": "4ca50d25bcab9e1c3afbc00ab5f7761114e83c8fc1b83d38655af1558b650c2a",
+        "pagefind/pagefind.en_5670655bc0.pf_meta": "617ac9a0c88b72f1e62d4fa1bf15bf896d09f459c0b79615ac44992f0ef04a5e",
+        "pagefind/pagefind.js": "252d272bd34d483d19a752060f6a065114d15ab12c42d8f905ca565e2768a009",
+        "pagefind/pagefind.zh-cn_73f1746f6c772.pf_meta": "8f40f31de8bbd2e38fd15b9f5ebc06fa6e37831a96a7478a923ddd9b964cc360",
+        "pagefind/wasm.en.pagefind": "6c8406154b5d460fc8b6cdbf2c99c008c43c465efdb1f9c15c192f5cf30dcd85",
+        "pagefind/wasm.unknown.pagefind": "2533da887ac06de36813d031310af0f737daadacc931775e342aa5a3857a4959",
+        "solo/index.html": "55346202b324f443d5b6fd95fece7b857f71dce57d3797ebc7e5ac1a205854d7"
+      }
+    },
+    {
+      "name": "subpath",
+      "base": "/Zhenkun-blog-site/",
+      "stages": [
+        {
+          "name": "Astro minimal static locale build",
+          "command": [
+            "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+            "/Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/node_modules/astro/bin/astro.mjs",
+            "build"
+          ],
+          "started": "2026-10-02T11:10:08.648Z",
+          "exitCode": 0,
+          "log": "fixture-build-subpath.log"
+        },
+        {
+          "name": "Pagefind on synthetic localized HTML",
+          "command": [
+            "/Users/zhenkun/.local/share/mise/installs/node/24.20.0/bin/node",
+            "/Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/node_modules/pagefind/lib/runner/bin.cjs",
+            "--site",
+            "/Users/zhenkun/Documents/Codex/2026-10-02/task-4/tmp/p8-feasibility/tmp/p8-astro-locale-fixture/dist-subpath"
+          ],
+          "started": "2026-10-02T11:10:09.127Z",
+          "exitCode": 0,
+          "log": "fixture-pagefind-subpath.log"
+        }
+      ],
+      "metadata": [
+        {
+          "relative": "index.html",
+          "locale": "zh-cn",
+          "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+          "alternates": [
+            {
+              "lang": "zh-cn",
+              "url": "https://zhenkun26.github.io/Zhenkun-blog-site/"
+            },
+            {
+              "lang": "en",
+              "url": "https://zhenkun26.github.io/Zhenkun-blog-site/en/"
+            }
+          ],
+          "sha256": "1df0fd34bce361738485f944bbe0034cc84c5e0d46141bd912bcb5700cd99a0b"
+        },
+        {
+          "relative": "about/index.html",
+          "locale": "zh-cn",
+          "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/about/",
+          "alternates": [
+            {
+              "lang": "zh-cn",
+              "url": "https://zhenkun26.github.io/Zhenkun-blog-site/about/"
+            },
+            {
+              "lang": "en",
+              "url": "https://zhenkun26.github.io/Zhenkun-blog-site/en/about/"
+            }
+          ],
+          "sha256": "4af3e8e962966d6112511d507bbe497f8a58302c443573f54ab1a9bd070c33bf"
+        },
+        {
+          "relative": "solo/index.html",
+          "locale": "zh-cn",
+          "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/solo/",
+          "alternates": [],
+          "sha256": "d90ded46ad3018f5ea8e8ce0a9cdb621b2c5e329b05ad1cdcdc97434d4f27362"
+        },
+        {
+          "relative": "en/index.html",
+          "locale": "en",
+          "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/en/",
+          "alternates": [
+            {
+              "lang": "zh-cn",
+              "url": "https://zhenkun26.github.io/Zhenkun-blog-site/"
+            },
+            {
+              "lang": "en",
+              "url": "https://zhenkun26.github.io/Zhenkun-blog-site/en/"
+            }
+          ],
+          "sha256": "e2d1e21fee314b692059b75c57bfa8b56b1c2885b21b7ba821242c80fb536a91"
+        },
+        {
+          "relative": "en/about/index.html",
+          "locale": "en",
+          "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/en/about/",
+          "alternates": [
+            {
+              "lang": "zh-cn",
+              "url": "https://zhenkun26.github.io/Zhenkun-blog-site/about/"
+            },
+            {
+              "lang": "en",
+              "url": "https://zhenkun26.github.io/Zhenkun-blog-site/en/about/"
+            }
+          ],
+          "sha256": "4878b732b4a57a04ca2413f5a0efe90cb7044517e497e91275c45510230c3900"
+        }
+      ],
+      "pagefind": {
+        "version": "1.5.2",
+        "languages": [
+          "en",
+          "zh-cn"
+        ],
+        "search": [
+          {
+            "locale": "unknown",
+            "detection": "No document: language=en option overridden by unknown detection; largest zh-cn index selected",
+            "passedLanguage": "en",
+            "query": "Capability",
+            "count": 3,
+            "urls": [
+              "http://127.0.0.1:61163/Zhenkun-blog-site/",
+              "http://127.0.0.1:61163/Zhenkun-blog-site/about/",
+              "http://127.0.0.1:61163/Zhenkun-blog-site/solo/"
+            ],
+            "crossLanguageQuery": "ENOnlyProbe",
+            "crossLanguageCount": 0
+          },
+          {
+            "locale": "zh-cn",
+            "detection": "Minimal document html-lang seam in a fresh Worker JS/WASM context",
+            "passedLanguage": null,
+            "query": "Capability",
+            "count": 3,
+            "urls": [
+              "http://127.0.0.1:61163/Zhenkun-blog-site/",
+              "http://127.0.0.1:61163/Zhenkun-blog-site/about/",
+              "http://127.0.0.1:61163/Zhenkun-blog-site/solo/"
+            ],
+            "crossLanguageQuery": "ENOnlyProbe",
+            "crossLanguageCount": 0
+          },
+          {
+            "locale": "en",
+            "detection": "Minimal document html-lang seam in a fresh Worker JS/WASM context",
+            "passedLanguage": null,
+            "query": "Capability",
+            "count": 2,
+            "urls": [
+              "http://127.0.0.1:61163/Zhenkun-blog-site/en/",
+              "http://127.0.0.1:61163/Zhenkun-blog-site/en/about/"
+            ],
+            "crossLanguageQuery": "ZXHanProbe",
+            "crossLanguageCount": 0
+          }
+        ]
+      },
+      "httpChecks": [
+        {
+          "url": "http://127.0.0.1:61163/Zhenkun-blog-site/",
+          "status": 200,
+          "sha256": "1df0fd34bce361738485f944bbe0034cc84c5e0d46141bd912bcb5700cd99a0b"
+        },
+        {
+          "url": "http://127.0.0.1:61163/Zhenkun-blog-site/about/",
+          "status": 200,
+          "sha256": "4af3e8e962966d6112511d507bbe497f8a58302c443573f54ab1a9bd070c33bf"
+        },
+        {
+          "url": "http://127.0.0.1:61163/Zhenkun-blog-site/solo/",
+          "status": 200,
+          "sha256": "d90ded46ad3018f5ea8e8ce0a9cdb621b2c5e329b05ad1cdcdc97434d4f27362"
+        },
+        {
+          "url": "http://127.0.0.1:61163/Zhenkun-blog-site/en/",
+          "status": 200,
+          "sha256": "e2d1e21fee314b692059b75c57bfa8b56b1c2885b21b7ba821242c80fb536a91"
+        },
+        {
+          "url": "http://127.0.0.1:61163/Zhenkun-blog-site/en/about/",
+          "status": 200,
+          "sha256": "4878b732b4a57a04ca2413f5a0efe90cb7044517e497e91275c45510230c3900"
+        },
+        {
+          "url": "http://127.0.0.1:61163/Zhenkun-blog-site/en/solo/",
+          "status": 404
+        }
+      ],
+      "serverClosed": true,
+      "emitted": {
+        "about/index.html": "4af3e8e962966d6112511d507bbe497f8a58302c443573f54ab1a9bd070c33bf",
+        "en/about/index.html": "4878b732b4a57a04ca2413f5a0efe90cb7044517e497e91275c45510230c3900",
+        "en/index.html": "e2d1e21fee314b692059b75c57bfa8b56b1c2885b21b7ba821242c80fb536a91",
+        "index.html": "1df0fd34bce361738485f944bbe0034cc84c5e0d46141bd912bcb5700cd99a0b",
+        "pagefind/fragment/en_7927b61.pf_fragment": "ead354c25bccaef8b65143425c194e57e8dc091c6f362d904aabc131bace1a4f",
+        "pagefind/fragment/en_a38e35f.pf_fragment": "4891502d20d5a9d7fa0eaa27530884becbbfd900caae6fbedd5bbf4e229b8b84",
+        "pagefind/fragment/zh-cn_3762884.pf_fragment": "00cc0a73a15aa4ee627fa7c220866f2de366e1790df076eb028f2449a1cf8307",
+        "pagefind/fragment/zh-cn_b178173.pf_fragment": "17a8f9b9c9fec7e900532a5dfc8fd28cec8ddaa66ed5d7ca931c93f0c968100c",
+        "pagefind/fragment/zh-cn_bdc7311.pf_fragment": "b80bd9939d84a9ca289e4af6e5fa76dec39b0a6dd0aa350485f2aabfe3fa5a14",
+        "pagefind/index/en_63ff76a.pf_index": "58cfd7b68d65e3e2980199d03d8066fe62eb70985758a3ae9d5ebb43fe889206",
+        "pagefind/index/zh-cn_20b5cc6.pf_index": "3942998c016d9348bc34be18247ebafe18fb0db441cea61a63868a6b0fb12004",
+        "pagefind/pagefind-component-ui.css": "de389c7e5d87d6e2b10d65fb1e36e8989a12a2ad8dd6239b7e070d81fb5d8b0d",
+        "pagefind/pagefind-component-ui.js": "958620129dd14bd851805daeb12ce708bd63b9287325d1d5ae6f73a04d1723f8",
+        "pagefind/pagefind-entry.json": "80ca1649813ca33df238e4a0b3e5a4ca9aa0ef2b7c61e3ade2b1a004096e6202",
+        "pagefind/pagefind-highlight.js": "04741266a86911636cefc41c8b407e380dda99b7d208724f700f94cdf57e37b5",
+        "pagefind/pagefind-modular-ui.css": "653ab29e4de5629f6ddf5f6fcdf5d2b3eb539a8c07fff8a56b8ce2156a570788",
+        "pagefind/pagefind-modular-ui.js": "f3efa0f74b305ccab0bc9edc7c09ab69867180b4c43093d84bb9b508ac4ec32c",
+        "pagefind/pagefind-ui.css": "e113b816110ed07b017613e901addfe635350f2a5b84990aa76c91a74b158084",
+        "pagefind/pagefind-ui.js": "2efa93f2e80a199ca742a69bd4cfffabc5c591ebe7763f64f7c655fd00d2209f",
+        "pagefind/pagefind-worker.js": "4ca50d25bcab9e1c3afbc00ab5f7761114e83c8fc1b83d38655af1558b650c2a",
+        "pagefind/pagefind.en_5670655bc0.pf_meta": "617ac9a0c88b72f1e62d4fa1bf15bf896d09f459c0b79615ac44992f0ef04a5e",
+        "pagefind/pagefind.js": "252d272bd34d483d19a752060f6a065114d15ab12c42d8f905ca565e2768a009",
+        "pagefind/pagefind.zh-cn_73f1746f6c772.pf_meta": "8f40f31de8bbd2e38fd15b9f5ebc06fa6e37831a96a7478a923ddd9b964cc360",
+        "pagefind/wasm.en.pagefind": "6c8406154b5d460fc8b6cdbf2c99c008c43c465efdb1f9c15c192f5cf30dcd85",
+        "pagefind/wasm.unknown.pagefind": "2533da887ac06de36813d031310af0f737daadacc931775e342aa5a3857a4959",
+        "solo/index.html": "d90ded46ad3018f5ea8e8ce0a9cdb621b2c5e329b05ad1cdcdc97434d4f27362"
+      }
+    }
+  ],
+  "boundaries": [
+    "Installed Astro 7.2.10/Pagefind 1.5.2 only; no dependency setup or production source/config/content changes.",
+    "Static explicit pages and per-page locale props. Raw existing site URL reproduces path retention/duplication; successful cases use origin-only site plus deployment base, a proposed adapter in the synthetic config only.",
+    "No fallback rewrite or generated missing translation. Astro locale URL helper can construct a nonexistent target; available-pair registry must guard links/hreflang.",
+    "Real emitted Pagefind JS/index/WASM over temporary loopback HTTP in Node with explicit basePath and a minimal html-lang detection seam; the public createInstance language option is empirically ignored in 1.5.2. Browser initial inference, language toggle DOM/focus/persistence/Swup and full theme integration remain untested.",
+    "Five synthetic pages only. Not a production full build, publication-filter proof, translated owner content, screenshots, SEO crawl, Linux/hosted CI or release acceptance."
+  ]
+}

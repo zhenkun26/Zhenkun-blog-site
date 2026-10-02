@@ -1,0 +1,70 @@
+{
+  "base": "a3d1a9a80b5acbe305720dbc09d28af23c8247d8",
+  "author": "Zhenkun",
+  "bio": "在代码与生活之间，随手记下灵感与思考。",
+  "links": [
+    {
+      "name": "GitHub",
+      "icon": "fa7-brands:github",
+      "url": "https://github.com/zhenkun26",
+      "showName": false
+    },
+    {
+      "name": "Email",
+      "icon": "fa7-solid:envelope",
+      "url": "mailto:zzk26personal@163.com",
+      "showName": false
+    },
+    {
+      "name": "RSS",
+      "icon": "fa7-solid:rss",
+      "url": "/rss/",
+      "showName": false
+    }
+  ],
+  "siteTitle": "Zhenkun",
+  "navbarTitle": "Zhenkun",
+  "description": "这是Zhenkun的个人博客：记录技术学习、项目实践与日常思考，把真实的经验写成文字，也给灵感留一席之地。",
+  "keywords": [
+    "Zhenkun",
+    "Zhenkun",
+    "个人博客",
+    "灵感",
+    "随笔",
+    "思考",
+    "技术笔记"
+  ],
+  "avatar": "assets/images/zhenkun/avatar.avif",
+  "logo": {
+    "type": "image",
+    "value": "assets/images/logo/firefly-light.png",
+    "valueDark": "assets/images/logo/firefly-dark.png",
+    "alt": "🍀"
+  },
+  "pages": {
+    "friends": false,
+    "guestbook": false,
+    "dynamic": false,
+    "gallery": false,
+    "booknav": false,
+    "bilibili": false,
+    "bangumi": false,
+    "vndb": false,
+    "mal": false,
+    "sponsor": false
+  },
+  "sha256": {
+    "src/config/profileConfig.ts": "60bb8571d953e2bddeb2928ffb53a7aaa1bf8b77e01da1b510d5b5b9ead270e5",
+    "src/config/siteConfig.ts": "f3f4e30ec61b7f980d92f0eaf03aa7068a958dcf5b948c2e40e5345c3ef16b59",
+    "src/content/spec/about.md": "7e35ceb79a4c318d19696ebb5d1e545e0c4169b186e2ec643405d9d410644b0f",
+    "src/pages/about.astro": "daa5372a52a066a89f29547eeca60f3f06f1c106deba992c39fb75ced959adc9",
+    "src/content/posts/blog-launch.md": "354d0d65385f644756c72c1a8b0b72ccc7237ef5b3495fd763ec515377235ce9",
+    "src/components/layout/Footer.astro": "ab2fe977ed3dbe03dbef067e1ba6b0d2a6a4d963d51a5d57b7fe730102a7f3a3",
+    "src/pages/og/[...slug].ts": "9e63d019015ea5f18a94b35740d2a5fa28a663a0723c9b5f384fa8e4786f8d86",
+    "LICENSE": "d403e8d1dc09f7088b029a65b37895cce1a5802c086321c2df3a28ba779399f6"
+  },
+  "taxonomy": "Published categories are derived from actual articles. Draft blog-launch stays category 随记/draft true; no preset taxonomy source exists in current config.",
+  "original_source_snapshot": "6f551119016cb79f978d218c2606cfa8996f440b",
+  "base_increment": "Canonical LOCAL acceptance status plus latest superseding identity direction, docs/evidence only.",
+  "prior_document_baseline": "20e10b381aa258de62c62611d4134439408db2ec"
+}

@@ -8,10 +8,13 @@ import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import type { StandardizedAnime } from "@/types/bilibili";
 import { fetchBilibiliList } from "@/utils/bilibili-utils";
 import { formatDateI18nWithTime } from "@/utils/date-utils";
+import { getNotFoundPath } from "@/utils/deployment-contract";
+
+const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
 
 // 检查页面是否启用
 if (!siteConfig.pages.bilibili) {
-	return Astro.redirect("/404/");
+	return Astro.redirect(notFoundPath);
 }
 
 // 获取构建时间

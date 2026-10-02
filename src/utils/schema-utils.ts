@@ -1,12 +1,13 @@
 import type { ProfileConfig, SiteConfig } from "@/types/config";
+import { getLogicalRouteUrl } from "./deployment-contract";
 import { getSearchUrl, url } from "./url-utils";
 
 /**
- * 把 src 解析成绝对 URL 字符串。
+ * 把逻辑路由解析成绝对 URL 字符串。
  * - http/https、协议相对（//）、data: 原样返回；
- * - 以 `/` 开头的 public 路径先经 url()（BASE_URL 感知）得到相对源路径，再对 base 求绝对；
+ * - 以 `/` 开头的逻辑路由始终添加 BASE_URL，路由与部署前缀同名也不去重；
  * - src 为空、或非 `/` 开头的 src 相对资源（会被 Astro 优化并哈希，本函数无法解析）返回 null。
- * 仅适用于"按原样可访问"的来源（public / 远程 / data）；src 内图片请用 schema-image 的 toAbsoluteImageUrl。
+ * 已带 base 的路由请直接 new URL(path, site)。图片请用 schema-image 的 toAbsoluteImageUrl。
  */
 export function toAbsoluteUrl(
 	src: string | undefined | null,
@@ -31,7 +32,7 @@ export function toAbsoluteUrl(
 		return null;
 	}
 	const baseUrl = base instanceof URL ? base : new URL(base);
-	return new URL(url(src), baseUrl).toString();
+	return getLogicalRouteUrl(src, baseUrl, import.meta.env.BASE_URL);
 }
 
 export interface BreadcrumbItem {

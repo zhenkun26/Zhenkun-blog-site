@@ -1,0 +1,19 @@
+{
+  "scope": "Final read-only subpath artifact review",
+  "base": "/Zhenkun-blog-site/",
+  "status": "PASS_P1_WITH_KNOWN_P2_GAPS",
+  "artifact": {"htmlFiles":22,"completeHtmlPages":9,"redirectStubs":13},
+  "publication": {"status":"PASS","sourceDraftRetained":true,"publicMetadata":[],"postFiles":0,"ogFiles":0,"rssItems":0,"draftTitleOrRouteHits":0,"pagefindDraftHits":0},
+  "pagefind": {"status":"PASS","indexedPages":1,"fragment":{"url":"/about/","title":"关于我"},"fragmentDecoded":true,"browserNavigation":"UNVERIFIED"},
+  "hero": {"status":"PASS","links":[{"href":"/Zhenkun-blog-site/rss/","label":"RSS"}],"landingAndFeedExist":true,"emptyHref":false,"videoElements":0},
+  "paymentImages": {"status":"PASS","approvedTwoPathsAbsent":true,"originalByteHashCopies":[]},
+  "canonical": {"status":"PASS","completePagesChecked":9,"failures":[]},
+  "directMedia": {"status":"PASS","nonemptySrcChecked":135,"brokenNonemptySrc":0,"excludedLazyEmptySrc":18},
+  "knownP2Gaps": {
+    "F04": {"status":"KNOWN_GAP","brokenOgOrTwitterImageUrls":18,"brokenJsonLdImageUrls":4,"cause":"Duplicated /Zhenkun-blog-site/ prefix","example":"https://zhenkun26.github.io/Zhenkun-blog-site/Zhenkun-blog-site/_astro/firefly-light.DZ-mS7Sc.png"},
+    "F05": {"status":"KNOWN_GAP","closedRoutesStillInSitemap":13},
+    "F06": {"status":"KNOWN_GAP","redirectStubsTargetingRoot404":13,"target":"/404/","dist404HtmlExists":true,"dist404DirectoryExists":false},
+    "F07": {"status":"KNOWN_GAP","lastBuildDate":"2026年10月2日 11:53:11","stdlibRfcDateParse":"ValueError"}
+  },
+  "limits": ["Existing F04-F07 are P2 gaps, not new P1 regressions", "No deployed-host claim", "Zero published posts prevents positive production article/RSS/Wiki-card acceptance", "Published relative-image optimization and lazy-image hydration remain unverified"]
+}

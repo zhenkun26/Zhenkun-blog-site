@@ -1,0 +1,114 @@
+{
+  "productionCommit": "a47c836107cc029690a0fa46334d8676674848c0",
+  "deploymentRun": 37029800697,
+  "checks": [
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+      "status": 200,
+      "bytes": 248418,
+      "sha256": "d554c1860b17ed9dfabb9b95103b41ecafb34264da00b1174d4160bb4d7a92b3",
+      "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/about/",
+      "status": 200,
+      "bytes": 242351,
+      "sha256": "1a6f1a69b48ce574179e2e01a9c65d7e1806d6486d0ec5dd2e381670d647209e",
+      "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/about/"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/archive/",
+      "status": 200,
+      "bytes": 246068,
+      "sha256": "5f7ea8ca51e98161f2dea7c680697a94d42e1e50144e27c294484fb6046db67d",
+      "canonical": "https://zhenkun26.github.io/Zhenkun-blog-site/archive/"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/rss.xml",
+      "status": 200,
+      "bytes": 431,
+      "sha256": "455150125a13ff1b0936c6e3ededb4a6eb3e2438fadf90ce779951fd17040c26"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/sitemap-index.xml",
+      "status": 200,
+      "bytes": 208,
+      "sha256": "b358108925b5fa2c0970cc92451071a4f95bd6439dfb245bd129a6d902975b5e"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/pagefind/pagefind.js",
+      "status": 200,
+      "bytes": 45555,
+      "sha256": "252d272bd34d483d19a752060f6a065114d15ab12c42d8f905ca565e2768a009"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/CategoryBar.astro_astro_type_script_index_0_lang.CE6LZULu.js",
+      "status": 200,
+      "bytes": 4451
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/FancyboxManager.astro_astro_type_script_index_0_lang.DS-UPoTY.js",
+      "status": 200,
+      "bytes": 4128
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/FloatingTOC.astro_astro_type_script_index_0_lang.CDICsfH-.js",
+      "status": 200,
+      "bytes": 3371
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/ImmersiveReading.astro_astro_type_script_index_0_lang.DmJ9jkCn.js",
+      "status": 200,
+      "bytes": 4489
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/Layout.CBrOJIin.css",
+      "status": 200,
+      "bytes": 202756
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/Layout.astro_astro_type_script_index_0_lang.pSHW3OJU.js",
+      "status": 200,
+      "bytes": 12785
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/MainGridLayout.DKb-OjUk.css",
+      "status": 200,
+      "bytes": 24291
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/SakuraEffect.astro_astro_type_script_index_0_lang.a6KKSoBK.js",
+      "status": 200,
+      "bytes": 7549
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/SidebarTOC.astro_astro_type_script_index_0_lang.DROuUXvU.js",
+      "status": 200,
+      "bytes": 1016
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/WavesEffect.astro_astro_type_script_index_0_lang.DwU8s_Lh.js",
+      "status": 200,
+      "bytes": 7423
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/_..BulBwWNp.css",
+      "status": 200,
+      "bytes": 8522
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/avatar.Vt-Igtud_JhzDK.webp",
+      "status": 200,
+      "bytes": 66136
+    },
+    {
+      "check": "former repository redirect",
+      "status": 200,
+      "destination": "https://github.com/zhenkun26/Zhenkun-blog-site"
+    },
+    {
+      "check": "released former website URL",
+      "status": 404
+    }
+  ]
+}

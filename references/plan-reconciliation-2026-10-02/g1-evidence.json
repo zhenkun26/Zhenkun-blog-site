@@ -1,0 +1,61 @@
+{
+  "recorded_at_utc": "2026-10-02T06:01:47.570498+00:00",
+  "source_repository": "/Users/zhenkun/GitHub/Zhenkun-blog-site",
+  "import_source": "/Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site",
+  "review_ref": "refs/heads/codex/review-p2-deployment-contracts",
+  "review_sha": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+  "p2_parent_sha": "a32502b06cb83c7a2d14d03eafc25d1947c56efc",
+  "p1_base_sha": "57bed16360c915c17e45ebaf9ac11540c961741e",
+  "original_branch": "codex/refactor-publication-contracts",
+  "original_head_after_fetch": "57bed16360c915c17e45ebaf9ac11540c961741e",
+  "local_main_sha": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de",
+  "giscus_commit": "4dd5e88ce9c8a516f448ecde9f0dde8b5f092d91",
+  "ancestry": {
+    "p1_to_a32502b": true,
+    "a32502b_to_baf9b2d": true,
+    "giscus_to_main": true
+  },
+  "fetch_command": "git -c maintenance.auto=false -c gc.auto=0 fetch --no-tags --no-recurse-submodules /Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site baf9b2d29310c7b32f6c23934802be3cc54ba022:refs/heads/codex/review-p2-deployment-contracts",
+  "test_view": "/Users/zhenkun/Documents/Codex/2026-10-02/task/tmp/zhenkun-g1/review",
+  "test_view_creation": "git clone --no-hardlinks --no-checkout ORIGINAL; git checkout --detach baf9b2d29310c7b32f6c23934802be3cc54ba022",
+  "test_view_head": "baf9b2d29310c7b32f6c23934802be3cc54ba022",
+  "test_view_tracked_diff": "",
+  "test_view_untracked": "node_modules symlink only; existing dependency runtime reused; no install",
+  "native_tests": {
+    "command": "node --test scripts/zhenkun-test-*.mjs",
+    "exit_code": 0,
+    "tests": 120,
+    "pass": 120,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "duration_ms": 461.782917,
+    "log_sha256": "4a2dc14cd22fa201085ac6aac3d7b03b3f0d95034cb53141122f59355f54efed"
+  },
+  "environment": {
+    "os": "macOS-26.5-arm64-arm-64bit",
+    "node": "v24.20.0",
+    "pnpm_on_current_PATH": "12.3.4",
+    "packageManager": "pnpm@11.22.0",
+    "dependency_install": "NOT_RUN; reused existing node_modules; package.json and lockfile equal source checkout"
+  },
+  "source_hashes": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-lock.yaml": "4c058ca733b602da6cb01932ed1336309de33de409aac6f37ee2eabb83f4ad3d",
+    "src/utils/deployment-contract.ts": "7a201e7d3ee309900c552f19f4abe70da6d94dc93c2f90fa55a215f46940efdf",
+    "src/plugins/remark-wiki-link.js": "68c98c9b04a939411d890282da3a9345e070dd2859a78b3516506c62736b0108",
+    "src/utils/post-contract.ts": "11d23c8a1b582c7f085120c3284e3bb0542c3ffee586f83d7a919579533446ea",
+    "scripts/zhenkun-test-deployment.mjs": "b9b464154f2eca68a5c518dd0ad1f75edd7bf2c6e7527fbf8068575218cc5041",
+    "scripts/zhenkun-test-publication.mjs": "7cbad76374e018e8e20d59594ee37e03327cc0063da093c02e71245fccd23ba1"
+  },
+  "preservation": {
+    "p3_files_unchanged": 50,
+    "original_workbuddy_file_unchanged": true,
+    "original_tracked_changes_before_docs": false
+  },
+  "limits": [
+    "Import is a local review ref, not G1 acceptance or integration.",
+    "Only 120 native tests rerun here; no fresh full type/build/root/subpath/HTTP/browser/Linux/dependency-install acceptance.",
+    "Uncommitted P3 and .workbuddy are preserved; no remote mutation or active checkout change."
+  ]
+}

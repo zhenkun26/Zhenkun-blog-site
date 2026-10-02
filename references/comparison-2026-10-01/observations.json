@@ -1,0 +1,3359 @@
+[
+  {
+    "site": "cuteleaf",
+    "step": "01-home",
+    "clientWidth": 1265,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "夏夜流萤"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      }
+    ],
+    "scrollWidth": 1265,
+    "title": "夏夜流萤 - 飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
+    "url": "https://blog.cuteleaf.cn/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Homepage entry: populated article list and many feature menus; remote background media reports load failure.",
+    "accepted": true,
+    "sha256": "c3b7b7a4d7d110fd51ca93a8de548b2855f087a00e79355b290c9401a594ecb1",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "01-home",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H1",
+        "text": ""
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "朝朝听雨 - 物物而不物于物，念念而不念于念",
+    "url": "https://rainzt.cn/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Transient welcome notice; use stable 02-home-ready. Excluded from publication.",
+    "accepted": false,
+    "sha256": "1554177b6ccfe0d68974a052a93c72983a49d386d1d3f02df5037d793c8c523e",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "02-home-ready",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H1",
+        "text": ""
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "朝朝听雨 - 物物而不物于物，念念而不念于念",
+    "url": "https://rainzt.cn/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Accepted first screen after closing the temporary welcome notice; identity/navigation has hydrated. Seasonal composition is time-dependent.",
+    "accepted": true,
+    "sha256": "4a74396a6656057dc9ef522e45fe48d0d165a52b5b5bbdf2b799e75c002839e4",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "03-article-list",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H1",
+        "text": ""
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "朝朝听雨 - 物物而不物于物，念念而不念于念",
+    "url": "https://rainzt.cn/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Scrolled article discovery: three-column reading dashboard, pinned project/article cards, one-line quote, time/visit widgets, consistent decorative cards.",
+    "accepted": true,
+    "sha256": "7f0473e92f2b999d74a2b1e3cda425491a30550499d57d138f146e4c62249278",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "cuteleaf",
+    "step": "02-reading",
+    "clientWidth": 1265,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "在 Astro 中实现 Markdown Wiki Link 内部链接"
+      },
+      {
+        "tag": "H2",
+        "text": "为什么不用现成插件#"
+      },
+      {
+        "tag": "H2",
+        "text": "插手的位置#"
+      },
+      {
+        "tag": "H2",
+        "text": "解析语法#"
+      },
+      {
+        "tag": "H2",
+        "text": "遍历 AST#"
+      },
+      {
+        "tag": "H2",
+        "text": "链接目标：三级解析#"
+      },
+      {
+        "tag": "H2",
+        "text": "和 Obsidian 对齐#"
+      },
+      {
+        "tag": "H2",
+        "text": "文章链接卡片#"
+      },
+      {
+        "tag": "H2",
+        "text": "封面图与图片管线#"
+      },
+      {
+        "tag": "H2",
+        "text": "样式#"
+      },
+      {
+        "tag": "H2",
+        "text": "两个静默失败#"
+      },
+      {
+        "tag": "H2",
+        "text": "最终效果#"
+      },
+      {
+        "tag": "H2",
+        "text": "还能改进的地方#"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "必填",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "必填",
+        "type": "email"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "选填",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": null,
+        "type": "file"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": null,
+        "type": "hidden"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "请输入",
+        "type": "password"
+      }
+    ],
+    "scrollWidth": 1265,
+    "title": "在 Astro 中实现 Markdown Wiki Link 内部链接 - 夏夜流萤",
+    "url": "https://blog.cuteleaf.cn/posts/dev-notes/astro-wiki-link-implementation/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Long technical article: metadata, sticky outline, code presentation, and separate reading controls.",
+    "accepted": true,
+    "sha256": "8c2d2b9a0b13d7e7f0f09f8e1962ba9be71bddfb042a6393ef9a416cb4553986",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "cuteleaf",
+    "step": "03-immersive-reading",
+    "clientWidth": 1265,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "在 Astro 中实现 Markdown Wiki Link 内部链接"
+      },
+      {
+        "tag": "H2",
+        "text": "为什么不用现成插件#"
+      },
+      {
+        "tag": "H2",
+        "text": "插手的位置#"
+      },
+      {
+        "tag": "H2",
+        "text": "解析语法#"
+      },
+      {
+        "tag": "H2",
+        "text": "遍历 AST#"
+      },
+      {
+        "tag": "H2",
+        "text": "链接目标：三级解析#"
+      },
+      {
+        "tag": "H2",
+        "text": "和 Obsidian 对齐#"
+      },
+      {
+        "tag": "H2",
+        "text": "文章链接卡片#"
+      },
+      {
+        "tag": "H2",
+        "text": "封面图与图片管线#"
+      },
+      {
+        "tag": "H2",
+        "text": "样式#"
+      },
+      {
+        "tag": "H2",
+        "text": "两个静默失败#"
+      },
+      {
+        "tag": "H2",
+        "text": "最终效果#"
+      },
+      {
+        "tag": "H2",
+        "text": "还能改进的地方#"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "必填",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "必填",
+        "type": "email"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "选填",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": null,
+        "type": "file"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": null,
+        "type": "hidden"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "请输入",
+        "type": "password"
+      }
+    ],
+    "scrollWidth": 1265,
+    "title": "在 Astro 中实现 Markdown Wiki Link 内部链接 - 夏夜流萤",
+    "url": "https://blog.cuteleaf.cn/posts/dev-notes/astro-wiki-link-implementation/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Observed dedicated reading view with left outline and hidden sidebars. Font/width/line-height controls were not verified.",
+    "accepted": true,
+    "sha256": "4c761ea406741608f00fb3e85544d987cc2b9b7aa07935c1dfc24c741dd4e7fd",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "cuteleaf",
+    "step": "04-display-settings",
+    "clientWidth": 1265,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "在 Astro 中实现 Markdown Wiki Link 内部链接"
+      },
+      {
+        "tag": "H2",
+        "text": "为什么不用现成插件#"
+      },
+      {
+        "tag": "H2",
+        "text": "插手的位置#"
+      },
+      {
+        "tag": "H2",
+        "text": "解析语法#"
+      },
+      {
+        "tag": "H2",
+        "text": "遍历 AST#"
+      },
+      {
+        "tag": "H2",
+        "text": "链接目标：三级解析#"
+      },
+      {
+        "tag": "H2",
+        "text": "和 Obsidian 对齐#"
+      },
+      {
+        "tag": "H2",
+        "text": "文章链接卡片#"
+      },
+      {
+        "tag": "H2",
+        "text": "封面图与图片管线#"
+      },
+      {
+        "tag": "H2",
+        "text": "样式#"
+      },
+      {
+        "tag": "H2",
+        "text": "两个静默失败#"
+      },
+      {
+        "tag": "H2",
+        "text": "最终效果#"
+      },
+      {
+        "tag": "H2",
+        "text": "还能改进的地方#"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "必填",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "必填",
+        "type": "email"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "选填",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": null,
+        "type": "file"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": null,
+        "type": "hidden"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "请输入",
+        "type": "password"
+      }
+    ],
+    "scrollWidth": 1265,
+    "title": "在 Astro 中实现 Markdown Wiki Link 内部链接 - 夏夜流萤",
+    "url": "https://blog.cuteleaf.cn/posts/dev-notes/astro-wiki-link-implementation/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Appearance settings expose theme hue and card style; wallpaper/effect tabs are separate. Settings discoverability is icon-based.",
+    "accepted": true,
+    "sha256": "89608dfc97bac7e9040d548e60977f97d20674f355e2c823e5cab418ff2acd5a",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "04-navigation",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H1",
+        "text": ""
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "朝朝听雨 - 物物而不物于物，念念而不念于念",
+    "url": "https://rainzt.cn/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Navigation drawer exposes articles, social pages, content/project tools and About/change-log paths. Flat content destinations are separated from external links.",
+    "accepted": true,
+    "sha256": "04d004736414d86222d380b0773fee1fe3b92ed6fed9d7db3992d926b73a3d5a",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "cuteleaf",
+    "step": "05-first-search",
+    "clientWidth": 1265,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "关于我"
+      },
+      {
+        "tag": "H1",
+        "text": "关于我 / About Me#"
+      },
+      {
+        "tag": "H2",
+        "text": "🛠️ 关于本站#"
+      },
+      {
+        "tag": "H2",
+        "text": "📫 联系方式#"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      }
+    ],
+    "scrollWidth": 1265,
+    "title": "关于我 - 夏夜流萤",
+    "url": "https://blog.cuteleaf.cn/about/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Fresh About tab, first desktop query Wiki. Waited while another reference flow was inspected; current panel/result state is recorded.",
+    "accepted": true,
+    "sha256": "f8b8bdd94297caf8392916dce91deab7097152deb2565a0781895a7331c7d59c",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "05-friends-feed",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H1",
+        "text": ""
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "朝朝听雨 - 物物而不物于物，念念而不念于念",
+    "url": "https://rainzt.cn/moments/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Rejected transition capture: URL changed before main content rendered. Use 06-friends-feed-ready.",
+    "accepted": false,
+    "sha256": "4aea14498254f55e11167b47ff4217bbc980693a2ae4cf21a37bf02432882f9d",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "cuteleaf",
+    "step": "06-search-retry",
+    "clientWidth": 1265,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "关于我"
+      },
+      {
+        "tag": "H1",
+        "text": "关于我 / About Me#"
+      },
+      {
+        "tag": "H2",
+        "text": "🛠️ 关于本站#"
+      },
+      {
+        "tag": "H2",
+        "text": "📫 联系方式#"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      }
+    ],
+    "scrollWidth": 1265,
+    "title": "关于我 - 夏夜流萤",
+    "url": "https://blog.cuteleaf.cn/about/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Clearing and retyping Wiki opens two matching results; paired with the first-query capture.",
+    "accepted": true,
+    "sha256": "ef783f5f8e6463e41d5c97c4dd60e018ff64888796051b033342dcd6d169e6e6",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "06-friends-feed-ready",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朋友圈"
+      },
+      {
+        "tag": "H1",
+        "text": "朋友圈"
+      },
+      {
+        "tag": "H2",
+        "text": "Xiaomi Watch S4 eSIM 图标包使用指南"
+      },
+      {
+        "tag": "H2",
+        "text": "国庆快乐！"
+      },
+      {
+        "tag": "H2",
+        "text": "Mail-Hook：打造属于自己的多域名邮件系统"
+      },
+      {
+        "tag": "H2",
+        "text": "中国新药你99%不知道的那些事"
+      },
+      {
+        "tag": "H2",
+        "text": "Sam Altman reflections"
+      },
+      {
+        "tag": "H2",
+        "text": "发财小记 Star Accounting：把每一笔钱记得更轻松，现开放 Gmail 内测报名"
+      },
+      {
+        "tag": "H2",
+        "text": "博客历史与AI优化UI"
+      },
+      {
+        "tag": "H2",
+        "text": "创赛PPT、PDF如何高清压缩？一文教你解决"
+      },
+      {
+        "tag": "H2",
+        "text": "山河锦绣，国泰民安"
+      },
+      {
+        "tag": "H2",
+        "text": "给博客加了张站点统计看板：自研翻车之后直接抄了整份实现"
+      },
+      {
+        "tag": "H2",
+        "text": "Oracle Cloud 永久免费服务器教程：注册、创建 Ampere A1 与闲置回收避坑"
+      },
+      {
+        "tag": "H2",
+        "text": "我把博客的鼠标做成了一朵樱花（附完整代码）"
+      },
+      {
+        "tag": "H2",
+        "text": "聊一下洗发水的生产日期问题"
+      },
+      {
+        "tag": "H2",
+        "text": "月刊 · 第二期"
+      },
+      {
+        "tag": "H2",
+        "text": "给博客页脚加了两行数字：静态站直连 Umami 的零后端玩法"
+      },
+      {
+        "tag": "H2",
+        "text": "换了一圈截图工具，最后留在了截图吧"
+      },
+      {
+        "tag": "H2",
+        "text": "Snow Shot：常驻 13MB 的截图工具，把 PixPin 的会员功能全免费了"
+      },
+      {
+        "tag": "H2",
+        "text": "云厂商与域名、证书工具"
+      },
+      {
+        "tag": "H2",
+        "text": "好玩的网站与小工具"
+      },
+      {
+        "tag": "H2",
+        "text": "安卓玩机工具收藏"
+      },
+      {
+        "tag": "H2",
+        "text": "AI 工具收藏"
+      },
+      {
+        "tag": "H2",
+        "text": "内网穿透与异地组网：frp、NPS、rathole、SSH 隧道、Cloudflare Tunnel、Tailscale"
+      },
+      {
+        "tag": "H2",
+        "text": "免费用 Office：2010 Starter、2024 部署工具、WPS 政府版"
+      },
+      {
+        "tag": "H2",
+        "text": "「站长信」202609 - 无题"
+      },
+      {
+        "tag": "H2",
+        "text": "因为我余额要过期了免费给大家用longcat!"
+      },
+      {
+        "tag": "H2",
+        "text": "九月小记"
+      },
+      {
+        "tag": "H2",
+        "text": "今夜月明人尽望"
+      },
+      {
+        "tag": "H2",
+        "text": "都说ZCode送3亿Token是封口费？我查了时间线，事情不简单"
+      },
+      {
+        "tag": "H2",
+        "text": "Vue3 博客 CSR 改 SSR 全记录：为了让百度收录，我把前台重写了一遍"
+      },
+      {
+        "tag": "H2",
+        "text": "与友共望时明月，阴雨难挡圆月明"
+      },
+      {
+        "tag": "H2",
+        "text": "永远是多远"
+      },
+      {
+        "tag": "H2",
+        "text": "博客 v0.4.7 重构：如何营造沉浸舒服的文章浏览体验？"
+      },
+      {
+        "tag": "H2",
+        "text": "样式试验场 · 正文元素全谱"
+      },
+      {
+        "tag": "H2",
+        "text": "05 年的《灼眼的夏娜》：三季看完，比现在大多数战斗番还能打"
+      },
+      {
+        "tag": "H2",
+        "text": "最近的主题更新：粉色毛玻璃和一些小修小补"
+      },
+      {
+        "tag": "H2",
+        "text": "艾雪周刊 V.12—中秋节快乐！"
+      },
+      {
+        "tag": "H2",
+        "text": "一生所有，干净自由。"
+      },
+      {
+        "tag": "H2",
+        "text": "心脏病要吓出来了"
+      },
+      {
+        "tag": "H2",
+        "text": "Apple Watch 是好用的 mp3 吗"
+      },
+      {
+        "tag": "H2",
+        "text": "深圳小众轨道交通"
+      },
+      {
+        "tag": "H2",
+        "text": "为什么一块「从没碰过」的网卡，能冻住游戏和视频"
+      },
+      {
+        "tag": "H2",
+        "text": "【日记】最近一些事"
+      },
+      {
+        "tag": "H2",
+        "text": "自建 RustDesk 中继服务器教程：Docker 部署 hbbs 与 hbbr"
+      },
+      {
+        "tag": "H2",
+        "text": "RustDesk + Tailscale 远程桌面教程：免自建服务器的安全组网方案"
+      },
+      {
+        "tag": "H2",
+        "text": "Tailscale + Windows RDP 远程桌面教程：安全访问家中电脑"
+      },
+      {
+        "tag": "H2",
+        "text": "AI圈这半个月有点疯，随手记几条"
+      },
+      {
+        "tag": "H2",
+        "text": "不用域名不用反代，Tailscale 让 NAS 地址变成「设备名:端口」"
+      },
+      {
+        "tag": "H2",
+        "text": "疫情防控消杀"
+      },
+      {
+        "tag": "H2",
+        "text": "做一个纯前端、离线可用的 Python 刷题网页"
+      },
+      {
+        "tag": "H2",
+        "text": "🔒 这是一个测试笔记"
+      },
+      {
+        "tag": "H2",
+        "text": "ZFA自建手机版-把验证码揣进兜里"
+      },
+      {
+        "tag": "H2",
+        "text": "新手零门槛：GitHub 网页汉化 + Desktop 汉化极速上手指南"
+      },
+      {
+        "tag": "H2",
+        "text": "跨境电商 Agents：从 AI 选品到自动经营"
+      },
+      {
+        "tag": "H2",
+        "text": "站点更新：背景视频、公告板与音乐播放器的一批打磨"
+      },
+      {
+        "tag": "H2",
+        "text": "🎯 Kalidroid实战渗透测试完整流程指南（完整版）"
+      },
+      {
+        "tag": "H2",
+        "text": "用 Hanzi Writer 做笔顺问候动画"
+      },
+      {
+        "tag": "H2",
+        "text": "腾讯云 EdgeOne 加速图床与博客全记录"
+      },
+      {
+        "tag": "H2",
+        "text": "穹庐下的魔女 观后感"
+      },
+      {
+        "tag": "H2",
+        "text": "🔥 Kalidroid深度评测：无需Root的移动Kali Linux革命"
+      },
+      {
+        "tag": "H2",
+        "text": "致 Ethereal 主题用户"
+      },
+      {
+        "tag": "H2",
+        "text": "📱 我的NetHunter学习之旅：从零开始的渗透测试实践"
+      },
+      {
+        "tag": "H2",
+        "text": "🎯 实战案例：我用NetHunter发现公司WiFi安全漏洞的全过程"
+      },
+      {
+        "tag": "H2",
+        "text": "白裙子，记忆中的白月光"
+      },
+      {
+        "tag": "H2",
+        "text": "记一次友链头像破损排查：helmet 的 CORP 默认配置"
+      },
+      {
+        "tag": "H2",
+        "text": "ZCode 静默上传事件技术复盘：一次仓库快照如何带走完整 Git 历史"
+      },
+      {
+        "tag": "H2",
+        "text": "你好，这里是叁拾玖の小站"
+      },
+      {
+        "tag": "H2",
+        "text": "🔒 测试1234"
+      },
+      {
+        "tag": "H2",
+        "text": "🔥 Kali NetHunter深度技术解析：从渗透测试到安全研究的专业平台"
+      },
+      {
+        "tag": "H2",
+        "text": "《人工智能安全治理框架3.0》深度解析：AI时代的网络安全新范式"
+      },
+      {
+        "tag": "H2",
+        "text": "在学校真的可以使用电子设备吗 😋"
+      },
+      {
+        "tag": "H2",
+        "text": "周记 9-3：当老师遇上 AI"
+      },
+      {
+        "tag": "H2",
+        "text": "艾雪周刊 V.11—拖拽式UI设计项目与近期站点更新"
+      },
+      {
+        "tag": "H2",
+        "text": "那个猫它走了"
+      },
+      {
+        "tag": "H2",
+        "text": "罗曼望远镜前往L2：燃料预算如何换来22年寿命"
+      },
+      {
+        "tag": "H2",
+        "text": "Codex 为什么会“降智”：292 State、状态注入与长任务的另一条解释"
+      },
+      {
+        "tag": "H2",
+        "text": "用 Motion 做克制的动效：滚动揭示与滚动缩放"
+      },
+      {
+        "tag": "H2",
+        "text": "对偶空间"
+      },
+      {
+        "tag": "H2",
+        "text": "我选择 Pi.dev，为自己的电脑装上 AI Agent"
+      },
+      {
+        "tag": "H2",
+        "text": "GPT 与 Claude 混合双打的 72 小时：2026 数模 A 题赛博修仙实录"
+      },
+      {
+        "tag": "H2",
+        "text": "零成本搭建 Firefly（Astro）个人博客，AI 全自动部署教程"
+      },
+      {
+        "tag": "H2",
+        "text": "我捡的猫它自己回来了"
+      },
+      {
+        "tag": "H2",
+        "text": "修车"
+      },
+      {
+        "tag": "H2",
+        "text": "在奶奶的白发里，我看见了时间"
+      },
+      {
+        "tag": "H2",
+        "text": "玻璃拟态卡片与聚光效果：清吾的卡片是怎么做出来的"
+      },
+      {
+        "tag": "H2",
+        "text": "游玩日记·第三期"
+      },
+      {
+        "tag": "H2",
+        "text": "「说说」workbuddy有免费DeepSeek flash v4.1了？！！"
+      },
+      {
+        "tag": "H2",
+        "text": "为什么你们都不上网 😭"
+      },
+      {
+        "tag": "H2",
+        "text": "周记 9-2：换老师、整蛊玩具、心流过火、学校妥协"
+      },
+      {
+        "tag": "H2",
+        "text": "艾雪周刊 V.10—博客后台与近期动向"
+      },
+      {
+        "tag": "H2",
+        "text": "把喜欢的东西，做成一个属于自己的角落"
+      },
+      {
+        "tag": "H2",
+        "text": "我的大学之旅"
+      },
+      {
+        "tag": "H2",
+        "text": "第 21 届中博会之行｜走进广州，感受中小企业科创力量"
+      },
+      {
+        "tag": "H2",
+        "text": "完整扒站实践"
+      },
+      {
+        "tag": "H2",
+        "text": "深夜写代码，耳机里放鸣潮"
+      },
+      {
+        "tag": "H2",
+        "text": "光谱号入轨：欧洲商业火箭第一次从本土起飞"
+      },
+      {
+        "tag": "H2",
+        "text": "别让评论憋在文末了：让想法跟着文字串门"
+      },
+      {
+        "tag": "H2",
+        "text": "吻"
+      },
+      {
+        "tag": "H2",
+        "text": "【日记】高三第一周"
+      },
+      {
+        "tag": "H2",
+        "text": "【投稿】高三"
+      },
+      {
+        "tag": "H2",
+        "text": "给静态博客文章添加Lottie表情包"
+      },
+      {
+        "tag": "H2",
+        "text": "周记 9-1：新座位、同桌降班、年级主任晋升、准高三日程"
+      },
+      {
+        "tag": "H2",
+        "text": "临摹软件-v3.0版本变更内容"
+      },
+      {
+        "tag": "H2",
+        "text": "全屏壁纸的两种性格：classic 揭幕与 hero 视差的实现细节"
+      },
+      {
+        "tag": "H2",
+        "text": "学校社交坏 😭"
+      },
+      {
+        "tag": "H2",
+        "text": "艾雪周刊 V.09—网站从0到1纯小白零基础教程"
+      },
+      {
+        "tag": "H2",
+        "text": "记一次心流 & 如何进入心流"
+      },
+      {
+        "tag": "H2",
+        "text": "罗曼望远镜升空：NASA下一代旗舰提前约9个月启程"
+      },
+      {
+        "tag": "H2",
+        "text": "主题升级—Hugo博客后台"
+      },
+      {
+        "tag": "H2",
+        "text": "Google 账号地区是日本，ChatGPT 订阅为什么还是美元？"
+      },
+      {
+        "tag": "H2",
+        "text": "八月记"
+      },
+      {
+        "tag": "H2",
+        "text": "为什么方向盘是最适合暑假玩的游戏"
+      },
+      {
+        "tag": "H2",
+        "text": "Godot：音效别直接拖进脚本路径"
+      },
+      {
+        "tag": "H2",
+        "text": "Godot：微型游戏的目录别摊成一锅"
+      },
+      {
+        "tag": "H2",
+        "text": "朱雀三号落地：中国火箭第一次\"站着回来\""
+      },
+      {
+        "tag": "H2",
+        "text": "观展手记｜走进 Formnext Asia 深圳展"
+      },
+      {
+        "tag": "H2",
+        "text": "Godot：AnimationPlayer 播走路"
+      },
+      {
+        "tag": "H2",
+        "text": "Godot：导出 HTML5 塞进博客"
+      },
+      {
+        "tag": "H2",
+        "text": "【日记】天上真会掉馅饼？"
+      },
+      {
+        "tag": "H2",
+        "text": "如何拥有良好的住宿体验"
+      },
+      {
+        "tag": "H2",
+        "text": "分享19首这几年喜欢的国漫音乐"
+      },
+      {
+        "tag": "H2",
+        "text": "Godot：子弹和碰撞层"
+      },
+      {
+        "tag": "H2",
+        "text": "Godot：做一局只有十秒的小游戏"
+      },
+      {
+        "tag": "H2",
+        "text": "给博客存档系统打个补丁"
+      },
+      {
+        "tag": "H2",
+        "text": "新插件发布，Halo 展示架：打造自己的专属收藏展示页面"
+      },
+      {
+        "tag": "H2",
+        "text": "参观华强北赛格电子市场"
+      },
+      {
+        "tag": "H2",
+        "text": "缓存复仇记：挡在我完美缓存前面的，是那个更傻的缓存"
+      },
+      {
+        "tag": "H2",
+        "text": "三个小工具，三个小问题"
+      },
+      {
+        "tag": "H2",
+        "text": "【原创】这次地震预警风波，真的有必要闹成这样吗"
+      },
+      {
+        "tag": "H2",
+        "text": "Mac 批量压缩图片工具推荐：几款真正免费的「赛博菩萨」"
+      },
+      {
+        "tag": "H2",
+        "text": "开始上高一了，比较忙，停更一段时间，各位互链站长勿下链！！！🙏"
+      },
+      {
+        "tag": "H2",
+        "text": "游玩《艾迪芬奇的记忆》"
+      },
+      {
+        "tag": "H2",
+        "text": "参观华强北博物馆"
+      },
+      {
+        "tag": "H2",
+        "text": "Halo 官方 MCP 插件上手体验"
+      },
+      {
+        "tag": "H2",
+        "text": "在 Flutter 项目里折腾苹果的液态玻璃效果"
+      },
+      {
+        "tag": "H2",
+        "text": "《斩神之凡尘神域Ⅱ》观后感"
+      },
+      {
+        "tag": "H2",
+        "text": "【公告】站点大更新！"
+      },
+      {
+        "tag": "H2",
+        "text": "从“宅斗庶女”看极端女权"
+      },
+      {
+        "tag": "H2",
+        "text": "星海罐头！"
+      },
+      {
+        "tag": "H2",
+        "text": "婚姻里的伤害，法律究竟能看见多少？——谈离婚诉讼中的精神损害赔偿"
+      },
+      {
+        "tag": "H2",
+        "text": "我以为能给站点请个会动的吉祥物，结果来了个 64×64 的方块人"
+      },
+      {
+        "tag": "H2",
+        "text": "最近在筹备大事，水篇说说awa"
+      },
+      {
+        "tag": "H2",
+        "text": "【废物利用】玩客云刷OpenWrt"
+      },
+      {
+        "tag": "H2",
+        "text": "塔沟那些年-2014前言"
+      },
+      {
+        "tag": "H2",
+        "text": "塔沟那些年-2014下半年"
+      },
+      {
+        "tag": "H2",
+        "text": "塔沟那些年-2015整年"
+      },
+      {
+        "tag": "H2",
+        "text": "塔沟那些年-2016整年"
+      },
+      {
+        "tag": "H2",
+        "text": "塔沟那些年-2017毕业&后记"
+      },
+      {
+        "tag": "H2",
+        "text": "一期一会"
+      },
+      {
+        "tag": "H2",
+        "text": "《Hello C++》4.8 数组的替代品"
+      },
+      {
+        "tag": "H2",
+        "text": "「浅谈」时代峰峻造星乱象：低龄逐利之下，追星早已失了底线"
+      },
+      {
+        "tag": "H2",
+        "text": "《Hello C++》4.7 指针的更多用法"
+      },
+      {
+        "tag": "H2",
+        "text": "小曦的上海之旅"
+      },
+      {
+        "tag": "H2",
+        "text": "一些思考"
+      },
+      {
+        "tag": "H2",
+        "text": "想把博客做的像一场游戏ing"
+      },
+      {
+        "tag": "H2",
+        "text": "游玩日记·第二期"
+      },
+      {
+        "tag": "H2",
+        "text": "我的缓存会自己补货：LruLink 与三个并行功能分支"
+      },
+      {
+        "tag": "H2",
+        "text": "QwenPaw使用体验（外加白嫖服务器）"
+      },
+      {
+        "tag": "H2",
+        "text": "Maltose：15 天重构博客，先写了 29 份 ADR 才敢写代码"
+      },
+      {
+        "tag": "H2",
+        "text": "一切都因为Github在国内无法稳定访问，因此我重构了评论组件！"
+      },
+      {
+        "tag": "H2",
+        "text": "记录维修一辆手动挡125摩托的过程"
+      },
+      {
+        "tag": "H2",
+        "text": "当我站在人生的某个十字路口上–对过去的总结与对未来的思考"
+      },
+      {
+        "tag": "H2",
+        "text": "想了很久，最后还是决定发出来"
+      },
+      {
+        "tag": "H2",
+        "text": "关于我照片多到溢出，于是我安装了immich来拯救我的照片！"
+      },
+      {
+        "tag": "H2",
+        "text": "《欢迎来到龙餐馆》强烈推荐！"
+      },
+      {
+        "tag": "H2",
+        "text": "DeepSeek Harness安装使用及美化教程"
+      },
+      {
+        "tag": "H2",
+        "text": "旧貌换新颜：近期博客的装修汇总"
+      },
+      {
+        "tag": "H2",
+        "text": "关于梦"
+      },
+      {
+        "tag": "H2",
+        "text": "用 ISBN 找书：这个小工具怎么用"
+      },
+      {
+        "tag": "H2",
+        "text": "将服务器交给AI：WorkBuddy 接入宝塔面板 MCP 实战指南"
+      },
+      {
+        "tag": "H2",
+        "text": "SilverCode Nexus AccessKey API：AI 接入规范"
+      },
+      {
+        "tag": "H2",
+        "text": "SilverCode Nexus AccessKey API 使用文档"
+      },
+      {
+        "tag": "H2",
+        "text": "每人留下一句藏着遗憾的诗词，你脑海里最先"
+      },
+      {
+        "tag": "H2",
+        "text": "搭建自己的基岩版Minecraft服务器"
+      },
+      {
+        "tag": "H2",
+        "text": "我试着把一张风景照变成一束花"
+      },
+      {
+        "tag": "H2",
+        "text": "一些对于介值定理的有趣应用"
+      },
+      {
+        "tag": "H2",
+        "text": "Twikoo 评论管理后台 魔改版 · 开源版1.0 重磅发布"
+      },
+      {
+        "tag": "H2",
+        "text": "从零开始的新人建站笔记：第二章"
+      },
+      {
+        "tag": "H2",
+        "text": "使用 TRSS + NapCat 搭建 Yunzai QQ 机器人"
+      },
+      {
+        "tag": "H2",
+        "text": "星舰全传：最大，还要最便宜"
+      },
+      {
+        "tag": "H2",
+        "text": "未至"
+      },
+      {
+        "tag": "H2",
+        "text": "《Hello C++》4.6 指针"
+      },
+      {
+        "tag": "H2",
+        "text": "《Hello C++》4.5 枚举"
+      },
+      {
+        "tag": "H2",
+        "text": "3X-UI Xray新版REALITY导致Mihomo Timeout的解决记录"
+      },
+      {
+        "tag": "H2",
+        "text": "利用AI制作自己的工作台"
+      },
+      {
+        "tag": "H2",
+        "text": "从尚未竣工到绿树成荫：广汉中学新校园的这几年"
+      },
+      {
+        "tag": "H2",
+        "text": "【旅行日记&amp;北京】Day1回家-我的2026暑假"
+      },
+      {
+        "tag": "H2",
+        "text": "把场景拆开，再重新相遇"
+      },
+      {
+        "tag": "H2",
+        "text": "【旅行日记&amp;重庆】Day4返程-我的2026暑假"
+      },
+      {
+        "tag": "H2",
+        "text": "【旅行日记&amp;重庆】Day3逛-我的2026暑假"
+      },
+      {
+        "tag": "H2",
+        "text": "新主题迁移测试完成"
+      },
+      {
+        "tag": "H2",
+        "text": "【旅行日记&amp;重庆】Day2打卡-我的2026暑假"
+      },
+      {
+        "tag": "H2",
+        "text": "Ethereal 主题近期更新一览：v1.0.1 到 v1.0.6"
+      },
+      {
+        "tag": "H2",
+        "text": "静态博客获取Sub2API token用量数据"
+      },
+      {
+        "tag": "H2",
+        "text": "静态博客获取微信读书数据"
+      },
+      {
+        "tag": "H2",
+        "text": "诺基亚：燃烧的平台"
+      },
+      {
+        "tag": "H2",
+        "text": "五花肉＋杏鲍菇＋黄酒＝黄酒红烧肉～"
+      },
+      {
+        "tag": "H2",
+        "text": "通过AI分析了一下这几年我的小站内容"
+      },
+      {
+        "tag": "H2",
+        "text": "近期小记"
+      },
+      {
+        "tag": "H2",
+        "text": "夏天真的太难了"
+      },
+      {
+        "tag": "H2",
+        "text": "收藏一时爽,清理要我命"
+      },
+      {
+        "tag": "H2",
+        "text": "FastCtx：Codex Windows增强工具"
+      },
+      {
+        "tag": "H2",
+        "text": "在 Astro 中实现 Markdown Wiki Link 内部链接"
+      },
+      {
+        "tag": "H2",
+        "text": "关于本站"
+      },
+      {
+        "tag": "H2",
+        "text": "关于SilverCode Nexus"
+      },
+      {
+        "tag": "H2",
+        "text": "旅行者2号“大爆炸”：213亿公里外的省电手术"
+      },
+      {
+        "tag": "H2",
+        "text": "Ethereal主题，发布了"
+      },
+      {
+        "tag": "H2",
+        "text": "大家还记得自己装的第一台主机吗？什么时候，什么配置，在哪里，又有谁陪着呢？这台主机和那时候陪着你的人"
+      },
+      {
+        "tag": "H2",
+        "text": "「工具推荐」TRAE：字节跳动自研AI原生IDE编程软件（非广告）"
+      },
+      {
+        "tag": "H2",
+        "text": "把照片放回地图：我做了一个 Photo Walk"
+      },
+      {
+        "tag": "H2",
+        "text": "关于我的显卡接口被烧了这件事"
+      },
+      {
+        "tag": "H2",
+        "text": "「闲言碎语」202607-中考后的胡思乱想"
+      },
+      {
+        "tag": "H2",
+        "text": "热了这么多天，今早终于凉快了"
+      },
+      {
+        "tag": "H2",
+        "text": "Astro Gyoza 内容标签使用指南"
+      },
+      {
+        "tag": "H2",
+        "text": "OpenCode开启自定义Provider的WebScoket"
+      },
+      {
+        "tag": "H2",
+        "text": "一些手办推荐"
+      },
+      {
+        "tag": "H2",
+        "text": "giffgaff验证码转发"
+      },
+      {
+        "tag": "H2",
+        "text": "SQL查询长文本字段的索引策略"
+      },
+      {
+        "tag": "H2",
+        "text": "自动上架系统：用 Playwright 构建可控发布流程"
+      },
+      {
+        "tag": "H2",
+        "text": "告别素材文件，WPF 内嵌视频实现高颜值动态窗口背景"
+      },
+      {
+        "tag": "H2",
+        "text": "关于备案、主题开发和短暂停更的一点说明"
+      },
+      {
+        "tag": "H2",
+        "text": "打造属于自己的 GitHub 主页：设计与优化记录"
+      },
+      {
+        "tag": "H2",
+        "text": "记-晚安日记"
+      },
+      {
+        "tag": "H2",
+        "text": "2026上半年总结"
+      },
+      {
+        "tag": "H2",
+        "text": "从零开始配置Cloudflare内网穿透"
+      },
+      {
+        "tag": "H2",
+        "text": "惠州游记·二"
+      },
+      {
+        "tag": "H2",
+        "text": "Hexo Theme Flatpaper 加入朋友圈大家庭"
+      },
+      {
+        "tag": "H2",
+        "text": "开发了一款适合查看图集的看图软件 ：Folio"
+      },
+      {
+        "tag": "H2",
+        "text": "修复 Apple Developer 邮箱与 Apple 账户邮箱不一致的问题"
+      },
+      {
+        "tag": "H2",
+        "text": "Hexo 主题 Flatpaper 现在支持开屏大图了"
+      },
+      {
+        "tag": "H2",
+        "text": "Jellyfin刮削与字幕获取"
+      },
+      {
+        "tag": "H2",
+        "text": "WPS图片与看图王去广告版"
+      },
+      {
+        "tag": "H2",
+        "text": "惠州游记·一"
+      },
+      {
+        "tag": "H2",
+        "text": "以前的情况：每个月都可以拿到一笔足够我生活开支的分红，"
+      },
+      {
+        "tag": "H2",
+        "text": "利用 Hysteria2 面板项目搭建VPN"
+      },
+      {
+        "tag": "H2",
+        "text": "GitHub PR 拉取、编辑与推送工作流"
+      },
+      {
+        "tag": "H2",
+        "text": "分享一下我的主页模板"
+      },
+      {
+        "tag": "H2",
+        "text": "当身体被强制暂停"
+      },
+      {
+        "tag": "H2",
+        "text": "机箱里住了一台拖拉机"
+      },
+      {
+        "tag": "H2",
+        "text": "小女孩一首《左手指月》震惊了，龙源交椅山六一晚会首首惊艳，余音绕梁"
+      },
+      {
+        "tag": "H2",
+        "text": "BitLocker 绕过漏洞分析：WinRE 与 TxF 到底出了什么问题？"
+      },
+      {
+        "tag": "H2",
+        "text": "关键对话"
+      },
+      {
+        "tag": "H2",
+        "text": "在 Astro 博客实现 Live2D 看板娘"
+      },
+      {
+        "tag": "H2",
+        "text": "又一个 Hexo 博客的主题：FlatPaper"
+      },
+      {
+        "tag": "H2",
+        "text": "如何启用域名DNSSEC的设置以及吃瓜某蒂云服务商跑路这件事"
+      },
+      {
+        "tag": "H2",
+        "text": "不用服务器，零成本搭建一个自己的个人博客"
+      },
+      {
+        "tag": "H2",
+        "text": "BlogsClub 二周年啦~"
+      },
+      {
+        "tag": "H2",
+        "text": "TheRustBook笔记"
+      },
+      {
+        "tag": "H2",
+        "text": "密码保护：溺"
+      },
+      {
+        "tag": "H2",
+        "text": "服务器搭建AI模型中心 | 含代理配置"
+      },
+      {
+        "tag": "H2",
+        "text": "快速登记自己的作品版权合法保护自己的绘画等艺术作品"
+      },
+      {
+        "tag": "H2",
+        "text": "实现Artalk中间页安全跳转和表情包小图BUG预览"
+      },
+      {
+        "tag": "H2",
+        "text": "盘点开发者眼里的赛博大善人（一）"
+      },
+      {
+        "tag": "H2",
+        "text": "最近的改动和生活"
+      },
+      {
+        "tag": "H2",
+        "text": "博客系统 FlecBlog 现已正式开源"
+      },
+      {
+        "tag": "H2",
+        "text": "在 Astro 博客中为 Markdown 添加多图并排的自适应网格画廊功能"
+      },
+      {
+        "tag": "H2",
+        "text": "Astro 静态博客文章推荐功能的实现思路"
+      },
+      {
+        "tag": "H2",
+        "text": "Windows 注册表原理与实战指南"
+      },
+      {
+        "tag": "H2",
+        "text": "Astro 静态博客文章加密功能的实现思路"
+      },
+      {
+        "tag": "H2",
+        "text": "Hexo安知鱼主题开启AI摘要"
+      },
+      {
+        "tag": "H2",
+        "text": "GitHub Actions 自动化部署全攻略"
+      },
+      {
+        "tag": "H2",
+        "text": "长久爱情的三个价值"
+      },
+      {
+        "tag": "H2",
+        "text": "自研博客系统打造极致极简创作体验"
+      },
+      {
+        "tag": "H2",
+        "text": "关于逆回购"
+      },
+      {
+        "tag": "H2",
+        "text": "将openlist映射到本地目录"
+      },
+      {
+        "tag": "H2",
+        "text": "🌌 最终测试：超弦虚空接口"
+      },
+      {
+        "tag": "H2",
+        "text": "Astro Theme Iris：打造个人知识管理系统"
+      },
+      {
+        "tag": "H2",
+        "text": "解决兰空图床套cdn优选后接口域名仍为http"
+      },
+      {
+        "tag": "H2",
+        "text": "2025年末总结"
+      },
+      {
+        "tag": "H2",
+        "text": "雨雪的棉花糖完成啦！冰屋友链接力平台"
+      },
+      {
+        "tag": "H2",
+        "text": "Vless+Reality节点搭建"
+      },
+      {
+        "tag": "H2",
+        "text": "IOS免费下载小火箭"
+      },
+      {
+        "tag": "H2",
+        "text": "云函数和负载均衡"
+      },
+      {
+        "tag": "H2",
+        "text": "云计算知识点总结"
+      },
+      {
+        "tag": "H2",
+        "text": "动态规划"
+      },
+      {
+        "tag": "H2",
+        "text": "二分查找"
+      },
+      {
+        "tag": "H2",
+        "text": "python实现全屏弹幕"
+      },
+      {
+        "tag": "H2",
+        "text": "【日志】决定将这个blog迁移到astro！"
+      },
+      {
+        "tag": "H2",
+        "text": "近况"
+      },
+      {
+        "tag": "H2",
+        "text": "写在建立BlogsClub博客俱乐部一周年之际"
+      },
+      {
+        "tag": "H2",
+        "text": "[DN42] DN42上geoip的搭建过程"
+      },
+      {
+        "tag": "H2",
+        "text": "在Minecraft BE搭建神经网络？"
+      },
+      {
+        "tag": "H2",
+        "text": "LaTeX使用中的一些坑"
+      },
+      {
+        "tag": "H2",
+        "text": "Word写论文的各种奇怪要求怎么解决"
+      },
+      {
+        "tag": "H2",
+        "text": "基于 Aria2 RPC 的 P2P 客户端异常检测与 IP 封禁工具"
+      },
+      {
+        "tag": "H2",
+        "text": "Typecho整合Memos打造哔哔空间"
+      },
+      {
+        "tag": "H2",
+        "text": "Blog常用书写格式记录"
+      },
+      {
+        "tag": "H2",
+        "text": "光猫拨号下的OpenWrt旁路由探索"
+      },
+      {
+        "tag": "H2",
+        "text": "初入Mac，快速上手"
+      },
+      {
+        "tag": "H2",
+        "text": "hdc使用指南"
+      },
+      {
+        "tag": "H2",
+        "text": "宝塔面板使用问题记录【强制HTTPS】后网站无法访问"
+      },
+      {
+        "tag": "H2",
+        "text": "Mac优雅的截图姿势"
+      },
+      {
+        "tag": "H2",
+        "text": "Python可以被玩到多骚？"
+      },
+      {
+        "tag": "H2",
+        "text": "2024年终总结"
+      },
+      {
+        "tag": "H2",
+        "text": "基于 mclib 的剪切板管理器 clipboard-master"
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "moments-page-jump-input",
+        "label": "页码",
+        "placeholder": "1",
+        "type": "number"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "朋友圈 - 朝朝听雨",
+    "url": "https://rainzt.cn/moments/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Stable moments page exposes coverage, fresh/stale sources, random entry and paginated feed; one summary visibly contains raw HTML tags.",
+    "accepted": true,
+    "sha256": "fbf65830c12ca52b0b37f48d65919055279794839771eab3a26bbaa1d0cd2ffd",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "cuteleaf",
+    "step": "07-filtered-archive",
+    "clientWidth": 1265,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "归档"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      }
+    ],
+    "scrollWidth": 1265,
+    "title": "归档 - 夏夜流萤",
+    "url": "https://blog.cuteleaf.cn/archive/?category=%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Category selection updates URL, count and year-grouped list; eight development-note articles.",
+    "accepted": true,
+    "sha256": "355746e96d79dd0ac7ff16467b0f0b05bba1d47cba05bd7342ee2b8816c2aebc",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "07-about",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "关于我"
+      },
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H2",
+        "text": "README.md"
+      },
+      {
+        "tag": "H1",
+        "text": "关于我 / About Me#"
+      },
+      {
+        "tag": "H2",
+        "text": "关于本站#"
+      },
+      {
+        "tag": "H2",
+        "text": "本人项目"
+      },
+      {
+        "tag": "H2",
+        "text": "站在巨人的肩膀上"
+      },
+      {
+        "tag": "H2",
+        "text": "正在关注"
+      },
+      {
+        "tag": "H2",
+        "text": "技术轨迹"
+      },
+      {
+        "tag": "H2",
+        "text": "保持联系"
+      },
+      {
+        "tag": "H2",
+        "text": "服务器状态"
+      },
+      {
+        "tag": "H2",
+        "text": "魔改日记"
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "关于我 - 朝朝听雨",
+    "url": "https://rainzt.cn/about/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Owner introduction with section navigation and project narrative; live version differs from public snapshot.",
+    "accepted": true,
+    "sha256": "6bff414e33c2c26665fd5cd2efdfea86bd8f6a03499cc836cf99b8718b7c8fa5",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "08-project-cards",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "关于我"
+      },
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H2",
+        "text": "README.md"
+      },
+      {
+        "tag": "H1",
+        "text": "关于我 / About Me#"
+      },
+      {
+        "tag": "H2",
+        "text": "关于本站#"
+      },
+      {
+        "tag": "H2",
+        "text": "本人项目"
+      },
+      {
+        "tag": "H2",
+        "text": "站在巨人的肩膀上"
+      },
+      {
+        "tag": "H2",
+        "text": "正在关注"
+      },
+      {
+        "tag": "H2",
+        "text": "技术轨迹"
+      },
+      {
+        "tag": "H2",
+        "text": "保持联系"
+      },
+      {
+        "tag": "H2",
+        "text": "服务器状态"
+      },
+      {
+        "tag": "H2",
+        "text": "魔改日记"
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "关于我 - 朝朝听雨",
+    "url": "https://rainzt.cn/about/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "About-page body and sidebar server-status/calendar visible; project cards are below this viewport. Not a project-card visual capture.",
+    "accepted": true,
+    "sha256": "88bf4225a783807d30cfebff6539b2a079779b8b7532e63b54ac6367b5534f26",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "cuteleaf",
+    "step": "08-mobile-home",
+    "clientWidth": 375,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "夏夜流萤"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      }
+    ],
+    "scrollWidth": 375,
+    "title": "夏夜流萤 - 飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
+    "url": "https://blog.cuteleaf.cn/",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "notes": "390×844 stable homepage; article cards follow banner and category strip.",
+    "accepted": true,
+    "sha256": "4be7ecbafbc738390e1c767f64cd3aaa5223a531a4bfb79a13a02ea9121e30cd",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "09-mobile-home",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H1",
+        "text": ""
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "朝朝听雨 - 物物而不物于物，念念而不念于念",
+    "url": "https://rainzt.cn/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Diagnostic viewport mismatch: measured 1280×720; not mobile evidence. Use 11-mobile-home-ready and 12-mobile-menu.",
+    "accepted": false,
+    "sha256": "d1c2f602b8271376de1c2d43d4e1b6282d1196066c12aa6056aaa801c89b7c93",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "cuteleaf",
+    "step": "09-mobile-menu",
+    "clientWidth": 390,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "夏夜流萤"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "夏夜流萤 - 飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
+    "url": "https://blog.cuteleaf.cn/",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "notes": "Mobile menu opened; keyboard focus behavior sampled below.",
+    "accepted": true,
+    "sha256": "ce43e7db24b06869abfd5494b10d690b75e9c854999cbb0ad0e7c84689c0a555",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "10-menu-after-viewport",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H1",
+        "text": ""
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "朝朝听雨 - 物物而不物于物，念念而不念于念",
+    "url": "https://rainzt.cn/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Diagnostic viewport mismatch: measured 1280×720; not mobile evidence. Use 11-mobile-home-ready and 12-mobile-menu.",
+    "accepted": false,
+    "sha256": "41a5336456fc6ef956faaeffaa3199a7b880afe7447dd7f06aae4ee4a086dde2",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "11-mobile-home-ready",
+    "clientWidth": 390,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H1",
+        "text": ""
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "朝朝听雨 - 物物而不物于物，念念而不念于念",
+    "url": "https://rainzt.cn/",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "notes": "Verified 390×844 viewport, welcome notice dismissed.",
+    "accepted": true,
+    "sha256": "90b76552f22104b49dc05b4aba8afc7e2268be8a72ad2b2935f2092d26e2e25e",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "12-mobile-menu",
+    "clientWidth": 390,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H1",
+        "text": ""
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "朝朝听雨 - 物物而不物于物，念念而不念于念",
+    "url": "https://rainzt.cn/",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "notes": "Mobile navigation dialog; focus sample recorded separately.",
+    "accepted": true,
+    "sha256": "5f1c04988409c80465c52ac4c9a780b3dffe01f971084ba4a2117e971c9ae977",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "cuteleaf",
+    "step": "10-mobile-menu-focus-escape",
+    "clientWidth": 390,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "夏夜流萤"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "夏夜流萤 - 飞萤之火自无梦的长夜亮起，绽放在终竟的明天。",
+    "url": "https://blog.cuteleaf.cn/",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "notes": "After opening menu, Tab focuses hero GitHub outside dialog; Escape from that link leaves menu expanded. Escape from menu trigger had closed it earlier.",
+    "accepted": true,
+    "sha256": "b0d6536828a7182714c743dd6e3f05df070d11eac082f5b1d2b4ff82df581f4f",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "13-mobile-search",
+    "clientWidth": 390,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "朝朝听雨"
+      },
+      {
+        "tag": "H1",
+        "text": ""
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "朝朝听雨 - 物物而不物于物，念念而不念于念",
+    "url": "https://rainzt.cn/",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "notes": "First mobile query Playwright returned matching article links without retyping.",
+    "accepted": true,
+    "sha256": "544a60b9a78e752f3da925a70ba442e6a326ce3b796b1aa34d198e08a2327d81",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "14-reading",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "自动上架系统：用 Playwright 构建可控发布流程"
+      },
+      {
+        "tag": "H2",
+        "text": "先说结论：它解决的是重复的劳动#"
+      },
+      {
+        "tag": "H2",
+        "text": "从第一次发布到现在：这不是一次换皮，而是一次工程升级#"
+      },
+      {
+        "tag": "H2",
+        "text": "系统边界：浏览器自动化，但不是“盲点”#"
+      },
+      {
+        "tag": "H2",
+        "text": "一次任务从哪里开始#"
+      },
+      {
+        "tag": "H2",
+        "text": "最重要的防错：先确认“这是哪个商品”#"
+      },
+      {
+        "tag": "H2",
+        "text": "图片映射：绝不靠 组号 + 1 猜下一张#"
+      },
+      {
+        "tag": "H2",
+        "text": "标题生成：AI 只负责它擅长的那一小部分#"
+      },
+      {
+        "tag": "H2",
+        "text": "一个商品的执行顺序#"
+      },
+      {
+        "tag": "H2",
+        "text": "发布成功不是一个绿色 Toast#"
+      },
+      {
+        "tag": "H2",
+        "text": "暂停、恢复和失败边界#"
+      },
+      {
+        "tag": "H2",
+        "text": "实时状态与历史记录是两条链#"
+      },
+      {
+        "tag": "H2",
+        "text": "Shopee 与 TikTok Shop：共用底座，不共用假设#"
+      },
+      {
+        "tag": "H2",
+        "text": "周边工具为什么也要放进同一套系统#"
+      },
+      {
+        "tag": "H2",
+        "text": "平台差异不是配置项，而是两套流程#"
+      },
+      {
+        "tag": "H2",
+        "text": "测试如何守住这些边界#"
+      },
+      {
+        "tag": "H2",
+        "text": "当前实现的限制#"
+      },
+      {
+        "tag": "H2",
+        "text": "最后：自动化的价值是把判断留给人#"
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "wl-nick",
+        "label": null,
+        "placeholder": null,
+        "type": "text"
+      },
+      {
+        "id": "wl-mail",
+        "label": null,
+        "placeholder": null,
+        "type": "email"
+      },
+      {
+        "id": "wl-link",
+        "label": null,
+        "placeholder": null,
+        "type": "text"
+      },
+      {
+        "id": "wl-image-upload",
+        "label": null,
+        "placeholder": null,
+        "type": "file"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索表情包",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索动态表情…",
+        "type": "search"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "曾使用过的邮箱",
+        "type": "email"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "自动上架系统：用 Playwright 构建可控发布流程 - 朝朝听雨",
+    "url": "https://rainzt.cn/posts/auto-listing-system/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Stable long-form project article, metadata, right outline and reading progress control.",
+    "accepted": true,
+    "sha256": "383ef961030a6f20891cb731df0fe0bdbcd975e6d847131d64c06f13fdf2cd5e",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "15-reading-body",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "自动上架系统：用 Playwright 构建可控发布流程"
+      },
+      {
+        "tag": "H2",
+        "text": "先说结论：它解决的是重复的劳动#"
+      },
+      {
+        "tag": "H2",
+        "text": "从第一次发布到现在：这不是一次换皮，而是一次工程升级#"
+      },
+      {
+        "tag": "H2",
+        "text": "系统边界：浏览器自动化，但不是“盲点”#"
+      },
+      {
+        "tag": "H2",
+        "text": "一次任务从哪里开始#"
+      },
+      {
+        "tag": "H2",
+        "text": "最重要的防错：先确认“这是哪个商品”#"
+      },
+      {
+        "tag": "H2",
+        "text": "图片映射：绝不靠 组号 + 1 猜下一张#"
+      },
+      {
+        "tag": "H2",
+        "text": "标题生成：AI 只负责它擅长的那一小部分#"
+      },
+      {
+        "tag": "H2",
+        "text": "一个商品的执行顺序#"
+      },
+      {
+        "tag": "H2",
+        "text": "发布成功不是一个绿色 Toast#"
+      },
+      {
+        "tag": "H2",
+        "text": "暂停、恢复和失败边界#"
+      },
+      {
+        "tag": "H2",
+        "text": "实时状态与历史记录是两条链#"
+      },
+      {
+        "tag": "H2",
+        "text": "Shopee 与 TikTok Shop：共用底座，不共用假设#"
+      },
+      {
+        "tag": "H2",
+        "text": "周边工具为什么也要放进同一套系统#"
+      },
+      {
+        "tag": "H2",
+        "text": "平台差异不是配置项，而是两套流程#"
+      },
+      {
+        "tag": "H2",
+        "text": "测试如何守住这些边界#"
+      },
+      {
+        "tag": "H2",
+        "text": "当前实现的限制#"
+      },
+      {
+        "tag": "H2",
+        "text": "最后：自动化的价值是把判断留给人#"
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "wl-nick",
+        "label": null,
+        "placeholder": null,
+        "type": "text"
+      },
+      {
+        "id": "wl-mail",
+        "label": null,
+        "placeholder": null,
+        "type": "email"
+      },
+      {
+        "id": "wl-link",
+        "label": null,
+        "placeholder": null,
+        "type": "text"
+      },
+      {
+        "id": "wl-image-upload",
+        "label": null,
+        "placeholder": null,
+        "type": "file"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索表情包",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索动态表情…",
+        "type": "search"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "曾使用过的邮箱",
+        "type": "email"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "自动上架系统：用 Playwright 构建可控发布流程 - 朝朝听雨",
+    "url": "https://rainzt.cn/posts/auto-listing-system/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Article body with structured content and persistent right outline; narrow central column competes with two sidebars.",
+    "accepted": true,
+    "sha256": "8b8e1ecbf08c14ea26d4808f8640b1479676a31417ab461b47025aeeee3c47fe",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "16-display-settings",
+    "clientWidth": 1280,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "自动上架系统：用 Playwright 构建可控发布流程"
+      },
+      {
+        "tag": "H2",
+        "text": "先说结论：它解决的是重复的劳动#"
+      },
+      {
+        "tag": "H2",
+        "text": "从第一次发布到现在：这不是一次换皮，而是一次工程升级#"
+      },
+      {
+        "tag": "H2",
+        "text": "系统边界：浏览器自动化，但不是“盲点”#"
+      },
+      {
+        "tag": "H2",
+        "text": "一次任务从哪里开始#"
+      },
+      {
+        "tag": "H2",
+        "text": "最重要的防错：先确认“这是哪个商品”#"
+      },
+      {
+        "tag": "H2",
+        "text": "图片映射：绝不靠 组号 + 1 猜下一张#"
+      },
+      {
+        "tag": "H2",
+        "text": "标题生成：AI 只负责它擅长的那一小部分#"
+      },
+      {
+        "tag": "H2",
+        "text": "一个商品的执行顺序#"
+      },
+      {
+        "tag": "H2",
+        "text": "发布成功不是一个绿色 Toast#"
+      },
+      {
+        "tag": "H2",
+        "text": "暂停、恢复和失败边界#"
+      },
+      {
+        "tag": "H2",
+        "text": "实时状态与历史记录是两条链#"
+      },
+      {
+        "tag": "H2",
+        "text": "Shopee 与 TikTok Shop：共用底座，不共用假设#"
+      },
+      {
+        "tag": "H2",
+        "text": "周边工具为什么也要放进同一套系统#"
+      },
+      {
+        "tag": "H2",
+        "text": "平台差异不是配置项，而是两套流程#"
+      },
+      {
+        "tag": "H2",
+        "text": "测试如何守住这些边界#"
+      },
+      {
+        "tag": "H2",
+        "text": "当前实现的限制#"
+      },
+      {
+        "tag": "H2",
+        "text": "最后：自动化的价值是把判断留给人#"
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "wl-nick",
+        "label": null,
+        "placeholder": null,
+        "type": "text"
+      },
+      {
+        "id": "wl-mail",
+        "label": null,
+        "placeholder": null,
+        "type": "email"
+      },
+      {
+        "id": "wl-link",
+        "label": null,
+        "placeholder": null,
+        "type": "text"
+      },
+      {
+        "id": "wl-image-upload",
+        "label": null,
+        "placeholder": null,
+        "type": "file"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索表情包",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索动态表情…",
+        "type": "search"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "曾使用过的邮箱",
+        "type": "email"
+      }
+    ],
+    "scrollWidth": 1280,
+    "title": "自动上架系统：用 Playwright 构建可控发布流程 - 朝朝听雨",
+    "url": "https://rainzt.cn/posts/auto-listing-system/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Opened appearance settings; font, seasonal palette and navigation behavior are visible. No preferences changed.",
+    "accepted": true,
+    "sha256": "ccf8ee223cbda7ed1095f62e347e26764d211ddb9d8dc1b4faa555dfdd83c26e",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "cuteleaf",
+    "step": "11-projects",
+    "clientWidth": 1265,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "项目"
+      },
+      {
+        "tag": "H2",
+        "text": "项目"
+      }
+    ],
+    "heroLinks": [
+      {
+        "href": "https://github.com/CuteLeaf/Firefly",
+        "label": "GitHub"
+      },
+      {
+        "href": "#",
+        "label": "Email"
+      },
+      {
+        "href": "/sponsor/",
+        "label": "Sponsor"
+      },
+      {
+        "href": "/rss/",
+        "label": "RSS"
+      }
+    ],
+    "inputs": [
+      {
+        "id": "search-input-desktop",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "colorSlider",
+        "label": "主题色相",
+        "placeholder": null,
+        "type": "range"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索项目",
+        "type": "text"
+      }
+    ],
+    "scrollWidth": 1265,
+    "title": "项目 - 夏夜流萤",
+    "url": "https://blog.cuteleaf.cn/projects/",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "notes": "Live projects page verified separately from local Zhenkun capabilities.",
+    "accepted": true,
+    "sha256": "53a72350968f44091da6588e8985b05aea467ca5f3f7c912b6be9e383af5d096",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  },
+  {
+    "site": "rainzt",
+    "step": "17-mobile-reading",
+    "clientWidth": 390,
+    "headings": [
+      {
+        "tag": "H1",
+        "text": "自动上架系统：用 Playwright 构建可控发布流程"
+      },
+      {
+        "tag": "H2",
+        "text": "先说结论：它解决的是重复的劳动#"
+      },
+      {
+        "tag": "H2",
+        "text": "从第一次发布到现在：这不是一次换皮，而是一次工程升级#"
+      },
+      {
+        "tag": "H2",
+        "text": "系统边界：浏览器自动化，但不是“盲点”#"
+      },
+      {
+        "tag": "H2",
+        "text": "一次任务从哪里开始#"
+      },
+      {
+        "tag": "H2",
+        "text": "最重要的防错：先确认“这是哪个商品”#"
+      },
+      {
+        "tag": "H2",
+        "text": "图片映射：绝不靠 组号 + 1 猜下一张#"
+      },
+      {
+        "tag": "H2",
+        "text": "标题生成：AI 只负责它擅长的那一小部分#"
+      },
+      {
+        "tag": "H2",
+        "text": "一个商品的执行顺序#"
+      },
+      {
+        "tag": "H2",
+        "text": "发布成功不是一个绿色 Toast#"
+      },
+      {
+        "tag": "H2",
+        "text": "暂停、恢复和失败边界#"
+      },
+      {
+        "tag": "H2",
+        "text": "实时状态与历史记录是两条链#"
+      },
+      {
+        "tag": "H2",
+        "text": "Shopee 与 TikTok Shop：共用底座，不共用假设#"
+      },
+      {
+        "tag": "H2",
+        "text": "周边工具为什么也要放进同一套系统#"
+      },
+      {
+        "tag": "H2",
+        "text": "平台差异不是配置项，而是两套流程#"
+      },
+      {
+        "tag": "H2",
+        "text": "测试如何守住这些边界#"
+      },
+      {
+        "tag": "H2",
+        "text": "当前实现的限制#"
+      },
+      {
+        "tag": "H2",
+        "text": "最后：自动化的价值是把判断留给人#"
+      }
+    ],
+    "heroLinks": [],
+    "inputs": [
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索",
+        "type": "text"
+      },
+      {
+        "id": "wl-nick",
+        "label": null,
+        "placeholder": null,
+        "type": "text"
+      },
+      {
+        "id": "wl-mail",
+        "label": null,
+        "placeholder": null,
+        "type": "email"
+      },
+      {
+        "id": "wl-link",
+        "label": null,
+        "placeholder": null,
+        "type": "text"
+      },
+      {
+        "id": "wl-image-upload",
+        "label": null,
+        "placeholder": null,
+        "type": "file"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索表情包",
+        "type": "text"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "搜索动态表情…",
+        "type": "search"
+      },
+      {
+        "id": "",
+        "label": null,
+        "placeholder": "曾使用过的邮箱",
+        "type": "email"
+      }
+    ],
+    "scrollWidth": 390,
+    "title": "自动上架系统：用 Playwright 构建可控发布流程 - 朝朝听雨",
+    "url": "https://rainzt.cn/posts/auto-listing-system/",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    },
+    "notes": "Search-result navigation reached the expected project article at 390×844 with no document horizontal overflow.",
+    "accepted": true,
+    "sha256": "1ad5f229545ddce250b25fce4ffc92193fce247c400c629ffe593d662c581e29",
+    "sessionDate": "2026-10-01",
+    "sessionTimezone": "America/New_York"
+  }
+]

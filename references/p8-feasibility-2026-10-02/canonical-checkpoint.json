@@ -1,0 +1,14 @@
+{
+  "before": "27e09c220e1ffe16817d5bf02e950a4fbf332b7b",
+  "after": "04cbf0bfbf13ff8a17f0ba66ed2277526b6e5139",
+  "onlyChanged": [
+    "docs/ROADMAP.md"
+  ],
+  "branch": "codex/refactor-publication-contracts",
+  "main": "bc21bfd92dd7081f2cf0acbec80d446f9d02c7de",
+  "protectedFileCount": 50,
+  "sourceFileCount": 491,
+  "workbuddy": "9eb1658b6b811558b721aad3ac1f64e14bbbffde9854c2ac7d1a4c949d74d89d",
+  "status": "?? .workbuddy/memory/2026-10-02.md",
+  "boundary": "Canonical task state checkpoint only; P8 candidate content/implementation not accepted."
+}

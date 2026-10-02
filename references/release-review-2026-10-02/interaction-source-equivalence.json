@@ -1,0 +1,32 @@
+[
+  {
+    "file": "src/components/controls/Search.svelte",
+    "priorSource": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+    "equivalentAfterIdentitySymbolReplacement": true,
+    "currentSha256": "e4da9eb1597f8511fcc56677ca51e213cf16161e2349926222fedc8d36ee3eb3"
+  },
+  {
+    "file": "src/components/layout/NavMenuPanel.astro",
+    "priorSource": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+    "equivalentAfterIdentitySymbolReplacement": true,
+    "currentSha256": "07084bee8ea7f20321d8744154e92bc94aed4f7085ddb0f0374474300246f93f"
+  },
+  {
+    "file": "src/utils/search-session.ts",
+    "priorSource": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+    "equivalentAfterIdentitySymbolReplacement": true,
+    "currentSha256": "51860abe774f5428dddbc2ad36af18ad75abaed4ad9a78b7692ad7a6c1db9792"
+  },
+  {
+    "file": "src/utils/floating-panel-utils.ts",
+    "priorSource": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+    "equivalentAfterIdentitySymbolReplacement": true,
+    "currentSha256": "9110b6b4d698529d01c3d32e1a708f6c3db96f79917cdd51429645f28b8c0413"
+  },
+  {
+    "file": "src/utils/swup-transitions.ts",
+    "priorSource": "278165033a8ad422f6403ac07e02f7af19e6ab24",
+    "equivalentAfterIdentitySymbolReplacement": true,
+    "currentSha256": "5f2dda245bbd6ce9370994f075a56f9c1fdbb7b46315d9138d23b0aa1ff7a43f"
+  }
+]

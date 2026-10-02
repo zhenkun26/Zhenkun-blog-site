@@ -1,0 +1,22 @@
+$ pnpm exec tsx scripts/generate-github-card-data.ts && pnpm exec tsx scripts/generate-lqips.ts && pnpm exec tsx scripts/generate-vndb-covers.ts && astro build && pnpm exec tsx scripts/prune-pio-assets.ts && pnpm exec tsx scripts/subset-fonts.ts && pnpm exec tsx scripts/minify-inline-scripts.ts && pnpm exec tsx scripts/run-pagefind.ts
+node:net:2302
+      const error = new UVExceptionWithHostPort(rval, 'listen', address, port);
+                    ^
+
+Error: listen EPERM: operation not permitted /var/folders/0l/4wxf7k013_s34b2wkdljpq1r0000gn/T/tsx-501/17316.pipe
+    at Server.setupListenHandle [as _listen2] (node:net:2302:21)
+    at listenInCluster (node:net:2433:12)
+    at Server.listen (node:net:2575:5)
+    at file:///Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/node_modules/.pnpm/tsx@4.23.13/node_modules/tsx/dist/cli.mjs:53:31472
+    at new Promise (<anonymous>)
+    at createIpcServer (file:///Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/node_modules/.pnpm/tsx@4.23.13/node_modules/tsx/dist/cli.mjs:53:31450)
+    at async file:///Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/node_modules/.pnpm/tsx@4.23.13/node_modules/tsx/dist/cli.mjs:55:542 {
+  code: 'EPERM',
+  errno: -1,
+  syscall: 'listen',
+  address: '/var/folders/0l/4wxf7k013_s34b2wkdljpq1r0000gn/T/tsx-501/17316.pipe',
+  port: -1
+}
+
+Node.js v24.20.0
+[ELIFECYCLE] Command failed with exit code 1.

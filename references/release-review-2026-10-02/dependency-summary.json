@@ -1,0 +1,24 @@
+{
+  "status": "NOT_REMEDIATED",
+  "baseline": "ab26876d82888d6fd9275724756bda28ee3442bc",
+  "unchangedLockfile": true,
+  "counts": {
+    "info": 0,
+    "low": 7,
+    "moderate": 19,
+    "high": 24,
+    "critical": 0
+  },
+  "uniquePackages": [
+    "brace-expansion",
+    "colord",
+    "devalue",
+    "fast-uri",
+    "js-yaml",
+    "serialize-javascript",
+    "sharp",
+    "svgo",
+    "undici"
+  ],
+  "decision": "No new dependency change or identified reachable visitor-controlled production exploit in this static release. Trusted build inputs and upstream tool vulnerabilities remain a maintenance risk; this is not an audit-clean or zero-risk claim."
+}

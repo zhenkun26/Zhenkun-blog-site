@@ -1,0 +1,1 @@
+{"status":"PASS_SYNTHETIC_ASTRO_DUAL_BASE_LOCALES","cases":[{"base":"/","pages":5,"http":6,"search":[["unknown",3],["zh-cn",3],["en",2]],"serverClosed":true},{"base":"/Zhenkun-blog-site/","pages":5,"http":6,"search":[["unknown",3],["zh-cn",3],["en",2]],"serverClosed":true}]}

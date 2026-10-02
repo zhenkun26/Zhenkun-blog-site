@@ -12,7 +12,8 @@ interface Props {
 
 const { showHomeText, initialRandomSubtitle } = Astro.props;
 const homeText = backgroundWallpaper.common?.homeText;
-const homeTextLinks = homeText?.links;
+// Keep unconfigured link slots available without rendering empty destinations.
+const homeTextLinks = homeText?.links?.filter((link) => link.url.trim() !== "");
 const homeTextLinksEnable = homeText?.linksEnable !== false;
 ---
 {homeText?.enable && (

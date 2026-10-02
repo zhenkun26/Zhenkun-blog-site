@@ -1,0 +1,29 @@
+{
+  "base": "57bed16360c915c17e45ebaf9ac11540c961741e",
+  "files": {
+    "astro.config.mjs": "b2351314663d8e0dfb664f3c0f38151d4431c89e94fec5c4458359961a2650b9",
+    "docs/ERROR_MEMORY.md": "37d3420d86d2cac86a8e6218693ceb890665dd355d197cdc3810fe10bcc5ffae",
+    "docs/ROADMAP.md": "d7170abe0a8e4e74270dfc1e2d8a5ce4d4d26da9e148f1b5b2e650eed8d70477",
+    "src/layouts/Layout.astro": "a38d930faf0188db10e2d7d2aa80c21e8e64bc57b2373e067107af04541191d1",
+    "src/pages/bangumi.astro": "4e062da767f822570cf1a647233e54ba5cc7ba18b48f57808a90fa82b996218a",
+    "src/pages/bilibili.astro": "6121ec5b9bc1c15802274ac4125a926ed11d67f503529c600f6e8431daff48a8",
+    "src/pages/booknav.astro": "51f95c972182bbab9de04143b429595cc4b93fc795f526f17d89ee6f372e847d",
+    "src/pages/dynamic/comments.astro": "f7b07db40d6921377dfd9bb002a86906587aacf18074f2512e2ea183f5f3972a",
+    "src/pages/dynamic/index.astro": "4fd0fdbb4d8ecc421e45710015760e5c3c3c1573ebae8b82f83210b5ba3a980e",
+    "src/pages/friends.astro": "283ef2dc286da3bb9f8700ab255ea6e5d8065e16a0fee6cde3e2c22176a59337",
+    "src/pages/gallery/[album].astro": "7079cc4f88f84a77b267749d04ace8b1a86f29a396f8d6c36b4f17df6563d358",
+    "src/pages/gallery/index.astro": "4d95db9348b97346061fc4128c3ea8520d6f2495ce30d204f542032125f2105f",
+    "src/pages/guestbook.astro": "885580e380bb9eeab9e54ad750a7ec5b13a9d7278e4c699055e02be8205e081f",
+    "src/pages/myanimelist.astro": "f70f139ce3aec067daff457f03d51819b7185af8a45f19994528ef144e25ab9c",
+    "src/pages/robots.txt.ts": "9cc7ef3745ceb35830d4cb9f8719fc44af5aefd220f9dcbafb771bdf69b4e05e",
+    "src/pages/rss.xml.ts": "3f9eb823107ebbbf93660118f5835e31b635ea1d606256dd1eaef6ebc5080dad",
+    "src/pages/sponsor.astro": "ea52bbb2dbdfc535c4ad1b7fa1ebfda71be3b926721cf327b6537ad6382136db",
+    "src/pages/vndb.astro": "4f72f5c90b9284e9f3ed206c95455c7f84111a0c6f4f1fb708768e8af09d633b",
+    "src/utils/schema-image.ts": "d7e458c710dbf8de3d2035825354e169dd560852f375f2186c5315961a251985",
+    "src/utils/schema-utils.ts": "96761fac907cf5b19967f4d502e1192c5e3af39dd874e27130a66a178118eef1",
+    "src/utils/url-utils.ts": "49c8136017566f255d4cd66073920a41dd853cb40b6f5d386e8e4460ab542796",
+    "src/utils/deployment-contract.ts": "76bd457a27eb82db2c088c41dcf08182503fceda4f290d068814ef8c2747a37c",
+    "scripts/zhenkun-test-deployment.mjs": "ec08d30e7935ebdaeabcefef16c933466a76c8225e625eedf913d508657e9775",
+    "scripts/zhenkun-verify-deployment.py": "74fb4044f2b5317418ffc2653dd4877aacbd72460e4206afe48083473d6ba7e4"
+  }
+}

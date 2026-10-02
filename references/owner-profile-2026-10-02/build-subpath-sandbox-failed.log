@@ -1,0 +1,41 @@
+[GITHUB-CARD] Cached 0 repositories (0 refreshed).
+Loaded 23 existing entries from src/constants/lqips.json
+Found 23 images, 0 new to process.
+
+Done! Processed 0/0 new images. Total: 23. Output: src/constants/lqips.json
+[VNDB] Page not enabled, skipping cover download
+05:38:11 [content] Syncing content
+05:38:11 [content] Astro config changed
+05:38:11 [content] Clearing content store
+05:38:11 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/dynamic"
+05:38:11 [content] Synced content
+05:38:11 [types] Generated 253ms
+05:38:11 [build] output: "static"
+05:38:11 [build] mode: "static"
+05:38:11 [build] directory: /Users/zhenkun/Documents/Codex/2026-10-02/task/tmp/zhenkun-g1/review/dist/
+05:38:11 [build] Collecting build info...
+05:38:11 [build] ✓ Completed in 343ms.
+05:38:11 [build] Building static entrypoints...
+node:events:505
+    throw er; // Unhandled 'error' event
+    ^
+
+Error: listen EPERM: operation not permitted 0.0.0.0
+    at Server.setupListenHandle [as _listen2] (node:net:2302:21)
+    at listenInCluster (node:net:2433:12)
+    at Server.listen (node:net:2558:7)
+    at settings.fontsHttpServer (file:///Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/dist/assets/fonts/vite-plugin-fonts.js:190:14)
+    at new Promise (<anonymous>)
+    at PluginContextImpl.buildStart (file:///Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/dist/assets/fonts/vite-plugin-fonts.js:170:42)
+    at async plugin (file:///Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/node_modules/.pnpm/rolldown@1.2.4/node_modules/rolldown/dist/shared/bindingify-input-options-C-Zsy1EG.mjs:1444:3)
+    at async plugin.<computed> (file:///Users/zhenkun/Documents/Codex/2026-10-02/task/zhenkun-blog-site/node_modules/.pnpm/rolldown@1.2.4/node_modules/rolldown/dist/shared/bindingify-input-options-C-Zsy1EG.mjs:2125:12)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:2412:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+  code: 'EPERM',
+  errno: -1,
+  syscall: 'listen',
+  address: '0.0.0.0'
+}
+
+Node.js v24.20.0

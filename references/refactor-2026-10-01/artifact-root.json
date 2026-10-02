@@ -1,0 +1,49 @@
+{
+  "artifact": "root-base dist",
+  "status": "PASS",
+  "files": 252,
+  "draft": {
+    "id": "blog-launch",
+    "sourceDraft": true,
+    "postRoutes": [],
+    "ogRoutes": [],
+    "ogEnabled": true,
+    "allPostMetaCount": 0,
+    "rssItemCount": 0,
+    "textFilesScanned": 109,
+    "draftContentMatches": []
+  },
+  "pagefind": {
+    "status": "PASS",
+    "version": "1.5.2",
+    "pageCount": 1,
+    "decodedFragmentURLs": ["/about/"],
+    "draftMatches": []
+  },
+  "paymentCodes": {
+    "status": "PASS",
+    "alipaySourceExists": false,
+    "alipayArtifactExists": false,
+    "wechatSourceExists": false,
+    "wechatArtifactExists": false
+  },
+  "authorCleanup": {
+    "status": "PASS",
+    "heroLinks": [{"label": "RSS", "href": "/rss/"}],
+    "homepageEmptyHrefs": [],
+    "upstreamPersonalMarkerMatches": [],
+    "upstreamEncodedEmailMatches": [],
+    "serviceIdentifiersEmpty": true,
+    "sponsorSlots": 4,
+    "sponsorSlotsDisabledAndEmpty": true,
+    "sponsorsCount": 0,
+    "friendAndBookSlotsRetained": true,
+    "frameworkRetained": true
+  },
+  "p2": {
+    "rssLastBuildDate": "2026年10月2日 11:48:36",
+    "rssDateNeedsRFCFormat": true,
+    "remaining": ["General path/asset/absolute-URL consistency", "Search initialization and menu interaction", "Published-article and comment pilot"]
+  },
+  "limitations": ["Current draft-only corpus", "No native browser claim from artifact review", "Empty public output is not an approved public-article pilot"]
+}

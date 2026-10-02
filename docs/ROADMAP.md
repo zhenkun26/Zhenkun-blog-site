@@ -70,7 +70,8 @@
 - [x] Complete local author-asset cleanup and production acceptance after the owner's exact tool/two-file exceptions: only the two payment-code originals removed; templates retained. Fresh check/type-check, both complete builds, artifact/HTTP and desktop/mobile preview acceptance PASS. Evidence: `references/refactor-2026-10-01/author-cleanup.md`. Subsequent production delivery is recorded under PR #20 in the current checkpoint.
 - Historical F04–F07 execution evidence (2026-10-02): isolated P2 的 116 回归、双 base/HTTP/合成 OG/Edge 原始材料留在 `references/engineering-2026-10-02/report.md`；**当前接纳状态只见 M8/P2 与 G1**，不以本历史条目宣布原分支接纳或上线。
 - F02 first-search / F03 mobile modal keyboard 的执行、最终验收与未验证项统一见 M8/P3；不保留另一份“未实现”状态。
-- [ ] Targeted dependency upgrades remain open. Current advisory reachability was reviewed for the static deployment in `references/release-review-2026-10-02/report.md`; frozen installation, full hosted quality gates and checked deployment artifacts now PASS. No dependency versions were changed.
+- [x] Dependency remediation planning: [detailed plan](DEPENDENCY_REMEDIATION_PLAN.md), with a fresh production/full audit baseline, verified published patch candidates, parent constraints, staged remediation, CI gates, regression acceptance and rollback. Evidence: `references/dependency-remediation-2026-10-02/`. Planning only; candidate compatibility is not yet tested.
+- [ ] Targeted dependency remediation R1–R5 remains not started: compatible-range updates, pinned Miniflare dependencies, the cross-major serializer chain, CI security gates and final verification/delivery. Fresh audit: 50 records / 32 unique GHSA / 9 packages (24 high, 19 moderate, 7 low). No dependency versions or CI workflows were changed; prior release checks are not evidence that these vulnerabilities are fixed.
 - [ ] Production empty state and accessibility follow-up — proposed; draft publication still requires owner review
 
 ## M6 Reference assessment and architecture direction (planning complete; local implementation started in M8)
@@ -143,6 +144,14 @@ The local-acceptance entries below retain their original scope and commit eviden
 两种 base 都检查：首页/公开样例/静态资源/canonical/OG/feed 的正向 URL；草稿、禁用模块、同名 Wiki、私有 metadata/附件的负向边界；RSS 日期/robots/sitemap/图像字节；慢网、缺资源、旧查询、重复监听、焦点与滚动锁。真实库目前只有一篇 draft、零公开文章；获准 synthetic 样例的证据不得代替真实文章/评论验收。
 
 ## 当前断点
+
+### Dependency remediation planning — 2026-10-02
+
+- Completed the owner's requested Markdown remediation plan at `docs/DEPENDENCY_REMEDIATION_PLAN.md`, on local branch `codex/plan-dependency-remediation` from `53cf67d121ce053b2d5f2aed4dd40c7d07d8506a`. The document distinguishes proposed steps from executed work and includes a 32-GHSA closeout inventory.
+- Fresh production and full dependency audits each returned 50 advisory records: 24 high, 19 moderate, 7 low, zero critical, affecting 9 packages. Both exited 1 for reported vulnerabilities. Commands, raw reports, dependency-file hashes, installed parent constraints and 13 published patch-version metadata records are retained in `references/dependency-remediation-2026-10-02/`.
+- Patch candidates are confirmed to exist in the official npm registry; their combined compatibility is not established. R1–R3 separate compatible ranges, Miniflare's exact pins, and the `serialize-javascript` 4.x-to-7.x parent constraint. R4/R5 define future CI gates and final verification without creating workflows or schedules now.
+- This increment changes documentation and audit evidence only. Dependency files, application code, CI workflows, production and preexisting `.workbuddy` remain unchanged. Document consistency, local links and dependency hashes were checked; application tests/builds were not rerun for this documentation-only increment. The plan is locally committed without push, merge or deployment.
+- Next work is implementation under the owner's applicable authorization, followed by fresh candidate-specific checks. The completed 38-commit release does not itself authorize a separate dependency/CI change or remote delivery. Existing filesystem restrictions and the seven artifact tests' narrowly approved fixture cleanup remain in force.
 
 ### Completed development release — 2026-10-02
 

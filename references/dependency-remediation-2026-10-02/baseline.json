@@ -1,0 +1,36 @@
+{
+  "capturedAt": "2026-10-02T16:52:23.282828+00:00",
+  "projectBase": "53cf67d121ce053b2d5f2aed4dd40c7d07d8506a",
+  "deployedSource": "43c21ad305876a197e02ed7830991af8575c5485",
+  "toolchain": {
+    "node": "24.20.0",
+    "pnpm": "11.22.0"
+  },
+  "auditCommands": [
+    {
+      "command": "pnpm audit --prod --registry=https://registry.npmjs.org --json",
+      "exitCode": 1
+    },
+    {
+      "command": "pnpm audit --registry=https://registry.npmjs.org --json",
+      "exitCode": 1
+    }
+  ],
+  "counts": {
+    "info": 0,
+    "low": 7,
+    "moderate": 19,
+    "high": 24,
+    "critical": 0
+  },
+  "records": 50,
+  "uniqueGhsa": 32,
+  "packages": 9,
+  "planningOnly": true,
+  "dependenciesChanged": false,
+  "packageFilesSha256": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-lock.yaml": "4c058ca733b602da6cb01932ed1336309de33de409aac6f37ee2eabb83f4ad3d",
+    "pnpm-workspace.yaml": "8ff58aa14137a6218b06fe06f7d9392bd6d776b3e9d4af9998190bcc9db5178b"
+  }
+}

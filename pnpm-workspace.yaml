@@ -9,3 +9,4 @@ overrides:
   "vite@8.2.2>rolldown": "1.2.4"
   "astro@7.2.10>devalue": "5.9.3"
   "svelte@5.57.0>devalue": "5.9.3"
+  "unifont@0.7.5>undici": "8.10.2"

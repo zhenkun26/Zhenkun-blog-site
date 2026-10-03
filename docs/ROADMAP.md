@@ -146,6 +146,14 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
+### Dependency B/R1a — 2026-10-03 — LOCAL PARTIAL / review pending
+
+- **Bounded candidate**: From clean A/R3 evidence `8f8d4a8c`, source `83fa53d0b561d479ca043caae208e29a4a0060ac`. Only devalue5.9.2→5.9.3 at Astro7.2.10/Svelte5.57.0 and gray-matter4.0.3 YAML3.15.1→3.15.2; YAML4.3.2 and all A/R3 guards retained. 925 packages before/after; exactly two replaced records, three parent snapshot edges, no unrelated drift. Two parent-specific same-range devalue overrides follow approved fallback; natural range maximum now5.9.4. Official comparison shows5.9.4 PURE annotations only; review/remove these overrides by2026-10-17 after approved refresh. No R1b/R2/bilingual/CI changes.
+- **Fresh local evidence**: Frozen official install;166/166 native including7 real-parent data tests and8 Swup tests; formal isolatedDeclarations types; Astro258files0errors/0warnings12hints; Biome300files; both complete builds/Pagefind/artifact contracts and24HTTP each PASS. Svelte test proves server/client data handshake, not browser DOM hydration. [Report](../references/dependency-r1a-2026-10-03/report.md) records exact hashes and raw logs.
+- **Open gates**: Prod/full audits each37records/24GHSA (17high14moderate6low), seven GHSA removed/no additions versus A/R3. Existing official ledger25still affected, including audit-omitted sharp. Cache4.2.1 remains official404/no verified fix/no exemption. Existing mdx/satteri peer gate FAIL. GUI BLOCKED/NOT_RUN; Linux NOT_RUN. No historical counts reused as candidate evidence.
+- **Protection/next**: Original b6c3e39 tracked/index clean, .workbuddy hashes unchanged; phase0 unchanged. No push/PR/merge/deploy. Future isolated candidate push/draftPR for Linux is owner-authorized after independent review and delegated to coordinator; this worker stops after local evidence commit. No VM/engine started or browser-policy bypass. Requested routine Sol xhigh/complex Astra high/Fast retained; actual model remains UNVERIFIED.
+
+
 ### Dependency A/R3 v2.1 validation — 2026-10-03 — PARTIAL / browser BLOCKED
 
 - **Candidate/writer**: Resumed from clean exact `84ee2bcf6b1d955537425407f695e12706f005dc`, same isolated branch/worktree. Exact candidate source including bounded real-parent regressions is `d39b89677c11bef3fbad9d5e94fc6e89601674a6`. Two cross-major Swup overrides plus approved `vite@8.2.2>rolldown:1.2.4` guard only; dependencies/application/CI unchanged since v2.1 handoff. No R1/R2 or bilingual expansion. Runtime model remains UNVERIFIED.

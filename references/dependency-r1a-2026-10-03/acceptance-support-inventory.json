@@ -1,0 +1,112 @@
+{
+  "capturedAt": "2026-10-03T11:08:39.592614+00:00",
+  "browser": {
+    "state": "BLOCKED",
+    "priorTool": "mcp__cua_repl.js; browser.tabs.get(\"1\")",
+    "priorErrorPrefixExact": "Blocked browser navigation by Browser Use URL policy: data:text/html;charset=utf-8,%3C!DOCTYPE%20html%3E%0A",
+    "errorPrefixIsTruncated": true,
+    "blockedUrlKind": "encoded Chromium connection-error HTML data document, not requested localhost HTTP URL",
+    "requestedUrl": "http://127.0.0.1:4321/",
+    "runtimeApprovalOrRepairEntryReported": false,
+    "currentBrowserAutomationToolExposed": false,
+    "noBypass": true,
+    "minimumSupport": "Product-supported repair/authorization entry for the client policy/error-tab state; user may manually verify separately with results identified as user-reported, not automated PASS"
+  },
+  "linux": {
+    "state": "NOT_RUN",
+    "pathExecutablesFound": [
+      "gh",
+      "ssh"
+    ],
+    "pathRuntimeExecutablesNotFound": [
+      "docker",
+      "podman",
+      "colima",
+      "lima",
+      "limactl",
+      "multipass",
+      "orb",
+      "qemu-system-aarch64",
+      "qemu-system-x86_64",
+      "vagrant",
+      "virsh"
+    ],
+    "additionalInstalledDockerCli": "/Users/zhenkun/.docker/bin/docker",
+    "dockerCliRealPath": "/Applications/开发app/Docker.app/Contents/Resources/bin/docker",
+    "dockerVersion": "Docker version 29.7.2, build a7dcaa6",
+    "contextName": "desktop-linux",
+    "contextEndpointScheme": "unix",
+    "contextSocketExists": false,
+    "defaultVarRunDockerSocketExists": false,
+    "processEnumeration": "BLOCKED: zsh operation not permitted: ps; no bypass",
+    "sshConfigExists": true,
+    "sshTargetsConnected": false,
+    "runtimeStarted": false,
+    "containerCreated": false,
+    "minimumSupport": "Authorize a dedicated local Docker Linux container after engine availability is established, or designate an authorized Linux executor/approve isolated candidate GitHub CI upload; new cloud environment is not inherently required"
+  },
+  "github": {
+    "queriedAt": "2026-10-03T11:08:39.592614+00:00",
+    "queryCommands": [
+      "gh api repos/zhenkun26/Zhenkun-blog-site/actions/workflows",
+      "gh api repos/zhenkun26/Zhenkun-blog-site/actions/permissions/workflow",
+      "gh api repos/zhenkun26/Zhenkun-blog-site/hooks",
+      "gh api repos/zhenkun26/Zhenkun-blog-site/commits/main/check-runs",
+      "gh api repos/zhenkun26/Zhenkun-blog-site/deployments?per_page=10"
+    ],
+    "worktreeOrigin": "/Users/zhenkun/GitHub/Zhenkun-blog-site",
+    "sourceOrigin": "https://github.com/zhenkun26/Zhenkun-blog-site.git",
+    "activeWorkflows": [
+      {
+        "id": 350928054,
+        "name": "Code quality",
+        "path": ".github/workflows/biome.yml"
+      },
+      {
+        "id": 350928055,
+        "name": "Build and Check",
+        "path": ".github/workflows/build.yml"
+      },
+      {
+        "id": 350928056,
+        "name": "Deploy to GitHub Pages",
+        "path": ".github/workflows/deploy.yml"
+      },
+      {
+        "id": 350928858,
+        "name": "Dependabot Updates",
+        "path": "dynamic/dependabot/dependabot-updates"
+      }
+    ],
+    "defaultWorkflowPermissions": "read",
+    "canApprovePullRequestReviews": false,
+    "trackedPrTriggers": [
+      "biome.yml: PR target main",
+      "build.yml: PR target main"
+    ],
+    "deployTriggers": [
+      "push main",
+      "workflow_dispatch"
+    ],
+    "trackedExplicitSecretReferences": false,
+    "trackedPullRequestTarget": false,
+    "trackedExternalDeploymentStepsForPr": false,
+    "prSideEffects": "Read-only GITHUB_TOKEN/checkout credentials, official dependencies, two-base full builds and existing external fetches. Tracked deployment only pushmain/dispatch. Limited fresh hook/check/deployment evidence has no PR publication indication; no absolute absence guarantee.",
+    "pushPerformed": false,
+    "prCreated": false,
+    "workflowTriggered": false,
+    "limitedExternalEvidence": {
+      "webhooks": [],
+      "mainCheckRuns": "three successful Dependabot/github-actions checks",
+      "recentDeployments": "ten github-pages/main deployments",
+      "limitation": "Not an exhaustive guarantee concerning installed Apps or external backend automation. Observe actual events/checks on any future authorized draft PR and stop upon unexpected publication."
+    },
+    "futureAuthorization": "Owner authorized isolated candidate push + draft PR for Linux after local R1a and independent review. Pending coordinator execution; this worker has not pushed/createdPR/dispatched."
+  },
+  "requestedModelPreference": {
+    "routine": "GPT6.1 Sol xhigh",
+    "complex": "Astra high",
+    "Fast": "retained",
+    "actualRuntime": "UNVERIFIED"
+  }
+}

@@ -141,3 +141,8 @@
 - Error: TypeScript 6 rejects command-line file compilation next to tsconfig without `--ignoreConfig` (TS5112). Correction: use explicit isolated fixture options with `--ignoreConfig`; keep the separately required formal `pnpm type-check` script's `--isolatedDeclarations` unchanged. Both final checks passed.
 - Error: raw GitHub advisory ranges contain commas; npm semver does not interpret those as conjunctions, causing an incorrect initial count of 6. Correction: preserve raw ranges, normalize commas to spaces for semver matching, rerun to 32 and confirm all 31 fresh audit GHSA are in the union. The initial count is rejected in the receipt.
 - Boundary: Browser Use URL policy rejected acquisition of a prior localhost connection-error data-document tab. Candidate GUI never loaded; do not switch clients/routes or reuse historical GUI results. Record exact blocker and continue independent artifact/API checks.
+
+
+### 2026-10-03 — R1a final fixture format diagnostic
+
+- Adding the benign owned Buffer-view roundtrip assertion caused one Biome formatting diagnostic. Preserve initial raw output in `biome-buffer-initial.log`, apply formatter only to the new fixture and rerun final Biome (300 files) and complete native suite (166 tests). Both final exits zero; no dependency/application changes after full builds. Do not mark the initial formatter failure as product or final-gate PASS.

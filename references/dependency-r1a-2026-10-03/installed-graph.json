@@ -1,0 +1,43 @@
+{
+  "dependencyHashes": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-workspace.yaml": "660df2ededb1cf584e7e529a0f696d4f104073b362b7f1120f02297caa7adb52",
+    "pnpm-lock.yaml": "d174f48d2feaf42719a4f828866c98bb03a7842eaeab16ddaedb9009a0597e4c"
+  },
+  "parents": [
+    {
+      "parent": "astro",
+      "target": "devalue",
+      "entry": "node_modules/.pnpm/devalue@5.9.3/node_modules/devalue/index.js",
+      "version": "5.9.3",
+      "entrySha256": "08efcbd1b17d2010ea2befcdc72ca801d51cc8f496b251d4018b6ef28a5290ef"
+    },
+    {
+      "parent": "svelte",
+      "target": "devalue",
+      "entry": "node_modules/.pnpm/devalue@5.9.3/node_modules/devalue/index.js",
+      "version": "5.9.3",
+      "entrySha256": "08efcbd1b17d2010ea2befcdc72ca801d51cc8f496b251d4018b6ef28a5290ef"
+    },
+    {
+      "parent": "gray-matter",
+      "target": "js-yaml",
+      "entry": "node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/index.js",
+      "version": "3.15.2",
+      "entrySha256": "328f40040ff58c04126a22b05c6f34448698552f1a96179be276655239145611"
+    }
+  ],
+  "oldChainPresent": [],
+  "yamlVersions": [
+    "js-yaml@3.15.2",
+    "js-yaml@4.3.2"
+  ],
+  "devalueVersions": [
+    "devalue@5.9.3"
+  ],
+  "viteSnapshots": {
+    "vite@8.2.1(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)": "1.2.4",
+    "vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)": "1.2.4",
+    "vite@8.2.2(@types/node@26.4.1)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)": "1.2.4"
+  }
+}

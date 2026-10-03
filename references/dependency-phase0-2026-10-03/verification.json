@@ -37,8 +37,8 @@
     },
     {
       "path": "references/dependency-phase0-2026-10-03/advisory-matrix.json",
-      "sha256": "45a6056beedfdd583caf9561fc33f8033f24311d7fdefcf5fa7a813b7ac443bd",
-      "bytes": 118907
+      "sha256": "cbc4b573a711022398eeb12a7e2917db1768d0079fa89fa8131461482afbd16a",
+      "bytes": 119129
     },
     {
       "path": "references/dependency-phase0-2026-10-03/advisory-matrix.md",
@@ -95,5 +95,32 @@
     "docs/DEPENDENCY_REMEDIATION_PLAN.md": "4aca61600863ce2f34e82d8fa78e9c2b7bcdf6d77f784503c5dbb3ac97b01c9a",
     "docs/ROADMAP.md": "e4c1ed653d5cffa7d171df88eb5d27107946a215bc204bb52e72d81a17f21c30",
     "docs/DECISIONS.md": "65721d754feaeb56dec659fd1a1ae828d130a21540c1a447c536f09439f54281"
+  },
+  "postReviewCorrection": {
+    "date": "2026-10-03",
+    "scope": "P3: brace-expansion freshAuditPaths are prod/full union; historical audit files retained unchanged",
+    "rows": [
+      {
+        "ghsa": "GHSA-6j4f-fj2g-mc7p",
+        "pathCount": 33,
+        "added": [
+          ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
+        ]
+      },
+      {
+        "ghsa": "GHSA-q2hr-2g5m-vwhr",
+        "pathCount": 33,
+        "added": [
+          ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
+        ]
+      },
+      {
+        "ghsa": "GHSA-qhr7-859c-m2p7",
+        "pathCount": 33,
+        "added": [
+          ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
+        ]
+      }
+    ]
   }
 }

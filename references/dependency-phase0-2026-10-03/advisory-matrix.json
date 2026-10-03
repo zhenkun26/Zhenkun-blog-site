@@ -114,7 +114,8 @@
         ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
         ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
         ".>stylus>glob>minimatch>brace-expansion",
-        ".>glob>minimatch>brace-expansion"
+        ".>glob>minimatch>brace-expansion",
+        ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
       ],
       "reviewedCandidates": [
         {
@@ -249,7 +250,8 @@
         ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
         ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
         ".>stylus>glob>minimatch>brace-expansion",
-        ".>glob>minimatch>brace-expansion"
+        ".>glob>minimatch>brace-expansion",
+        ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
       ],
       "reviewedCandidates": [
         {
@@ -384,7 +386,8 @@
         ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
         ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
         ".>stylus>glob>minimatch>brace-expansion",
-        ".>glob>minimatch>brace-expansion"
+        ".>glob>minimatch>brace-expansion",
+        ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
       ],
       "reviewedCandidates": [
         {

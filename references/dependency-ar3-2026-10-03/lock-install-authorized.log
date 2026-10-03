@@ -1,0 +1,24 @@
+✓ Lockfile passes supply-chain policies (verified 28d ago)
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 4, reused 0, downloaded 0, added 0
+Progress: resolved 20, reused 0, downloaded 0, added 0
+Progress: resolved 64, reused 0, downloaded 0, added 0
+Progress: resolved 76, reused 0, downloaded 0, added 0
+Progress: resolved 77, reused 0, downloaded 0, added 0
+Progress: resolved 78, reused 0, downloaded 0, added 0
+Progress: resolved 79, reused 0, downloaded 0, added 0
+Progress: resolved 80, reused 0, downloaded 0, added 0
+Progress: resolved 352, reused 0, downloaded 0, added 0
+Progress: resolved 593, reused 0, downloaded 0, added 0
+Progress: resolved 805, reused 0, downloaded 0, added 0
+Progress: resolved 914, reused 0, downloaded 0, added 0
+Progress: resolved 926, reused 0, downloaded 0, added 0
+Progress: resolved 930, reused 0, downloaded 0, added 0
+Progress: resolved 935, reused 0, downloaded 0, added 0
+Progress: resolved 936, reused 0, downloaded 0, added 0
+Progress: resolved 937, reused 0, downloaded 0, added 0
+[WARN] 1 deprecated subdependencies found: glob@10.5.0
+Progress: resolved 942, reused 0, downloaded 0, added 0, done
+[WARN] Issues with peer dependencies found. Run "pnpm peers check" to list them.
+
+Done in 20.2s using pnpm v11.22.0

@@ -1,0 +1,52 @@
+{
+  "packagesBefore": 1350,
+  "packagesAfter": 942,
+  "addedPackages": [],
+  "changedPackageRecords": [],
+  "targetParents": {
+    "@swup/parallel-plugin@0.4.0(swup@4.9.2)": {
+      "dependencies": {
+        "@swup/plugin": "4.0.0",
+        "swup": "4.9.2"
+      }
+    },
+    "@swup/route-name-plugin@4.1.0(swup@4.9.2)": {
+      "dependencies": {
+        "@swup/plugin": "4.0.0",
+        "swup": "4.9.2"
+      }
+    }
+  },
+  "plugin4Users": {
+    "@swup/a11y-plugin@5.2.1(swup@4.9.2)": "4.0.0",
+    "@swup/body-class-plugin@3.3.0(swup@4.9.2)": "4.0.0",
+    "@swup/debug-plugin@4.1.0(swup@4.9.2)": "4.0.0",
+    "@swup/forms-plugin@3.6.0(swup@4.9.2)": "4.0.0",
+    "@swup/fragment-plugin@1.3.1(swup@4.9.2)": "4.0.0",
+    "@swup/head-plugin@2.3.1(swup@4.9.2)": "4.0.0",
+    "@swup/parallel-plugin@0.4.0(swup@4.9.2)": "4.0.0",
+    "@swup/preload-plugin@3.2.11(swup@4.9.2)": "4.0.0",
+    "@swup/progress-plugin@3.2.0(swup@4.9.2)": "4.0.0",
+    "@swup/route-name-plugin@4.1.0(swup@4.9.2)": "4.0.0",
+    "@swup/scripts-plugin@2.1.0(swup@4.9.2)": "4.0.0",
+    "@swup/scroll-plugin@3.3.2(swup@4.9.2)": "4.0.0",
+    "@swup/theme@2.1.0(swup@4.9.2)": "4.0.0",
+    "swup-morph-plugin@1.3.0(swup@4.9.2)": "4.0.0"
+  },
+  "removedTargetVersions": [
+    "@swup/plugin@3.0.1",
+    "brace-expansion@1.1.18",
+    "colord@2.9.3",
+    "microbundle@0.15.1",
+    "rollup-plugin-terser@7.0.2",
+    "serialize-javascript@4.0.0",
+    "svgo@2.8.3"
+  ],
+  "remainingTargetVersions": [
+    "@swup/plugin@4.0.0",
+    "brace-expansion@2.1.4",
+    "brace-expansion@5.0.9",
+    "svgo@4.0.2",
+    "svgo@4.1.0"
+  ]
+}

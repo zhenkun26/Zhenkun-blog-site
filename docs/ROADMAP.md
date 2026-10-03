@@ -146,6 +146,16 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
+### Dependency A/R3 — 2026-10-03 — BLOCKED before frozen install
+
+- **Scope/base**: Owner-authorized A/R3 only, isolated `codex/dependency-ar3-20261003` at `/Users/zhenkun/Documents/Codex/2026-10-03/task-3/zhenkun-ar3`, from exact phase-0 commit `96b7b899dbe80aadd68f83a7ba1482bf386d0eb1`. Node v24.20.0 / pnpm 11.22.0. Related writers inspected idle; no bilingual/application/CI changes. Runtime model setting remains UNVERIFIED.
+- **Executed**: Exact two parent overrides and official-registry `install --lockfile-only --ignore-scripts`; initial default-store access failure recorded, same command succeeded with reviewed escalation. No alternate store or security setting change. P3 brace-expansion ledger correction now takes prod/full path union (33 paths for each of three rows); original audits retained.
+- **Stop condition**: Generated lock shrinks 1350→942 package records, with 408 removed nodes reachable from plugin 3 and no new/changed package records. However both existing Vite 8.2.2 snapshots change `rolldown: 1.2.4→1.2.7`, beyond the two parent edges. Locked metadata/optional flags also change. Under the packet acceptance rule, candidate is BLOCKED for Astra review; no manual lock correction or fallback override attempted.
+- **Evidence**: [A/R3 report](../references/dependency-ar3-2026-10-03/report.md), complete lock diff, structured graph review and official raw prod/full audits. Both lock-only audits exit 1: 44 records / 31 GHSA (21 high, 16 moderate, 7 low), versus phase-0 51 / 33. Sharp official-only advisory remains additional; cache remains affected with no verified published fix and no waiver.
+- **Gates**: Frozen install, actual ESM/CJS/types/requirements/Swup lifecycle/route/parallel gates, check/type-check/Biome/native regression, both full builds/Pagefind and real browser navigation/search/menu/cleanup are BLOCKED / NOT_RUN due to the earlier lock acceptance stop. Zero candidate tests executed; historical counts are not used. No node_modules created.
+- **Protection/next action**: Original source stays `b6c3e39b2bf7ea73ec60234dc42f8240e0e8695f` with clean tracked/index and retained `.workbuddy`; phase-0 stays at the exact base and clean. No merge, push or deployment. Candidate retained solely for review. Stop writing after evidence commit; coordinator/Astra must judge the unexpected Vite edge before any install or compatibility claim.
+
+
 ### Dependency remediation phase 0 — 2026-10-03
 
 - **Scope/authorization**: The owner authorized preparing to resolve dependency security issues and ongoing supervision, using Astra xhigh for complex coupling and 6.1 Sol Fast for routine implementation. This delegated increment is bounded to phase-0 queries/audits, local plan/decision/evidence edits and a local commit, stopping before dependency changes. No source/main integration, push, deployment, security-permission change, bilingual implementation or website optimization. Active model/reasoning setting is not exposed by available runtime tools and remains UNVERIFIED.

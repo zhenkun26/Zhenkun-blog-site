@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "ERR_PNPM_PACKAGE_NOT_FOUND",
+    "message": "No matching version found for http-cache-semantics@4.2.1"
+  }
+}

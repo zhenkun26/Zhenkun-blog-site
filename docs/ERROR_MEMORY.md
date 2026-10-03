@@ -157,3 +157,10 @@
 
 - A root resolver cannot require an undeclared transitive Ajv package in isolated pnpm layout; historical Ajv8.18 metadata was initially queried. Corrected before update by traversing actual check→language-server→volar→YAML→Ajv8.20 path and reading its ^3.0.1 child range. Tests use that real parent chain; no root dependency added.
 - Initial HTTP loopback request was denied by shell sandbox (PermissionError), retained in http-root-sandbox-initial.stderr/exit. The identical checker and URL succeeded through standard tool approval. Browser URL-policy refusal remains blocked and no alternate client/route was used.
+
+
+### 2026-10-03 — R1 font proxy fixture protocol and version probes
+
+- The initial brace-expansion 5 child-major concern was an unverified assumption. Both old 5.0.9 and target 5.0.12 already use balanced-match 4.0.4 within ^4.0.2. Corrected before mutation; no transitive migration occurred.
+- SVGO package.json is not publicly exported. The initial version probe failed while actual Iconify behavior passed. Use public SVGO.VERSION; retain the initial failure and the final strict PASS.
+- The first local proxy fixture supported only CONNECT and returned 400 to valid HTTP forwarding; 13/14 tests passed. Installed undici ProxyAgent selects forwarding for HTTP unless tunneling is requested. Add guarded forwarding only to the owned localhost origin and keep strict EnvHttpProxyAgent, traffic and download assertions. Final 14/14 target tests and 186/186 full tests passed. Provider fallback or a silent catch cannot establish proxy/download success.

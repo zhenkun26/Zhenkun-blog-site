@@ -1,0 +1,7 @@
+{
+  "version": "4.1.0",
+  "dist.integrity": "sha512-bkxnTg1kSU0guhIBmibA6UUhrQmPVA1XsQLN+ylCd+UWzbnLkySOcXpyk1mrl05f+pcaCx2eHb+sp6BgMZWX+Q==",
+  "engines": {
+    "node": ">=16"
+  }
+}

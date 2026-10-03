@@ -1,0 +1,177 @@
+diff --git a/pnpm-lock.yaml b/pnpm-lock.yaml
+index c78d391..f5e6a0a 100644
+--- a/pnpm-lock.yaml
++++ b/pnpm-lock.yaml
+@@ -10,6 +10,7 @@ overrides:
+   vite@8.2.2>rolldown: 1.2.4
+   astro@7.2.10>devalue: 5.9.3
+   svelte@5.57.0>devalue: 5.9.3
++  unifont@0.7.5>undici: 8.10.2
+ 
+ importers:
+ 
+@@ -2154,11 +2155,11 @@ packages:
+   boolbase@1.0.0:
+     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
+ 
+-  brace-expansion@2.1.4:
+-    resolution: {integrity: sha512-hGfVzPxthbf3+2yjg/RBs60cB0FhqBS/zvdV/4wn4/BmN0bNMMHPc4V/BbFieqf1TKAGGAHnY4eSjajCl0f2Xg==}
++  brace-expansion@2.1.7:
++    resolution: {integrity: sha512-uZbew1NqdmPDTMJ8ah1y+b+9QEJrfkXFk3RcTQw3X0jW/xRUvFKsg1CfQdSYGdTbXZWExtU3J3ccxtnfw1Fi0g==}
+ 
+-  brace-expansion@5.0.9:
+-    resolution: {integrity: sha512-ScQ4IuvIEF1TMlP7Zt+vjJ//9zlPb2SDcxWxM3bk8s6t6GGdJ7KO1dCcTidOPJKePW30LE/2cT7wCyPho9/Wxg==}
++  brace-expansion@5.0.12:
++    resolution: {integrity: sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==}
+     engines: {node: 20 || >=22}
+ 
+   buffer-from@1.1.2:
+@@ -2260,9 +2261,6 @@ packages:
+   crossws@0.3.5:
+     resolution: {integrity: sha512-ojKiDvcmByhwa8YYqbQI/hg7MEU0NC03+pSdEq4ZUnZR9xXpwk7E43SMNGkn+JxJGPFtNvQ48+vV2p+P1ml5PA==}
+ 
+-  css-select@5.2.2:
+-    resolution: {integrity: sha512-TizTzUddG/xYLA3NXodFM0fSbNizXjOKhqiQQwvhlspadZokn1KDy0NZFS0wuEubIYAV5/c1/lAr0TaaFXEXzw==}
+-
+   css-select@6.0.0:
+     resolution: {integrity: sha512-rZZVSLle8v0+EY8QAkDWrKhpgt6SA5OtHsgBnsj6ZaLb5dmDVOWUDtQitd9ydxxvEjhewNudS6eTVU7uOyzvXw==}
+ 
+@@ -2277,10 +2275,6 @@ packages:
+     resolution: {integrity: sha512-X7sjQzceUhu1u7Y/ylrRZFU2FS6LRiFVp6rKLPg23y3x3c3DOKAwuXGDp+PAGjh6CSnCjYeAul8pcT8bAl+lSA==}
+     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
+ 
+-  css-what@6.2.2:
+-    resolution: {integrity: sha512-u/O3vwbptzhMs3L1fQE82ZSLHQQfto5gyZzwteVIEyeaY5Fc7R4dapF/BvRoSYFeqfBk4m0V1Vafq5Pjv25wvA==}
+-    engines: {node: '>= 6'}
+-
+   css-what@7.0.0:
+     resolution: {integrity: sha512-wD5oz5xibMOPHzy13CyGmogB3phdvcDaB5t0W/Nr5Z2O/agcB8YwOz6e2Lsp10pNDzBoDO9nVa3RGs/2BttpHQ==}
+     engines: {node: '>= 6'}
+@@ -3788,11 +3782,6 @@ packages:
+     resolution: {integrity: sha512-NdbDn7fl4be1ViUG0oq/lvG6OZy3oENolV2ONjiqqsfVoeAfzaQAKUcEX3MrQod/Bebv1PgwET9rfXhgn9s4Kg==}
+     engines: {node: '>=18'}
+ 
+-  svgo@4.0.2:
+-    resolution: {integrity: sha512-ekx94z1rRc5LDi6oSUaeRnYhd0UOJxdtQCL2rF8xpWxD3TPAsISWOrxezqGovqS38GRZOdpDfvQe3ts6F7nsng==}
+-    engines: {node: '>=16'}
+-    hasBin: true
+-
+   svgo@4.1.0:
+     resolution: {integrity: sha512-bkxnTg1kSU0guhIBmibA6UUhrQmPVA1XsQLN+ylCd+UWzbnLkySOcXpyk1mrl05f+pcaCx2eHb+sp6BgMZWX+Q==}
+     engines: {node: '>=16'}
+@@ -3884,8 +3873,8 @@ packages:
+     resolution: {integrity: sha512-IDxfleLmmbSskfWSUATiN1nfn2rDuvnMOqb5CWR92iIfojA0Ud+ulOAAEQ57LPr9rWmsreUyf5lwyao+7GNNVw==}
+     engines: {node: '>=20.18.1'}
+ 
+-  undici@8.10.1:
+-    resolution: {integrity: sha512-YQ3WlbqjYMmNpdvDH64jAgLjxuAR9+649calDWhbshYaeQGO2bR4nI94ORJmwI3J9YhoKQnpyGOK+0zlWS5N5Q==}
++  undici@8.10.2:
++    resolution: {integrity: sha512-/y4/bH9YNU5hi9NIrpOuvGXFcxrj3CMrV+/AYpowAYTpHn8gX/XPFjNy766FPoYY0miQhdW977JFWKGNhBdwyQ==}
+     engines: {node: '>=22.19.0'}
+ 
+   unenv@2.0.0-rc.24:
+@@ -5179,7 +5168,7 @@ snapshots:
+       fflate: 0.8.3
+       modern-tar: 0.7.7
+       pathe: 2.0.3
+-      svgo: 4.0.2
++      svgo: 4.1.0
+ 
+   '@iconify/types@2.0.0': {}
+ 
+@@ -6169,11 +6158,11 @@ snapshots:
+ 
+   boolbase@1.0.0: {}
+ 
+-  brace-expansion@2.1.4:
++  brace-expansion@2.1.7:
+     dependencies:
+       balanced-match: 1.0.2
+ 
+-  brace-expansion@5.0.9:
++  brace-expansion@5.0.12:
+     dependencies:
+       balanced-match: 4.0.4
+ 
+@@ -6255,14 +6244,6 @@ snapshots:
+     dependencies:
+       uncrypto: 0.1.3
+ 
+-  css-select@5.2.2:
+-    dependencies:
+-      boolbase: 1.0.0
+-      css-what: 6.2.2
+-      domhandler: 5.0.3
+-      domutils: 3.2.2
+-      nth-check: 2.1.1
+-
+   css-select@6.0.0:
+     dependencies:
+       boolbase: 1.0.0
+@@ -6283,8 +6264,6 @@ snapshots:
+       mdn-data: 2.27.1
+       source-map-js: 1.2.1
+ 
+-  css-what@6.2.2: {}
+-
+   css-what@7.0.0: {}
+ 
+   cssesc@3.0.0: {}
+@@ -7620,11 +7599,11 @@ snapshots:
+ 
+   minimatch@10.2.6:
+     dependencies:
+-      brace-expansion: 5.0.9
++      brace-expansion: 5.0.12
+ 
+   minimatch@9.0.9:
+     dependencies:
+-      brace-expansion: 2.1.4
++      brace-expansion: 2.1.7
+ 
+   minipass@7.1.3: {}
+ 
+@@ -8401,16 +8380,6 @@ snapshots:
+     transitivePeerDependencies:
+       - '@typescript-eslint/types'
+ 
+-  svgo@4.0.2:
+-    dependencies:
+-      commander: 11.1.0
+-      css-select: 5.2.2
+-      css-tree: 3.2.1
+-      css-what: 6.2.2
+-      csso: 5.0.5
+-      picocolors: 1.1.1
+-      sax: 1.6.1
+-
+   svgo@4.1.0:
+     dependencies:
+       commander: 11.1.0
+@@ -8499,7 +8468,7 @@ snapshots:
+ 
+   undici@7.29.0: {}
+ 
+-  undici@8.10.1: {}
++  undici@8.10.2: {}
+ 
+   unenv@2.0.0-rc.24:
+     dependencies:
+@@ -8521,7 +8490,7 @@ snapshots:
+     dependencies:
+       css-tree: 3.2.1
+       ohash: 2.0.12
+-      undici: 8.10.1
++      undici: 8.10.2
+ 
+   unist-util-find-after@4.0.1:
+     dependencies:
+diff --git a/pnpm-workspace.yaml b/pnpm-workspace.yaml
+index 7503ba9..c5007e0 100644
+--- a/pnpm-workspace.yaml
++++ b/pnpm-workspace.yaml
+@@ -9,3 +9,4 @@ overrides:
+   "vite@8.2.2>rolldown": "1.2.4"
+   "astro@7.2.10>devalue": "5.9.3"
+   "svelte@5.57.0>devalue": "5.9.3"
++  "unifont@0.7.5>undici": "8.10.2"

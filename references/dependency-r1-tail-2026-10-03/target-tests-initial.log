@@ -1,0 +1,35 @@
+✖ actual Iconify parent resolves the already accepted SVGO 4.1.0 (0.43825ms)
+✔ actual Iconify optimization preserves viewBox, paint refs and repeat stability (6.474083ms)
+✔ actual Iconify parser rejects a small non-SVG input (7.156583ms)
+✔ Stylus/glob10: actual minimatch loads its original-major brace patch (0.259458ms)
+✔ Stylus/glob10: ESM/CJS expand bounded nested/number ranges and match files (2.889041ms)
+✔ Stylus/glob10: actual glob discovery returns the exact owned input set (1.850541ms)
+✔ root/glob13: actual minimatch loads its original-major brace patch (0.201833ms)
+✔ root/glob13: ESM/CJS expand bounded nested/number ranges and match files (2.863292ms)
+✔ root/glob13: actual glob discovery returns the exact owned input set (1.843834ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 8
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 218.379916
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-r1-tail.mjs:36:1
+✖ actual Iconify parent resolves the already accepted SVGO 4.1.0 (0.43825ms)
+  Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './package.json' is not defined by "exports" in /Users/zhenkun/Documents/Codex/2026-10-03/task-3/zhenkun-ar3/node_modules/.pnpm/@iconify+tools@5.0.12/node_modules/svgo/package.json
+      at exportsNotFound (node:internal/modules/esm/resolve:315:10)
+      at packageExportsResolve (node:internal/modules/esm/resolve:663:9)
+      at resolveExports (node:internal/modules/cjs/loader:754:36)
+      at Module._findPath (node:internal/modules/cjs/loader:821:31)
+      at Module._resolveFilename (node:internal/modules/cjs/loader:1557:27)
+      at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)
+      at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1142:10)
+      at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1169:12)
+      at Module._load (node:internal/modules/cjs/loader:1341:5)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:261:19) {
+    code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
+  }

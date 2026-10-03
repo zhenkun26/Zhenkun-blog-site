@@ -1,0 +1,27 @@
+✔ actual Iconify parent resolves the already accepted SVGO 4.1.0 (41.393417ms)
+✔ actual Iconify optimization preserves viewBox, paint refs and repeat stability (9.861125ms)
+✔ actual Iconify parser rejects a small non-SVG input (0.168375ms)
+✔ Stylus/glob10: actual minimatch loads its original-major brace patch (0.309833ms)
+✔ Stylus/glob10: ESM/CJS expand bounded nested/number ranges and match files (2.999958ms)
+✔ Stylus/glob10: actual glob discovery returns the exact owned input set (1.707875ms)
+✔ root/glob13: actual minimatch loads its original-major brace patch (0.223167ms)
+✔ root/glob13: ESM/CJS expand bounded nested/number ranges and match files (3.23925ms)
+✔ root/glob13: actual glob discovery returns the exact owned input set (2.252375ms)
+✔ createUnifont none: observable dispatcher and real local font chain (113.521417ms)
+ℹ {"mode":"none","selected":"Agent","fontBytes":52928,"fontSha256":"8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1","customCalls":0,"downloadVerified":true,"missingCssEmpty":true,"missingFont404":true,"aborted":true,"activeDownloadAborted":true,"proxyRequests":0,"originRequests":6}
+✔ createUnifont proxy: observable dispatcher and real local font chain (104.6645ms)
+ℹ {"mode":"proxy","selected":"EnvHttpProxyAgent","fontBytes":52928,"fontSha256":"8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1","customCalls":0,"downloadVerified":true,"missingCssEmpty":true,"missingFont404":true,"aborted":true,"activeDownloadAborted":true,"proxyRequests":6,"originRequests":6}
+✔ createUnifont no_proxy: observable dispatcher and real local font chain (103.475791ms)
+ℹ {"mode":"no_proxy","selected":"EnvHttpProxyAgent","fontBytes":52928,"fontSha256":"8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1","customCalls":0,"downloadVerified":true,"missingCssEmpty":true,"missingFont404":true,"aborted":true,"activeDownloadAborted":true,"proxyRequests":0,"originRequests":6}
+✔ createUnifont custom: observable dispatcher and real local font chain (99.63525ms)
+ℹ {"mode":"custom","selected":"OwnedDispatcher","fontBytes":52928,"fontSha256":"8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1","customCalls":6,"downloadVerified":true,"missingCssEmpty":true,"missingFont404":true,"aborted":true,"activeDownloadAborted":true,"proxyRequests":0,"originRequests":6}
+✔ createUnifont retry: observable dispatcher and real local font chain (1128.191375ms)
+ℹ {"mode":"retry","selected":"Agent","fontBytes":52928,"fontSha256":"8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1","customCalls":0,"downloadVerified":true,"missingCssEmpty":true,"missingFont404":true,"aborted":true,"activeDownloadAborted":true,"proxyRequests":0,"originRequests":6}
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1610.429958

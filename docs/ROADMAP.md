@@ -146,6 +146,14 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
+### Dependency R1b URI — 2026-10-03 — local candidate / review pending
+
+- **Scope/source**: Exact source `e93a015807c076f2eaff283dca8645bbfb0c8ded` fromclean60f3b2d. OnlyAjv8.20.0→fast-uri3.1.5→3.1.8 within^3.0.1, originalrangemaximum/plan targetverifiedofficial. Natural targetedlockupdate;925→925,onepackage/oneparentedge,nootherdrift/newoverride. ExistingA/R3/R1aversions/tests/app/CI unchanged;SVGO/undici8/brace/R2/bilingual excluded.
+- **Fresh local PASS**:172/172native,6actualURI/Ajv/YAMLschema tests,strictSwuptypes,formaltypes,Astro258files0/0/12,Biome302,fullbothbasebuild/Pagefind/artifactchecks/24HTTPeach. [Report](../references/dependency-r1b-uri-2026-10-03/report.md) bindsrawlogs/hashestoactualsource; fixturesproveAPI/schema behavior,noteditor/browserUI.
+- **Open gates/audit**:prod/full31records18GHSA(12high13moderate6low),6fast-uriGHSAremoved/noadded;freshsixofficialadvisories+known36ledgerreevaluated19affectedincludingofficial-onlysharp. Cache404/noverifiedrepair/noexemptionblocksclosure;inheritedpeerFAIL;GUIBLOCKED/NOT_RUN;newcandidateLinuxNOT_RUN. Previous330CI onlyitsactualexistingworkflowcoverage, notnewcandidatePASS.
+- **Protection/next**:Originalb6c3e39/.workbuddy/phase0protected,ownHTTPserverstopped,newcandidateunpublished. PR22stilldraftremote330f581,nodeploymentsobserved. No push thispacket. Stopafterevidencecommit;independentreviewthenparent-approveddraftPRupdate/freshLinuxverification. RoutineSolxhigh/Fastretained,complexAstrahighrequested;runtimeUNVERIFIED.
+
+
 ### Dependency candidate Linux PR validation — 2026-10-03 — CI PASS / overall PARTIAL
 
 - **Delivery**: Owner explicitly approved independent candidate push+draftPR to zhenkun26/Zhenkun-blog-site after R1a review; independent AstraHIGH PASS/noP1/P2 supplied by coordinator. Uploaded exact330f58131c3d0c555aba25222a3596e1aa54da49 to newcodex/dependency-ar3-r1a-linux-20261003-v1, [draftPR22](https://github.com/zhenkun26/Zhenkun-blog-site/pull/22). Fresh remote main53cf67d is ancestor, unchanged; no rebase/mainwrite/force/merge/auto-merge/deploy/dispatch. No R1b/R2 changes.

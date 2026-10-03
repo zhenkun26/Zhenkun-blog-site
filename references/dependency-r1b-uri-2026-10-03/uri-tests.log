@@ -1,0 +1,14 @@
+✔ actual YAML/Ajv parent resolves the approved fast-uri patch (1.726166ms)
+✔ URI normalization preserves encoded path/query and valid IDN/IPv6 (2.613291ms)
+✔ relative schema URI paths, queries and fragments resolve independently (0.106875ms)
+✔ actual Ajv resolves external/local schema refs and reports missing refs (4.486625ms)
+✔ actual Ajv async schema loading uses normalized owned fixture URIs (3.716458ms)
+✔ actual YAML service validates Unicode values and relative external schema refs (5.150125ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 175.877916

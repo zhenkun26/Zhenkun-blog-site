@@ -1,0 +1,25 @@
+{
+  "fullExit": 2,
+  "fullState": "FAIL_RAW_EVIDENCE_WHITESPACE",
+  "rawFiles": [
+    "references/dependency-r1b-uri-2026-10-03/build-project.log",
+    "references/dependency-r1b-uri-2026-10-03/build-root.log",
+    "references/dependency-r1b-uri-2026-10-03/check.log",
+    "references/dependency-r1b-uri-2026-10-03/lock.diff"
+  ],
+  "diagnostics": 74,
+  "scopedCommand": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)references/dependency-r1b-uri-2026-10-03/build-project.log",
+    ":(exclude)references/dependency-r1b-uri-2026-10-03/build-root.log",
+    ":(exclude)references/dependency-r1b-uri-2026-10-03/check.log",
+    ":(exclude)references/dependency-r1b-uri-2026-10-03/lock.diff"
+  ],
+  "scopedExit": 0,
+  "rawBytesPreserved": true
+}

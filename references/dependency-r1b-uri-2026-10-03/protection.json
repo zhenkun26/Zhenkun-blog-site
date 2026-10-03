@@ -1,0 +1,18 @@
+{
+  "capturedAt": "2026-10-03T11:45:26.457423+00:00",
+  "originalHead": "b6c3e39b2bf7ea73ec60234dc42f8240e0e8695f",
+  "originalStatus": "?? .workbuddy/",
+  "originalTrackedIndexClean": true,
+  "privateUserFiles": [
+    {
+      "path": ".workbuddy/memory/2026-10-02.md",
+      "sha256": "9c576b68f0cdd2af150d3f1f2330989b14aa77e91aa0845c1b641abde9a2a4ad",
+      "bytes": 961
+    }
+  ],
+  "privateHashesEqualPriorCapture": true,
+  "phase0Head": "96b7b899dbe80aadd68f83a7ba1482bf386d0eb1",
+  "phase0Clean": true,
+  "existingApplicationCiWorkspaceAndParentTestsUnchanged": true,
+  "frozenLockHashEqualGeneratedGraphReview": true
+}

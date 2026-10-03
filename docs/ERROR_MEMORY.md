@@ -151,3 +151,9 @@
 ### 2026-10-03 — Linux CI metadata field boundary
 
 - Read-only jobs summary assumed `runner_os`, which this GitHub jobs payload does not expose (KeyError). Corrected summary uses returned runner labels and explicit Ubuntu version/image lines in actual job logs. The diagnostic did not alter CI or candidate and is not a failed product check. Avoid inventing runtime metadata from missing fields.
+
+
+### 2026-10-03 — R1b URI transitive resolution and HTTP sandbox
+
+- A root resolver cannot require an undeclared transitive Ajv package in isolated pnpm layout; historical Ajv8.18 metadata was initially queried. Corrected before update by traversing actual check→language-server→volar→YAML→Ajv8.20 path and reading its ^3.0.1 child range. Tests use that real parent chain; no root dependency added.
+- Initial HTTP loopback request was denied by shell sandbox (PermissionError), retained in http-root-sandbox-initial.stderr/exit. The identical checker and URL succeeded through standard tool approval. Browser URL-policy refusal remains blocked and no alternate client/route was used.

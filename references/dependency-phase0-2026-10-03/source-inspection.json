@@ -1,0 +1,129 @@
+{
+  "inspection": "Static reads only; installed sources not executed, no server started or probed.",
+  "files": [
+    {
+      "topic": "astro-default-bind",
+      "path": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/dist/core/config/schemas/defaults.js",
+      "sha256": "5123158e2ba665139205761e8f2597e11e05cdd5578fc991cf4286c64a838ed9",
+      "bytes": 1475
+    },
+    {
+      "topic": "astro-preview-bind",
+      "path": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/dist/core/preview/util.js",
+      "sha256": "b32b9e38431e9c7ab1af419305fadf032e366866538bd9d860d0c5cc9451f8ea",
+      "bytes": 432
+    },
+    {
+      "topic": "astro-remote-image-cache",
+      "path": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/dist/assets/build/remote.js",
+      "sha256": "f373fa76e3112446db327c79b34e2bbb1ef1dcad41affb60788adf30edc9588e",
+      "bytes": 3049
+    },
+    {
+      "topic": "astro-manifest",
+      "path": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json",
+      "sha256": "ef190212179f75f5863ef3dcff751c9d028c4eedd38e3dec163ccd3a2dc277ac",
+      "bytes": 8380
+    },
+    {
+      "topic": "swup-default-feature-switches",
+      "path": "node_modules/.pnpm/@swup+astro@1.8.0_rolldown@1.2.7_supports-color@10.2.2/node_modules/@swup/astro/src/script.ts",
+      "sha256": "55102c11f61d20a5163d06733079f93571610fe305eee31f48efc4a4915b71ae",
+      "bytes": 6093
+    },
+    {
+      "topic": "terser-real-serializer-call",
+      "path": "node_modules/.pnpm/rollup-plugin-terser@7.0.2_rollup@2.80.0/node_modules/rollup-plugin-terser/rollup-plugin-terser.js",
+      "sha256": "475ade234a96b0a97347b191872616f9bc2f06d6ad1db6bd5e6123bb4448fcc7",
+      "bytes": 2922
+    },
+    {
+      "topic": "unifont-undici-dispatcher",
+      "path": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/dist/index.mjs",
+      "sha256": "a4dc1275a832887a4ee15b12c4edb0ebd260b18113bc3be012737b6ca7b550e7",
+      "bytes": 35412
+    },
+    {
+      "topic": "tracked-source",
+      "path": "astro.config.mjs",
+      "sha256": "e61536e8c59d86788efa7288c4e7eb73eb6f2fc05c022c0d96ddb84b0a2b1724",
+      "bytes": 11735
+    },
+    {
+      "topic": "tracked-source",
+      "path": "package.json",
+      "sha256": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+      "bytes": 3851
+    },
+    {
+      "topic": "tracked-source",
+      "path": "src/config/siteConfig.ts",
+      "sha256": "7f72942bbe51f4ad32099ed1af406f6b701ff3937d7ff673d9d203e347bd5892",
+      "bytes": 13867
+    },
+    {
+      "topic": "tracked-source",
+      "path": "scripts/generate-lqips.ts",
+      "sha256": "10fb34a1eb2d9ae02ac8837da670af392277f20e4daa58e0e7e300a69db0e36f",
+      "bytes": 3717
+    },
+    {
+      "topic": "tracked-source",
+      "path": "scripts/generate-vndb-covers.ts",
+      "sha256": "872db9288ca5ac67e9d4b6e68f1072633bd4c1634274bf18cd39b1552e5fbbd7",
+      "bytes": 3717
+    },
+    {
+      "topic": "tracked-source",
+      "path": ".github/workflows/build.yml",
+      "sha256": "8e6a9e9cdf3820a7331c4f9a05e50ab3024bfb59718d8299d94efb42abe7f409",
+      "bytes": 1581
+    },
+    {
+      "topic": "tracked-source",
+      "path": ".github/workflows/deploy.yml",
+      "sha256": "08a335ca780a65f9f326d32511918bf12d4607fc17b5a33dba3223c2fd3311c0",
+      "bytes": 1749
+    }
+  ],
+  "anchors": {
+    "astro.config.mjs": [
+      72,
+      144,
+      349
+    ],
+    "src/config/siteConfig.ts": [
+      31,
+      294,
+      300
+    ],
+    "scripts/generate-lqips.ts": [
+      35,
+      81
+    ],
+    "scripts/generate-vndb-covers.ts": [
+      57,
+      67,
+      100
+    ],
+    "astro-remote-image-cache": [
+      14,
+      15,
+      16,
+      30,
+      50,
+      57
+    ],
+    "swup-default-feature-switches": [
+      18,
+      22,
+      89,
+      96
+    ],
+    "terser-real-serializer-call": [
+      42,
+      51,
+      54
+    ]
+  }
+}

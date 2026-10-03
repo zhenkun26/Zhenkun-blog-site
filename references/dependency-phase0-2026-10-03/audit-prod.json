@@ -1,0 +1,1433 @@
+{
+  "advisories": {
+    "1113686": {
+      "findings": [
+        {
+          "version": "4.0.0",
+          "paths": [
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>rollup-plugin-terser>serialize-javascript",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>rollup-plugin-terser>serialize-javascript"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1113686,
+      "title": "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+      "module_name": "serialize-javascript",
+      "vulnerable_versions": "<=7.0.2",
+      "patched_versions": ">=7.0.3",
+      "severity": "high",
+      "cwe": "CWE-96",
+      "github_advisory_id": "GHSA-5c6j-r48x-rmvq",
+      "url": "https://github.com/advisories/GHSA-5c6j-r48x-rmvq"
+    },
+    "1158521": {
+      "findings": [
+        {
+          "version": "3.1.5",
+          "paths": [
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1158521,
+      "title": "fast-uri vulnerable to host confusion via skipped IDN canonicalization on scheme-relative references",
+      "module_name": "fast-uri",
+      "vulnerable_versions": ">=3.1.3 <3.1.6",
+      "patched_versions": ">=3.1.6",
+      "severity": "high",
+      "cwe": "CWE-436",
+      "github_advisory_id": "GHSA-5jgf-p345-68v8",
+      "url": "https://github.com/advisories/GHSA-5jgf-p345-68v8"
+    },
+    "1158524": {
+      "findings": [
+        {
+          "version": "3.1.5",
+          "paths": [
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1158524,
+      "title": "fast-uri vulnerable to server-side request forgery via malformed IPv6 normalization",
+      "module_name": "fast-uri",
+      "vulnerable_versions": ">=3.0.0 <3.1.6",
+      "patched_versions": ">=3.1.6",
+      "severity": "high",
+      "cwe": "CWE-20, CWE-918",
+      "github_advisory_id": "GHSA-f65p-4m7j-42xc",
+      "url": "https://github.com/advisories/GHSA-f65p-4m7j-42xc"
+    },
+    "1158527": {
+      "findings": [
+        {
+          "version": "3.1.5",
+          "paths": [
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1158527,
+      "title": "fast-uri vulnerable to server-side request forgery via repeated hostname percent-decoding",
+      "module_name": "fast-uri",
+      "vulnerable_versions": ">=3.1.2 <3.1.6",
+      "patched_versions": ">=3.1.6",
+      "severity": "high",
+      "cwe": "CWE-174, CWE-918",
+      "github_advisory_id": "GHSA-fph4-wmhf-6fwf",
+      "url": "https://github.com/advisories/GHSA-fph4-wmhf-6fwf"
+    },
+    "1158530": {
+      "findings": [
+        {
+          "version": "3.1.5",
+          "paths": [
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1158530,
+      "title": "fast-uri vulnerable to host confusion via percent-encoded scheme normalization",
+      "module_name": "fast-uri",
+      "vulnerable_versions": ">=3.0.0 <3.1.6",
+      "patched_versions": ">=3.1.6",
+      "severity": "high",
+      "cwe": "CWE-177",
+      "github_advisory_id": "GHSA-jqff-g426-hqxp",
+      "url": "https://github.com/advisories/GHSA-jqff-g426-hqxp"
+    },
+    "1193675": {
+      "findings": [
+        {
+          "version": "2.9.3",
+          "paths": [
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-colormin>colord",
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-minify-gradients>colord",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-colormin>colord",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-minify-gradients>colord"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1193675,
+      "title": "Colord: Slow rejection of oversized malformed color strings",
+      "module_name": "colord",
+      "vulnerable_versions": "<2.9.4",
+      "patched_versions": ">=2.9.4",
+      "severity": "moderate",
+      "cwe": "CWE-1333",
+      "github_advisory_id": "GHSA-2wm5-q62r-hmrv",
+      "url": "https://github.com/advisories/GHSA-2wm5-q62r-hmrv"
+    },
+    "1193725": {
+      "findings": [
+        {
+          "version": "0.35.2",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>sharp",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>sharp",
+            ".>@astrojs/cloudflare>wrangler>miniflare>sharp",
+            ".>wrangler>miniflare>sharp"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1193725,
+      "title": "sharp: Vulnerabilities in libheif: GHSA-g89c-p67h-r497 and GHSA-2jg2-4ch7-h545",
+      "module_name": "sharp",
+      "vulnerable_versions": "<0.35.4",
+      "patched_versions": ">=0.35.4",
+      "severity": "high",
+      "cwe": "CWE-122",
+      "github_advisory_id": "GHSA-rgj7-g3m4-5g8c",
+      "url": "https://github.com/advisories/GHSA-rgj7-g3m4-5g8c"
+    },
+    "1193726": {
+      "findings": [
+        {
+          "version": "3.15.1",
+          "paths": [
+            ".>gray-matter>js-yaml"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1193726,
+      "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+      "module_name": "js-yaml",
+      "vulnerable_versions": ">=3.0.0 <3.15.2",
+      "patched_versions": ">=3.15.2",
+      "severity": "high",
+      "cwe": "CWE-400, CWE-407",
+      "github_advisory_id": "GHSA-2883-xcg3-v3hh",
+      "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh"
+    },
+    "1193735": {
+      "findings": [
+        {
+          "version": "4.0.2",
+          "paths": [
+            ".>astro-icon>@iconify/tools>svgo"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1193735,
+      "title": "SVGO: removeScripts allows executable links through namespace and control-character bypasses",
+      "module_name": "svgo",
+      "vulnerable_versions": ">=4.0.0 <4.1.0",
+      "patched_versions": ">=4.1.0",
+      "severity": "high",
+      "cwe": "CWE-79, CWE-184",
+      "github_advisory_id": "GHSA-w27v-7q3p-w38r",
+      "url": "https://github.com/advisories/GHSA-w27v-7q3p-w38r"
+    },
+    "1193737": {
+      "findings": [
+        {
+          "version": "2.8.3",
+          "paths": [
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-svgo>svgo",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-svgo>svgo"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1193737,
+      "title": "SVGO: removeScripts allows executable links through namespace and control-character bypasses",
+      "module_name": "svgo",
+      "vulnerable_versions": ">=1.0.0 <2.8.4",
+      "patched_versions": ">=2.8.4",
+      "severity": "high",
+      "cwe": "CWE-79, CWE-184",
+      "github_advisory_id": "GHSA-w27v-7q3p-w38r",
+      "url": "https://github.com/advisories/GHSA-w27v-7q3p-w38r"
+    },
+    "1193738": {
+      "findings": [
+        {
+          "version": "4.0.2",
+          "paths": [
+            ".>astro-icon>@iconify/tools>svgo"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1193738,
+      "title": "SVGO: removeScripts incompletely sanitizes executable HTML in SVG foreignObject elements",
+      "module_name": "svgo",
+      "vulnerable_versions": ">=4.0.0 <4.1.0",
+      "patched_versions": ">=4.1.0",
+      "severity": "moderate",
+      "cwe": "CWE-79",
+      "github_advisory_id": "GHSA-4vpr-x523-8j87",
+      "url": "https://github.com/advisories/GHSA-4vpr-x523-8j87"
+    },
+    "1193740": {
+      "findings": [
+        {
+          "version": "2.8.3",
+          "paths": [
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-svgo>svgo",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-svgo>svgo"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1193740,
+      "title": "SVGO: removeScripts incompletely sanitizes executable HTML in SVG foreignObject elements",
+      "module_name": "svgo",
+      "vulnerable_versions": ">=1.0.0 <2.8.4",
+      "patched_versions": ">=2.8.4",
+      "severity": "moderate",
+      "cwe": "CWE-79",
+      "github_advisory_id": "GHSA-4vpr-x523-8j87",
+      "url": "https://github.com/advisories/GHSA-4vpr-x523-8j87"
+    },
+    "1239932": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1239932,
+      "title": "undici vulnerable to Denial of Service via unhandled error in WebSocket permessage-deflate decompression",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.1.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "moderate",
+      "cwe": "CWE-248",
+      "github_advisory_id": "GHSA-3wwx-pv8p-q78v",
+      "url": "https://github.com/advisories/GHSA-3wwx-pv8p-q78v"
+    },
+    "1239933": {
+      "findings": [
+        {
+          "version": "7.29.0",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+            ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+            ".>wrangler>miniflare>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1239933,
+      "title": "undici vulnerable to Denial of Service via unhandled error in WebSocket permessage-deflate decompression",
+      "module_name": "undici",
+      "vulnerable_versions": ">=7.28.0 <7.29.1",
+      "patched_versions": ">=7.29.1",
+      "severity": "moderate",
+      "cwe": "CWE-248",
+      "github_advisory_id": "GHSA-3wwx-pv8p-q78v",
+      "url": "https://github.com/advisories/GHSA-3wwx-pv8p-q78v"
+    },
+    "1239943": {
+      "findings": [
+        {
+          "version": "3.1.5",
+          "paths": [
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1239943,
+      "title": "fast-uri vulnerable to authority injection via an unvalidated port in serialize",
+      "module_name": "fast-uri",
+      "vulnerable_versions": ">=3.0.0 <3.1.7",
+      "patched_versions": ">=3.1.7",
+      "severity": "high",
+      "cwe": "CWE-116",
+      "github_advisory_id": "GHSA-qw65-cvwx-89v3",
+      "url": "https://github.com/advisories/GHSA-qw65-cvwx-89v3"
+    },
+    "1240035": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240035,
+      "title": "undici vulnerable to Denial of Service via orphaned RetryHandler response body",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "moderate",
+      "cwe": "CWE-772",
+      "github_advisory_id": "GHSA-pmjh-fq2x-6v4x",
+      "url": "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x"
+    },
+    "1240036": {
+      "findings": [
+        {
+          "version": "7.29.0",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+            ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+            ".>wrangler>miniflare>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240036,
+      "title": "undici vulnerable to Denial of Service via orphaned RetryHandler response body",
+      "module_name": "undici",
+      "vulnerable_versions": ">=7.11.0 <7.29.1",
+      "patched_versions": ">=7.29.1",
+      "severity": "moderate",
+      "cwe": "CWE-772",
+      "github_advisory_id": "GHSA-pmjh-fq2x-6v4x",
+      "url": "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x"
+    },
+    "1240037": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240037,
+      "title": "undici vulnerable to downstream response splitting via retry interceptor",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "low",
+      "cwe": "CWE-444",
+      "github_advisory_id": "GHSA-r53p-7pc4-xj5r",
+      "url": "https://github.com/advisories/GHSA-r53p-7pc4-xj5r"
+    },
+    "1240038": {
+      "findings": [
+        {
+          "version": "7.29.0",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+            ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+            ".>wrangler>miniflare>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240038,
+      "title": "undici vulnerable to downstream response splitting via retry interceptor",
+      "module_name": "undici",
+      "vulnerable_versions": ">=7.0.0 <7.29.1",
+      "patched_versions": ">=7.29.1",
+      "severity": "low",
+      "cwe": "CWE-444",
+      "github_advisory_id": "GHSA-r53p-7pc4-xj5r",
+      "url": "https://github.com/advisories/GHSA-r53p-7pc4-xj5r"
+    },
+    "1240040": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240040,
+      "title": "undici vulnerable to Denial of Service via unrequested WebSocket subprotocol",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "high",
+      "cwe": "CWE-248, CWE-252",
+      "github_advisory_id": "GHSA-rfgv-xxqx-mfg5",
+      "url": "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5"
+    },
+    "1240041": {
+      "findings": [
+        {
+          "version": "7.29.0",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+            ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+            ".>wrangler>miniflare>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240041,
+      "title": "undici vulnerable to Denial of Service via unrequested WebSocket subprotocol",
+      "module_name": "undici",
+      "vulnerable_versions": ">=7.0.0 <7.29.1",
+      "patched_versions": ">=7.29.1",
+      "severity": "high",
+      "cwe": "CWE-248, CWE-252",
+      "github_advisory_id": "GHSA-rfgv-xxqx-mfg5",
+      "url": "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5"
+    },
+    "1240043": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240043,
+      "title": "undici vulnerable to Denial of Service via unbounded decompression of compressed responses",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "moderate",
+      "cwe": "CWE-770",
+      "github_advisory_id": "GHSA-3xpg-4rpp-hhhm",
+      "url": "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm"
+    },
+    "1240044": {
+      "findings": [
+        {
+          "version": "7.29.0",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+            ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+            ".>wrangler>miniflare>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240044,
+      "title": "undici vulnerable to Denial of Service via unbounded decompression of compressed responses",
+      "module_name": "undici",
+      "vulnerable_versions": ">=7.15.0 <7.29.1",
+      "patched_versions": ">=7.29.1",
+      "severity": "moderate",
+      "cwe": "CWE-770",
+      "github_advisory_id": "GHSA-3xpg-4rpp-hhhm",
+      "url": "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm"
+    },
+    "1240045": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240045,
+      "title": "undici vulnerable to cross-user cookie disclosure via Set-Cookie caching in shared caches",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "moderate",
+      "cwe": "CWE-200, CWE-524",
+      "github_advisory_id": "GHSA-2jfj-6hjv-fm6j",
+      "url": "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j"
+    },
+    "1240046": {
+      "findings": [
+        {
+          "version": "7.29.0",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+            ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+            ".>wrangler>miniflare>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240046,
+      "title": "undici vulnerable to cross-user cookie disclosure via Set-Cookie caching in shared caches",
+      "module_name": "undici",
+      "vulnerable_versions": ">=7.0.0 <7.29.1",
+      "patched_versions": ">=7.29.1",
+      "severity": "moderate",
+      "cwe": "CWE-200, CWE-524",
+      "github_advisory_id": "GHSA-2jfj-6hjv-fm6j",
+      "url": "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j"
+    },
+    "1240047": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240047,
+      "title": "undici vulnerable to response truncation via oversized chunked responses in the dump interceptor",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "low",
+      "cwe": "CWE-20, CWE-248",
+      "github_advisory_id": "GHSA-2gqq-gqf2-x968",
+      "url": "https://github.com/advisories/GHSA-2gqq-gqf2-x968"
+    },
+    "1240048": {
+      "findings": [
+        {
+          "version": "7.29.0",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+            ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+            ".>wrangler>miniflare>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240048,
+      "title": "undici vulnerable to response truncation via oversized chunked responses in the dump interceptor",
+      "module_name": "undici",
+      "vulnerable_versions": ">=7.1.0 <7.29.1",
+      "patched_versions": ">=7.29.1",
+      "severity": "low",
+      "cwe": "CWE-20, CWE-248",
+      "github_advisory_id": "GHSA-2gqq-gqf2-x968",
+      "url": "https://github.com/advisories/GHSA-2gqq-gqf2-x968"
+    },
+    "1240049": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240049,
+      "title": "undici vulnerable to TLS certificate validation bypass via dropped connect options in BalancedPool",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "high",
+      "cwe": "CWE-295",
+      "github_advisory_id": "GHSA-w293-vg96-wgc3",
+      "url": "https://github.com/advisories/GHSA-w293-vg96-wgc3"
+    },
+    "1240050": {
+      "findings": [
+        {
+          "version": "7.29.0",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+            ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+            ".>wrangler>miniflare>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240050,
+      "title": "undici vulnerable to TLS certificate validation bypass via dropped connect options in BalancedPool",
+      "module_name": "undici",
+      "vulnerable_versions": ">=7.24.1 <7.29.1",
+      "patched_versions": ">=7.29.1",
+      "severity": "high",
+      "cwe": "CWE-295",
+      "github_advisory_id": "GHSA-w293-vg96-wgc3",
+      "url": "https://github.com/advisories/GHSA-w293-vg96-wgc3"
+    },
+    "1240051": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240051,
+      "title": "undici vulnerable to caching and replay of unsafe HTTP method responses",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "low",
+      "cwe": "CWE-345",
+      "github_advisory_id": "GHSA-8436-99hf-9mmv",
+      "url": "https://github.com/advisories/GHSA-8436-99hf-9mmv"
+    },
+    "1240052": {
+      "findings": [
+        {
+          "version": "7.29.0",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+            ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+            ".>wrangler>miniflare>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240052,
+      "title": "undici vulnerable to caching and replay of unsafe HTTP method responses",
+      "module_name": "undici",
+      "vulnerable_versions": ">=7.0.0 <7.29.1",
+      "patched_versions": ">=7.29.1",
+      "severity": "low",
+      "cwe": "CWE-345",
+      "github_advisory_id": "GHSA-8436-99hf-9mmv",
+      "url": "https://github.com/advisories/GHSA-8436-99hf-9mmv"
+    },
+    "1240053": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240053,
+      "title": "undici vulnerable to cross-origin cache poisoning via missing origin isolation in interceptors",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.10.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "high",
+      "cwe": "CWE-346",
+      "github_advisory_id": "GHSA-vp8m-p9jh-q5pm",
+      "url": "https://github.com/advisories/GHSA-vp8m-p9jh-q5pm"
+    },
+    "1240054": {
+      "findings": [
+        {
+          "version": "8.10.1",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>unifont>undici",
+            ".>@astrojs/mdx>astro>unifont>undici",
+            ".>@astrojs/svelte>astro>unifont>undici",
+            ".>astro>unifont>undici",
+            ".>astro-expressive-code>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240054,
+      "title": "undici vulnerable to Denial of Service via WebSocketStream unclean close",
+      "module_name": "undici",
+      "vulnerable_versions": ">=8.0.0 <8.10.2",
+      "patched_versions": ">=8.10.2",
+      "severity": "moderate",
+      "cwe": "CWE-248, CWE-754",
+      "github_advisory_id": "GHSA-rx4f-c7p8-82vq",
+      "url": "https://github.com/advisories/GHSA-rx4f-c7p8-82vq"
+    },
+    "1240055": {
+      "findings": [
+        {
+          "version": "7.29.0",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+            ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+            ".>wrangler>miniflare>undici"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240055,
+      "title": "undici vulnerable to Denial of Service via WebSocketStream unclean close",
+      "module_name": "undici",
+      "vulnerable_versions": ">=7.0.0 <7.29.1",
+      "patched_versions": ">=7.29.1",
+      "severity": "moderate",
+      "cwe": "CWE-248, CWE-754",
+      "github_advisory_id": "GHSA-rx4f-c7p8-82vq",
+      "url": "https://github.com/advisories/GHSA-rx4f-c7p8-82vq"
+    },
+    "1240091": {
+      "findings": [
+        {
+          "version": "3.1.5",
+          "paths": [
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+            ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240091,
+      "title": "fast-uri vulnerable to inconsistent host case normalization via percent-encoded octets",
+      "module_name": "fast-uri",
+      "vulnerable_versions": ">=3.0.0 <3.1.8",
+      "patched_versions": ">=3.1.8",
+      "severity": "moderate",
+      "cwe": "CWE-178",
+      "github_advisory_id": "GHSA-hrr3-gc8f-f4qj",
+      "url": "https://github.com/advisories/GHSA-hrr3-gc8f-f4qj"
+    },
+    "1240100": {
+      "findings": [
+        {
+          "version": "1.1.18",
+          "paths": [
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240100,
+      "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+      "module_name": "brace-expansion",
+      "vulnerable_versions": "<1.1.21",
+      "patched_versions": ">=1.1.21",
+      "severity": "moderate",
+      "cwe": "CWE-400, CWE-407",
+      "github_advisory_id": "GHSA-q2hr-2g5m-vwhr",
+      "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr"
+    },
+    "1240101": {
+      "findings": [
+        {
+          "version": "2.1.4",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/cloudflare>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/cloudflare>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/cloudflare>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+            ".>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>stylus>glob>minimatch>brace-expansion"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240101,
+      "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+      "module_name": "brace-expansion",
+      "vulnerable_versions": ">=2.0.0 <2.1.7",
+      "patched_versions": ">=2.1.7",
+      "severity": "moderate",
+      "cwe": "CWE-400, CWE-407",
+      "github_advisory_id": "GHSA-q2hr-2g5m-vwhr",
+      "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr"
+    },
+    "1240103": {
+      "findings": [
+        {
+          "version": "5.0.9",
+          "paths": [
+            ".>glob>minimatch>brace-expansion"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240103,
+      "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+      "module_name": "brace-expansion",
+      "vulnerable_versions": ">=4.0.0 <5.0.12",
+      "patched_versions": ">=5.0.12",
+      "severity": "moderate",
+      "cwe": "CWE-400, CWE-407",
+      "github_advisory_id": "GHSA-q2hr-2g5m-vwhr",
+      "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr"
+    },
+    "1240104": {
+      "findings": [
+        {
+          "version": "1.1.18",
+          "paths": [
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240104,
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "module_name": "brace-expansion",
+      "vulnerable_versions": "<1.1.20",
+      "patched_versions": ">=1.1.20",
+      "severity": "high",
+      "cwe": "CWE-400, CWE-674",
+      "github_advisory_id": "GHSA-qhr7-859c-m2p7",
+      "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7"
+    },
+    "1240105": {
+      "findings": [
+        {
+          "version": "2.1.4",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/cloudflare>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/cloudflare>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/cloudflare>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+            ".>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>stylus>glob>minimatch>brace-expansion"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240105,
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "module_name": "brace-expansion",
+      "vulnerable_versions": ">=2.0.0 <2.1.6",
+      "patched_versions": ">=2.1.6",
+      "severity": "high",
+      "cwe": "CWE-400, CWE-674",
+      "github_advisory_id": "GHSA-qhr7-859c-m2p7",
+      "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7"
+    },
+    "1240107": {
+      "findings": [
+        {
+          "version": "5.0.9",
+          "paths": [
+            ".>glob>minimatch>brace-expansion"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240107,
+      "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "module_name": "brace-expansion",
+      "vulnerable_versions": ">=4.0.0 <5.0.11",
+      "patched_versions": ">=5.0.11",
+      "severity": "high",
+      "cwe": "CWE-400, CWE-674",
+      "github_advisory_id": "GHSA-qhr7-859c-m2p7",
+      "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7"
+    },
+    "1240108": {
+      "findings": [
+        {
+          "version": "1.1.18",
+          "paths": [
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240108,
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "module_name": "brace-expansion",
+      "vulnerable_versions": "<1.1.19",
+      "patched_versions": ">=1.1.19",
+      "severity": "high",
+      "cwe": "CWE-400, CWE-674",
+      "github_advisory_id": "GHSA-6j4f-fj2g-mc7p",
+      "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p"
+    },
+    "1240109": {
+      "findings": [
+        {
+          "version": "2.1.4",
+          "paths": [
+            ".>@astrojs/cloudflare>@cloudflare/vite-plugin>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/cloudflare>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/cloudflare>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/cloudflare>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@astrojs/svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+            ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+            ".>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+            ".>stylus>glob>minimatch>brace-expansion"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240109,
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "module_name": "brace-expansion",
+      "vulnerable_versions": ">=2.0.0 <2.1.5",
+      "patched_versions": ">=2.1.5",
+      "severity": "high",
+      "cwe": "CWE-400, CWE-674",
+      "github_advisory_id": "GHSA-6j4f-fj2g-mc7p",
+      "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p"
+    },
+    "1240111": {
+      "findings": [
+        {
+          "version": "5.0.9",
+          "paths": [
+            ".>glob>minimatch>brace-expansion"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240111,
+      "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "module_name": "brace-expansion",
+      "vulnerable_versions": ">=4.0.0 <5.0.10",
+      "patched_versions": ">=5.0.10",
+      "severity": "high",
+      "cwe": "CWE-400, CWE-674",
+      "github_advisory_id": "GHSA-6j4f-fj2g-mc7p",
+      "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p"
+    },
+    "1240870": {
+      "findings": [
+        {
+          "version": "5.9.2",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>devalue",
+            ".>@astrojs/mdx>astro>devalue",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+            ".>@astrojs/svelte>astro>devalue",
+            ".>@astrojs/svelte>svelte>devalue",
+            ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+            ".>@iconify/svelte>svelte>devalue",
+            ".>astro>devalue",
+            ".>astro-expressive-code>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+            ".>svelte>devalue"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240870,
+      "title": "devalue: `stringify`/`uneval` serialize shared memory",
+      "module_name": "devalue",
+      "vulnerable_versions": ">=5.1.0 <=5.9.2",
+      "patched_versions": ">=5.9.3",
+      "severity": "high",
+      "cwe": "CWE-200, CWE-226",
+      "github_advisory_id": "GHSA-j22f-vq7h-c4qm",
+      "url": "https://github.com/advisories/GHSA-j22f-vq7h-c4qm"
+    },
+    "1240871": {
+      "findings": [
+        {
+          "version": "5.9.2",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>devalue",
+            ".>@astrojs/mdx>astro>devalue",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+            ".>@astrojs/svelte>astro>devalue",
+            ".>@astrojs/svelte>svelte>devalue",
+            ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+            ".>@iconify/svelte>svelte>devalue",
+            ".>astro>devalue",
+            ".>astro-expressive-code>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+            ".>svelte>devalue"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240871,
+      "title": "devalue: Residual sparse-array CPU amplification in uneval",
+      "module_name": "devalue",
+      "vulnerable_versions": "<=5.9.2",
+      "patched_versions": ">=5.9.3",
+      "severity": "moderate",
+      "cwe": "CWE-400, CWE-407",
+      "github_advisory_id": "GHSA-hx4r-w6wj-j8fg",
+      "url": "https://github.com/advisories/GHSA-hx4r-w6wj-j8fg"
+    },
+    "1240872": {
+      "findings": [
+        {
+          "version": "5.9.2",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>devalue",
+            ".>@astrojs/mdx>astro>devalue",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+            ".>@astrojs/svelte>astro>devalue",
+            ".>@astrojs/svelte>svelte>devalue",
+            ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+            ".>@iconify/svelte>svelte>devalue",
+            ".>astro>devalue",
+            ".>astro-expressive-code>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+            ".>svelte>devalue"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240872,
+      "title": "devalue: Repeated primitive strings cause quadratic expansion in uneval",
+      "module_name": "devalue",
+      "vulnerable_versions": "<=5.9.2",
+      "patched_versions": ">=5.9.3",
+      "severity": "high",
+      "cwe": "CWE-400, CWE-409",
+      "github_advisory_id": "GHSA-mcm9-63f2-9j32",
+      "url": "https://github.com/advisories/GHSA-mcm9-63f2-9j32"
+    },
+    "1240873": {
+      "findings": [
+        {
+          "version": "5.9.2",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>devalue",
+            ".>@astrojs/mdx>astro>devalue",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+            ".>@astrojs/svelte>astro>devalue",
+            ".>@astrojs/svelte>svelte>devalue",
+            ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+            ".>@iconify/svelte>svelte>devalue",
+            ".>astro>devalue",
+            ".>astro-expressive-code>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+            ".>svelte>devalue"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240873,
+      "title": "devalue: Sparse arrays emitted by uneval cause eager allocation when evaluated",
+      "module_name": "devalue",
+      "vulnerable_versions": ">=1.0.0 <=5.9.2",
+      "patched_versions": ">=5.9.3",
+      "severity": "low",
+      "cwe": "CWE-400, CWE-789",
+      "github_advisory_id": "GHSA-wf3x-273g-mvxv",
+      "url": "https://github.com/advisories/GHSA-wf3x-273g-mvxv"
+    },
+    "1240874": {
+      "findings": [
+        {
+          "version": "5.9.2",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>devalue",
+            ".>@astrojs/mdx>astro>devalue",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+            ".>@astrojs/svelte>astro>devalue",
+            ".>@astrojs/svelte>svelte>devalue",
+            ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+            ".>@iconify/svelte>svelte>devalue",
+            ".>astro>devalue",
+            ".>astro-expressive-code>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+            ".>svelte>devalue"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240874,
+      "title": "devalue: stringifyAsync can cause an unhandled rejection despite a caught returned promise",
+      "module_name": "devalue",
+      "vulnerable_versions": ">=5.8.0 <=5.9.2",
+      "patched_versions": ">=5.9.3",
+      "severity": "high",
+      "cwe": "CWE-248, CWE-755",
+      "github_advisory_id": "GHSA-x5rw-q4pp-hg5g",
+      "url": "https://github.com/advisories/GHSA-x5rw-q4pp-hg5g"
+    },
+    "1240875": {
+      "findings": [
+        {
+          "version": "5.9.2",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>devalue",
+            ".>@astrojs/mdx>astro>devalue",
+            ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+            ".>@astrojs/svelte>astro>devalue",
+            ".>@astrojs/svelte>svelte>devalue",
+            ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+            ".>@iconify/svelte>svelte>devalue",
+            ".>astro>devalue",
+            ".>astro-expressive-code>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+            ".>svelte>devalue"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240875,
+      "title": "devalue: Malformed null-prototype object keys bypass __proto__ rejection via property-key coercion",
+      "module_name": "devalue",
+      "vulnerable_versions": "<=5.9.2",
+      "patched_versions": ">=5.9.3",
+      "severity": "moderate",
+      "cwe": "CWE-1321",
+      "github_advisory_id": "GHSA-4q55-j62x-fr9h",
+      "url": "https://github.com/advisories/GHSA-4q55-j62x-fr9h"
+    },
+    "1240991": {
+      "findings": [
+        {
+          "version": "4.2.0",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>http-cache-semantics",
+            ".>@astrojs/mdx>astro>http-cache-semantics",
+            ".>@astrojs/svelte>astro>http-cache-semantics",
+            ".>astro>http-cache-semantics",
+            ".>astro-expressive-code>astro>http-cache-semantics",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240991,
+      "title": "http-cache-semantics max-stale handling can disclose cross-user cached responses",
+      "module_name": "http-cache-semantics",
+      "vulnerable_versions": "<=4.2.0",
+      "patched_versions": ">=4.2.1",
+      "severity": "high",
+      "cwe": "CWE-524",
+      "github_advisory_id": "GHSA-ch52-4w7c-c8xp",
+      "url": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp"
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 7,
+      "moderate": 19,
+      "high": 25,
+      "critical": 0
+    },
+    "dependencies": 1091,
+    "devDependencies": 0,
+    "optionalDependencies": 198,
+    "totalDependencies": 1289
+  }
+}

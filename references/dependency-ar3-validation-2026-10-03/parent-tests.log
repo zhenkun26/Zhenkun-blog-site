@@ -1,0 +1,16 @@
+✔ ESM: @swup/parallel-plugin resolves exact cross-major base and requirements (8.812625ms)
+✔ ESM: @swup/route-name-plugin resolves exact cross-major base and requirements (0.787416ms)
+✔ ESM: actual Swup hooks mount/unmount twice, route naming and classes (1.626375ms)
+✔ ESM: parallel visit marking, insertion, restoration, cleanup and disabled visit (1.878125ms)
+✔ CJS: @swup/parallel-plugin resolves exact cross-major base and requirements (2.367834ms)
+✔ CJS: @swup/route-name-plugin resolves exact cross-major base and requirements (0.551625ms)
+✔ CJS: actual Swup hooks mount/unmount twice, route naming and classes (1.087584ms)
+✔ CJS: parallel visit marking, insertion, restoration, cleanup and disabled visit (0.589208ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 60.017917

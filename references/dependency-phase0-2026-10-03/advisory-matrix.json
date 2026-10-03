@@ -1,0 +1,2819 @@
+{
+  "capturedAt": "2026-10-03T10:11:24.627Z",
+  "scope": "32 historical GHSA plus 3 review additions plus 1 fresh-audit addition; bounded current/candidate dependency graph, not exhaustive advisory discovery.",
+  "historicalGhsaCount": 32,
+  "unionGhsaCount": 36,
+  "currentAffectedGhsaCount": 34,
+  "compatibilityTestsRun": false,
+  "rows": [
+    {
+      "ghsa": "GHSA-6j4f-fj2g-mc7p",
+      "package": "brace-expansion",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "summary": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+      "publishedAt": "2026-09-29T23:44:58Z",
+      "updatedAt": "2026-09-29T23:44:59Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 3,
+      "officialAffectedRanges": [
+        ">= 4.0.0, < 5.0.10",
+        ">= 3.0.0, < 3.0.7",
+        ">= 2.0.0, < 2.1.5",
+        "< 1.1.19"
+      ],
+      "officialFixes": [
+        "5.0.10",
+        "3.0.7",
+        "2.1.5",
+        "1.1.19"
+      ],
+      "versionInstances": [
+        {
+          "version": "1.1.18",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "minimatch@3.1.5",
+              "name": "brace-expansion",
+              "resolved": "1.1.18",
+              "kind": "dependencies",
+              "declared": "^1.1.7",
+              "manifest": "node_modules/.pnpm/minimatch@3.1.5/node_modules/minimatch/package.json"
+            }
+          ]
+        },
+        {
+          "version": "2.1.4",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "minimatch@5.1.9",
+              "name": "brace-expansion",
+              "resolved": "2.1.4",
+              "kind": "dependencies",
+              "declared": "^2.0.1",
+              "manifest": "node_modules/.pnpm/minimatch@5.1.9/node_modules/minimatch/package.json"
+            },
+            {
+              "parent": "minimatch@9.0.9",
+              "name": "brace-expansion",
+              "resolved": "2.1.4",
+              "kind": "dependencies",
+              "declared": "^2.0.2",
+              "manifest": "node_modules/.pnpm/minimatch@9.0.9/node_modules/minimatch/package.json"
+            }
+          ]
+        },
+        {
+          "version": "5.0.9",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "minimatch@10.2.6",
+              "name": "brace-expansion",
+              "resolved": "5.0.9",
+              "kind": "dependencies",
+              "declared": "^5.0.8",
+              "manifest": "node_modules/.pnpm/minimatch@10.2.6/node_modules/minimatch/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+        ".>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>stylus>glob>minimatch>brace-expansion",
+        ".>glob>minimatch>brace-expansion",
+        ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "1.1.21",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "2.1.7",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "5.0.12",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "glob/minimatch build/check inputs, including legacy microbundle",
+        "condition": "Attacker-controlled pathological brace patterns; project patterns currently source-controlled.",
+        "gate": "Preserve discovered source/image/script set, Unicode and legal nested globs with resource bounds."
+      }
+    },
+    {
+      "ghsa": "GHSA-q2hr-2g5m-vwhr",
+      "package": "brace-expansion",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "summary": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+      "publishedAt": "2026-09-29T23:45:39Z",
+      "updatedAt": "2026-09-29T23:45:39Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 3,
+      "officialAffectedRanges": [
+        ">= 4.0.0, < 5.0.12",
+        ">= 3.0.0, < 3.0.9",
+        ">= 2.0.0, < 2.1.7",
+        "< 1.1.21"
+      ],
+      "officialFixes": [
+        "5.0.12",
+        "3.0.9",
+        "2.1.7",
+        "1.1.21"
+      ],
+      "versionInstances": [
+        {
+          "version": "1.1.18",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "minimatch@3.1.5",
+              "name": "brace-expansion",
+              "resolved": "1.1.18",
+              "kind": "dependencies",
+              "declared": "^1.1.7",
+              "manifest": "node_modules/.pnpm/minimatch@3.1.5/node_modules/minimatch/package.json"
+            }
+          ]
+        },
+        {
+          "version": "2.1.4",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "minimatch@5.1.9",
+              "name": "brace-expansion",
+              "resolved": "2.1.4",
+              "kind": "dependencies",
+              "declared": "^2.0.1",
+              "manifest": "node_modules/.pnpm/minimatch@5.1.9/node_modules/minimatch/package.json"
+            },
+            {
+              "parent": "minimatch@9.0.9",
+              "name": "brace-expansion",
+              "resolved": "2.1.4",
+              "kind": "dependencies",
+              "declared": "^2.0.2",
+              "manifest": "node_modules/.pnpm/minimatch@9.0.9/node_modules/minimatch/package.json"
+            }
+          ]
+        },
+        {
+          "version": "5.0.9",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "minimatch@10.2.6",
+              "name": "brace-expansion",
+              "resolved": "5.0.9",
+              "kind": "dependencies",
+              "declared": "^5.0.8",
+              "manifest": "node_modules/.pnpm/minimatch@10.2.6/node_modules/minimatch/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+        ".>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>stylus>glob>minimatch>brace-expansion",
+        ".>glob>minimatch>brace-expansion",
+        ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "1.1.21",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "2.1.7",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "5.0.12",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "glob/minimatch build/check inputs, including legacy microbundle",
+        "condition": "Attacker-controlled pathological brace patterns; project patterns currently source-controlled.",
+        "gate": "Preserve discovered source/image/script set, Unicode and legal nested globs with resource bounds."
+      }
+    },
+    {
+      "ghsa": "GHSA-qhr7-859c-m2p7",
+      "package": "brace-expansion",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "summary": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+      "publishedAt": "2026-09-29T23:45:17Z",
+      "updatedAt": "2026-09-29T23:45:19Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 3,
+      "officialAffectedRanges": [
+        ">= 4.0.0, < 5.0.11",
+        ">= 3.0.0, < 3.0.8",
+        ">= 2.0.0, < 2.1.6",
+        "< 1.1.20"
+      ],
+      "officialFixes": [
+        "5.0.11",
+        "3.0.8",
+        "2.1.6",
+        "1.1.20"
+      ],
+      "versionInstances": [
+        {
+          "version": "1.1.18",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "minimatch@3.1.5",
+              "name": "brace-expansion",
+              "resolved": "1.1.18",
+              "kind": "dependencies",
+              "declared": "^1.1.7",
+              "manifest": "node_modules/.pnpm/minimatch@3.1.5/node_modules/minimatch/package.json"
+            }
+          ]
+        },
+        {
+          "version": "2.1.4",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "minimatch@5.1.9",
+              "name": "brace-expansion",
+              "resolved": "2.1.4",
+              "kind": "dependencies",
+              "declared": "^2.0.1",
+              "manifest": "node_modules/.pnpm/minimatch@5.1.9/node_modules/minimatch/package.json"
+            },
+            {
+              "parent": "minimatch@9.0.9",
+              "name": "brace-expansion",
+              "resolved": "2.1.4",
+              "kind": "dependencies",
+              "declared": "^2.0.2",
+              "manifest": "node_modules/.pnpm/minimatch@9.0.9/node_modules/minimatch/package.json"
+            }
+          ]
+        },
+        {
+          "version": "5.0.9",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "minimatch@10.2.6",
+              "name": "brace-expansion",
+              "resolved": "5.0.9",
+              "kind": "dependencies",
+              "declared": "^5.0.8",
+              "manifest": "node_modules/.pnpm/minimatch@10.2.6/node_modules/minimatch/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@rollup/plugin-commonjs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>shelljs-live>shelljs>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/cloudflare>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@astrojs/svelte>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>@surma/rollup-plugin-off-main-thread>ejs>jake>filelist>minimatch>brace-expansion",
+        ".>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>stylus>glob>minimatch>brace-expansion",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>stylus>glob>minimatch>brace-expansion",
+        ".>stylus>glob>minimatch>brace-expansion",
+        ".>glob>minimatch>brace-expansion",
+        ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "1.1.21",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "2.1.7",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "5.0.12",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "glob/minimatch build/check inputs, including legacy microbundle",
+        "condition": "Attacker-controlled pathological brace patterns; project patterns currently source-controlled.",
+        "gate": "Preserve discovered source/image/script set, Unicode and legal nested globs with resource bounds."
+      }
+    },
+    {
+      "ghsa": "GHSA-2wm5-q62r-hmrv",
+      "package": "colord",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-2wm5-q62r-hmrv",
+      "url": "https://github.com/advisories/GHSA-2wm5-q62r-hmrv",
+      "summary": "Colord: Slow rejection of oversized malformed color strings",
+      "publishedAt": "2026-09-08T20:51:57Z",
+      "updatedAt": "2026-09-08T20:51:58Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        "< 2.9.4"
+      ],
+      "officialFixes": [
+        "2.9.4"
+      ],
+      "versionInstances": [
+        {
+          "version": "2.9.3",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "postcss-colormin@5.3.1(postcss@8.5.26)",
+              "name": "colord",
+              "resolved": "2.9.3",
+              "kind": "dependencies",
+              "declared": "^2.9.1",
+              "manifest": "node_modules/.pnpm/postcss-colormin@5.3.1_postcss@8.5.26/node_modules/postcss-colormin/package.json"
+            },
+            {
+              "parent": "postcss-minify-gradients@5.1.1(postcss@8.5.26)",
+              "name": "colord",
+              "resolved": "2.9.3",
+              "kind": "dependencies",
+              "declared": "^2.9.1",
+              "manifest": "node_modules/.pnpm/postcss-minify-gradients@5.1.1_postcss@8.5.26/node_modules/postcss-minify-gradients/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-colormin>colord",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-minify-gradients>colord",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-colormin>colord",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-minify-gradients>colord"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "2.9.4",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Legacy microbundle -> PostCSS/cssnano",
+        "condition": "Oversized malformed CSS color strings processed by that build chain; current package build script does not invoke microbundle.",
+        "gate": "Prefer eliminate legacy chain; if retained, normal gradients/colors plus bounded reject behavior."
+      }
+    },
+    {
+      "ghsa": "GHSA-4q55-j62x-fr9h",
+      "package": "devalue",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-4q55-j62x-fr9h",
+      "url": "https://github.com/advisories/GHSA-4q55-j62x-fr9h",
+      "summary": "devalue: Malformed null-prototype object keys bypass __proto__ rejection via property-key coercion",
+      "publishedAt": "2026-10-01T15:13:23Z",
+      "updatedAt": "2026-10-01T15:13:25Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        "<= 5.9.2"
+      ],
+      "officialFixes": [
+        "5.9.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "5.9.2",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            },
+            {
+              "parent": "svelte@5.57.0",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/svelte@5.57.0/node_modules/svelte/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>devalue",
+        ".>@astrojs/mdx>astro>devalue",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+        ".>@astrojs/svelte>astro>devalue",
+        ".>@astrojs/svelte>svelte>devalue",
+        ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+        ".>@iconify/svelte>svelte>devalue",
+        ".>astro>devalue",
+        ".>astro-expressive-code>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+        ".>svelte>devalue"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "5.9.3",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro/Svelte build serialization and island hydration",
+        "condition": "Advisory-specific serialization of shared backing buffers, sparse/repeated data, malformed parsed keys or stringifyAsync rejection. No such visitor-controlled call established.",
+        "gate": "Serialization bounds, safe error handling and island hydration; no production deserializer introduced."
+      }
+    },
+    {
+      "ghsa": "GHSA-hx4r-w6wj-j8fg",
+      "package": "devalue",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-hx4r-w6wj-j8fg",
+      "url": "https://github.com/advisories/GHSA-hx4r-w6wj-j8fg",
+      "summary": "devalue: Residual sparse-array CPU amplification in uneval",
+      "publishedAt": "2026-10-01T15:17:42Z",
+      "updatedAt": "2026-10-01T15:17:43Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        "<= 5.9.2"
+      ],
+      "officialFixes": [
+        "5.9.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "5.9.2",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            },
+            {
+              "parent": "svelte@5.57.0",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/svelte@5.57.0/node_modules/svelte/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>devalue",
+        ".>@astrojs/mdx>astro>devalue",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+        ".>@astrojs/svelte>astro>devalue",
+        ".>@astrojs/svelte>svelte>devalue",
+        ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+        ".>@iconify/svelte>svelte>devalue",
+        ".>astro>devalue",
+        ".>astro-expressive-code>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+        ".>svelte>devalue"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "5.9.3",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro/Svelte build serialization and island hydration",
+        "condition": "Advisory-specific serialization of shared backing buffers, sparse/repeated data, malformed parsed keys or stringifyAsync rejection. No such visitor-controlled call established.",
+        "gate": "Serialization bounds, safe error handling and island hydration; no production deserializer introduced."
+      }
+    },
+    {
+      "ghsa": "GHSA-j22f-vq7h-c4qm",
+      "package": "devalue",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-j22f-vq7h-c4qm",
+      "url": "https://github.com/advisories/GHSA-j22f-vq7h-c4qm",
+      "summary": "devalue: `stringify`/`uneval` serialize shared memory",
+      "publishedAt": "2026-10-01T15:18:06Z",
+      "updatedAt": "2026-10-01T15:18:07Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        ">= 5.1.0, <= 5.9.2"
+      ],
+      "officialFixes": [
+        "5.9.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "5.9.2",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            },
+            {
+              "parent": "svelte@5.57.0",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/svelte@5.57.0/node_modules/svelte/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>devalue",
+        ".>@astrojs/mdx>astro>devalue",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+        ".>@astrojs/svelte>astro>devalue",
+        ".>@astrojs/svelte>svelte>devalue",
+        ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+        ".>@iconify/svelte>svelte>devalue",
+        ".>astro>devalue",
+        ".>astro-expressive-code>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+        ".>svelte>devalue"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "5.9.3",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro/Svelte build serialization and island hydration",
+        "condition": "Advisory-specific serialization of shared backing buffers, sparse/repeated data, malformed parsed keys or stringifyAsync rejection. No such visitor-controlled call established.",
+        "gate": "Serialization bounds, safe error handling and island hydration; no production deserializer introduced."
+      }
+    },
+    {
+      "ghsa": "GHSA-mcm9-63f2-9j32",
+      "package": "devalue",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-mcm9-63f2-9j32",
+      "url": "https://github.com/advisories/GHSA-mcm9-63f2-9j32",
+      "summary": "devalue: Repeated primitive strings cause quadratic expansion in uneval",
+      "publishedAt": "2026-10-01T15:17:29Z",
+      "updatedAt": "2026-10-01T15:17:30Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        "<= 5.9.2"
+      ],
+      "officialFixes": [
+        "5.9.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "5.9.2",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            },
+            {
+              "parent": "svelte@5.57.0",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/svelte@5.57.0/node_modules/svelte/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>devalue",
+        ".>@astrojs/mdx>astro>devalue",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+        ".>@astrojs/svelte>astro>devalue",
+        ".>@astrojs/svelte>svelte>devalue",
+        ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+        ".>@iconify/svelte>svelte>devalue",
+        ".>astro>devalue",
+        ".>astro-expressive-code>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+        ".>svelte>devalue"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "5.9.3",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro/Svelte build serialization and island hydration",
+        "condition": "Advisory-specific serialization of shared backing buffers, sparse/repeated data, malformed parsed keys or stringifyAsync rejection. No such visitor-controlled call established.",
+        "gate": "Serialization bounds, safe error handling and island hydration; no production deserializer introduced."
+      }
+    },
+    {
+      "ghsa": "GHSA-wf3x-273g-mvxv",
+      "package": "devalue",
+      "severity": "low",
+      "source": "https://api.github.com/advisories/GHSA-wf3x-273g-mvxv",
+      "url": "https://github.com/advisories/GHSA-wf3x-273g-mvxv",
+      "summary": "devalue: Sparse arrays emitted by uneval cause eager allocation when evaluated",
+      "publishedAt": "2026-10-01T15:17:13Z",
+      "updatedAt": "2026-10-01T15:17:16Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        ">= 1.0.0, <= 5.9.2"
+      ],
+      "officialFixes": [
+        "5.9.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "5.9.2",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            },
+            {
+              "parent": "svelte@5.57.0",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/svelte@5.57.0/node_modules/svelte/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>devalue",
+        ".>@astrojs/mdx>astro>devalue",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+        ".>@astrojs/svelte>astro>devalue",
+        ".>@astrojs/svelte>svelte>devalue",
+        ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+        ".>@iconify/svelte>svelte>devalue",
+        ".>astro>devalue",
+        ".>astro-expressive-code>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+        ".>svelte>devalue"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "5.9.3",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro/Svelte build serialization and island hydration",
+        "condition": "Advisory-specific serialization of shared backing buffers, sparse/repeated data, malformed parsed keys or stringifyAsync rejection. No such visitor-controlled call established.",
+        "gate": "Serialization bounds, safe error handling and island hydration; no production deserializer introduced."
+      }
+    },
+    {
+      "ghsa": "GHSA-x5rw-q4pp-hg5g",
+      "package": "devalue",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-x5rw-q4pp-hg5g",
+      "url": "https://github.com/advisories/GHSA-x5rw-q4pp-hg5g",
+      "summary": "devalue: stringifyAsync can cause an unhandled rejection despite a caught returned promise",
+      "publishedAt": "2026-10-01T15:15:13Z",
+      "updatedAt": "2026-10-01T15:15:15Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        ">= 5.8.0, <= 5.9.2"
+      ],
+      "officialFixes": [
+        "5.9.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "5.9.2",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            },
+            {
+              "parent": "svelte@5.57.0",
+              "name": "devalue",
+              "resolved": "5.9.2",
+              "kind": "dependencies",
+              "declared": "^5.8.1",
+              "manifest": "node_modules/.pnpm/svelte@5.57.0/node_modules/svelte/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>devalue",
+        ".>@astrojs/mdx>astro>devalue",
+        ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>svelte>devalue",
+        ".>@astrojs/svelte>astro>devalue",
+        ".>@astrojs/svelte>svelte>devalue",
+        ".>@astrojs/svelte>svelte2tsx>svelte>devalue",
+        ".>@iconify/svelte>svelte>devalue",
+        ".>astro>devalue",
+        ".>astro-expressive-code>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>devalue",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>devalue",
+        ".>svelte>devalue"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "5.9.3",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro/Svelte build serialization and island hydration",
+        "condition": "Advisory-specific serialization of shared backing buffers, sparse/repeated data, malformed parsed keys or stringifyAsync rejection. No such visitor-controlled call established.",
+        "gate": "Serialization bounds, safe error handling and island hydration; no production deserializer introduced."
+      }
+    },
+    {
+      "ghsa": "GHSA-5jgf-p345-68v8",
+      "package": "fast-uri",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-5jgf-p345-68v8",
+      "url": "https://github.com/advisories/GHSA-5jgf-p345-68v8",
+      "summary": "fast-uri vulnerable to host confusion via skipped IDN canonicalization on scheme-relative references",
+      "publishedAt": "2026-09-02T15:44:30Z",
+      "updatedAt": "2026-09-02T15:44:32Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        ">= 2.4.2, < 2.4.5",
+        ">= 3.1.3, < 3.1.6",
+        ">= 4.0.1, < 4.1.3"
+      ],
+      "officialFixes": [
+        "2.4.5",
+        "3.1.6",
+        "4.1.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "3.1.5",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "ajv@8.20.0",
+              "name": "fast-uri",
+              "resolved": "3.1.5",
+              "kind": "dependencies",
+              "declared": "^3.0.1",
+              "manifest": "node_modules/.pnpm/ajv@8.20.0/node_modules/ajv/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "3.1.8",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro check -> YAML language tooling -> AJV",
+        "condition": "Host/scheme/port parsing discrepancies in advisory; not itself a network fetcher. No public schema or SSRF sink established in this static deployment.",
+        "gate": "Check/schema regressions, legitimate URI normalization; do not claim exploit solely from high severity."
+      }
+    },
+    {
+      "ghsa": "GHSA-f65p-4m7j-42xc",
+      "package": "fast-uri",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-f65p-4m7j-42xc",
+      "url": "https://github.com/advisories/GHSA-f65p-4m7j-42xc",
+      "summary": "fast-uri vulnerable to server-side request forgery via malformed IPv6 normalization",
+      "publishedAt": "2026-09-02T15:43:30Z",
+      "updatedAt": "2026-09-02T15:43:32Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        ">= 2.3.1, < 2.4.5",
+        ">= 3.0.0, < 3.1.6",
+        ">= 4.0.0, < 4.1.3"
+      ],
+      "officialFixes": [
+        "2.4.5",
+        "3.1.6",
+        "4.1.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "3.1.5",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "ajv@8.20.0",
+              "name": "fast-uri",
+              "resolved": "3.1.5",
+              "kind": "dependencies",
+              "declared": "^3.0.1",
+              "manifest": "node_modules/.pnpm/ajv@8.20.0/node_modules/ajv/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "3.1.8",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro check -> YAML language tooling -> AJV",
+        "condition": "Host/scheme/port parsing discrepancies in advisory; not itself a network fetcher. No public schema or SSRF sink established in this static deployment.",
+        "gate": "Check/schema regressions, legitimate URI normalization; do not claim exploit solely from high severity."
+      }
+    },
+    {
+      "ghsa": "GHSA-fph4-wmhf-6fwf",
+      "package": "fast-uri",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-fph4-wmhf-6fwf",
+      "url": "https://github.com/advisories/GHSA-fph4-wmhf-6fwf",
+      "summary": "fast-uri vulnerable to server-side request forgery via repeated hostname percent-decoding",
+      "publishedAt": "2026-09-02T15:42:39Z",
+      "updatedAt": "2026-09-02T15:42:41Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        ">= 2.4.1, < 2.4.5",
+        ">= 3.1.2, < 3.1.6",
+        ">= 4.0.0, < 4.1.3"
+      ],
+      "officialFixes": [
+        "2.4.5",
+        "3.1.6",
+        "4.1.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "3.1.5",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "ajv@8.20.0",
+              "name": "fast-uri",
+              "resolved": "3.1.5",
+              "kind": "dependencies",
+              "declared": "^3.0.1",
+              "manifest": "node_modules/.pnpm/ajv@8.20.0/node_modules/ajv/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "3.1.8",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro check -> YAML language tooling -> AJV",
+        "condition": "Host/scheme/port parsing discrepancies in advisory; not itself a network fetcher. No public schema or SSRF sink established in this static deployment.",
+        "gate": "Check/schema regressions, legitimate URI normalization; do not claim exploit solely from high severity."
+      }
+    },
+    {
+      "ghsa": "GHSA-hrr3-gc8f-f4qj",
+      "package": "fast-uri",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+      "url": "https://github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+      "summary": "fast-uri vulnerable to inconsistent host case normalization via percent-encoded octets",
+      "publishedAt": "2026-09-29T23:54:25Z",
+      "updatedAt": "2026-09-29T23:54:26Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        "< 2.4.7",
+        ">= 3.0.0, < 3.1.8",
+        ">= 4.0.0, < 4.1.5"
+      ],
+      "officialFixes": [
+        "2.4.7",
+        "3.1.8",
+        "4.1.5"
+      ],
+      "versionInstances": [
+        {
+          "version": "3.1.5",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "ajv@8.20.0",
+              "name": "fast-uri",
+              "resolved": "3.1.5",
+              "kind": "dependencies",
+              "declared": "^3.0.1",
+              "manifest": "node_modules/.pnpm/ajv@8.20.0/node_modules/ajv/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "3.1.8",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro check -> YAML language tooling -> AJV",
+        "condition": "Host/scheme/port parsing discrepancies in advisory; not itself a network fetcher. No public schema or SSRF sink established in this static deployment.",
+        "gate": "Check/schema regressions, legitimate URI normalization; do not claim exploit solely from high severity."
+      }
+    },
+    {
+      "ghsa": "GHSA-jqff-g426-hqxp",
+      "package": "fast-uri",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-jqff-g426-hqxp",
+      "url": "https://github.com/advisories/GHSA-jqff-g426-hqxp",
+      "summary": "fast-uri vulnerable to host confusion via percent-encoded scheme normalization",
+      "publishedAt": "2026-09-02T15:41:53Z",
+      "updatedAt": "2026-09-02T15:41:56Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        ">= 2.3.1, < 2.4.5",
+        ">= 3.0.0, < 3.1.6",
+        ">= 4.0.0, < 4.1.3"
+      ],
+      "officialFixes": [
+        "2.4.5",
+        "3.1.6",
+        "4.1.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "3.1.5",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "ajv@8.20.0",
+              "name": "fast-uri",
+              "resolved": "3.1.5",
+              "kind": "dependencies",
+              "declared": "^3.0.1",
+              "manifest": "node_modules/.pnpm/ajv@8.20.0/node_modules/ajv/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "3.1.8",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro check -> YAML language tooling -> AJV",
+        "condition": "Host/scheme/port parsing discrepancies in advisory; not itself a network fetcher. No public schema or SSRF sink established in this static deployment.",
+        "gate": "Check/schema regressions, legitimate URI normalization; do not claim exploit solely from high severity."
+      }
+    },
+    {
+      "ghsa": "GHSA-qw65-cvwx-89v3",
+      "package": "fast-uri",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-qw65-cvwx-89v3",
+      "url": "https://github.com/advisories/GHSA-qw65-cvwx-89v3",
+      "summary": "fast-uri vulnerable to authority injection via an unvalidated port in serialize",
+      "publishedAt": "2026-09-28T21:24:39Z",
+      "updatedAt": "2026-09-28T21:24:40Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        "< 2.4.6",
+        ">= 3.0.0, < 3.1.7",
+        ">= 4.0.0, < 4.1.4"
+      ],
+      "officialFixes": [
+        "2.4.6",
+        "3.1.7",
+        "4.1.4"
+      ],
+      "versionInstances": [
+        {
+          "version": "3.1.5",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "ajv@8.20.0",
+              "name": "fast-uri",
+              "resolved": "3.1.5",
+              "kind": "dependencies",
+              "declared": "^3.0.1",
+              "manifest": "node_modules/.pnpm/ajv@8.20.0/node_modules/ajv/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-draft-04>ajv>fast-uri",
+        ".>@astrojs/check>@astrojs/language-server>volar-service-yaml>yaml-language-server>ajv-i18n>ajv>fast-uri"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "3.1.8",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro check -> YAML language tooling -> AJV",
+        "condition": "Host/scheme/port parsing discrepancies in advisory; not itself a network fetcher. No public schema or SSRF sink established in this static deployment.",
+        "gate": "Check/schema regressions, legitimate URI normalization; do not claim exploit solely from high severity."
+      }
+    },
+    {
+      "ghsa": "GHSA-ch52-4w7c-c8xp",
+      "package": "http-cache-semantics",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-ch52-4w7c-c8xp",
+      "url": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp",
+      "summary": "http-cache-semantics max-stale handling can disclose cross-user cached responses",
+      "publishedAt": "2026-09-18T18:31:44Z",
+      "updatedAt": "2026-10-02T22:36:44Z",
+      "withdrawnAt": null,
+      "historical": false,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        "<= 4.2.0"
+      ],
+      "officialFixes": [
+        null
+      ],
+      "versionInstances": [
+        {
+          "version": "4.2.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "http-cache-semantics",
+              "resolved": "4.2.0",
+              "kind": "dependencies",
+              "declared": "^4.2.0",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>http-cache-semantics",
+        ".>@astrojs/mdx>astro>http-cache-semantics",
+        ".>@astrojs/svelte>astro>http-cache-semantics",
+        ".>astro>http-cache-semantics",
+        ".>astro-expressive-code>astro>http-cache-semantics",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+      ],
+      "reviewedCandidates": [],
+      "status": "BLOCKED_NO_VERIFIED_PUBLISHED_FIX",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Astro remote image build cache; static Pages has no shared Node cache",
+        "condition": "Shared per-user cached response plus attacker max-stale request. Astro observed code constructs its own image Request and uses storable/timeToLive, not client max-stale reuse; exploit path not demonstrated.",
+        "gate": "No verified published fixed candidate. Upstream patch/parent fix or separately approved expiring exception required; retain high-severity block."
+      }
+    },
+    {
+      "ghsa": "GHSA-2883-xcg3-v3hh",
+      "package": "js-yaml",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "summary": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+      "publishedAt": "2026-09-08T21:24:51Z",
+      "updatedAt": "2026-09-08T21:24:52Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        ">= 4.0.0, < 4.3.2",
+        ">= 3.0.0, < 3.15.2"
+      ],
+      "officialFixes": [
+        "4.3.2",
+        "3.15.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "3.15.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "gray-matter@4.0.3",
+              "name": "js-yaml",
+              "resolved": "3.15.1",
+              "kind": "dependencies",
+              "declared": "^3.13.1",
+              "manifest": "node_modules/.pnpm/gray-matter@4.0.3/node_modules/gray-matter/package.json"
+            }
+          ]
+        },
+        {
+          "version": "4.3.2",
+          "affected": false,
+          "parents": [
+            {
+              "parent": "@astrojs/internal-helpers@0.10.4",
+              "name": "js-yaml",
+              "resolved": "4.3.2",
+              "kind": "dependencies",
+              "declared": "^4.3.0",
+              "manifest": "node_modules/.pnpm/@astrojs+internal-helpers@0.10.4/node_modules/@astrojs/internal-helpers/package.json"
+            },
+            {
+              "parent": "@astrojs/internal-helpers@0.11.0",
+              "name": "js-yaml",
+              "resolved": "4.3.2",
+              "kind": "dependencies",
+              "declared": "^4.3.0",
+              "manifest": "node_modules/.pnpm/@astrojs+internal-helpers@0.11.0/node_modules/@astrojs/internal-helpers/package.json"
+            },
+            {
+              "parent": "@astrojs/starlight@0.41.7(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0))(supports-color@10.2.2)(typescript@6.0.3)",
+              "name": "js-yaml",
+              "resolved": "4.3.2",
+              "kind": "dependencies",
+              "declared": "^4.1.1",
+              "manifest": "node_modules/.pnpm/@astrojs+starlight@0.41.7_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__astro@7_e8dca9f9812d906609a4ade231958fb4/node_modules/@astrojs/starlight/package.json"
+            },
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "js-yaml",
+              "resolved": "4.3.2",
+              "kind": "dependencies",
+              "declared": "^4.3.0",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>gray-matter>js-yaml"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "3.15.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "4.3.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "gray-matter checked-in frontmatter; Astro/helper YAML 4.3.2 already outside this advisory",
+        "condition": "Pathological merge sources supplied to parser; trusted author content today, future imported manuscripts alter exposure.",
+        "gate": "Actual gray-matter date/bool/tag/Unicode/alias parsing and bounded malformed-input rejection."
+      }
+    },
+    {
+      "ghsa": "GHSA-5c6j-r48x-rmvq",
+      "package": "serialize-javascript",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-5c6j-r48x-rmvq",
+      "url": "https://github.com/advisories/GHSA-5c6j-r48x-rmvq",
+      "summary": "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+      "publishedAt": "2026-02-28T02:50:45Z",
+      "updatedAt": "2026-03-02T16:17:37Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        "<= 7.0.2"
+      ],
+      "officialFixes": [
+        "7.0.3"
+      ],
+      "versionInstances": [
+        {
+          "version": "4.0.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "rollup-plugin-terser@7.0.2(rollup@2.80.0)",
+              "name": "serialize-javascript",
+              "resolved": "4.0.0",
+              "kind": "dependencies",
+              "declared": "^4.0.0",
+              "manifest": "node_modules/.pnpm/rollup-plugin-terser@7.0.2_rollup@2.80.0/node_modules/rollup-plugin-terser/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>rollup-plugin-terser>serialize-javascript",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>rollup-plugin-terser>serialize-javascript"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.0.5",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Legacy rollup-plugin-terser serializes normalized bundler options for worker",
+        "condition": "Current 4.0.0 RCE advisory open. CPU DoS affects proposed 7.0.3, not current 4.0.0; function-body XSS affects 7.1.1, not 7.0.5. No visitor-controlled options input found.",
+        "gate": "Prefer remove chain by two parent overrides; fallback must test actual CommonJS serializer/worker API with benign Date/RegExp/function/typed data and error cases."
+      }
+    },
+    {
+      "ghsa": "GHSA-gfhx-hw2g-v5hg",
+      "package": "serialize-javascript",
+      "severity": "low",
+      "source": "https://api.github.com/advisories/GHSA-gfhx-hw2g-v5hg",
+      "url": "https://github.com/advisories/GHSA-gfhx-hw2g-v5hg",
+      "summary": "Serialize JavaScript: Cross-site scripting (XSS) via unescaped </script> in serialized function bodies",
+      "publishedAt": "2026-09-30T15:40:05Z",
+      "updatedAt": "2026-09-30T15:40:06Z",
+      "withdrawnAt": null,
+      "historical": false,
+      "freshAuditRecordCount": 0,
+      "officialAffectedRanges": [
+        ">= 7.1.1, < 7.1.2"
+      ],
+      "officialFixes": [
+        "7.1.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "4.0.0",
+          "affected": false,
+          "parents": [
+            {
+              "parent": "rollup-plugin-terser@7.0.2(rollup@2.80.0)",
+              "name": "serialize-javascript",
+              "resolved": "4.0.0",
+              "kind": "dependencies",
+              "declared": "^4.0.0",
+              "manifest": "node_modules/.pnpm/rollup-plugin-terser@7.0.2_rollup@2.80.0/node_modules/rollup-plugin-terser/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [],
+      "reviewedCandidates": [
+        {
+          "version": "7.0.5",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "NOT_AFFECTED_CURRENT_CANDIDATE_GUARD",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Legacy rollup-plugin-terser serializes normalized bundler options for worker",
+        "condition": "Current 4.0.0 RCE advisory open. CPU DoS affects proposed 7.0.3, not current 4.0.0; function-body XSS affects 7.1.1, not 7.0.5. No visitor-controlled options input found.",
+        "gate": "Prefer remove chain by two parent overrides; fallback must test actual CommonJS serializer/worker API with benign Date/RegExp/function/typed data and error cases."
+      }
+    },
+    {
+      "ghsa": "GHSA-qj8w-gfj5-8c6v",
+      "package": "serialize-javascript",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-qj8w-gfj5-8c6v",
+      "url": "https://github.com/advisories/GHSA-qj8w-gfj5-8c6v",
+      "summary": "Serialize JavaScript has CPU Exhaustion Denial of Service via crafted array-like objects",
+      "publishedAt": "2026-03-27T18:18:54Z",
+      "updatedAt": "2026-05-21T18:30:15Z",
+      "withdrawnAt": null,
+      "historical": false,
+      "freshAuditRecordCount": 0,
+      "officialAffectedRanges": [
+        ">= 5.0.0, < 7.0.5"
+      ],
+      "officialFixes": [
+        "7.0.5"
+      ],
+      "versionInstances": [
+        {
+          "version": "4.0.0",
+          "affected": false,
+          "parents": [
+            {
+              "parent": "rollup-plugin-terser@7.0.2(rollup@2.80.0)",
+              "name": "serialize-javascript",
+              "resolved": "4.0.0",
+              "kind": "dependencies",
+              "declared": "^4.0.0",
+              "manifest": "node_modules/.pnpm/rollup-plugin-terser@7.0.2_rollup@2.80.0/node_modules/rollup-plugin-terser/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [],
+      "reviewedCandidates": [
+        {
+          "version": "7.0.5",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "NOT_AFFECTED_CURRENT_CANDIDATE_GUARD",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Legacy rollup-plugin-terser serializes normalized bundler options for worker",
+        "condition": "Current 4.0.0 RCE advisory open. CPU DoS affects proposed 7.0.3, not current 4.0.0; function-body XSS affects 7.1.1, not 7.0.5. No visitor-controlled options input found.",
+        "gate": "Prefer remove chain by two parent overrides; fallback must test actual CommonJS serializer/worker API with benign Date/RegExp/function/typed data and error cases."
+      }
+    },
+    {
+      "ghsa": "GHSA-rgj7-g3m4-5g8c",
+      "package": "sharp",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+      "url": "https://github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+      "summary": "sharp: Vulnerabilities in libheif: GHSA-g89c-p67h-r497 and GHSA-2jg2-4ch7-h545",
+      "publishedAt": "2026-09-08T21:25:11Z",
+      "updatedAt": "2026-09-08T21:25:12Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        "< 0.35.4"
+      ],
+      "officialFixes": [
+        "0.35.4"
+      ],
+      "versionInstances": [
+        {
+          "version": "0.35.2",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "sharp",
+              "resolved": "0.35.2",
+              "kind": "dependencies",
+              "declared": "0.35.2",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "0.35.4",
+          "affected": false,
+          "parents": [
+            {
+              "parent": ".",
+              "name": "sharp",
+              "resolved": "0.35.4(@types/node@26.4.1)",
+              "declared": "^0.35.4",
+              "kind": "dependencies",
+              "manifest": "package.json"
+            },
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "sharp",
+              "resolved": "0.35.4(@types/node@26.4.1)",
+              "kind": "optionalDependencies",
+              "declared": "^0.35.4",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>sharp",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>sharp",
+        ".>@astrojs/cloudflare>wrangler>miniflare>sharp",
+        ".>wrangler>miniflare>sharp"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "0.35.5",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Direct and Astro 0.35.4 build image service; Miniflare 0.35.2 conditional tooling",
+        "condition": "libheif or librsvg-specific decode of hostile bytes; new SVG RCE requires specified glibc Linux/runtime conditions. Mac pass cannot establish Linux safety. VNDB download disabled. Raster extension filter is not byte validation.",
+        "gate": "All sharp copies plus native assets; Linux frozen install and image decode/size, no SVG exploit execution; identify linked/prebuilt librsvg version."
+      }
+    },
+    {
+      "ghsa": "GHSA-wq5f-xc86-pv6w",
+      "package": "sharp",
+      "severity": "high",
+      "source": "https://api.github.com/repos/lovell/sharp/security-advisories/GHSA-wq5f-xc86-pv6w",
+      "url": "https://github.com/lovell/sharp/security/advisories/GHSA-wq5f-xc86-pv6w",
+      "summary": "Vulnerability in librsvg dependency CVE-2026-96889",
+      "publishedAt": "2026-09-30T19:22:51Z",
+      "updatedAt": "2026-09-30T19:22:51Z",
+      "withdrawnAt": null,
+      "historical": false,
+      "freshAuditRecordCount": 0,
+      "officialAffectedRanges": [
+        "< 0.35.5"
+      ],
+      "officialFixes": [
+        ">= 0.35.5"
+      ],
+      "versionInstances": [
+        {
+          "version": "0.35.2",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "sharp",
+              "resolved": "0.35.2",
+              "kind": "dependencies",
+              "declared": "0.35.2",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "0.35.4",
+          "affected": true,
+          "parents": [
+            {
+              "parent": ".",
+              "name": "sharp",
+              "resolved": "0.35.4(@types/node@26.4.1)",
+              "declared": "^0.35.4",
+              "kind": "dependencies",
+              "manifest": "package.json"
+            },
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "sharp",
+              "resolved": "0.35.4(@types/node@26.4.1)",
+              "kind": "optionalDependencies",
+              "declared": "^0.35.4",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [],
+      "reviewedCandidates": [
+        {
+          "version": "0.35.5",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Direct and Astro 0.35.4 build image service; Miniflare 0.35.2 conditional tooling",
+        "condition": "libheif or librsvg-specific decode of hostile bytes; new SVG RCE requires specified glibc Linux/runtime conditions. Mac pass cannot establish Linux safety. VNDB download disabled. Raster extension filter is not byte validation.",
+        "gate": "All sharp copies plus native assets; Linux frozen install and image decode/size, no SVG exploit execution; identify linked/prebuilt librsvg version."
+      }
+    },
+    {
+      "ghsa": "GHSA-4vpr-x523-8j87",
+      "package": "svgo",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-4vpr-x523-8j87",
+      "url": "https://github.com/advisories/GHSA-4vpr-x523-8j87",
+      "summary": "SVGO: removeScripts incompletely sanitizes executable HTML in SVG foreignObject elements",
+      "publishedAt": "2026-09-08T21:20:05Z",
+      "updatedAt": "2026-09-08T21:20:09Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 1.0.0, < 2.8.4",
+        ">= 3.0.0, < 3.3.5",
+        ">= 4.0.0, < 4.1.0"
+      ],
+      "officialFixes": [
+        "2.8.4",
+        "3.3.5",
+        "4.1.0"
+      ],
+      "versionInstances": [
+        {
+          "version": "2.8.3",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "postcss-svgo@5.1.0(postcss@8.5.26)",
+              "name": "svgo",
+              "resolved": "2.8.3",
+              "kind": "dependencies",
+              "declared": "^2.7.0",
+              "manifest": "node_modules/.pnpm/postcss-svgo@5.1.0_postcss@8.5.26/node_modules/postcss-svgo/package.json"
+            }
+          ]
+        },
+        {
+          "version": "4.0.2",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "@iconify/tools@5.0.12",
+              "name": "svgo",
+              "resolved": "4.0.2",
+              "kind": "dependencies",
+              "declared": "^4.0.1",
+              "manifest": "node_modules/.pnpm/@iconify+tools@5.0.12/node_modules/@iconify/tools/package.json"
+            }
+          ]
+        },
+        {
+          "version": "4.1.0",
+          "affected": false,
+          "parents": [
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "svgo",
+              "resolved": "4.1.0",
+              "kind": "dependencies",
+              "declared": "^4.0.1",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>astro-icon>@iconify/tools>svgo",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-svgo>svgo",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-svgo>svgo"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "2.8.4",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "4.1.0",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Iconify SVG build tooling; v2 also under legacy microbundle",
+        "condition": "Malicious SVG plus reliance on removeScripts as sanitizer; no upload interface. SVGO is not the site security sanitizer.",
+        "gate": "Actual icon build, SVG attributes/rendering, dangerous-link regression using inert fixtures."
+      }
+    },
+    {
+      "ghsa": "GHSA-w27v-7q3p-w38r",
+      "package": "svgo",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-w27v-7q3p-w38r",
+      "url": "https://github.com/advisories/GHSA-w27v-7q3p-w38r",
+      "summary": "SVGO: removeScripts allows executable links through namespace and control-character bypasses",
+      "publishedAt": "2026-09-08T21:20:28Z",
+      "updatedAt": "2026-09-08T21:20:30Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 1.0.0, < 2.8.4",
+        ">= 3.0.0, < 3.3.5",
+        ">= 4.0.0, < 4.1.0"
+      ],
+      "officialFixes": [
+        "2.8.4",
+        "3.3.5",
+        "4.1.0"
+      ],
+      "versionInstances": [
+        {
+          "version": "2.8.3",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "postcss-svgo@5.1.0(postcss@8.5.26)",
+              "name": "svgo",
+              "resolved": "2.8.3",
+              "kind": "dependencies",
+              "declared": "^2.7.0",
+              "manifest": "node_modules/.pnpm/postcss-svgo@5.1.0_postcss@8.5.26/node_modules/postcss-svgo/package.json"
+            }
+          ]
+        },
+        {
+          "version": "4.0.2",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "@iconify/tools@5.0.12",
+              "name": "svgo",
+              "resolved": "4.0.2",
+              "kind": "dependencies",
+              "declared": "^4.0.1",
+              "manifest": "node_modules/.pnpm/@iconify+tools@5.0.12/node_modules/@iconify/tools/package.json"
+            }
+          ]
+        },
+        {
+          "version": "4.1.0",
+          "affected": false,
+          "parents": [
+            {
+              "parent": "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+              "name": "svgo",
+              "resolved": "4.1.0",
+              "kind": "dependencies",
+              "declared": "^4.0.1",
+              "manifest": "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/astro/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>astro-icon>@iconify/tools>svgo",
+        ".>@swup/astro>@swup/parallel-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-svgo>svgo",
+        ".>@swup/astro>@swup/route-name-plugin>@swup/plugin>microbundle>rollup-plugin-postcss>cssnano>cssnano-preset-default>postcss-svgo>svgo"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "2.8.4",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "4.1.0",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "Iconify SVG build tooling; v2 also under legacy microbundle",
+        "condition": "Malicious SVG plus reliance on removeScripts as sanitizer; no upload interface. SVGO is not the site security sanitizer.",
+        "gate": "Actual icon build, SVG attributes/rendering, dangerous-link regression using inert fixtures."
+      }
+    },
+    {
+      "ghsa": "GHSA-2gqq-gqf2-x968",
+      "package": "undici",
+      "severity": "low",
+      "source": "https://api.github.com/advisories/GHSA-2gqq-gqf2-x968",
+      "url": "https://github.com/advisories/GHSA-2gqq-gqf2-x968",
+      "summary": "undici vulnerable to response truncation via oversized chunked responses in the dump interceptor",
+      "publishedAt": "2026-09-29T18:18:51Z",
+      "updatedAt": "2026-09-29T18:18:52Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 7.1.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "7.29.1",
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+        ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+        ".>wrangler>miniflare>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    },
+    {
+      "ghsa": "GHSA-2jfj-6hjv-fm6j",
+      "package": "undici",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+      "url": "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+      "summary": "undici vulnerable to cross-user cookie disclosure via Set-Cookie caching in shared caches",
+      "publishedAt": "2026-09-29T18:19:58Z",
+      "updatedAt": "2026-09-29T18:19:59Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 7.0.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "7.29.1",
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+        ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+        ".>wrangler>miniflare>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    },
+    {
+      "ghsa": "GHSA-3wwx-pv8p-q78v",
+      "package": "undici",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-3wwx-pv8p-q78v",
+      "url": "https://github.com/advisories/GHSA-3wwx-pv8p-q78v",
+      "summary": "undici vulnerable to Denial of Service via unhandled error in WebSocket permessage-deflate decompression",
+      "publishedAt": "2026-09-28T21:42:37Z",
+      "updatedAt": "2026-09-28T21:42:38Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 6.25.0, < 6.28.1",
+        ">= 7.28.0, < 7.29.1",
+        ">= 8.1.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "6.28.1",
+        "7.29.1",
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+        ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+        ".>wrangler>miniflare>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    },
+    {
+      "ghsa": "GHSA-3xpg-4rpp-hhhm",
+      "package": "undici",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+      "url": "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+      "summary": "undici vulnerable to Denial of Service via unbounded decompression of compressed responses",
+      "publishedAt": "2026-09-29T18:20:37Z",
+      "updatedAt": "2026-09-29T18:20:38Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 7.15.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "7.29.1",
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+        ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+        ".>wrangler>miniflare>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    },
+    {
+      "ghsa": "GHSA-8436-99hf-9mmv",
+      "package": "undici",
+      "severity": "low",
+      "source": "https://api.github.com/advisories/GHSA-8436-99hf-9mmv",
+      "url": "https://github.com/advisories/GHSA-8436-99hf-9mmv",
+      "summary": "undici vulnerable to caching and replay of unsafe HTTP method responses",
+      "publishedAt": "2026-09-29T18:16:28Z",
+      "updatedAt": "2026-09-29T18:16:29Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 7.0.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "7.29.1",
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+        ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+        ".>wrangler>miniflare>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    },
+    {
+      "ghsa": "GHSA-pmjh-fq2x-6v4x",
+      "package": "undici",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+      "url": "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+      "summary": "undici vulnerable to Denial of Service via orphaned RetryHandler response body",
+      "publishedAt": "2026-09-29T18:22:34Z",
+      "updatedAt": "2026-09-29T18:22:35Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 7.11.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "7.29.1",
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+        ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+        ".>wrangler>miniflare>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    },
+    {
+      "ghsa": "GHSA-r53p-7pc4-xj5r",
+      "package": "undici",
+      "severity": "low",
+      "source": "https://api.github.com/advisories/GHSA-r53p-7pc4-xj5r",
+      "url": "https://github.com/advisories/GHSA-r53p-7pc4-xj5r",
+      "summary": "undici vulnerable to downstream response splitting via retry interceptor",
+      "publishedAt": "2026-09-29T18:22:07Z",
+      "updatedAt": "2026-09-29T18:22:08Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        "< 6.28.1",
+        ">= 7.0.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "6.28.1",
+        "7.29.1",
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+        ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+        ".>wrangler>miniflare>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    },
+    {
+      "ghsa": "GHSA-rfgv-xxqx-mfg5",
+      "package": "undici",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+      "url": "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+      "summary": "undici vulnerable to Denial of Service via unrequested WebSocket subprotocol",
+      "publishedAt": "2026-09-29T18:21:33Z",
+      "updatedAt": "2026-09-29T18:21:41Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 6.7.0, < 6.28.1",
+        ">= 7.0.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "6.28.1",
+        "7.29.1",
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+        ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+        ".>wrangler>miniflare>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    },
+    {
+      "ghsa": "GHSA-rx4f-c7p8-82vq",
+      "package": "undici",
+      "severity": "medium",
+      "source": "https://api.github.com/advisories/GHSA-rx4f-c7p8-82vq",
+      "url": "https://github.com/advisories/GHSA-rx4f-c7p8-82vq",
+      "summary": "undici vulnerable to Denial of Service via WebSocketStream unclean close",
+      "publishedAt": "2026-09-29T18:10:32Z",
+      "updatedAt": "2026-09-29T18:10:33Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 7.0.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "7.29.1",
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+        ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+        ".>wrangler>miniflare>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    },
+    {
+      "ghsa": "GHSA-vp8m-p9jh-q5pm",
+      "package": "undici",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-vp8m-p9jh-q5pm",
+      "url": "https://github.com/advisories/GHSA-vp8m-p9jh-q5pm",
+      "summary": "undici vulnerable to cross-origin cache poisoning via missing origin isolation in interceptors",
+      "publishedAt": "2026-09-29T18:15:13Z",
+      "updatedAt": "2026-09-29T18:15:14Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 1,
+      "officialAffectedRanges": [
+        ">= 8.10.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": false,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    },
+    {
+      "ghsa": "GHSA-w293-vg96-wgc3",
+      "package": "undici",
+      "severity": "high",
+      "source": "https://api.github.com/advisories/GHSA-w293-vg96-wgc3",
+      "url": "https://github.com/advisories/GHSA-w293-vg96-wgc3",
+      "summary": "undici vulnerable to TLS certificate validation bypass via dropped connect options in BalancedPool",
+      "publishedAt": "2026-09-29T18:17:15Z",
+      "updatedAt": "2026-09-29T18:17:16Z",
+      "withdrawnAt": null,
+      "historical": true,
+      "freshAuditRecordCount": 2,
+      "officialAffectedRanges": [
+        ">= 7.24.1, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "officialFixes": [
+        "7.29.1",
+        "8.10.2"
+      ],
+      "versionInstances": [
+        {
+          "version": "7.29.0",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "miniflare@5.20260828.0-alpha",
+              "name": "undici",
+              "resolved": "7.29.0",
+              "kind": "dependencies",
+              "declared": "7.29.0",
+              "manifest": "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/package.json"
+            }
+          ]
+        },
+        {
+          "version": "8.10.1",
+          "affected": true,
+          "parents": [
+            {
+              "parent": "unifont@0.7.5",
+              "name": "undici",
+              "resolved": "8.10.1",
+              "kind": "dependencies",
+              "declared": "^8.0.0",
+              "manifest": "node_modules/.pnpm/unifont@0.7.5/node_modules/unifont/package.json"
+            }
+          ]
+        }
+      ],
+      "freshAuditPaths": [
+        ".>@astrojs/cloudflare>astro>unifont>undici",
+        ".>@astrojs/mdx>astro>unifont>undici",
+        ".>@astrojs/svelte>astro>unifont>undici",
+        ".>astro>unifont>undici",
+        ".>astro-expressive-code>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>undici",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>miniflare>undici",
+        ".>@astrojs/cloudflare>@cloudflare/vite-plugin>wrangler>miniflare>undici",
+        ".>@astrojs/cloudflare>wrangler>miniflare>undici",
+        ".>wrangler>miniflare>undici"
+      ],
+      "reviewedCandidates": [
+        {
+          "version": "7.29.1",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        },
+        {
+          "version": "8.10.2",
+          "inThisAffectedRange": false,
+          "compatibility": "UNVERIFIED"
+        }
+      ],
+      "status": "OPEN_AFFECTED_VERSION",
+      "exploitability": "NOT_DEMONSTRATED; static source assessment only",
+      "exposure": {
+        "boundary": "8.x unifont network build requests; 7.x conditional Cloudflare/Miniflare tooling",
+        "condition": "Each summary identifies its specific interceptor/WebSocket/BalancedPool prerequisite. No project shared visitor cache, Retry/dump interceptor, BalancedPool or WebSocket service found; decompression may affect remote build responses.",
+        "gate": "Controlled font response/error/timeout fixture, successful uncached font build, conditional Miniflare API compatibility."
+      }
+    }
+  ]
+}

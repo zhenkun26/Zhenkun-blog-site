@@ -1,0 +1,11 @@
+{
+  "firstStage": "Automatic permission review timed out before execution; not treated as unsafe rejection.",
+  "transientReadFailure": "exec-server transport disconnected",
+  "recoveryVerification": {
+    "head": "90704e36768c2dc64ea80b30a364dcd46e2752f2",
+    "cachedDiffEmpty": true,
+    "stageLogAbsent": true,
+    "stageExitAbsent": true
+  },
+  "retry": "One permitted retry after read-only HEAD/index/status verification; stage and check completed. No unknown commit replayed."
+}

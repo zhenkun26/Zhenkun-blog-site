@@ -1,0 +1,29 @@
+{
+  "approval": "AstraHIGH decision forwarded by authorized coordinator",
+  "sourceThread": "01a0f183-dacb-71a2-a112-cf72600050d6",
+  "selector": "unifont@0.7.5>undici",
+  "originalRange": "^8.0.0",
+  "target": "8.10.2",
+  "naturalRangeMaximum": "8.11.2",
+  "adopted": "2026-10-03",
+  "reviewBy": "2026-10-17",
+  "responsible": "remediation coordinator",
+  "rationale": "Keep approved security minimum; avoid extra8.11behavior scope. Fresh knownofficialadvisories have8.10.2repair ranges.",
+  "earlyReview": [
+    "newrelevantadvisory",
+    "parentversion/rangechange",
+    "actualproxydefect",
+    "needforNO_PROXYwildcardbehavior"
+  ],
+  "removeCondition": "Approved parent/range/graph makes guard unnecessary or separately reviewed later version; verify graph+actualunifontbranches+fullmatrix before removal. Date alone does not remove or upgrade.",
+  "covered": [
+    "actualcreateUnifontnopxy/proxy/exactNO_PROXY/customdispatcher",
+    "Nodefetchredirect/gzip/404/500retry/preabort/active-download-abort",
+    "stocknpmprovider+actual52928byteOTFdownload"
+  ],
+  "limits": [
+    "HTTPloopbackfixtureonly;noHTTPS/TLSproxytransportclaim",
+    "NO_PROXYwildcardpatternsnotvalidated;8.11behaviorfixeswouldneedseparatecandidate",
+    "noMiniflareundici7change"
+  ]
+}

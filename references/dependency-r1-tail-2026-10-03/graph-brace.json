@@ -1,0 +1,23 @@
+{
+  "stage": "brace",
+  "added": [
+    "brace-expansion@2.1.7",
+    "brace-expansion@5.0.12"
+  ],
+  "removed": [
+    "brace-expansion@2.1.4",
+    "brace-expansion@5.0.9"
+  ],
+  "changed": [],
+  "edges": [
+    "minimatch@10.2.6",
+    "minimatch@9.0.9"
+  ],
+  "counts": [
+    922,
+    922
+  ],
+  "removedProvenInOldTargetClosure": true,
+  "noOtherSnapshotOrSettingsChanges": true,
+  "result": "PASS_SCOPE"
+}

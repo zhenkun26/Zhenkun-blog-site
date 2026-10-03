@@ -1,0 +1,82 @@
+{
+  "count": 922,
+  "targetSets": {
+    "svgo": [
+      "4.1.0"
+    ],
+    "undici": [
+      "7.29.0",
+      "8.10.2"
+    ],
+    "brace-expansion": [
+      "2.1.7",
+      "5.0.12"
+    ],
+    "fast-uri": [
+      "3.1.8"
+    ],
+    "devalue": [
+      "5.9.3"
+    ],
+    "js-yaml": [
+      "3.15.2",
+      "4.3.2"
+    ],
+    "sharp": [
+      "0.35.2",
+      "0.35.4"
+    ],
+    "@swup/plugin": [
+      "4.0.0"
+    ]
+  },
+  "targetParentSnapshots": {
+    "@iconify/tools@5.0.12": {
+      "dependencies": {
+        "@cyberalien/svg-utils": "1.2.19",
+        "@iconify/types": "2.0.0",
+        "@iconify/utils": "3.1.4",
+        "fflate": "0.8.3",
+        "modern-tar": "0.7.7",
+        "pathe": "2.0.3",
+        "svgo": "4.1.0"
+      }
+    },
+    "unifont@0.7.5": {
+      "dependencies": {
+        "css-tree": "3.2.1",
+        "ohash": "2.0.12",
+        "undici": "8.10.2"
+      }
+    },
+    "minimatch@9.0.9": {
+      "dependencies": {
+        "brace-expansion": "2.1.7"
+      }
+    },
+    "minimatch@10.2.6": {
+      "dependencies": {
+        "brace-expansion": "5.0.12"
+      }
+    },
+    "miniflare@5.20260828.0-alpha": {
+      "dependencies": {
+        "@cspotcode/source-map-support": "0.8.1",
+        "sharp": "0.35.2",
+        "undici": "7.29.0",
+        "workerd": "1.20260828.1",
+        "ws": "8.21.0",
+        "youch": "4.1.0-beta.10"
+      },
+      "transitivePeerDependencies": [
+        "bufferutil",
+        "utf-8-validate"
+      ]
+    }
+  },
+  "hashes": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-workspace.yaml": "9be1da702c3a02c2f6d2263dd4c31d56eb4bb1827fe2e210a8340a4c99f6d5d2",
+    "pnpm-lock.yaml": "57ceaf09fe816440a0abb8b36e73e37e2460b497efd9c189d80c28c6ea70cfda"
+  }
+}

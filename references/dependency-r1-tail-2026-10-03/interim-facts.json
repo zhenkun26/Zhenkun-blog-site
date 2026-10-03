@@ -1,0 +1,14 @@
+{
+  "completedSubitems": [
+    "SVGO4.0.2\u21924.1.0",
+    "brace2.1.4\u21922.1.7",
+    "brace5.0.9\u21925.0.12"
+  ],
+  "undiciPending": "AstraHIGH coordinator decision for exact unifont parent override8.10.2; natural range maximum8.11.2",
+  "undiciSourceConfirmed": "unifont calls Node global fetch; package undici import only proxy dispatcher initialization, guarded by existing proxy env. MockAgent-probed font responses do not establish real proxy transport.",
+  "diagnostics": [
+    "Initial brace5 child-major concern rejected after actuallock/package inspection:oldandnewalreadybalanced-match4.0.4/^4.0.2.",
+    "SVGO does not export package.json metadata; target test uses actual publicVERSION. Initial failingprobe retained, actual SVG/APIbehavior passed."
+  ],
+  "finalFullMatrix": "NOT_RUN yet while waiting final undici decision; run once against final combined bytes."
+}

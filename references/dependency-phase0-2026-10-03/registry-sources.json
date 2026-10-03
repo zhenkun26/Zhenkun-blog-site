@@ -1,0 +1,1632 @@
+[
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/devalue/5.9.3",
+    "capturedAt": "2026-10-03T10:05:57.781039+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "devalue",
+      "version": "5.9.3",
+      "scripts": {
+        "test": "uvu",
+        "bench": "node --allow-natives-syntax ./benchmarking/run.js",
+        "build": "dts-buddy",
+        "bench:compare": "node --allow-natives-syntax ./benchmarking/compare/index.js",
+        "changeset:publish": "changeset publish",
+        "changeset:version": "changeset version"
+      },
+      "exports": {
+        ".": {
+          "types": "./types/index.d.ts",
+          "import": "./index.js",
+          "default": "./index.js"
+        }
+      },
+      "type": "module",
+      "dist": {
+        "shasum": "f4ea8226c0860c5e2a5ea63985afff70e086721d",
+        "tarball": "https://registry.npmjs.org/devalue/-/devalue-5.9.3.tgz",
+        "fileCount": 16,
+        "integrity": "sha512-xRumYOCUZN/EesqHEU3WOXanOZNvfZFZ/o1AHVFDX1yI0UAkZkOgDXt341CzKoBVIkgQba55/+DjGBKrIoKcHw==",
+        "signatures": [
+          {
+            "sig": "MEQCIGo6TlLFqc+N2jVEPYt1zzFfTsgzNyKhCS83hgU8E3imAiBdQKWG9sHRwRoDezNYeDT2AK+jw8T4HVPzXY230OAutw==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIG5QIXQN+J7sTzTKBjMiOYykjFWBwG4g2wcryql55cz2AiEAlWtZPunhSNoeCD8fiu7bt3Q7QTBKiaF3VLkdIhj2t90=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/devalue@5.9.3",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 110348
+      },
+      "repository": {
+        "url": "git+https://github.com/sveltejs/devalue.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/js-yaml/3.15.2",
+    "capturedAt": "2026-10-03T10:05:57.843391+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "js-yaml",
+      "version": "3.15.2",
+      "dependencies": {
+        "esprima": "^4.0.0",
+        "argparse": "^1.0.7"
+      },
+      "scripts": {
+        "test": "make test"
+      },
+      "dist": {
+        "shasum": "3f83823ac6be17f570f23b2ecdef3777ff5ea364",
+        "tarball": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.15.2.tgz",
+        "fileCount": 36,
+        "integrity": "sha512-6EuL879VkRA+1Cz578mKMiKvjPNEuk6+r1JaFzoSWejZmtf7xWbIyw1e3KkxlkzTIt9Taw6JBhEppG7utc1P+w==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDil985Hb9DcS9hatZSBGFuQT8gI5N6C/CzOrxapTalqwIhALGpl/PTwH5jBdqxWOR6Bqet2uD9c9Q6k2EdUXAeMY0k",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEQCIBdUQpKVC7uxNbCfMYpvwn76Wm+eTWwIVBdTiInHiLTLAiAQCivoTEWTXGNNVtAKcZyukOmNwi9FrD6jJ8FnKfzKBA==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 277664
+      },
+      "repository": {
+        "url": "git+https://github.com/nodeca/js-yaml.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/svgo/2.8.4",
+    "capturedAt": "2026-10-03T10:05:57.928623+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "svgo",
+      "version": "2.8.4",
+      "engines": {
+        "node": ">=10.13.0"
+      },
+      "dependencies": {
+        "sax": "^1.5.0",
+        "csso": "^4.2.0",
+        "stable": "^0.1.8",
+        "css-tree": "^1.1.3",
+        "commander": "^7.2.0",
+        "css-select": "^4.1.3",
+        "picocolors": "^1.0.0"
+      },
+      "scripts": {
+        "fix": "eslint --ignore-path .gitignore --fix . && prettier --write \"**/*.js\" --ignore-path .gitignore",
+        "lint": "eslint --ignore-path .gitignore . && prettier --check \"**/*.js\" --ignore-path .gitignore",
+        "test": "NODE_OPTIONS=--experimental-vm-modules jest --maxWorkers=4 --coverage",
+        "typecheck": "tsc",
+        "test-browser": "rollup -c && node ./test/browser.js",
+        "prepublishOnly": "rm -rf dist && rollup -c",
+        "test-regression": "node ./test/regression-extract.js && NO_DIFF=1 node ./test/regression.js"
+      },
+      "main": "./lib/svgo-node.js",
+      "dist": {
+        "shasum": "f159feb39b061f0e5a5e670bee3af044049bfbc1",
+        "tarball": "https://registry.npmjs.org/svgo/-/svgo-2.8.4.tgz",
+        "fileCount": 80,
+        "integrity": "sha512-2GJ4h3rl13qYTdwllaK6QlL8tG+UrM8626V2Ylcd/yBUv2Y/EwLsYisVV6UDCRmlk+C74G8nMpxJCk0RWPdDCw==",
+        "signatures": [
+          {
+            "sig": "MEUCID+/u50318kD2yIzwurCXudGDBYbB+vO5CSA5hBRh1sDAiEA7eb3Wly7asFfhwrNvMzUHfD+t3aji/0TRyxjEHXd77A=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQCqZNT5XNRMqvpAbHMymiTmVD2JjyL+BKDNZxdHC3fBggIgcisBJ6KgmZ735Lxk6NrNmnwgA7WOH6je2CmbBXLW00Q=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/svgo@2.8.4",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 985791
+      },
+      "repository": {
+        "url": "git://github.com/svg/svgo.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/svgo/4.1.0",
+    "capturedAt": "2026-10-03T10:05:58.588664+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "svgo",
+      "version": "4.1.0",
+      "engines": {
+        "node": ">=16"
+      },
+      "dependencies": {
+        "sax": "1.6.1",
+        "csso": "^5.0.5",
+        "css-tree": "^3.0.1",
+        "css-what": "^7.0.0",
+        "commander": "^11.1.0",
+        "css-select": "^6.0.0",
+        "picocolors": "^1.1.1"
+      },
+      "scripts": {
+        "qa": "pnpm lint && pnpm typecheck && pnpm test && pnpm test:bundles && pnpm test:regression",
+        "lint": "eslint . && prettier --check .",
+        "test": "vitest run",
+        "build": "node scripts/sync-version.js && pnpm build:bundles && pnpm build:types",
+        "clean": "pnpm clean:build && pnpm clean:types",
+        "lint:fix": "eslint --fix . && prettier --write .",
+        "typecheck": "tsc",
+        "spellcheck": "cspell -u .",
+        "build:types": "pnpm clean:types && tsc -p tsconfig.build.json",
+        "clean:build": "rimraf dist",
+        "clean:types": "rimraf types",
+        "test:bundles": "pnpm build:bundles && node ./test/svgo.cjs && node ./test/browser.js",
+        "build:bundles": "pnpm clean:build && rollup -c",
+        "test:regression": "node ./test/regression/extract.js && node ./test/regression/optimize.js && node ./test/regression/compare.js --no-diff"
+      },
+      "exports": {
+        ".": {
+          "types": "./types/lib/svgo-node.d.ts",
+          "import": "./lib/svgo-node.js",
+          "require": "./dist/svgo-node.cjs"
+        },
+        "./browser": {
+          "types": "./types/lib/svgo.d.ts",
+          "import": "./dist/svgo.browser.js"
+        }
+      },
+      "type": "module",
+      "dist": {
+        "shasum": "c977eb69640ef232a5e8236a5a327ed8c9d52853",
+        "tarball": "https://registry.npmjs.org/svgo/-/svgo-4.1.0.tgz",
+        "fileCount": 154,
+        "integrity": "sha512-bkxnTg1kSU0guhIBmibA6UUhrQmPVA1XsQLN+ylCd+UWzbnLkySOcXpyk1mrl05f+pcaCx2eHb+sp6BgMZWX+Q==",
+        "signatures": [
+          {
+            "sig": "MEUCIFQlgviqHYS7AOyKGUa4sHP1bnh/UHusVx+y2kax6WziAiEA97NxVFNFg1dES8kYnNbgkLa9cQLsi9mCWDlqOjdaE+g=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQDElfhcfSdt+TJdNZjnMz6qdSf0rjAmSCkN5Hvamn8D3gIhAP36WIKRCD274DtYNWUj7UcxPWUSDN+syztbJMgiDmS+",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/svgo@4.1.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 1494938
+      },
+      "repository": {
+        "url": "git://github.com/svg/svgo.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/undici/7.29.1",
+    "capturedAt": "2026-10-03T10:05:59.952002+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "undici",
+      "version": "7.29.1",
+      "engines": {
+        "node": ">=20.18.1"
+      },
+      "scripts": {
+        "lint": "eslint --cache",
+        "test": "npm run test:javascript && cross-env NODE_V8_COVERAGE= npm run test:typescript",
+        "bench": "echo \"Error: Benchmarks have been moved to '/benchmarks'\" && exit 1",
+        "prepare": "husky && node ./scripts/platform-shell.js",
+        "test:h2": "npm run test:h2:core && npm run test:h2:fetch",
+        "coverage": "npm run coverage:clean && cross-env NODE_V8_COVERAGE=./coverage/tmp npm run test:javascript && npm run coverage:report",
+        "lint:fix": "eslint --fix --cache",
+        "test:tdd": "borp --timeout 180000 --expose-gc -p \"test/*.js\"",
+        "test:wpt": "npm run test:wpt:setup && node test/web-platform-tests/wpt-runner.mjs run /fetch /mimesniff /xhr /websockets /serviceWorkers /eventsource",
+        "test:jest": "cross-env NODE_V8_COVERAGE= jest",
+        "test:unit": "borp --timeout 180000 --expose-gc -p \"test/*.js\"",
+        "build:node": "esbuild index-fetch.js --bundle --platform=node --outfile=undici-fetch.js --define:esbuildDetection=1 --keep-names && node scripts/strip-comments.js",
+        "build:wasm": "node build/wasm.js --docker",
+        "test:cache": "borp --timeout 180000 -p \"test/cache/*.js\"",
+        "test:fetch": "npm run build:node && borp --timeout 180000 --expose-gc --concurrency 1 -p \"test/fetch/*.js\" && npm run test:webidl && npm run test:busboy",
+        "test:infra": "borp --timeout 180000 -p \"test/infra/*.js\"",
+        "coverage:ci": "npm run coverage:clean && cross-env NODE_V8_COVERAGE=./coverage/tmp npm run test:javascript && npm run coverage:report:ci",
+        "test:busboy": "borp --timeout 180000 -p \"test/busboy/*.js\"",
+        "test:webidl": "borp --timeout 180000 -p \"test/webidl/*.js\"",
+        "generate-pem": "node scripts/generate-pem.js",
+        "test:cookies": "borp --timeout 180000 -p \"test/cookie/*.js\"",
+        "test:fuzzing": "node test/fuzzing/fuzzing.test.js",
+        "test:h2:core": "borp --timeout 180000 -p \"test/+(http2|h2)*.js\"",
+        "serve:website": "echo \"Error: Documentation has been moved to '/docs'\" && exit 1",
+        "test:h2:fetch": "npm run build:node && borp --timeout 180000 -p \"test/fetch/http2*.js\"",
+        "coverage:clean": "node ./scripts/clean-coverage.js",
+        "test:node-test": "borp --timeout 180000 -p \"test/node-test/**/*.js\"",
+        "test:websocket": "borp --timeout 180000 -p \"test/websocket/**/*.js\"",
+        "test:wpt:setup": "node test/web-platform-tests/wpt-runner.mjs setup",
+        "coverage:report": "cross-env NODE_V8_COVERAGE= c8 report",
+        "test:javascript": "npm run test:javascript:no-jest && npm run test:jest",
+        "test:node-fetch": "borp --timeout 180000 -p \"test/node-fetch/**/*.js\"",
+        "test:typescript": "tsd && tsc test/imports/undici-import.ts --typeRoots ./types --noEmit && tsc ./types/*.d.ts --noEmit --typeRoots ./types",
+        "test:cache-tests": "node test/cache-interceptor/cache-tests.mjs --ci",
+        "test:eventsource": "npm run build:node && borp --timeout 180000 --expose-gc -p \"test/eventsource/*.js\"",
+        "test:interceptors": "borp --timeout 180000 -p \"test/interceptors/*.js\"",
+        "coverage:report:ci": "c8 report",
+        "test:tdd:node-test": "borp --timeout 180000 -p \"test/node-test/**/*.js\" -w",
+        "test:cache-interceptor": "borp --timeout 180000 -p \"test/cache-interceptor/*.js\"",
+        "test:javascript:no-jest": "npm run generate-pem && npm run test:unit && npm run test:fetch && npm run test:node-fetch && npm run test:infra && npm run test:cache && npm run test:cache-interceptor && npm run test:interceptors && npm run test:cookies && npm run test:eventsource && npm run test:subresource-integrity && npm run test:wpt && npm run test:websocket && npm run test:node-test && npm run test:cache-tests",
+        "test:websocket:autobahn": "node test/autobahn/client.js",
+        "test:subresource-integrity": "borp --timeout 180000 -p \"test/subresource-integrity/*.js\"",
+        "test:javascript:without-intl": "npm run test:javascript:no-jest",
+        "test:cache-interceptor:sqlite": "cross-env NODE_OPTIONS=--experimental-sqlite npm run test:cache-interceptor",
+        "test:websocket:autobahn:report": "node test/autobahn/report.js"
+      },
+      "main": "index.js",
+      "dist": {
+        "shasum": "7741c6fc8b3e1a48e30323833642bfbe841443ad",
+        "tarball": "https://registry.npmjs.org/undici/-/undici-7.29.1.tgz",
+        "fileCount": 210,
+        "integrity": "sha512-RYONW2MeafgYlkVOKYKkA/Ag7BmXqgIWCa8t1m0JcxrQg9pI9lEqRhAOruOBCbAohOa/gkCF+iPi9hrgvTzu6Q==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCy052RGajsx0EljfIkR0B44dCsfNwl2bmrfTh6hxgB8wIgT2PnaAZMNyN0WsrwxPKYen9FH9mUzeknzmWdUcXxp7c=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQD522krkHNbfQYvggXRAW9kapfJCzDabSnYHWvzvLs2mQIgfxy3h+zhouvxyueXd/M+G2/CayS49xtqVtnM3Z6vkAM=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/undici@7.29.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 1652058
+      },
+      "repository": {
+        "url": "git+https://github.com/nodejs/undici.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/undici/8.10.2",
+    "capturedAt": "2026-10-03T10:06:00.045354+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "undici",
+      "version": "8.10.2",
+      "engines": {
+        "node": ">=22.19.0"
+      },
+      "scripts": {
+        "lint": "eslint --cache",
+        "test": "npm run test:javascript && cross-env NODE_V8_COVERAGE= npm run test:typescript",
+        "bench": "echo \"Error: Benchmarks have been moved to '/benchmarks'\" && exit 1",
+        "prepare": "husky && node ./scripts/platform-shell.js",
+        "test:h2": "npm run test:h2:core && npm run test:h2:fetch",
+        "coverage": "npm run coverage:clean && cross-env NODE_V8_COVERAGE=./coverage/tmp npm run test:javascript && npm run coverage:report",
+        "lint:fix": "eslint --fix --cache",
+        "test:tdd": "borp --timeout 180000 --expose-gc -p \"test/*.js\"",
+        "test:wpt": "npm run test:wpt:setup && node test/web-platform-tests/wpt-runner.mjs run /fetch /mimesniff /xhr /websockets /eventsource",
+        "test:jest": "cross-env NODE_V8_COVERAGE= jest",
+        "test:unit": "borp --timeout 180000 --expose-gc -p \"test/*.js\"",
+        "build:node": "esbuild index-fetch.js --bundle --platform=node --outfile=undici-fetch.js --define:esbuildDetection=1 --keep-names && node scripts/strip-comments.js",
+        "build:wasm": "node build/wasm.js --docker",
+        "test:cache": "borp --timeout 180000 -p \"test/cache/*.js\"",
+        "test:fetch": "npm run build:node && borp --timeout 180000 --expose-gc --concurrency 1 -p \"test/fetch/*.js\" && npm run test:webidl && npm run test:busboy",
+        "test:infra": "borp --timeout 180000 -p \"test/infra/*.js\"",
+        "coverage:ci": "npm run coverage:clean && cross-env NODE_V8_COVERAGE=./coverage/tmp npm run test:javascript && npm run coverage:report:ci",
+        "test:busboy": "borp --timeout 180000 -p \"test/busboy/*.js\"",
+        "test:webidl": "borp --timeout 180000 -p \"test/webidl/*.js\"",
+        "generate-pem": "node scripts/generate-pem.js",
+        "test:cookies": "borp --timeout 180000 -p \"test/cookie/*.js\"",
+        "test:fuzzing": "node test/fuzzing/fuzzing.test.js",
+        "test:h2:core": "borp --timeout 180000 -p \"test/+(http2|h2)*.js\"",
+        "serve:website": "echo \"Error: Documentation has been moved to '/docs'\" && exit 1",
+        "test:h2:fetch": "npm run build:node && borp --timeout 180000 -p \"test/fetch/http2*.js\"",
+        "coverage:clean": "node ./scripts/clean-coverage.js",
+        "test:node-test": "borp --timeout 180000 -p \"test/node-test/**/*.js\"",
+        "test:websocket": "borp --timeout 180000 -p \"test/websocket/**/*.js\"",
+        "test:wpt:setup": "node test/web-platform-tests/wpt-runner.mjs setup",
+        "coverage:report": "cross-env NODE_V8_COVERAGE= c8 report",
+        "test:javascript": "npm run test:javascript:no-jest && npm run test:jest",
+        "test:node-fetch": "borp --timeout 180000 -p \"test/node-fetch/**/*.js\"",
+        "test:typescript": "tsd && tsc test/imports/undici-import.ts --typeRoots ./types --noEmit && tsc ./types/*.d.ts --noEmit --typeRoots ./types",
+        "test:cache-tests": "node test/cache-interceptor/cache-tests.mjs --ci",
+        "test:eventsource": "npm run build:node && borp --timeout 180000 --expose-gc -p \"test/eventsource/*.js\"",
+        "test:interceptors": "borp --timeout 180000 -p \"test/interceptors/*.js\"",
+        "coverage:report:ci": "c8 report",
+        "test:tdd:node-test": "borp --timeout 180000 -p \"test/node-test/**/*.js\" -w",
+        "test:cache-interceptor": "borp --timeout 180000 -p \"test/cache-interceptor/*.js\"",
+        "test:javascript:no-jest": "npm run generate-pem && npm run test:unit && npm run test:fetch && npm run test:node-fetch && npm run test:infra && npm run test:cache && npm run test:cache-interceptor && npm run test:interceptors && npm run test:cookies && npm run test:eventsource && npm run test:subresource-integrity && npm run test:wpt && npm run test:websocket && npm run test:node-test && npm run test:cache-tests",
+        "test:websocket:autobahn": "node test/autobahn/client.js",
+        "test:subresource-integrity": "borp --timeout 180000 -p \"test/subresource-integrity/*.js\"",
+        "test:javascript:without-intl": "npm run test:javascript:no-jest",
+        "test:cache-interceptor:sqlite": "cross-env NODE_OPTIONS=--experimental-sqlite npm run test:cache-interceptor",
+        "test:websocket:autobahn:report": "node test/autobahn/report.js"
+      },
+      "main": "index.js",
+      "dist": {
+        "shasum": "960bcb0b43c267f86910ea7ca408ada843a44bc7",
+        "tarball": "https://registry.npmjs.org/undici/-/undici-8.10.2.tgz",
+        "fileCount": 214,
+        "integrity": "sha512-/y4/bH9YNU5hi9NIrpOuvGXFcxrj3CMrV+/AYpowAYTpHn8gX/XPFjNy766FPoYY0miQhdW977JFWKGNhBdwyQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIQD1PxvKiEOkz6cbhJxkk2IRzAMUq3SkfAtvfKXsuIPwUwIgQWwAmbeB+iYSXGQzsi2EmkZF0BImJ2NpmKyopb3sTC0=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEQCIEah70AYQIk+wMhMDfsxPPMZO4KzFf8wlEWdmplItSOvAiArmg/fDWIGFvegas+ArMMRLv2XGralPhT/w5QPABDJ7Q==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/undici@8.10.2",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 1904976
+      },
+      "repository": {
+        "url": "git+https://github.com/nodejs/undici.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/sharp/0.35.5",
+    "capturedAt": "2026-10-03T10:06:00.137310+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "sharp",
+      "version": "0.35.5",
+      "engines": {
+        "node": ">=20.9.0"
+      },
+      "dependencies": {
+        "semver": "^7.8.5",
+        "@img/colour": "^1.1.0",
+        "detect-libc": "^2.1.2"
+      },
+      "optionalDependencies": {
+        "@img/sharp-linux-arm": "0.35.5",
+        "@img/sharp-linux-x64": "0.35.5",
+        "@img/sharp-win32-x64": "0.35.5",
+        "@img/sharp-darwin-x64": "0.35.5",
+        "@img/sharp-win32-ia32": "0.35.5",
+        "@img/sharp-linux-arm64": "0.35.5",
+        "@img/sharp-linux-ppc64": "0.35.5",
+        "@img/sharp-linux-s390x": "0.35.5",
+        "@img/sharp-win32-arm64": "0.35.5",
+        "@img/sharp-darwin-arm64": "0.35.5",
+        "@img/sharp-linux-riscv64": "0.35.5",
+        "@img/sharp-linuxmusl-x64": "0.35.5",
+        "@img/sharp-freebsd-wasm32": "0.35.5",
+        "@img/sharp-linuxmusl-arm64": "0.35.5",
+        "@img/sharp-libvips-linux-arm": "1.3.4",
+        "@img/sharp-libvips-linux-x64": "1.3.4",
+        "@img/sharp-libvips-darwin-x64": "1.3.4",
+        "@img/sharp-libvips-linux-arm64": "1.3.4",
+        "@img/sharp-libvips-linux-ppc64": "1.3.4",
+        "@img/sharp-libvips-linux-s390x": "1.3.4",
+        "@img/sharp-libvips-darwin-arm64": "1.3.4",
+        "@img/sharp-webcontainers-wasm32": "0.35.5",
+        "@img/sharp-libvips-linux-riscv64": "1.3.4",
+        "@img/sharp-libvips-linuxmusl-x64": "1.3.4",
+        "@img/sharp-libvips-linuxmusl-arm64": "1.3.4"
+      },
+      "scripts": {
+        "lint": "npm run lint-cpp && npm run lint-js && npm run lint-types && npm run lint-publish",
+        "test": "npm run lint && npm run test-unit",
+        "build": "node install/build.js",
+        "clean": "rm -rf src/build/ test/fixtures/output.*",
+        "lint-js": "biome lint",
+        "lint-cpp": "cpplint --quiet src/*.h src/*.cc",
+        "test-leak": "./test/leak/leak.sh",
+        "test-unit": "node --experimental-test-coverage test/unit.mjs",
+        "build:dist": "node scripts/build.mjs",
+        "docs-build": "node docs/build.mjs",
+        "docs-serve": "cd docs && npm start",
+        "lint-types": "tsd --files ./test/types/sharp.test-d.{cts,mts}",
+        "docs-publish": "cd docs && npm run build && npx firebase-tools deploy --project pixelplumbing --only hosting:pixelplumbing-sharp",
+        "lint-publish": "publint --strict",
+        "package-release-notes": "node npm/release-notes.js",
+        "package-wasm-wrappers": "node npm/wasm-wrappers.js",
+        "package-from-local-build": "node npm/from-local-build.js"
+      },
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/index.d.mts",
+            "default": "./dist/index.mjs"
+          },
+          "require": {
+            "types": "./dist/index.d.cts",
+            "default": "./dist/index.cjs"
+          }
+        }
+      },
+      "main": "./dist/index.cjs",
+      "module": "./dist/index.mjs",
+      "type": "commonjs",
+      "dist": {
+        "shasum": "43fb539872ec5f53cc7162eb850dbf6514692fbf",
+        "tarball": "https://registry.npmjs.org/sharp/-/sharp-0.35.5.tgz",
+        "fileCount": 47,
+        "integrity": "sha512-Ywn4OnzGukp7CDMrp08RQ50YKmuwG47brZgIVPTvBaaAfQlRlygrRqSrxdCiL9M+LlzLBiJ68IR1QqvzHyjC7g==",
+        "signatures": [
+          {
+            "sig": "MEYCIQCyo1+tlBV7a2cmC8I84ARsUqvoaq+mx3W0/6VAa9nYqQIhAKtWlbR8qYS2H2IkE4lauEeV7TxILFTO0u9eFy0Q9IMU",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQCLF9gSVuxlR9XSVusRLR+gKnSG05ojWaD3C+ne9L4uJgIhAPnnnMqW+1wcolOGQeXmk5qBoWsvJqs+OQjJRFLEIIrW",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/sharp@0.35.5",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 962168
+      },
+      "repository": {
+        "url": "git+https://github.com/lovell/sharp.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/fast-uri/3.1.8",
+    "capturedAt": "2026-10-03T10:06:00.238946+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "fast-uri",
+      "version": "3.1.8",
+      "scripts": {
+        "lint": "eslint",
+        "test": "npm run test:unit && npm run test:typescript",
+        "lint:fix": "eslint --fix",
+        "test:unit": "tape test/**/*.js",
+        "test:browser": "npm run test:browser:chromium && npm run test:browser:firefox && npm run test:browser:webkit",
+        "test:unit:dev": "npm run test:unit -- --coverage-report=html",
+        "test:typescript": "tsd",
+        "test:browser:webkit": "playwright-test ./test/* --runner tape --browser=webkit",
+        "test:browser:firefox": "playwright-test ./test/* --runner tape --browser=firefox",
+        "test:browser:chromium": "playwright-test ./test/* --runner tape --browser=chromium"
+      },
+      "main": "index.js",
+      "type": "commonjs",
+      "dist": {
+        "shasum": "f7db8d942e20eead3cfe93b0beeb4eb0169e938b",
+        "tarball": "https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.8.tgz",
+        "fileCount": 44,
+        "integrity": "sha512-GZMtZUTNRpOVIECoXwLNZS5xUGE+mVNbTB8h/7Rwh2TFWcBQiPzTgyZi05BF9UMZKkLJv8XBRJTlU7zg8+ZfMg==",
+        "signatures": [
+          {
+            "sig": "MEQCIAFY8R/oklnujz86Qp91RCMZ7Q4UKVpOIyK6SVQucORxAiB3QAr2EGigSFZvLpNSMnMTSU+e6xRonnMOqbVfgCgmGw==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEQCIBapYWmwkYVjiNluF7sQZV/v5LCo8e8ABySbJBEICb0CAiAIZoX7yNR4Bh0DuxT3O6hMiBK+fJMbXyEtMYKHbj+Fkg==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 220886
+      },
+      "repository": {
+        "url": "git+https://github.com/fastify/fast-uri.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/brace-expansion/1.1.21",
+    "capturedAt": "2026-10-03T10:06:01.561255+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "brace-expansion",
+      "version": "1.1.21",
+      "dependencies": {
+        "concat-map": "0.0.1",
+        "balanced-match": "^1.0.0"
+      },
+      "scripts": {
+        "test": "tape test/*.js",
+        "bench": "matcha test/perf/bench.js",
+        "gentest": "bash test/generate.sh"
+      },
+      "main": "index.js",
+      "dist": {
+        "shasum": "edf4fab5c64d051aea5a8def49aba1c7522279f3",
+        "tarball": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.21.tgz",
+        "fileCount": 4,
+        "integrity": "sha512-9zeA+KLZNNzglF2TPKRQEDyx6Yby7daAkuy8MiPzpXPsYDWi/DRM8jmwUDxokQjYqBpv5DgPiwD4h4ZZSy1Ujw==",
+        "signatures": [
+          {
+            "sig": "MEUCIEpGNO6Ap5gYaU6eqeOpeU4bhJKXytH4Lqv+qn8tWP70AiEAgmtv6dYJ/sbiMeioq8VTAvlpDMIOF2bV7ojJ6qTtCIk=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQCsE4a0+wmILmbniwNtbsZAwHHlEiC/u0HpBs9/R0pwvgIgATLztBHUYS81VxfEvVfmSjwIFwwRSJAP8SlYYJWwn3A=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 21359
+      },
+      "repository": {
+        "url": "git://github.com/juliangruber/brace-expansion.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/brace-expansion/2.1.7",
+    "capturedAt": "2026-10-03T10:06:01.570314+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "brace-expansion",
+      "version": "2.1.7",
+      "dependencies": {
+        "balanced-match": "^1.0.0"
+      },
+      "scripts": {
+        "test": "tape test/*.js",
+        "bench": "matcha test/perf/bench.js",
+        "gentest": "bash test/generate.sh"
+      },
+      "main": "index.js",
+      "dist": {
+        "shasum": "14ea3836731823bb24740225ea43b941b436f9d1",
+        "tarball": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.1.7.tgz",
+        "fileCount": 5,
+        "integrity": "sha512-uZbew1NqdmPDTMJ8ah1y+b+9QEJrfkXFk3RcTQw3X0jW/xRUvFKsg1CfQdSYGdTbXZWExtU3J3ccxtnfw1Fi0g==",
+        "signatures": [
+          {
+            "sig": "MEUCIAkrqNzwWiBk2UvzBMWjKR6ADOa7s4M/lF7AY4spVPdBAiEAxPONwyYz2BJ4UMzDiq+dITWj2Rw95YswFp9O5Rm4CHs=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIGUVEJydbSPyIXGiJHFk8mVVj0ty/cwj49wMwg9vVOLrAiEAoAfiMVysswnpDqFjhDeOasp8BMfphqjTn2FE69WmgHE=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 19574
+      },
+      "repository": {
+        "url": "git://github.com/juliangruber/brace-expansion.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/brace-expansion/5.0.12",
+    "capturedAt": "2026-10-03T10:06:01.669630+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "brace-expansion",
+      "version": "5.0.12",
+      "engines": {
+        "node": "20 || >=22"
+      },
+      "dependencies": {
+        "balanced-match": "^4.0.2"
+      },
+      "scripts": {
+        "snap": "tap",
+        "test": "tap",
+        "format": "prettier --write .",
+        "prepare": "tshy",
+        "presnap": "npm run prepare",
+        "pretest": "npm run prepare",
+        "typedoc": "typedoc --tsconfig .tshy/esm.json ./src/*.ts",
+        "benchmark": "node benchmark/index.js",
+        "preversion": "npm test",
+        "postversion": "npm publish",
+        "format:check": "prettier --check .",
+        "prepublishOnly": "git push origin --follow-tags"
+      },
+      "exports": {
+        ".": {
+          "import": {
+            "types": "./dist/esm/index.d.ts",
+            "default": "./dist/esm/index.js"
+          },
+          "require": {
+            "types": "./dist/commonjs/index.d.ts",
+            "default": "./dist/commonjs/index.js"
+          }
+        },
+        "./package.json": "./package.json"
+      },
+      "main": "./dist/commonjs/index.js",
+      "module": "./dist/esm/index.js",
+      "type": "module",
+      "dist": {
+        "shasum": "995fbb4750a77c4d16a7dc942ff2ca6ef8e675ec",
+        "tarball": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-5.0.12.tgz",
+        "fileCount": 13,
+        "integrity": "sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==",
+        "signatures": [
+          {
+            "sig": "MEQCIAMXX2WNJDJJkVHQORu87Mi5BGgEzbA21nhoBLCd5pVbAiAty43mX29opG/0V0Oh41VVzPRs+bijBdQ3ao+wyviCsg==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQDZemgdCtGEvGCCV16aS9sGD8McnOAM5EM80gowpoytHwIgNLc7QYBEXho5Tgpn5+IY2fXgSrvXlQejMT/jf5f+++o=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 84997
+      },
+      "repository": {
+        "url": "git+https://github.com/juliangruber/brace-expansion.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/colord/2.9.4",
+    "capturedAt": "2026-10-03T10:06:01.770732+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "colord",
+      "version": "2.9.4",
+      "scripts": {
+        "lint": "eslint src/**/*.ts",
+        "size": "npm run build && size-limit",
+        "test": "jest tests --coverage",
+        "build": "rm -rf ./dist/* && rollup --config",
+        "release": "npm run build && cp *.json dist && cp *.md dist && npm publish ./dist",
+        "benchmark": "tsc --outDir bench --skipLibCheck --esModuleInterop ./tests/benchmark.ts && node ./bench/tests/benchmark.js && rm -rf ./bench",
+        "check-types": "tsc --noEmit true",
+        "check-release": "npm run release -- --dry-run"
+      },
+      "exports": {
+        ".": {
+          "types": "./index.d.ts",
+          "import": "./index.mjs",
+          "default": "./index.mjs",
+          "require": "./index.js"
+        },
+        "./plugins/hwb": {
+          "types": "./plugins/hwb.d.ts",
+          "import": "./plugins/hwb.mjs",
+          "default": "./plugins/hwb.mjs",
+          "require": "./plugins/hwb.js"
+        },
+        "./plugins/lab": {
+          "types": "./plugins/lab.d.ts",
+          "import": "./plugins/lab.mjs",
+          "default": "./plugins/lab.mjs",
+          "require": "./plugins/lab.js"
+        },
+        "./plugins/lch": {
+          "types": "./plugins/lch.d.ts",
+          "import": "./plugins/lch.mjs",
+          "default": "./plugins/lch.mjs",
+          "require": "./plugins/lch.js"
+        },
+        "./plugins/mix": {
+          "types": "./plugins/mix.d.ts",
+          "import": "./plugins/mix.mjs",
+          "default": "./plugins/mix.mjs",
+          "require": "./plugins/mix.js"
+        },
+        "./plugins/xyz": {
+          "types": "./plugins/xyz.d.ts",
+          "import": "./plugins/xyz.mjs",
+          "default": "./plugins/xyz.mjs",
+          "require": "./plugins/xyz.js"
+        },
+        "./package.json": "./package.json",
+        "./plugins/a11y": {
+          "types": "./plugins/a11y.d.ts",
+          "import": "./plugins/a11y.mjs",
+          "default": "./plugins/a11y.mjs",
+          "require": "./plugins/a11y.js"
+        },
+        "./plugins/cmyk": {
+          "types": "./plugins/cmyk.d.ts",
+          "import": "./plugins/cmyk.mjs",
+          "default": "./plugins/cmyk.mjs",
+          "require": "./plugins/cmyk.js"
+        },
+        "./plugins/names": {
+          "types": "./plugins/names.d.ts",
+          "import": "./plugins/names.mjs",
+          "default": "./plugins/names.mjs",
+          "require": "./plugins/names.js"
+        },
+        "./plugins/minify": {
+          "types": "./plugins/minify.d.ts",
+          "import": "./plugins/minify.mjs",
+          "default": "./plugins/minify.mjs",
+          "require": "./plugins/minify.js"
+        },
+        "./plugins/harmonies": {
+          "types": "./plugins/harmonies.d.ts",
+          "import": "./plugins/harmonies.mjs",
+          "default": "./plugins/harmonies.mjs",
+          "require": "./plugins/harmonies.js"
+        }
+      },
+      "main": "./index.js",
+      "module": "./index.mjs",
+      "dist": {
+        "shasum": "1ad8184b18baf9fa948acf2b9531d2ce126fb31c",
+        "tarball": "https://registry.npmjs.org/colord/-/colord-2.9.4.tgz",
+        "fileCount": 67,
+        "integrity": "sha512-z0nTt5300AIviCn9FTEL4G2DzPkfEDfghx6Do0ZfM3u0rOINBtfw2H8lD4VXyZF/o8HTzzyiCztaG2X/+IMeZA==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDMyEkgxvmmWXlCfwf8bsDYI2lzgxss024tRYta6xqeBgIgRZya7ndgdUev4DM8+i6XgEQeyvwnhLfNiY1/tKjzluA=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCID9VkGorcgvt88eYej/NFWBYanbGFFVALFrnZ/kjNjFbAiEAjyocJvwmzYgLlm0Z5Jwd0V7ZmZUwWRFtnV+40rMs9qw=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 124651
+      },
+      "repository": {
+        "url": "git+https://github.com/omgovich/colord.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/serialize-javascript/7.0.5",
+    "capturedAt": "2026-10-03T10:06:03.080744+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "serialize-javascript",
+      "version": "7.0.5",
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "scripts": {
+        "test": "node --test test/unit/*.js",
+        "benchmark": "node -v && node test/benchmark/serialize.js"
+      },
+      "main": "index.js",
+      "dist": {
+        "shasum": "c798cc0552ffbb08981914a42a8756e339d0d5b1",
+        "tarball": "https://registry.npmjs.org/serialize-javascript/-/serialize-javascript-7.0.5.tgz",
+        "fileCount": 4,
+        "integrity": "sha512-F4LcB0UqUl1zErq+1nYEEzSHJnIwb3AF2XWB94b+afhrekOUijwooAYqFyRbjYkm2PAKBabx6oYv/xDxNi8IBw==",
+        "signatures": [
+          {
+            "sig": "MEQCICIwuk5tWBELognav0Ocg/lRTnkfPCqF5/smf+nTrktHAiAUErVFsN9En6SSzzGDLYXvhSSmlb9yFe1v6jut+WY5mg==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/serialize-javascript@7.0.5",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 19174
+      },
+      "repository": {
+        "url": "git+https://github.com/yahoo/serialize-javascript.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/serialize-javascript/7.1.1",
+    "capturedAt": "2026-10-03T10:06:03.152899+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "serialize-javascript",
+      "version": "7.1.1",
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "scripts": {
+        "test": "node --test test/unit/*.js",
+        "benchmark": "node -v && node test/benchmark/serialize.js"
+      },
+      "main": "index.js",
+      "dist": {
+        "shasum": "c3b0a7ac13df6cf2fcda71cbb142ba9392a710b9",
+        "tarball": "https://registry.npmjs.org/serialize-javascript/-/serialize-javascript-7.1.1.tgz",
+        "fileCount": 4,
+        "integrity": "sha512-k3CMsaIvvdSwm8oLB4MXSl0wH2/cwlH7xGcnRd2DaeRmBkbzYmyT8j0tsX60DwD1eRwHTpNpH8ljKu9oUT1MeQ==",
+        "signatures": [
+          {
+            "sig": "MEQCIC0DHZcbFSYvrffK1uwZkJp2WuZnPdE7D7K1gTWLJHl8AiB0Z+fJP78N/aEVBtIFtsnhHZZG9yNEjndRTXGbg3bh7w==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQDH6RXdsXkCZJkLnG2xXrIjwQG8iTHy848S+EK/f/ySHAIhAPJnwaqJzWOo0ZE+fD+oOICe3WcPtP48ZeNyckVnuYdQ",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/serialize-javascript@7.1.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 22279
+      },
+      "repository": {
+        "url": "git+https://github.com/yahoo/serialize-javascript.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/@swup/astro/latest",
+    "capturedAt": "2026-10-03T10:06:03.329780+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "@swup/astro",
+      "version": "1.8.0",
+      "dependencies": {
+        "swup": "^4.0.0",
+        "@swup/fade-theme": "^2.0.0",
+        "@swup/a11y-plugin": "^5.0.0",
+        "@swup/head-plugin": "^2.0.0",
+        "@swup/slide-theme": "^2.0.0",
+        "swup-morph-plugin": "^1.0.0",
+        "@swup/debug-plugin": "^4.0.0",
+        "@swup/forms-plugin": "^3.0.0",
+        "@swup/overlay-theme": "^2.0.0",
+        "@swup/scroll-plugin": "^3.0.0",
+        "@swup/preload-plugin": "^3.0.0",
+        "@swup/scripts-plugin": "^2.0.0",
+        "@swup/fragment-plugin": "^1.1.2",
+        "@swup/parallel-plugin": "^0.4.0",
+        "@swup/progress-plugin": "^3.0.0",
+        "@swup/body-class-plugin": "^3.0.0",
+        "@swup/route-name-plugin": "^4.0.0"
+      },
+      "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+      },
+      "exports": {
+        ".": "./dist/index.js",
+        "./idle": "./dist/idle.js",
+        "./client": "./dist/client.js",
+        "./client/*": "./dist/client/*.js",
+        "./serialise": "./dist/serialise.js",
+        "./package.json": "./package.json"
+      },
+      "main": "./dist/index.js",
+      "type": "module",
+      "dist": {
+        "shasum": "5e388fd41c3d1d5a908ca941c4376c8d708a3c61",
+        "tarball": "https://registry.npmjs.org/@swup/astro/-/astro-1.8.0.tgz",
+        "fileCount": 68,
+        "integrity": "sha512-FI8/jNXgyUoWpnOgdB3MOUobRtRzedKBE8+qbBH5c8CE4q9Ni/GHPGrXK/0xG+g1ZiIQuTF3OXRvTLNVouiBig==",
+        "signatures": [
+          {
+            "sig": "MEQCIH6TsXi/73NNhMEZ+CM+9bZuvWVdTgU6yfXpkShxNlcNAiBKcsuqfuUfjuAFHlAPpmlI2KYPQRuSqT4z9HuWyUUDNw==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@swup%2fastro@1.8.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 46753
+      },
+      "repository": {
+        "url": "git+https://github.com/swup/astro.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/@swup/parallel-plugin/latest",
+    "capturedAt": "2026-10-03T10:06:03.361132+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "@swup/parallel-plugin",
+      "version": "0.4.0",
+      "dependencies": {
+        "@swup/plugin": "^3.0.0"
+      },
+      "peerDependencies": {
+        "swup": "^4.6.0"
+      },
+      "scripts": {
+        "dev": "swup-plugin dev",
+        "lint": "swup-plugin lint",
+        "build": "swup-plugin build",
+        "format": "swup-plugin format",
+        "prepublishOnly": "npm run build"
+      },
+      "exports": {
+        ".": {
+          "types": "./dist/index.d.ts",
+          "import": "./dist/index.modern.js",
+          "require": "./dist/index.cjs"
+        }
+      },
+      "main": "./dist/index.cjs",
+      "module": "./dist/index.module.js",
+      "type": "module",
+      "dist": {
+        "shasum": "d0d22cfc3e20a04a9f64701ee776541b1cbceee6",
+        "tarball": "https://registry.npmjs.org/@swup/parallel-plugin/-/parallel-plugin-0.4.0.tgz",
+        "fileCount": 13,
+        "integrity": "sha512-un37RpdFz2vuJV1r9Hr0nCl5qgloN/Z3SczC3wi1XfkiHtzZ8kFTcm5pIW5rUkDVwtCTil44mlAA/STouBEgDw==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCISVRk9aDoK9jtvbgt325Ol+NvS/9xi1VUhSVHbQPYggIgMxy+6y60UJYvOIBJAwFcYiZ+Ad/R5IAnjLPuahEkkFM=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 86145
+      },
+      "repository": {
+        "url": "git+https://github.com/swup/parallel-plugin.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/@swup/route-name-plugin/latest",
+    "capturedAt": "2026-10-03T10:06:04.480669+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "@swup/route-name-plugin",
+      "version": "4.1.0",
+      "dependencies": {
+        "@swup/plugin": "^3.0.0"
+      },
+      "peerDependencies": {
+        "swup": "^4.0.0"
+      },
+      "scripts": {
+        "dev": "swup-plugin dev",
+        "lint": "swup-plugin lint",
+        "build": "swup-plugin build",
+        "format": "swup-plugin format",
+        "prepublishOnly": "npm run build"
+      },
+      "exports": {
+        ".": {
+          "types": "./dist/index.d.ts",
+          "import": "./dist/index.modern.js",
+          "require": "./dist/index.cjs"
+        }
+      },
+      "main": "./dist/index.cjs",
+      "module": "./dist/index.module.js",
+      "type": "module",
+      "dist": {
+        "shasum": "eb9a9599608c37334968804cc787277d340f2fec",
+        "tarball": "https://registry.npmjs.org/@swup/route-name-plugin/-/route-name-plugin-4.1.0.tgz",
+        "fileCount": 12,
+        "integrity": "sha512-1tw3WeExEKwI3pVMXTptCGxFUDOSEpc63D741eeUCjjGW/f9q7ekuqEaPQd5YJ6POpzDjdt1jjuC9yv54CbeXA==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDozUKDpD1LOwP0M0Qmedtr+/Te/dIbpKzNaXUxQeB1hwIgQD7W+UzJlplKojOc1Tz9cltU0lpeajzvIJ4i4eWgzDA=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 96123
+      },
+      "repository": {
+        "url": "git+https://github.com/swup/route-name-plugin.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/@swup/plugin/latest",
+    "capturedAt": "2026-10-03T10:06:04.732552+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "@swup/plugin",
+      "version": "4.0.0",
+      "dependencies": {
+        "swup": "^4.0.0"
+      },
+      "scripts": {
+        "dev": "BROWSERSLIST_ENV=development microbundle -f modern -w",
+        "lint": "prettier src/**/*.ts --check",
+        "test": "vitest run --config ./vitest/vitest.config.ts",
+        "build": "npm run build:module && npm run build:bundle",
+        "format": "prettier src/**/*.ts --write",
+        "build:bundle": "BROWSERSLIST_ENV=production microbundle -f umd --external none --define process.env.NODE_ENV=production",
+        "build:module": "BROWSERSLIST_ENV=modern microbundle -f modern,esm,cjs",
+        "prepublishOnly": "npm run build"
+      },
+      "exports": {
+        ".": {
+          "types": "./dist/index.d.ts",
+          "import": "./dist/index.modern.js",
+          "require": "./dist/index.cjs"
+        }
+      },
+      "main": "./dist/index.cjs",
+      "module": "./dist/index.module.js",
+      "type": "module",
+      "dist": {
+        "shasum": "5400eef1a5b90d463f591bde9dd40bf59fea5081",
+        "tarball": "https://registry.npmjs.org/@swup/plugin/-/plugin-4.0.0.tgz",
+        "fileCount": 17,
+        "integrity": "sha512-3Kq31BJxnzoPg643YxGoWQggoU6VPKZpdE5CqqmP7wwkpCYTzkRmrfcQ29mGhsSS7xfS7D33iZoBiwY+wPoo2A==",
+        "signatures": [
+          {
+            "sig": "MEUCIQC1vY+QHhdfgi4zxqTk20ZLBGflHqv8quotZ8T26IaJhgIgSm/eBPind/6bUK/u4DI/xwHAm9j6QQZQU8xrv494gE4=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 49185
+      },
+      "repository": {
+        "url": "git+https://github.com/swup/plugin.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/microbundle/latest",
+    "capturedAt": "2026-10-03T10:06:04.764838+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "microbundle",
+      "version": "0.15.1",
+      "dependencies": {
+        "sade": "^1.7.4",
+        "kleur": "^4.1.3",
+        "tslib": "^2.0.3",
+        "rollup": "^2.35.1",
+        "terser": "^5.7.0",
+        "asyncro": "^3.0.0",
+        "postcss": "^8.2.1",
+        "filesize": "^6.1.0",
+        "camelcase": "^6.2.0",
+        "gzip-size": "^6.0.0",
+        "tiny-glob": "^0.2.8",
+        "typescript": "^4.1.3",
+        "@babel/core": "^7.12.10",
+        "brotli-size": "^4.0.0",
+        "autoprefixer": "^10.1.0",
+        "lodash.merge": "^4.6.2",
+        "pretty-bytes": "^5.4.1",
+        "builtin-modules": "^3.1.0",
+        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-flow": "^7.12.1",
+        "@babel/preset-react": "^7.12.10",
+        "@rollup/plugin-json": "^4.1.0",
+        "babel-plugin-macros": "^3.0.1",
+        "@rollup/plugin-alias": "^3.1.1",
+        "@rollup/plugin-babel": "^5.2.2",
+        "escape-string-regexp": "^4.0.0",
+        "rollup-plugin-terser": "^7.0.2",
+        "rollup-plugin-postcss": "^4.0.0",
+        "@rollup/plugin-commonjs": "^17.0.0",
+        "@babel/plugin-syntax-jsx": "^7.12.1",
+        "rollup-plugin-visualizer": "^5.6.0",
+        "rollup-plugin-bundle-size": "^1.0.3",
+        "rollup-plugin-typescript2": "^0.32.0",
+        "@rollup/plugin-node-resolve": "^11.0.1",
+        "@babel/plugin-syntax-import-meta": "^7.10.4",
+        "@babel/plugin-transform-react-jsx": "^7.12.11",
+        "@babel/plugin-transform-regenerator": "^7.12.1",
+        "@surma/rollup-plugin-off-main-thread": "^2.2.2",
+        "@babel/plugin-proposal-class-properties": "7.12.1",
+        "@babel/plugin-transform-flow-strip-types": "^7.12.10",
+        "babel-plugin-transform-async-to-promises": "^0.8.18",
+        "babel-plugin-transform-replace-expressions": "^0.2.0"
+      },
+      "scripts": {
+        "jest": "cross-env BABEL_ENV=test jest",
+        "lint": "eslint src",
+        "test": "npm run -s lint && npm run -s build && cross-env BABEL_ENV=test jest",
+        "build": "npm run -s build:babel && npm run -s build:self",
+        "format": "prettier --write \"{*,{src,test}/**/*}.+(js|css)\"",
+        "prepare": "npm run -s build",
+        "release": "npm run -s prepare && npm test && changeset publish",
+        "changeset": "changeset",
+        "build:self": "node dist/cli.js --target=node --format cjs src/{cli,index}.js",
+        "build:babel": "babel-node src/cli.js --target=node --format cjs src/{cli,index}.js",
+        "prepare:babel": "babel src/*.js -d dist && npm t"
+      },
+      "main": "dist/microbundle.js",
+      "dist": {
+        "shasum": "3fa67128934b31736823b5c868dae4b92d94e766",
+        "tarball": "https://registry.npmjs.org/microbundle/-/microbundle-0.15.1.tgz",
+        "fileCount": 22,
+        "integrity": "sha512-aAF+nwFbkSIJGfrJk+HyzmJOq3KFaimH6OIFBU6J2DPjQeg1jXIYlIyEv81Gyisb9moUkudn+wj7zLNYMOv75Q==",
+        "signatures": [
+          {
+            "sig": "MEUCIDqbrafqdMToC1u6/748riH6DOh300A/FtmvG/VAi1HMAiEApCz0dzwjcMCfSXGMSVdpwq1KfcDygcCAn5wLHBHFLbE=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 343524,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi9s72ACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmr0QA/9HOKEYKdBOCPkb+FFNoTwScFekXlm00K+DhKQpajDrqKZ6LBw\r\npBzHqQ0kPIryvDEaQxD5FQGisxGea87unMGq1Ehwo04jJ7ShvSKO3PW/r8xf\r\nQvFx+5PmVt2+IzqPja2H00Mm33XNWgIQnfHSp0R37Y2Q8x0Z0j/JdcsbLXVe\r\n+mnU8kcW+vnW+93oFGHi6Z5hjgSKf8dp3pvO3dRilKHVVgN8dTPiNhXcnAcZ\r\nNqjDilmfTUxDOyKgy+Gyxl7fIRQzy/MHOd3ur6QMOO/cklCGHITOzKvE1Lgf\r\nVY8x5LhTtV0UzoQJgXRhPl0BTqhK1us7yAEPM9QhjqudlQGFC2+tAY3dhx60\r\n91XsXI6PkPqo6y/hr6X1nPP8FJZ6mc6xkC9EGw97xIgsgJ5qhArth0tli/mP\r\nxNpjH3aLWiIv+dStYAPCDBSP5awo8eWJzzTG/ljN1YT7jgIyV23vDhIm7Qzn\r\nZrbQ0e6HjlGSn9B3slfg+BRXkGju3veQAXVpDFXak2ffiMSGC3LS4hOB2/5h\r\n1/cHlV+n7yKXdlwLa60KhKm4JRA5PSR//nWwN2/DI7rEPfZJRKkq23/QNSK+\r\nwIejW+6EtGHtb7jv9kWnvOElZh4mJDyFJrUWWVvJsRxc8zXp6xHXD+rOkvb9\r\nwRalZwnRWbdx48TNkxEDfrLKxOT5BQlzPXc=\r\n=m5Wc\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "repository": {
+        "url": "git+https://github.com/developit/microbundle.git",
+        "type": "git"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/rollup-plugin-terser/latest",
+    "capturedAt": "2026-10-03T10:06:05.040842+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "rollup-plugin-terser",
+      "version": "7.0.2",
+      "dependencies": {
+        "terser": "^5.0.0",
+        "jest-worker": "^26.2.1",
+        "@babel/code-frame": "^7.10.4",
+        "serialize-javascript": "^4.0.0"
+      },
+      "peerDependencies": {
+        "rollup": "^2.0.0"
+      },
+      "scripts": {
+        "test": "jest",
+        "prepublish": "yarn test"
+      },
+      "exports": {
+        "import": "./rollup-plugin-terser.mjs",
+        "require": "./rollup-plugin-terser.js"
+      },
+      "main": "rollup-plugin-terser.js",
+      "type": "commonjs",
+      "dist": {
+        "shasum": "e8fbba4869981b2dc35ae7e8a502d5c6c04d324d",
+        "tarball": "https://registry.npmjs.org/rollup-plugin-terser/-/rollup-plugin-terser-7.0.2.tgz",
+        "fileCount": 8,
+        "integrity": "sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCpFI5NL1kPwq9c5rl/oZnWFhOwAdB739LB+SckK8PFmAIgYvbs8XAGJGZS/qHz43POYlKtMY615TXbKuD4RlbUS4A=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 8464,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfUonWCRA9TVsSAnZWagAAzmsP+wctpGLybTnNw9H2oexV\nQMmw1djlK3xfY1a05xjyPpDtxqS/upSzMJrGAu9wZrKpZq84rdQPgVP6YGAi\njFUF2RJItTQlI4rU72EzCWGFh/q0XkP4FBc1l1YmF/KPe5/sQB1ZKLIRafHr\nfFRPQZUdz3L1fP1hjtYjpqHuqziizx47NLqPHu6FKqOPEIEJ9TUzvzPKNSlD\nUrGXLqSTRFkRV6MC8ba4pkxhKBvfFsPt4iK+QTdp3ofbo8f3+74gDYo9U37F\nei3+IYaNc8OtT+OGdEmyZ1w55hLiOQpIWPCQEBI+sjH5fFZBpLKGS1nw37Zp\nn02+nP6vHTfBwYWBHqnNBlQPz6vLsKsc16OMRfww6pj2IeH+lCfEwgRyTObo\nk8M+a1i4ATvuRIFmsSpgdlFibDBLlZhMH/p8Hr4yY2kgC+NH+JVlufgJripj\nulT/NvFWAI+vqPSbKmkrtWUfpGaox9RY+dlUs5ShrrPTe/GABgs20k43oi0B\n6lWISjeel423nGLbMUgM6RGcpW878Dr8Py7359H+r4ruGXquxIDT06vKKGCA\nAOsz0OcmShKztGn/XyiaUg45wNn1+EguX06cLWidYpLRNP3Eloexbr/dNo1j\nhKKZZ6WQ4QKbmgVHjpt1LCV2Dw3GVBtzq33DNprrtvujkoq/68sm82tPE5QO\nHafY\r\n=yKzW\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "repository": {
+        "url": "git+https://github.com/TrySound/rollup-plugin-terser.git",
+        "type": "git"
+      },
+      "deprecated": "This package has been deprecated and is no longer maintained. Please use @rollup/plugin-terser"
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/@rollup/plugin-terser/latest",
+    "capturedAt": "2026-10-03T10:06:06.039920+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "@rollup/plugin-terser",
+      "version": "1.0.0",
+      "engines": {
+        "node": ">=20.0.0"
+      },
+      "dependencies": {
+        "smob": "^1.0.0",
+        "terser": "^5.17.4",
+        "serialize-javascript": "^7.0.3"
+      },
+      "peerDependencies": {
+        "rollup": "^2.0.0||^3.0.0||^4.0.0"
+      },
+      "scripts": {
+        "test": "ava",
+        "build": "rollup -c",
+        "ci:lint": "pnpm build && pnpm lint",
+        "ci:test": "pnpm test -- --verbose && pnpm test:ts",
+        "pretest": "pnpm build",
+        "release": "pnpm --workspace-root package:release $(pwd)",
+        "test:ts": "tsc types/index.d.ts test/types.ts --noEmit",
+        "prebuild": "del-cli dist",
+        "prerelease": "pnpm build",
+        "ci:coverage": "nyc pnpm test && nyc report --reporter=text-lcov > coverage.lcov",
+        "ci:lint:commits": "commitlint --from=${CIRCLE_BRANCH} --to=${CIRCLE_SHA1}"
+      },
+      "exports": {
+        "types": "./types/index.d.ts",
+        "import": "./dist/es/index.js",
+        "default": "./dist/cjs/index.js"
+      },
+      "main": "dist/cjs/index.js",
+      "module": "dist/es/index.js",
+      "dist": {
+        "shasum": "dabbc4414d127aa7d43fc5e7ea8699b9c3bc59e5",
+        "tarball": "https://registry.npmjs.org/@rollup/plugin-terser/-/plugin-terser-1.0.0.tgz",
+        "fileCount": 13,
+        "integrity": "sha512-FnCxhTBx6bMOYQrar6C8h3scPt8/JwIzw3+AJ2K++6guogH5fYaIFia+zZuhqv0eo1RN7W1Pz630SyvLbDjhtQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDD6OYHCkC/68hI1M2L67Y9qIEoFTaum+pEjsnnlXxuYwIgTgU74EguV9O34K6zAJItSHFKpe6KFaIkS8ooRQjc9i0=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@rollup%2fplugin-terser@1.0.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 29778
+      },
+      "repository": {
+        "url": "git+https://github.com/rollup/plugins.git",
+        "directory": "packages/terser"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/@astrojs/cloudflare/latest",
+    "capturedAt": "2026-10-03T10:06:06.140011+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "@astrojs/cloudflare",
+      "version": "14.3.3",
+      "dependencies": {
+        "vite": "^8.0.13",
+        "piccolore": "^0.1.3",
+        "@cloudflare/vite-plugin": "^1.53.0",
+        "@astrojs/internal-helpers": "0.11.0",
+        "@astrojs/underscore-redirects": "1.0.4"
+      },
+      "peerDependencies": {
+        "astro": "^7.2.0",
+        "wrangler": "^4.125.0"
+      },
+      "scripts": {
+        "dev": "astro-scripts dev \"src/**/*.ts\"",
+        "test": "astro-scripts test --force-exit \"test/**/*.test.ts\"",
+        "build": "astro-scripts build \"src/**/*.ts\" --clean-dts && tsc -b",
+        "build:ci": "astro-scripts build \"src/**/*.ts\""
+      },
+      "exports": {
+        ".": "./dist/index.js",
+        "./hono": "./dist/hono.js",
+        "./info": "./dist/info.js",
+        "./cache": "./dist/cache/index.js",
+        "./fetch": "./dist/fetch.js",
+        "./handler": "./dist/utils/handler.js",
+        "./types.d.ts": "./types.d.ts",
+        "./package.json": "./package.json",
+        "./image-service": "./dist/entrypoints/image-service-external.js",
+        "./cache/provider": "./dist/cache/provider.js",
+        "./entrypoints/server": "./dist/entrypoints/server.js",
+        "./entrypoints/preview": "./dist/entrypoints/preview.js",
+        "./entrypoints/server.js": "./dist/entrypoints/server.js",
+        "./image-service-workerd": "./dist/entrypoints/image-service-workerd.js",
+        "./image-transform-endpoint": "./dist/entrypoints/image-transform-endpoint.js",
+        "./image-passthrough-endpoint": "./dist/entrypoints/image-passthrough-endpoint.js"
+      },
+      "type": "module",
+      "dist": {
+        "shasum": "17e6ba7e1d7798aac82badbe597031b591a117f8",
+        "tarball": "https://registry.npmjs.org/@astrojs/cloudflare/-/cloudflare-14.3.3.tgz",
+        "fileCount": 76,
+        "integrity": "sha512-kYb1xf+BBa8oAIMSZPfXxZWVWSEDhA+AgBN6ClDDDZspIN1M2XsIC6/fozyuCApNuiyqa3eUQbai62WohqJUgQ==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDhvWhbqhCabgjnE4jhQLK8RMLPpGROklKSdBslIAAvQAIhAMwyHRcPqlPQrch5dswH9UXoR0tEgMPq99ZZExB3uRYD",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQCJyfd05S15fXwDIXR1bO5oeXW453r931KBN0wFl/iQKwIgIZghjDgBfyBrb3s6DPTjSGjoWhbbJG5gDl7iJggVZ6g=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@astrojs%2fcloudflare@14.3.3",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 120283
+      },
+      "repository": {
+        "url": "git+https://github.com/withastro/astro.git",
+        "type": "git",
+        "directory": "packages/integrations/cloudflare"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/@cloudflare/vite-plugin/latest",
+    "capturedAt": "2026-10-03T10:06:06.516201+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "@cloudflare/vite-plugin",
+      "version": "1.62.5",
+      "dependencies": {
+        "ws": "8.21.0",
+        "unenv": "2.0.0-rc.24",
+        "workerd": "1.20261001.1",
+        "wrangler": "4.147.0",
+        "miniflare": "5.20261001.0-alpha",
+        "@cloudflare/unenv-preset": "2.16.2"
+      },
+      "peerDependencies": {
+        "vite": "^6.1.0 || ^7.0.0 || ^8.0.0",
+        "wrangler": "^4.147.0"
+      },
+      "scripts": {
+        "dev": "tsdown --watch",
+        "test": "vitest run",
+        "build": "tsdown",
+        "test:ci": "pnpm test",
+        "test:e2e": "vitest run -c e2e/vitest.config.ts",
+        "check:type": "tsc --build",
+        "test:watch": "vitest"
+      },
+      "exports": {
+        ".": {
+          "types": "./dist/index.d.mts",
+          "import": "./dist/index.mjs"
+        }
+      },
+      "main": "./dist/index.mjs",
+      "type": "module",
+      "dist": {
+        "shasum": "5df3631a7871693a27ec526a261135e3f397f1dd",
+        "tarball": "https://registry.npmjs.org/@cloudflare/vite-plugin/-/vite-plugin-1.62.5.tgz",
+        "fileCount": 20,
+        "integrity": "sha512-qJJonL8EvKuSPfrwSMiDEPp+klxTU08pan1bgm/jc3LrYe9Hp4XUkIGAcQdgv7P9OZbe6AU+51iMUtQOt85J2w==",
+        "signatures": [
+          {
+            "sig": "MEUCIQClnhmrCvlky/Sdc27gYakMlpoIeKcBNAzdKL1JHKftWQIgfN7r92ecQgCYwZhpcerBDUnec1y7OcdF+hoJUo81E7Q=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQD+Tl1fygdgzu1PrPyv7SMHIr3fN9PtM2C3DmO1KgFjmAIhALso/EOnoN1zUH4yHBZT0/SUA4l37KfAAFVxR4/vD45x",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@cloudflare%2fvite-plugin@1.62.5",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 11031599
+      },
+      "repository": {
+        "url": "git+https://github.com/cloudflare/workers-sdk.git",
+        "type": "git",
+        "directory": "packages/vite-plugin-cloudflare"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/wrangler/latest",
+    "capturedAt": "2026-10-03T10:06:06.917027+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "wrangler",
+      "version": "4.147.0",
+      "engines": {
+        "node": ">=22.0.0"
+      },
+      "dependencies": {
+        "unenv": "2.0.0-rc.24",
+        "esbuild": "0.28.1",
+        "workerd": "1.20261001.1",
+        "miniflare": "5.20261001.0-alpha",
+        "blake3-wasm": "2.1.5",
+        "path-to-regexp": "6.3.0",
+        "@cloudflare/unenv-preset": "2.16.2",
+        "@cloudflare/kv-asset-handler": "0.5.0"
+      },
+      "peerDependencies": {
+        "@cloudflare/workers-types": "^5.20261001.1"
+      },
+      "optionalDependencies": {
+        "fsevents": "2.3.3"
+      },
+      "scripts": {
+        "dev": "pnpm run clean && concurrently -c black,blue --kill-others-on-fail false \"pnpm tsup --watch src --watch ../containers-shared/src --watch ../cli\" \"pnpm run check:type --watch --preserveWatchOutput\"",
+        "test": "dotenv -- pnpm run assert-git-version && cross-env NODE_OPTIONS=\"$(node scripts/node-options-for-tests.js)\" dotenv -- vitest",
+        "build": "pnpm run clean && pnpm tsup && pnpm tsdown && pnpm run generate-json-schema",
+        "clean": "node -r esbuild-register ../../tools/clean/clean.ts wrangler-dist miniflare-dist emitted-types",
+        "start": "pnpm run build && cross-env NODE_OPTIONS=--enable-source-maps ./bin/wrangler.js",
+        "test:ci": "cross-env NODE_OPTIONS=\"$(node scripts/node-options-for-tests.js)\" pnpm run test run",
+        "test:e2e": "dotenv -- vitest run -c ./e2e/vitest.config.mts",
+        "check:type": "tsc -p ./tsconfig.json && tsc -p ./templates/tsconfig.json",
+        "test:debug": "pnpm run test --silent=false --verbose=true",
+        "test:watch": "pnpm run test --testTimeout=50000 --watch",
+        "type:tests": "tsc -p ./src/__tests__/tsconfig.json && tsc -p ./e2e/tsconfig.json",
+        "assert-git-version": "node -r esbuild-register scripts/assert-git-version.ts",
+        "generate-json-schema": "node -r esbuild-register scripts/generate-json-schema.ts"
+      },
+      "exports": {
+        ".": {
+          "types": "./wrangler-dist/cli.d.ts",
+          "default": "./wrangler-dist/cli.js"
+        },
+        "./package.json": "./package.json",
+        "./experimental-config": {
+          "types": "./wrangler-dist/experimental-config.d.mts",
+          "import": "./wrangler-dist/experimental-config.mjs"
+        }
+      },
+      "main": "wrangler-dist/cli.js",
+      "dist": {
+        "shasum": "636f56e1d28c4cc046802d4f031e73030b1f53cd",
+        "tarball": "https://registry.npmjs.org/wrangler/-/wrangler-4.147.0.tgz",
+        "fileCount": 30,
+        "integrity": "sha512-pQYRoiq8PTAxphaG69z8+GC1DkSGd19EDZehQ8zxjo/Ko3mRB6Qs1mTrd8ZuKAarLklIjTqr1lUdCK9r4q2hUg==",
+        "signatures": [
+          {
+            "sig": "MEYCIQCP75Wa/fKCqDSrypl8g7uYHIqg4+LdNXct7Lk24x44LgIhAMXMp6FIo1OJgpv48CQTSzJkeUyUqhzH/Qr90yChtx77",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQCqLkPz9gs6Tb2H7dEMd0XOB2YdJTpc5kdN7jzaz+xqKAIgL9xJlbLteRVTJDsn0wW5oMr/o+QHzL/OMaEJYRNm+vw=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/wrangler@4.147.0",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 15462618
+      },
+      "repository": {
+        "url": "git+https://github.com/cloudflare/workers-sdk.git",
+        "type": "git",
+        "directory": "packages/wrangler"
+      }
+    }
+  },
+  {
+    "kind": "registry",
+    "source": "https://registry.npmjs.org/miniflare/latest",
+    "capturedAt": "2026-10-03T10:06:07.473306+00:00",
+    "httpStatus": 200,
+    "data": {
+      "name": "miniflare",
+      "version": "5.20261001.0-alpha",
+      "engines": {
+        "node": ">=22.0.0"
+      },
+      "dependencies": {
+        "ws": "8.21.0",
+        "sharp": "0.35.4",
+        "youch": "4.1.0-beta.10",
+        "undici": "7.29.1",
+        "workerd": "1.20261001.1",
+        "@cspotcode/source-map-support": "0.8.1"
+      },
+      "scripts": {
+        "dev": "concurrently -n esbuild,typechk,typewrk -c yellow,blue,blue.dim \"node scripts/build.mjs --watch\" \"node scripts/types.mjs tsconfig.json --bundle --watch\" \"node scripts/types.mjs src/workers/tsconfig.json --watch\"",
+        "test": "vitest run",
+        "build": "node scripts/build.mjs && pnpm run types:build",
+        "clean": "node -r esbuild-register ../../tools/clean/clean.ts ./dist ./dist-types",
+        "test:ci": "pnpm run test",
+        "posttest": "node -r esbuild-register ../../tools/clean/clean.ts ./.tmp",
+        "check:type": "tsc",
+        "types:build": "node scripts/types.mjs tsconfig.json --bundle && node scripts/types.mjs src/workers/tsconfig.json",
+        "generate:api": "pnpm generate:openapi && pnpm generate:types",
+        "capnp:workerd": "capnp-es node_modules/workerd/workerd.capnp -ots:src/runtime/config/generated --src-prefix=node_modules/workerd",
+        "generate:types": "openapi-ts && oxfmt src/workers/local-explorer/openapi.local.json src/workers/local-explorer/generated",
+        "generate:openapi": "node -r esbuild-register scripts/filter-openapi.ts -i $OPENAPI_INPUT_PATH",
+        "check:generate-api": "node -r esbuild-register scripts/check-generate-api.ts"
+      },
+      "main": "./dist/src/index.js",
+      "dist": {
+        "shasum": "d001ade0c85032840ab022f4f11d53fd998ac298",
+        "tarball": "https://registry.npmjs.org/miniflare/-/miniflare-5.20261001.0-alpha.tgz",
+        "fileCount": 199,
+        "integrity": "sha512-GaimS5mSIOMyvd16ga+e1/QkI8cmp3z35QPHFex0DktqNQf2RVZQwMPQXdyoUreUiFP/0Gpe2MoQInTyMAD5xA==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDwg1JN+3WzkWmPtx2sKo1/1G+vR36YD2yzDrVcFMTPggIhAKfcx/zO9dDXadxhohI9seCYDdmXFpKfnqFAp5+7NYvG",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/miniflare@5.20261001.0-alpha",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 24562207
+      },
+      "repository": {
+        "url": "git+https://github.com/cloudflare/workers-sdk.git",
+        "type": "git",
+        "directory": "packages/miniflare"
+      }
+    }
+  },
+  {
+    "source": "https://registry.npmjs.org/http-cache-semantics/4.2.1",
+    "capturedAt": "2026-10-03T10:10:14.719593+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "source": "https://registry.npmjs.org/http-cache-semantics/latest",
+    "capturedAt": "2026-10-03T10:10:16.340573+00:00",
+    "data": {
+      "name": "http-cache-semantics",
+      "version": "4.2.0",
+      "repository": {
+        "url": "git+https://github.com/kornelski/http-cache-semantics.git",
+        "type": "git"
+      },
+      "dist": {
+        "shasum": "205f4db64f8562b76a4ff9235aa5279839a09dd5",
+        "tarball": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.2.0.tgz",
+        "fileCount": 4,
+        "integrity": "sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIBDylgJy1goQjk/YkybVnYDfrvUnbHzz8tdqOJPdjynvAiEAxYJ+Q4Vb6vXYQwFoq7tZTzjUCqQpCwlWDDHZYHcFisY=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 49973
+      }
+    }
+  }
+]

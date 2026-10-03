@@ -1,0 +1,128 @@
+{
+  "result": "PASS",
+  "method": "Traverse every production/development root as required and propagate optionality only across optionalDependencies; inspect both states for cycles/alternate paths, resolving pnpm aliases.",
+  "nodes": [
+    {
+      "key": "@jridgewell/source-map@0.3.11",
+      "previousRequiredPath": [
+        ". [dependencies]",
+        "@swup/astro@1.8.0(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: @swup/parallel-plugin@0.4.0(rolldown@1.2.7)(supports-color@10.2.2)(swup@4.9.2)",
+        "dependencies: @swup/plugin@3.0.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: microbundle@0.15.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: terser@5.50.0",
+        "dependencies: @jridgewell/source-map@0.3.11"
+      ],
+      "currentOptionalPath": [
+        ". [dependencies]",
+        "@astrojs/cloudflare@14.2.6(@types/node@26.2.0)(astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(wrangler@4.127.1)(yaml@2.9.0)",
+        "dependencies: vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+        "optionalDependencies: terser@5.50.0",
+        "dependencies: @jridgewell/source-map@0.3.11"
+      ],
+      "currentRequiredReachability": false
+    },
+    {
+      "key": "buffer-from@1.1.2",
+      "previousRequiredPath": [
+        ". [dependencies]",
+        "@swup/astro@1.8.0(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: @swup/parallel-plugin@0.4.0(rolldown@1.2.7)(supports-color@10.2.2)(swup@4.9.2)",
+        "dependencies: @swup/plugin@3.0.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: microbundle@0.15.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: terser@5.50.0",
+        "dependencies: source-map-support@0.5.21",
+        "dependencies: buffer-from@1.1.2"
+      ],
+      "currentOptionalPath": [
+        ". [dependencies]",
+        "@astrojs/cloudflare@14.2.6(@types/node@26.2.0)(astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(wrangler@4.127.1)(yaml@2.9.0)",
+        "dependencies: vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+        "optionalDependencies: terser@5.50.0",
+        "dependencies: source-map-support@0.5.21",
+        "dependencies: buffer-from@1.1.2"
+      ],
+      "currentRequiredReachability": false
+    },
+    {
+      "key": "commander@2.20.3",
+      "previousRequiredPath": [
+        ". [dependencies]",
+        "@swup/astro@1.8.0(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: @swup/parallel-plugin@0.4.0(rolldown@1.2.7)(supports-color@10.2.2)(swup@4.9.2)",
+        "dependencies: @swup/plugin@3.0.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: microbundle@0.15.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: terser@5.50.0",
+        "dependencies: commander@2.20.3"
+      ],
+      "currentOptionalPath": [
+        ". [dependencies]",
+        "@astrojs/cloudflare@14.2.6(@types/node@26.2.0)(astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(wrangler@4.127.1)(yaml@2.9.0)",
+        "dependencies: vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+        "optionalDependencies: terser@5.50.0",
+        "dependencies: commander@2.20.3"
+      ],
+      "currentRequiredReachability": false
+    },
+    {
+      "key": "source-map-support@0.5.21",
+      "previousRequiredPath": [
+        ". [dependencies]",
+        "@swup/astro@1.8.0(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: @swup/parallel-plugin@0.4.0(rolldown@1.2.7)(supports-color@10.2.2)(swup@4.9.2)",
+        "dependencies: @swup/plugin@3.0.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: microbundle@0.15.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: terser@5.50.0",
+        "dependencies: source-map-support@0.5.21"
+      ],
+      "currentOptionalPath": [
+        ". [dependencies]",
+        "@astrojs/cloudflare@14.2.6(@types/node@26.2.0)(astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(wrangler@4.127.1)(yaml@2.9.0)",
+        "dependencies: vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+        "optionalDependencies: terser@5.50.0",
+        "dependencies: source-map-support@0.5.21"
+      ],
+      "currentRequiredReachability": false
+    },
+    {
+      "key": "source-map@0.6.1",
+      "previousRequiredPath": [
+        ". [dependencies]",
+        "@swup/astro@1.8.0(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: @swup/parallel-plugin@0.4.0(rolldown@1.2.7)(supports-color@10.2.2)(swup@4.9.2)",
+        "dependencies: @swup/plugin@3.0.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: microbundle@0.15.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: rollup-plugin-postcss@4.0.2(postcss@8.5.26)",
+        "dependencies: concat-with-sourcemaps@1.1.0",
+        "dependencies: source-map@0.6.1"
+      ],
+      "currentOptionalPath": [
+        ". [dependencies]",
+        "@astrojs/cloudflare@14.2.6(@types/node@26.2.0)(astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(wrangler@4.127.1)(yaml@2.9.0)",
+        "dependencies: vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+        "optionalDependencies: terser@5.50.0",
+        "dependencies: source-map-support@0.5.21",
+        "dependencies: source-map@0.6.1"
+      ],
+      "currentRequiredReachability": false
+    },
+    {
+      "key": "terser@5.50.0",
+      "previousRequiredPath": [
+        ". [dependencies]",
+        "@swup/astro@1.8.0(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: @swup/parallel-plugin@0.4.0(rolldown@1.2.7)(supports-color@10.2.2)(swup@4.9.2)",
+        "dependencies: @swup/plugin@3.0.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: microbundle@0.15.1(rolldown@1.2.7)(supports-color@10.2.2)",
+        "dependencies: terser@5.50.0"
+      ],
+      "currentOptionalPath": [
+        ". [dependencies]",
+        "@astrojs/cloudflare@14.2.6(@types/node@26.2.0)(astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0))(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(wrangler@4.127.1)(yaml@2.9.0)",
+        "dependencies: vite@8.2.2(@types/node@26.2.0)(esbuild@0.28.2)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+        "optionalDependencies: terser@5.50.0"
+      ],
+      "currentRequiredReachability": false
+    }
+  ]
+}

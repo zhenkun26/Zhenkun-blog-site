@@ -1,0 +1,141 @@
+[
+  {
+    "source": "https://api.github.com/repos/lovell/sharp/security-advisories/GHSA-wq5f-xc86-pv6w",
+    "capturedAt": "2026-10-03T10:07:35.188799+00:00",
+    "data": {
+      "ghsa_id": "GHSA-wq5f-xc86-pv6w",
+      "cve_id": null,
+      "url": "https://api.github.com/repos/lovell/sharp/security-advisories/GHSA-wq5f-xc86-pv6w",
+      "html_url": "https://github.com/lovell/sharp/security/advisories/GHSA-wq5f-xc86-pv6w",
+      "summary": "Vulnerability in librsvg dependency CVE-2026-96889",
+      "description": "### Impact\r\n\r\nA memory-related vulnerability has been discovered and fixed in the upstream librsvg dependency. When certain runtime-specific conditions apply, this vulnerability can lead to possible remote code execution (RCE) on glibc-based Linux.\r\n\r\n### Patches\r\n\r\n#### Using prebuilt binaries provided by sharp?\r\n\r\nMost people rely on the prebuilt binaries provided by sharp.\r\n\r\nPlease upgrade sharp to the latest version, currently 0.35.5, which provides librsvg 2.63.2.\r\n\r\n#### Using a globally-installed librsvg?\r\n\r\nPlease ensure you are using the latest librsvg 2.63.2.\r\n\r\n### Workarounds\r\n\r\nAdd the following to your code to prevent sharp from decoding SVG images.\r\n```js\r\nsharp.block({ operation: [\"VipsForeignLoadSvg\"] });\r\n```\r\n\r\nTo avoid RCE, ensure you are using a `node` executable binary compiled as a Position Independent Executable (PIE). Most Linux package managers already use this security-hardening feature however be warned that the \"official\" Node.js binaries do not.\r\n\r\n### References\r\n\r\n- [CVE-2026-96889](https://www.cve.org/CVERecord?id=CVE-2026-96889)\r\n- https://gitlab.gnome.org/GNOME/librsvg/-/work_items/1241\r\n",
+      "severity": "high",
+      "author": null,
+      "publisher": {
+        "login": "lovell",
+        "id": 210965,
+        "node_id": "MDQ6VXNlcjIxMDk2NQ==",
+        "avatar_url": "https://avatars.githubusercontent.com/u/210965?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/lovell",
+        "html_url": "https://github.com/lovell",
+        "followers_url": "https://api.github.com/users/lovell/followers",
+        "following_url": "https://api.github.com/users/lovell/following{/other_user}",
+        "gists_url": "https://api.github.com/users/lovell/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/lovell/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/lovell/subscriptions",
+        "organizations_url": "https://api.github.com/users/lovell/orgs",
+        "repos_url": "https://api.github.com/users/lovell/repos",
+        "events_url": "https://api.github.com/users/lovell/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/lovell/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "identifiers": [
+        {
+          "value": "GHSA-wq5f-xc86-pv6w",
+          "type": "GHSA"
+        }
+      ],
+      "state": "published",
+      "created_at": null,
+      "updated_at": "2026-09-30T19:22:51Z",
+      "published_at": "2026-09-30T19:22:51Z",
+      "closed_at": null,
+      "withdrawn_at": null,
+      "submission": null,
+      "vulnerabilities": [
+        {
+          "package": {
+            "ecosystem": "npm",
+            "name": "sharp"
+          },
+          "vulnerable_version_range": "< 0.35.5",
+          "patched_versions": ">= 0.35.5",
+          "vulnerable_functions": []
+        }
+      ],
+      "cvss_severities": {
+        "cvss_v3": {
+          "vector_string": null,
+          "score": null
+        },
+        "cvss_v4": {
+          "vector_string": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H",
+          "score": 8.9
+        }
+      },
+      "cwes": [
+        {
+          "cwe_id": "CWE-416",
+          "name": "Use After Free"
+        }
+      ],
+      "cwe_ids": [
+        "CWE-416"
+      ],
+      "credits": [],
+      "credits_detailed": [],
+      "collaborating_users": null,
+      "collaborating_teams": null,
+      "private_fork": null,
+      "comments": 0,
+      "cvss": {
+        "vector_string": null,
+        "score": null
+      }
+    }
+  },
+  {
+    "source": "https://api.github.com/repos/swup/plugin/releases/tags/4.0.0",
+    "capturedAt": "2026-10-03T10:07:37.916517+00:00",
+    "data": {
+      "url": "https://api.github.com/repos/swup/plugin/releases/121751905",
+      "assets_url": "https://api.github.com/repos/swup/plugin/releases/121751905/assets",
+      "upload_url": "https://uploads.github.com/repos/swup/plugin/releases/121751905/assets{?name,label}",
+      "html_url": "https://github.com/swup/plugin/releases/tag/4.0.0",
+      "id": 121751905,
+      "author": {
+        "login": "daun",
+        "id": 22225348,
+        "node_id": "MDQ6VXNlcjIyMjI1MzQ4",
+        "avatar_url": "https://avatars.githubusercontent.com/u/22225348?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/daun",
+        "html_url": "https://github.com/daun",
+        "followers_url": "https://api.github.com/users/daun/followers",
+        "following_url": "https://api.github.com/users/daun/following{/other_user}",
+        "gists_url": "https://api.github.com/users/daun/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/daun/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/daun/subscriptions",
+        "organizations_url": "https://api.github.com/users/daun/orgs",
+        "repos_url": "https://api.github.com/users/daun/repos",
+        "events_url": "https://api.github.com/users/daun/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/daun/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "node_id": "RE_kwDOCvcPlM4HQclh",
+      "tag_name": "4.0.0",
+      "target_commitish": "master",
+      "name": "4.0.0",
+      "draft": false,
+      "immutable": false,
+      "prerelease": false,
+      "created_at": "2023-09-19T18:47:12Z",
+      "updated_at": "2023-09-19T18:47:50Z",
+      "published_at": "2023-09-19T18:47:50Z",
+      "assets": [],
+      "tarball_url": "https://api.github.com/repos/swup/plugin/tarball/4.0.0",
+      "zipball_url": "https://api.github.com/repos/swup/plugin/zipball/4.0.0",
+      "body": "- Remove package bundling code: moved to `@swup/cli`"
+    }
+  },
+  {
+    "source": "https://api.github.com/repos/swup/plugin/releases/tags/v4.0.0",
+    "capturedAt": "2026-10-03T10:07:40.681748+00:00",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

@@ -1,0 +1,7 @@
+This draft validates the reviewed dependency-remediation candidate on Ubuntu. It removes the old Swup plugin build chain through two exact parent overrides, preserves the existing Vite/rolldown version, and patches devalue and gray-matter's YAML dependency within their original ranges. It includes the bounded parent/API/data tests and retained remediation evidence.
+
+Exact candidate: `330f58131c3d0c555aba25222a3596e1aa54da49`; tested source: `83fa53d0b561d479ca043caae208e29a4a0060ac`. Local fresh validation passed 166 native tests, formal types, Astro, Biome, both complete base builds/Pagefind, artifact checks and 24 local HTTP checks per base. Ubuntu CI for this PR is the pending validation gate.
+
+Remediation remains partial. Fresh prod/full audits each report 37 records / 24 GHSA; the official ledger identifies 25 still affected, including an audit-omitted sharp advisory. `http-cache-semantics` has no verified published repair and remains an overall closure blocker without exemption. The inherited mdx/markdown-satteri peer check fails. Browser acceptance remains blocked; server/client data tests do not establish browser DOM hydration or real navigation acceptance. R1b/R2 and bilingual work are excluded.
+
+This PR is for candidate validation and independent review. Keep it draft; do not merge, enable auto-merge or deploy. No CI configuration or permission changes are included. Local evidence: `references/dependency-r1a-2026-10-03/report.md` and `validation-receipt.json`; prior A/R3 evidence is preserved.

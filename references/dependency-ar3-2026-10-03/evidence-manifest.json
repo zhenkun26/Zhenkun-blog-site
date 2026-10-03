@@ -1,0 +1,107 @@
+{
+  "candidateCommit": "e9d0b25f791eb1e0c88fc7845d3d181672036d34",
+  "status": "BLOCKED",
+  "files": [
+    {
+      "path": "references/dependency-ar3-2026-10-03/audit-full.exit",
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/audit-full.json",
+      "sha256": "c3871df2483d9f970dadadb148dc4a3f8ca0bc5ca5910c014a6d3691238af339",
+      "bytes": 51715
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/audit-full.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/audit-prod.exit",
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/audit-prod.json",
+      "sha256": "17050edefd8fb4fa271306380c9fc77e2241fe2773afe69485c332dc58a9dc72",
+      "bytes": 51480
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/audit-prod.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/audit-summary.json",
+      "sha256": "da34afb3b39610b23f9ad705807ea3772877917f6b7da8fa695a259b85e5f486",
+      "bytes": 2639
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/candidate-graph.json",
+      "sha256": "b4c465878ae3497497bd22dc351462e5cf26cb434d7c3d9fe8471dc48d06ebf1",
+      "bytes": 1581
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/graph-package-diff.json",
+      "sha256": "6fe02c0d2a97555aca94e87812516565e7a95bb9683c1926c87078ec1132b1f7",
+      "bytes": 14301
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/graph-review.json",
+      "sha256": "f6dfeb80bcae509a4b79f8c2c7d19e9b5cebce5a76a791f913783647b0c39ec0",
+      "bytes": 27793
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/lock-install-authorized.log",
+      "sha256": "663b9f5003949395280f1c9a975762082c25d33fe08af719cba7d7b559114017",
+      "bytes": 1291
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/lock-install.log",
+      "sha256": "33382bfe3e9888dcd5f2ab9dd64fc9f110e5e4f952cdf33d808596cb7ec9f6ec",
+      "bytes": 1145
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/lock.diff",
+      "sha256": "e535f2b05e1618f072f16c96413708416599e19e46ac4587aabeeddbda73bacb",
+      "bytes": 554058
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/p3-correction.json",
+      "sha256": "4acb653306c79467529d21242eac3cc2f68e3d613a60d821369606e66ae7c2ba",
+      "bytes": 784
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/peers.exit",
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/peers.log",
+      "sha256": "d061de5f0ecccb7304db52b6edcabbbdb88f1d7a1b6cdcbb07c2f2130484ea4c",
+      "bytes": 144
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/report.md",
+      "sha256": "bdff9a4338872c043ca803fcb4807761d6aca15b22971c66e2029081f6f1b301",
+      "bytes": 6591
+    },
+    {
+      "path": "references/dependency-ar3-2026-10-03/source-protection.json",
+      "sha256": "59003e5eb6f10899d9c133519e96acd4f67f480a92115633129fc530c03f70b4",
+      "bytes": 385
+    }
+  ],
+  "postReviewCorrection": {
+    "date": "2026-10-03",
+    "scope": "Report correction notice only; original graph/audits remain historical evidence for e9d0b25.",
+    "originalReport": {
+      "path": "references/dependency-ar3-2026-10-03/report.md",
+      "sha256": "4aff954f6f0f99048f2c401b51844f7e045f7c8159d2a78c02b9540c10921fa9",
+      "bytes": 6020
+    },
+    "preservedOriginalReport": "references/dependency-ar3-rolldown-2026-10-03/report-original-14a0d7c.md",
+    "preservedOriginalManifest": "references/dependency-ar3-rolldown-2026-10-03/manifest-original-14a0d7c.json"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "source": "existing installed manifest matching locked vite@8.2.2",
+  "path": "node_modules/.pnpm/vite@8.2.2_@types+node@26.2.0_esbuild@0.28.2_jiti@2.7.0_stylus@0.64.0_supports-color@10_bf036e06092aaa6ea92267abb20d0df7/node_modules/vite/package.json",
+  "sha256": "4e41dd20c7a12e7e70915b235c0bf5b5158ec6709c1390804128af0867d6d6d9",
+  "name": "vite",
+  "version": "8.2.2",
+  "dependencies": {
+    "lightningcss": "^1.33.0",
+    "picomatch": "^4.0.5",
+    "postcss": "^8.5.26",
+    "rolldown": "~1.2.4",
+    "tinyglobby": "^0.2.17"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}

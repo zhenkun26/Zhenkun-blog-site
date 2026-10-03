@@ -1,0 +1,62 @@
+✔ actual Iconify parent resolves the already accepted SVGO 4.1.0 (67.823417ms)
+✔ actual Iconify optimization preserves viewBox, paint refs and repeat stability (13.361084ms)
+✔ actual Iconify parser rejects a small non-SVG input (0.191292ms)
+✔ Stylus/glob10: actual minimatch loads its original-major brace patch (0.360583ms)
+✔ Stylus/glob10: ESM/CJS expand bounded nested/number ranges and match files (2.91675ms)
+✔ Stylus/glob10: actual glob discovery returns the exact owned input set (2.079083ms)
+✔ root/glob13: actual minimatch loads its original-major brace patch (0.252042ms)
+✔ root/glob13: ESM/CJS expand bounded nested/number ranges and match files (2.977916ms)
+✔ root/glob13: actual glob discovery returns the exact owned input set (2.07275ms)
+✔ createUnifont none: observable dispatcher and real local font chain (128.503375ms)
+✖ createUnifont proxy: observable dispatcher and real local font chain (93.465333ms)
+✔ createUnifont no_proxy: observable dispatcher and real local font chain (104.620125ms)
+✔ createUnifont custom: observable dispatcher and real local font chain (103.56075ms)
+✔ createUnifont retry: observable dispatcher and real local font chain (1135.70325ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 13
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1645.109875
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-unifont.mjs:117:3
+✖ createUnifont proxy: observable dispatcher and real local font chain (93.465333ms)
+  AssertionError [ERR_ASSERTION]: 
+  node:internal/modules/run_main:107
+      triggerUncaughtException(
+      ^
+  
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  undefined !== 'npm'
+  
+      at child (file:///Users/zhenkun/Documents/Codex/2026-10-03/task-3/zhenkun-ar3/scripts/zhenkun-test-unifont.mjs:60:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async file:///Users/zhenkun/Documents/Codex/2026-10-03/task-3/zhenkun-ar3/scripts/zhenkun-test-unifont.mjs:114:2 {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'npm',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+  
+  Node.js v24.20.0
+  
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///Users/zhenkun/Documents/Codex/2026-10-03/task-3/zhenkun-ar3/scripts/zhenkun-test-unifont.mjs:229:12)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

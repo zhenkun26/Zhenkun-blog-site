@@ -1,0 +1,76 @@
+{
+  "recordedAt": "2026-10-02T17:02:18.786392+00:00",
+  "scope": "Documentation and evidence delivery only; dependency remediation is not started.",
+  "authorization": "Owner requested push, synchronization and archival of the completed remediation plan.",
+  "repository": "https://github.com/zhenkun26/Zhenkun-blog-site",
+  "branch": "codex/plan-dependency-remediation",
+  "planCommit": "8321b158661cbf28c57a60ca09a76cf8ec488b75",
+  "verifiedRemotePlanCommit": "8321b158661cbf28c57a60ca09a76cf8ec488b75",
+  "upstream": "origin/codex/plan-dependency-remediation",
+  "planPush": "PASS",
+  "planSynchronization": {
+    "ahead": 0,
+    "behind": 0,
+    "result": "PASS"
+  },
+  "mainUnchanged": "53cf67d121ce053b2d5f2aed4dd40c7d07d8506a",
+  "archive": {
+    "path": "references/dependency-remediation-2026-10-02/planning-snapshot-8321b15.zip",
+    "sourceCommit": "8321b158661cbf28c57a60ca09a76cf8ec488b75",
+    "sha256": "ac3c16c63e90b5aa302f58d3588d816f244e3fb45c58dce84abba8de470e1205",
+    "bytes": 26292,
+    "contents": [
+      {
+        "path": "docs/DEPENDENCY_REMEDIATION_PLAN.md",
+        "bytes": 30931,
+        "sha256": "d29f56935a061d14f995a7e57a50a42874eb78978dc4852faa69a72288674ba1"
+      },
+      {
+        "path": "references/dependency-remediation-2026-10-02/baseline-full-audit.json",
+        "bytes": 59435,
+        "sha256": "5e72602ef4449fa421c3c5fb611ec2d8f8b6e3085d48dcbadbfb8f88960c07b3"
+      },
+      {
+        "path": "references/dependency-remediation-2026-10-02/baseline-prod-audit.json",
+        "bytes": 59200,
+        "sha256": "01a78de831b2e348d1920ac23851b2b74a92eb82f9da2424575c0490ed9895f3"
+      },
+      {
+        "path": "references/dependency-remediation-2026-10-02/baseline.json",
+        "bytes": 1012,
+        "sha256": "6362a77962bcb31431901dcf05cc40767460bafb173e47189cf693fbe3f11818"
+      },
+      {
+        "path": "references/dependency-remediation-2026-10-02/installed-parent-edges.json",
+        "bytes": 2237,
+        "sha256": "25172ac49dd99f43cf1f89188b6f2a9a28feff8af5f74d869e8e485820edad3b"
+      },
+      {
+        "path": "references/dependency-remediation-2026-10-02/patch-target-metadata.json",
+        "bytes": 6214,
+        "sha256": "8709282d97bd769f35ded46c7ea5a57b699057c09ae893f63e14f0b47dd9ba6c"
+      }
+    ],
+    "integrity": "PASS"
+  },
+  "checks": {
+    "documentAuditConsistency": "PASS",
+    "localDocumentLinks": "PASS",
+    "dependencyFileHashesUnchanged": "PASS",
+    "applicationAndCiFilesUnchanged": "PASS",
+    "applicationTestsAndBuild": "NOT_APPLICABLE: documentation and archival only"
+  },
+  "retained": [
+    "Original plan and evidence files",
+    "Existing local and remote branches",
+    "Untracked .workbuddy"
+  ],
+  "notPerformed": [
+    "Dependency upgrades",
+    "Merge into main",
+    "Deployment",
+    "Repository archival or freezing",
+    "Filesystem deletion"
+  ],
+  "receiptDelivery": "This receipt and its archive are delivered by the following docs-only commit; final head equality is verified after pushing and reported in the handoff."
+}

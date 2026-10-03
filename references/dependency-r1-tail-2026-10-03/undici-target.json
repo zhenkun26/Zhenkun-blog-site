@@ -1,0 +1,7 @@
+{
+  "version": "8.10.2",
+  "dist.integrity": "sha512-/y4/bH9YNU5hi9NIrpOuvGXFcxrj3CMrV+/AYpowAYTpHn8gX/XPFjNy766FPoYY0miQhdW977JFWKGNhBdwyQ==",
+  "engines": {
+    "node": ">=22.19.0"
+  }
+}

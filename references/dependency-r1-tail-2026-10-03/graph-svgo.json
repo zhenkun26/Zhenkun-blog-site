@@ -1,0 +1,20 @@
+{
+  "stage": "svgo",
+  "added": [],
+  "removed": [
+    "css-select@5.2.2",
+    "css-what@6.2.2",
+    "svgo@4.0.2"
+  ],
+  "changed": [],
+  "edges": [
+    "@iconify/tools@5.0.12"
+  ],
+  "counts": [
+    925,
+    922
+  ],
+  "removedProvenInOldTargetClosure": true,
+  "noOtherSnapshotOrSettingsChanges": true,
+  "result": "PASS_SCOPE"
+}

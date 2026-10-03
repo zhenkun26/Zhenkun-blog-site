@@ -1,0 +1,163 @@
+references/dependency-r1a-2026-10-03/build-project.log:23: trailing whitespace.
++07:14:07 [WARN] [vite] [plugin builtin:vite-reporter] 
+references/dependency-r1a-2026-10-03/build-project.log:31: trailing whitespace.
++ generating static routes 
+references/dependency-r1a-2026-10-03/build-project.log:32: trailing whitespace.
++07:14:07   ├─ /404.html (+29ms) 
+references/dependency-r1a-2026-10-03/build-project.log:33: trailing whitespace.
++07:14:07   ├─ /about/index.html (+8ms) 
+references/dependency-r1a-2026-10-03/build-project.log:34: trailing whitespace.
++07:14:07   ├─ /api/allPostMeta.json (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:35: trailing whitespace.
++07:14:07   ├─ /api/dynamic.json (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:36: trailing whitespace.
++07:14:07   ├─ /archive/index.html (+6ms) 
+references/dependency-r1a-2026-10-03/build-project.log:37: trailing whitespace.
++07:14:07   ├─ /bangumi/index.html (+2ms) 
+references/dependency-r1a-2026-10-03/build-project.log:38: trailing whitespace.
++07:14:07   ├─ /bilibili/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:39: trailing whitespace.
++07:14:07   ├─ /booknav/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:40: trailing whitespace.
++07:14:07   ├─ /categories/index.html (+6ms) 
+references/dependency-r1a-2026-10-03/build-project.log:41: trailing whitespace.
++07:14:07   ├─ /dynamic/comments/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:42: trailing whitespace.
++07:14:07   ├─ /dynamic/index.html (+2ms) 
+references/dependency-r1a-2026-10-03/build-project.log:43: trailing whitespace.
++07:14:07   ├─ /friends/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:44: trailing whitespace.
++07:14:07   ├─ /gallery/firefly-2026/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:45: trailing whitespace.
++07:14:07   ├─ /gallery/encrypted-test/index.html (+0ms) 
+references/dependency-r1a-2026-10-03/build-project.log:46: trailing whitespace.
++07:14:07   ├─ /gallery/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:47: trailing whitespace.
++07:14:07   ├─ /guestbook/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:48: trailing whitespace.
++07:14:07   ├─ /myanimelist/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:49: trailing whitespace.
++07:14:07   ├─ /robots.txt (+0ms) 
+references/dependency-r1a-2026-10-03/build-project.log:50: trailing whitespace.
++07:14:07   ├─ /rss/index.html (+6ms) 
+references/dependency-r1a-2026-10-03/build-project.log:51: trailing whitespace.
++07:14:07   ├─ /rss.xml (+61ms) 
+references/dependency-r1a-2026-10-03/build-project.log:52: trailing whitespace.
++07:14:07   ├─ /search/index.html (+7ms) 
+references/dependency-r1a-2026-10-03/build-project.log:53: trailing whitespace.
++07:14:07   ├─ /series/index.html (+6ms) 
+references/dependency-r1a-2026-10-03/build-project.log:54: trailing whitespace.
++07:14:07   ├─ /sponsor/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:55: trailing whitespace.
++07:14:07   ├─ /tags/index.html (+6ms) 
+references/dependency-r1a-2026-10-03/build-project.log:56: trailing whitespace.
++07:14:07   ├─ /vndb/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-project.log:57: trailing whitespace.
++07:14:07   ├─ /index.html (+5ms) 
+references/dependency-r1a-2026-10-03/build-project.log:60: trailing whitespace.
++ generating optimized images 
+references/dependency-r1a-2026-10-03/build-project.log:120: trailing whitespace.
++13 pages found without an <html> element. 
+references/dependency-r1a-2026-10-03/build-project.log:121: trailing whitespace.
++Pages without an outer <html> element will not be processed by default. 
+references/dependency-r1a-2026-10-03/build-project.log:141: trailing whitespace.
++Total: 
+references/dependency-r1a-2026-10-03/build-project.log:147: trailing whitespace.
++Note: Pagefind doesn't support stemming for the language zh-cn. 
+references/dependency-r1a-2026-10-03/build-project.log:149: trailing whitespace.
++Note: Pagefind doesn't support stemming for the language zh-cn. 
+references/dependency-r1a-2026-10-03/build-root.log:21: trailing whitespace.
++07:12:47 [WARN] [vite] [plugin builtin:vite-reporter] 
+references/dependency-r1a-2026-10-03/build-root.log:29: trailing whitespace.
++ generating static routes 
+references/dependency-r1a-2026-10-03/build-root.log:30: trailing whitespace.
++07:12:47   ├─ /404.html (+31ms) 
+references/dependency-r1a-2026-10-03/build-root.log:31: trailing whitespace.
++07:12:47   ├─ /about/index.html (+8ms) 
+references/dependency-r1a-2026-10-03/build-root.log:32: trailing whitespace.
++07:12:47   ├─ /api/allPostMeta.json (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:33: trailing whitespace.
++07:12:47   ├─ /api/dynamic.json (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:34: trailing whitespace.
++07:12:47   ├─ /archive/index.html (+7ms) 
+references/dependency-r1a-2026-10-03/build-root.log:35: trailing whitespace.
++07:12:47   ├─ /bangumi/index.html (+2ms) 
+references/dependency-r1a-2026-10-03/build-root.log:36: trailing whitespace.
++07:12:47   ├─ /bilibili/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:37: trailing whitespace.
++07:12:47   ├─ /booknav/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:38: trailing whitespace.
++07:12:47   ├─ /categories/index.html (+6ms) 
+references/dependency-r1a-2026-10-03/build-root.log:39: trailing whitespace.
++07:12:47   ├─ /dynamic/comments/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:40: trailing whitespace.
++07:12:47   ├─ /dynamic/index.html (+2ms) 
+references/dependency-r1a-2026-10-03/build-root.log:41: trailing whitespace.
++07:12:47   ├─ /friends/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:42: trailing whitespace.
++07:12:47   ├─ /gallery/firefly-2026/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:43: trailing whitespace.
++07:12:47   ├─ /gallery/encrypted-test/index.html (+0ms) 
+references/dependency-r1a-2026-10-03/build-root.log:44: trailing whitespace.
++07:12:47   ├─ /gallery/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:45: trailing whitespace.
++07:12:47   ├─ /guestbook/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:46: trailing whitespace.
++07:12:47   ├─ /myanimelist/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:47: trailing whitespace.
++07:12:47   ├─ /robots.txt (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:48: trailing whitespace.
++07:12:47   ├─ /rss/index.html (+6ms) 
+references/dependency-r1a-2026-10-03/build-root.log:49: trailing whitespace.
++07:12:47   ├─ /rss.xml (+67ms) 
+references/dependency-r1a-2026-10-03/build-root.log:50: trailing whitespace.
++07:12:47   ├─ /search/index.html (+7ms) 
+references/dependency-r1a-2026-10-03/build-root.log:51: trailing whitespace.
++07:12:47   ├─ /series/index.html (+5ms) 
+references/dependency-r1a-2026-10-03/build-root.log:52: trailing whitespace.
++07:12:47   ├─ /sponsor/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:53: trailing whitespace.
++07:12:47   ├─ /tags/index.html (+5ms) 
+references/dependency-r1a-2026-10-03/build-root.log:54: trailing whitespace.
++07:12:47   ├─ /vndb/index.html (+1ms) 
+references/dependency-r1a-2026-10-03/build-root.log:55: trailing whitespace.
++07:12:47   ├─ /index.html (+5ms) 
+references/dependency-r1a-2026-10-03/build-root.log:58: trailing whitespace.
++ generating optimized images 
+references/dependency-r1a-2026-10-03/build-root.log:118: trailing whitespace.
++13 pages found without an <html> element. 
+references/dependency-r1a-2026-10-03/build-root.log:119: trailing whitespace.
++Pages without an outer <html> element will not be processed by default. 
+references/dependency-r1a-2026-10-03/build-root.log:139: trailing whitespace.
++Total: 
+references/dependency-r1a-2026-10-03/build-root.log:145: trailing whitespace.
++Note: Pagefind doesn't support stemming for the language zh-cn. 
+references/dependency-r1a-2026-10-03/build-root.log:147: trailing whitespace.
++Note: Pagefind doesn't support stemming for the language zh-cn. 
+references/dependency-r1a-2026-10-03/check.log:68: trailing whitespace.
++Result (258 files): 
+references/dependency-r1a-2026-10-03/check.log:72: new blank line at EOF.
+references/dependency-r1a-2026-10-03/lock.diff:11: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:13: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:17: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:22: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:28: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:34: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:46: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:48: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:51: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:55: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:64: trailing whitespace.
++ 
+references/dependency-r1a-2026-10-03/lock.diff:66: trailing whitespace.
++ 

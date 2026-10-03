@@ -1,0 +1,11 @@
+{
+  "state": "PASS_EVIDENCE_ONLY",
+  "candidate": "d39b89677c11bef3fbad9d5e94fc6e89601674a6",
+  "sourceBlobHashesMatch": true,
+  "unchangedDependencyInput": true,
+  "savedArtifactsAllHashesMatch": true,
+  "allReportLinksResolve": true,
+  "jsonParse": true,
+  "applicationBrowserAcceptance": "BLOCKED",
+  "linux": "NOT_RUN"
+}

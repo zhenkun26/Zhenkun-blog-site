@@ -1,0 +1,13 @@
+{
+  "added": [
+    "undici@8.10.2"
+  ],
+  "removed": [
+    "undici@8.10.1"
+  ],
+  "edges": [
+    "unifont@0.7.5"
+  ],
+  "result": "PASS_SCOPE",
+  "onlyApprovedOverride": true
+}

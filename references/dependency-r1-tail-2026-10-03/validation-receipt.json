@@ -1,0 +1,159 @@
+{
+  "input": "c7394e104ffda7a90746ca40b59338c539811182",
+  "sourceCommit": "90704e36768c2dc64ea80b30a364dcd46e2752f2",
+  "scope": "R1remainingfouractualparentedges;3normalrangepatches+oneAstraapprovedin-rangeexactparentguard",
+  "hashes": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-workspace.yaml": "9be1da702c3a02c2f6d2263dd4c31d56eb4bb1827fe2e210a8340a4c99f6d5d2",
+    "pnpm-lock.yaml": "57ceaf09fe816440a0abb8b36e73e37e2460b497efd9c189d80c28c6ea70cfda"
+  },
+  "testHashes": {
+    "scripts/zhenkun-test-r1-tail.mjs": "00254ac769bfb065c47615ce9faf5e82e90a59b4f58ddfc63549d04ef9e80a08",
+    "scripts/zhenkun-test-unifont.mjs": "7854b1403a7f3d1035d64a8485fa8932704e5dad96ad7fbcbb01d41837049c99"
+  },
+  "Node": "24.20.0",
+  "pnpm": "11.22.0",
+  "platform": "macOSDarwinarm64",
+  "actualModel": "UNVERIFIED",
+  "requestedModel": "routineSolxhigh/Fastretained,complexAstrahigh",
+  "commands": [
+    {
+      "name": "install",
+      "command": "pnpm install --frozen-lockfile --registry=https://registry.npmjs.org",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "native",
+      "command": "node --test scripts/zhenkun-test-*.mjs",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "target-tests",
+      "command": "node --test scripts/zhenkun-test-r1-tail.mjs scripts/zhenkun-test-unifont.mjs",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "check",
+      "command": "pnpm check",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "type-check",
+      "command": "pnpm type-check",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "parent-types-strict",
+      "command": "pnpm exec tsc --ignoreConfig --noEmit --strict --module NodeNext --moduleResolution NodeNext --target ES2022 scripts/zhenkun-swup-parent-types.ts",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "biome",
+      "command": "pnpm exec biome ci src scripts/zhenkun-test-swup-parents.mjs scripts/zhenkun-swup-parent-types.ts scripts/zhenkun-test-r1a-data.mjs scripts/zhenkun-test-r1b-uri.mjs scripts/zhenkun-test-r1-tail.mjs scripts/zhenkun-test-unifont.mjs",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "build-root",
+      "command": "env -u CF_WORKERS DEPLOY_BASE=/ pnpm build",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "build-project",
+      "command": "env -u CF_WORKERS DEPLOY_BASE=/Zhenkun-blog-site/ pnpm build",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "artifacts-root",
+      "command": "node scripts/zhenkun-verify-ci-artifacts.mjs --base /",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "artifacts-project",
+      "command": "node scripts/zhenkun-verify-ci-artifacts.mjs --base /Zhenkun-blog-site/",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "http-root",
+      "command": "python3 scripts/zhenkun-verify-deployment.py --root tmp/r1-tail-artifacts/root --base / --http http://127.0.0.1:4321",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "http-project",
+      "command": "python3 scripts/zhenkun-verify-deployment.py --root tmp/r1-tail-artifacts/project/Zhenkun-blog-site --base /Zhenkun-blog-site/ --http http://127.0.0.1:4322",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "peers",
+      "command": "pnpm peers check",
+      "exit": 1,
+      "state": "FAIL"
+    },
+    {
+      "name": "audit-prod",
+      "command": "pnpm audit --prod --registry=https://registry.npmjs.org --json",
+      "exit": 1,
+      "state": "FAIL"
+    },
+    {
+      "name": "audit-full",
+      "command": "pnpm audit --registry=https://registry.npmjs.org --json",
+      "exit": 1,
+      "state": "FAIL"
+    }
+  ],
+  "nativeTests": 186,
+  "targetTests": 14,
+  "biomeFiles": 304,
+  "astro": {
+    "files": 258,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 12
+  },
+  "httpChecksPerBase": 24,
+  "artifactFilesPerBase": 252,
+  "graph": "925\u2192922;SVGOreuses4.1.0,deletes3oldrecords;brace2/5recordswaps;undici8recordswap;only4targetparentedges and1approvedoverride. Allotherexistingrecords/snapshots/settings unchanged.",
+  "unifont": "Actual stocknpmprovider/createUnifont;independentchildenvonly,observableAgent/EnvHttpProxyAgent/NO_PROXY/customdispatcher. RealHTTPforward/local302/gzip/404/500retry/preabort/activeOTFdownloadabort and full52928byte fontSHAverified. No cachedfallbacksubstitutes download.",
+  "unifontLimits": "HTTPloopback fixture;HTTPS/TLSproxytransport not run;NO_PROXYwildcardpatterns notvalidated.8.11behavior changes require separatecandidate whenneeded.",
+  "audits": "prod/full12records12GHSA4high5moderate3low;officialknown36ledger13affected inclofficial-onlysharp,remainingcache/R2sharp/undici7",
+  "peer": "FAIL inheritedmdx7.0.8/markdown-satteri0.4.0 pairing unchanged;not waived",
+  "browser": "BLOCKED/NOT_RUN priorpolicy;no alternativeclient/route",
+  "Linux": "NOT_RUN newcandidate;old330CI only itsactualexistingtwo-baseworkflow,zeroartifactsuploaded/noLinuxHTTP/standaloneSwuptypes/R2nativeacceptance",
+  "remote": "No push/PRupdate/mainmerge/deploy/dispatch thisbatch;PR22old330head remainsdraft.Independent review precedes parent-approved samePRupdate/newLinuxhead.",
+  "serverCleanup": {
+    "ownHttpPids": [
+      20148,
+      20257
+    ],
+    "stopped": true,
+    "newtestserversandchildagentsClosed": true,
+    "fixtureFilesSnapshotsRetained": true
+  },
+  "diagnostics": [
+    "SVGOpackage.jsonunexportedinitialversionprobe;publicVERSIONfinalcheck;rawinitialfailretained.",
+    "InitialproxyfixtureonlyCONNECTreturned400forHTTPforward;correctprotocolfixturebasedoninstalledsource,strictgateunchanged;raw13/14 retained,final14/14PASS.",
+    "Initialbrace5child-majorassumptioncorrectedbeforedrift:old/newalreadybalanced-match4.0.4."
+  ],
+  "securityClosure": "BLOCKED:cacheunverifiedrepair/noexemption;R2native7/sharpremain",
+  "whitespace": "Full raw diff check FAIL exit2 (107 diagnostics); scoped nonraw check PASS exit0 with six exact raw paths excluded; see whitespace-receipt.json.",
+  "cacheLookup": {
+    "command": "pnpm view http-cache-semantics@4.2.1 version --json --registry=https://registry.npmjs.org",
+    "exit": 1,
+    "result": "ERR_PNPM_PACKAGE_NOT_FOUND: No matching version found",
+    "httpStatus": "Not exposed by this pnpm command; earlier official 404 evidence retained in prior packets.",
+    "closure": "BLOCKED, no verified repair or exemption"
+  }
+}

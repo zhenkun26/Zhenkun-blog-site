@@ -1,0 +1,143 @@
+quality	Set up job	﻿2026-10-03T11:31:43.5021069Z Current runner version: '2.337.0'
+quality	Set up job	2026-10-03T11:31:43.5042814Z ##[group]Runner Image Provisioner
+quality	Set up job	2026-10-03T11:31:43.5043504Z Hosted Compute Agent
+quality	Set up job	2026-10-03T11:31:43.5044073Z Version: 20260901.588
+quality	Set up job	2026-10-03T11:31:43.5044597Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+quality	Set up job	2026-10-03T11:31:43.5045247Z Build Date: 2026-09-01T19:56:44Z
+quality	Set up job	2026-10-03T11:31:43.5045833Z Worker ID: {55b56515-4ac2-4576-ba59-e3face508d5b}
+quality	Set up job	2026-10-03T11:31:43.5046473Z Azure Region: eastus
+quality	Set up job	2026-10-03T11:31:43.5046976Z ##[endgroup]
+quality	Set up job	2026-10-03T11:31:43.5048138Z ##[group]Operating System
+quality	Set up job	2026-10-03T11:31:43.5048696Z Ubuntu
+quality	Set up job	2026-10-03T11:31:43.5049127Z 24.04.5
+quality	Set up job	2026-10-03T11:31:43.5049565Z LTS
+quality	Set up job	2026-10-03T11:31:43.5050061Z ##[endgroup]
+quality	Set up job	2026-10-03T11:31:43.5050519Z ##[group]Runner Image
+quality	Set up job	2026-10-03T11:31:43.5051053Z Image: ubuntu-24.04
+quality	Set up job	2026-10-03T11:31:43.5051766Z Version: 20260927.320.1
+quality	Set up job	2026-10-03T11:31:43.5052647Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+quality	Set up job	2026-10-03T11:31:43.5054205Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+quality	Set up job	2026-10-03T11:31:43.5055040Z ##[endgroup]
+quality	Set up job	2026-10-03T11:31:43.5056082Z ##[group]GITHUB_TOKEN Permissions
+quality	Set up job	2026-10-03T11:31:43.5058448Z Contents: read
+quality	Set up job	2026-10-03T11:31:43.5058975Z Metadata: read
+quality	Set up job	2026-10-03T11:31:43.5059455Z Packages: read
+quality	Set up job	2026-10-03T11:31:43.5059986Z ##[endgroup]
+quality	Set up job	2026-10-03T11:31:43.5061977Z Secret source: Actions
+quality	Set up job	2026-10-03T11:31:43.5062793Z Cache mode: write
+quality	Set up job	2026-10-03T11:31:43.5063381Z Prepare workflow directory
+quality	Set up job	2026-10-03T11:31:43.5315906Z Prepare all required actions
+quality	Set up job	2026-10-03T11:31:43.5354344Z Getting action download info
+quality	Set up job	2026-10-03T11:31:43.7451546Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+quality	Set up job	2026-10-03T11:31:43.8722137Z Download action repository 'biomejs/setup-biome@f382a98e582959e6aaac8e5f8b17b31749018780' (SHA:f382a98e582959e6aaac8e5f8b17b31749018780)
+quality	Set up job	2026-10-03T11:31:44.0996013Z Complete job name: quality
+quality	Checkout	﻿2026-10-03T11:31:44.1573017Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+quality	Checkout	2026-10-03T11:31:44.1573848Z with:
+quality	Checkout	2026-10-03T11:31:44.1574228Z   repository: zhenkun26/Zhenkun-blog-site
+quality	Checkout	2026-10-03T11:31:44.1577506Z   token: ***
+quality	Checkout	2026-10-03T11:31:44.1577858Z   ssh-strict: true
+quality	Checkout	2026-10-03T11:31:44.1578215Z   ssh-user: git
+quality	Checkout	2026-10-03T11:31:44.1578574Z   persist-credentials: true
+quality	Checkout	2026-10-03T11:31:44.1578961Z   clean: true
+quality	Checkout	2026-10-03T11:31:44.1579315Z   sparse-checkout-cone-mode: true
+quality	Checkout	2026-10-03T11:31:44.1579729Z   fetch-depth: 1
+quality	Checkout	2026-10-03T11:31:44.1580081Z   fetch-tags: false
+quality	Checkout	2026-10-03T11:31:44.1580448Z   show-progress: true
+quality	Checkout	2026-10-03T11:31:44.1580803Z   lfs: false
+quality	Checkout	2026-10-03T11:31:44.1581133Z   submodules: false
+quality	Checkout	2026-10-03T11:31:44.1581801Z   set-safe-directory: true
+quality	Checkout	2026-10-03T11:31:44.1582417Z ##[endgroup]
+quality	Checkout	2026-10-03T11:31:44.2389872Z Syncing repository: zhenkun26/Zhenkun-blog-site
+quality	Checkout	2026-10-03T11:31:44.2391954Z ##[group]Getting Git version info
+quality	Checkout	2026-10-03T11:31:44.2392954Z Working directory is '/home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site'
+quality	Checkout	2026-10-03T11:31:44.2394317Z [command]/usr/bin/git version
+quality	Checkout	2026-10-03T11:31:44.2476618Z git version 2.55.0
+quality	Checkout	2026-10-03T11:31:44.2505074Z ##[endgroup]
+quality	Checkout	2026-10-03T11:31:44.2515748Z Temporarily overriding HOME='/home/runner/work/_temp/a1d42099-ddfd-4dce-8c41-28d437b1cd9e' before making global git config changes
+quality	Checkout	2026-10-03T11:31:44.2526803Z Adding repository directory to the temporary git global config as a safe directory
+quality	Checkout	2026-10-03T11:31:44.2528445Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site
+quality	Checkout	2026-10-03T11:31:44.2560002Z Deleting the contents of '/home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site'
+quality	Checkout	2026-10-03T11:31:44.2564204Z ##[group]Initializing the repository
+quality	Checkout	2026-10-03T11:31:44.2569435Z [command]/usr/bin/git init /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site
+quality	Checkout	2026-10-03T11:31:44.2671186Z hint: Using 'master' as the name for the initial branch. This default branch name
+quality	Checkout	2026-10-03T11:31:44.2672889Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+quality	Checkout	2026-10-03T11:31:44.2673787Z hint: to use in all of your new repositories, which will suppress this warning,
+quality	Checkout	2026-10-03T11:31:44.2674701Z hint: call:
+quality	Checkout	2026-10-03T11:31:44.2675231Z hint:
+quality	Checkout	2026-10-03T11:31:44.2675860Z hint: 	git config --global init.defaultBranch <name>
+quality	Checkout	2026-10-03T11:31:44.2676645Z hint:
+quality	Checkout	2026-10-03T11:31:44.2677370Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+quality	Checkout	2026-10-03T11:31:44.2678512Z hint: 'development'. The just-created branch can be renamed via this command:
+quality	Checkout	2026-10-03T11:31:44.2679416Z hint:
+quality	Checkout	2026-10-03T11:31:44.2679976Z hint: 	git branch -m <name>
+quality	Checkout	2026-10-03T11:31:44.2680574Z hint:
+quality	Checkout	2026-10-03T11:31:44.2681480Z hint: Disable this message with "git config set advice.defaultBranchName false"
+quality	Checkout	2026-10-03T11:31:44.2682846Z Initialized empty Git repository in /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site/.git/
+quality	Checkout	2026-10-03T11:31:44.2686578Z [command]/usr/bin/git remote add origin https://github.com/zhenkun26/Zhenkun-blog-site
+quality	Checkout	2026-10-03T11:31:44.2821851Z ##[endgroup]
+quality	Checkout	2026-10-03T11:31:44.2822882Z ##[group]Disabling automatic garbage collection
+quality	Checkout	2026-10-03T11:31:44.2823728Z [command]/usr/bin/git config --local gc.auto 0
+quality	Checkout	2026-10-03T11:31:44.2844734Z ##[endgroup]
+quality	Checkout	2026-10-03T11:31:44.2845684Z ##[group]Setting up auth
+quality	Checkout	2026-10-03T11:31:44.2850382Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+quality	Checkout	2026-10-03T11:31:44.2885055Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+quality	Checkout	2026-10-03T11:31:44.3211231Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality	Checkout	2026-10-03T11:31:44.3241174Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+quality	Checkout	2026-10-03T11:31:44.3432081Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+quality	Checkout	2026-10-03T11:31:44.3467164Z ##[endgroup]
+quality	Checkout	2026-10-03T11:31:44.3467912Z ##[group]Fetching the repository
+quality	Checkout	2026-10-03T11:31:44.3475134Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e:refs/remotes/pull/22/merge
+quality	Checkout	2026-10-03T11:31:45.7772483Z From https://github.com/zhenkun26/Zhenkun-blog-site
+quality	Checkout	2026-10-03T11:31:45.7776851Z  * [new ref]         53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e -> pull/22/merge
+quality	Checkout	2026-10-03T11:31:45.7780495Z ##[endgroup]
+quality	Checkout	2026-10-03T11:31:45.7782058Z ##[group]Determining the checkout info
+quality	Checkout	2026-10-03T11:31:45.7783440Z ##[endgroup]
+quality	Checkout	2026-10-03T11:31:45.7784668Z [command]/usr/bin/git sparse-checkout disable
+quality	Checkout	2026-10-03T11:31:45.7831051Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+quality	Checkout	2026-10-03T11:31:45.7858953Z ##[group]Checking out the ref
+quality	Checkout	2026-10-03T11:31:45.7862089Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/22/merge
+quality	Checkout	2026-10-03T11:31:45.9376195Z Note: switching to 'refs/remotes/pull/22/merge'.
+quality	Checkout	2026-10-03T11:31:45.9377285Z 
+quality	Checkout	2026-10-03T11:31:45.9378065Z You are in 'detached HEAD' state. You can look around, make experimental
+quality	Checkout	2026-10-03T11:31:45.9379950Z changes and commit them, and you can discard any commits you make in this
+quality	Checkout	2026-10-03T11:31:45.9382082Z state without impacting any branches by switching back to a branch.
+quality	Checkout	2026-10-03T11:31:45.9383185Z 
+quality	Checkout	2026-10-03T11:31:45.9383937Z If you want to create a new branch to retain commits you create, you may
+quality	Checkout	2026-10-03T11:31:45.9385591Z do so (now or later) by using -c with the switch command. Example:
+quality	Checkout	2026-10-03T11:31:45.9386571Z 
+quality	Checkout	2026-10-03T11:31:45.9387018Z   git switch -c <new-branch-name>
+quality	Checkout	2026-10-03T11:31:45.9387685Z 
+quality	Checkout	2026-10-03T11:31:45.9388137Z Or undo this operation with:
+quality	Checkout	2026-10-03T11:31:45.9388726Z 
+quality	Checkout	2026-10-03T11:31:45.9389463Z   git switch -
+quality	Checkout	2026-10-03T11:31:45.9389974Z 
+quality	Checkout	2026-10-03T11:31:45.9390748Z Turn off this advice by setting config variable advice.detachedHead to false
+quality	Checkout	2026-10-03T11:31:45.9392248Z 
+quality	Checkout	2026-10-03T11:31:45.9393415Z HEAD is now at 53a11cb Merge 330f58131c3d0c555aba25222a3596e1aa54da49 into 53cf67d121ce053b2d5f2aed4dd40c7d07d8506a
+quality	Checkout	2026-10-03T11:31:45.9397624Z ##[endgroup]
+quality	Checkout	2026-10-03T11:31:45.9443268Z [command]/usr/bin/git log -1 --format=%H
+quality	Checkout	2026-10-03T11:31:45.9466087Z 53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e
+quality	Setup Biome	﻿2026-10-03T11:31:45.9725923Z ##[group]Run biomejs/setup-biome@f382a98e582959e6aaac8e5f8b17b31749018780
+quality	Setup Biome	2026-10-03T11:31:45.9727304Z with:
+quality	Setup Biome	2026-10-03T11:31:45.9728036Z   version: 2.5.11
+quality	Setup Biome	2026-10-03T11:31:45.9736283Z   token: ***
+quality	Setup Biome	2026-10-03T11:31:45.9737036Z ##[endgroup]
+quality	Setup Biome	2026-10-03T11:31:46.0495983Z No working directory specified. Using the current working directory.
+quality	Run Biome	﻿2026-10-03T11:31:46.8899981Z ##[group]Run biome ci ./src --reporter=github
+quality	Run Biome	2026-10-03T11:31:46.8900476Z ^[[36;1mbiome ci ./src --reporter=github^[[0m
+quality	Run Biome	2026-10-03T11:31:46.9810955Z shell: /usr/bin/bash -e {0}
+quality	Run Biome	2026-10-03T11:31:46.9811568Z ##[endgroup]
+quality	Post Checkout	﻿2026-10-03T11:31:47.2082466Z Post job cleanup.
+quality	Post Checkout	2026-10-03T11:31:47.2754254Z [command]/usr/bin/git version
+quality	Post Checkout	2026-10-03T11:31:47.2789080Z git version 2.55.0
+quality	Post Checkout	2026-10-03T11:31:47.2832400Z Temporarily overriding HOME='/home/runner/work/_temp/29e15de0-11a3-41e5-96bd-c2a7bc199394' before making global git config changes
+quality	Post Checkout	2026-10-03T11:31:47.2833493Z Adding repository directory to the temporary git global config as a safe directory
+quality	Post Checkout	2026-10-03T11:31:47.2834217Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site
+quality	Post Checkout	2026-10-03T11:31:47.2852708Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+quality	Post Checkout	2026-10-03T11:31:47.2890224Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+quality	Post Checkout	2026-10-03T11:31:47.3091602Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+quality	Post Checkout	2026-10-03T11:31:47.3118101Z http.https://github.com/.extraheader
+quality	Post Checkout	2026-10-03T11:31:47.3127120Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+quality	Post Checkout	2026-10-03T11:31:47.3155589Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+quality	Complete job	﻿2026-10-03T11:31:47.3497442Z Cleaning up orphan processes
+quality	Complete job	2026-10-03T11:31:47.3749690Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683, biomejs/setup-biome@f382a98e582959e6aaac8e5f8b17b31749018780. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

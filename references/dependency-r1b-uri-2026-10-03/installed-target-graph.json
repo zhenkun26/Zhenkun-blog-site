@@ -1,0 +1,52 @@
+{
+  "actualTargetedParent": {
+    "entry": "/Users/zhenkun/Documents/Codex/2026-10-03/task-3/zhenkun-ar3/node_modules/.pnpm/ajv@8.20.0/node_modules/ajv/dist/ajv.js",
+    "version": "8.20.0",
+    "range": "^3.0.1",
+    "childEntry": "/Users/zhenkun/Documents/Codex/2026-10-03/task-3/zhenkun-ar3/node_modules/.pnpm/fast-uri@3.1.8/node_modules/fast-uri/index.js",
+    "childVersion": "3.1.8"
+  },
+  "lockedVersionSets": {
+    "@swup/plugin": [
+      "4.0.0"
+    ],
+    "fast-uri": [
+      "3.1.8"
+    ],
+    "devalue": [
+      "5.9.3"
+    ],
+    "js-yaml": [
+      "3.15.2",
+      "4.3.2"
+    ],
+    "sharp": [
+      "0.35.2",
+      "0.35.4"
+    ],
+    "undici": [
+      "7.29.0",
+      "8.10.1"
+    ],
+    "svgo": [
+      "4.0.2",
+      "4.1.0"
+    ],
+    "brace-expansion": [
+      "2.1.4",
+      "5.0.9"
+    ]
+  },
+  "forbiddenAbsent": [
+    "microbundle",
+    "rollup-plugin-terser",
+    "serialize-javascript",
+    "colord"
+  ],
+  "role": "Complete lock version sets plus actual targeted installed-parent resolution; platform-specific lock packages not claimed physically installed",
+  "hashes": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-workspace.yaml": "660df2ededb1cf584e7e529a0f696d4f104073b362b7f1120f02297caa7adb52",
+    "pnpm-lock.yaml": "6b3e7f4a94ac9704e2b2fc76278eed1c5789e3ec4614807f177d09782e00fb52"
+  }
+}

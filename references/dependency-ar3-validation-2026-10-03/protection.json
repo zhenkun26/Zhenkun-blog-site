@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-03T10:52:06.168534+00:00",
+  "head": "b6c3e39b2bf7ea73ec60234dc42f8240e0e8695f",
+  "status": "?? .workbuddy/",
+  "trackedDiff": "",
+  "privateUserFiles": [
+    {
+      "path": ".workbuddy/memory/2026-10-02.md",
+      "sha256": "9c576b68f0cdd2af150d3f1f2330989b14aa77e91aa0845c1b641abde9a2a4ad",
+      "bytes": 961
+    }
+  ],
+  "privateHashesEqualPriorWorkerCapture": true,
+  "candidateLockHash": "a214c80c3a120501007ff385c28b47a7d9f224c7d6b8f97d9ae2acdb9e6d4a87",
+  "candidateLockEqualsHandoff": true
+}

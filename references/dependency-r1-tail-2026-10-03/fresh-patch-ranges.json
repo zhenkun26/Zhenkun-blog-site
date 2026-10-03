@@ -1,0 +1,266 @@
+[
+  {
+    "ghsa": "GHSA-6j4f-fj2g-mc7p",
+    "package": "brace-expansion",
+    "ranges": [
+      {
+        "range": ">= 4.0.0, < 5.0.10",
+        "patched": "5.0.10"
+      },
+      {
+        "range": ">= 3.0.0, < 3.0.7",
+        "patched": "3.0.7"
+      },
+      {
+        "range": ">= 2.0.0, < 2.1.5",
+        "patched": "2.1.5"
+      },
+      {
+        "range": "< 1.1.19",
+        "patched": "1.1.19"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-q2hr-2g5m-vwhr",
+    "package": "brace-expansion",
+    "ranges": [
+      {
+        "range": ">= 4.0.0, < 5.0.12",
+        "patched": "5.0.12"
+      },
+      {
+        "range": ">= 3.0.0, < 3.0.9",
+        "patched": "3.0.9"
+      },
+      {
+        "range": ">= 2.0.0, < 2.1.7",
+        "patched": "2.1.7"
+      },
+      {
+        "range": "< 1.1.21",
+        "patched": "1.1.21"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-qhr7-859c-m2p7",
+    "package": "brace-expansion",
+    "ranges": [
+      {
+        "range": ">= 4.0.0, < 5.0.11",
+        "patched": "5.0.11"
+      },
+      {
+        "range": ">= 3.0.0, < 3.0.8",
+        "patched": "3.0.8"
+      },
+      {
+        "range": ">= 2.0.0, < 2.1.6",
+        "patched": "2.1.6"
+      },
+      {
+        "range": "< 1.1.20",
+        "patched": "1.1.20"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-4vpr-x523-8j87",
+    "package": "svgo",
+    "ranges": [
+      {
+        "range": ">= 1.0.0, < 2.8.4",
+        "patched": "2.8.4"
+      },
+      {
+        "range": ">= 3.0.0, < 3.3.5",
+        "patched": "3.3.5"
+      },
+      {
+        "range": ">= 4.0.0, < 4.1.0",
+        "patched": "4.1.0"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-w27v-7q3p-w38r",
+    "package": "svgo",
+    "ranges": [
+      {
+        "range": ">= 1.0.0, < 2.8.4",
+        "patched": "2.8.4"
+      },
+      {
+        "range": ">= 3.0.0, < 3.3.5",
+        "patched": "3.3.5"
+      },
+      {
+        "range": ">= 4.0.0, < 4.1.0",
+        "patched": "4.1.0"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-2gqq-gqf2-x968",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": ">= 7.1.0, < 7.29.1",
+        "patched": "7.29.1"
+      },
+      {
+        "range": ">= 8.0.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-2jfj-6hjv-fm6j",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": ">= 7.0.0, < 7.29.1",
+        "patched": "7.29.1"
+      },
+      {
+        "range": ">= 8.0.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-3wwx-pv8p-q78v",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": ">= 6.25.0, < 6.28.1",
+        "patched": "6.28.1"
+      },
+      {
+        "range": ">= 7.28.0, < 7.29.1",
+        "patched": "7.29.1"
+      },
+      {
+        "range": ">= 8.1.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-3xpg-4rpp-hhhm",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": ">= 7.15.0, < 7.29.1",
+        "patched": "7.29.1"
+      },
+      {
+        "range": ">= 8.0.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-8436-99hf-9mmv",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": ">= 7.0.0, < 7.29.1",
+        "patched": "7.29.1"
+      },
+      {
+        "range": ">= 8.0.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-pmjh-fq2x-6v4x",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": ">= 7.11.0, < 7.29.1",
+        "patched": "7.29.1"
+      },
+      {
+        "range": ">= 8.0.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-r53p-7pc4-xj5r",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": "< 6.28.1",
+        "patched": "6.28.1"
+      },
+      {
+        "range": ">= 7.0.0, < 7.29.1",
+        "patched": "7.29.1"
+      },
+      {
+        "range": ">= 8.0.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-rfgv-xxqx-mfg5",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": ">= 6.7.0, < 6.28.1",
+        "patched": "6.28.1"
+      },
+      {
+        "range": ">= 7.0.0, < 7.29.1",
+        "patched": "7.29.1"
+      },
+      {
+        "range": ">= 8.0.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-rx4f-c7p8-82vq",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": ">= 7.0.0, < 7.29.1",
+        "patched": "7.29.1"
+      },
+      {
+        "range": ">= 8.0.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-vp8m-p9jh-q5pm",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": ">= 8.10.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  },
+  {
+    "ghsa": "GHSA-w293-vg96-wgc3",
+    "package": "undici",
+    "ranges": [
+      {
+        "range": ">= 7.24.1, < 7.29.1",
+        "patched": "7.29.1"
+      },
+      {
+        "range": ">= 8.0.0, < 8.10.2",
+        "patched": "8.10.2"
+      }
+    ]
+  }
+]

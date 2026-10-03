@@ -1,0 +1,14 @@
+{
+  "target": "devalue5.9.3",
+  "highestOriginalRange": "5.9.4",
+  "latestMajor": "6.0.2",
+  "sourceRelease": "https://github.com/sveltejs/devalue/releases/tag/v5.9.4",
+  "sourceCompare": "https://github.com/sveltejs/devalue/compare/v5.9.3...v5.9.4",
+  "comparisonEvidence": "devalue-5.9.4-compare.json",
+  "releaseEvidence": "devalue-releases.json",
+  "finding": "5.9.4 changes four PURE comments before existing Object.freeze calls, version and changelog; no runtime security logic change in this exact compare. 5.9.3 contains the approved security fixes.",
+  "decision": "Keep bounded approved5.9.3. Two parent-specific in-range overrides needed because pnpm natural indirect update selects5.9.4; not a claim that5.9.3 is universally best.",
+  "adopted": "2026-10-03",
+  "reviewBy": "2026-10-17",
+  "removalCondition": "Approved refresh to original parent range highest patched version after security/compatibility review, then remove both R1a devalue overrides and verify no unrelated graph drift."
+}

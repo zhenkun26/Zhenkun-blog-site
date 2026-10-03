@@ -1,0 +1,150 @@
+{
+  "verifiedAt": "2026-10-03T10:44:23.919455+00:00",
+  "result": "PASS_LOCK_SCOPE_ONLY",
+  "candidateParent": "14a0d7ca87104d5afc702f1b7d118e1a7374fed3",
+  "candidateBranch": "codex/dependency-ar3-20261003",
+  "dependencyHashes": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-lock.yaml": "a214c80c3a120501007ff385c28b47a7d9f224c7d6b8f97d9ae2acdb9e6d4a87",
+    "pnpm-workspace.yaml": "1de2acb8e271995fde0bca24ee3fbf7636d9eb6f89cc5fbd5adaccc75553c122"
+  },
+  "sourceProtection": {
+    "result": "PASS",
+    "head": "b6c3e39b2bf7ea73ec60234dc42f8240e0e8695f",
+    "branch": "codex/plan-dependency-remediation",
+    "status": "?? .workbuddy/",
+    "privateFileCount": 1,
+    "privateAggregateUnchanged": true,
+    "trackedTreeAndIndexUnchanged": true
+  },
+  "applicationCIAndDirectManifestDiffFromPhase0": "EMPTY",
+  "historicalManifestAll18FilesVerified": 18,
+  "historicalReportAndManifestOriginalBytesPreserved": true,
+  "packageManagerSourceAndViteMetadataHashesVerified": true,
+  "rawDiffsMatchCurrentGeneratedLock": true,
+  "supplementalSnapshotAndImporterChecks": {
+    "result": "PASS_LOCK_SCOPE_ONLY",
+    "oldSnapshotCount": 1354,
+    "newSnapshotCount": 929,
+    "removedSnapshotCount": 425,
+    "allRemovedSnapshotsReachableFromOldPlugin3": true,
+    "rootReferencesResolved": 80,
+    "intendedParents": [
+      {
+        "snapshot": "@swup/parallel-plugin@0.4.0(swup@4.9.2)",
+        "plugin": "4.0.0"
+      },
+      {
+        "snapshot": "@swup/route-name-plugin@4.1.0(swup@4.9.2)",
+        "plugin": "4.0.0"
+      }
+    ],
+    "oldPluginMicrobundleSerializerChainAbsent": true
+  },
+  "diffCheck": {
+    "fullStagedExit": 2,
+    "diagnostic": "Only raw unified-diff single-space context lines are reported as trailing whitespace. No other diagnostic categories or payloads.",
+    "perFileCounts": {
+      "references/dependency-ar3-rolldown-2026-10-03/complete-lock.diff": 1160,
+      "references/dependency-ar3-rolldown-2026-10-03/correction-lock.diff": 41
+    },
+    "diagnosticOutputSha256": "00c512adf3d4e656d027ebbba7c04684d66f93297c46982b0d224db1ded828bb",
+    "allOtherStagedFilesExit": 0,
+    "scopedCommand": [
+      "git",
+      "--no-optional-locks",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".",
+      ":(exclude)references/dependency-ar3-rolldown-2026-10-03/complete-lock.diff",
+      ":(exclude)references/dependency-ar3-rolldown-2026-10-03/correction-lock.diff"
+    ],
+    "rawDiffBytesPreserved": true
+  },
+  "reportLinks": "PASS",
+  "changedTrackedFiles": [
+    "docs/DECISIONS.md",
+    "docs/DEPENDENCY_REMEDIATION_PLAN.md",
+    "docs/ERROR_MEMORY.md",
+    "docs/ROADMAP.md",
+    "pnpm-lock.yaml",
+    "pnpm-workspace.yaml",
+    "references/dependency-ar3-2026-10-03/evidence-manifest.json",
+    "references/dependency-ar3-2026-10-03/report.md"
+  ],
+  "nodeModulesPresent": false,
+  "notRun": [
+    "frozen installation",
+    "lifecycle scripts",
+    "application or compatibility tests",
+    "build",
+    "browser",
+    "PoC",
+    "fresh audits"
+  ],
+  "nextOwner": "Coordinator-selected Sol Fast worker; independent review must include precise Vite guard",
+  "evidenceFiles": [
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/command-receipt.json",
+      "sha256": "0f4864f7b3dd8ce6a46b8291714eda65d1ace705e1185ddaff31a06910f59c22",
+      "bytes": 704
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/complete-lock.diff",
+      "sha256": "f122f52e8e6e91e73c6a1a85850ea13eaed1b071e765bc02938c383ee5c2d818",
+      "bytes": 553558
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/correction-lock.diff",
+      "sha256": "17a384bf912369e24b1e85453b0da011bb375ea9e6999fdec21cd43b0d64c695",
+      "bytes": 13469
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/entry-guard.json",
+      "sha256": "a7316521626f1789b8b8384b72894d99ea7116c28880f3fc55a231fb2d7e4e91",
+      "bytes": 747
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/graph-verification.json",
+      "sha256": "2de61111590f78bd372ff39f3127d1e1fe693c47b15c9685469ba2baa06e8fdd",
+      "bytes": 21967
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/lock-regeneration.log",
+      "sha256": "e8657221d40fff70c87971383217e5584c225420822aae7a1add809f807a68f3",
+      "bytes": 458
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/manifest-original-14a0d7c.json",
+      "sha256": "9e3c23442fcac1eb251a14080ebd87ec109213a82273895c45c471556f89c261",
+      "bytes": 3484
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/optionality-proof.json",
+      "sha256": "84ae73602e001a6e9b3f6e6ec2ffa7500cea49724124b4d8dbd8e5fa753cce7e",
+      "bytes": 8261
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/report-original-14a0d7c.md",
+      "sha256": "4aff954f6f0f99048f2c401b51844f7e045f7c8159d2a78c02b9540c10921fa9",
+      "bytes": 6020
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/report.md",
+      "sha256": "daa155799125677cdcbfd53d94662eb1493edbf32eb9811bd4921078bf9984d4",
+      "bytes": 5479
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/resolver-source-evidence.json",
+      "sha256": "49f14fe92a26a32dcb56c59658d9b2fbba23688778d58fce675124a914f89dfb",
+      "bytes": 5634
+    },
+    {
+      "path": "references/dependency-ar3-rolldown-2026-10-03/vite-parent-metadata.json",
+      "sha256": "e39a1254e449185e9b13b6f4a13baba4ec4736a28b01a5818c193b47702a59ab",
+      "bytes": 596
+    }
+  ]
+}

@@ -1,0 +1,1575 @@
+Full quality (/)	UNKNOWN STEP	﻿2026-10-03T11:31:44.2472091Z Current runner version: '2.337.0'
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2496607Z ##[group]Runner Image Provisioner
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2497797Z Hosted Compute Agent
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2498432Z Version: 20260901.588
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2499099Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2499947Z Build Date: 2026-09-01T19:56:44Z
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2500683Z Worker ID: {e7758956-d3cd-431f-b408-4e09e7429ab3}
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2501435Z Azure Region: centralus
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2502045Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2503548Z ##[group]Operating System
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2504293Z Ubuntu
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2504873Z 24.04.5
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2505430Z LTS
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2506259Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2506833Z ##[group]Runner Image
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2507667Z Image: ubuntu-24.04
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2508318Z Version: 20260927.320.1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2509622Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2511201Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2512269Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2513439Z ##[group]GITHUB_TOKEN Permissions
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2515819Z Contents: read
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2516447Z Metadata: read
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2517112Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2519215Z Secret source: Actions
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2520285Z Cache mode: write
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2521450Z Prepare workflow directory
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.3044331Z Prepare all required actions
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.3091766Z Getting action download info
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.5740808Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.6886625Z Download action repository 'actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e' (SHA:cdca7365b2dadb8aad0a33bc7601856ffabcc48e)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.9808835Z Download action repository 'pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda' (SHA:a7487c7e89a18df4991f7f222e4898a00d66ddda)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.5478657Z Complete job name: Full quality (/)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6241780Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6242930Z with:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6243452Z   repository: zhenkun26/Zhenkun-blog-site
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6247697Z   token: ***
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6248170Z   ssh-strict: true
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6248654Z   ssh-user: git
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6249127Z   persist-credentials: true
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6249658Z   clean: true
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6250150Z   sparse-checkout-cone-mode: true
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6250721Z   fetch-depth: 1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6251243Z   fetch-tags: false
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6251782Z   show-progress: true
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6252275Z   lfs: false
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6252744Z   submodules: false
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6253239Z   set-safe-directory: true
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6254033Z env:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6254488Z   DEPLOY_BASE: /
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.6255000Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7247900Z Syncing repository: zhenkun26/Zhenkun-blog-site
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7250422Z ##[group]Getting Git version info
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7251318Z Working directory is '/home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site'
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7253085Z [command]/usr/bin/git version
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7377002Z git version 2.55.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7389236Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7403614Z Temporarily overriding HOME='/home/runner/work/_temp/ccb10cc0-23a4-435f-b739-ac8003ad3626' before making global git config changes
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7407231Z Adding repository directory to the temporary git global config as a safe directory
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7409920Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7466995Z Deleting the contents of '/home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site'
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7471576Z ##[group]Initializing the repository
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7476910Z [command]/usr/bin/git init /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7598580Z hint: Using 'master' as the name for the initial branch. This default branch name
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7599932Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7601597Z hint: to use in all of your new repositories, which will suppress this warning,
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7603214Z hint: call:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7604150Z hint:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7605315Z hint: 	git config --global init.defaultBranch <name>
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7606981Z hint:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7608298Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7610352Z hint: 'development'. The just-created branch can be renamed via this command:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7611862Z hint:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7612731Z hint: 	git branch -m <name>
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7613683Z hint:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7615086Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7617785Z Initialized empty Git repository in /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site/.git/
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7621317Z [command]/usr/bin/git remote add origin https://github.com/zhenkun26/Zhenkun-blog-site
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7672834Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7674715Z ##[group]Disabling automatic garbage collection
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7677247Z [command]/usr/bin/git config --local gc.auto 0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7715237Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7717496Z ##[group]Setting up auth
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7723607Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.7760977Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.8140594Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.8177329Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.8403040Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.8444828Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.8455006Z ##[group]Fetching the repository
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.8458173Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e:refs/remotes/pull/22/merge
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.5140805Z From https://github.com/zhenkun26/Zhenkun-blog-site
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.5142130Z  * [new ref]         53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e -> pull/22/merge
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.5146177Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.5146937Z ##[group]Determining the checkout info
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.5149227Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.5156291Z [command]/usr/bin/git sparse-checkout disable
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.5214516Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.5256984Z ##[group]Checking out the ref
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.5257819Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/22/merge
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7100187Z Note: switching to 'refs/remotes/pull/22/merge'.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7100622Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7100881Z You are in 'detached HEAD' state. You can look around, make experimental
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7101880Z changes and commit them, and you can discard any commits you make in this
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7102871Z state without impacting any branches by switching back to a branch.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7103447Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7103833Z If you want to create a new branch to retain commits you create, you may
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7104364Z do so (now or later) by using -c with the switch command. Example:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7105044Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7105189Z   git switch -c <new-branch-name>
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7105396Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7105967Z Or undo this operation with:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7106316Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7106492Z   git switch -
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7106687Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7106942Z Turn off this advice by setting config variable advice.detachedHead to false
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7107287Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7107674Z HEAD is now at 53a11cb Merge 330f58131c3d0c555aba25222a3596e1aa54da49 into 53cf67d121ce053b2d5f2aed4dd40c7d07d8506a
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7175670Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7179203Z [command]/usr/bin/git log -1 --format=%H
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7206775Z 53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7479265Z ##[group]Run actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7479751Z with:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7480025Z   node-version: 24.20.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7480318Z   always-auth: false
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7480590Z   check-latest: false
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7483255Z   token: ***
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7483507Z env:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7483776Z   DEPLOY_BASE: /
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7484035Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.8849456Z Attempting to download 24.20.0...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.8957513Z (node:2287) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.8958574Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:48.5986047Z Acquiring 24.20.0 - x64 from https://github.com/actions/node-versions/releases/download/24.20.0-33034074684/node-24.20.0-linux-x64.tar.gz
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:49.1526957Z Extracting ...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:49.1653309Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/11ef2fdd-a4fe-4f6f-a90b-6082e75d734d -f /home/runner/work/_temp/61df9121-6b2b-4522-b647-beea4268a243
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:50.4281444Z Adding to the cache ...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.6058873Z ##[group]Environment details
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8319414Z node: v24.20.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8319820Z npm: 11.19.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8320139Z yarn: 1.22.22
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8320924Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8489970Z ##[group]Run pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8490373Z with:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8490566Z   version: 11.22.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8490778Z   run_install: false
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8491002Z   dest: ~/setup-pnpm
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8491230Z   package_json_file: package.json
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8491487Z   standalone: false
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8491688Z env:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8491868Z   DEPLOY_BASE: /
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8492072Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.9081941Z ##[group]Running self-installer...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:53.3174276Z (node:2334) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:53.3176781Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:53.5147723Z Progress: resolved 1, reused 0, downloaded 0, added 0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:53.5258319Z Packages: +1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:53.5258756Z +
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.0087177Z Progress: resolved 1, reused 0, downloaded 1, added 1, done
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.0430630Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.0431123Z dependencies:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.0431786Z + pnpm 11.22.0 (12.8.1 is available)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.0432173Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.0468740Z Done in 974ms
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.1230806Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.1231208Z Installation Completed!
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.1338397Z ##[group]Run pnpm install --frozen-lockfile
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.1338808Z ^[[36;1mpnpm install --frozen-lockfile^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.1624680Z shell: /usr/bin/bash -e {0}
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.1624957Z env:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.1625156Z   DEPLOY_BASE: /
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.1625782Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.1626347Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.8942701Z ? Verifying lockfile against supply-chain policies (925 entries)...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.9061462Z Lockfile is up to date, resolution step is skipped
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:55.0564358Z Progress: resolved 1, reused 0, downloaded 0, added 0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:55.1615077Z Packages: +736
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:55.1616045Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:56.0583956Z Progress: resolved 736, reused 0, downloaded 0, added 0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:57.0897230Z Progress: resolved 736, reused 0, downloaded 57, added 0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:57.3733640Z Packages are hard linked from the content-addressable store to the virtual store.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:57.3735084Z   Content-addressable store is at: /home/runner/setup-pnpm/node_modules/.bin/store/v11
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:57.3736465Z   Virtual store is at:             node_modules/.pnpm
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:58.0918870Z Progress: resolved 736, reused 0, downloaded 138, added 8
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:59.1876784Z Progress: resolved 736, reused 0, downloaded 282, added 16
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:59.4833512Z ✓ Lockfile passes supply-chain policies (925 entries in 4.5s)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:00.1882070Z Progress: resolved 736, reused 0, downloaded 530, added 36
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:01.1878187Z Progress: resolved 736, reused 0, downloaded 733, added 419
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:01.2884489Z Progress: resolved 736, reused 0, downloaded 733, added 736, done
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:01.5991995Z .../node_modules/workerd postinstall$ node install.js
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:01.6003167Z .../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:01.6013343Z .../esbuild@0.28.1/node_modules/esbuild postinstall$ node install.js
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:01.7059680Z .../node_modules/workerd postinstall: Done
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:01.7537461Z .../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:01.7553565Z .../esbuild@0.28.1/node_modules/esbuild postinstall: Done
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5040652Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5041438Z dependencies:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5041915Z + @astrojs/check 0.9.10
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5042631Z + @astrojs/cloudflare 14.2.6
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5043183Z + @astrojs/markdown-remark 7.3.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5043769Z + @astrojs/markdown-satteri 0.4.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5044246Z + @astrojs/mdx 7.0.8
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5044651Z + @astrojs/rss 4.0.19
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5045073Z + @astrojs/sitemap 3.7.4
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5045801Z + @astrojs/svelte 9.0.1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5046471Z + @expressive-code/plugin-collapsible-sections 0.44.2
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5047249Z + @expressive-code/plugin-line-numbers 0.44.2
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5047847Z + @fancyapps/ui 6.1.14
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5048338Z + @iconify-json/fa7-brands 1.2.4
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5048838Z + @iconify-json/fa7-regular 1.2.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5049393Z + @iconify-json/fa7-solid 1.2.5
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5049989Z + @iconify-json/material-symbols 1.2.90
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5050567Z + @iconify-json/mingcute 1.2.8
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5051089Z + @iconify-json/simple-icons 1.2.94
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5051602Z + @iconify/svelte 5.2.2
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5052059Z + @iconify/types 2.0.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5052474Z + @iconify/utils 3.1.4
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5052914Z + @mermanjs/web 0.8.0-alpha.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5053448Z + @napi-rs/wasm-runtime 1.2.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5053944Z + @swup/astro 1.8.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5054458Z + @tailwindcss/typography 0.5.20
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5054974Z + @types/hast 3.0.5
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5055866Z + @types/mdast 4.0.4
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5056277Z + astro 7.2.10
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5056728Z + astro-expressive-code 0.44.2
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5057533Z + astro-icon 1.2.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5057953Z + ci-info 4.4.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5058331Z + dayjs 1.11.23
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5058731Z + ec-lang-logo 1.0.5
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5059272Z + expressive-code-collapsible 0.1.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5059967Z + expressive-code-language-badge 1.1.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5060536Z + github-slugger 2.0.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5061191Z + glob 13.0.6
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5061557Z + gray-matter 4.0.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5061966Z + hast-util-from-html 2.0.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5062406Z + hastscript 9.0.1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5062751Z + katex 0.18.5
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5063104Z + l2d-widget 0.1.2
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5063450Z + marked 18.0.11
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5063855Z + mdast-util-to-string 4.0.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5064270Z + pagefind 1.5.2
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5064628Z + pako 3.0.1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5064995Z + qrcode 1.5.4
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5065395Z + reading-time 1.5.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5067267Z + rehype-autolink-headings 7.1.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5067801Z + rehype-code-group 0.3.1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5069659Z + rehype-components 0.3.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5071670Z + rehype-katex 7.0.1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5072080Z + rehype-slug 6.0.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5072609Z + remark-admonition-to-blockquote-callout 1.0.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5073217Z + remark-directive 4.0.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5073641Z + remark-math 6.0.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5074062Z + remark-sectionize 2.1.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5074516Z + sanitize-html 2.17.7
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5074910Z + satteri 0.10.5
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5075275Z + sharp 0.35.4
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5075832Z + stylus 0.64.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5076515Z + svelte 5.57.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5076947Z + tailwindcss 4.3.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5077335Z + takumi-js 2.13.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5077691Z + tsx 4.23.13
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5078169Z + typescript 6.0.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5078625Z + unist-util-visit 5.1.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5079462Z + wrangler 4.127.1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5079710Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5079886Z devDependencies:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5080335Z + @astrojs/ts-plugin 1.10.11
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5080826Z + @biomejs/biome 2.5.11
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5081621Z + @iconify-json/mdi 1.2.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5082172Z + @iconify-json/svg-spinners 1.2.4
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5082699Z + @tailwindcss/vite 4.3.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5083939Z + @types/qrcode 1.5.6
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5085722Z + @types/sanitize-html 2.16.1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5086174Z + esbuild 0.28.2
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5086570Z + pinyin-pro 3.29.3
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5086990Z + postcss-import 16.2.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5087453Z + postcss-nesting 14.0.1
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5087948Z + rehype-callouts 2.2.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5088741Z + subset-font 2.7.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.5088974Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.6252594Z Done in 8.4s using pnpm v11.22.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.7308292Z ##[group]Run pnpm exec biome ci ./src --reporter=github
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.7309000Z ^[[36;1mpnpm exec biome ci ./src --reporter=github^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.7391938Z shell: /usr/bin/bash -e {0}
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.7392352Z env:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.7392656Z   DEPLOY_BASE: /
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.7393095Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.7393623Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:03.6337637Z ##[group]Run pnpm check
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:03.6338072Z ^[[36;1mpnpm check^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:03.6419874Z shell: /usr/bin/bash -e {0}
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:03.6420275Z env:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:03.6420595Z   DEPLOY_BASE: /
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:03.6421027Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:03.6421550Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:04.1250848Z $ astro check
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:08.6744618Z ^[[2m11:32:08^[[22m ^[[34m[content]^[[39m Syncing content
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:08.6803878Z ^[[33m^[[1m11:32:08^[[22m [WARN] [glob-loader]^[[39m No files found matching "**/*.md" in directory "src/content/dynamic"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:08.7498286Z ^[[2m11:32:08^[[22m ^[[34m[content]^[[39m Synced content
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:08.7510097Z ^[[2m11:32:08^[[22m ^[[34m[types]^[[39m Generated ^[[2m666ms^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:08.7579568Z ^[[2m11:32:08^[[22m ^[[34m[check]^[[39m Getting diagnostics for Astro files in /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.4246802Z ^[[96msrc/pages/bangumi.astro^[[0m:^[[93m16^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.4248281Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.4249410Z ^[[7m16^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.4251293Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.4251659Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.4672373Z ^[[96msrc/pages/bilibili.astro^[[0m:^[[93m13^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.4673180Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.4673743Z ^[[7m13^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.4674716Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.4674987Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.5266081Z ^[[96msrc/pages/booknav.astro^[[0m:^[[93m15^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.5266787Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.5267282Z ^[[7m15^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.5267873Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.5268095Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.5822677Z ^[[96msrc/pages/friends.astro^[[0m:^[[93m17^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.5823289Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.5823664Z ^[[7m17^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.5824149Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.5824337Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.6036493Z ^[[96msrc/pages/guestbook.astro^[[0m:^[[93m12^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.6037250Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.6037749Z ^[[7m12^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.6038405Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.6038647Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.6498878Z ^[[96msrc/pages/myanimelist.astro^[[0m:^[[93m18^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.6499565Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.6500013Z ^[[7m18^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.6500568Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.6500777Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.8297850Z ^[[96msrc/pages/sponsor.astro^[[0m:^[[93m12^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.8299235Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.8300267Z ^[[7m12^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.8301123Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.8301421Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.8794067Z ^[[96msrc/pages/vndb.astro^[[0m:^[[93m20^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.8795266Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.8796789Z ^[[7m20^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.8797586Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.8797775Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.9482039Z ^[[96msrc/pages/dynamic/comments.astro^[[0m:^[[93m7^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.9483083Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.9483822Z ^[[7m7^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.9484698Z ^[[7m ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.9485001Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.9924592Z ^[[96msrc/pages/dynamic/index.astro^[[0m:^[[93m13^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.9925217Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.9926273Z ^[[7m13^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.9938880Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:19.9939126Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:20.0413835Z ^[[96msrc/pages/gallery/[album].astro^[[0m:^[[93m14^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:20.0414878Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:20.0416128Z ^[[7m14^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:20.0417044Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:20.0417379Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:20.0871491Z ^[[96msrc/pages/gallery/index.astro^[[0m:^[[93m11^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:20.0872369Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:20.0873366Z ^[[7m11^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:20.0874276Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:20.0874589Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.7355966Z Result (258 files): 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.7356269Z - 0 errors
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.7356514Z - 0 warnings
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.7356717Z - 12 hints
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.7356835Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.8253960Z ##[group]Run pnpm type-check
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.8254283Z ^[[36;1mpnpm type-check^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.8317524Z shell: /usr/bin/bash -e {0}
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.8317783Z env:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.8317995Z   DEPLOY_BASE: /
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.8318277Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.8318590Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:22.2722495Z $ tsc --noEmit --isolatedDeclarations
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:25.6813643Z ##[group]Run node --test scripts/zhenkun-test-*.mjs
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:25.6814062Z ^[[36;1mnode --test scripts/zhenkun-test-*.mjs^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:25.6877727Z shell: /usr/bin/bash -e {0}
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:25.6877978Z env:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:25.6878171Z   DEPLOY_BASE: /
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:25.6878442Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:25.6878773Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.4437798Z ✔ disabled dynamic endpoint returns no configured content and performs no work (44.551174ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.4467036Z ✔ disabled dynamic endpoint succeeds without even loading a failing content source (0.643284ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.4635076Z ✔ enabled dynamic endpoint preserves real Markdown, image metadata, sorting and JSON schema (131.890023ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.4689364Z ✔ enabled dynamic endpoint retains a valid empty collection response (1.339437ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.4890358Z ✔ CI accepts an empty public corpus with a searchable About page (6.407373ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.4920081Z ✔ CI follows public metadata count when approved articles are added (1.584557ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.4934311Z ✔ CI rejects Astro-only output without the Pagefind module (1.610234ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.4966705Z ✔ CI rejects a module without any indexed language (2.236586ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.4996402Z ✔ CI rejects an empty Pagefind language (1.703348ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5019398Z ✔ CI rejects a public post URL that lost the deployment base (1.538419ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5066379Z ✔ CI rejects duplicate public IDs (1.726141ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5088188Z ✔ / logical routes retain their identity when the base name collides (2.8371ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5089753Z ✔ /Zhenkun-blog-site/ logical routes retain their identity when the base name collides (0.326641ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5090620Z ✔ /about/ logical routes retain their identity when the base name collides (0.980796ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5091381Z ✔ /archive/ logical routes retain their identity when the base name collides (0.481962ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5091945Z ✔ / sitemap excludes closed booknav/ (0.326471ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5092370Z ✔ / sitemap excludes closed friends/ (0.379921ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5092798Z ✔ / sitemap excludes closed sponsor/ (0.179266ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5093229Z ✔ / sitemap excludes closed guestbook/ (0.136856ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5093652Z ✔ / sitemap excludes closed bangumi/ (0.952774ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5094054Z ✔ / sitemap excludes closed vndb/ (0.282108ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5094480Z ✔ / sitemap excludes closed myanimelist/ (0.857115ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5094901Z ✔ / sitemap excludes closed gallery/ (0.141314ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5095345Z ✔ / sitemap excludes closed gallery/album/ (0.162825ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5096341Z ✔ / sitemap excludes closed bilibili/ (0.116438ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5097217Z ✔ / sitemap excludes closed dynamic/ (0.124123ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5097686Z ✔ / sitemap excludes closed dynamic/comments/ (0.121377ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5098132Z ✔ / sitemap excludes closed 404/ (0.103144ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5098532Z ✔ / sitemap excludes closed 404.html (0.103674ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5099061Z ✔ / enabled parent admits its child; unrelated routes survive (1.231365ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5099663Z ✔ / comments require both the parent and comment capability (0.20829ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5100213Z ✔ / public images accept one existing base prefix (0.236252ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5100784Z ✔ / OG uses literal encoded identity under the deployment base (0.676938ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5101452Z ✔ / canonical strips filter query and fragment without changing the input (0.282809ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5102096Z ✔ / error destination points at the emitted static file (0.180648ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5102672Z ✔ /Zhenkun-blog-site/ sitemap excludes closed booknav/ (0.120635ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5103242Z ✔ /Zhenkun-blog-site/ sitemap excludes closed friends/ (0.103533ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5103799Z ✔ /Zhenkun-blog-site/ sitemap excludes closed sponsor/ (0.120676ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5104606Z ✔ /Zhenkun-blog-site/ sitemap excludes closed guestbook/ (0.121418ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5105189Z ✔ /Zhenkun-blog-site/ sitemap excludes closed bangumi/ (0.120455ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5106147Z ✔ /Zhenkun-blog-site/ sitemap excludes closed vndb/ (0.236032ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5106754Z ✔ /Zhenkun-blog-site/ sitemap excludes closed myanimelist/ (0.118412ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5107338Z ✔ /Zhenkun-blog-site/ sitemap excludes closed gallery/ (0.120486ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5107921Z ✔ /Zhenkun-blog-site/ sitemap excludes closed gallery/album/ (0.123781ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5108509Z ✔ /Zhenkun-blog-site/ sitemap excludes closed bilibili/ (0.118442ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5109073Z ✔ /Zhenkun-blog-site/ sitemap excludes closed dynamic/ (0.496739ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5109686Z ✔ /Zhenkun-blog-site/ sitemap excludes closed dynamic/comments/ (0.131857ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5110266Z ✔ /Zhenkun-blog-site/ sitemap excludes closed 404/ (0.121167ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5110819Z ✔ /Zhenkun-blog-site/ sitemap excludes closed 404.html (0.120024ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5111500Z ✔ /Zhenkun-blog-site/ enabled parent admits its child; unrelated routes survive (0.279483ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5112281Z ✔ /Zhenkun-blog-site/ comments require both the parent and comment capability (0.153007ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5112990Z ✔ /Zhenkun-blog-site/ public images accept one existing base prefix (0.284783ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5113714Z ✔ /Zhenkun-blog-site/ OG uses literal encoded identity under the deployment base (0.240361ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5114541Z ✔ /Zhenkun-blog-site/ canonical strips filter query and fragment without changing the input (0.210223ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5115321Z ✔ /Zhenkun-blog-site/ error destination points at the emitted static file (0.125294ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5116904Z ✔ base stripping is segment aware and strips only once (0.477804ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5117862Z ✔ public asset traversal and unsafe bases fail (1.163428ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5119011Z ✔ repeated SPA script execution installs only one set of document delegates (3.348067ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.5120330Z ✔ one accordion click makes exactly one transition after repeated SPA visits (1.546545ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9074204Z ✔ root: inline and standalone links use the same public route (33.64638ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9080775Z ✔ root: aliases, Obsidian automatic aliases and multiple references (11.157414ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9084852Z ✔ root: compatible heading links retain anchors and avoid cards (20.476ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9089338Z ✔ root: production rejects draft target by slug without metadata disclosure (3.315345ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9092500Z ✔ root: production rejects draft target by path without metadata disclosure (1.606017ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9095951Z ✔ root: production rejects draft target by basename without metadata disclosure (2.279147ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9099970Z ✔ root: production rejects missing targets and development leaves actionable text (5.981536ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9104156Z ✔ root: unsupported embeds and block references do not become links (11.498413ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9106126Z ✔ subpath: inline and standalone links use the same public route (3.484412ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9109280Z ✔ subpath: aliases, Obsidian automatic aliases and multiple references (5.83909ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9112877Z ✔ subpath: compatible heading links retain anchors and avoid cards (5.450763ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9116830Z ✔ subpath: production rejects draft target by slug without metadata disclosure (1.930223ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9122173Z ✔ subpath: production rejects draft target by path without metadata disclosure (1.833953ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9124635Z ✔ subpath: production rejects draft target by basename without metadata disclosure (1.886652ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9129236Z ✔ subpath: production rejects missing targets and development leaves actionable text (3.645704ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9131608Z ✔ subpath: unsupported embeds and block references do not become links (8.804881ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9135362Z ✔ source drafts skip production Wiki conversion before resolving targets (1.455395ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9151691Z ✔ development can deliberately preview draft metadata (3.069405ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9155949Z ✔ duplicate basename is ambiguous regardless of enumeration order (one/public) (2.45772ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9157736Z ✔ duplicate basename is ambiguous regardless of enumeration order (two/public) (2.35633ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9159430Z ✔ a hidden exact path cannot fall back to another public basename (1.904665ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9161091Z ✔ duplicate article IDs reject the index instead of selecting the first entry (0.803104ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9162886Z ✔ invalid or unsupported source target is not a ghost link: ../secret (1.29295ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9186357Z ✔ invalid or unsupported source target is not a ghost link: /drafts/secret (1.14865ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9197287Z ✔ invalid or unsupported source target is not a ghost link: guide/../../secret (1.208742ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9210206Z ✔ invalid or unsupported source target is not a ghost link: guide\source (1.484719ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9222304Z ✔ invalid or unsupported source target is not a ghost link: guide//source (1.234902ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9224184Z ✔ invalid or unsupported source target is not a ghost link: guide/source.markdown (1.229522ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9226177Z ✔ unsafe article ID fails before metadata can render: "../secret" (0.275806ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9227778Z ✔ unsafe article ID fails before metadata can render: "/secret" (0.130455ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9229289Z ✔ unsafe article ID fails before metadata can render: "a//b" (0.125515ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9230766Z ✔ unsafe article ID fails before metadata can render: "a\\b" (0.114905ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9232276Z ✔ unsafe article ID fails before metadata can render: "a%2fb" (0.136536ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9233800Z ✔ unsafe article ID fails before metadata can render: "a?b" (0.11199ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9235289Z ✔ unsafe article ID fails before metadata can render: "a#b" (0.129462ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9237077Z ✔ unsafe article ID fails before metadata can render: "https:note" (0.134492ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9238691Z ✔ unsafe article ID fails before metadata can render: "a\u0000b" (0.140694ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9240294Z ✔ unsafe article ID fails before metadata can render: "é" (0.115897ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9241484Z ✔ unsafe article ID fails before metadata can render: " padded" (0.107752ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9242694Z ✔ unsafe article ID fails before metadata can render: "a/ padded" (0.120476ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9244121Z ✔ article identity agrees with installed Astro and literal route: topic-folder/my-note (3.22128ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9245910Z ✔ article identity agrees with installed Astro and literal route: section (2.416163ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9249791Z ✔ article identity agrees with installed Astro and literal route: 中文/文章 (2.884951ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9251357Z ✔ article identity agrees with installed Astro and literal route: custom/index (2.869622ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9253064Z ✔ article identity agrees with installed Astro and literal route: custom/article.md (2.491404ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9254717Z ✔ article identity agrees with installed Astro and literal route: Case/Space Note (3.368355ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9256597Z ✔ source extension aliases resolve while explicit .md article IDs stay literal (2.851578ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9258100Z ✔ public/remote card cover uses its correct URL: /assets/cover.webp at / (1.279024ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9259746Z ✔ public/remote card cover uses its correct URL: /assets/cover.webp at /Zhenkun-blog-site/ (1.104718ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9261689Z ✔ public/remote card cover uses its correct URL: /Zhenkun-blog-site/assets/cover.webp at /Zhenkun-blog-site/ (0.96669ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9287724Z ✔ public/remote card cover uses its correct URL: /assets/cover.webp?version=2#preview at /Zhenkun-blog-site/ (1.208211ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9290500Z ✔ public/remote card cover uses its correct URL: https://images.example.invalid/cover.webp at /Zhenkun-blog-site/ (1.361007ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9292932Z ✔ public/remote card cover uses its correct URL: //images.example.invalid/cover.webp at /Zhenkun-blog-site/ (1.253456ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9294724Z ✔ missing relative cover omits the image without failing the reference (1.45837ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9296595Z ✔ relative cover outside approved source roots rejects publication (1.675236ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9298146Z ✔ API card cover uses injected deterministic URLs and the literal article ID (2.08905ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9299910Z ✔ protected public cards expose allowed metadata but never password or target body (1.203102ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9301569Z ✔ Wiki syntax inside code and existing Markdown links remains unchanged (3.659871ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9303110Z ✔ native MDX compiles public inline references and metadata cards (14.875455ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9304557Z ✔ native MDX leaves JSX attributes, JSX children, expressions and ESM untouched (9.526542ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9306570Z ✔ native MDX applies production rejection and development diagnostics (10.275865ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9308238Z ✔ real scanner admits lowercase Markdown/MDX, skips dotfiles and excluded extensions (15.95255ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9310014Z ✔ real scanner rejects visible symlinks without following file or directory targets (1.081865ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9311501Z ✔ real scanner rejects a source root that passes through a symlink (0.402353ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9313143Z ✔ real scanner fails malformed frontmatter and invalid draft/slug data without disclosure (1.816219ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9314683Z ✔ real scanner duplicate .md/.mdx identities fail index construction (0.743853ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9316594Z ✔ logical routes always get their base while explicit public-asset deduplication is bounded (0.820245ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9318383Z ✔ deployment configuration rejects authority, traversal and control-character bases (0.267671ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9320429Z ✔ internal URL input rejects browser authority reinterpretation and path traversal (0.254897ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9322378Z ✔ explicit nonstandard slug is safely encoded without changing identity: quote/"double" (4.260134ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9324531Z ✔ explicit nonstandard slug is safely encoded without changing identity: quote/'single' (5.309809ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9326954Z ✔ explicit nonstandard slug is safely encoded without changing identity: html/<svg onload='run()'>& (3.793561ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9328849Z ✔ publication build gate permits only the production environment (0.354343ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9330608Z ✔ draft preview and synchronization commands do not trigger the build gate (0.165399ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9479377Z ✔ R1a exact real-parent versions and unaffected YAML4 (9.29541ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9481190Z ✔ devalue stringify/parse preserves supported rich data, identity and cycles (5.750544ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9482734Z ✔ devalue uneval escapes harmless HTML data and reconstructs its value (4.374398ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9484232Z ✔ devalue serializes only the visible bytes of a bounded owned Buffer view (1.677931ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9486142Z ✔ actual Astro store serialization and chunk parser round-trip Unicode/date data (10.347368ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9487641Z ✔ actual Svelte server payload and client hydratable data handoff (47.171757ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9489132Z ✔ actual gray-matter frontmatter preserves dates, Unicode tags and aliases (9.21563ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9490465Z ✔ first query survives lazy backend initialization (24.120108ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9491517Z ✔ rapid edits debounce to the latest query (25.374787ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9492620Z ✔ older search response cannot replace a newer result (17.426118ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9493771Z ✔ older result data cannot replace a newer result (16.76428ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9494819Z ✔ clearing to "" invalidates an in-flight query (11.118942ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9496715Z ✔ clearing to "  \n " invalidates an in-flight query (10.684913ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9497888Z ✔ empty query never loads or searches the backend (5.264404ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9499002Z ✔ zero results complete without leaving a spinner (5.222115ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9500212Z ✔ backend failure clears stale results and permits a retry (18.213442ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9501339Z ✔ stale failure cannot clear the newer success (16.274731ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9502446Z ✔ cancel before debounce prevents any backend call (20.215622ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9503714Z ✔ cancel during initialization cannot resurrect a closed panel (10.618373ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9504946Z ✔ dispose before debounce prevents any backend call (19.61738ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9506650Z ✔ dispose during initialization cannot resurrect a closed panel (11.010399ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9507916Z ✔ a new SPA session is independent of disposed work (15.72259ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9509086Z ✔ dispose is idempotent and future edits publish nothing (5.761336ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9510280Z ✔ closing and reopening the same query searches again (10.377192ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9511433Z ✔ old completion does not stop a newer pending query (20.248641ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9512697Z ✔ ESM: @swup/parallel-plugin resolves exact cross-major base and requirements (18.310684ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9514173Z ✔ ESM: @swup/route-name-plugin resolves exact cross-major base and requirements (1.978293ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9515850Z ✔ ESM: actual Swup hooks mount/unmount twice, route naming and classes (6.140494ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9517489Z ✔ ESM: parallel visit marking, insertion, restoration, cleanup and disabled visit (3.413489ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9519081Z ✔ CJS: @swup/parallel-plugin resolves exact cross-major base and requirements (3.733028ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9520661Z ✔ CJS: @swup/route-name-plugin resolves exact cross-major base and requirements (1.209964ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9522183Z ✔ CJS: actual Swup hooks mount/unmount twice, route naming and classes (4.863143ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9523679Z ✔ CJS: parallel visit marking, insertion, restoration, cleanup and disabled visit (4.235198ms)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9524594Z ℹ tests 166
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9524992Z ℹ suites 0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9525385Z ℹ pass 166
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9526173Z ℹ fail 0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9526567Z ℹ cancelled 0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9526974Z ℹ skipped 0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9527355Z ℹ todo 0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9527803Z ℹ duration_ms 1202.711725
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9583039Z ##[group]Run pnpm build
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9583330Z ^[[36;1mpnpm build^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9646227Z shell: /usr/bin/bash -e {0}
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9646479Z env:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9646675Z   DEPLOY_BASE: /
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9646951Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9647279Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:27.4060994Z $ pnpm exec tsx scripts/generate-github-card-data.ts && pnpm exec tsx scripts/generate-lqips.ts && pnpm exec tsx scripts/generate-vndb-covers.ts && astro build && pnpm exec tsx scripts/prune-pio-assets.ts && pnpm exec tsx scripts/subset-fonts.ts && pnpm exec tsx scripts/minify-inline-scripts.ts && pnpm exec tsx scripts/run-pagefind.ts
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:28.0588061Z [GITHUB-CARD] Cached 0 repositories (0 refreshed).
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:28.7847846Z Loaded 23 existing entries from src/constants/lqips.json
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:28.8030257Z Found 23 images, 0 new to process.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:28.8047447Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:28.8048376Z Done! Processed 0/0 new images. Total: 23. Output: src/constants/lqips.json
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:29.6117574Z [VNDB] Page not enabled, skipping cover download
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6148028Z ^[[2m11:32:33^[[22m ^[[34m[content]^[[39m Syncing content
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6211698Z ^[[33m^[[1m11:32:33^[[22m [WARN] [glob-loader]^[[39m No files found matching "**/*.md" in directory "src/content/dynamic"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6310706Z ^[[2m11:32:33^[[22m ^[[34m[content]^[[39m Synced content
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6326069Z ^[[2m11:32:33^[[22m ^[[34m[types]^[[39m Generated ^[[2m460ms^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6343606Z ^[[2m11:32:33^[[22m ^[[34m[build]^[[39m output: ^[[34m"static"^[[39m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6344648Z ^[[2m11:32:33^[[22m ^[[34m[build]^[[39m mode: ^[[34m"static"^[[39m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6346528Z ^[[2m11:32:33^[[22m ^[[34m[build]^[[39m directory: ^[[34m/home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site/dist/^[[39m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6348136Z ^[[2m11:32:33^[[22m ^[[34m[build]^[[39m Collecting build info...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6357247Z ^[[2m11:32:33^[[22m ^[[34m[build]^[[39m ^[[32m✓ Completed in 675ms.^[[39m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6365298Z ^[[2m11:32:33^[[22m ^[[34m[build]^[[39m Building static entrypoints...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:36.4042803Z ^[[33m^[[1m11:32:36^[[22m [WARN] [astro-icon]^[[39m Failed to load icons from "src/icons": ENOENT: no such file or directory, scandir 'src/icons/'
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:36.5657339Z ^[[2m11:32:36^[[22m ^[[34m[assets]^[[39m Copying fonts (22 files)...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:37.2150753Z ^[[2m11:32:37^[[22m ^[[34m[vite]^[[39m ^[[32m✓ built in 3.45s^[[39m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.1684607Z ^[[33m^[[1m11:32:38^[[22m [WARN] [vite]^[[39m ^[[33m[plugin builtin:vite-reporter] 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.1685225Z (!) Some chunks are larger than 500 kB after minification. Consider:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.1686019Z - Using dynamic import() to code-split the application
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.1686855Z - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.1687823Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.^[[39m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.1697431Z ^[[2m11:32:38^[[22m ^[[34m[vite]^[[39m ^[[32m✓ built in 942ms^[[39m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.1746665Z ^[[2m11:32:38^[[22m ^[[34m[build]^[[39m Rearranging server assets...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.2274321Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.2274861Z ^[[42m^[[30m generating static routes ^[[39m^[[49m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.5679618Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/404.html^[[22m ^[[2m(+71ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.5890938Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/about/index.html^[[22m ^[[2m(+21ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.5908287Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/api/allPostMeta.json^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.5930708Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/api/dynamic.json^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6156005Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/archive/index.html^[[22m ^[[2m(+22ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6201170Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/bangumi/index.html^[[22m ^[[2m(+5ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6225217Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/bilibili/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6245291Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/booknav/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6394208Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/categories/index.html^[[22m ^[[2m(+15ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6412206Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/dynamic/comments/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6481415Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/dynamic/index.html^[[22m ^[[2m(+7ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6500198Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/friends/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6515235Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/gallery/firefly-2026/index.html^[[22m ^[[2m(+1ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6522875Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/gallery/encrypted-test/index.html^[[22m ^[[2m(+1ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6539234Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/gallery/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6555419Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/guestbook/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6576348Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/myanimelist/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6587448Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/robots.txt^[[22m ^[[2m(+1ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.6752329Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/rss/index.html^[[22m ^[[2m(+16ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.7676526Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/rss.xml^[[22m ^[[2m(+92ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.7857924Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/search/index.html^[[22m ^[[2m(+18ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.8009240Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/series/index.html^[[22m ^[[2m(+15ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.8028266Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/sponsor/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.8188942Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/tags/index.html^[[22m ^[[2m(+16ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.8212842Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/vndb/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.8370881Z ^[[2m11:32:38^[[22m   ^[[34m├─^[[39m ^[[2m/index.html^[[22m ^[[2m(+16ms)^[[22m 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.8374335Z ^[[2m11:32:38^[[22m ^[[32m✓ Completed in 660ms.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.8374695Z ^[[39m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.8375365Z ^[[42m^[[30m generating optimized images ^[[39m^[[49m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.9550566Z ^[[2m11:32:38^[[22m   ^[[32m▶^[[39m /_astro/avatar.Vt-Igtud_1tWPX7.webp ^[[2m(before: 64kB, after: 14kB)^[[22m ^[[2m(+117ms)^[[22m ^[[2m(1/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.0177836Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/m2.DdvPaSds_IzGBP.webp ^[[2m(before: 27kB, after: 31kB)^[[22m ^[[2m(+179ms)^[[22m ^[[2m(2/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.1181959Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/m3.D3bdkV68_1B5y44.webp ^[[2m(before: 118kB, after: 64kB)^[[22m ^[[2m(+280ms)^[[22m ^[[2m(3/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.1343143Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/m1.DEh_M2ue_Z1S1lrt.webp ^[[2m(before: 135kB, after: 70kB)^[[22m ^[[2m(+296ms)^[[22m ^[[2m(4/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.1807527Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/avatar.Vt-Igtud_Q1OuE.webp ^[[2m(before: 64kB, after: 64kB)^[[22m ^[[2m(+223ms)^[[22m ^[[2m(5/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.2328019Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/m2.DdvPaSds_rxT1.webp ^[[2m(before: 27kB, after: 42kB)^[[22m ^[[2m(+215ms)^[[22m ^[[2m(6/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.4319989Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/m3.D3bdkV68_1I5aSS.webp ^[[2m(before: 118kB, after: 94kB)^[[22m ^[[2m(+313ms)^[[22m ^[[2m(7/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.4485200Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/m1.DEh_M2ue_Z1L1IBE.webp ^[[2m(before: 135kB, after: 104kB)^[[22m ^[[2m(+314ms)^[[22m ^[[2m(8/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.4707872Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/m4.DzLJp29g_1oUPkN.webp ^[[2m(before: 142kB, after: 68kB)^[[22m ^[[2m(+291ms)^[[22m ^[[2m(9/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.5882651Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/m5.UNwLEw9O_Z1lqfdc.webp ^[[2m(before: 79kB, after: 54kB)^[[22m ^[[2m(+353ms)^[[22m ^[[2m(10/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.7748000Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/d1.v_J1gD3P_tz0F7.webp ^[[2m(before: 71kB, after: 70kB)^[[22m ^[[2m(+325ms)^[[22m ^[[2m(11/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.7765867Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/m6.Ca2EuEDu_P3oOm.webp ^[[2m(before: 73kB, after: 42kB)^[[22m ^[[2m(+345ms)^[[22m ^[[2m(12/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:39.8211265Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/m4.DzLJp29g_Z1siWVv.webp ^[[2m(before: 142kB, after: 100kB)^[[22m ^[[2m(+352ms)^[[22m ^[[2m(13/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.0037632Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/m5.UNwLEw9O_16Ihom.webp ^[[2m(before: 79kB, after: 77kB)^[[22m ^[[2m(+414ms)^[[22m ^[[2m(14/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.1487644Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/d2.G7EObyHu_Z1DLAKS.webp ^[[2m(before: 56kB, after: 51kB)^[[22m ^[[2m(+325ms)^[[22m ^[[2m(15/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.1577857Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/m6.Ca2EuEDu_rBfB3.webp ^[[2m(before: 73kB, after: 60kB)^[[22m ^[[2m(+381ms)^[[22m ^[[2m(16/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.2644185Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/d1.v_J1gD3P_ZDw30v.webp ^[[2m(before: 71kB, after: 124kB)^[[22m ^[[2m(+490ms)^[[22m ^[[2m(17/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.3917674Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/d3.CGCRs0-H_Z4ue21.webp ^[[2m(before: 99kB, after: 87kB)^[[22m ^[[2m(+388ms)^[[22m ^[[2m(18/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.4813589Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/d4.Brgr35k-_QbpD3.webp ^[[2m(before: 73kB, after: 74kB)^[[22m ^[[2m(+322ms)^[[22m ^[[2m(19/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.6050731Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/d5.z7QGp_dj_1EwU7g.webp ^[[2m(before: 50kB, after: 60kB)^[[22m ^[[2m(+340ms)^[[22m ^[[2m(20/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.6367690Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/d2.G7EObyHu_2sTS0J.webp ^[[2m(before: 56kB, after: 87kB)^[[22m ^[[2m(+488ms)^[[22m ^[[2m(21/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.9427580Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/d3.CGCRs0-H_Z11YS4k.webp ^[[2m(before: 99kB, after: 150kB)^[[22m ^[[2m(+553ms)^[[22m ^[[2m(22/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.9506985Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/firefly-light.DZ-mS7Sc_Z4p5YL.webp ^[[2m(before: 3kB, after: 0kB)^[[22m ^[[2m(+6ms)^[[22m ^[[2m(23/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.9566904Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/firefly-light.DZ-mS7Sc_Z1n8zmu.webp ^[[2m(before: 3kB, after: 1kB)^[[22m ^[[2m(+6ms)^[[22m ^[[2m(24/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.9627093Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/d4.Brgr35k-_ZgTD2z.webp ^[[2m(before: 73kB, after: 126kB)^[[22m ^[[2m(+481ms)^[[22m ^[[2m(25/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.9672997Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/firefly-light.DZ-mS7Sc_Z3pH8y.webp ^[[2m(before: 3kB, after: 2kB)^[[22m ^[[2m(+12ms)^[[22m ^[[2m(26/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.9709983Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/firefly-dark.b7MsfgPt_RPm6p.webp ^[[2m(before: 4kB, after: 0kB)^[[22m ^[[2m(+6ms)^[[22m ^[[2m(27/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.9767757Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/d6.DetxM4Sl_wvX9N.webp ^[[2m(before: 64kB, after: 62kB)^[[22m ^[[2m(+342ms)^[[22m ^[[2m(28/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.9790827Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/firefly-dark.b7MsfgPt_1Ub8hw.webp ^[[2m(before: 4kB, after: 1kB)^[[22m ^[[2m(+8ms)^[[22m ^[[2m(29/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:40.9919858Z ^[[2m11:32:40^[[22m   ^[[32m▶^[[39m /_astro/firefly-dark.b7MsfgPt_Zr6Cr1.webp ^[[2m(before: 4kB, after: 2kB)^[[22m ^[[2m(+13ms)^[[22m ^[[2m(30/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:41.0495964Z ^[[2m11:32:41^[[22m   ^[[32m▶^[[39m /_astro/d5.z7QGp_dj_H2g4W.webp ^[[2m(before: 50kB, after: 93kB)^[[22m ^[[2m(+444ms)^[[22m ^[[2m(31/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:41.3114638Z ^[[2m11:32:41^[[22m   ^[[32m▶^[[39m /_astro/d6.DetxM4Sl_ZpXFRv.webp ^[[2m(before: 64kB, after: 106kB)^[[22m ^[[2m(+335ms)^[[22m ^[[2m(32/32)^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:41.3117548Z ^[[2m11:32:41^[[22m ^[[32m✓ Completed in 2.47s.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:41.3117874Z ^[[39m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:41.3153289Z ^[[2m11:32:41^[[22m ^[[34m[build]^[[39m ^[[32m✓ Completed in 7.68s.^[[39m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:41.3247938Z ^[[2m11:32:41^[[22m ^[[34m[@astrojs/sitemap]^[[39m `sitemap-index.xml` created at `dist`
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:41.3249294Z ^[[2m11:32:41^[[22m ^[[34m[build]^[[39m 22 page(s) built in ^[[1m8.36s^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:41.3249843Z ^[[2m11:32:41^[[22m ^[[34m[build]^[[39m ^[[1mComplete!^[[22m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:42.0492813Z 🎎 Pruning unused mascot assets in dist/...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:42.0730982Z    ✂ pio (14.62 MiB)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:42.0734057Z    ✂ _astro/Live2DWidget.astro_astro_type_script_index_0_lang.CnuKuERK.js (0.63 MiB)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:42.0735189Z ✨ Pruned 2 mascot assets, freed 15.26 MiB
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:42.8142904Z 🔤 Font subsetting started...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:42.8147171Z    ⏭ Skipping '--font-greatvibes' — not referenced in selected or any font region.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:42.8148737Z    No local fonts with subset: true found. Skipping.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:43.4951845Z 🗜 Minifying inline scripts in dist/...
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:43.8618849Z ✨ Minified 259 inline scripts in 9/22 HTML files, saved 379.3 KiB
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.5367823Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.5368738Z Running Pagefind v1.5.2 (Extended)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.5370027Z Running from: "/home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.5371059Z Source:       "dist"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.5371734Z Output:       "dist/pagefind"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.5372283Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.5372719Z [Walking source directory]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.5382104Z Found 22 files matching **/*.{html}
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.5382336Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.5382443Z [Parsing files]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7176992Z Found a data-pagefind-body element on the site.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7177858Z 13 pages found without an <html> element. 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7178439Z Pages without an outer <html> element will not be processed by default. 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7179427Z If adding this element is not possible, use the root selector config to target a different root element.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7180359Z   * "/booknav/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7180809Z   * "/sponsor/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7181119Z   * "/myanimelist/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7181435Z   * "/dynamic/comments/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7181743Z   * "/dynamic/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7182203Z   * "/gallery/firefly-2026/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7182793Z   * "/gallery/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7183369Z   * "/gallery/encrypted-test/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7184024Z   * "/bangumi/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7184618Z   * "/friends/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7185165Z   * "/vndb/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7186088Z   * "/bilibili/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7186659Z   * "/guestbook/" has no <html> element
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7187455Z Note: Pagefind doesn't support stemming for the language zh-cn. 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7188343Z Search will still work, but will not match across root words.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7189219Z Note: Pagefind doesn't support stemming for the language zh-cn. 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7190090Z Search will still work, but will not match across root words.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7190742Z ↳ Ignoring pages without this tag.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7190994Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7191193Z [Reading languages]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7191626Z Discovered 1 language: zh-cn
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7191946Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7192181Z [Building search indexes]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7192661Z Total: 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7193062Z   Indexed 1 language
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7193475Z   Indexed 1 page
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7193864Z   Indexed 95 words
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7194309Z   Indexed 0 filters
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7194811Z   Indexed 0 sorts
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7246532Z 
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7246917Z Finished in 0.188 seconds
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7624652Z ##[group]Run node scripts/zhenkun-verify-ci-artifacts.mjs --base "$DEPLOY_BASE"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7625273Z ^[[36;1mnode scripts/zhenkun-verify-ci-artifacts.mjs --base "$DEPLOY_BASE"^[[0m
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7688221Z shell: /usr/bin/bash -e {0}
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7688473Z env:
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7688663Z   DEPLOY_BASE: /
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7688964Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7689278Z ##[endgroup]
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9403198Z {
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9403710Z   "status": "PASS",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9404108Z   "base": "/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9404453Z   "pages": [
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9404972Z     "https://zhenkun26.github.io/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9406124Z     "https://zhenkun26.github.io/about/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9406763Z     "https://zhenkun26.github.io/archive/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9407349Z     "https://zhenkun26.github.io/search/"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9408228Z   ],
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9408546Z   "images": [
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9408927Z     {
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9409503Z       "url": "https://zhenkun26.github.io/_astro/avatar.Vt-Igtud.avif",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9410156Z       "bytes": 66462,
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9410867Z       "sha256": "82e8d94c2bb4df5735fce1a24964e258a44e40ed7142700c5d427b586af3fc3f"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9411571Z     },
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9411870Z     {
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9412489Z       "url": "https://zhenkun26.github.io/_astro/firefly-light.DZ-mS7Sc.png",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9413190Z       "bytes": 3618,
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9413884Z       "sha256": "1b1f6d57e7ae2a361b984f27daaf942404d5421477554bd668922d9d75f25ab1"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9414589Z     }
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9414899Z   ],
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9415202Z   "sitemap": [
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9415857Z     "https://zhenkun26.github.io/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9416418Z     "https://zhenkun26.github.io/about/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9416973Z     "https://zhenkun26.github.io/archive/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9417560Z     "https://zhenkun26.github.io/categories/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9418160Z     "https://zhenkun26.github.io/rss/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9418727Z     "https://zhenkun26.github.io/search/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9419298Z     "https://zhenkun26.github.io/series/",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9419774Z     "https://zhenkun26.github.io/tags/"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9420158Z   ],
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9420421Z   "redirects": [
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9420777Z     "bangumi/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9421178Z     "bilibili/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9421589Z     "booknav/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9422013Z     "dynamic/comments/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9422436Z     "dynamic/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9422849Z     "friends/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9423326Z     "gallery/encrypted-test/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9423887Z     "gallery/firefly-2026/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9424362Z     "gallery/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9424768Z     "guestbook/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9425198Z     "myanimelist/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9425833Z     "sponsor/index.html",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9426235Z     "vndb/index.html"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9426591Z   ],
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9426992Z   "rssDate": "Sat, 03 Oct 2026 11:32:38 GMT",
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9427479Z   "rssItems": 0,
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9427828Z   "http": []
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9428161Z }
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.9578522Z Post job cleanup.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.0162115Z Pruning is unnecessary.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.0256088Z Post job cleanup.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.1475595Z (node:3108) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.1476442Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.1706587Z Post job cleanup.
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.2570156Z [command]/usr/bin/git version
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.2613335Z git version 2.55.0
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.2656292Z Temporarily overriding HOME='/home/runner/work/_temp/d5041301-4ec7-4a1a-98fe-76b9098032b7' before making global git config changes
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.2658069Z Adding repository directory to the temporary git global config as a safe directory
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.2662276Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.2701594Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.2738568Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.2991948Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.3021705Z http.https://github.com/.extraheader
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.3032496Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.3074080Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.3538806Z Cleaning up orphan processes
+Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.3858819Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683, actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e, pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	﻿2026-10-03T11:31:43.8181141Z Current runner version: '2.337.0'
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8206607Z ##[group]Runner Image Provisioner
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8207505Z Hosted Compute Agent
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8208121Z Version: 20260901.588
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8208753Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8209590Z Build Date: 2026-09-01T19:56:44Z
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8210281Z Worker ID: {d319158e-5bb3-4ae1-a487-0b4782ae3d43}
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8211034Z Azure Region: eastus2
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8211624Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8213072Z ##[group]Operating System
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8213853Z Ubuntu
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8214386Z 24.04.5
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8215458Z LTS
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8216008Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8216572Z ##[group]Runner Image
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8217286Z Image: ubuntu-24.04
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8217862Z Version: 20260927.320.1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8219165Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8220821Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8221838Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8222996Z ##[group]GITHUB_TOKEN Permissions
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8225168Z Contents: read
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8225792Z Metadata: read
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8226506Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8228569Z Secret source: Actions
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8229596Z Cache mode: write
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8230293Z Prepare workflow directory
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8740815Z Prepare all required actions
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8790167Z Getting action download info
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.0698194Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.2042128Z Download action repository 'actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e' (SHA:cdca7365b2dadb8aad0a33bc7601856ffabcc48e)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.3411508Z Download action repository 'pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda' (SHA:a7487c7e89a18df4991f7f222e4898a00d66ddda)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.6357678Z Complete job name: Full quality (/Zhenkun-blog-site/)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7082502Z ##[group]Run actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7083548Z with:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7084010Z   repository: zhenkun26/Zhenkun-blog-site
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7088264Z   token: ***
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7088715Z   ssh-strict: true
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7089142Z   ssh-user: git
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7089581Z   persist-credentials: true
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7090055Z   clean: true
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7090487Z   sparse-checkout-cone-mode: true
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7090992Z   fetch-depth: 1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7091405Z   fetch-tags: false
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7091839Z   show-progress: true
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7092291Z   lfs: false
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7092692Z   submodules: false
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7093130Z   set-safe-directory: true
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7093919Z env:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7094380Z   DEPLOY_BASE: /Zhenkun-blog-site/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.7095105Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8156954Z Syncing repository: zhenkun26/Zhenkun-blog-site
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8159833Z ##[group]Getting Git version info
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8161283Z Working directory is '/home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site'
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8163402Z [command]/usr/bin/git version
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8258360Z git version 2.55.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8299381Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8317165Z Temporarily overriding HOME='/home/runner/work/_temp/b323ac72-fcb9-4929-a560-634e59fc3a56' before making global git config changes
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8319666Z Adding repository directory to the temporary git global config as a safe directory
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8326297Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8412856Z Deleting the contents of '/home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site'
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8418785Z ##[group]Initializing the repository
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8426552Z [command]/usr/bin/git init /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8563260Z hint: Using 'master' as the name for the initial branch. This default branch name
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8565534Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8567455Z hint: to use in all of your new repositories, which will suppress this warning,
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8568915Z hint: call:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8569749Z hint:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8570772Z hint: 	git config --global init.defaultBranch <name>
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8572067Z hint:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8573170Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8575127Z hint: 'development'. The just-created branch can be renamed via this command:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8576804Z hint:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8577842Z hint: 	git branch -m <name>
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8578897Z hint:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8580115Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8582304Z Initialized empty Git repository in /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site/.git/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8590578Z [command]/usr/bin/git remote add origin https://github.com/zhenkun26/Zhenkun-blog-site
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8675302Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8676723Z ##[group]Disabling automatic garbage collection
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8677954Z [command]/usr/bin/git config --local gc.auto 0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8733011Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8734230Z ##[group]Setting up auth
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8737682Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.8791108Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.9263102Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.9303970Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.9534005Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.9577160Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.9577994Z ##[group]Fetching the repository
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.9588947Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e:refs/remotes/pull/22/merge
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.0640807Z From https://github.com/zhenkun26/Zhenkun-blog-site
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.0646410Z  * [new ref]         53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e -> pull/22/merge
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.0650287Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.0651782Z ##[group]Determining the checkout info
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.0653295Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.0658531Z [command]/usr/bin/git sparse-checkout disable
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.0715686Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.0750612Z ##[group]Checking out the ref
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.0755731Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/22/merge
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2587629Z Note: switching to 'refs/remotes/pull/22/merge'.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2588651Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2589284Z You are in 'detached HEAD' state. You can look around, make experimental
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2590711Z changes and commit them, and you can discard any commits you make in this
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2592157Z state without impacting any branches by switching back to a branch.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2592965Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2593594Z If you want to create a new branch to retain commits you create, you may
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2595480Z do so (now or later) by using -c with the switch command. Example:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2597324Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2597988Z   git switch -c <new-branch-name>
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2598964Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2599585Z Or undo this operation with:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2600434Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2600948Z   git switch -
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2601625Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2602694Z Turn off this advice by setting config variable advice.detachedHead to false
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2604298Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2606417Z HEAD is now at 53a11cb Merge 330f58131c3d0c555aba25222a3596e1aa54da49 into 53cf67d121ce053b2d5f2aed4dd40c7d07d8506a
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2672390Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2676221Z [command]/usr/bin/git log -1 --format=%H
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2703613Z 53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.3093619Z ##[group]Run actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.3095836Z with:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.3096946Z   node-version: 24.20.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.3098176Z   always-auth: false
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.3099397Z   check-latest: false
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.3110395Z   token: ***
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.3111505Z env:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.3112627Z   DEPLOY_BASE: /Zhenkun-blog-site/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.3113977Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.4548790Z Attempting to download 24.20.0...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.4663224Z (node:2281) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.4668401Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.9731287Z Acquiring 24.20.0 - x64 from https://github.com/actions/node-versions/releases/download/24.20.0-33034074684/node-24.20.0-linux-x64.tar.gz
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:47.4335161Z Extracting ...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:47.4473503Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/f97dae9b-c82b-4f36-9a61-8c0b3535bef1 -f /home/runner/work/_temp/f4b92740-cc73-4cac-9132-b4b6013cc005
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:48.6845117Z Adding to the cache ...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.6835163Z ##[group]Environment details
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9134829Z node: v24.20.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9135440Z npm: 11.19.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9135750Z yarn: 1.22.22
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9136538Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9323365Z ##[group]Run pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9323780Z with:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9323979Z   version: 11.22.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9324191Z   run_install: false
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9324418Z   dest: ~/setup-pnpm
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9324898Z   package_json_file: package.json
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9325168Z   standalone: false
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9325369Z env:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9325575Z   DEPLOY_BASE: /Zhenkun-blog-site/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9325833Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9929293Z ##[group]Running self-installer...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:51.4006010Z (node:2330) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:51.4008355Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:51.5512411Z Progress: resolved 1, reused 0, downloaded 0, added 0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:51.5613893Z Packages: +1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:51.5615080Z +
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.0216688Z Progress: resolved 1, reused 0, downloaded 1, added 1, done
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.0549664Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.0550296Z dependencies:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.0551114Z + pnpm 11.22.0 (12.8.1 is available)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.0551518Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.0575240Z Done in 901ms
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.1618948Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.1619716Z Installation Completed!
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.1735859Z ##[group]Run pnpm install --frozen-lockfile
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.1736266Z ^[[36;1mpnpm install --frozen-lockfile^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.2036165Z shell: /usr/bin/bash -e {0}
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.2036475Z env:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.2036711Z   DEPLOY_BASE: /Zhenkun-blog-site/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.2037394Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.2037746Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.9384737Z ? Verifying lockfile against supply-chain policies (925 entries)...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.9505459Z Lockfile is up to date, resolution step is skipped
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:53.0949428Z Progress: resolved 1, reused 0, downloaded 0, added 0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:53.1952207Z Packages: +736
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:53.1953276Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:54.1116831Z Progress: resolved 736, reused 0, downloaded 0, added 0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:55.1229166Z Progress: resolved 736, reused 0, downloaded 49, added 0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:55.3859487Z Packages are hard linked from the content-addressable store to the virtual store.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:55.3864804Z   Content-addressable store is at: /home/runner/setup-pnpm/node_modules/.bin/store/v11
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:55.3866009Z   Virtual store is at:             node_modules/.pnpm
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:56.1223229Z Progress: resolved 736, reused 0, downloaded 222, added 12
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:57.1286361Z Progress: resolved 736, reused 0, downloaded 386, added 25
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:57.7829033Z ✓ Lockfile passes supply-chain policies (925 entries in 4.8s)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:58.1270907Z Progress: resolved 736, reused 0, downloaded 567, added 40
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:59.0314071Z Progress: resolved 736, reused 0, downloaded 733, added 736, done
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:59.3312212Z .../esbuild@0.28.2/node_modules/esbuild postinstall$ node install.js
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:59.3323640Z .../esbuild@0.28.1/node_modules/esbuild postinstall$ node install.js
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:59.3328400Z .../node_modules/workerd postinstall$ node install.js
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:59.4116144Z .../esbuild@0.28.2/node_modules/esbuild postinstall: Done
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:59.4299175Z .../esbuild@0.28.1/node_modules/esbuild postinstall: Done
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:59.4886159Z .../node_modules/workerd postinstall: Done
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2518976Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2519500Z dependencies:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2519959Z + @astrojs/check 0.9.10
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2520406Z + @astrojs/cloudflare 14.2.6
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2520896Z + @astrojs/markdown-remark 7.3.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2521399Z + @astrojs/markdown-satteri 0.4.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2521902Z + @astrojs/mdx 7.0.8
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2522267Z + @astrojs/rss 4.0.19
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2522647Z + @astrojs/sitemap 3.7.4
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2523062Z + @astrojs/svelte 9.0.1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2523676Z + @expressive-code/plugin-collapsible-sections 0.44.2
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2524759Z + @expressive-code/plugin-line-numbers 0.44.2
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2525375Z + @fancyapps/ui 6.1.14
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2525901Z + @iconify-json/fa7-brands 1.2.4
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2526458Z + @iconify-json/fa7-regular 1.2.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2527018Z + @iconify-json/fa7-solid 1.2.5
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2527595Z + @iconify-json/material-symbols 1.2.90
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2528187Z + @iconify-json/mingcute 1.2.8
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2528747Z + @iconify-json/simple-icons 1.2.94
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2529257Z + @iconify/svelte 5.2.2
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2529693Z + @iconify/types 2.0.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2530106Z + @iconify/utils 3.1.4
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2530532Z + @mermanjs/web 0.8.0-alpha.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2531038Z + @napi-rs/wasm-runtime 1.2.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2531479Z + @swup/astro 1.8.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2531943Z + @tailwindcss/typography 0.5.20
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2532507Z + @types/hast 3.0.5
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2532992Z + @types/mdast 4.0.4
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2533438Z + astro 7.2.10
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2533904Z + astro-expressive-code 0.44.2
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2534393Z + astro-icon 1.2.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2535042Z + ci-info 4.4.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2535829Z + dayjs 1.11.23
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2536275Z + ec-lang-logo 1.0.5
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2536800Z + expressive-code-collapsible 0.1.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2537426Z + expressive-code-language-badge 1.1.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2537964Z + github-slugger 2.0.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2538634Z + glob 13.0.6
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2539029Z + gray-matter 4.0.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2539480Z + hast-util-from-html 2.0.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2539960Z + hastscript 9.0.1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2540355Z + katex 0.18.5
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2540753Z + l2d-widget 0.1.2
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2541141Z + marked 18.0.11
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2541655Z + mdast-util-to-string 4.0.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2542126Z + pagefind 1.5.2
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2542511Z + pako 3.0.1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2542870Z + qrcode 1.5.4
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2543280Z + reading-time 1.5.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2543783Z + rehype-autolink-headings 7.1.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2544314Z + rehype-code-group 0.3.1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2545080Z + rehype-components 0.3.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2545521Z + rehype-katex 7.0.1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2545904Z + rehype-slug 6.0.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2546500Z + remark-admonition-to-blockquote-callout 1.0.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2547124Z + remark-directive 4.0.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2547584Z + remark-math 6.0.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2548012Z + remark-sectionize 2.1.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2548467Z + sanitize-html 2.17.7
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2548881Z + satteri 0.10.5
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2549255Z + sharp 0.35.4
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2549616Z + stylus 0.64.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2549957Z + svelte 5.57.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2550330Z + tailwindcss 4.3.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2550731Z + takumi-js 2.13.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2551100Z + tsx 4.23.13
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2551500Z + typescript 6.0.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2551989Z + unist-util-visit 5.1.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2552416Z + wrangler 4.127.1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2552636Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2552805Z devDependencies:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2553239Z + @astrojs/ts-plugin 1.10.11
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2553707Z + @biomejs/biome 2.5.11
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2554157Z + @iconify-json/mdi 1.2.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2557220Z + @iconify-json/svg-spinners 1.2.4
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2557816Z + @tailwindcss/vite 4.3.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2558290Z + @types/qrcode 1.5.6
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2558764Z + @types/sanitize-html 2.16.1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2559235Z + esbuild 0.28.2
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2559644Z + pinyin-pro 3.29.3
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2560075Z + postcss-import 16.2.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2560537Z + postcss-nesting 14.0.1
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2561014Z + rehype-callouts 2.2.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2561447Z + subset-font 2.7.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.2561685Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.3771986Z Done in 8.1s using pnpm v11.22.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.4939287Z ##[group]Run pnpm exec biome ci ./src --reporter=github
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.4939735Z ^[[36;1mpnpm exec biome ci ./src --reporter=github^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.5006679Z shell: /usr/bin/bash -e {0}
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.5006976Z env:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.5007328Z   DEPLOY_BASE: /Zhenkun-blog-site/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.5007815Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.5008263Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:01.3999833Z ##[group]Run pnpm check
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:01.4000116Z ^[[36;1mpnpm check^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:01.4064280Z shell: /usr/bin/bash -e {0}
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:01.4064766Z env:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:01.4064978Z   DEPLOY_BASE: /Zhenkun-blog-site/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:01.4065303Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:01.4065608Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:01.9100472Z $ astro check
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:06.4619067Z ^[[2m11:32:06^[[22m ^[[34m[content]^[[39m Syncing content
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:06.4678020Z ^[[33m^[[1m11:32:06^[[22m [WARN] [glob-loader]^[[39m No files found matching "**/*.md" in directory "src/content/dynamic"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:06.5401186Z ^[[2m11:32:06^[[22m ^[[34m[content]^[[39m Synced content
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:06.5412770Z ^[[2m11:32:06^[[22m ^[[34m[types]^[[39m Generated ^[[2m674ms^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:06.5481460Z ^[[2m11:32:06^[[22m ^[[34m[check]^[[39m Getting diagnostics for Astro files in /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.4416034Z ^[[96msrc/pages/bangumi.astro^[[0m:^[[93m16^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.4417325Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.4419149Z ^[[7m16^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.4420046Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.4420391Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.4850021Z ^[[96msrc/pages/bilibili.astro^[[0m:^[[93m13^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.4851152Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.4851728Z ^[[7m13^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.4852278Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.4852476Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.5560030Z ^[[96msrc/pages/booknav.astro^[[0m:^[[93m15^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.5560959Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.5561633Z ^[[7m15^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.5562459Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.5562761Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6119096Z ^[[96msrc/pages/friends.astro^[[0m:^[[93m17^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6119663Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6120042Z ^[[7m17^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6120533Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6120739Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6333514Z ^[[96msrc/pages/guestbook.astro^[[0m:^[[93m12^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6334113Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6334699Z ^[[7m12^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6335223Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6335403Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6795302Z ^[[96msrc/pages/myanimelist.astro^[[0m:^[[93m18^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6796138Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6797085Z ^[[7m18^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6797635Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.6797824Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.8596621Z ^[[96msrc/pages/sponsor.astro^[[0m:^[[93m12^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.8597174Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.8597536Z ^[[7m12^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.8598019Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.8598201Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.9058029Z ^[[96msrc/pages/vndb.astro^[[0m:^[[93m20^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.9058832Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.9059725Z ^[[7m20^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.9060297Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.9060512Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.9683619Z ^[[96msrc/pages/dynamic/comments.astro^[[0m:^[[93m7^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.9684801Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.9685652Z ^[[7m7^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.9686503Z ^[[7m ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:17.9686914Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.0095887Z ^[[96msrc/pages/dynamic/index.astro^[[0m:^[[93m13^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.0097047Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.0097842Z ^[[7m13^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.0098842Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.0099198Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.0573045Z ^[[96msrc/pages/gallery/[album].astro^[[0m:^[[93m14^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.0574291Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.0574973Z ^[[7m14^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.0575482Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.0575669Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.1026798Z ^[[96msrc/pages/gallery/index.astro^[[0m:^[[93m11^[[0m:^[[93m7^[[0m - ^[[93mwarning^[[0m^[[90m ts(6133): ^[[0m'notFoundPath' is declared but its value is never read.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.1027846Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.1028295Z ^[[7m11^[[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.1028843Z ^[[7m  ^[[0m ^[[93m      ~~~~~~~~~~~~^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:18.1029042Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.7377004Z Result (258 files): 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.7377493Z - 0 errors
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.7377882Z - 0 warnings
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.7378295Z - 12 hints
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.7378486Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.8304190Z ##[group]Run pnpm type-check
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.8304894Z ^[[36;1mpnpm type-check^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.8369290Z shell: /usr/bin/bash -e {0}
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.8369555Z env:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.8369765Z   DEPLOY_BASE: /Zhenkun-blog-site/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.8370091Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.8370399Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:20.2833418Z $ tsc --noEmit --isolatedDeclarations
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:23.7810635Z ##[group]Run node --test scripts/zhenkun-test-*.mjs
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:23.7811059Z ^[[36;1mnode --test scripts/zhenkun-test-*.mjs^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:23.7874311Z shell: /usr/bin/bash -e {0}
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:23.7874959Z env:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:23.7875170Z   DEPLOY_BASE: /Zhenkun-blog-site/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:23.7875556Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:23.7875891Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.4846228Z ✔ disabled dynamic endpoint returns no configured content and performs no work (39.631527ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.4848278Z ✔ disabled dynamic endpoint succeeds without even loading a failing content source (0.703451ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.4993304Z ✔ enabled dynamic endpoint preserves real Markdown, image metadata, sorting and JSON schema (113.913156ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5015400Z ✔ enabled dynamic endpoint retains a valid empty collection response (0.755448ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5329939Z ✔ CI accepts an empty public corpus with a searchable About page (5.748935ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5331977Z ✔ CI follows public metadata count when approved articles are added (1.574785ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5333557Z ✔ CI rejects Astro-only output without the Pagefind module (2.203948ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5335119Z ✔ CI rejects a module without any indexed language (4.933145ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5336299Z ✔ CI rejects an empty Pagefind language (1.606514ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5337544Z ✔ CI rejects a public post URL that lost the deployment base (1.512149ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5338687Z ✔ CI rejects duplicate public IDs (1.311635ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5339960Z ✔ / logical routes retain their identity when the base name collides (2.829584ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5341607Z ✔ /Zhenkun-blog-site/ logical routes retain their identity when the base name collides (0.325587ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5343275Z ✔ /about/ logical routes retain their identity when the base name collides (1.058373ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5345059Z ✔ /archive/ logical routes retain their identity when the base name collides (0.809638ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5359369Z ✔ / sitemap excludes closed booknav/ (0.341877ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5360374Z ✔ / sitemap excludes closed friends/ (1.199295ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5361299Z ✔ / sitemap excludes closed sponsor/ (0.179705ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5362154Z ✔ / sitemap excludes closed guestbook/ (0.14994ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5362990Z ✔ / sitemap excludes closed bangumi/ (1.554898ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5363807Z ✔ / sitemap excludes closed vndb/ (0.586373ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5364899Z ✔ / sitemap excludes closed myanimelist/ (0.448616ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5365774Z ✔ / sitemap excludes closed gallery/ (0.161772ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5366643Z ✔ / sitemap excludes closed gallery/album/ (0.12339ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5368118Z ✔ / sitemap excludes closed bilibili/ (0.133328ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5369195Z ✔ / sitemap excludes closed dynamic/ (0.11245ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5370259Z ✔ / sitemap excludes closed dynamic/comments/ (0.118722ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5371251Z ✔ / sitemap excludes closed 404/ (0.108443ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5372172Z ✔ / sitemap excludes closed 404.html (0.144539ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5373329Z ✔ / enabled parent admits its child; unrelated routes survive (0.267268ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5374862Z ✔ / comments require both the parent and comment capability (0.175978ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5378747Z ✔ / public images accept one existing base prefix (0.205943ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5380058Z ✔ / OG uses literal encoded identity under the deployment base (0.602323ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5381503Z ✔ / canonical strips filter query and fragment without changing the input (0.344041ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5382949Z ✔ / error destination points at the emitted static file (0.141033ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5384290Z ✔ /Zhenkun-blog-site/ sitemap excludes closed booknav/ (0.122999ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5387380Z ✔ /Zhenkun-blog-site/ sitemap excludes closed friends/ (0.114022ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5406935Z ✔ /Zhenkun-blog-site/ sitemap excludes closed sponsor/ (0.123951ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5411103Z ✔ /Zhenkun-blog-site/ sitemap excludes closed guestbook/ (0.151773ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5412391Z ✔ /Zhenkun-blog-site/ sitemap excludes closed bangumi/ (0.213147ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5413598Z ✔ /Zhenkun-blog-site/ sitemap excludes closed vndb/ (0.216053ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5415134Z ✔ /Zhenkun-blog-site/ sitemap excludes closed myanimelist/ (0.216924ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5416431Z ✔ /Zhenkun-blog-site/ sitemap excludes closed gallery/ (0.12326ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5417714Z ✔ /Zhenkun-blog-site/ sitemap excludes closed gallery/album/ (0.109965ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5418993Z ✔ /Zhenkun-blog-site/ sitemap excludes closed bilibili/ (0.113642ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5420235Z ✔ /Zhenkun-blog-site/ sitemap excludes closed dynamic/ (0.366573ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5421565Z ✔ /Zhenkun-blog-site/ sitemap excludes closed dynamic/comments/ (0.181789ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5422814Z ✔ /Zhenkun-blog-site/ sitemap excludes closed 404/ (0.125333ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5424012Z ✔ /Zhenkun-blog-site/ sitemap excludes closed 404.html (0.116668ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5425742Z ✔ /Zhenkun-blog-site/ enabled parent admits its child; unrelated routes survive (0.236761ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5427608Z ✔ /Zhenkun-blog-site/ comments require both the parent and comment capability (0.136635ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5429362Z ✔ /Zhenkun-blog-site/ public images accept one existing base prefix (0.282306ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5431182Z ✔ /Zhenkun-blog-site/ OG uses literal encoded identity under the deployment base (0.204922ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5433210Z ✔ /Zhenkun-blog-site/ canonical strips filter query and fragment without changing the input (0.227724ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5435411Z ✔ /Zhenkun-blog-site/ error destination points at the emitted static file (0.141364ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5436861Z ✔ base stripping is segment aware and strips only once (0.467342ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5438020Z ✔ public asset traversal and unsafe bases fail (0.857228ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5439398Z ✔ repeated SPA script execution installs only one set of document delegates (4.149845ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:24.5440945Z ✔ one accordion click makes exactly one transition after repeated SPA visits (2.20506ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0236544Z ✔ root: inline and standalone links use the same public route (27.092708ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0246235Z ✔ root: aliases, Obsidian automatic aliases and multiple references (10.150565ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0248013Z ✔ root: compatible heading links retain anchors and avoid cards (15.731423ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0253336Z ✔ root: production rejects draft target by slug without metadata disclosure (4.861219ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0257401Z ✔ root: production rejects draft target by path without metadata disclosure (2.134397ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0261475Z ✔ root: production rejects draft target by basename without metadata disclosure (2.037577ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0266515Z ✔ root: production rejects missing targets and development leaves actionable text (4.59346ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0270365Z ✔ root: unsupported embeds and block references do not become links (9.196428ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0280177Z ✔ subpath: inline and standalone links use the same public route (2.837147ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0281199Z ✔ subpath: aliases, Obsidian automatic aliases and multiple references (4.795456ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0283400Z ✔ subpath: compatible heading links retain anchors and avoid cards (4.892477ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0287996Z ✔ subpath: production rejects draft target by slug without metadata disclosure (2.032748ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0295427Z ✔ subpath: production rejects draft target by path without metadata disclosure (1.793161ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0297939Z ✔ subpath: production rejects draft target by basename without metadata disclosure (1.908356ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0303406Z ✔ subpath: production rejects missing targets and development leaves actionable text (4.201129ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0307565Z ✔ subpath: unsupported embeds and block references do not become links (9.287447ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0312627Z ✔ source drafts skip production Wiki conversion before resolving targets (1.687174ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0321543Z ✔ development can deliberately preview draft metadata (1.76041ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0322821Z ✔ duplicate basename is ambiguous regardless of enumeration order (one/public) (2.910824ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0324244Z ✔ duplicate basename is ambiguous regardless of enumeration order (two/public) (1.953771ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0329966Z ✔ a hidden exact path cannot fall back to another public basename (1.217799ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0334013Z ✔ duplicate article IDs reject the index instead of selecting the first entry (0.652766ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0337842Z ✔ invalid or unsupported source target is not a ghost link: ../secret (0.965099ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0341638Z ✔ invalid or unsupported source target is not a ghost link: /drafts/secret (1.285255ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0348847Z ✔ invalid or unsupported source target is not a ghost link: guide/../../secret (0.998111ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0375843Z ✔ invalid or unsupported source target is not a ghost link: guide\source (1.45401ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0388561Z ✔ invalid or unsupported source target is not a ghost link: guide//source (1.209444ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0390609Z ✔ invalid or unsupported source target is not a ghost link: guide/source.markdown (0.982481ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0392400Z ✔ unsafe article ID fails before metadata can render: "../secret" (0.217134ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0394034Z ✔ unsafe article ID fails before metadata can render: "/secret" (0.102941ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0395907Z ✔ unsafe article ID fails before metadata can render: "a//b" (0.09097ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0397432Z ✔ unsafe article ID fails before metadata can render: "a\\b" (0.087533ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0398983Z ✔ unsafe article ID fails before metadata can render: "a%2fb" (0.177851ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0401017Z ✔ unsafe article ID fails before metadata can render: "a?b" (0.158535ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0402496Z ✔ unsafe article ID fails before metadata can render: "a#b" (0.110125ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0404024Z ✔ unsafe article ID fails before metadata can render: "https:note" (0.094516ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0405877Z ✔ unsafe article ID fails before metadata can render: "a\u0000b" (0.113632ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0407737Z ✔ unsafe article ID fails before metadata can render: "é" (0.091761ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0409717Z ✔ unsafe article ID fails before metadata can render: " padded" (0.110295ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0411197Z ✔ unsafe article ID fails before metadata can render: "a/ padded" (0.110375ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0413455Z ✔ article identity agrees with installed Astro and literal route: topic-folder/my-note (4.493053ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0415774Z ✔ article identity agrees with installed Astro and literal route: section (3.401509ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0417367Z ✔ article identity agrees with installed Astro and literal route: 中文/文章 (3.351234ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0419701Z ✔ article identity agrees with installed Astro and literal route: custom/index (2.471385ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0422672Z ✔ article identity agrees with installed Astro and literal route: custom/article.md (2.936362ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0425948Z ✔ article identity agrees with installed Astro and literal route: Case/Space Note (2.155105ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0429192Z ✔ source extension aliases resolve while explicit .md article IDs stay literal (2.241427ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0432250Z ✔ public/remote card cover uses its correct URL: /assets/cover.webp at / (1.070114ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0436174Z ✔ public/remote card cover uses its correct URL: /assets/cover.webp at /Zhenkun-blog-site/ (1.004071ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0440453Z ✔ public/remote card cover uses its correct URL: /Zhenkun-blog-site/assets/cover.webp at /Zhenkun-blog-site/ (0.836218ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0454792Z ✔ public/remote card cover uses its correct URL: /assets/cover.webp?version=2#preview at /Zhenkun-blog-site/ (0.81557ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0466727Z ✔ public/remote card cover uses its correct URL: https://images.example.invalid/cover.webp at /Zhenkun-blog-site/ (1.043084ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0468961Z ✔ public/remote card cover uses its correct URL: //images.example.invalid/cover.webp at /Zhenkun-blog-site/ (0.982881ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0470735Z ✔ missing relative cover omits the image without failing the reference (1.16392ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0472324Z ✔ relative cover outside approved source roots rejects publication (1.553635ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0473778Z ✔ API card cover uses injected deterministic URLs and the literal article ID (1.879623ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0480157Z ✔ protected public cards expose allowed metadata but never password or target body (0.952375ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0481642Z ✔ Wiki syntax inside code and existing Markdown links remains unchanged (3.935184ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0482868Z ✔ native MDX compiles public inline references and metadata cards (13.5125ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0484192Z ✔ native MDX leaves JSX attributes, JSX children, expressions and ESM untouched (8.471406ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0485775Z ✔ native MDX applies production rejection and development diagnostics (8.186145ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0487191Z ✔ real scanner admits lowercase Markdown/MDX, skips dotfiles and excluded extensions (13.471614ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0488787Z ✔ real scanner rejects visible symlinks without following file or directory targets (1.085583ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0490264Z ✔ real scanner rejects a source root that passes through a symlink (0.42417ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0491702Z ✔ real scanner fails malformed frontmatter and invalid draft/slug data without disclosure (1.789825ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0493077Z ✔ real scanner duplicate .md/.mdx identities fail index construction (0.694524ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0494700Z ✔ logical routes always get their base while explicit public-asset deduplication is bounded (0.811402ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0496247Z ✔ deployment configuration rejects authority, traversal and control-character bases (0.299017ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0497774Z ✔ internal URL input rejects browser authority reinterpretation and path traversal (0.258792ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0500799Z ✔ explicit nonstandard slug is safely encoded without changing identity: quote/"double" (4.202351ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0503529Z ✔ explicit nonstandard slug is safely encoded without changing identity: quote/'single' (4.172435ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0507601Z ✔ explicit nonstandard slug is safely encoded without changing identity: html/<svg onload='run()'>& (2.764031ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0509252Z ✔ publication build gate permits only the production environment (0.251119ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0513538Z ✔ draft preview and synchronization commands do not trigger the build gate (0.1395ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0681542Z ✔ R1a exact real-parent versions and unaffected YAML4 (6.018976ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0683027Z ✔ devalue stringify/parse preserves supported rich data, identity and cycles (4.029939ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0685154Z ✔ devalue uneval escapes harmless HTML data and reconstructs its value (3.757632ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0686725Z ✔ devalue serializes only the visible bytes of a bounded owned Buffer view (1.417672ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0688257Z ✔ actual Astro store serialization and chunk parser round-trip Unicode/date data (9.222456ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0689765Z ✔ actual Svelte server payload and client hydratable data handoff (43.027886ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0691242Z ✔ actual gray-matter frontmatter preserves dates, Unicode tags and aliases (6.979827ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0692562Z ✔ first query survives lazy backend initialization (17.673836ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0693576Z ✔ rapid edits debounce to the latest query (25.106607ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0695175Z ✔ older search response cannot replace a newer result (18.034394ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0696204Z ✔ older result data cannot replace a newer result (14.929632ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0697103Z ✔ clearing to "" invalidates an in-flight query (10.874234ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0698322Z ✔ clearing to "  \n " invalidates an in-flight query (9.827103ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0699357Z ✔ empty query never loads or searches the backend (5.455146ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0700391Z ✔ zero results complete without leaving a spinner (5.065179ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0701519Z ✔ backend failure clears stale results and permits a retry (15.309643ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0702644Z ✔ stale failure cannot clear the newer success (16.090094ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0703711Z ✔ cancel before debounce prevents any backend call (20.574251ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0705211Z ✔ cancel during initialization cannot resurrect a closed panel (10.793684ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0706417Z ✔ dispose before debounce prevents any backend call (19.780541ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0707696Z ✔ dispose during initialization cannot resurrect a closed panel (9.907904ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0708910Z ✔ a new SPA session is independent of disposed work (15.95873ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0710132Z ✔ dispose is idempotent and future edits publish nothing (6.055113ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0711332Z ✔ closing and reopening the same query searches again (10.454549ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0712471Z ✔ old completion does not stop a newer pending query (20.58903ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0713843Z ✔ ESM: @swup/parallel-plugin resolves exact cross-major base and requirements (30.210818ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0715660Z ✔ ESM: @swup/route-name-plugin resolves exact cross-major base and requirements (3.197078ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0717112Z ✔ ESM: actual Swup hooks mount/unmount twice, route naming and classes (11.752712ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0718423Z ✔ ESM: parallel visit marking, insertion, restoration, cleanup and disabled visit (4.62569ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0719818Z ✔ CJS: @swup/parallel-plugin resolves exact cross-major base and requirements (5.43626ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0721293Z ✔ CJS: @swup/route-name-plugin resolves exact cross-major base and requirements (1.671735ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0722720Z ✔ CJS: actual Swup hooks mount/unmount twice, route naming and classes (4.02495ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0724167Z ✔ CJS: parallel visit marking, insertion, restoration, cleanup and disabled visit (2.730188ms)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0725311Z ℹ tests 166
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0725724Z ℹ suites 0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0726101Z ℹ pass 166
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0726517Z ℹ fail 0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0726902Z ℹ cancelled 0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0727297Z ℹ skipped 0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0727656Z ℹ todo 0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0728093Z ℹ duration_ms 1244.504926
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0789185Z ##[group]Run pnpm build
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0789468Z ^[[36;1mpnpm build^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0851899Z shell: /usr/bin/bash -e {0}
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0852157Z env:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0852372Z   DEPLOY_BASE: /Zhenkun-blog-site/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0852711Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0853218Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.5258409Z $ pnpm exec tsx scripts/generate-github-card-data.ts && pnpm exec tsx scripts/generate-lqips.ts && pnpm exec tsx scripts/generate-vndb-covers.ts && astro build && pnpm exec tsx scripts/prune-pio-assets.ts && pnpm exec tsx scripts/subset-fonts.ts && pnpm exec tsx scripts/minify-inline-scripts.ts && pnpm exec tsx scripts/run-pagefind.ts
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:26.2028267Z [GITHUB-CARD] Cached 0 repositories (0 refreshed).
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:26.9441551Z Loaded 23 existing entries from src/constants/lqips.json
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:26.9705403Z Found 23 images, 0 new to process.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:26.9730711Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:26.9742041Z Done! Processed 0/0 new images. Total: 23. Output: src/constants/lqips.json
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:27.7799410Z [VNDB] Page not enabled, skipping cover download
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8346298Z ^[[2m11:32:31^[[22m ^[[34m[content]^[[39m Syncing content
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8410849Z ^[[33m^[[1m11:32:31^[[22m [WARN] [glob-loader]^[[39m No files found matching "**/*.md" in directory "src/content/dynamic"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8518745Z ^[[2m11:32:31^[[22m ^[[34m[content]^[[39m Synced content
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8534702Z ^[[2m11:32:31^[[22m ^[[34m[types]^[[39m Generated ^[[2m482ms^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8551762Z ^[[2m11:32:31^[[22m ^[[34m[build]^[[39m output: ^[[34m"static"^[[39m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8552583Z ^[[2m11:32:31^[[22m ^[[34m[build]^[[39m mode: ^[[34m"static"^[[39m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8553925Z ^[[2m11:32:31^[[22m ^[[34m[build]^[[39m directory: ^[[34m/home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site/dist/^[[39m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8555391Z ^[[2m11:32:31^[[22m ^[[34m[build]^[[39m Collecting build info...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8559837Z ^[[2m11:32:31^[[22m ^[[34m[build]^[[39m ^[[32m✓ Completed in 686ms.^[[39m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8573758Z ^[[2m11:32:31^[[22m ^[[34m[build]^[[39m Building static entrypoints...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:34.5286761Z ^[[33m^[[1m11:32:34^[[22m [WARN] [astro-icon]^[[39m Failed to load icons from "src/icons": ENOENT: no such file or directory, scandir 'src/icons/'
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:34.6609852Z ^[[2m11:32:34^[[22m ^[[34m[assets]^[[39m Copying fonts (22 files)...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:35.3032503Z ^[[2m11:32:35^[[22m ^[[34m[vite]^[[39m ^[[32m✓ built in 3.32s^[[39m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.2941418Z ^[[33m^[[1m11:32:36^[[22m [WARN] [vite]^[[39m ^[[33m[plugin builtin:vite-reporter] 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.2942146Z (!) Some chunks are larger than 500 kB after minification. Consider:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.2942730Z - Using dynamic import() to code-split the application
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.2943729Z - Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.2945086Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.^[[39m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.2950602Z ^[[2m11:32:36^[[22m ^[[34m[vite]^[[39m ^[[32m✓ built in 978ms^[[39m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.3001968Z ^[[2m11:32:36^[[22m ^[[34m[build]^[[39m Rearranging server assets...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.3539917Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.3540910Z ^[[42m^[[30m generating static routes ^[[39m^[[49m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7026298Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/404.html^[[22m ^[[2m(+74ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7235809Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/about/index.html^[[22m ^[[2m(+21ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7252547Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/api/allPostMeta.json^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7273569Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/api/dynamic.json^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7470460Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/archive/index.html^[[22m ^[[2m(+20ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7516766Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/bangumi/index.html^[[22m ^[[2m(+5ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7547051Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/bilibili/index.html^[[22m ^[[2m(+3ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7567628Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/booknav/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7735050Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/categories/index.html^[[22m ^[[2m(+17ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7754767Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/dynamic/comments/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7824624Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/dynamic/index.html^[[22m ^[[2m(+7ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7844641Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/friends/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7860267Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/gallery/firefly-2026/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7867351Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/gallery/encrypted-test/index.html^[[22m ^[[2m(+1ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7884791Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/gallery/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7901570Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/guestbook/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7922900Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/myanimelist/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.7934354Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/robots.txt^[[22m ^[[2m(+1ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.8099042Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/rss/index.html^[[22m ^[[2m(+16ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.9039828Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/rss.xml^[[22m ^[[2m(+94ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.9211346Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/search/index.html^[[22m ^[[2m(+17ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.9369626Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/series/index.html^[[22m ^[[2m(+16ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.9388136Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/sponsor/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.9580339Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/tags/index.html^[[22m ^[[2m(+19ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.9605295Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/vndb/index.html^[[22m ^[[2m(+2ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.9765488Z ^[[2m11:32:36^[[22m   ^[[34m├─^[[39m ^[[2m/index.html^[[22m ^[[2m(+16ms)^[[22m 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.9768870Z ^[[2m11:32:36^[[22m ^[[32m✓ Completed in 674ms.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.9769431Z ^[[39m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.9770049Z ^[[42m^[[30m generating optimized images ^[[39m^[[49m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.0807317Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/avatar.Vt-Igtud_Z1euN8K.webp ^[[2m(before: 64kB, after: 14kB)^[[22m ^[[2m(+101ms)^[[22m ^[[2m(1/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.1656525Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/m2.DdvPaSds_1VHfKI.webp ^[[2m(before: 27kB, after: 31kB)^[[22m ^[[2m(+186ms)^[[22m ^[[2m(2/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.2546805Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/m3.D3bdkV68_Wf0DU.webp ^[[2m(before: 118kB, after: 64kB)^[[22m ^[[2m(+275ms)^[[22m ^[[2m(3/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.2834808Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/m1.DEh_M2ue_3fm99.webp ^[[2m(before: 135kB, after: 70kB)^[[22m ^[[2m(+303ms)^[[22m ^[[2m(4/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.2865858Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/avatar.Vt-Igtud_JhzDK.webp ^[[2m(before: 64kB, after: 64kB)^[[22m ^[[2m(+207ms)^[[22m ^[[2m(5/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.3974947Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/m2.DdvPaSds_8pjwV.webp ^[[2m(before: 27kB, after: 42kB)^[[22m ^[[2m(+233ms)^[[22m ^[[2m(6/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.5636907Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/m4.DzLJp29g_ZJs1Ko.webp ^[[2m(before: 142kB, after: 68kB)^[[22m ^[[2m(+275ms)^[[22m ^[[2m(7/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.5658295Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/m3.D3bdkV68_Z2rbALa.webp ^[[2m(before: 118kB, after: 94kB)^[[22m ^[[2m(+312ms)^[[22m ^[[2m(8/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.5989708Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/m1.DEh_M2ue_1J0Sx0.webp ^[[2m(before: 135kB, after: 104kB)^[[22m ^[[2m(+317ms)^[[22m ^[[2m(9/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.7428348Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/m5.UNwLEw9O_sA6Rs.webp ^[[2m(before: 79kB, after: 54kB)^[[22m ^[[2m(+342ms)^[[22m ^[[2m(10/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.9080933Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/m6.Ca2EuEDu_1xiHm.webp ^[[2m(before: 73kB, after: 42kB)^[[22m ^[[2m(+342ms)^[[22m ^[[2m(11/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.9207472Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/m4.DzLJp29g_IxVXx.webp ^[[2m(before: 142kB, after: 100kB)^[[22m ^[[2m(+358ms)^[[22m ^[[2m(12/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:37.9390528Z ^[[2m11:32:37^[[22m   ^[[32m▶^[[39m /_astro/d1.v_J1gD3P_ZdONv8.webp ^[[2m(before: 71kB, after: 70kB)^[[22m ^[[2m(+340ms)^[[22m ^[[2m(13/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:38.1548609Z ^[[2m11:32:38^[[22m   ^[[32m▶^[[39m /_astro/m5.UNwLEw9O_Lr6z6.webp ^[[2m(before: 79kB, after: 77kB)^[[22m ^[[2m(+412ms)^[[22m ^[[2m(14/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:38.2676685Z ^[[2m11:32:38^[[22m   ^[[32m▶^[[39m /_astro/d2.G7EObyHu_qFnQ4.webp ^[[2m(before: 56kB, after: 51kB)^[[22m ^[[2m(+346ms)^[[22m ^[[2m(15/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:38.2891685Z ^[[2m11:32:38^[[22m   ^[[32m▶^[[39m /_astro/m6.Ca2EuEDu_Z1i7Woq.webp ^[[2m(before: 73kB, after: 60kB)^[[22m ^[[2m(+381ms)^[[22m ^[[2m(16/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:38.4329700Z ^[[2m11:32:38^[[22m   ^[[32m▶^[[39m /_astro/d1.v_J1gD3P_BOt7J.webp ^[[2m(before: 71kB, after: 124kB)^[[22m ^[[2m(+494ms)^[[22m ^[[2m(17/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:38.5369026Z ^[[2m11:32:38^[[22m   ^[[32m▶^[[39m /_astro/d3.CGCRs0-H_20WKzV.webp ^[[2m(before: 99kB, after: 87kB)^[[22m ^[[2m(+382ms)^[[22m ^[[2m(18/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:38.6310868Z ^[[2m11:32:38^[[22m   ^[[32m▶^[[39m /_astro/d4.Brgr35k-_8LArN.webp ^[[2m(before: 73kB, after: 74kB)^[[22m ^[[2m(+339ms)^[[22m ^[[2m(19/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:38.7566823Z ^[[2m11:32:38^[[22m   ^[[32m▶^[[39m /_astro/d2.G7EObyHu_TahXU.webp ^[[2m(before: 56kB, after: 87kB)^[[22m ^[[2m(+488ms)^[[22m ^[[2m(20/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:38.7875332Z ^[[2m11:32:38^[[22m   ^[[32m▶^[[39m /_astro/d5.z7QGp_dj_Z1kce4I.webp ^[[2m(before: 50kB, after: 60kB)^[[22m ^[[2m(+354ms)^[[22m ^[[2m(21/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.0828368Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/d3.CGCRs0-H_2trEHM.webp ^[[2m(before: 99kB, after: 150kB)^[[22m ^[[2m(+546ms)^[[22m ^[[2m(22/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.0885963Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/firefly-light.DZ-mS7Sc_vX7G3.webp ^[[2m(before: 3kB, after: 0kB)^[[22m ^[[2m(+6ms)^[[22m ^[[2m(23/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.0959194Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/firefly-light.DZ-mS7Sc_ZHQC47.webp ^[[2m(before: 3kB, after: 1kB)^[[22m ^[[2m(+7ms)^[[22m ^[[2m(24/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.1006046Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/d6.DetxM4Sl_Z2sdb2b.webp ^[[2m(before: 64kB, after: 62kB)^[[22m ^[[2m(+344ms)^[[22m ^[[2m(25/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.1096428Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/firefly-light.DZ-mS7Sc_Q3GXQ.webp ^[[2m(before: 3kB, after: 2kB)^[[22m ^[[2m(+12ms)^[[22m ^[[2m(26/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.1135775Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/d4.Brgr35k-_YqS5F.webp ^[[2m(before: 73kB, after: 126kB)^[[22m ^[[2m(+485ms)^[[22m ^[[2m(27/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.1152091Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/firefly-dark.b7MsfgPt_J0y4b.webp ^[[2m(before: 4kB, after: 0kB)^[[22m ^[[2m(+6ms)^[[22m ^[[2m(28/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.1232775Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/firefly-dark.b7MsfgPt_ZlB5BS.webp ^[[2m(before: 4kB, after: 1kB)^[[22m ^[[2m(+6ms)^[[22m ^[[2m(29/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.1337019Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/firefly-dark.b7MsfgPt_yHSA1.webp ^[[2m(before: 4kB, after: 2kB)^[[22m ^[[2m(+12ms)^[[22m ^[[2m(30/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.2198608Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/d5.z7QGp_dj_ZQHjVR.webp ^[[2m(before: 50kB, after: 93kB)^[[22m ^[[2m(+432ms)^[[22m ^[[2m(31/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.4400249Z ^[[2m11:32:39^[[22m   ^[[32m▶^[[39m /_astro/d6.DetxM4Sl_Z1YIgTk.webp ^[[2m(before: 64kB, after: 106kB)^[[22m ^[[2m(+340ms)^[[22m ^[[2m(32/32)^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.4404197Z ^[[2m11:32:39^[[22m ^[[32m✓ Completed in 2.46s.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.4405050Z ^[[39m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.4437756Z ^[[2m11:32:39^[[22m ^[[34m[build]^[[39m ^[[32m✓ Completed in 7.59s.^[[39m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.4534699Z ^[[2m11:32:39^[[22m ^[[34m[@astrojs/sitemap]^[[39m `sitemap-index.xml` created at `dist`
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.4536275Z ^[[2m11:32:39^[[22m ^[[34m[build]^[[39m 22 page(s) built in ^[[1m8.28s^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:39.4536890Z ^[[2m11:32:39^[[22m ^[[34m[build]^[[39m ^[[1mComplete!^[[22m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:40.1958475Z 🎎 Pruning unused mascot assets in dist/...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:40.2198785Z    ✂ pio (14.62 MiB)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:40.2202061Z    ✂ _astro/Live2DWidget.astro_astro_type_script_index_0_lang.CnuKuERK.js (0.63 MiB)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:40.2203146Z ✨ Pruned 2 mascot assets, freed 15.26 MiB
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:40.9691873Z 🔤 Font subsetting started...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:40.9695624Z    ⏭ Skipping '--font-greatvibes' — not referenced in selected or any font region.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:40.9696202Z    No local fonts with subset: true found. Skipping.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:41.6712560Z 🗜 Minifying inline scripts in dist/...
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.0538492Z ✨ Minified 259 inline scripts in 9/22 HTML files, saved 378.7 KiB
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.7295405Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.7296415Z Running Pagefind v1.5.2 (Extended)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.7297868Z Running from: "/home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.7298728Z Source:       "dist"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.7299332Z Output:       "dist/pagefind"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.7299638Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.7299888Z [Walking source directory]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.7306862Z Found 22 files matching **/*.{html}
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.7307128Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.7307226Z [Parsing files]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9128699Z 13 pages found without an <html> element. 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9129584Z Found a data-pagefind-body element on the site.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9130716Z ↳ Ignoring pages without this tag.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9131106Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9131361Z [Reading languages]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9131973Z Discovered 1 language: zh-cn
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9132357Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9132601Z [Building search indexes]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9133598Z Pages without an outer <html> element will not be processed by default. 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9135158Z If adding this element is not possible, use the root selector config to target a different root element.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9136130Z   * "/booknav/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9136445Z   * "/sponsor/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9136779Z   * "/myanimelist/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9137111Z   * "/dynamic/comments/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9137426Z   * "/dynamic/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9137851Z   * "/gallery/firefly-2026/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9138508Z   * "/gallery/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9139191Z   * "/gallery/encrypted-test/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9139827Z   * "/bangumi/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9140176Z   * "/friends/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9140458Z   * "/vndb/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9140741Z   * "/bilibili/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9141289Z   * "/guestbook/" has no <html> element
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9142150Z Note: Pagefind doesn't support stemming for the language zh-cn. 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9143094Z Search will still work, but will not match across root words.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9144060Z Note: Pagefind doesn't support stemming for the language zh-cn. 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9145258Z Search will still work, but will not match across root words.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9145881Z Total: 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9146081Z   Indexed 1 language
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9146301Z   Indexed 1 page
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9146694Z   Indexed 98 words
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9147190Z   Indexed 0 filters
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9147703Z   Indexed 0 sorts
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9199539Z 
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9199848Z Finished in 0.190 seconds
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9613246Z ##[group]Run node scripts/zhenkun-verify-ci-artifacts.mjs --base "$DEPLOY_BASE"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9614361Z ^[[36;1mnode scripts/zhenkun-verify-ci-artifacts.mjs --base "$DEPLOY_BASE"^[[0m
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9687098Z shell: /usr/bin/bash -e {0}
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9687529Z env:
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9687887Z   DEPLOY_BASE: /Zhenkun-blog-site/
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9688459Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9689032Z ##[endgroup]
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1396987Z {
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1397381Z   "status": "PASS",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1397827Z   "base": "/Zhenkun-blog-site/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1398257Z   "pages": [
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1398747Z     "https://zhenkun26.github.io/Zhenkun-blog-site/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1399471Z     "https://zhenkun26.github.io/Zhenkun-blog-site/about/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1400560Z     "https://zhenkun26.github.io/Zhenkun-blog-site/archive/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1401224Z     "https://zhenkun26.github.io/Zhenkun-blog-site/search/"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1401596Z   ],
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1401797Z   "images": [
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1402005Z     {
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1402457Z       "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/avatar.Vt-Igtud.avif",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1402943Z       "bytes": 66462,
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1403395Z       "sha256": "82e8d94c2bb4df5735fce1a24964e258a44e40ed7142700c5d427b586af3fc3f"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1403831Z     },
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1404022Z     {
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1404774Z       "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/firefly-light.DZ-mS7Sc.png",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1405299Z       "bytes": 3618,
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1405726Z       "sha256": "1b1f6d57e7ae2a361b984f27daaf942404d5421477554bd668922d9d75f25ab1"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1406152Z     }
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1406355Z   ],
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1406548Z   "sitemap": [
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1406873Z     "https://zhenkun26.github.io/Zhenkun-blog-site/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1407330Z     "https://zhenkun26.github.io/Zhenkun-blog-site/about/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1407809Z     "https://zhenkun26.github.io/Zhenkun-blog-site/archive/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1408303Z     "https://zhenkun26.github.io/Zhenkun-blog-site/categories/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1408722Z     "https://zhenkun26.github.io/Zhenkun-blog-site/rss/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1409125Z     "https://zhenkun26.github.io/Zhenkun-blog-site/search/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1409537Z     "https://zhenkun26.github.io/Zhenkun-blog-site/series/",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1409955Z     "https://zhenkun26.github.io/Zhenkun-blog-site/tags/"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1410269Z   ],
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1410440Z   "redirects": [
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1410649Z     "bangumi/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1410876Z     "bilibili/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1411099Z     "booknav/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1411345Z     "dynamic/comments/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1411601Z     "dynamic/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1411816Z     "friends/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1412074Z     "gallery/encrypted-test/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1412374Z     "gallery/firefly-2026/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1412634Z     "gallery/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1412856Z     "guestbook/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1413090Z     "myanimelist/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1413324Z     "sponsor/index.html",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1413533Z     "vndb/index.html"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1413729Z   ],
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1413963Z   "rssDate": "Sat, 03 Oct 2026 11:32:36 GMT",
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1414227Z   "rssItems": 0,
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1414413Z   "http": []
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1414867Z }
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.1589233Z Post job cleanup.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.2212951Z Pruning is unnecessary.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.2315153Z Post job cleanup.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.3566452Z (node:3119) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.3568596Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.3781262Z Post job cleanup.
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.4696684Z [command]/usr/bin/git version
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.4741561Z git version 2.55.0
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.4782368Z Temporarily overriding HOME='/home/runner/work/_temp/46bcb534-0449-4f6a-8203-d50a6dec1b41' before making global git config changes
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.4783873Z Adding repository directory to the temporary git global config as a safe directory
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.4789734Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Zhenkun-blog-site/Zhenkun-blog-site
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.4830234Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.4878895Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.5190508Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.5226478Z http.https://github.com/.extraheader
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.5247105Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.5294378Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.5826450Z Cleaning up orphan processes
+Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.6173034Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683, actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e, pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

@@ -1,0 +1,13 @@
+[ERR_SQLITE_ERROR] unable to open database file
+
+pnpm: unable to open database file
+    at file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102448:19
+    at sqliteRetry (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102358:14)
+    at StoreIndex.openDatabase (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102447:9)
+    at new StoreIndex (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102432:14)
+    at createNewStoreController (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:182737:83)
+    at async installDeps (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:219786:17)
+    at async Object.handler5 (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:220893:3)
+    at async file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322592:19
+    at async main4 (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322560:30)
+    at async runPnpm (file:///Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322856:5)

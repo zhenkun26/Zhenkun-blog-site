@@ -1,0 +1,270 @@
+{
+  "candidateSource": "d39b89677c11bef3fbad9d5e94fc6e89601674a6",
+  "files": [
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/advisory-reconciliation.json",
+      "sha256": "6e60214a3f79efd2b35e5f5b1190a07a21fe8cf936e8d1d85ff080f5b4b5f580",
+      "bytes": 20151
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/artifact-project-manifest.json",
+      "sha256": "881bac83842eb6fb30fefb201b432d5653749c5d934d58a2db4c603cfb4688c8",
+      "bytes": 42638
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/artifact-root-manifest.json",
+      "sha256": "0a6b9d487143fa03c287d725844294a341b9d5b41c8fc0a9f2e13ae62f611887",
+      "bytes": 42629
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/artifacts-project.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/artifacts-project.log",
+      "sha256": "b074feb77f93b0d84c0c74588312582af90a3dd508bee60bc2c4655e8d756f9f",
+      "bytes": 1725
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/artifacts-root.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/artifacts-root.log",
+      "sha256": "53323a3578d8e60d168945f83a9fe59d67bb6e6acbf604a9c49c13510d05b8e6",
+      "bytes": 1455
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/audit-full.exit",
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/audit-full.json",
+      "sha256": "985a19a3852ddb814f53de617a868b0aa8ca377ebaaf951565d99844fc450f90",
+      "bytes": 51715
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/audit-full.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/audit-prod.exit",
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/audit-prod.json",
+      "sha256": "7886cbf36296e5a0717b1f3ffe0bb652fc4c9e2cac4b7b18bc006a4841292473",
+      "bytes": 51480
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/audit-prod.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/biome-new-final.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/biome-new-final.log",
+      "sha256": "129617eaee6888f6d8d01e31d6f15e55c89e9632bed5f7358d3c3cc0ee2c2c29",
+      "bytes": 98
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/biome-new.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/biome-new.log",
+      "sha256": "77dbfeae04dd592f5850953ed9b3dd302c8aea397c17e9e6bda53ef1dcae4496",
+      "bytes": 39
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/biome-src.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/biome-src.log",
+      "sha256": "5f62c7f3a4a5a4ad684bf2792d3a3b17c80231a0b5ae9515756d93272da9a10b",
+      "bytes": 101
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/browser-blocker.json",
+      "sha256": "0593ea82181f66f4b0fca0d8c7c54780dfa3a5fa19f79e5a138596d7d6e5a687",
+      "bytes": 1007
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/build-project.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/build-project.log",
+      "sha256": "57c9d2ad414127873e0c5f5715b99783cf3ed844f8dda6a172077695a012f4c6",
+      "bytes": 8362
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/build-root.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/build-root.log",
+      "sha256": "11d1650c52b701b611ccd784f4144f1175d7135a688aed9e1fffdc0df63f555f",
+      "bytes": 8290
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/check.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/check.log",
+      "sha256": "ae25aa0bff17731b4a4b17d1e61897c69f75889ac5888f10931db63066c340c7",
+      "bytes": 3696
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/delivery-checks.json",
+      "sha256": "2d41c7e49f2aa33536e6ec9e2088455e15c989d4564da7763c01a7cc64e34689",
+      "bytes": 325
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/http-project.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/http-project.json",
+      "sha256": "d434e768f293dde1239d3bb1ccd443480587195c4340ac202257f25b4ab06aea",
+      "bytes": 4186
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/http-project.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/http-root.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/http-root.json",
+      "sha256": "f29a705236beee7d32fbe14945cb8ef4dec35948e73736ba1c3b8870854b268d",
+      "bytes": 3484
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/http-root.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/install.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/install.log",
+      "sha256": "ca3b1ca738eb86bac1c26c0f1ceab3caf78550ea6f97d087976c4f699d057080",
+      "bytes": 2702
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/installed-graph.json",
+      "sha256": "87811a1a0ced1d2aac6155dccc4be6a0abfb24c6396ddb161c61f701352266c5",
+      "bytes": 4275
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/native.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/native.log",
+      "sha256": "998315994f3f47725d81a8ef728b24be1ddb2304b532b6023ad87b427fcc3ea4",
+      "bytes": 13124
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/parent-tests.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/parent-tests.log",
+      "sha256": "48326df205bb7a23e41241013ce9c909b56c18036b4b6aefa91bcdc4b3f0233f",
+      "bytes": 856
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/parent-types-strict.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/parent-types-strict.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/parent-types.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/parent-types.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/peer-equivalence.json",
+      "sha256": "0c84a685e0be95155a4d613d9ac1d8c033883dd079f050c83f2ebf5c493e845e",
+      "bytes": 385
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/peers.exit",
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/peers.log",
+      "sha256": "d061de5f0ecccb7304db52b6edcabbbdb88f1d7a1b6cdcbb07c2f2130484ea4c",
+      "bytes": 144
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/protection.json",
+      "sha256": "fda051182802240131eeb60282cb7a488bf1e1aedd091c45377adc6307adf8d7",
+      "bytes": 522
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/report.md",
+      "sha256": "9bc188fd0f35f069d4398202a9d33e84c7459730452bb13d204eaab3c3ab2f36",
+      "bytes": 10489
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/server-lifecycle.json",
+      "sha256": "d451563c4442d5a491a35d8fd774bc264642e7eb258a6b371daaba0f89ad1c72",
+      "bytes": 493
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/type-check.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/type-check.log",
+      "sha256": "ca8f4ac3289d0dcb73cf6fb4ab668b1f4d0a8a60cebe23fdd87c996243cc91c8",
+      "bytes": 38
+    },
+    {
+      "path": "references/dependency-ar3-validation-2026-10-03/validation-receipt.json",
+      "sha256": "fa280ca0e85f7acd5504157373c7925be9d9734fe18fce794f6a43b275f7fde2",
+      "bytes": 6055
+    }
+  ]
+}

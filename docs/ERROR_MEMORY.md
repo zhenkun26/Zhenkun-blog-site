@@ -125,3 +125,42 @@
 
 - The host Python tarfile API does not support `extractall(filter=...)`. The first extraction attempt failed before writing files; a subsequent artifact check consequently had no input. Recovery validated every archive entry as a relative, non-traversing regular file/directory with no links, then used exclusive file creation in a new ignored directory. Keep dependent checks behind successful extraction; do not claim the failed attempt passed or remove extraction safety to accommodate an older API.
 - Local browser navigation was blocked by the client, and an existing live tab later produced a clipboard focus-token mismatch/inconsistent input state. Those attempts were excluded from GUI PASS. A separate deployed-host tab with observed controls completed the actual smoke checks. Keep automation-input failures separate from product defects, re-establish visible state, and use a dedicated test tab. Restore temporary viewport overrides afterward.
+
+
+## 2026-10-03 — Lock graph comparison must cover peer contexts and aliases
+
+- Error: the first A/R3 graph checker stripped two resolved peer suffixes but retained two other obsolete transitive peer names; the second treated three existing pnpm alias references as ordinary name/version references. Both stopped before recording PASS and neither changed the package candidate.
+- Recovery: assert the exact four removed old-build peer names on only the three affected Swup nodes, resolve a full alias snapshot key before composing name@version, then compare every surviving snapshot and prove optional flags from all production/development root paths. Raw diffs and diagnostics remain preserved.
+- Prevention: distinguish package-version sets from actual parent edges, peer variants, alias references and required/optional reachability. Never approve patch drift or mask a mismatch merely to make a structural checker pass.
+
+- Evidence-format diagnostic in the same packet: checking newly staged raw `.diff` artifacts reported 1201 context-blank lines as trailing whitespace (1160 full diff, 41 correction diff). Preserve byte-exact Git evidence rather than trim its context markers; inspect every diagnostic category and run the whitespace gate on all other files. Record the full diagnostic and scoped PASS separately. The first pre-stage diff check did not cover untracked evidence.
+
+
+### 2026-10-03 — A/R3 validation tooling and GUI boundary
+
+- Error: TypeScript 6 rejects command-line file compilation next to tsconfig without `--ignoreConfig` (TS5112). Correction: use explicit isolated fixture options with `--ignoreConfig`; keep the separately required formal `pnpm type-check` script's `--isolatedDeclarations` unchanged. Both final checks passed.
+- Error: raw GitHub advisory ranges contain commas; npm semver does not interpret those as conjunctions, causing an incorrect initial count of 6. Correction: preserve raw ranges, normalize commas to spaces for semver matching, rerun to 32 and confirm all 31 fresh audit GHSA are in the union. The initial count is rejected in the receipt.
+- Boundary: Browser Use URL policy rejected acquisition of a prior localhost connection-error data-document tab. Candidate GUI never loaded; do not switch clients/routes or reuse historical GUI results. Record exact blocker and continue independent artifact/API checks.
+
+
+### 2026-10-03 — R1a final fixture format diagnostic
+
+- Adding the benign owned Buffer-view roundtrip assertion caused one Biome formatting diagnostic. Preserve initial raw output in `biome-buffer-initial.log`, apply formatter only to the new fixture and rerun final Biome (300 files) and complete native suite (166 tests). Both final exits zero; no dependency/application changes after full builds. Do not mark the initial formatter failure as product or final-gate PASS.
+
+
+### 2026-10-03 — Linux CI metadata field boundary
+
+- Read-only jobs summary assumed `runner_os`, which this GitHub jobs payload does not expose (KeyError). Corrected summary uses returned runner labels and explicit Ubuntu version/image lines in actual job logs. The diagnostic did not alter CI or candidate and is not a failed product check. Avoid inventing runtime metadata from missing fields.
+
+
+### 2026-10-03 — R1b URI transitive resolution and HTTP sandbox
+
+- A root resolver cannot require an undeclared transitive Ajv package in isolated pnpm layout; historical Ajv8.18 metadata was initially queried. Corrected before update by traversing actual check→language-server→volar→YAML→Ajv8.20 path and reading its ^3.0.1 child range. Tests use that real parent chain; no root dependency added.
+- Initial HTTP loopback request was denied by shell sandbox (PermissionError), retained in http-root-sandbox-initial.stderr/exit. The identical checker and URL succeeded through standard tool approval. Browser URL-policy refusal remains blocked and no alternate client/route was used.
+
+
+### 2026-10-03 — R1 font proxy fixture protocol and version probes
+
+- The initial brace-expansion 5 child-major concern was an unverified assumption. Both old 5.0.9 and target 5.0.12 already use balanced-match 4.0.4 within ^4.0.2. Corrected before mutation; no transitive migration occurred.
+- SVGO package.json is not publicly exported. The initial version probe failed while actual Iconify behavior passed. Use public SVGO.VERSION; retain the initial failure and the final strict PASS.
+- The first local proxy fixture supported only CONNECT and returned 400 to valid HTTP forwarding; 13/14 tests passed. Installed undici ProxyAgent selects forwarding for HTTP unless tunneling is requested. Add guarded forwarding only to the owned localhost origin and keep strict EnvHttpProxyAgent, traffic and download assertions. Final 14/14 target tests and 186/186 full tests passed. Provider fallback or a silent catch cannot establish proxy/download success.

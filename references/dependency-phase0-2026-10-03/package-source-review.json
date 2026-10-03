@@ -1,0 +1,240 @@
+{
+  "packages": [
+    {
+      "source": "https://registry.npmjs.org/@swup/plugin/3.0.1",
+      "capturedAt": "2026-10-03T10:07:46.828576+00:00",
+      "name": "@swup/plugin",
+      "version": "3.0.1",
+      "tarball": "https://registry.npmjs.org/@swup/plugin/-/plugin-3.0.1.tgz",
+      "integrity": "sha512-A9yiJeKTmQ9kac2Eo3MbMWW+Tiw23W5OSzAHVTCfW6n5zze6dexY3FLEUSDTcvRgciknvXfMZ9JTnebbvCKKWw==",
+      "integrityVerified": true,
+      "selectedFiles": {
+        "package/package.json": {
+          "sha256": "f6037b94c674fb34801d8f0e004fc67bb292679231b385bd251823be60c9827c",
+          "bytes": 1690
+        },
+        "package/dist/index.modern.js": {
+          "sha256": "7722b1e167198e582e2be46afc38a28bb258c84de7ae582ff081578be6360b81",
+          "bytes": 1826
+        },
+        "package/dist/index.cjs": {
+          "sha256": "2b242fc59fe195754d4d80b2fd26f4496b2411ef1f76a814ebd6d21754bb7957",
+          "bytes": 1576
+        },
+        "package/dist/index.d.ts": {
+          "sha256": "b9b381140c1618b0195da49f9a0f589c74796d4fdbbb4d20da67fb8a6cd3b711",
+          "bytes": 1561
+        },
+        "package/bin/swup-plugin.js": {
+          "sha256": "fdd88eea8f8fe7b96c95fa6aba3c49ce13490e36c4984a850d51deea8e0ac679",
+          "bytes": 762
+        },
+        "package/CHANGELOG.md": {
+          "sha256": "68be5cad7305b42229b01cd9a478a06f4f77818f521f212555c86e79214008c5",
+          "bytes": 767
+        }
+      },
+      "manifest": {
+        "name": "@swup/plugin",
+        "amdName": "SwupPlugin",
+        "description": "Base class for creating swup plugins",
+        "version": "3.0.1",
+        "type": "module",
+        "source": "src/index.ts",
+        "main": "./dist/index.cjs",
+        "module": "./dist/index.module.js",
+        "unpkg": "./dist/index.umd.js",
+        "types": "./dist/index.d.ts",
+        "exports": {
+          ".": {
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.modern.js",
+            "types": "./dist/index.d.ts"
+          }
+        },
+        "files": [
+          "bin",
+          "dist"
+        ],
+        "scripts": {
+          "build": "npm run build:module && npm run build:bundle",
+          "build:module": "BROWSERSLIST_ENV=modern microbundle -f modern,esm,cjs",
+          "build:bundle": "BROWSERSLIST_ENV=production microbundle -f umd --external none --define process.env.NODE_ENV=production",
+          "dev": "BROWSERSLIST_ENV=development microbundle -f modern -w",
+          "lint": "prettier src/**/*.ts --check",
+          "format": "prettier src/**/*.ts --write",
+          "test": "vitest run --config ./vitest/vitest.config.ts",
+          "prepublishOnly": "npm run build"
+        },
+        "bin": {
+          "swup-plugin": "./bin/swup-plugin.js"
+        },
+        "author": "Georgy Marchuk",
+        "license": "MIT",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/swup/plugin.git"
+        },
+        "dependencies": {
+          "@swup/browserslist-config": "^1.0.0",
+          "@swup/prettier-config": "^1.0.0",
+          "chalk": "^5.2.0",
+          "microbundle": "^0.15.1",
+          "prettier": "^2.7.1",
+          "shelljs": "^0.8.5",
+          "shelljs-live": "^0.0.5",
+          "swup": "^4.0.0"
+        },
+        "devDependencies": {
+          "jsdom": "^22.1.0",
+          "vitest": "^0.33.0"
+        },
+        "browserslist": [
+          "extends @swup/browserslist-config"
+        ],
+        "prettier": "@swup/prettier-config"
+      }
+    },
+    {
+      "source": "https://registry.npmjs.org/@swup/plugin/4.0.0",
+      "capturedAt": "2026-10-03T10:07:50.116395+00:00",
+      "name": "@swup/plugin",
+      "version": "4.0.0",
+      "tarball": "https://registry.npmjs.org/@swup/plugin/-/plugin-4.0.0.tgz",
+      "integrity": "sha512-3Kq31BJxnzoPg643YxGoWQggoU6VPKZpdE5CqqmP7wwkpCYTzkRmrfcQ29mGhsSS7xfS7D33iZoBiwY+wPoo2A==",
+      "integrityVerified": true,
+      "selectedFiles": {
+        "package/package.json": {
+          "sha256": "35aee7f5a892d732933b6488c8b5855e8614e20291aa86181082b6320601d043",
+          "bytes": 1554
+        },
+        "package/dist/index.modern.js": {
+          "sha256": "7722b1e167198e582e2be46afc38a28bb258c84de7ae582ff081578be6360b81",
+          "bytes": 1826
+        },
+        "package/dist/index.cjs": {
+          "sha256": "54c4953afd54b11213152a52b22e012c0b6ed1c5a8d8c003e32ca00b4b4f1859",
+          "bytes": 1599
+        },
+        "package/dist/index.d.ts": {
+          "sha256": "b9b381140c1618b0195da49f9a0f589c74796d4fdbbb4d20da67fb8a6cd3b711",
+          "bytes": 1561
+        }
+      },
+      "manifest": {
+        "name": "@swup/plugin",
+        "amdName": "SwupPlugin",
+        "description": "Base class for creating swup plugins",
+        "version": "4.0.0",
+        "type": "module",
+        "source": "src/index.ts",
+        "main": "./dist/index.cjs",
+        "module": "./dist/index.module.js",
+        "unpkg": "./dist/index.umd.js",
+        "types": "./dist/index.d.ts",
+        "exports": {
+          ".": {
+            "require": "./dist/index.cjs",
+            "import": "./dist/index.modern.js",
+            "types": "./dist/index.d.ts"
+          }
+        },
+        "files": [
+          "bin",
+          "dist"
+        ],
+        "scripts": {
+          "build": "npm run build:module && npm run build:bundle",
+          "build:module": "BROWSERSLIST_ENV=modern microbundle -f modern,esm,cjs",
+          "build:bundle": "BROWSERSLIST_ENV=production microbundle -f umd --external none --define process.env.NODE_ENV=production",
+          "dev": "BROWSERSLIST_ENV=development microbundle -f modern -w",
+          "lint": "prettier src/**/*.ts --check",
+          "format": "prettier src/**/*.ts --write",
+          "test": "vitest run --config ./vitest/vitest.config.ts",
+          "prepublishOnly": "npm run build"
+        },
+        "author": "Georgy Marchuk",
+        "license": "MIT",
+        "repository": {
+          "type": "git",
+          "url": "https://github.com/swup/plugin.git"
+        },
+        "dependencies": {
+          "swup": "^4.0.0"
+        },
+        "devDependencies": {
+          "@swup/browserslist-config": "^1.0.0",
+          "@swup/prettier-config": "^1.0.0",
+          "jsdom": "^22.1.0",
+          "microbundle": "^0.15.1",
+          "prettier": "^3.0.3",
+          "vitest": "^0.33.0"
+        },
+        "browserslist": [
+          "extends @swup/browserslist-config"
+        ],
+        "prettier": "@swup/prettier-config"
+      }
+    },
+    {
+      "source": "https://registry.npmjs.org/serialize-javascript/7.0.5",
+      "capturedAt": "2026-10-03T10:07:53.333175+00:00",
+      "name": "serialize-javascript",
+      "version": "7.0.5",
+      "tarball": "https://registry.npmjs.org/serialize-javascript/-/serialize-javascript-7.0.5.tgz",
+      "integrity": "sha512-F4LcB0UqUl1zErq+1nYEEzSHJnIwb3AF2XWB94b+afhrekOUijwooAYqFyRbjYkm2PAKBabx6oYv/xDxNi8IBw==",
+      "integrityVerified": true,
+      "selectedFiles": {
+        "package/package.json": {
+          "sha256": "d0165d034308d4602187a5e09e6682c8c768520bdcd56cb44ba5351b84aa32bf",
+          "bytes": 843
+        },
+        "package/index.js": {
+          "sha256": "ac9b22fdc80d8f937a6d8c444746ad9f73c6e6b5d769c8b7218a63ad0173adab",
+          "bytes": 10309
+        }
+      },
+      "manifest": {
+        "name": "serialize-javascript",
+        "version": "7.0.5",
+        "description": "Serialize JavaScript to a superset of JSON that includes regular expressions and functions.",
+        "main": "index.js",
+        "scripts": {
+          "benchmark": "node -v && node test/benchmark/serialize.js",
+          "test": "node --test test/unit/*.js"
+        },
+        "repository": {
+          "type": "git",
+          "url": "git+https://github.com/yahoo/serialize-javascript.git"
+        },
+        "keywords": [
+          "serialize",
+          "serialization",
+          "javascript",
+          "js",
+          "json"
+        ],
+        "author": "Eric Ferraiuolo <edf@ericf.me>",
+        "license": "BSD-3-Clause",
+        "bugs": {
+          "url": "https://github.com/yahoo/serialize-javascript/issues"
+        },
+        "homepage": "https://github.com/yahoo/serialize-javascript",
+        "devDependencies": {
+          "benchmark": "^2.1.4"
+        },
+        "engines": {
+          "node": ">=20.0.0"
+        }
+      }
+    }
+  ],
+  "comparison": {
+    "esmByteIdentical": true,
+    "typesByteIdentical": true,
+    "cjsByteIdentical": false,
+    "cjsInspection": "Requirement lookup changed ternary expression to if/block with local plugin variable; semantic equivalence inferred, not dynamically verified.",
+    "candidate": "Two exact parent overrides from declared ^3.0.0 to @swup/plugin 4.0.0. Cross-major and outside parent ranges. No blanket plugin override.",
+    "testsRun": false
+  }
+}

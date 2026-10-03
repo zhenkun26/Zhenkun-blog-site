@@ -1,0 +1,72 @@
+4:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2498432Z Version: 20260901.588
+11:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2504293Z Ubuntu
+17:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2508318Z Version: 20260927.320.1
+18:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.2509622Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+30:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.5740808Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+31:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.6886625Z Download action repository 'actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e' (SHA:cdca7365b2dadb8aad0a33bc7601856ffabcc48e)
+32:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:44.9808835Z Download action repository 'pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda' (SHA:a7487c7e89a18df4991f7f222e4898a00d66ddda)
+91:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:45.8458173Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e:refs/remotes/pull/22/merge
+93:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.5142130Z  * [new ref]         53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e -> pull/22/merge
+118:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7107674Z HEAD is now at 53a11cb Merge 330f58131c3d0c555aba25222a3596e1aa54da49 into 53cf67d121ce053b2d5f2aed4dd40c7d07d8506a
+120:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7179203Z [command]/usr/bin/git log -1 --format=%H
+121:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.7206775Z 53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e
+132:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:47.8957513Z (node:2287) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+139:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8319414Z node: v24.20.0
+145:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:52.8490566Z   version: 11.22.0
+154:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:53.3174276Z (node:2334) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+162:Full quality (/)	UNKNOWN STEP	2026-10-03T11:31:54.0431786Z + pnpm 11.22.0 (12.8.1 is available)
+281:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:02.6252594Z Done in 8.4s using pnpm v11.22.0
+298:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:08.6803878Z ^[[33m^[[1m11:32:08^[[22m [WARN] [glob-loader]^[[39m No files found matching "**/*.md" in directory "src/content/dynamic"
+363:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.7356269Z - 0 errors
+364:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:21.7356514Z - 0 warnings
+548:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9524594Z ℹ tests 166
+550:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:26.9525385Z ℹ pass 166
+571:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:33.6211698Z ^[[33m^[[1m11:32:33^[[22m [WARN] [glob-loader]^[[39m No files found matching "**/*.md" in directory "src/content/dynamic"
+580:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:36.4042803Z ^[[33m^[[1m11:32:36^[[22m [WARN] [astro-icon]^[[39m Failed to load icons from "src/icons": ENOENT: no such file or directory, scandir 'src/icons/'
+583:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.1684607Z ^[[33m^[[1m11:32:38^[[22m [WARN] [vite]^[[39m ^[[33m[plugin builtin:vite-reporter] 
+587:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:38.1687823Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.^[[39m
+695:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7187455Z Note: Pagefind doesn't support stemming for the language zh-cn. 
+697:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7189219Z Note: Pagefind doesn't support stemming for the language zh-cn. 
+702:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7191626Z Discovered 1 language: zh-cn
+706:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7193062Z   Indexed 1 language
+707:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7193475Z   Indexed 1 page
+708:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7193864Z   Indexed 95 words
+709:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7194309Z   Indexed 0 filters
+710:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:44.7194811Z   Indexed 0 sorts
+773:Full quality (/)	UNKNOWN STEP	2026-10-03T11:32:45.1475595Z (node:3108) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+792:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8208121Z Version: 20260901.588
+799:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8213853Z Ubuntu
+805:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8217862Z Version: 20260927.320.1
+806:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:43.8219165Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+818:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.0698194Z Download action repository 'actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683' (SHA:11bd71901bbe5b1630ceea73d27597364c9af683)
+819:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.2042128Z Download action repository 'actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e' (SHA:cdca7365b2dadb8aad0a33bc7601856ffabcc48e)
+820:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.3411508Z Download action repository 'pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda' (SHA:a7487c7e89a18df4991f7f222e4898a00d66ddda)
+879:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:44.9588947Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e:refs/remotes/pull/22/merge
+881:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.0646410Z  * [new ref]         53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e -> pull/22/merge
+906:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2606417Z HEAD is now at 53a11cb Merge 330f58131c3d0c555aba25222a3596e1aa54da49 into 53cf67d121ce053b2d5f2aed4dd40c7d07d8506a
+908:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2676221Z [command]/usr/bin/git log -1 --format=%H
+909:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.2703613Z 53a11cbb1bc50eb7e0af4a22d7c17da4cb7f9d6e
+920:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:46.4663224Z (node:2281) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+927:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9134829Z node: v24.20.0
+933:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:50.9323979Z   version: 11.22.0
+942:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:51.4006010Z (node:2330) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+950:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:31:52.0551114Z + pnpm 11.22.0 (12.8.1 is available)
+1068:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:00.3771986Z Done in 8.1s using pnpm v11.22.0
+1085:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:06.4678020Z ^[[33m^[[1m11:32:06^[[22m [WARN] [glob-loader]^[[39m No files found matching "**/*.md" in directory "src/content/dynamic"
+1150:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.7377493Z - 0 errors
+1151:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:19.7377882Z - 0 warnings
+1335:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0725311Z ℹ tests 166
+1337:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:25.0726101Z ℹ pass 166
+1358:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:31.8410849Z ^[[33m^[[1m11:32:31^[[22m [WARN] [glob-loader]^[[39m No files found matching "**/*.md" in directory "src/content/dynamic"
+1367:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:34.5286761Z ^[[33m^[[1m11:32:34^[[22m [WARN] [astro-icon]^[[39m Failed to load icons from "src/icons": ENOENT: no such file or directory, scandir 'src/icons/'
+1370:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.2941418Z ^[[33m^[[1m11:32:36^[[22m [WARN] [vite]^[[39m ^[[33m[plugin builtin:vite-reporter] 
+1374:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:36.2945086Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.^[[39m
+1470:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9131973Z Discovered 1 language: zh-cn
+1488:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9142150Z Note: Pagefind doesn't support stemming for the language zh-cn. 
+1490:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9144060Z Note: Pagefind doesn't support stemming for the language zh-cn. 
+1493:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9146081Z   Indexed 1 language
+1494:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9146301Z   Indexed 1 page
+1495:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9146694Z   Indexed 98 words
+1496:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9147190Z   Indexed 0 filters
+1497:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:42.9147703Z   Indexed 0 sorts
+1560:Full quality (/Zhenkun-blog-site/)	UNKNOWN STEP	2026-10-03T11:32:43.3566452Z (node:3119) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.

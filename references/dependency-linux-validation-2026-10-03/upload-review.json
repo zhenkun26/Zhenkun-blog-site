@@ -1,0 +1,14 @@
+{
+  "base": "53cf67d121ce053b2d5f2aed4dd40c7d07d8506a",
+  "head": "330f58131c3d0c555aba25222a3596e1aa54da49",
+  "baseAncestor": true,
+  "changedFiles": 193,
+  "commitsToUpload": 10,
+  "uniqueChangedBlobsScanned": 148,
+  "allowedFinalPaths": true,
+  "applicationPublicConfigCiUnchanged": true,
+  "findings": [],
+  "scope": "Pattern scan over all changed upload-history blobs; independent manual path/content review complements it, not an exhaustive secret guarantee.",
+  "manualReview": "Final193paths confined to remediation dependencies, three bounded tests, planning/ADR/checkpoint and retained official/audit/build/protection evidence; no private .workbuddy contents. Local usernames and hashes belong to task provenance; official upstream author metadata belongs to source evidence. No unrelated personal draft/profile introduced.",
+  "remoteWorkflowsMatchCandidate": true
+}

@@ -146,6 +146,14 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
+### Dependency candidate Linux PR validation — 2026-10-03 — CI PASS / overall PARTIAL
+
+- **Delivery**: Owner explicitly approved independent candidate push+draftPR to zhenkun26/Zhenkun-blog-site after R1a review; independent AstraHIGH PASS/noP1/P2 supplied by coordinator. Uploaded exact330f58131c3d0c555aba25222a3596e1aa54da49 to newcodex/dependency-ar3-r1a-linux-20261003-v1, [draftPR22](https://github.com/zhenkun26/Zhenkun-blog-site/pull/22). Fresh remote main53cf67d is ancestor, unchanged; no rebase/mainwrite/force/merge/auto-merge/deploy/dispatch. No R1b/R2 changes.
+- **Fresh Linux PASS**: Build and Check run37119941693 and Code quality37119941669 both completedSUCCESS. Ubuntu24.04.5/image20260927.320.1,Node24.20.0,pnpm11.22.0. Both fullbasejobs111193937079/111193937209 pass frozeninstall,Biome,Astro258files0errors0warnings12hints,formaltypes,166/166native,fullbuild/Pagefind,artifactverifier. GitHub testmerge53a11cbb tree equalscandidate330f581. Not a claim of hosted HTTP/GUI/standalonestrictSwuptypes/newaudit/R2native acceptance.
+- **Observed limits**: Only expectedthreegithub-actions checks and twoPRruns; candidate deployments empty in bounded freshAPIobservations. No exhaustiveexternalautomation guarantee. PR stilldraft/unmerged/noauto-merge. Browser remainsBLOCKED/NOT_RUN,inheritedpeerFAIL,cachefix/25officialaffectedblockoverallsecurityclosure. Originalb6c3e39/.workbuddy protected.
+- **Evidence/stop**: [Linuxreport](../references/dependency-linux-validation-2026-10-03/report.md),rawlogs/APIs/receipt/hashes. This postCIreceipt and checkpoint are local-only; no secondpush. Remotehead stays330f581. Worker stops writing for nextboundedpacket. Requested Solxhigh/Astrahigh/Fastretained; runtimeUNVERIFIED.
+
+
 ### Dependency B/R1a — 2026-10-03 — LOCAL PARTIAL / review pending
 
 - **Bounded candidate**: From clean A/R3 evidence `8f8d4a8c`, source `83fa53d0b561d479ca043caae208e29a4a0060ac`. Only devalue5.9.2→5.9.3 at Astro7.2.10/Svelte5.57.0 and gray-matter4.0.3 YAML3.15.1→3.15.2; YAML4.3.2 and all A/R3 guards retained. 925 packages before/after; exactly two replaced records, three parent snapshot edges, no unrelated drift. Two parent-specific same-range devalue overrides follow approved fallback; natural range maximum now5.9.4. Official comparison shows5.9.4 PURE annotations only; review/remove these overrides by2026-10-17 after approved refresh. No R1b/R2/bilingual/CI changes.

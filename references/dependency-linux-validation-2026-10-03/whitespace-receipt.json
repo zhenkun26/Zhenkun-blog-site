@@ -1,0 +1,27 @@
+{
+  "fullExit": 2,
+  "fullState": "FAIL_RAW_LOG_WHITESPACE",
+  "rawFiles": [
+    "references/dependency-linux-validation-2026-10-03/build-final.log",
+    "references/dependency-linux-validation-2026-10-03/build-run-watch.log",
+    "references/dependency-linux-validation-2026-10-03/log-summary.txt",
+    "references/dependency-linux-validation-2026-10-03/push.log",
+    "references/dependency-linux-validation-2026-10-03/quality-final.log"
+  ],
+  "scopedNonRawExit": 0,
+  "scopedCommand": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)references/dependency-linux-validation-2026-10-03/build-final.log",
+    ":(exclude)references/dependency-linux-validation-2026-10-03/build-run-watch.log",
+    ":(exclude)references/dependency-linux-validation-2026-10-03/log-summary.txt",
+    ":(exclude)references/dependency-linux-validation-2026-10-03/push.log",
+    ":(exclude)references/dependency-linux-validation-2026-10-03/quality-final.log"
+  ],
+  "rawBytesPreserved": true,
+  "diagnostic": "Initial classifier omitted derived byte-exact log-summary.txt; exact raw categories inspected and allowed, no source/docs whitespace issue."
+}

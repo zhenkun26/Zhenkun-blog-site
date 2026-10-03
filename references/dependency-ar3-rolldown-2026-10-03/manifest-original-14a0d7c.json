@@ -84,24 +84,13 @@
     },
     {
       "path": "references/dependency-ar3-2026-10-03/report.md",
-      "sha256": "bdff9a4338872c043ca803fcb4807761d6aca15b22971c66e2029081f6f1b301",
-      "bytes": 6591
+      "sha256": "4aff954f6f0f99048f2c401b51844f7e045f7c8159d2a78c02b9540c10921fa9",
+      "bytes": 6020
     },
     {
       "path": "references/dependency-ar3-2026-10-03/source-protection.json",
       "sha256": "59003e5eb6f10899d9c133519e96acd4f67f480a92115633129fc530c03f70b4",
       "bytes": 385
     }
-  ],
-  "postReviewCorrection": {
-    "date": "2026-10-03",
-    "scope": "Report correction notice only; original graph/audits remain historical evidence for e9d0b25.",
-    "originalReport": {
-      "path": "references/dependency-ar3-2026-10-03/report.md",
-      "sha256": "4aff954f6f0f99048f2c401b51844f7e045f7c8159d2a78c02b9540c10921fa9",
-      "bytes": 6020
-    },
-    "preservedOriginalReport": "references/dependency-ar3-rolldown-2026-10-03/report-original-14a0d7c.md",
-    "preservedOriginalManifest": "references/dependency-ar3-rolldown-2026-10-03/manifest-original-14a0d7c.json"
-  }
+  ]
 }

@@ -125,3 +125,12 @@
 
 - The host Python tarfile API does not support `extractall(filter=...)`. The first extraction attempt failed before writing files; a subsequent artifact check consequently had no input. Recovery validated every archive entry as a relative, non-traversing regular file/directory with no links, then used exclusive file creation in a new ignored directory. Keep dependent checks behind successful extraction; do not claim the failed attempt passed or remove extraction safety to accommodate an older API.
 - Local browser navigation was blocked by the client, and an existing live tab later produced a clipboard focus-token mismatch/inconsistent input state. Those attempts were excluded from GUI PASS. A separate deployed-host tab with observed controls completed the actual smoke checks. Keep automation-input failures separate from product defects, re-establish visible state, and use a dedicated test tab. Restore temporary viewport overrides afterward.
+
+
+## 2026-10-03 — Lock graph comparison must cover peer contexts and aliases
+
+- Error: the first A/R3 graph checker stripped two resolved peer suffixes but retained two other obsolete transitive peer names; the second treated three existing pnpm alias references as ordinary name/version references. Both stopped before recording PASS and neither changed the package candidate.
+- Recovery: assert the exact four removed old-build peer names on only the three affected Swup nodes, resolve a full alias snapshot key before composing name@version, then compare every surviving snapshot and prove optional flags from all production/development root paths. Raw diffs and diagnostics remain preserved.
+- Prevention: distinguish package-version sets from actual parent edges, peer variants, alias references and required/optional reachability. Never approve patch drift or mask a mismatch merely to make a structural checker pass.
+
+- Evidence-format diagnostic in the same packet: checking newly staged raw `.diff` artifacts reported 1201 context-blank lines as trailing whitespace (1160 full diff, 41 correction diff). Preserve byte-exact Git evidence rather than trim its context markers; inspect every diagnostic category and run the whitespace gate on all other files. Record the full diagnostic and scoped PASS separately. The first pre-stage diff check did not cover untracked evidence.

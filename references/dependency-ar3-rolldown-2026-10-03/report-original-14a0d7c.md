@@ -1,7 +1,5 @@
 # A/R3 candidate — BLOCKED at lock acceptance
 
-> 2026-10-03 correction: this report describes the rejected `e9d0b25` lock. Its statement that rolldown 1.2.4 disappeared was incorrect: Vite 8.2.1 still referenced it. The later precise Vite guard and package-manager regeneration restore both Vite 8.2.2 peer variants to 1.2.4. See [correction report](../dependency-ar3-rolldown-2026-10-03/report.md). The [original report bytes](../dependency-ar3-rolldown-2026-10-03/report-original-14a0d7c.md), raw lock diff and audits remain preserved; original audit/test states are not fresh evidence for the corrected candidate.
-
 Base: `96b7b899dbe80aadd68f83a7ba1482bf386d0eb1`.
 Dependency candidate: `e9d0b25f791eb1e0c88fc7845d3d181672036d34`.
 Branch: `codex/dependency-ar3-20261003`.

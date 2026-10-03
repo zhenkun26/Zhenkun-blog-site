@@ -1,10 +1,10 @@
 # Zhenkun-blog-site 依赖安全整改方案
 
-> 初版：2026-10-02（America/New_York）；阶段 0 修订：2026-10-03（UTC），版本 2。
+> 初版：2026-10-02（America/New_York）；阶段 0 修订：2026-10-03（UTC），版本 2；A/R3 耦合复核同日修订为版本 2.1。
 > 本文件定义整改范围、实施顺序与验收方法；任务进度统一维护在 [ROADMAP](ROADMAP.md)。
-> 当前交付是方案文档。依赖版本尚未修改，漏洞尚未修复，以下候选配置和实施命令均未执行。
+> 阶段 0 交付时为方案文档，尚未执行候选命令。版本 2.1 补充 A/R3 的 Vite 基线守卫与退出条件；实施状态只看 [ROADMAP](ROADMAP.md)，以下历史基线不等同当前候选验证结果。
 
-**版本 2 决策摘要：**先验证两个旧 Swup 插件的精确父边跨主版本 override，以移除 microbundle 构建链；再更新仍存在的依赖。sharp 的顶层、Astro 和 Miniflare 副本均评估 `0.35.5`；serializer 仅作为失败后的备选评估 `7.0.5`。新增 `http-cache-semantics@4.2.0` 高危告警暂无已核验的已发布修复版本，保持阻断。执行范围以[阶段 0 批次](#phase0-packets)及 ADR-XB-016 为准；下文 50/32 与 R1/R2/R3 原始计数是历史分组，不是当前关闭数量。
+**版本 2.1 决策摘要：**先验证两个旧 Swup 插件的精确父边跨主版本 override，以移除 microbundle 构建链；再更新仍存在的依赖。sharp 的顶层、Astro 和 Miniflare 副本均评估 `0.35.5`；serializer 仅作为失败后的备选评估 `7.0.5`。新增 `http-cache-semantics@4.2.0` 高危告警暂无已核验的已发布修复版本，保持阻断。执行范围以[阶段 0 批次](#phase0-packets)及 ADR-XB-016 为准；下文 50/32 与 R1/R2/R3 原始计数是历史分组，不是当前关闭数量。
 
 证据：[阶段 0 审阅](../references/dependency-phase0-2026-10-03/phase0-review.md)、[36 项公告核销表](../references/dependency-phase0-2026-10-03/advisory-matrix.md)、[版本实例与父边 JSON](../references/dependency-phase0-2026-10-03/advisory-matrix.json)。当前源码仍与已发布单语应用树一致，P8-I1 双语候选不在整改基线内。
 
@@ -408,19 +408,22 @@ git diff --check
 
 **精确输入：**阶段 0 交付提交，应用基线仍为 `43c21ad`；源分支/用户目录保留。实施前确认没有双语或其他源码被混入。仅在不共享 node_modules 的隔离 checkout 安装，包管理器保持 11.22.0，Node 保持 CI 的 24.20.0。
 
-**变更范围：**`pnpm-workspace.yaml`、由包管理器生成的 `pnpm-lock.yaml`、必要的真实父调用回归、dated evidence 和 ROADMAP。不改 `package.json` 的版本、Swup 配置、页面功能、CI 或部署。保留 `packages`、`allowBuilds`，只合并以下两个根级条目：
+**变更范围：**`pnpm-workspace.yaml`、由包管理器生成的 `pnpm-lock.yaml`、必要的真实父调用回归、dated evidence 和 ROADMAP。不改 `package.json` 的版本、Swup 配置、页面功能、CI 或部署。保留 `packages`、`allowBuilds`，合并以下两个跨主版本条目，以及经耦合复核批准的一个保版本守卫（第三条不升级任何包）：
 
 ```yaml
 overrides:
   "@swup/parallel-plugin@0.4.0>@swup/plugin": "4.0.0"
   "@swup/route-name-plugin@4.1.0>@swup/plugin": "4.0.0"
+  "vite@8.2.2>rolldown": "1.2.4"
 ```
 
 两个父包均声明 `^3.0.0`；上面是**跨主版本 override**，不是正常依赖刷新。ESM 和类型文件字节一致、官方移除 CLI 的说明支持试验，CJS 和运行行为仍待验证。禁止添加全局 plugin/serializer override、删除依赖条目或把旧链移到 devDependencies。
 
-**后续获交接后可执行的顺序：**先通过当前 pnpm 的本地 help 确认命令行为；生成锁文件使用 `pnpm install --lockfile-only --ignore-scripts`，审查完整 diff 后才在该隔离 checkout 执行 `pnpm install --frozen-lockfile`。不得手写 integrity 或使用旧共享安装目录。前一命令也可能解析元数据/写缓存，因此属于实施阶段，本轮未执行。
+**后续获交接后可执行的顺序：**先通过当前 pnpm 的本地 help 确认命令行为；生成锁文件使用 `pnpm install --lockfile-only --ignore-scripts`，审查完整 diff 后才在该隔离 checkout 执行 `pnpm install --frozen-lockfile`。不得手写 integrity 或使用旧共享安装目录。前一命令也可能解析元数据/写缓存，因此属于实施阶段；阶段 0 未执行，后续实际执行与门禁状态见 ROADMAP。
 
-**锁文件接受条件：**只新增两条 override；两个目标父边均到 4.0.0；现有其他 plugin 4 使用者不漂移；所有消失节点必须可追溯到失去唯一入边的旧链；无关直接依赖、Astro/Svelte/Swup/Node/CI 版本不变；没有新的 peer 问题或安装脚本授权。若出现无法解释的新增/漂移，停止并返回复杂审阅。
+**锁文件接受条件（耦合复核修订）：**只允许上面三条 override；第三条仅保持 Vite 8.2.2 的既有 rolldown 1.2.4（满足原范围 ~1.2.4）；两个 Vite 8.2.2 peer 变体和 Vite 8.2.1 均保持原版本。两个目标父边均到 4.0.0；现有其他 plugin 4 使用者不漂移；所有消失节点必须可追溯到失去唯一入边的旧链；无关直接依赖、Astro/Svelte/Swup/Node/CI 版本不变；没有新的 peer 问题或安装脚本授权。若出现无法解释的新增/漂移，停止并返回复杂审阅。
+
+**Vite 守卫的依据与退出条件：**首次 pnpm 重解析把两个 Vite 8.2.2 父边改为锁中另一已存在版本 1.2.7，属于可避免漂移。精确守卫经包管理器重新生成后，三种 Vite snapshot 均为原 1.2.4；未新增或改写任何包的 integrity，1.2.7 及其已无引用的节点被裁剪。详见 [耦合修正证据](../references/dependency-ar3-rolldown-2026-10-03/report.md)。它仅为本批保持 bundler 基线；最迟 2026-10-17 复查，或在另行批准 Vite/rolldown 更新时提前复查。只有移除该守卫并重新生成锁文件仍保持已批准边，或新 bundler 组合已独立批准和验证，才可撤销；日期到期本身不自动删约束或允许版本漂移。修改 Vite 版本会使选择器失配，必须作为重新评审事件。
 
 **真实兼容门：**
 

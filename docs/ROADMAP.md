@@ -146,7 +146,15 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
-### Dependency A/R3 — 2026-10-03 — BLOCKED before frozen install
+### Dependency A/R3 lock correction — 2026-10-03 — ready for frozen-install handoff
+
+- **Writer/scope**: Coupling review continued exclusively in the existing A/R3 checkout/branch from `14a0d7ca87104d5afc702f1b7d118e1a7374fed3`; the implementation worker was stopped. The coordinator approved a precise baseline-preserving Vite override as the only expansion of the two-override rule. Original `b6c3e39` checkout and `.workbuddy` remain protected.
+- **Decision/result**: Added `vite@8.2.2>rolldown: 1.2.4` and let pnpm 11.22.0 regenerate the lock with `--lockfile-only --ignore-scripts`. No handwritten lock resolutions/integrities. Both Vite 8.2.2 peer variants and Vite 8.2.1 now retain 1.2.4. The prior report's claim that 1.2.4 disappeared is corrected, with original bytes retained. ADR-XB-016 and the exact A/R3 packet now include the narrow third-override exception and exit conditions.
+- **Fresh structural evidence**: [Correction report](../references/dependency-ar3-rolldown-2026-10-03/report.md), complete/correction lock diffs and full snapshot comparison: 1350→925 package records, 425 removed and zero added/changed. All removed packages are reachable from the old plugin-3 chain. No dangling references or unexplained surviving edge changes; root declarations/base versions unchanged. Six optional flags follow loss of old required build-chain paths; every peer variant is checked. Initial checker omissions for obsolete peer names and aliases were corrected and recorded as checker diagnostics, not product failures or PASS.
+- **Gate state**: The original rolldown scope blocker is resolved at the lock-structure level only. No node_modules, frozen install, lifecycle script, peer acceptance, application test, build, browser or PoC ran in this correction. Earlier 44-record audits describe `e9d0b25`, not a fresh audit of this lock. Cache and official sharp findings remain open; no security waiver.
+- **Next action**: Coordinator hands the new precise correction commit to Sol Fast for frozen installation and all A/R3 real-parent/ESM/CJS/types/hooks, quality, full dual-base/Pagefind, browser and fresh-audit gates. Stop on new unexplained drift or peer changes. Independent review must specifically evaluate the third guard. This coupling worker stops after its local commit; no integration, push or deployment.
+
+### Dependency A/R3 — 2026-10-03 — historical blocked candidate before correction
 
 - **Scope/base**: Owner-authorized A/R3 only, isolated `codex/dependency-ar3-20261003` at `/Users/zhenkun/Documents/Codex/2026-10-03/task-3/zhenkun-ar3`, from exact phase-0 commit `96b7b899dbe80aadd68f83a7ba1482bf386d0eb1`. Node v24.20.0 / pnpm 11.22.0. Related writers inspected idle; no bilingual/application/CI changes. Runtime model setting remains UNVERIFIED.
 - **Executed**: Exact two parent overrides and official-registry `install --lockfile-only --ignore-scripts`; initial default-store access failure recorded, same command succeeded with reviewed escalation. No alternate store or security setting change. P3 brace-expansion ledger correction now takes prod/full path union (33 paths for each of three rows); original audits retained.

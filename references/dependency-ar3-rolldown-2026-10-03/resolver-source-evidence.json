@@ -1,0 +1,32 @@
+{
+  "path": "/Users/zhenkun/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs",
+  "sha256": "a8533087155540515892e6f022ba5c673bb2e62fcbcc124b36ba2e8938ccc3da",
+  "ranges": [
+    {
+      "start": 103943,
+      "end": 103954,
+      "text": "function pickVersionByVersionRange({ meta, versionRange, preferredVersionSelectors }) {\n  const latest = meta[\"dist-tags\"].latest;\n  if (preferredVersionSelectors != null && Object.keys(preferredVersionSelectors).length > 0) {\n    const prioritizedPreferredVersions = prioritizePreferredVersions(meta, versionRange, preferredVersionSelectors);\n    for (const preferredVersions of prioritizedPreferredVersions) {\n      if (preferredVersions.includes(latest) && semverSatisfiesLoose(latest, versionRange)) {\n        return latest;\n      }\n      const preferredVersion = maxSatisfyingLoose(preferredVersions, versionRange);\n      if (preferredVersion) {\n        return preferredVersion;\n      }"
+    },
+    {
+      "start": 194154,
+      "end": 194193,
+      "text": "function getPreferredVersionsFromLockfileAndManifests(snapshots, manifests) {\n  const preferredVersions = /* @__PURE__ */ Object.create(null);\n  for (const manifest of manifests) {\n    const specs = getAllDependenciesFromManifest(manifest);\n    for (const [name, spec] of Object.entries(specs)) {\n      const selector = (0, import_version_selector_type4.default)(spec);\n      if (!selector)\n        continue;\n      preferredVersions[name] = preferredVersions[name] ?? /* @__PURE__ */ Object.create(null);\n      preferredVersions[name][spec] = {\n        selectorType: selector.type,\n        weight: DIRECT_DEP_SELECTOR_WEIGHT\n      };\n    }\n  }\n  if (!snapshots)\n    return preferredVersions;\n  addPreferredVersionsFromLockfile(snapshots, preferredVersions);\n  return preferredVersions;\n}\nfunction addPreferredVersionsFromLockfile(snapshots, preferredVersions) {\n  const uniqueNameVersions = /* @__PURE__ */ Object.create(null);\n  for (const [depPath, snapshot] of Object.entries(snapshots)) {\n    const { name, version: version2 } = nameVerFromPkgSnapshot(depPath, snapshot);\n    uniqueNameVersions[name] ??= /* @__PURE__ */ new Set();\n    uniqueNameVersions[name].add(version2);\n  }\n  for (const [name, versions] of Object.entries(uniqueNameVersions)) {\n    for (const version2 of versions) {\n      preferredVersions[name] ??= /* @__PURE__ */ Object.create(null);\n      const existingSelector = preferredVersions[name][version2];\n      if (existingSelector == null) {\n        preferredVersions[name][version2] = { selectorType: \"version\", weight: EXISTING_VERSION_SELECTOR_WEIGHT };\n        continue;\n      }\n      const existingSelectorType = typeof existingSelector === \"string\" ? existingSelector : existingSelector.selectorType;\n      if (existingSelectorType !== \"version\") {\n        throw new Error(`Encountered unexpected version selector '${existingSelectorType}' for dependency '${name}@${version2}'`);\n      }\n      preferredVersions[name][version2] = addWeightToVersionSelector(existingSelector, EXISTING_VERSION_SELECTOR_WEIGHT);"
+    },
+    {
+      "start": 208959,
+      "end": 208967,
+      "text": "function* outdatedLockfileSettings(lockfile, { catalogs, overrides, packageExtensionsChecksum, ignoredOptionalDependencies, patchedDependencies, autoInstallPeers, dedupePeers, excludeLinksFromLockfile, peersSuffixMaxLength, pnpmfileChecksum, injectWorkspacePackages }) {\n  if (!allCatalogsAreUpToDate(catalogs ?? {}, lockfile.catalogs)) {\n    yield \"catalogs\";\n  }\n  if (!equals_default(lockfile.overrides ?? {}, overrides ?? {})) {\n    yield \"overrides\";\n  }\n  if (lockfile.packageExtensionsChecksum !== packageExtensionsChecksum) {\n    yield \"packageExtensionsChecksum\";"
+    },
+    {
+      "start": 212661,
+      "end": 212670,
+      "text": "        });\n      }\n    }\n    const outdatedLockfileSettings2 = outdatedLockfileSettingName != null;\n    let needsFullResolution = outdatedLockfileSettings2 || opts3.fixLockfile || opts3.updateChecksums || !upToDateLockfileMajorVersion || opts3.forceFullResolution || forceResolutionFromHook;\n    if (needsFullResolution) {\n      ctx.wantedLockfile.settings = { ...wantedLockfileSettings };\n      ctx.wantedLockfile.overrides = overridesMap;\n      ctx.wantedLockfile.packageExtensionsChecksum = packageExtensionsChecksum;\n      ctx.wantedLockfile.ignoredOptionalDependencies = opts3.ignoredOptionalDependencies;"
+    },
+    {
+      "start": 213599,
+      "end": 213605,
+      "text": "      });\n      const preferredVersions = Object.assign(/* @__PURE__ */ Object.create(null), getPreferredVersionsFromLockfileAndManifests(ctx.wantedLockfile.packages, Object.values(ctx.projects).map(({ manifest }) => manifest)));\n      for (const [pkgName, selectors] of Object.entries(opts3.preferredVersions ?? {})) {\n        preferredVersions[pkgName] = { ...preferredVersions[pkgName], ...selectors };\n      }\n      const forceFullResolution = ctx.wantedLockfile.lockfileVersion !== LOCKFILE_VERSION || !opts3.currentLockfileIsUpToDate || opts3.force || opts3.needsFullResolution || ctx.lockfileHadConflicts || opts3.dedupePeerDependents;\n      if (opts3.fixLockfile && ctx.wantedLockfile.packages != null && !isEmpty_default(ctx.wantedLockfile.packages)) {"
+    }
+  ],
+  "interpretation": "Configured override mismatch can require resolution; preferred versions include all existing locked versions with equal existing-version weight; highest satisfying preferred version is selected. This source trace explains the observed 1.2.7 selection; no resolver runtime instrumentation claimed."
+}

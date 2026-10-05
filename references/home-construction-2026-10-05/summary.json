@@ -1,0 +1,75 @@
+{
+  "baseline": "53cf67d121ce053b2d5f2aed4dd40c7d07d8506a",
+  "source": "c735ecdf8339e2342683ef74cc0b5c8458c1800c",
+  "node": "24.20.0",
+  "native_tests": {
+    "passed": 151,
+    "failed": 0,
+    "skipped": 0
+  },
+  "astro": {
+    "files": 257,
+    "errors": 0,
+    "warnings": 0,
+    "inherited_hints": 12
+  },
+  "formal_type_check": "PASS --noEmit --isolatedDeclarations",
+  "biome_files": 298,
+  "complete_eight_stage_builds": [
+    "/",
+    "/Zhenkun-blog-site/"
+  ],
+  "artifact_verifiers": "PASS both bases",
+  "project_http": "PASS",
+  "browser": "Microsoft Edge via connected extension",
+  "captures": [
+    {
+      "file": "desktop-light.jpg",
+      "viewport": {
+        "dpr": 2,
+        "height": 792,
+        "width": 1462
+      },
+      "dark": false,
+      "notice_count": 1,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "desktop-dark.jpg",
+      "viewport": {
+        "dpr": 2,
+        "height": 792,
+        "width": 1462
+      },
+      "dark": true,
+      "notice_count": 1,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "mobile-dark.jpg",
+      "viewport": {
+        "dpr": 1,
+        "height": 844,
+        "width": 390
+      },
+      "dark": true,
+      "notice_count": 1,
+      "horizontal_overflow": false
+    },
+    {
+      "file": "mobile-light.jpg",
+      "viewport": {
+        "dpr": 1,
+        "height": 844,
+        "width": 390
+      },
+      "dark": false,
+      "notice_count": 1,
+      "horizontal_overflow": false
+    }
+  ],
+  "mobile_navigation": "PASS Home → About (0 notice) → Home (1 notice)",
+  "original_preservation": "PASS HEAD/branch/main/status/.workbuddy/package/lock",
+  "remediation_candidate_imported": false,
+  "deployed": false
+}

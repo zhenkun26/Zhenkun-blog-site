@@ -13,13 +13,37 @@ interface Props {
 	class?: string;
 	style?: string;
 	widgetConfig?: WidgetComponentConfig;
+	variant?: "widget" | "banner";
 }
-const { class: className, style, widgetConfig } = Astro.props;
+const {
+	class: className,
+	style,
+	widgetConfig,
+	variant = "widget",
+} = Astro.props;
 
 const showTitle = widgetConfig?.showTitle !== false;
 ---
 
 <!-- 组件显示现在由sidebarLayoutConfig统一控制，无需检查config.enable -->
+{variant === "banner" ? (
+  <section
+    aria-labelledby="construction-notice-title"
+    data-pagefind-ignore
+    class:list={["card-base mb-4 flex items-start gap-3 border-l-4 border-(--primary) p-4 sm:px-5", className]}
+    style={style}
+  >
+    <span class="shrink-0 text-2xl leading-7" aria-hidden="true">🚧</span>
+    <div class="min-w-0">
+      <h2 id="construction-notice-title" class="text-base font-bold text-neutral-900 dark:text-neutral-100">
+        {config.title || i18n(I18nKey.announcement)}
+      </h2>
+      <p class="mt-1 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">
+        {config.content}
+      </p>
+    </div>
+  </section>
+) : (
 <WidgetLayout
   name={config.title || i18n(I18nKey.announcement)}
   showTitle={showTitle}
@@ -64,3 +88,4 @@ const showTitle = widgetConfig?.showTitle !== false;
     </div>
   </div>
 </WidgetLayout>
+)}

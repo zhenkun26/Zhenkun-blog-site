@@ -52,7 +52,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 组件类型：公告组件
 			type: "announcement",
 			// 是否启用该组件
-			enable: true,
+			enable: false, // 首页内容区复用公告，避免侧栏重复显示
 			// 组件位置
 			position: "top",
 			// 是否在文章详情页显示
@@ -250,7 +250,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 组件类型：公告组件
 			type: "announcement",
 			// 是否启用该组件
-			enable: true,
+			enable: false, // 首页内容区复用公告，避免移动端底部重复显示
 			// 是否在文章详情页显示
 			showOnPostPage: true,
 		},

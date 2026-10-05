@@ -144,6 +144,14 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
+### Homepage construction notice — 2026-10-05 (isolated LOCAL candidate)
+
+- [x] 站主新请求已本地实现：首个首页列表页显示“🚧 网站建设中”及“内容与功能正在逐步完善，欢迎随时回来看看。”。源码 `c735ecdf8339e2342683ef74cc0b5c8458c1800c` 复用现有 Announcement/config/card 样式；关闭侧栏/移动底部示例公告，避免重复。原仓库/main尚未接纳或上线。
+- 工作区 `/Users/zhenkun/Documents/Codex/2026-10-05/task/tmp/zhenkun-home-notice`，分支 `codex/home-construction-notice`，基线fresh远端main `53cf67d121ce053b2d5f2aed4dd40c7d07d8506a`。原活动分支、main、tracked/index、`.workbuddy`及依赖/锁哈希原样；未发现相关`.agents/skills`。
+- Fresh PASS：151 native、正式TypeScript、Astro（257文件/0errors/0warnings/12 inherited hints）、Biome298、双base八阶段完整构建/Pagefind和产物验证；项目base HTTP及实际Edge桌面1462×792 DPR2/移动模拟390×844 DPR1各明暗截图，菜单Home→About→Home正常。准确命令、失败恢复、截图和范围见[report](../references/home-construction-2026-10-05/report.md)。非frozen干净安装，物理手机未测。
+- 与整改候选 `563431d97338ee5c9e0e95784df869ae4d6f829c` 仅核对Git元数据，四个UI文件相对main无重叠；不导入其源码/证据/依赖或绕过上传拒绝。安全/Linux/GUI/合并任务仍由父任务处理。main无独立英文首页，新提示仅中文；不接纳双语候选，不改继承的其它语言文案。
+- 下一步：父任务独立审查源码提交，整合时语义合并文档并另测组合候选。本轮无push/merge/deploy、依赖/CI变更或文章公开；浏览器视口/主题恢复，临时server交付前停止。
+
 ### Completed development release — 2026-10-02
 
 - [x] Review and publish the 38 existing development commits, as explicitly authorized by the owner conditional on resolving material release risks. Review source starts at `28e4b70`; production base is `ab26876`. The original 38 commits are inventoried in `references/release-review-2026-10-02/commits.json`. PR #20 merged and published source `43c21ad305876a197e02ed7830991af8575c5485`.

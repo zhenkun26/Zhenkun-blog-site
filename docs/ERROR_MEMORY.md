@@ -125,3 +125,9 @@
 
 - The host Python tarfile API does not support `extractall(filter=...)`. The first extraction attempt failed before writing files; a subsequent artifact check consequently had no input. Recovery validated every archive entry as a relative, non-traversing regular file/directory with no links, then used exclusive file creation in a new ignored directory. Keep dependent checks behind successful extraction; do not claim the failed attempt passed or remove extraction safety to accommodate an older API.
 - Local browser navigation was blocked by the client, and an existing live tab later produced a clipboard focus-token mismatch/inconsistent input state. Those attempts were excluded from GUI PASS. A separate deployed-host tab with observed controls completed the actual smoke checks. Keep automation-input failures separate from product defects, re-establish visible state, and use a dedicated test tab. Restore temporary viewport overrides afterward.
+
+## 2026-10-05 — Local homepage verification environment
+
+- Copied dependencies did not prevent pnpm11's automatic install check; it failed opening the store SQLite database. Do not retry installation. Use the existing isolated official binaries and record exact commands, rather than claiming literal pnpm/frozen-install PASS.
+- Astro dev/build required local port listening, which failed with sandbox EPERM. Only the scoped local verification escalation was approved; that approval does not authorize uploading the separate remediation candidate. First Pagefind execution lacked the isolated `.bin` in PATH; add the executable path and rerun that stage, then continue dependent artifact checks.
+- The first local browser render was dev mode and included the retained draft. No dev screenshot was saved/staged; deliver only production-preview captures, which confirm zero public articles. A read-only DOM query's unavailable navigator object is an API limit, not evidence that Edge disconnected.

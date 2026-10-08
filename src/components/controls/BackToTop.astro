@@ -1,12 +1,15 @@
 ---
 import FloatingButton from "@/components/common/FloatingButton.astro";
+import { getPageLocale } from "@/utils/deployment-contract";
+
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
 ---
 
 <!-- There can't be a filter on parent element, or it will break `fixed` -->
 <FloatingButton
   id="back-to-top-btn"
   icon="material-symbols:keyboard-arrow-up-rounded"
-  ariaLabel="Back to Top"
+  ariaLabel={uiLocale === "en" ? "Back to top" : "返回顶部"}
   onclick="backToTop()"
   class="hide" 
 />

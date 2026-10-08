@@ -1,0 +1,122 @@
+{
+  "kind": "ACTUAL_CONFIGURED_RENDERER_SEAM_ONLY",
+  "source": "a7b31c777f415e725eaf4d280da34380b3fc82cd",
+  "rendererExecution": "PASS",
+  "rendererProcessExit": 0,
+  "languageContract": "FAIL",
+  "wholeSiteAcceptance": false,
+  "rawSnapshotSha256": "321867bb9edbe533258c9a3e1fdefa1b683115d31bd57ccc126f3fa656e74ec6",
+  "htmlMeaning": "Installed toHtml serialization of the captured renderedGroupAst; code fragments only, not Astro page/build/HTTP/browser evidence.",
+  "htmlFiles": [
+    {
+      "file": "code-zh.html",
+      "sha256": "fef226f674ac09baa3c559a854137639a34d2638c294333ac700957420ccbc0d"
+    },
+    {
+      "file": "code-en.html",
+      "sha256": "a4a881800f5b6ef31cb65a88a026a8926536c27cd15b0b5af27fa02d6ace3367"
+    }
+  ],
+  "results": [
+    {
+      "index": 0,
+      "locale": "zh-CN",
+      "controls": {
+        "collapseText": [
+          "展开",
+          "收起",
+          "展开",
+          "收起"
+        ],
+        "announcements": [
+          "代码块已展开",
+          "代码块已折叠"
+        ],
+        "copy": [
+          {
+            "title": "Copy to clipboard",
+            "dataCopied": "Copied!"
+          }
+        ]
+      },
+      "copyLocale": "FAIL",
+      "collapseLocale": "PASS",
+      "monolingualControls": "FAIL"
+    },
+    {
+      "index": 1,
+      "locale": "en",
+      "controls": {
+        "collapseText": [
+          "展开",
+          "收起",
+          "展开",
+          "收起"
+        ],
+        "announcements": [
+          "代码块已展开",
+          "代码块已折叠"
+        ],
+        "copy": [
+          {
+            "title": "Copy to clipboard",
+            "dataCopied": "Copied!"
+          }
+        ]
+      },
+      "copyLocale": "PASS",
+      "collapseLocale": "FAIL",
+      "monolingualControls": "FAIL"
+    },
+    {
+      "index": 2,
+      "locale": "en",
+      "controls": {
+        "collapseText": [
+          "展开",
+          "收起",
+          "展开",
+          "收起"
+        ],
+        "announcements": [
+          "代码块已展开",
+          "代码块已折叠"
+        ],
+        "copy": [
+          {
+            "title": "Copy to clipboard",
+            "dataCopied": "Copied!"
+          }
+        ]
+      },
+      "copyLocale": "PASS",
+      "collapseLocale": "FAIL",
+      "monolingualControls": "FAIL"
+    },
+    {
+      "index": 3,
+      "locale": "zh-CN",
+      "controls": {
+        "collapseText": [
+          "展开",
+          "收起",
+          "展开",
+          "收起"
+        ],
+        "announcements": [
+          "代码块已展开",
+          "代码块已折叠"
+        ],
+        "copy": [
+          {
+            "title": "Copy to clipboard",
+            "dataCopied": "Copied!"
+          }
+        ]
+      },
+      "copyLocale": "FAIL",
+      "collapseLocale": "PASS",
+      "monolingualControls": "FAIL"
+    }
+  ]
+}

@@ -2,7 +2,10 @@
 import { Icon } from "astro-icon/components";
 import TypewriterText from "@/components/features/TypewriterText.astro";
 import { backgroundWallpaper } from "@/config";
+import { getTranslation } from "@/i18n/translation";
+import { getPageLocale } from "@/utils/deployment-contract";
 import { encodeMailto, MAILTO_ONCLICK_SCRIPT } from "@/utils/email-utils";
+
 import { url } from "@/utils/url-utils";
 
 interface Props {
@@ -11,7 +14,18 @@ interface Props {
 }
 
 const { showHomeText, initialRandomSubtitle } = Astro.props;
-const homeText = backgroundWallpaper.common?.homeText;
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const originalHomeText = backgroundWallpaper.common?.homeText;
+const homeText = originalHomeText
+	? {
+			...originalHomeText,
+			title: getTranslation(uiLocale).uiWelcome,
+			subtitle:
+				uiLocale === "en"
+					? [getTranslation("en").uiSubtitle]
+					: originalHomeText.subtitle,
+		}
+	: undefined;
 // Keep unconfigured link slots available without rendering empty destinations.
 const homeTextLinks = homeText?.links?.filter((link) => link.url.trim() !== "");
 const homeTextLinksEnable = homeText?.linksEnable !== false;
@@ -35,7 +49,7 @@ const homeTextLinksEnable = homeText?.linksEnable !== false;
                                 pauseTime={homeText.typewriter.pauseTime}
                             />
                         ) : (
-                            initialRandomSubtitle
+                            uiLocale === "en" ? getTranslation("en").uiSubtitle : initialRandomSubtitle
                         )}
                     </div>
                 )}

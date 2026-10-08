@@ -1,0 +1,652 @@
+{
+  "schemaVersion": 1,
+  "state": "LOCAL_ACCEPTANCE_REMOTE_GATES_PENDING",
+  "applicationCandidate": "d83072c6bee4a8a28a71786e5f815eb767634a4c",
+  "rollbackMain": "a7b31c777f415e725eaf4d280da34380b3fc82cd",
+  "priorProduction": "57264e7c833035b751f9e16f2464a2f358fb81fa",
+  "applicationBoundary": "7219a0810d21ed7df37a75f2db5840befc45fc216038f684ef547132bb05de31",
+  "reviewBy": "2026-10-14T14:27:22.000Z",
+  "native": {
+    "tests": 396,
+    "pass": 396,
+    "fail": 0,
+    "skipped": 0,
+    "rawSha256": "0c821ff76c16cb0ccd6b4edc4f8e778421304c661ae387e60a49a954a8b6151c"
+  },
+  "quality": [
+    {
+      "gate": "astro",
+      "exit": 0
+    },
+    {
+      "gate": "types",
+      "exit": 0
+    },
+    {
+      "gate": "biome",
+      "exit": 0
+    },
+    {
+      "gate": "native",
+      "exit": 0
+    },
+    {
+      "gate": "build",
+      "base": "/",
+      "exit": 0
+    },
+    {
+      "gate": "artifacts",
+      "base": "/",
+      "exit": 0
+    },
+    {
+      "gate": "locale",
+      "base": "/",
+      "exit": 0
+    },
+    {
+      "gate": "build",
+      "base": "/Zhenkun-blog-site/",
+      "exit": 0
+    },
+    {
+      "gate": "artifacts",
+      "base": "/Zhenkun-blog-site/",
+      "exit": 0
+    },
+    {
+      "gate": "locale",
+      "base": "/Zhenkun-blog-site/",
+      "exit": 0
+    }
+  ],
+  "http": [
+    {
+      "base": "/",
+      "byteMatches": 73,
+      "files": 273
+    },
+    {
+      "base": "/Zhenkun-blog-site/",
+      "byteMatches": 73,
+      "files": 273
+    }
+  ],
+  "gui": [
+    {
+      "run": "gui-finish-root-serial",
+      "base": "/",
+      "rawSha256": "022433fbe1692b76747d691bb68099b92cd7aab1539a01afd791889975285034",
+      "pageExceptions": 0,
+      "acceptedRecords": [
+        {
+          "name": "browser",
+          "product": "Edg/154.0.4258.62",
+          "headed": true,
+          "visibility": "visible"
+        },
+        {
+          "name": "same-language-swup",
+          "locale": "zh-CN",
+          "roundTrips": 20,
+          "documentIdentityPreserved": true
+        },
+        {
+          "name": "real-pagefind",
+          "locale": "zh-CN",
+          "href": "/about/"
+        },
+        {
+          "name": "same-language-swup",
+          "locale": "en",
+          "roundTrips": 20,
+          "documentIdentityPreserved": true
+        },
+        {
+          "name": "real-pagefind",
+          "locale": "en",
+          "href": "/en/about/"
+        },
+        {
+          "name": "cross-locale-history",
+          "round": 1,
+          "path": "/"
+        },
+        {
+          "name": "cross-locale-history",
+          "round": 2,
+          "path": "/en/"
+        },
+        {
+          "name": "cross-locale-history",
+          "round": 3,
+          "path": "/"
+        },
+        {
+          "name": "mobile-menu-focus",
+          "locale": "zh-CN",
+          "width": 390
+        },
+        {
+          "name": "mobile-menu-focus",
+          "locale": "en",
+          "width": 390
+        },
+        {
+          "name": "reduced-motion"
+        },
+        {
+          "name": "storage-denied-native-switch",
+          "pageErrors": 0
+        },
+        {
+          "name": "no-js",
+          "locale": "en",
+          "anchor": "/about/"
+        },
+        {
+          "name": "real-search-slow-replace-clear",
+          "delayMs": 700
+        },
+        {
+          "name": "real-search-late-navigation"
+        },
+        {
+          "name": "real-search-503",
+          "locale": "en"
+        },
+        {
+          "name": "PASS"
+        }
+      ]
+    },
+    {
+      "run": "gui-finish-body-contract",
+      "base": "/Zhenkun-blog-site/",
+      "rawSha256": "15bcbe2a5c13d0b524a4c79effde59bc0675d3fbd00c39550db5f78d703757f5",
+      "pageExceptions": 0,
+      "acceptedRecords": [
+        {
+          "name": "browser",
+          "product": "Edg/154.0.4258.62",
+          "headed": true,
+          "visibility": "visible"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "zh-CN",
+          "variant": "pair",
+          "width": 1280,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "zh-CN",
+          "variant": "pair",
+          "width": 390,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "zh-CN",
+          "variant": "single",
+          "width": 1280,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "zh-CN",
+          "variant": "single",
+          "width": 390,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "en",
+          "variant": "pair",
+          "width": 1280,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "en",
+          "variant": "pair",
+          "width": 390,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "en",
+          "variant": "single",
+          "width": 1280,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "en",
+          "variant": "single",
+          "width": 390,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "localized-error-view",
+          "locale": "zh-CN"
+        }
+      ]
+    },
+    {
+      "run": "gui-finish-project-error-views",
+      "base": "/Zhenkun-blog-site/",
+      "rawSha256": "4f3836e10855bd5243bc60224050a3daac8b6b901bd67f22c5d088899b0fa99e",
+      "pageExceptions": 0,
+      "acceptedRecords": [
+        {
+          "name": "browser",
+          "product": "Edg/154.0.4258.62",
+          "headed": true,
+          "visibility": "visible"
+        },
+        {
+          "name": "localized-error-view",
+          "locale": "zh-CN"
+        },
+        {
+          "name": "localized-error-view",
+          "locale": "en"
+        },
+        {
+          "name": "PASS"
+        }
+      ]
+    },
+    {
+      "run": "gui-finish-body-root",
+      "base": "/",
+      "rawSha256": "0e8802c4469b19d71a4c22f1ac3c4d4a62b1b9f8a591a2165f8233bd2d3bfe16",
+      "pageExceptions": 0,
+      "acceptedRecords": [
+        {
+          "name": "browser",
+          "product": "Edg/154.0.4258.62",
+          "headed": true,
+          "visibility": "visible"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "zh-CN",
+          "variant": "pair",
+          "width": 1280,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "zh-CN",
+          "variant": "pair",
+          "width": 390,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "zh-CN",
+          "variant": "single",
+          "width": 1280,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "zh-CN",
+          "variant": "single",
+          "width": 390,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "en",
+          "variant": "pair",
+          "width": 1280,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "en",
+          "variant": "pair",
+          "width": 390,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "en",
+          "variant": "single",
+          "width": 1280,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "remaining-article-controls",
+          "locale": "en",
+          "variant": "single",
+          "width": 390,
+          "headerAndOverlayAgree": true,
+          "sectionsNativeDetails": "original github one-way expansion",
+          "copyBlocks": 2,
+          "date": "2026-10-08"
+        },
+        {
+          "name": "localized-error-view",
+          "locale": "zh-CN"
+        },
+        {
+          "name": "localized-error-view",
+          "locale": "en"
+        },
+        {
+          "name": "PASS"
+        }
+      ]
+    },
+    {
+      "run": "gui-finish-common-loader",
+      "base": "/Zhenkun-blog-site/",
+      "rawSha256": "3f9b9e7ba597f2f715b5877602ca912352b8fbd99a074cecf73af1027ae97f47",
+      "pageExceptions": 0,
+      "acceptedRecords": [
+        {
+          "name": "browser",
+          "product": "Edg/154.0.4258.62",
+          "headed": true,
+          "visibility": "visible"
+        },
+        {
+          "name": "display-settings",
+          "locale": "zh-CN",
+          "state": "NOT_APPLICABLE: disabled by approved existing configuration"
+        },
+        {
+          "name": "remaining-common-controls",
+          "locale": "zh-CN",
+          "pages": 8,
+          "themeRoundTrip": true,
+          "settingsTabs": [],
+          "mobileSearchFocus": true
+        },
+        {
+          "name": "display-settings",
+          "locale": "en",
+          "state": "NOT_APPLICABLE: disabled by approved existing configuration"
+        },
+        {
+          "name": "remaining-common-controls",
+          "locale": "en",
+          "pages": 8,
+          "themeRoundTrip": true,
+          "settingsTabs": [],
+          "mobileSearchFocus": true
+        },
+        {
+          "name": "PASS"
+        }
+      ]
+    },
+    {
+      "run": "gui-finish-common-root",
+      "base": "/",
+      "rawSha256": "6d2c752ddafef58f238b845beaa0f1c26003d45e8db030d088a2bd4e8da38e66",
+      "pageExceptions": 0,
+      "acceptedRecords": [
+        {
+          "name": "browser",
+          "product": "Edg/154.0.4258.62",
+          "headed": true,
+          "visibility": "visible"
+        },
+        {
+          "name": "display-settings",
+          "locale": "zh-CN",
+          "state": "NOT_APPLICABLE: disabled by approved existing configuration"
+        },
+        {
+          "name": "remaining-common-controls",
+          "locale": "zh-CN",
+          "pages": 8,
+          "themeRoundTrip": true,
+          "settingsTabs": [],
+          "mobileSearchFocus": true
+        },
+        {
+          "name": "display-settings",
+          "locale": "en",
+          "state": "NOT_APPLICABLE: disabled by approved existing configuration"
+        },
+        {
+          "name": "remaining-common-controls",
+          "locale": "en",
+          "pages": 8,
+          "themeRoundTrip": true,
+          "settingsTabs": [],
+          "mobileSearchFocus": true
+        },
+        {
+          "name": "PASS"
+        }
+      ]
+    },
+    {
+      "run": "gui-final-empty-final",
+      "base": "/Zhenkun-blog-site/",
+      "rawSha256": "142903dfee31cb491fdf1999f65f99e075bbf1c98fe46275fa4b107e760137df",
+      "pageExceptions": 0,
+      "acceptedRecords": [
+        {
+          "name": "browser",
+          "product": "Edg/154.0.4258.62",
+          "headed": true,
+          "visibility": "visible"
+        },
+        {
+          "name": "empty-state-contrast",
+          "locale": "zh-CN",
+          "dark": false,
+          "text": "暂无已发布笔记",
+          "color": "oklab(0 0 0 / 0.75)",
+          "background": "rgb(255, 255, 255)",
+          "worstBackdropContrast": 10.368377760269818,
+          "lang": "zh-CN"
+        },
+        {
+          "name": "empty-state-contrast",
+          "locale": "zh-CN",
+          "dark": true,
+          "text": "暂无已发布笔记",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)",
+          "background": "oklch(0.23 0.015 165)",
+          "worstBackdropContrast": 9.891136903077541,
+          "lang": "zh-CN"
+        },
+        {
+          "name": "empty-state-contrast",
+          "locale": "en",
+          "dark": false,
+          "text": "No English notes have been published yet.",
+          "color": "oklab(0 0 0 / 0.75)",
+          "background": "rgb(255, 255, 255)",
+          "worstBackdropContrast": 10.368377760269818,
+          "lang": "en"
+        },
+        {
+          "name": "empty-state-contrast",
+          "locale": "en",
+          "dark": true,
+          "text": "No English notes have been published yet.",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)",
+          "background": "oklch(0.23 0.015 165)",
+          "worstBackdropContrast": 9.891136903077541,
+          "lang": "en"
+        },
+        {
+          "name": "PASS"
+        }
+      ]
+    },
+    {
+      "run": "gui-final-empty-root",
+      "base": "/",
+      "rawSha256": "146435b798435a56dfef2029871f8517fc2e191119e40b9b530ca7608372507c",
+      "pageExceptions": 0,
+      "acceptedRecords": [
+        {
+          "name": "browser",
+          "product": "Edg/154.0.4258.62",
+          "headed": true,
+          "visibility": "visible"
+        },
+        {
+          "name": "empty-state-contrast",
+          "locale": "zh-CN",
+          "dark": false,
+          "text": "暂无已发布笔记",
+          "color": "oklab(0 0 0 / 0.75)",
+          "background": "rgb(255, 255, 255)",
+          "worstBackdropContrast": 10.368377760269818,
+          "lang": "zh-CN"
+        },
+        {
+          "name": "empty-state-contrast",
+          "locale": "zh-CN",
+          "dark": true,
+          "text": "暂无已发布笔记",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)",
+          "background": "oklch(0.23 0.015 165)",
+          "worstBackdropContrast": 9.891136903077541,
+          "lang": "zh-CN"
+        },
+        {
+          "name": "empty-state-contrast",
+          "locale": "en",
+          "dark": false,
+          "text": "No English notes have been published yet.",
+          "color": "oklab(0 0 0 / 0.75)",
+          "background": "rgb(255, 255, 255)",
+          "worstBackdropContrast": 10.368377760269818,
+          "lang": "en"
+        },
+        {
+          "name": "empty-state-contrast",
+          "locale": "en",
+          "dark": true,
+          "text": "No English notes have been published yet.",
+          "color": "oklab(0.999994 0.0000455678 0.0000200868 / 0.75)",
+          "background": "oklch(0.23 0.015 165)",
+          "worstBackdropContrast": 9.891136903077541,
+          "lang": "en"
+        },
+        {
+          "name": "PASS"
+        }
+      ]
+    }
+  ],
+  "security": {
+    "state": "PASS",
+    "exitCode": 0,
+    "head": "d83072c6bee4a8a28a71786e5f815eb767634a4c",
+    "raw": [
+      {
+        "scope": "prod",
+        "sha256": "df8cfdbd6db1fa3a59ae0a10d4138b611c80edbfb0afacba95e5533a33db4aec",
+        "upstreamVersionAlertsRetained": true
+      },
+      {
+        "scope": "full",
+        "sha256": "53801e3e1e5b371dc91aa24937b9ca03e7576f157c9cbdd37b37b87d4e1b9560",
+        "upstreamVersionAlertsRetained": true
+      }
+    ],
+    "captures": {
+      "prod": {
+        "exitCode": 1,
+        "stdoutSha256": "df8cfdbd6db1fa3a59ae0a10d4138b611c80edbfb0afacba95e5533a33db4aec",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "startedAt": "2026-10-08T07:29:46.572Z",
+        "endedAt": "2026-10-08T07:29:50.138Z"
+      },
+      "full": {
+        "exitCode": 1,
+        "stdoutSha256": "53801e3e1e5b371dc91aa24937b9ca03e7576f157c9cbdd37b37b87d4e1b9560",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "startedAt": "2026-10-08T07:29:50.139Z",
+        "endedAt": "2026-10-08T07:29:51.765Z"
+      }
+    },
+    "repairs": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "unresolved": [],
+    "positive": 62,
+    "officialGeneratorCounterexample": {
+      "tests": 17,
+      "expectedPass": 2,
+      "expectedFail": 15
+    },
+    "repairEvidenceRawSha256": "b237ef5fa8119e658e1b0b7f00ca3719635f50d6e42c6d3b5adeff02ef410f52"
+  },
+  "publication": {
+    "zhArticles": 0,
+    "enArticles": 0,
+    "pagefindAboutPages": 2,
+    "fixtureRoutes": 0,
+    "draftAndPrivateInputsUnchanged": true
+  },
+  "limitations": [
+    "Physical phone untested; mobile uses 390 px viewport",
+    "No approved personal article or actual giscus comment written",
+    "Display-settings panel disabled by existing approved configuration",
+    "Precise remote Linux CI, merge and production acceptance remain pending"
+  ],
+  "evidenceDiscipline": "Private raw logs/profiles/protection receipts and rejected attempts retained locally. This public summary provides original SHA256 without changing raw results."
+}

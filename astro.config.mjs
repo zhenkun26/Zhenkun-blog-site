@@ -12,7 +12,7 @@ import { defineConfig, fontProviders } from "astro/config";
 import expressiveCode from "astro-expressive-code";
 import icon from "astro-icon";
 import { pluginLanguageLogo } from "ec-lang-logo"; /* Language Logo */
-import { pluginCollapsible } from "expressive-code-collapsible"; /* Collapsible */
+import { pluginCollapsibleWithLifecycle } from "./src/plugins/expressive-code-lifecycle"; /* Collapsible */
 import { pluginLanguageBadge } from "expressive-code-language-badge"; /* Language Badge */
 import katex from "katex";
 import "katex/dist/contrib/mhchem.mjs"; // 加载 mhchem 扩展
@@ -41,7 +41,12 @@ import {
 	siteConfig,
 } from "./src/config";
 import I18nKey from "./src/i18n/i18nKey";
-import { i18n } from "./src/i18n/translation";
+import { getTranslation, i18n } from "./src/i18n/translation";
+import {
+	getCodeBlockLocale,
+	pluginCodeLocale,
+	registerCodeLocaleTexts,
+} from "./src/plugins/expressive-code-locale";
 import { GithubCardComponent } from "./src/plugins/rehype-component-github-card.mjs";
 import { rehypeDiagramPanZoom } from "./src/plugins/rehype-diagram-panzoom.mjs";
 import rehypeEmailProtection from "./src/plugins/rehype-email-protection.mjs";
@@ -61,6 +66,8 @@ import { isPageInSitemap } from "./src/utils/deployment-contract.ts";
 import { collectUsedFontCssVars } from "./src/utils/fontHelper";
 import { getApiUrlList, processCoverImageSync } from "./src/utils/image-utils";
 import { assertProductionBuild } from "./src/utils/post-contract.ts";
+
+registerCodeLocaleTexts();
 
 const deploymentBase = process.env.DEPLOY_BASE ?? "/";
 const production = process.env.NODE_ENV !== "development";
@@ -184,6 +191,7 @@ export default defineConfig({
 			},
 		}),
 		expressiveCode({
+			getBlockLocale: getCodeBlockLocale,
 			themes: [expressiveCodeConfig.darkTheme, expressiveCodeConfig.lightTheme],
 			useDarkModeMediaQuery: false,
 			themeCssSelector: (theme) => `[data-theme='${theme.name}']`,
@@ -207,7 +215,7 @@ export default defineConfig({
 				// pluginCollapsible 配置 - 从expressiveCodeConfig读取设置，使用i18n文本
 				...(expressiveCodeConfig.pluginCollapsible?.enable === true
 					? [
-							pluginCollapsible({
+							pluginCollapsibleWithLifecycle({
 								lineThreshold:
 									expressiveCodeConfig.pluginCollapsible.lineThreshold || 15,
 								previewLines:
@@ -222,6 +230,7 @@ export default defineConfig({
 							}),
 						]
 					: []),
+				pluginCodeLocale(),
 			],
 			defaultProps: {
 				wrap: false,
@@ -285,6 +294,10 @@ export default defineConfig({
 						base: deploymentBase,
 						production,
 						coverApi: { getApiUrlList, processCoverImageSync },
+						originalLabels: {
+							zh_CN: getTranslation("zh_CN").uiOpenOriginal,
+							en: getTranslation("en").uiOpenOriginal,
+						},
 					},
 				],
 				remarkImageGrid,

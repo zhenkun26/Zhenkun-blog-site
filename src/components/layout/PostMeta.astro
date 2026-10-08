@@ -2,11 +2,14 @@
 import { Icon } from "astro-icon/components";
 import { commentConfig } from "@/config";
 import I18nKey from "@/i18n/i18nKey";
-import { i18n } from "@/i18n/translation";
+import { createTranslator } from "@/i18n/translation";
 import { formatDateToYYYYMMDD } from "@/utils/date-utils";
+import { getPageLocale } from "@/utils/deployment-contract";
 import { getCategoryUrl, getTagUrl } from "@/utils/url-utils";
 
-export interface Props {
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const i18n = createTranslator(uiLocale);
+interface Props {
 	published: Date;
 	updated?: Date;
 	category?: string;
@@ -123,7 +126,7 @@ const visibleTags =
         </div>
         <div class="flex flex-row flex-nowrap items-center">
           <a
-            href={getCategoryUrl(category || "")}
+            href={getCategoryUrl(category || "", uiLocale)}
             aria-label={`View all posts in the ${category || i18n(I18nKey.uncategorized)} category`}
             class="link-lg transition text-50 text-sm font-medium
               hover:text-(--primary) dark:hover:text-(--primary) whitespace-nowrap"
@@ -160,7 +163,7 @@ const visibleTags =
                   /
                 </div>
                 <a
-                  href={getTagUrl(tag)}
+                  href={getTagUrl(tag, uiLocale)}
                   aria-label={`View all posts with the ${tag.trim()} tag`}
                   class="link-lg transition text-50 text-sm font-medium
                     hover:text-(--primary) dark:hover:text-(--primary) whitespace-nowrap"

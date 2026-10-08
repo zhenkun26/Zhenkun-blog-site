@@ -1,13 +1,17 @@
 import { readdirSync, readFileSync, realpathSync } from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
+import {
+	buildTranslationPairs,
+	normalizeContentLocale,
+} from "./locale-contract.ts";
 import { assertSafePostId, getPostId, isPostVisible } from "./post-contract.ts";
 
 export type WikiPost = {
 	id: string;
 	filePath: string;
 	contentPath: string;
-	data: Record<string, unknown> & { draft?: boolean };
+	data: Record<string, unknown> & { draft?: boolean; private?: boolean };
 	body: string;
 };
 
@@ -99,6 +103,30 @@ export class WikiPostIndex {
 			}
 			ids.set(post.id, post);
 		}
+		for (const post of posts) {
+			normalizeContentLocale(post.data.lang);
+			if (
+				post.data.private !== undefined &&
+				typeof post.data.private !== "boolean"
+			)
+				throw new Error("The private field must be boolean");
+			if (
+				post.data.translationKey !== undefined &&
+				typeof post.data.translationKey !== "string"
+			)
+				throw new Error("The translationKey field must be a string");
+			if (typeof post.data.translationKey === "string")
+				assertSafePostId(post.data.translationKey);
+		}
+		buildTranslationPairs(
+			posts.map((post) => ({
+				id: post.id,
+				locale: normalizeContentLocale(post.data.lang),
+				translationKey: post.data.translationKey as string | undefined,
+				draft: post.data.draft,
+				private: post.data.private,
+			})),
+		);
 		this.posts = posts;
 	}
 

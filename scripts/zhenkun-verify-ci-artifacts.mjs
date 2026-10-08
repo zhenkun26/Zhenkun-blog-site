@@ -11,16 +11,25 @@ export function inspectCiArtifacts(root, base) {
 		"Unsupported CI base",
 	);
 	const directory = resolve(root);
-	const posts = JSON.parse(
+	const chinesePosts = JSON.parse(
 		readFileSync(resolve(directory, "api/allPostMeta.json"), "utf8"),
 	);
-	assert.ok(Array.isArray(posts), "Public post metadata must be an array");
+	const englishPosts = JSON.parse(
+		readFileSync(resolve(directory, "en/api/allPostMeta.json"), "utf8"),
+	);
 	const ids = new Set();
-	for (const post of posts) {
-		assert.equal(typeof post.id, "string", "Public post ID must be a string");
-		assert.ok(!ids.has(post.id), "Duplicate public post ID");
-		ids.add(post.id);
-		assert.ok(post.url.startsWith(`${base}posts/`), "Post URL leaves CI base");
+	for (const [locale, posts, prefix] of [
+		["zh_CN", chinesePosts, base + "posts/"],
+		["en", englishPosts, base + "en/posts/"],
+	]) {
+		assert.ok(Array.isArray(posts), "Public post metadata must be an array");
+		for (const post of posts) {
+			assert.equal(typeof post.id, "string", "Public post ID must be a string");
+			assert.ok(!ids.has(post.id), "Duplicate public post ID");
+			ids.add(post.id);
+			assert.equal(post.lang, locale, "Metadata language does not match route");
+			assert.ok(post.url.startsWith(prefix), "Post URL leaves CI base/locale");
+		}
 	}
 	assert.ok(
 		statSync(resolve(directory, "pagefind/pagefind.js")).size > 0,
@@ -39,7 +48,14 @@ export function inspectCiArtifacts(root, base) {
 			"Pagefind metadata is empty",
 		);
 	}
-	return { publicPosts: posts.length, indexedLanguages: languages.length };
+	return {
+		publicPosts: chinesePosts.length + englishPosts.length,
+		publicPostsByLocale: {
+			zh_CN: chinesePosts.length,
+			en: englishPosts.length,
+		},
+		indexedLanguages: languages.length,
+	};
 }
 
 if (
@@ -51,7 +67,7 @@ if (
 	const root = args.includes("--root")
 		? args[args.indexOf("--root") + 1]
 		: "dist";
-	const { publicPosts } = inspectCiArtifacts(root, base);
+	const { publicPostsByLocale } = inspectCiArtifacts(root, base);
 	const checked = spawnSync(
 		"python3",
 		[
@@ -61,7 +77,8 @@ if (
 			"--base",
 			base,
 			"--expected-posts",
-			String(publicPosts),
+			String(publicPostsByLocale.zh_CN),
+ "--expected-english-posts", String(publicPostsByLocale.en),
 		],
 		{ stdio: "inherit" },
 	);

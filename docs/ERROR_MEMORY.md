@@ -256,3 +256,33 @@
 
 - Upload Auto-review initially rejected authority found only in transferred assistant context. Preserve that refusal. Once original human push/conditional merge/project/audit directions were supplied, exactly one standard review of the identical operation permitted ordinary FF delivery. Do not change client or policy to evade refusal.
 - GitHub rejected the explicit derived noreply address in the first squash author-email parameter before merging. Verify the current account and already-public main author identity, then correct only that parameter and retain head/base/successful-check guards. No private email lookup or account-setting change was needed; ordinary squash succeeded.
+
+### 2026-10-08 — configured block locale is insufficient for monolingual code controls
+
+- Actual current renderer execution succeeds, but explicit concurrent `zh-CN/en/en/zh-CN` still renders Chinese collapse labels/announcements on English blocks and English copy labels on Chinese blocks. Renderer exit0 is execution evidence; the separate language contract is4/4FAIL. Preserve the counterexample rather than accepting empty Home/About as whole-site locale proof.
+- Current Astro7 Satteri document file has path/URL/source, without the older `file.data.astro.frontmatter` shape. The custom collapse plugin closes over creation-time texts; built-in frame text registration must target the actual renderer owner. Inspect these installed interfaces before designing an adapter. Per the bounded S2 stop rule, architecture selection pauses for a narrow coordinator decision; no application fix or second build is accepted here.
+
+### 2026-10-08 — inspect the configured processor before declaring a locale seam blocked
+
+- Correction: the previous configured-renderer counterexample is real, but Satteri was not the site's active processor. Current astro.config explicitly uses unified; its actual EC hook receives file.data.astro.frontmatter. Do not infer active behavior from an unused integration branch.
+- Selected repair direction: static public text registration plus final current-core AST text hook, keeping original plugin scripts. Cross-core hook delegation fails nominal private types and is discarded without casts. Isolated actual pipeline/browser probes pass; preserve their limits and require fresh full-site verification after implementation.
+
+### 2026-10-08 — actual storage denial and article pointer evidence limits
+
+- Real project-base GUI generated13SecurityError exceptions when storage access was rejected, despite native language links continuing to navigate. Optional storage wrappers now catch both getter and method failures; full corresponding GUI rerun has0exceptions.
+- The first whole-site GUI harness expected About me, while the actual English catalog/title is About. Correct the expectation and retain the rejected attempt; this was not a product text failure.
+- Synthetic article pointer journeys subsequently timed out on collapse state. A single-page diagnostic shows correct toggles and large geometry changes, but a bounded settled-coordinate rerun still fails the complete journey. Do not turn that short diagnostic into whole-site PASS or keep retrying blindly. Preserve the three failures, remove only the SHA-owned engineering inputs and escalate the unresolved journey.
+
+
+### 2026-10-08 — whole-body trailing debounce starves post-Swup collapse binding
+
+- Instrumented reproduction on9ad3a2b output: initial native controls work; after Home/article replacement, real pointer hits the returned expand span with no data-init. The observer remains connected to the current body but sees86 typewriter changes; binding eventually occurs after the unrelated text pause, too late for the user's click. A standalone Swup fragment lacking that animation cannot validate this contract.
+- Fix only relevant inserted collapse elements using the installed plugin's original initializer; keep the source-fragment guard and deterministic original counterexample. Both complete4variant ×3round-trip browser journeys now pass, with original three failures and new diagnosis retained. Do not infer all old uninstrumented timeouts had this cause, or replace the full journey with a short single-page probe.
+- Verification-controller correction: locale-audit CLI accepts an output filename, not --base. Both actual-dist16page assertion runs executed successfully, but the second JSON replaced the first under an owned --base filename. Final JSON moved into ignored evidence; root assertion stdout retained. Future calls must pass unique output paths. No product behavior or assertion changed.
+
+
+### 2026-10-08 — final S2 whole-site verification and empty-state readability
+
+- Preserve first concurrent headed-window transition/header timeouts. Serial foreground diagnostics and actual contracts pass; do not run two native headed profiles concurrently or accept stale document.readyState as navigation completion. Wait for the exact CDP loader and relevant island hydration.
+- The installed sections github style hides its summary after expansion; an invented second-click assertion tested a nonexistent contract. English error output is /en/404/, not /en/404.html. Display settings are disabled; do not activate or invent controls to satisfy a harness.
+- Inspected final dark screenshot reveals black empty-state text. Reuse existing text-75 theme color; verify actual paragraph (an inline script follows PostPage before it), parse CSS Color4 with browser Canvas rather than decimal RGB guesses, and retain wrong-selector/parser attempts. Final contrast exceeds9.8 on both languages/themes. Applicable final396native/quality/dual-base/security/HTTP gates rerun on changed source without renewing deadlines.

@@ -2,11 +2,16 @@
 import ButtonLink from "@/components/common/ButtonLink.astro";
 import WidgetLayout from "@/components/common/WidgetLayout.astro";
 import I18nKey from "@/i18n/i18nKey";
-import { i18n } from "@/i18n/translation";
+import { createTranslator } from "@/i18n/translation";
 import type { WidgetComponentConfig } from "@/types/config";
 import { getCategoryList } from "@/utils/content-utils";
+import { getPageLocale } from "@/utils/deployment-contract";
+import { localePath } from "@/utils/locale-contract";
 
-const categories = await getCategoryList();
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const i18n = createTranslator(uiLocale);
+
+const categories = await getCategoryList(uiLocale);
 
 const COLLAPSED_HEIGHT = "7.5rem";
 

@@ -1,0 +1,37 @@
+---
+import { siteConfig } from "@/config";
+import { getTranslation } from "@/i18n/translation";
+import { getLogicalPathname, getPageLocale } from "@/utils/deployment-contract";
+import { withDeploymentBase } from "@/utils/post-contract";
+import { getPublicLocalePaths } from "@/utils/zhenkun-public-locales";
+
+const base = import.meta.env.BASE_URL;
+const path = getLogicalPathname(Astro.url.pathname, base) ?? "/";
+const locale = getPageLocale(Astro.url.pathname, base);
+const text = getTranslation(locale);
+const paths = await getPublicLocalePaths(
+	path,
+	siteConfig.pagination.postsPerPage,
+);
+const chinese = paths.zh_CN;
+const english = paths.en;
+const target = locale === "en" ? "zh_CN" : "en";
+const unavailable = !paths[target];
+---
+<nav data-language-switch aria-label={text.uiLanguage} class="flex items-center gap-1 shrink-0 text-xs md:text-sm">
+  <a data-locale-choice="zh_CN" data-no-swup lang="zh-CN" href={chinese ? withDeploymentBase(chinese, base) : undefined} aria-disabled={chinese ? undefined : "true"} aria-describedby={!chinese ? "locale-missing" : undefined} tabindex={chinese ? undefined : "0"} aria-current={locale === "zh_CN" ? "true" : undefined} class="btn-plain rounded-md px-1.5 py-2 font-medium focus-visible:outline-2 focus-visible:outline-offset-2">中文</a>
+  <span aria-hidden="true">/</span>
+  <a data-locale-choice="en" data-no-swup lang="en" href={english ? withDeploymentBase(english, base) : undefined} aria-current={locale === "en" ? "true" : undefined} aria-disabled={english ? undefined : "true"} aria-describedby={!english ? "locale-missing" : undefined} tabindex={english ? undefined : "0"} class="btn-plain rounded-md px-1.5 py-2 font-medium focus-visible:outline-2 focus-visible:outline-offset-2">EN</a>
+  <span id="locale-missing" hidden={!unavailable} class="sr-only">{target === "en" ? text.uiMissing : text.uiMissingChinese}</span>
+  <a data-locale-home data-no-swup href={withDeploymentBase(target === "en" ? "/en/" : "/", base)} hidden={!unavailable} class="btn-plain rounded-md px-1.5 py-2 text-xs">{target === "en" ? text.uiEnglishHome : text.uiChineseHome}</a>
+</nav>
+
+<script>
+  import { initializeLanguageSwitch } from "@/utils/locale-preference";
+  initializeLanguageSwitch(import.meta.env.BASE_URL);
+</script>
+
+<style>
+  [aria-current="true"] { color: var(--primary); text-decoration: underline; text-underline-offset: 0.3em; }
+  [aria-disabled="true"] { opacity: 0.5; cursor: default; }
+</style>

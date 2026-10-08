@@ -1,0 +1,42 @@
+---
+import { getEntry, render } from "astro:content";
+import Markdown from "@components/common/Markdown.astro";
+import { profileConfig, siteConfig } from "@/config";
+import I18nKey from "@/i18n/i18nKey";
+import { createTranslator } from "@/i18n/translation";
+import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import {
+	getDeploymentCanonicalUrl,
+	getPageLocale,
+} from "@/utils/deployment-contract";
+import { assertContentLocale } from "@/utils/locale-contract";
+import { ENGLISH_BIO } from "@/utils/locale-pages";
+import { getAuthorAvatarUrl } from "@/utils/schema-image";
+import { buildProfilePage } from "@/utils/schema-utils";
+
+const locale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const i18n = createTranslator(locale);
+const bio = locale === "en" ? ENGLISH_BIO : profileConfig.bio;
+const aboutPost = await getEntry(
+	"spec",
+	locale === "en" ? "about-en" : "about",
+);
+if (!aboutPost) throw new Error("About page content not found");
+assertContentLocale(aboutPost.data.lang, locale);
+const { Content } = await render(aboutPost);
+const jsonLd = buildProfilePage({
+	site: siteConfig.site_url,
+	profileConfig,
+	authorUrl: getDeploymentCanonicalUrl(Astro.url, import.meta.env.BASE_URL),
+	avatarUrl: await getAuthorAvatarUrl(),
+	description: bio,
+});
+---
+<MainGridLayout title={i18n(I18nKey.about)} description={bio}>
+  <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <div class="flex w-full rounded-(--radius-large) overflow-hidden relative min-h-32">
+    <div class="card-base z-10 px-9 py-6 relative w-full">
+      <Markdown class="mt-2"><Content /></Markdown>
+    </div>
+  </div>
+</MainGridLayout>

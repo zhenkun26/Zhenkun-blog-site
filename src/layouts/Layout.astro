@@ -12,7 +12,8 @@ import MusicPlayerView from "@components/features/MusicPlayerView.astro";
 import SakuraEffect from "@components/features/SakuraEffect.astro";
 import WavesEffect from "@components/features/WavesEffect.astro";
 import ConfigCarrier from "@components/layout/ConfigCarrier.astro";
-
+import StorageFallback from "@/components/features/zhenkun-Storage.astro";
+import MissingTranslationNotice from "@/components/layout/MissingTranslationNotice.astro";
 import {
 	analyticsConfig,
 	backgroundWallpaper,
@@ -31,13 +32,24 @@ import {
 	PAGE_WIDTH,
 } from "@/constants/constants";
 import { defaultFavicons } from "@/constants/icon";
+import { getTranslation } from "@/i18n/translation";
 import type { Favicon } from "@/types/config";
-import { getGeneratedOgUrl } from "@/utils/deployment-contract";
+import {
+	getGeneratedOgUrl,
+	getLogicalPathname,
+	getPageLocale,
+} from "@/utils/deployment-contract";
 import { isHomePage } from "@/utils/layout-utils";
+import { htmlLocale, localePath } from "@/utils/locale-contract";
+import { ENGLISH_BIO } from "@/utils/locale-pages";
 import { getAuthorAvatarUrl, getSiteLogo } from "@/utils/schema-image";
 import { buildSiteGraph, toAbsoluteUrl } from "@/utils/schema-utils";
 import { getOgLocale } from "@/utils/site-config-utils";
 import { getCanonicalUrl, url } from "@/utils/url-utils";
+import {
+	getLocaleAlternates,
+	getPublicLocalePaths,
+} from "@/utils/zhenkun-public-locales";
 
 import "@/styles/main.css";
 import "@/styles/immersive-reading.css";
@@ -100,12 +112,30 @@ const navbarPanelBlur = Math.max(
 	NAVBAR_PANEL_MIN_BLUR,
 );
 
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const localizedDescription =
+	uiLocale === "en" ? ENGLISH_BIO : siteConfig.description;
+const localizedSubtitle =
+	uiLocale === "en" ? getTranslation("en").uiSubtitle : siteConfig.subtitle;
+const localizedKeywords =
+	uiLocale === "en"
+		? ["AI", "Atmospheric science", "Everyday life"]
+		: siteConfig.keywords;
+const localePaths = await getPublicLocalePaths(
+	getLogicalPathname(Astro.url.pathname, import.meta.env.BASE_URL) ?? "/",
+	siteConfig.pagination.postsPerPage,
+);
+const alternates = getLocaleAlternates(
+	localePaths,
+	Astro.site ?? siteConfig.site_url,
+	import.meta.env.BASE_URL,
+);
 let pageTitle: string;
 if (title) {
 	pageTitle = `${title} - ${siteConfig.title}`;
 } else {
-	pageTitle = siteConfig.subtitle
-		? `${siteConfig.title} - ${siteConfig.subtitle}`
+	pageTitle = localizedSubtitle
+		? `${siteConfig.title} - ${localizedSubtitle}`
 		: siteConfig.title;
 }
 
@@ -117,7 +147,7 @@ const appleTouchIcon =
 
 // const siteLang = siteConfig.lang.replace('_', '-')
 if (!lang) {
-	lang = `${siteConfig.lang}`;
+	lang = htmlLocale(uiLocale);
 }
 const siteLang = lang.replace("_", "-");
 
@@ -125,7 +155,10 @@ const siteLang = lang.replace("_", "-");
 const avatarUrl = await getAuthorAvatarUrl();
 // 作者个人页（/about/）绝对 URL，作为 Person.url
 const aboutUrl =
-	toAbsoluteUrl("/about/", siteConfig.site_url) ?? siteConfig.site_url;
+	toAbsoluteUrl(
+		uiLocale === "en" ? "/en/about/" : "/about/",
+		siteConfig.site_url,
+	) ?? siteConfig.site_url;
 // 站点 publisher logo（Organization.logo），用于首页 @graph 的 Organization 节点
 const siteLogo = await getSiteLogo();
 
@@ -162,6 +195,7 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
 <!doctype html>
 <html lang={siteLang} class="bg-(--page-bg) text-[14px] md:text-[16px]" data-wallpaper-mode={backgroundWallpaper.mode} data-fullscreen-layout={fullscreenLayout} data-has-wallpaper={hasWallpaper ? "" : undefined} data-tag-style={siteConfig.tagStyle ?? "pill"} data-category-style={siteConfig.categoryStyle ?? "rectangle"}>
   <head>
+<StorageFallback />
     <meta charset="UTF-8" />
     <style is:inline>
 			@layer properties, theme, base, components, utilities;
@@ -196,23 +230,24 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
     <title>{pageTitle}</title>
     <meta
       name="description"
-      content={description || siteConfig.description || pageTitle}
+      content={description || localizedDescription || pageTitle}
     />
     {
-      siteConfig.keywords && siteConfig.keywords.length > 0 && (
-        <meta name="keywords" content={siteConfig.keywords.join(", ")} />
+      localizedKeywords && localizedKeywords.length > 0 && (
+        <meta name="keywords" content={localizedKeywords.join(", ")} />
       )
     }
     <meta name="author" content={profileConfig.name} />
 
     <link rel="canonical" href={canonicalUrl} />
+    {alternates.map(({ lang, href }) => <link rel="alternate" hreflang={lang} href={href} />)}
     <meta property="og:site_name" content={siteConfig.title} />
     <meta property="og:locale" content={getOgLocale(lang)} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={pageTitle} />
     <meta
       property="og:description"
-      content={description || siteConfig.description || pageTitle}
+      content={description || localizedDescription || pageTitle}
     />
     {ogImageUrl && <meta property="og:image" content={ogImageUrl} />}
     {ogImageUrl && ogImageWidth && <meta property="og:image:width" content={String(ogImageWidth)} />}
@@ -233,7 +268,7 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
     <meta name="twitter:title" content={pageTitle} />
     <meta
       name="twitter:description"
-      content={description || siteConfig.description || pageTitle}
+      content={description || localizedDescription || pageTitle}
     />
 
     {
@@ -244,8 +279,10 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
           set:html={JSON.stringify(
             buildSiteGraph({
               site: siteConfig.site_url,
-              siteConfig,
-              profileConfig,
+              siteConfig: { ...siteConfig, description: localizedDescription },
+              profileConfig: { ...profileConfig, bio: uiLocale === "en" ? ENGLISH_BIO : profileConfig.bio },
+              homePath: uiLocale === "en" ? "/en/" : "/",
+              includeSearchAction: true,
               lang: siteLang,
               authorUrl: aboutUrl,
               avatarUrl,
@@ -367,7 +404,7 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
       const SYSTEM_MODE = "system";
 
       // 获取存储的主题，如果没有则使用默认值
-      const theme = localStorage.getItem("theme") || defaultMode;
+      const theme = window.__zhenkunStorage.getItem("theme") || defaultMode;
 
       // 获取系统主题
       function getSystemTheme() {
@@ -401,11 +438,11 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
       );
 
       // Load the hue from local storage
-      const hue = localStorage.getItem("hue") || configHue;
+      const hue = window.__zhenkunStorage.getItem("hue") || configHue;
       document.documentElement.style.setProperty("--hue", hue);
 
       // 设置卡片透明度（全屏透明模式下使用），优先使用用户自定义值
-      const storedCardOpacity = localStorage.getItem("overlayCardOpacity");
+      const storedCardOpacity = window.__zhenkunStorage.getItem("overlayCardOpacity");
       const parsedCardOpacity = storedCardOpacity === null ? NaN : Number.parseFloat(storedCardOpacity);
       const resolvedCardOpacity = Number.isFinite(parsedCardOpacity)
         ? Math.min(1, Math.max(0, parsedCardOpacity))
@@ -413,7 +450,7 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
       document.documentElement.style.setProperty("--card-transparent-opacity", String(resolvedCardOpacity));
 
       // 初始化全屏布局：优先使用设置面板保存的运行时选择
-      const storedFullscreenLayout = localStorage.getItem("fullscreenLayout");
+      const storedFullscreenLayout = window.__zhenkunStorage.getItem("fullscreenLayout");
       const resolvedFullscreenLayout =
         storedFullscreenLayout === "hero" || storedFullscreenLayout === "classic"
           ? storedFullscreenLayout
@@ -427,7 +464,7 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
 
       // 初始化壁纸模式 - 在页面渲染前同步应用（其余布局由 CSS 属性选择器接管）
       const wallpaperMode = isWallpaperSwitchable
-        ? localStorage.getItem("wallpaperMode") || defaultWallpaperMode
+        ? window.__zhenkunStorage.getItem("wallpaperMode") || defaultWallpaperMode
         : defaultWallpaperMode;
 
       // 设置data-wallpaper-mode属性
@@ -452,7 +489,7 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
 
       // 初始化水波纹动画状态 - 在 html 元素上设置属性，CSS 会立即生效
       (function applyWavesEnabled() {
-        const wavesEnabled = localStorage.getItem("wavesEnabled");
+        const wavesEnabled = window.__zhenkunStorage.getItem("wavesEnabled");
         if (wavesEnabled !== null) {
           document.documentElement.setAttribute("data-waves-enabled", wavesEnabled);
         }
@@ -460,7 +497,7 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
 
       // 初始化渐变过渡状态 - 在 html 元素上设置属性，CSS 会立即生效
       (function applyGradientEnabled() {
-        const gradientEnabled = localStorage.getItem("gradientEnabled");
+        const gradientEnabled = window.__zhenkunStorage.getItem("gradientEnabled");
         if (gradientEnabled !== null) {
           document.documentElement.setAttribute("data-gradient-enabled", gradientEnabled);
         }
@@ -468,7 +505,7 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
 
       // 初始化横幅标题显示状态 - 在 html 元素上设置属性，CSS 会立即生效
       (function applyBannerTitleEnabled() {
-        const bannerTitleEnabled = localStorage.getItem("bannerTitleEnabled");
+        const bannerTitleEnabled = window.__zhenkunStorage.getItem("bannerTitleEnabled");
         if (bannerTitleEnabled !== null) {
           document.documentElement.setAttribute("data-banner-title-enabled", bannerTitleEnabled);
         }
@@ -492,7 +529,7 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
       rel="alternate"
       type="application/rss+xml"
       title={profileConfig.name}
-      href={`${Astro.site}rss.xml`}
+      href={new URL(url(localePath("/rss.xml", uiLocale)), Astro.site).toString()}
     />
 
     <!-- Font Setup (Astro Font API) -->
@@ -530,12 +567,12 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
       defaultFollowTheme: siteConfig.card?.followTheme ?? false,
     }}>
       (function() {
-        var stored = localStorage.getItem("cardBorderEnabled");
+        var stored = window.__zhenkunStorage.getItem("cardBorderEnabled");
         var border = stored !== null ? stored === "true" : defaultBorder;
         if (border) document.documentElement.classList.add("enable-card-border");
         else document.documentElement.classList.remove("enable-card-border");
 
-        stored = localStorage.getItem("cardFollowThemeEnabled");
+        stored = window.__zhenkunStorage.getItem("cardFollowThemeEnabled");
         var follow = stored !== null ? stored === "true" : defaultFollowTheme;
         if (follow) document.body.classList.add("card-follow-theme-hue");
         else document.body.classList.remove("card-follow-theme-hue");
@@ -546,6 +583,7 @@ const ogImageAlt = propsOgImageAlt ?? pageTitle;
     {shouldShowTopHighlight && <div class="top-gradient-highlight" />}
     <ConfigCarrier />
     <MusicManager />
+    <MissingTranslationNotice />
     <slot />
 
     <!-- 播放器视图脚本：必须在 <slot /> 之后（解析到它时所有 widget 的 DOM 要已存在），

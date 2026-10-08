@@ -1,4 +1,12 @@
 ---
+import type { UiLocale } from "@/utils/locale-contract";
+
+interface Props {
+	locale?: UiLocale;
+	term?: string;
+}
+const { locale = "zh_CN", term } = Astro.props;
+
 import { commentConfig } from "@/config";
 
 if (!commentConfig?.giscus) {
@@ -20,20 +28,21 @@ const darkTheme = "dark";
   repoId={giscus.repoId}
   category={giscus.category}
   categoryId={giscus.categoryId}
-  mapping={giscus.mapping}
+  mapping={term ? "specific" : giscus.mapping}
+  term={term}
   strict={giscus.strict}
   reactionsEnabled={giscus.reactionsEnabled}
   emitMetadata={giscus.emitMetadata}
   inputPosition={giscus.inputPosition}
   theme={lightTheme}
-  lang={giscus.lang}
+  lang={locale === "en" ? "en" : "zh-CN"}
   loading={giscus.loading}
 />
 
-<script is:inline define:vars={{ lightTheme, darkTheme }}>
+<script is:inline define:vars={{ lightTheme, darkTheme, hasArticleTerm: !!term }}>
   const requestedPath = new URLSearchParams(window.location.search).get("path");
   const widget = document.querySelector("giscus-widget");
-  if (requestedPath && widget) {
+  if (requestedPath && !hasArticleTerm && widget) {
     widget.setAttribute("mapping", "specific");
     widget.setAttribute("term", requestedPath);
   }

@@ -2,8 +2,14 @@
 import { Icon } from "astro-icon/components";
 import ImageWrapper from "@/components/common/ImageWrapper.astro";
 import { profileConfig } from "@/config/profileConfig";
+import { getTranslation } from "@/i18n/translation";
+import { getPageLocale } from "@/utils/deployment-contract";
 import { encodeMailto, MAILTO_ONCLICK_SCRIPT } from "@/utils/email-utils";
+import { ENGLISH_BIO } from "@/utils/locale-pages";
 import { url } from "@/utils/url-utils";
+
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const text = getTranslation(uiLocale);
 
 interface Props {
 	class?: string;
@@ -15,8 +21,8 @@ const className = Astro.props.class;
 
 <div class:list={["card-base", "p-3", className]} style={style}>
   <a
-    aria-label="Go to About Page"
-    href={url("/about/")}
+    aria-label={text.uiAbout}
+    href={url(uiLocale === "en" ? "/en/about/" : "/about/")}
     class="group block relative mx-auto mt-1 lg:mx-0 lg:mt-0 mb-3
        max-w-48 lg:max-w-none overflow-hidden rounded-xl active:scale-95"
   >
@@ -31,7 +37,7 @@ const className = Astro.props.class;
     </div>
     <ImageWrapper
       src={profileConfig.avatar || ""}
-      alt="Profile Image of the Author"
+      alt={text.uiAvatar}
       class="profile-avatar-image mx-auto lg:w-full h-full lg:mt-0"
       loading="eager"
       fetchpriority="high"
@@ -50,7 +56,7 @@ const className = Astro.props.class;
     >
     </div>
     <div class="text-center text-neutral-400 mb-2.5 transition">
-      {profileConfig.bio}
+      {uiLocale === "en" ? ENGLISH_BIO : profileConfig.bio}
     </div>
         <div class="flex flex-wrap gap-2 justify-center mb-1">
             {profileConfig.links.length > 1 && profileConfig.links.map(item =>
@@ -62,15 +68,15 @@ const className = Astro.props.class;
 
                     if (item.url.startsWith("mailto:")) {
                         const encodedEmail = encodeMailto(item.url);
-                        return <a rel="me" aria-label={item.name} href="#" data-encoded-email={encodedEmail} onclick={MAILTO_ONCLICK_SCRIPT},
+                        return <a rel="me" aria-label={item.url.startsWith("mailto:") ? text.uiEmail : item.name} href="#" data-encoded-email={encodedEmail} onclick={MAILTO_ONCLICK_SCRIPT},
                                     class={className}>
                             <Icon name={item.icon} class="text-[1.5rem]"></Icon>
-                            {showName && item.name}
+                            {showName && (item.url.startsWith("mailto:") ? text.uiEmail : item.name)}
                         </a>
                     } else {
-                        return <a rel="me" aria-label={item.name} href={url(item.url)} target="_blank" class={className}>
+                        return <a rel="me" aria-label={item.url.startsWith("mailto:") ? text.uiEmail : item.name} href={url(item.url)} target="_blank" class={className}>
                             <Icon name={item.icon} class="text-[1.5rem]"></Icon>
-                            {showName && item.name}
+                            {showName && (item.url.startsWith("mailto:") ? text.uiEmail : item.name)}
                         </a>
                     }
                     }
@@ -78,16 +84,16 @@ const className = Astro.props.class;
             {profileConfig.links.length == 1 && (function(item){
                 if (item.url.startsWith("mailto:")) {
                         const encodedEmail = encodeMailto(item.url);
-                        return <a rel="me" aria-label={item.name} href="#" data-encoded-email={encodedEmail} onclick={MAILTO_ONCLICK_SCRIPT},
+                        return <a rel="me" aria-label={item.url.startsWith("mailto:") ? text.uiEmail : item.name} href="#" data-encoded-email={encodedEmail} onclick={MAILTO_ONCLICK_SCRIPT},
                                     class="btn-regular rounded-lg h-10 gap-2 px-3 font-bold active:scale-95">
                             <Icon name={item.icon} class="text-[1.5rem]"></Icon>
-                            {item.name}
+                            {item.url.startsWith("mailto:") ? text.uiEmail : item.name}
                         </a>
                     } else {
-                        return <a rel="me" aria-label={item.name} href={url(item.url)} target="_blank"
+                        return <a rel="me" aria-label={item.url.startsWith("mailto:") ? text.uiEmail : item.name} href={url(item.url)} target="_blank"
                                             class="btn-regular rounded-lg h-10 gap-2 px-3 font-bold active:scale-95">
                                 <Icon name={item.icon} class="text-[1.5rem]"></Icon>
-                                {item.name}
+                                {item.url.startsWith("mailto:") ? text.uiEmail : item.name}
                             </a>
                     }
             })(profileConfig.links[0])}

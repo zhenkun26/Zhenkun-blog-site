@@ -1,5 +1,6 @@
 import type { ProfileConfig, SiteConfig } from "@/types/config";
 import { getLogicalRouteUrl } from "./deployment-contract";
+import { normalizeUiLocale } from "./locale-contract";
 import { getSearchUrl, url } from "./url-utils";
 
 /**
@@ -155,11 +156,18 @@ export function buildSiteGraph(opts: {
 	siteConfig: SiteConfig;
 	profileConfig: ProfileConfig;
 	lang: string;
+	homePath?: string;
+	includeSearchAction?: boolean;
 	authorUrl: string;
 	avatarUrl?: string | null;
 	logo?: { url: string; width?: number; height?: number } | null;
 }): Record<string, unknown> {
 	const siteUrl = resolveSiteRoot(opts.site);
+	const localizedHome = getLogicalRouteUrl(
+		opts.homePath ?? "/",
+		opts.site,
+		import.meta.env.BASE_URL,
+	);
 	const person = buildPersonEntity({
 		site: siteUrl,
 		profileConfig: opts.profileConfig,
@@ -173,27 +181,31 @@ export function buildSiteGraph(opts: {
 		logo: opts.logo,
 	});
 	// 站点搜索页 /search/?q=，供 Sitelinks Search Box 使用
-	const searchTarget = `${new URL(getSearchUrl(""), siteUrl).toString()}{search_term_string}`;
+	const searchTarget = `${new URL(getSearchUrl("", normalizeUiLocale(opts.lang ?? "") ?? "zh_CN"), siteUrl).toString()}{search_term_string}`;
 
 	return {
 		"@context": "https://schema.org",
 		"@graph": [
 			{
 				"@type": "WebSite",
-				"@id": `${siteUrl}#website`,
-				url: siteUrl,
+				"@id": `${localizedHome}#website`,
+				url: localizedHome,
 				name: opts.siteConfig.title,
 				description: opts.siteConfig.description,
 				inLanguage: opts.lang,
 				publisher: { "@id": `${siteUrl}#person` },
-				potentialAction: {
-					"@type": "SearchAction",
-					target: {
-						"@type": "EntryPoint",
-						urlTemplate: searchTarget,
-					},
-					"query-input": "required name=search_term_string",
-				},
+				...(opts.includeSearchAction !== false
+					? {
+							potentialAction: {
+								"@type": "SearchAction",
+								target: {
+									"@type": "EntryPoint",
+									urlTemplate: searchTarget,
+								},
+								"query-input": "required name=search_term_string",
+							},
+						}
+					: {}),
 			},
 			person,
 			publisher,

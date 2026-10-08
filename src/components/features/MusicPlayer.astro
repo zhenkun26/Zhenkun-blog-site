@@ -2,7 +2,11 @@
 import { Icon } from "astro-icon/components";
 import { musicPlayerConfig } from "@/config/musicConfig";
 import I18nKey from "@/i18n/i18nKey";
-import { i18n } from "@/i18n/translation";
+import { createTranslator } from "@/i18n/translation";
+import { getPageLocale } from "@/utils/deployment-contract";
+
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const i18n = createTranslator(uiLocale);
 
 interface Props {
 	class?: string;

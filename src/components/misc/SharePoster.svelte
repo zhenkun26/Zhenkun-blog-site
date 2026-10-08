@@ -5,8 +5,10 @@ import { siteConfig } from "@/config";
 import iconsData from "@/constants/icons-data.json";
 import { url as withBase } from "@/utils/url-utils";
 import I18nKey from "../../i18n/i18nKey";
-import { i18n } from "../../i18n/translation";
+import { createTranslator } from "../../i18n/translation";
 
+export let locale: import("@/utils/locale-contract").UiLocale = "zh_CN";
+const i18n = (key: I18nKey) => createTranslator(locale)(key);
 export let title: string;
 export let author: string;
 export let description = "";

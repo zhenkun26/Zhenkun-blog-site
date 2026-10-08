@@ -8,9 +8,10 @@ export function formatDateToYYYYMMDD(date: Date): string {
 export function formatDateI18n(
 	dateInput: Date | string,
 	includeTime?: boolean,
+	localeOverride?: string,
 ): string {
 	const date = typeof dateInput === "string" ? new Date(dateInput) : dateInput;
-	const lang = siteConfig.lang || "en";
+	const lang = localeOverride || siteConfig.lang || "en";
 
 	// 根据语言设置不同的日期格式
 	const options: Intl.DateTimeFormatOptions = {
@@ -55,8 +56,11 @@ export function formatDateI18n(
 }
 
 // 国际化日期时间格式化函数（带时分秒）
-export function formatDateI18nWithTime(dateInput: Date | string): string {
-	return formatDateI18n(dateInput, true);
+export function formatDateI18nWithTime(
+	dateInput: Date | string,
+	localeOverride?: string,
+): string {
+	return formatDateI18n(dateInput, true, localeOverride);
 }
 
 export function formatDynamicDate(dateInput: Date | string): string {

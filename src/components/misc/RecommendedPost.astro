@@ -2,11 +2,14 @@
 import { Icon } from "astro-icon/components";
 import { siteConfig } from "@/config/siteConfig";
 import I18nKey from "@/i18n/i18nKey";
-import { i18n } from "@/i18n/translation";
+import { createTranslator } from "@/i18n/translation";
 import type { PostForList } from "@/utils/content-utils";
 import { formatDateToYYYYMMDD } from "@/utils/date-utils";
+import { getPageLocale } from "@/utils/deployment-contract";
 import { getPostUrlBySlug, url } from "@/utils/url-utils";
 
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const i18n = createTranslator(uiLocale);
 interface Props {
 	relatedPosts: PostForList[];
 	currentPostId: string;
@@ -48,7 +51,7 @@ const noRandomPostsText = i18n(I18nKey.noRandomPosts);
     {relatedPosts.length > 0 ? (
       relatedPosts.map((post, idx) => (
         <a
-          href={getPostUrlBySlug(post.id)}
+          href={getPostUrlBySlug(post.id, uiLocale)}
           class:list={[
             "group flex items-center gap-3 px-3 py-3 -mx-1 rounded-lg",
             "transition-all hover:bg-black/5 dark:hover:bg-white/5 active:scale-[0.98]",

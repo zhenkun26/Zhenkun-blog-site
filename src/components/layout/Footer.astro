@@ -2,7 +2,14 @@
 import fs from "node:fs";
 import path from "node:path";
 import { footerConfig, profileConfig } from "@/config";
+import { getTranslation } from "@/i18n/translation";
+import { getPageLocale } from "@/utils/deployment-contract";
+import { localePath } from "@/utils/locale-contract";
+
 import { url } from "@/utils/url-utils";
+
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const text = getTranslation(uiLocale);
 
 const currentYear = new Date().getFullYear();
 
@@ -43,22 +50,22 @@ if (footerConfig.enable) {
     </div>
     <div class="mx-0.5 my-2.5 flex gap-x-2 gap-y-2.5 justify-center flex-wrap">
       &copy; <span id="copyright-year">{currentYear}</span>
-      {profileConfig.name}. All Rights Reserved.
+      {profileConfig.name} · {text.uiCopyright}
       <span aria-hidden="true">/</span>
       <a
         class="transition link text-(--primary) font-medium"
         target="_blank"
-        href={url("rss.xml")}>RSS</a
+        href={url(localePath("/rss.xml", uiLocale))}>RSS</a
       >
       <span aria-hidden="true">/</span>
       <a
         class="transition link text-(--primary) font-medium"
         target="_blank"
-        href={url("sitemap-index.xml")}>Sitemap</a
+        href={url("sitemap-index.xml")}>{text.uiSitemap}</a
       >
     </div>
     <div class="mx-0.5 my-2.5 flex gap-x-2 gap-y-2.5 justify-center flex-wrap">
-      <span>Powered by</span>
+      <span>{text.uiPoweredBy}</span>
       <a
         class="transition link text-(--primary) font-medium"
         target="_blank"
@@ -70,6 +77,7 @@ if (footerConfig.enable) {
         target="_blank"
         href="https://github.com/CuteLeaf/Firefly">Firefly</a
       >
+      <span>{text.uiPoweredSuffix}</span>
     </div>
     <!-- 
       注意：请勿随意修改或删除 "Powered by Astro & Firefly" 部分，这是对开源项目的尊重和支持。

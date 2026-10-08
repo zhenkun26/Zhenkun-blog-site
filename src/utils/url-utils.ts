@@ -1,6 +1,7 @@
 import I18nKey from "@i18n/i18nKey";
-import { i18n } from "@i18n/translation";
+import { createTranslator } from "@i18n/translation";
 import { getDeploymentCanonicalUrl } from "./deployment-contract";
+import { localePath, type UiLocale } from "./locale-contract";
 import { getPostPath, withDeploymentBase } from "./post-contract";
 
 /**
@@ -35,23 +36,40 @@ function joinUrl(...parts: string[]): string {
 	return joined.replace(/\/+/g, "/");
 }
 
-export function getPostUrlBySlug(slug: string): string {
-	return withDeploymentBase(getPostPath(slug), import.meta.env.BASE_URL);
+export function getPostUrlBySlug(
+	slug: string,
+	locale: UiLocale = "zh_CN",
+): string {
+	return withDeploymentBase(
+		localePath(getPostPath(slug), locale),
+		import.meta.env.BASE_URL,
+	);
 }
 
-export function getTagUrl(tag: string): string {
-	if (!tag) return url("/archive/");
-	return url(`/archive/?tag=${encodeURIComponent(tag.trim())}`);
+export function getTagUrl(tag: string, locale: UiLocale = "zh_CN"): string {
+	if (!tag) return url(localePath("/archive/", locale));
+	return url(
+		localePath(`/archive/?tag=${encodeURIComponent(tag.trim())}`, locale),
+	);
 }
 
-export function getCategoryUrl(category: string | null): string {
+export function getCategoryUrl(
+	category: string | null,
+	locale: UiLocale = "zh_CN",
+): string {
 	if (
 		!category ||
 		category.trim() === "" ||
-		category.trim().toLowerCase() === i18n(I18nKey.uncategorized).toLowerCase()
+		category.trim().toLowerCase() ===
+			createTranslator(locale)(I18nKey.uncategorized).toLowerCase()
 	)
-		return url("/archive/?uncategorized=true");
-	return url(`/archive/?category=${encodeURIComponent(category.trim())}`);
+		return url(localePath("/archive/?uncategorized=true", locale));
+	return url(
+		localePath(
+			`/archive/?category=${encodeURIComponent(category.trim())}`,
+			locale,
+		),
+	);
 }
 
 export function getDir(path: string): string {
@@ -68,8 +86,13 @@ export function getFileDirFromPath(filePath: string): string {
 	return filePath.replace(/^src\//, "").replace(/\/[^/]+$/, "");
 }
 
-export function getSearchUrl(query: string): string {
-	return url(`/search/?q=${encodeURIComponent(query.trim())}`);
+export function getSearchUrl(
+	query: string,
+	locale: UiLocale = "zh_CN",
+): string {
+	return url(
+		localePath(`/search/?q=${encodeURIComponent(query.trim())}`, locale),
+	);
 }
 
 // 生成 canonical URL：仅对客户端筛选路由（/archive/ 与 /search/）剥离查询串，

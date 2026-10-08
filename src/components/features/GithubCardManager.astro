@@ -7,6 +7,8 @@
 // 复用 markdown-extend.styl 里已存在的 .fetch-waiting / .fetch-error / pulsate 状态样式。
 ---
 <script>
+import { safeStorage as localStorage } from "@/utils/zhenkun-storage";
+
   import { formatCount } from "@/utils/github-card-utils";
 
   const CACHE_KEY_PREFIX = "github-card:";

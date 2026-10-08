@@ -1,4 +1,11 @@
 <script lang="ts">
+import { getTranslation } from "@/i18n/translation";
+import type { UiLocale } from "@/utils/locale-contract";
+import { safeStorage as localStorage } from "@/utils/zhenkun-storage";
+
+let { locale = "zh_CN" }: { locale?: UiLocale } = $props();
+const i18n = (key: I18nKey) => translate(key, locale);
+
 import {
 	WALLPAPER_BANNER,
 	WALLPAPER_FULLSCREEN,
@@ -6,7 +13,7 @@ import {
 	WALLPAPER_OVERLAY,
 } from "@constants/constants";
 import I18nKey from "@i18n/i18nKey";
-import { i18n } from "@i18n/translation";
+import { i18n as translate } from "@i18n/translation";
 import {
 	getDefaultBannerCarouselEnabled,
 	getDefaultBannerTitleEnabled,
@@ -688,7 +695,7 @@ $effect(() => {
 		<div class="">
 			<div class="section-title">
 				{i18n(I18nKey.themeColor)}
-				<button aria-label="Reset to Default" class="btn-regular rounded-md active:scale-90"
+				<button aria-label={getTranslation(locale).uiReset} class="btn-regular rounded-md active:scale-90"
 						class:opacity-0={hue === defaultHue} class:pointer-events-none={hue === defaultHue}
 						disabled={hue === defaultHue} aria-hidden={hue === defaultHue ? "true" : undefined} onclick={resetHue}>
 					<div class="text-(--btn-content)">
@@ -712,7 +719,7 @@ $effect(() => {
 		<div class="">
 			<div class="section-title">
 				{i18n(I18nKey.postListLayout)}
-				<button aria-label="Reset to Default" class="btn-regular rounded-md active:scale-90"
+				<button aria-label={getTranslation(locale).uiReset} class="btn-regular rounded-md active:scale-90"
 						class:opacity-0={currentLayout === effectiveDefaultLayout} class:pointer-events-none={currentLayout === effectiveDefaultLayout}
 						disabled={currentLayout === effectiveDefaultLayout} aria-hidden={currentLayout === effectiveDefaultLayout ? "true" : undefined} onclick={resetLayout}>
 					<div class="text-(--btn-content)">
@@ -758,7 +765,7 @@ $effect(() => {
 		<div>
 			<div class="section-title">
 				{i18n(I18nKey.cardSettings)}
-				<button aria-label="Reset to Default" class="btn-regular rounded-md active:scale-90"
+				<button aria-label={getTranslation(locale).uiReset} class="btn-regular rounded-md active:scale-90"
 						class:opacity-0={cardSettingsIsDefault} class:pointer-events-none={cardSettingsIsDefault}
 						disabled={cardSettingsIsDefault} aria-hidden={cardSettingsIsDefault ? "true" : undefined} onclick={resetCardSettings}>
 					<div class="text-(--btn-content)">
@@ -813,7 +820,7 @@ $effect(() => {
 		<div>
 			<div class="section-title">
 				{i18n(I18nKey.wallpaperMode)}
-				<button aria-label="Reset to Default" class="btn-regular rounded-md active:scale-90"
+				<button aria-label={getTranslation(locale).uiReset} class="btn-regular rounded-md active:scale-90"
 						class:opacity-0={wallpaperMode === defaultWallpaperMode} class:pointer-events-none={wallpaperMode === defaultWallpaperMode}
 						disabled={wallpaperMode === defaultWallpaperMode} aria-hidden={wallpaperMode === defaultWallpaperMode ? "true" : undefined} onclick={resetWallpaperMode}>
 					<div class="text-(--btn-content)">
@@ -867,7 +874,7 @@ $effect(() => {
 		<div>
 			<div class="section-title">
 				{i18n(I18nKey.fullscreenLayout)}
-				<button aria-label="Reset to Default" class="btn-regular rounded-md active:scale-90"
+				<button aria-label={getTranslation(locale).uiReset} class="btn-regular rounded-md active:scale-90"
 						class:opacity-0={fullscreenLayout === defaultFullscreenLayout} class:pointer-events-none={fullscreenLayout === defaultFullscreenLayout}
 						disabled={fullscreenLayout === defaultFullscreenLayout} aria-hidden={fullscreenLayout === defaultFullscreenLayout ? "true" : undefined} onclick={resetFullscreenLayout}>
 					<div class="text-(--btn-content)">
@@ -903,7 +910,7 @@ $effect(() => {
 		<div class="">
 			<div class="section-title">
 				{i18n(I18nKey.overlaySettings)}
-				<button aria-label="Reset to Default" class="btn-regular rounded-md active:scale-90"
+				<button aria-label={getTranslation(locale).uiReset} class="btn-regular rounded-md active:scale-90"
 						class:opacity-0={overlaySettingsIsDefault} class:pointer-events-none={overlaySettingsIsDefault}
 						disabled={overlaySettingsIsDefault} aria-hidden={overlaySettingsIsDefault ? "true" : undefined} onclick={resetOverlaySettings}>
 					<div class="text-(--btn-content)">
@@ -941,7 +948,7 @@ $effect(() => {
 		<div class="">
 			<div class="section-title">
 				{i18n(I18nKey.wallpaperSettings)}
-				<button aria-label="Reset to Default" class="btn-regular rounded-md active:scale-90"
+				<button aria-label={getTranslation(locale).uiReset} class="btn-regular rounded-md active:scale-90"
 						class:opacity-0={bannerSettingsIsDefault} class:pointer-events-none={bannerSettingsIsDefault}
 						disabled={bannerSettingsIsDefault} aria-hidden={bannerSettingsIsDefault ? "true" : undefined} onclick={resetBannerSettings}>
 					<div class="text-(--btn-content)">
@@ -1033,7 +1040,7 @@ $effect(() => {
 		<div class="">
 			<div class="section-title">
 				{i18n(I18nKey.effectsSettings)}
-				<button aria-label="Reset to Default" class="btn-regular rounded-md active:scale-90"
+				<button aria-label={getTranslation(locale).uiReset} class="btn-regular rounded-md active:scale-90"
 						class:opacity-0={sakuraEnabled === defaultSakuraEnabled} class:pointer-events-none={sakuraEnabled === defaultSakuraEnabled}
 						disabled={sakuraEnabled === defaultSakuraEnabled} aria-hidden={sakuraEnabled === defaultSakuraEnabled ? "true" : undefined}
 						onclick={() => { sakuraEnabled = defaultSakuraEnabled; setSakuraEnabled(defaultSakuraEnabled); }}>

@@ -1,6 +1,7 @@
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
 import type { NavBarLink } from "@/types/navBarConfig";
+import type { UiLocale } from "./locale-contract";
 
 // 导航栏菜单名称的 i18n 解析
 // 思路：把「默认菜单名」映射到对应的 i18n key。
@@ -32,19 +33,22 @@ const NAVBAR_DEFAULT_NAMES: Record<string, I18nKey> = {
 	关于我: I18nKey.about,
 };
 
-export function resolveNavbarName(name: string): string {
+export function resolveNavbarName(name: string, locale?: UiLocale): string {
 	const key = NAVBAR_DEFAULT_NAMES[name];
-	return key ? i18n(key) : name;
+	return key ? i18n(key, locale) : name;
 }
 
-export function resolveNavbarLinks(links: NavBarLink[]): NavBarLink[] {
+export function resolveNavbarLinks(
+	links: NavBarLink[],
+	locale?: UiLocale,
+): NavBarLink[] {
 	return links.map((link) => {
 		const resolved: NavBarLink = {
 			...link,
-			name: resolveNavbarName(link.name),
+			name: resolveNavbarName(link.name, locale),
 		};
 		if (link.children) {
-			resolved.children = resolveNavbarLinks(link.children);
+			resolved.children = resolveNavbarLinks(link.children, locale);
 		}
 		return resolved;
 	});

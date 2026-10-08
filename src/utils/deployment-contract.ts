@@ -1,4 +1,6 @@
 import type { SiteConfig } from "../types/siteConfig";
+import { splitLocalePath, type UiLocale } from "./locale-contract.ts";
+import { getLocalePage } from "./locale-pages.ts";
 import { assertSafePostId, withDeploymentBase } from "./post-contract.ts";
 
 /** Strip only the configured leading base, never a matching route segment. */
@@ -51,13 +53,22 @@ export function getGeneratedOgUrl(
 
 export function getDeploymentCanonicalUrl(page: URL, base: string): string {
 	const logicalPath = getLogicalPathname(page.pathname, base);
-	if (logicalPath === "/archive/" || logicalPath === "/search/") {
+	const route = logicalPath ? splitLocalePath(logicalPath).logicalPath : null;
+	if (
+		route === "/archive/" ||
+		route === "/search/" ||
+		(logicalPath !== null && getLocalePage(logicalPath))
+	) {
 		const canonical = new URL(page);
 		canonical.search = "";
 		canonical.hash = "";
 		return canonical.toString();
 	}
 	return page.toString();
+}
+
+export function getPageLocale(pathname: string, base: string): UiLocale {
+	return splitLocalePath(getLogicalPathname(pathname, base) ?? "/").locale;
 }
 
 /** Optional page descendants share their parent's existing switch. */
@@ -67,10 +78,19 @@ export function isPageInSitemap(
 	pages: SiteConfig["pages"],
 	dynamicCommentsEnabled: boolean,
 ): boolean {
-	const pathname = getLogicalPathname(new URL(page).pathname, base);
-	if (pathname === null || pathname === "/404/" || pathname === "/404.html") {
+	const deployed = getLogicalPathname(new URL(page).pathname, base);
+	if (deployed === null) return false;
+	const { locale, logicalPath: pathname } = splitLocalePath(deployed);
+	if (pathname === "/404/" || pathname === "/404.html") {
 		return false;
 	}
+	// English routes must be a real approved view, not a prefix-shaped phantom.
+	if (
+		locale === "en" &&
+		!getLocalePage(deployed) &&
+		!/^\/(posts\/[^/].*|[2-9]\d*\/)$/.test(pathname)
+	)
+		return false;
 	const root = pathname.split("/")[1];
 	const key = root === "myanimelist" ? "mal" : root;
 	if (Object.hasOwn(pages, key) && !pages[key as keyof SiteConfig["pages"]]) {

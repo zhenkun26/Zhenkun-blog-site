@@ -1,0 +1,48 @@
+{
+  "source": "29cde48e9c0adcb389965478fd5d1eec494f9857",
+  "environment": "User Mac, native headed Microsoft Edge, isolated owned profile; mobile is a 390px viewport simulation",
+  "records": [
+    {
+      "name": "browser",
+      "product": "Edg/154.0.4258.62",
+      "headed": true,
+      "visibility": "visible"
+    },
+    {
+      "name": "production-common-controls",
+      "locale": "zh-CN",
+      "pages": 8,
+      "themeRoundTrip": true,
+      "settingsTabs": [],
+      "mobileSearchFocus": true
+    },
+    {
+      "name": "production-common-controls",
+      "locale": "en",
+      "pages": 8,
+      "themeRoundTrip": true,
+      "settingsTabs": [],
+      "mobileSearchFocus": true
+    },
+    {
+      "name": "production-native-language-switch",
+      "from": "zh-CN",
+      "to": "en"
+    },
+    {
+      "name": "production-same-language-swup",
+      "locale": "en",
+      "documentIdentityPreserved": true
+    },
+    {
+      "name": "PASS"
+    }
+  ],
+  "errors": [],
+  "ownedBrowserAndPortsClosed": true,
+  "_publicProjection": {
+    "kind": "PUBLIC_GUI_SUMMARY",
+    "originalSha256": "46d3e3948e18c5d1691e9ab98f67feb792952ae918ce2160852019f6bc4d4606",
+    "omitted": "Transient pointer coordinates, DOM debugging records and process identifier; raw observations/profile retained locally. Original results are not reclassified."
+  }
+}

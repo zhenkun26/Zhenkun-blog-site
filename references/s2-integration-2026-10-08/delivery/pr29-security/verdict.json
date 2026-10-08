@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "state": "PASS",
+  "exitCode": 0,
+  "raw": {
+    "prod": {
+      "state": "VALID",
+      "recordCount": 1,
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 1,
+        "critical": 0
+      }
+    },
+    "full": {
+      "state": "VALID",
+      "recordCount": 1,
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 1,
+        "critical": 0
+      }
+    }
+  },
+  "effective": {
+    "advisories": [
+      {
+        "id": "GHSA-ch52-4w7c-c8xp",
+        "aliases": [
+          "CVE-2026-93748",
+          "GHSA-ch52-4w7c-c8xp"
+        ],
+        "package": "http-cache-semantics",
+        "severity": "high",
+        "observations": [
+          {
+            "kind": "prod",
+            "ids": [
+              "GHSA-ch52-4w7c-c8xp"
+            ],
+            "package": "http-cache-semantics",
+            "severity": "high",
+            "vulnerableRange": "<=4.2.0",
+            "patchedRange": ">=4.2.1",
+            "findings": [
+              {
+                "version": "4.2.0",
+                "paths": [
+                  ".>@astrojs/cloudflare>astro>http-cache-semantics",
+                  ".>@astrojs/mdx>astro>http-cache-semantics",
+                  ".>@astrojs/svelte>astro>http-cache-semantics",
+                  ".>astro>http-cache-semantics",
+                  ".>astro-expressive-code>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+                ],
+                "dev": false,
+                "optional": false,
+                "bundled": false
+              }
+            ],
+            "rawId": "1240991",
+            "title": "http-cache-semantics max-stale handling can disclose cross-user cached responses",
+            "url": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp"
+          },
+          {
+            "kind": "full",
+            "ids": [
+              "GHSA-ch52-4w7c-c8xp"
+            ],
+            "package": "http-cache-semantics",
+            "severity": "high",
+            "vulnerableRange": "<=4.2.0",
+            "patchedRange": ">=4.2.1",
+            "findings": [
+              {
+                "version": "4.2.0",
+                "paths": [
+                  ".>@astrojs/cloudflare>astro>http-cache-semantics",
+                  ".>@astrojs/mdx>astro>http-cache-semantics",
+                  ".>@astrojs/svelte>astro>http-cache-semantics",
+                  ".>astro>http-cache-semantics",
+                  ".>astro-expressive-code>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+                ],
+                "dev": false,
+                "optional": false,
+                "bundled": false
+              }
+            ],
+            "rawId": "1240991",
+            "title": "http-cache-semantics max-stale handling can disclose cross-user cached responses",
+            "url": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp"
+          }
+        ],
+        "remediationStatus": "VERIFIED_LOCAL_REPAIR"
+      }
+    ],
+    "knownAffected": [
+      {
+        "id": "GHSA-ch52-4w7c-c8xp",
+        "aliases": [
+          "GHSA-ch52-4w7c-c8xp",
+          "CVE-2026-93748"
+        ],
+        "package": "http-cache-semantics",
+        "severity": "high",
+        "versions": [
+          "4.2.0"
+        ],
+        "ranges": [
+          "<= 4.2.0",
+          "<= 4.2.0"
+        ],
+        "remediationStatus": "VERIFIED_LOCAL_REPAIR"
+      },
+      {
+        "id": "CVE-2026-93750",
+        "aliases": [
+          "CVE-2026-93750"
+        ],
+        "package": "http-cache-semantics",
+        "severity": "high",
+        "versions": [
+          "4.2.0"
+        ],
+        "ranges": [
+          "<=4.2.0",
+          "<=4.2.0",
+          "<=4.1.1"
+        ],
+        "remediationStatus": "VERIFIED_LOCAL_REPAIR"
+      }
+    ],
+    "verifiedLocalRepairs": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "unresolved": [],
+    "mitigation": "VERIFIED_LOCAL_REPAIR; raw version alerts and upstream CVEs retained; release acceptance is separate"
+  },
+  "repairEvidence": {
+    "state": "VERIFIED_LOCAL_REPAIR",
+    "error": null
+  },
+  "blocked": [],
+  "head": "002182f5966505427757fa5907e9527fbfc1d43d",
+  "executionMode": "LIVE",
+  "lockSha256": "276b00be82d1860fa689504bd837e0c994936ebd606d1ce3d706a004ba4be6a0",
+  "collection": "collection.json"
+}

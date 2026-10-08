@@ -1,0 +1,47 @@
+{
+  "state": "EXACT_PR_LINUX_ACCEPTED",
+  "head": "df2b8d7a61b8227398cd98fed0199b884d86a1da",
+  "base": "4d98d18da6169e3200dea1fca85fdc650e429e1d",
+  "testedMerge": "002182f5966505427757fa5907e9527fbfc1d43d",
+  "trees": {
+    "head": "81b716acbf0f233507b1c7c3d3133bde43e72833",
+    "testedMerge": "81b716acbf0f233507b1c7c3d3133bde43e72833"
+  },
+  "qualityRun": 37749281451,
+  "biomeRun": 37749281621,
+  "nativePerBase": 397,
+  "localePagesPerBase": 16,
+  "security": {
+    "state": "PASS",
+    "raw": {
+      "prod": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      },
+      "full": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      }
+    },
+    "repairs": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "unresolved": []
+  },
+  "artifactId": 11536833449
+}

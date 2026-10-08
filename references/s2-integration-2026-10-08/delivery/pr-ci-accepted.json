@@ -1,0 +1,48 @@
+{
+  "state": "EXACT_PR_LINUX_ACCEPTED",
+  "head": "b3c796f309ca453290f08ef0a74685095d10a302",
+  "testedMerge": "16beaf847794860a92c85cd9006420f3e309db8b",
+  "trees": {
+    "head": "d117559e776e42ce36c780b48d3dc3b34e7d0159",
+    "testedMerge": "d117559e776e42ce36c780b48d3dc3b34e7d0159"
+  },
+  "qualityRun": 37745577923,
+  "biomeRun": 37745577998,
+  "security": {
+    "state": "PASS",
+    "exitCode": 0,
+    "raw": {
+      "prod": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      },
+      "full": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      }
+    },
+    "repairs": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "unresolved": []
+  },
+  "artifact": {
+    "id": 11535971033,
+    "name": "dependency-security-37745577923-1"
+  }
+}

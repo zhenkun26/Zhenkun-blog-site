@@ -1,0 +1,10 @@
+[
+  {
+    "gate": "final-production-artifacts",
+    "exit": 0
+  },
+  {
+    "gate": "final-production-locale",
+    "exit": 0
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "state": "COMPLETE_PRODUCTION_ACCEPTANCE",
+  "productionSource": "29cde48e9c0adcb389965478fd5d1eec494f9857",
+  "featurePr": 28,
+  "verificationPr": 29,
+  "publicFeatureHead": "b3c796f309ca453290f08ef0a74685095d10a302",
+  "publicFinalHead": "df2b8d7a61b8227398cd98fed0199b884d86a1da",
+  "finalTestedMerge": "002182f5966505427757fa5907e9527fbfc1d43d",
+  "finalEqualTree": "81b716acbf0f233507b1c7c3d3133bde43e72833",
+  "applicationBoundary": "78a23881fc7d4b1bdcfe8f69b735e5e2edbe560ec86c1ec7395102a74c0dc1dd",
+  "sourceEquivalentFiles": 567,
+  "sourceManifestSha256": "0ece9f07e0c51474a72ca768848e9a9018b44bfb8bc53af3c6ad0590676d0aa2",
+  "runs": {
+    "featurePrQuality": 37745577923,
+    "featurePrBiome": 37745577998,
+    "finalPrQuality": 37749281451,
+    "finalPrBiome": 37749281621,
+    "finalMainQuality": 37750180940,
+    "finalMainBiome": 37750180931,
+    "finalPages": 37750181249
+  },
+  "nativePerBase": {
+    "tests": 397,
+    "pass": 397,
+    "fail": 0,
+    "skipped": 0
+  },
+  "linuxLocalePagesPerBase": 16,
+  "security": {
+    "rawHighPerScope": 1,
+    "rawExitPerScope": 1,
+    "effective": "PASS",
+    "exitCode": 0,
+    "repairs": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "unresolved": [],
+    "positive": 62,
+    "officialGeneratorCounterexample": {
+      "tests": 17,
+      "pass": 2,
+      "expectedFail": 15
+    }
+  },
+  "reviewBy": "2026-10-14T14:27:22.000Z",
+  "artifact": {
+    "source": "29cde48e9c0adcb389965478fd5d1eec494f9857",
+    "run": 37750181249,
+    "artifactId": 11538045779,
+    "artifactDigest": "sha256:51dbe75461cc0a9affbef11cccd9a81ffde4b66c161bb8415e1ecc649568ad58",
+    "files": 274,
+    "tarSha256": "0880dbc15d4779aa666c9f55158b2b4a9f0d973e1f76e6d3533fb34318ca4d86",
+    "manifestSha256": "0656c75da440542c2a9b03d06e18fb8ce86028ddaff5200f27c5866c291425a5"
+  },
+  "productionHttpByteMatches": 73,
+  "transportFailuresRetained": 0,
+  "gui": {
+    "source": "29cde48e9c0adcb389965478fd5d1eec494f9857",
+    "errors": 0,
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "commonPages": 16,
+    "viewport": [
+      1280,
+      900
+    ],
+    "mobileSimulation": [
+      390,
+      844
+    ],
+    "nativeSwitch": true,
+    "sameLanguageSwup": true,
+    "actualPagefind": true,
+    "themeAndFocus": true,
+    "ownedResourcesClosed": true,
+    "rawSha256": "46d3e3948e18c5d1691e9ab98f67feb792952ae918ce2160852019f6bc4d4606"
+  },
+  "content": {
+    "formalChinese": 0,
+    "formalEnglish": 0,
+    "pagefindAboutPages": 2,
+    "engineeringRoutes": 0,
+    "launchDraftBytesUnchanged": true,
+    "realComment": "NOT_RUN"
+  },
+  "rollback": {
+    "preFeatureMain": "a7b31c777f415e725eaf4d280da34380b3fc82cd",
+    "preFeatureApplication": "57264e7c833035b751f9e16f2464a2f358fb81fa",
+    "method": "New revert commit with fresh applicable checks and valid reviewed security policy; preserve history."
+  },
+  "limitations": [
+    "Mobile is viewport simulation, no physical phone",
+    "Personal manuscript review/publication and actual giscus interaction remain separate",
+    "Display-settings remains disabled by approved existing configuration"
+  ],
+  "documentationReceipt": "A later documentation-only main receipt may be newer than this productionSource; all 567 source/dependency/test/workflow blobs must stay identical."
+}

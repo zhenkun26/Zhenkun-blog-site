@@ -3,9 +3,12 @@ import type { Page } from "astro";
 import { Icon } from "astro-icon/components";
 import PageJump from "@/components/common/PageJump.svelte";
 import I18nKey from "@/i18n/i18nKey";
-import { i18n } from "@/i18n/translation";
+import { createTranslator } from "@/i18n/translation";
+import { getPageLocale } from "@/utils/deployment-contract";
 import { url } from "@/utils/url-utils";
 
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const i18n = createTranslator(uiLocale);
 interface Props {
 	page: Page;
 	class?: string;

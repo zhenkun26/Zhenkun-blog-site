@@ -13,6 +13,7 @@ import type {
 	LIGHT_DARK_MODE,
 	WALLPAPER_MODE,
 } from "@/types/config";
+import { safeStorage as localStorage } from "@/utils/zhenkun-storage";
 import {
 	backgroundWallpaper,
 	displaySettingsConfig,
@@ -66,7 +67,7 @@ export function resolveTheme(theme: LIGHT_DARK_MODE): LIGHT_DARK_MODE {
 
 export function getHue(): number {
 	// 先检查全局对象
-	if (typeof window === "undefined" || !window.localStorage) {
+	if (typeof window === "undefined" || !localStorage) {
 		return getDefaultHue();
 	}
 	const stored = localStorage.getItem("hue");
@@ -77,7 +78,7 @@ export function setHue(hue: number): void {
 	// 先检查是否在浏览器环境
 	if (
 		typeof window === "undefined" ||
-		!window.localStorage ||
+		!localStorage ||
 		typeof document === "undefined"
 	) {
 		return;

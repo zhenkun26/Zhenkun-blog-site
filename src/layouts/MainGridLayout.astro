@@ -1,6 +1,5 @@
 ---
 import Live2DWidget from "@components/features/Live2DWidget.astro";
-
 import SpineModel from "@components/features/SpineModel.astro";
 import Footer from "@components/layout/Footer.astro";
 import HeaderTopRow from "@components/layout/HeaderTopRow.astro";
@@ -11,6 +10,7 @@ import FloatingControls from "@/components/controls/FloatingControls.astro";
 import CategoryBar from "@/components/layout/CategoryBar.astro";
 import SidebarColumn from "@/components/layout/SidebarColumn.astro";
 import WallpaperSection from "@/components/layout/WallpaperSection.astro";
+import LocalePageData from "@/components/layout/zhenkun-LocalePageData.astro";
 import {
 	live2dWidgetConfig,
 	navbarMode,
@@ -18,6 +18,7 @@ import {
 	siteConfig,
 } from "@/config";
 import { getBannerVisibilityState } from "@/utils/banner-visibility-utils";
+import { getPageLocale } from "@/utils/deployment-contract";
 import { getBackgroundImages, isHomePage } from "@/utils/layout-utils";
 import { resolveNavMenuLinks } from "@/utils/nav-menu-utils";
 import { getEffectiveSidebarState } from "@/utils/sidebar-effective-utils";
@@ -143,6 +144,7 @@ const {
                 {/* 为每个页面提供一个隐藏的h1标题，用于SEO和可访问性 */}
                 <h1 class="sr-only">{heading || title}</h1>
                 <div id="content-wrapper" class="onload-animation transition-leaving">
+<LocalePageData />
                     <slot></slot>
                 </div>
             </main>
@@ -182,7 +184,7 @@ const {
 <FloatingControls headings={headings} encrypted={encrypted} />
 
 <!-- 移动端导航抽屉：渲染为 <body> 直系子元素，脱离导航栏的 transform 包含块才能铺满视口 -->
-<NavMenuPanel links={resolveNavMenuLinks()} />
+<NavMenuPanel links={resolveNavMenuLinks(getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL))} />
 
 <!--
     触屏设备上让代码块的复制按钮默认隐藏，点一下代码块才显形。

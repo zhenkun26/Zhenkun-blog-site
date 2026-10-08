@@ -1,0 +1,83 @@
+{
+  "kind": "SOURCE_CONFIRMED_INSTALLED_INTERFACES",
+  "source": "a7b31c777f415e725eaf4d280da34380b3fc82cd",
+  "interfaces": [
+    {
+      "owner": "@expressive-code/core",
+      "version": "0.44.2",
+      "file": "dist/index.js",
+      "sha256": "c6f16e33d2dc9060da53349e6d1a6f516358f2c8ee5e8756cbf988c6449ffa9c",
+      "excerpts": [
+        {
+          "firstLine": 1439,
+          "lastLine": 1445,
+          "text": "      groupContents,\n      locale: groupContent.codeBlock.locale || defaultLocale,\n      config,\n      plugins,\n      cssVar,\n      cssVarName,\n      styleVariants"
+        }
+      ]
+    },
+    {
+      "owner": "@expressive-code/plugin-frames",
+      "version": "0.44.2",
+      "file": "dist/index.js",
+      "sha256": "0ae3338f8e4a22e48c173f5069560fc4a9381826b0fe43c3804bce068aa9748a",
+      "excerpts": [
+        {
+          "firstLine": 512,
+          "lastLine": 522,
+          "text": "var pluginFramesTexts = new PluginTexts({\n  terminalWindowFallbackTitle: \"Terminal window\",\n  copyButtonTooltip: \"Copy to clipboard\",\n  copyButtonCopied: \"Copied!\"\n});\npluginFramesTexts.addLocale(\"de\", {\n  terminalWindowFallbackTitle: \"Terminal-Fenster\",\n  copyButtonTooltip: \"In Zwischenablage kopieren\",\n  copyButtonCopied: \"Kopiert!\"\n});\nfunction pluginFrames(options = {}) {"
+        },
+        {
+          "firstLine": 561,
+          "lastLine": 565,
+          "text": "      postprocessRenderedBlock: ({ codeBlock, renderData, locale }) => {\n        const texts = pluginFramesTexts.get(locale);\n        const { title: titleText, frame = \"auto\" } = codeBlock.props;\n        const isTerminal = frame === \"terminal\" || frame === \"auto\" && isTerminalLanguage(codeBlock.language);\n        const visibleTitle = frame !== \"none\" && titleText || isTerminal ? [h(\"span\", { className: \"title\" }, titleText || \"\")] : [];"
+        },
+        {
+          "firstLine": 576,
+          "lastLine": 584,
+          "text": "              h(\"div\", { \"aria-live\": \"polite\" }),\n              h(\n                \"button\",\n                {\n                  title: texts.copyButtonTooltip,\n                  \"data-copied\": texts.copyButtonCopied,\n                  \"data-code\": codeToCopy\n                },\n                [h(\"div\")]"
+        }
+      ]
+    },
+    {
+      "owner": "astro-expressive-code",
+      "version": "0.44.2",
+      "file": "dist/index.js",
+      "sha256": "c4bc54b24b8e724a9658586662672d32cf30efeea65f71761219a8160fb41331",
+      "excerpts": [
+        {
+          "firstLine": 229,
+          "lastLine": 244,
+          "text": "          normalizedCode = normalizedCode.replace(/\\t/g, \" \".repeat(tabWidth));\n        const file = createSatteriDocumentFile(ctx);\n        const input = {\n          code: normalizedCode,\n          language: codeBlockInfo.lang,\n          meta: codeBlockInfo.meta,\n          parentDocument: {\n            sourceFilePath: file.path\n          }\n        };\n        if (getBlockLocale) {\n          input.locale = await getBlockLocale({ input, file });\n        }\n        const codeBlock = await customCreateBlock({ input, file });\n        const { renderedGroupAst, styles } = await ec.render(codeBlock);\n        const extraElements = [];"
+        },
+        {
+          "firstLine": 288,
+          "lastLine": 303,
+          "text": "function createSatteriDocumentFile(ctx) {\n  const fileURL = ctx.fileURL;\n  const filePath = fileURL ? getFilePath(fileURL) : void 0;\n  return {\n    url: fileURL,\n    path: filePath || \"\",\n    cwd: typeof process !== \"undefined\" ? process.cwd() : \"/\",\n    data: {\n      satteri: {\n        source: ctx.source,\n        fileURL\n      }\n    }\n  };\n}\nfunction createSatteriBlockFactory(userCreateBlock) {"
+        }
+      ]
+    },
+    {
+      "owner": "expressive-code-collapsible",
+      "version": "0.1.0",
+      "file": "dist/index.js",
+      "sha256": "0a13b144949dc34b87b51e3dd657ce3967f6690f9fe9af7ac49690c274c39c6f",
+      "excerpts": [
+        {
+          "firstLine": 15,
+          "lastLine": 26,
+          "text": "function resolveOptions(options = {}) {\n  return {\n    lineThreshold: typeof options.lineThreshold === \"number\" && options.lineThreshold >= 1 ? options.lineThreshold : DEFAULT_OPTIONS.lineThreshold,\n    previewLines: typeof options.previewLines === \"number\" && options.previewLines >= 1 ? options.previewLines : DEFAULT_OPTIONS.previewLines,\n    defaultCollapsed: options.defaultCollapsed ?? DEFAULT_OPTIONS.defaultCollapsed,\n    expandButtonText: typeof options.expandButtonText === \"string\" && options.expandButtonText.trim() ? options.expandButtonText : DEFAULT_OPTIONS.expandButtonText,\n    collapseButtonText: typeof options.collapseButtonText === \"string\" && options.collapseButtonText.trim() ? options.collapseButtonText : DEFAULT_OPTIONS.collapseButtonText,\n    expandedAnnouncement: typeof options.expandedAnnouncement === \"string\" && options.expandedAnnouncement.trim() ? options.expandedAnnouncement : DEFAULT_OPTIONS.expandedAnnouncement,\n    collapsedAnnouncement: typeof options.collapsedAnnouncement === \"string\" && options.collapsedAnnouncement.trim() ? options.collapsedAnnouncement : DEFAULT_OPTIONS.collapsedAnnouncement\n  };\n}\nfunction countLines(code) {"
+        },
+        {
+          "firstLine": 287,
+          "lastLine": 300,
+          "text": "    hooks: {\n      postprocessRenderedBlock: async (context) => {\n        const forceCollapse = context.codeBlock.metaOptions.getBoolean(\"collapse\");\n        const forceNoCollapse = context.codeBlock.metaOptions.getBoolean(\"nocollapse\");\n        const code = context.codeBlock.code;\n        const lineCount = countLines(code);\n        const shouldCollapseBlock = shouldCollapse(\n          lineCount,\n          config.lineThreshold,\n          forceCollapse,\n          forceNoCollapse\n        );\n        if (!shouldCollapseBlock) return;\n        const blockId = `collapse-${Math.random().toString(36).substring(2, 11)}`;"
+        },
+        {
+          "firstLine": 410,
+          "lastLine": 418,
+          "text": "            \"div\",\n            {\n              class: wrapperClasses.join(\" \"),\n              id: blockId,\n              \"data-collapse-preview-lines\": config.previewLines.toString(),\n              \"data-expanded-announcement\": config.expandedAnnouncement,\n              \"data-collapsed-announcement\": config.collapsedAnnouncement\n            },\n            [contentWrapper, toggleButton]"
+        }
+      ]
+    }
+  ]
+}

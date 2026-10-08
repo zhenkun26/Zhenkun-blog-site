@@ -1,8 +1,13 @@
 ---
 import { Icon } from "astro-icon/components";
 import { siteConfig } from "@/config";
+import { getTranslation } from "@/i18n/translation";
 import type { NavBarLink } from "@/types/config";
+import { getPageLocale } from "@/utils/deployment-contract";
+
 import { url } from "@/utils/url-utils";
+
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
 
 interface Props {
 	links: NavBarLink[];
@@ -15,10 +20,10 @@ const navTitle = siteConfig.navbar.title || siteConfig.title;
     <!-- 遮罩（scrim）：点击关闭 -->
     <div class="mobile-menu-scrim" aria-hidden="true"></div>
     <!-- 抽屉：MD3 侧边导航，右侧滑入，占满整高，内部滚动 -->
-    <aside class="mobile-menu-drawer" role="dialog" aria-modal="true" aria-label="导航菜单" tabindex="-1">
+    <aside class="mobile-menu-drawer" role="dialog" aria-modal="true" aria-label={getTranslation(uiLocale).uiMenu} tabindex="-1">
         <header class="mobile-menu-header">
             <span class="mobile-menu-title">{navTitle}</span>
-            <button type="button" class="mobile-menu-close" aria-label="关闭菜单">
+            <button type="button" class="mobile-menu-close" aria-label={getTranslation(uiLocale).uiCloseMenu}>
                 <Icon name="material-symbols:close-rounded" class="text-[1.5rem]" />
             </button>
         </header>

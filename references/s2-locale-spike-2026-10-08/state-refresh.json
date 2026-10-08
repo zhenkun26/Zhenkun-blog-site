@@ -1,0 +1,53 @@
+{
+  "kind": "READ_ONLY_STATE_REFRESH",
+  "checkedAt": "2026-10-08T05:23:14.700184+00:00",
+  "main": {
+    "sha": "a7b31c777f415e725eaf4d280da34380b3fc82cd"
+  },
+  "latestPages": {
+    "conclusion": "success",
+    "createdAt": "2026-10-08T04:47:49Z",
+    "databaseId": 37729199074,
+    "event": "push",
+    "headSha": "57264e7c833035b751f9e16f2464a2f358fb81fa",
+    "name": "Deploy to GitHub Pages",
+    "status": "completed",
+    "url": "https://github.com/zhenkun26/Zhenkun-blog-site/actions/runs/37729199074"
+  },
+  "openPRs": [
+    {
+      "headRefName": "dependabot-npm_and_yarn-patch-updates-f53e0ee899",
+      "headRefOid": "2b45ea74ded1082c0bb3fa34aa1c5e91f2256839",
+      "isDraft": false,
+      "number": 27,
+      "title": "chore(deps): bump the patch-updates group across 1 directory with 14 updates"
+    },
+    {
+      "headRefName": "dependabot-npm_and_yarn-minor-updates-ed97d27f95",
+      "headRefOid": "e3ef5cbdb27d91fd5e6eb2423f55ed80ccdc84d9",
+      "isDraft": false,
+      "number": 26,
+      "title": "chore(deps): bump the minor-updates group across 1 directory with 8 updates"
+    },
+    {
+      "headRefName": "dependabot-npm_and_yarn-mermanjs-web-0.8.0-alpha.6",
+      "headRefOid": "6d2abb5d20da57ea625c7385a4faf7764c4fd557",
+      "isDraft": false,
+      "number": 6,
+      "title": "chore(deps): bump @mermanjs/web from 0.8.0-alpha.3 to 0.8.0-alpha.6"
+    }
+  ],
+  "homepage": {
+    "checkedAt": "2026-10-08T05:23:14.700184+00:00",
+    "url": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+    "finalUrl": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+    "status": 200,
+    "htmlLang": "zh-CN",
+    "constructionNoticeOccurrences": 1,
+    "bodyMeaning": "One current homepage GET only, not GUI or uploaded-artifact byte equivalence."
+  },
+  "applicationChanges": [],
+  "contractWindowsUnchanged": "2026-10-14T14:27:22.000Z",
+  "protection": "PASS; private receipt retained outside this public repository",
+  "verificationMeaning": "State, diagnostic integrity and unchanged application boundary only. S2 site/type/build/GUI/CI acceptance NOT_RUN."
+}

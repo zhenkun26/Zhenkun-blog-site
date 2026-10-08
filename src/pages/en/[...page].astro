@@ -1,0 +1,11 @@
+---
+import type { GetStaticPaths } from "astro";
+import HomePage from "@/components/pages/zhenkun-HomePage.astro";
+import { siteConfig } from "@/config";
+import { getSortedPosts } from "@/utils/content-utils";
+export const getStaticPaths = (async ({ paginate }) =>
+	paginate(await getSortedPosts("en"), {
+		pageSize: siteConfig.pagination.postsPerPage,
+	})) satisfies GetStaticPaths;
+---
+<HomePage page={Astro.props.page} />

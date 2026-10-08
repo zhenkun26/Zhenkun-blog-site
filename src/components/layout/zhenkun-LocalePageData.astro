@@ -1,0 +1,11 @@
+---
+import { siteConfig } from "@/config";
+import { getLogicalPathname } from "@/utils/deployment-contract";
+import { getPublicLocalePaths } from "@/utils/zhenkun-public-locales";
+
+const paths = await getPublicLocalePaths(
+	getLogicalPathname(Astro.url.pathname, import.meta.env.BASE_URL) ?? "/",
+	siteConfig.pagination.postsPerPage,
+);
+---
+<span hidden data-public-locale-paths data-zh={paths.zh_CN} data-en={paths.en} />

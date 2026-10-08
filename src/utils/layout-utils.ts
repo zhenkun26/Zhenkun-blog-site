@@ -1,4 +1,6 @@
 import { backgroundWallpaper } from "../config";
+import { getLogicalPathname } from "./deployment-contract";
+import { splitLocalePath } from "./locale-contract";
 
 export type BackgroundImages = {
 	desktop: string[];
@@ -68,6 +70,9 @@ export const getDefaultBackground = (): string => {
 
 // 检查是否为首页
 export const isHomePage = (pathname: string): boolean => {
+	const logical = getLogicalPathname(pathname, import.meta.env.BASE_URL || "/");
+	if (logical !== null && splitLocalePath(logical).logicalPath === "/")
+		return true;
 	// 获取 base URL
 	const baseUrl = import.meta.env.BASE_URL || "/";
 	const baseUrlNoSlash = baseUrl.endsWith("/") ? baseUrl.slice(0, -1) : baseUrl;

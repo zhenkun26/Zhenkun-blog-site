@@ -1,0 +1,21 @@
+---
+import AdvancedSearch from "@components/pages/AdvancedSearch.svelte";
+import I18nKey from "@i18n/i18nKey";
+import { createTranslator } from "@i18n/translation";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getPageLocale } from "@/utils/deployment-contract";
+import { url } from "@/utils/url-utils";
+
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const i18n = createTranslator(uiLocale);
+const title = i18n(I18nKey.search);
+const description = "";
+---
+
+<MainGridLayout title={title} description={description}>
+    <div class="min-h-[80vh]">
+        <AdvancedSearch locale={uiLocale} client:load title={title} description={description} />
+    </div>
+</MainGridLayout>
+
+{import.meta.env.PROD && <script>window.__loadPagefind?.().catch(() => { document.dispatchEvent(new Event("pagefindloaderror")); });</script>}

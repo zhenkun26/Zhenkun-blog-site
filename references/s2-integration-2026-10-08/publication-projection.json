@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "state": "PREPARED_SOURCE_EQUIVALENT_PUBLIC_PROJECTION",
+  "sourceCandidate": "ceec907f8047a56324c5a6726b7362490680925a",
+  "parents": [
+    "a7b31c777f415e725eaf4d280da34380b3fc82cd"
+  ],
+  "identity": "Zhenkun <310396674+zhenkun26@users.noreply.github.com>",
+  "sourceFiles": 567,
+  "sourceManifestSha256": "cf6f50bb1d3fe444d79b92711d1f4007008d468b1e47b02e617602837cf35908",
+  "projections": [],
+  "rawEvidence": "Unchanged raw audit JSON and official hash-bound source fixtures remain exact. Every projection is separately identified; original raw bytes and original commit history remain on the local implementation branch. No local candidate commit is a publication ancestor.",
+  "limitations": "Linux exact-head CI and final remote/Pages acceptance still pending; zero formal articles, no manuscript publication or real comment interaction."
+}

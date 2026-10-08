@@ -1,11 +1,17 @@
 ---
 import FloatingButton from "@/components/common/FloatingButton.astro";
+import { getPageLocale } from "@/utils/deployment-contract";
+
+const ariaLabel =
+	getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL) === "en"
+		? "Scroll to comments"
+		: "前往评论区";
 ---
 
 <FloatingButton
   id="back-to-comment-btn"
   icon="mingcute:comment-line"
-  ariaLabel="Scroll to comments"
+  ariaLabel={ariaLabel}
   onclick="scrollToCommentSection()"
   class="hide"
 />

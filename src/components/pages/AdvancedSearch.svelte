@@ -1,115 +1,49 @@
 <script lang="ts">
 import I18nKey from "@i18n/i18nKey";
-import { i18n } from "@i18n/translation";
 import { onMount } from "svelte";
 import Icon from "@/components/common/Icon.svelte";
 import type { SearchResult } from "@/global";
-import { url as formatUrl } from "@/utils/url-utils";
-
-// --- Props ---
-export let title = i18n(I18nKey.search);
+import { createTranslator, getTranslation } from "@/i18n/translation";
+import type { UiLocale } from "@/utils/locale-contract";
+import { createSearchSession } from "@/utils/search-session";
+export let locale: UiLocale = "zh_CN";
+export let title = "";
 export let description = "";
-
-// --- State ---
+const i18n = (key: I18nKey) => createTranslator(locale)(key);
 let keyword = "";
 let results: SearchResult[] = [];
 let isSearching = false;
-let initialized = false;
-
-// 在客户端获取 URL 参数
-const getInitialKeyword = (): string => {
-	if (typeof window !== "undefined") {
-		const searchParams = new URLSearchParams(window.location.search);
-		return searchParams.get("q") || "";
-	}
-	return "";
-};
-
-// --- Mocks for Dev Mode ---
-const fakeResult: SearchResult[] = [
-	{
-		url: formatUrl("/"),
-		meta: { title: "Dev Mode Search Result 1" },
-		excerpt: "This is a <mark>mock</mark> result for development.",
-	},
-	{
-		url: formatUrl("/"),
-		meta: { title: "Dev Mode Search Result 2" },
-		excerpt: "Pagefind only works in <mark>production</mark> build.",
-	},
-];
-
-// --- Core Search Logic ---
-const search = async () => {
-	if (!initialized || !keyword.trim()) {
-		results = [];
-		return;
-	}
-	isSearching = true;
-
-	try {
-		if (import.meta.env.PROD && window.pagefind) {
-			const response = await window.pagefind.search(keyword);
-			const rawResults = await Promise.all(
-				response.results.map((item) => item.data()),
-			);
-			results = rawResults;
-		} else if (import.meta.env.DEV) {
-			// 开发模式下的模拟结果
-			results = fakeResult.filter(
-				(item) =>
-					item.excerpt.toLowerCase().includes(keyword.toLowerCase()) ||
-					item.meta.title.toLowerCase().includes(keyword.toLowerCase()),
-			);
-		}
-	} catch (error) {
-		console.error("Search error:", error);
-		results = [];
-	} finally {
-		isSearching = false;
-	}
-};
-
-// --- Initialization onMount ---
+let hasError = false;
+let session: ReturnType<typeof createSearchSession<SearchResult>> | undefined;
+const handleInput = () => session?.setQuery(keyword);
 onMount(() => {
-	const initialize = async () => {
-		initialized = true;
-
-		// 从 URL 获取初始关键词
-		const initialKeyword = getInitialKeyword();
-		if (initialKeyword) {
-			keyword = initialKeyword;
-		}
-
-		// 如果有关键词，自动执行搜索
-		if (keyword.trim()) {
-			await search();
-		}
+	session = createSearchSession<SearchResult>({
+		search: async (query) => {
+			await window.__loadPagefind?.();
+			if (!window.pagefind) throw new Error("Pagefind is unavailable");
+			const response = await window.pagefind.search(query);
+			return Promise.all(response.results.map((item) => item.data()));
+		},
+		publish: (state) => {
+			results = state.results;
+			isSearching = state.status === "loading";
+			hasError = state.status === "error";
+		},
+	});
+	const readQuery = () => {
+		keyword = new URLSearchParams(location.search).get("q") ?? "";
+		session?.setQuery(keyword);
 	};
-
-	// 开发环境直接初始化
-	if (import.meta.env.DEV) {
-		initialize();
-	} else {
-		// 生产环境等待 Pagefind 加载
-		window.__loadPagefind?.();
-		if (window.pagefind) {
-			initialize();
-		} else {
-			document.addEventListener("pagefindready", initialize, {
-				once: true,
-			});
-		}
-	}
+	const cancel = () => session?.cancel();
+	readQuery();
+	window.addEventListener("popstate", readQuery);
+	document.addEventListener("swup:visit:start", cancel);
+	return () => {
+		session?.dispose();
+		window.removeEventListener("popstate", readQuery);
+		document.removeEventListener("swup:visit:start", cancel);
+	};
 });
-
-let debounceTimer: NodeJS.Timeout;
-const handleInput = () => {
-	clearTimeout(debounceTimer);
-	debounceTimer = setTimeout(() => {
-		search();
-	}, 300);
-};
 </script>
 
 <div class="card-base px-6 py-6 md:px-9 md:py-6 mb-4 rounded-(--radius-large)">
@@ -139,7 +73,7 @@ const handleInput = () => {
             <input
                 type="text"
                 class="block w-full p-4 pl-10 text-sm bg-transparent border border-black/10 dark:border-white/10 rounded-lg focus:ring-2 focus:ring-(--primary) focus:border-(--primary) hover:border-black/20 dark:hover:border-white/20 text-75 placeholder:opacity-50 transition-colors outline-hidden"
-                placeholder={i18n(I18nKey.search)}
+                aria-label={i18n(I18nKey.search)} placeholder={i18n(I18nKey.search)}
                 bind:value={keyword}
                 on:input={handleInput}
             >
@@ -154,7 +88,9 @@ const handleInput = () => {
             <div class="flex justify-center py-10">
                 <Icon icon="svg-spinners:ring-resize" class="text-4xl text-(--primary)" />
             </div>
-        {:else if results.length > 0}
+        {:else if hasError}
+<div role="alert" class="card-base p-10 text-center">{getTranslation(locale).uiSearchError}</div>
+{:else if results.length > 0}
             <div class="space-y-4">
                 {#each results as result}
                     <div class="card-base p-6 block rounded-(--radius-large)">

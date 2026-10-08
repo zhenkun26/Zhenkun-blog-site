@@ -1,0 +1,11 @@
+<!-- Inline theme initialization needs this before deferred module scripts run. -->
+<script is:inline>
+(function () {
+ if (window.__zhenkunStorage) return;
+ window.__zhenkunStorage = {
+  getItem(key) { try { return window.localStorage.getItem(key); } catch { return null; } },
+  setItem(key,value) { try { window.localStorage.setItem(key,value); } catch {} },
+  removeItem(key) { try { window.localStorage.removeItem(key); } catch {} }
+ };
+})();
+</script>

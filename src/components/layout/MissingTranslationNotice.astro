@@ -1,0 +1,15 @@
+---
+import { getTranslation } from "@/i18n/translation";
+import { getPageLocale } from "@/utils/deployment-contract";
+
+const text = getTranslation(
+	getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL),
+);
+---
+<dialog id="missing-translation-dialog" aria-labelledby="missing-translation-title" class="card-base max-w-md p-6 text-(--text-color) backdrop:bg-black/50">
+  <h2 id="missing-translation-title" class="text-lg font-bold">{text.uiMissing}</h2>
+  <div class="mt-5 flex flex-wrap gap-3">
+    <a data-original-version data-no-swup class="btn-regular px-4 py-2 rounded-lg">{text.uiOpenOriginal}</a>
+    <form method="dialog"><button class="btn-regular px-4 py-2 rounded-lg">{text.uiCloseNotice}</button></form>
+  </div>
+</dialog>

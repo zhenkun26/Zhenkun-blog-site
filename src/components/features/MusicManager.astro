@@ -1,8 +1,13 @@
 ---
 import { musicPlayerConfig } from "@/config/musicConfig";
 import I18nKey from "@/i18n/i18nKey";
-import { i18n } from "@/i18n/translation";
+import { createTranslator, getTranslation } from "@/i18n/translation";
+import { getPageLocale } from "@/utils/deployment-contract";
+
 import { url } from "@/utils/url-utils";
+
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+const i18n = createTranslator(uiLocale);
 
 const config = musicPlayerConfig;
 
@@ -48,6 +53,7 @@ const managerConfigStr = JSON.stringify({
 		failedLyrics: i18n(I18nKey.musicFailedLyrics),
 		noSongs: i18n(I18nKey.musicNoSongs),
 		error: i18n(I18nKey.musicError),
+		playbackFailedSkip: getTranslation(uiLocale).uiMusicPlaybackFailedSkip,
 		play: i18n(I18nKey.musicPlay),
 		pause: i18n(I18nKey.musicPause),
 		progress: i18n(I18nKey.musicProgress),
@@ -109,8 +115,8 @@ const managerConfigStr = JSON.stringify({
         currentIndex: 0,
         isPlaying: false,
         playMode: 0, // 0: list, 1: one, 2: random
-        volume: localStorage.getItem('music-player-volume') !== null
-            ? parseFloat(localStorage.getItem('music-player-volume'))
+        volume: window.__zhenkunStorage.getItem('music-player-volume') !== null
+            ? parseFloat(window.__zhenkunStorage.getItem('music-player-volume'))
             : (config.volume || 0.7),
         isMuted: false,
         lyrics: [],
@@ -321,7 +327,7 @@ const managerConfigStr = JSON.stringify({
         state.isMuted = false;
         audio.volume = val;
         audio.muted = false;
-        localStorage.setItem('music-player-volume', val.toString());
+        window.__zhenkunStorage.setItem('music-player-volume', val.toString());
         emit('fm:volume', { volume: val, isMuted: false });
     }
 
@@ -389,8 +395,8 @@ const managerConfigStr = JSON.stringify({
             console.warn('Playback failed, trying fallback URL: ' + currentTrackUrls[currentTrackUrlIndex]);
             tryPlayCurrentTrackUrl(true, ver);
         } else {
-            state.error = 'Audio playback error';
-            emit('fm:error', { message: '播放失败，即将自动跳过...' });
+            state.error = config.i18n.playbackFailedSkip;
+            emit('fm:error', { message: state.error });
 
             if (errorSkipTimeout) clearTimeout(errorSkipTimeout);
             errorSkipTimeout = setTimeout(function () {

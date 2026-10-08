@@ -1,4 +1,8 @@
 ---
+import { getPageLocale } from "@/utils/deployment-contract";
+
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
+
 import ImageWrapper from "@/components/common/ImageWrapper.astro";
 import ScrollDownIndicator from "@/components/controls/ScrollDownIndicator.astro";
 import BackgroundPlayer from "@/components/features/BackgroundPlayer.astro";
@@ -42,7 +46,7 @@ const wallpaperPosition = state.isFullscreenMode
             <div class:list={["slide-item block lg:hidden", index === 0 && "active"]} data-index={index}>
                 <template>
                     <ImageWrapper
-                        alt="Mobile background image of the blog"
+                        alt={uiLocale === "en" ? "Mobile background image of the blog" : "博客移动端背景图片"}
                         class="object-cover h-full w-full"
                         src={src}
                         position={wallpaperPosition}
@@ -59,7 +63,7 @@ const wallpaperPosition = state.isFullscreenMode
             <div class:list={["slide-item hidden lg:block", index === 0 && "active"]} data-index={index}>
                 <template>
                     <ImageWrapper
-                        alt="Desktop background image of the blog"
+                        alt={uiLocale === "en" ? "Desktop background image of the blog" : "博客桌面端背景图片"}
                         class="object-cover h-full"
                         src={src}
                         position={wallpaperPosition}
@@ -76,7 +80,7 @@ const wallpaperPosition = state.isFullscreenMode
             {backgroundImages.mobile.length > 0 && (
                 <div class="slide-item active block lg:hidden">
                     <ImageWrapper
-                        alt="Mobile background image of the blog"
+                        alt={uiLocale === "en" ? "Mobile background image of the blog" : "博客移动端背景图片"}
                         class="object-cover h-full w-full"
                         src={backgroundImages.mobile[0]}
                         position={wallpaperPosition}
@@ -93,7 +97,7 @@ const wallpaperPosition = state.isFullscreenMode
             {backgroundImages.desktop.length > 0 && (
                 <div class="slide-item active hidden lg:block">
                     <ImageWrapper
-                        alt="Desktop background image of the blog"
+                        alt={uiLocale === "en" ? "Desktop background image of the blog" : "博客桌面端背景图片"}
                         class="object-cover h-full"
                         src={backgroundImages.desktop[0]}
                         position={wallpaperPosition}
@@ -118,7 +122,7 @@ const wallpaperPosition = state.isFullscreenMode
             <div class="banner-image-slot absolute inset-0 block lg:hidden">
                 <template>
                     <ImageWrapper
-                        alt="Mobile background image of the blog"
+                        alt={uiLocale === "en" ? "Mobile background image of the blog" : "博客移动端背景图片"}
                         class="object-cover h-full w-full"
                         src={backgroundImages.mobile[0]}
                         position={wallpaperPosition}
@@ -135,7 +139,7 @@ const wallpaperPosition = state.isFullscreenMode
             <div class="banner-image-slot absolute inset-0 hidden lg:block">
                 <template>
                     <ImageWrapper
-                        alt="Desktop background image of the blog"
+                        alt={uiLocale === "en" ? "Desktop background image of the blog" : "博客桌面端背景图片"}
                         class="object-cover h-full"
                         src={backgroundImages.desktop[0]}
                         position={wallpaperPosition}
@@ -152,7 +156,7 @@ const wallpaperPosition = state.isFullscreenMode
             {backgroundImages.mobile.length > 0 && (
                 <div class="absolute inset-0 block lg:hidden">
                     <ImageWrapper
-                        alt="Mobile background image of the blog"
+                        alt={uiLocale === "en" ? "Mobile background image of the blog" : "博客移动端背景图片"}
                         class="object-cover h-full w-full"
                         src={backgroundImages.mobile[0]}
                         position={wallpaperPosition}
@@ -169,7 +173,7 @@ const wallpaperPosition = state.isFullscreenMode
             {backgroundImages.desktop.length > 0 && (
                 <div class="absolute inset-0 hidden lg:block">
                     <ImageWrapper
-                        alt="Desktop background image of the blog"
+                        alt={uiLocale === "en" ? "Desktop background image of the blog" : "博客桌面端背景图片"}
                         class="object-cover h-full"
                         src={backgroundImages.desktop[0]}
                         position={wallpaperPosition}
@@ -203,7 +207,7 @@ const wallpaperPosition = state.isFullscreenMode
 
             function isCarouselEnabled() {
                 if (!switchable) return defaultEnabled;
-                var stored = localStorage.getItem('bannerCarouselEnabled');
+                var stored = window.__zhenkunStorage.getItem('bannerCarouselEnabled');
                 if (stored === null) return defaultEnabled;
                 return stored === 'true';
             }

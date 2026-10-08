@@ -1,0 +1,561 @@
+{
+  "kind": "READ_ONLY_MIGRATION_INVENTORY",
+  "legacy": "d0a2b9e3a7e8c9d5ee57240d85598b68432fb291",
+  "legacyIncrementBase": "1e7f49cf89c4157c8b5fe43cee04118f0ab9d6ae",
+  "currentBase": "a7b31c777f415e725eaf4d280da34380b3fc82cd",
+  "files": 55,
+  "added": 1433,
+  "removed": 175,
+  "rows": [
+    {
+      "legacyFile": "scripts/xiayi-audit-locale-html.mjs",
+      "currentTarget": "scripts/zhenkun-audit-locale-html.mjs",
+      "area": "tests",
+      "added": 121,
+      "removed": 0,
+      "legacyBlob": "285e9b3c3f6cb99c7f9f9262166de9ced576b233",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "scripts/xiayi-test-locales.mjs",
+      "currentTarget": "scripts/zhenkun-test-locales.mjs",
+      "area": "tests",
+      "added": 248,
+      "removed": 0,
+      "legacyBlob": "5eeb3c347e7c6d94d6953b77d0e66d70de5f0089",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "scripts/xiayi-test-music-locale.mjs",
+      "currentTarget": "scripts/zhenkun-test-music-locale.mjs",
+      "area": "tests",
+      "added": 199,
+      "removed": 0,
+      "legacyBlob": "a8eefc960f9ef82c67061745d94fc1c84a817433",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/common/WidgetLayout.astro",
+      "currentTarget": "src/components/common/WidgetLayout.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "61a88070b27819ff1ffd6e1f05064dadc5f0398c",
+      "currentBlob": "a08dc4e6360ad843dc1b4ffb55c294c3c6f6b87e",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/controls/BackToComment.astro",
+      "currentTarget": "src/components/controls/BackToComment.astro",
+      "area": "layout-ui",
+      "added": 7,
+      "removed": 1,
+      "legacyBlob": "5f03338f0df008b6b37a424cdfe5f0d6631e25c2",
+      "currentBlob": "cdd04baa6e07089b8f4e516e5563851816e9dddb",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/controls/BackToHome.astro",
+      "currentTarget": "src/components/controls/BackToHome.astro",
+      "area": "layout-ui",
+      "added": 7,
+      "removed": 3,
+      "legacyBlob": "e26aed54a2d09b3070500e8f2bb55a027f81e790",
+      "currentBlob": "3388aa30d46f7430f83958506e0d241aeb9dabf6",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/controls/BackToTop.astro",
+      "currentTarget": "src/components/controls/BackToTop.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 2,
+      "legacyBlob": "7cecd8ff13878c72e46de7bbbfb8be3ed5ec284d",
+      "currentBlob": "161fe75ac51cf36a74808e47a50e330bd9110cc8",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/controls/DisplaySettingsIntegrated.svelte",
+      "currentTarget": "src/components/controls/DisplaySettingsIntegrated.svelte",
+      "area": "layout-ui",
+      "added": 15,
+      "removed": 9,
+      "legacyBlob": "0c58dea82fb0e8218f4604073ffc9ca63c87c90b",
+      "currentBlob": "c77c01be61851f9507e082d47d0decddabb9996f",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/controls/FloatingTOC.astro",
+      "currentTarget": "src/components/controls/FloatingTOC.astro",
+      "area": "layout-ui",
+      "added": 6,
+      "removed": 2,
+      "legacyBlob": "05cc9c9018d3b092ffe2fe5e074d1070aef9a391",
+      "currentBlob": "dde339122e45a2c4fa9f019ed7eeaff8559233b1",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/controls/ImmersiveReading.astro",
+      "currentTarget": "src/components/controls/ImmersiveReading.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "02d9f0b663bc56a2078871ba3e5b4ae9684d04a8",
+      "currentBlob": "ac8282e8ea100c2630126b01747e10839a62b44b",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/controls/ImmersiveTOC.astro",
+      "currentTarget": "src/components/controls/ImmersiveTOC.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "56d8c336d5ab460a05de8d0eb9c2d79ea3797491",
+      "currentBlob": "fdb2c785a2f60f9b48a06b424e5c9e9555a3cac4",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/controls/LightDarkSwitch.svelte",
+      "currentTarget": "src/components/controls/LightDarkSwitch.svelte",
+      "area": "layout-ui",
+      "added": 6,
+      "removed": 1,
+      "legacyBlob": "130a9c874870d03c81dceb53e4a09459b5130ada",
+      "currentBlob": "c074d46216b818716f11e05bbec3ea86d25955fe",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/controls/Search.svelte",
+      "currentTarget": "src/components/controls/Search.svelte",
+      "area": "layout-ui",
+      "added": 14,
+      "removed": 3,
+      "legacyBlob": "10a94c102c56c6ee674e6a19dc5d06c7d1ceb107",
+      "currentBlob": "7e19248a38d9520a6ba70ff7fe256b7fff30a0b2",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/features/BackgroundPlayer.astro",
+      "currentTarget": "src/components/features/BackgroundPlayer.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "a6a479ce7b852fbd9ce6f0553aef9eff9c1d027f",
+      "currentBlob": "6a61bf25dbc0eb122b452c62fb03d35ab1547aa7",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/features/MusicManager.astro",
+      "currentTarget": "src/components/features/MusicManager.astro",
+      "area": "layout-ui",
+      "added": 9,
+      "removed": 3,
+      "legacyBlob": "bbd6cee872fd2024cb3c2cf48cfde71ad35e65a7",
+      "currentBlob": "802d5fcfdda317b81eeefd866c6ee007fe7ddba5",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/features/MusicPlayer.astro",
+      "currentTarget": "src/components/features/MusicPlayer.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "1802247f5b853108161ff8c0d0597b4af4059eb2",
+      "currentBlob": "2e219cd2397ac9dbb95a35d3c7b0c1d40129be89",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/features/MusicPlayerView.astro",
+      "currentTarget": "src/components/features/MusicPlayerView.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "2a56d63f6495e5fc6916f25eb348ed54abb2944a",
+      "currentBlob": "8312c2a6f793f4df55454bcba6d6631d1e0e8564",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/layout/AboutPage.astro",
+      "currentTarget": "src/components/layout/AboutPage.astro",
+      "area": "layout-ui",
+      "added": 40,
+      "removed": 0,
+      "legacyBlob": "b3a28dcc61329cbf77867d142849ec386f59d9c8",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/layout/BannerHomeTextOverlay.astro",
+      "currentTarget": "src/components/layout/BannerHomeTextOverlay.astro",
+      "area": "layout-ui",
+      "added": 13,
+      "removed": 2,
+      "legacyBlob": "39d5684b12d543588631e95593ba74ed7774b02b",
+      "currentBlob": "94a09b0a4d09e9176214c5f20235c6f106db9891",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/layout/CategoryBar.astro",
+      "currentTarget": "src/components/layout/CategoryBar.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "1e212edd25b02ed32251f9dbbba5aa98e4fb3dba",
+      "currentBlob": "93f5de6185b695ff24f518bed4932e1fa9cf2a02",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/layout/Footer.astro",
+      "currentTarget": "src/components/layout/Footer.astro",
+      "area": "layout-ui",
+      "added": 9,
+      "removed": 3,
+      "legacyBlob": "ced094dff13ad8cd4bbad23e77790d3a64a3f220",
+      "currentBlob": "5ca337aac036397100bfbc804f25ef9db8dd4665",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/layout/LanguageSwitch.astro",
+      "currentTarget": "src/components/layout/LanguageSwitch.astro",
+      "area": "layout-ui",
+      "added": 29,
+      "removed": 0,
+      "legacyBlob": "95f721b9971536ac10d17bb79f3fb50cf7ba8145",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/layout/MissingTranslationNotice.astro",
+      "currentTarget": "src/components/layout/MissingTranslationNotice.astro",
+      "area": "layout-ui",
+      "added": 14,
+      "removed": 0,
+      "legacyBlob": "a99757ffdf347457db9b71a9564d63c5bc889ae8",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/layout/NavMenuPanel.astro",
+      "currentTarget": "src/components/layout/NavMenuPanel.astro",
+      "area": "layout-ui",
+      "added": 6,
+      "removed": 2,
+      "legacyBlob": "193dc14fed8997d0e6f15ecb8c4e525fe39d1ea9",
+      "currentBlob": "65b529f393da2669620cf419c5263dbeba172e4e",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/layout/Navbar.astro",
+      "currentTarget": "src/components/layout/Navbar.astro",
+      "area": "layout-ui",
+      "added": 18,
+      "removed": 13,
+      "legacyBlob": "a9cb4cf69e94a4219def4d1d2191034fc228bd73",
+      "currentBlob": "3ef73ae0243a17cdbb1ad5e4ae4b6fda794ad7a0",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/layout/WallpaperSection.astro",
+      "currentTarget": "src/components/layout/WallpaperSection.astro",
+      "area": "layout-ui",
+      "added": 12,
+      "removed": 8,
+      "legacyBlob": "c8e888eb2a021e9f3debb486c7d4ea26c2dadd66",
+      "currentBlob": "a947750a4a91db33e4ab676126f547edcf099a47",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/widget/Announcement.astro",
+      "currentTarget": "src/components/widget/Announcement.astro",
+      "area": "layout-ui",
+      "added": 10,
+      "removed": 5,
+      "legacyBlob": "a975abf7628a565010afdcc46f02e2267393cddd",
+      "currentBlob": "ca01158b43059c1d3b4da695f6ace5d4627ab22c",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/widget/Calendar.astro",
+      "currentTarget": "src/components/widget/Calendar.astro",
+      "area": "layout-ui",
+      "added": 9,
+      "removed": 6,
+      "legacyBlob": "60f3aaa2f18cfec1158ef95e9a58c2ca9544a215",
+      "currentBlob": "75f95cdcf4f336911bfac2af297ec9fba3d35809",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/widget/Categories.astro",
+      "currentTarget": "src/components/widget/Categories.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "0fed912cd3aafef3fcf95c48b2fe5485ff5baece",
+      "currentBlob": "5fc3ac682628b2cec67da2d7def86cb579b0a423",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/widget/Music.astro",
+      "currentTarget": "src/components/widget/Music.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "447f93816c399b511aedbe6299722c05c54f4214",
+      "currentBlob": "bcc1dc7944ed8882f8af2fb1a5c347e9154843e3",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/widget/Profile.astro",
+      "currentTarget": "src/components/widget/Profile.astro",
+      "area": "layout-ui",
+      "added": 17,
+      "removed": 12,
+      "legacyBlob": "19c0c929904eddd50be7d18aea9c72657eea2af1",
+      "currentBlob": "fa9ec2fa63f08641160b65f62d3ab1d624a54a53",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/widget/SidebarTOC.astro",
+      "currentTarget": "src/components/widget/SidebarTOC.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "dfdb67b8d11958447867e0435d099439c4232fc6",
+      "currentBlob": "5e083332f9d7b1cb51f83c22b78e4104dc5c3162",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/widget/SiteInfo.astro",
+      "currentTarget": "src/components/widget/SiteInfo.astro",
+      "area": "layout-ui",
+      "added": 24,
+      "removed": 10,
+      "legacyBlob": "1e4a1752d61d2262c4a6c87ce3996a08d67e0447",
+      "currentBlob": "26e31df145e925ac0b36462599c79af8df615c29",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/widget/SiteStats.astro",
+      "currentTarget": "src/components/widget/SiteStats.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "2c7efe3a3cfc0e3679c2422c3fa8b938ed978323",
+      "currentBlob": "15e67a155e4ab8e2b1547964b10bb142205baaa3",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/components/widget/Tags.astro",
+      "currentTarget": "src/components/widget/Tags.astro",
+      "area": "layout-ui",
+      "added": 5,
+      "removed": 1,
+      "legacyBlob": "eb8eb4dc7a646bf4f53b96133262a84bd16c9b7d",
+      "currentBlob": "65b681b6e245d3955faca9a98fc2206a15e22b51",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/content/spec/about-en.md",
+      "currentTarget": "src/content/spec/about-en.md",
+      "area": "content-routes",
+      "added": 18,
+      "removed": 0,
+      "legacyBlob": "b345f54a0e5fbc19c2bd232792b051d6574dc38d",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/content/spec/about.md",
+      "currentTarget": "src/content/spec/about.md",
+      "area": "content-routes",
+      "added": 1,
+      "removed": 1,
+      "legacyBlob": "e88793c991416b3982b735868bca7d600308ecfa",
+      "currentBlob": "a8828bf621696510ed86acd7447ac0977a31031c",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/i18n/translation.ts",
+      "currentTarget": "src/i18n/translation.ts",
+      "area": "locale-contract",
+      "added": 22,
+      "removed": 2,
+      "legacyBlob": "033ee5b4e7ea04c33d278464e73a7db385125543",
+      "currentBlob": "f4f5dc943cb21c1684e1ccbf6ddb8a8d391808bb",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/layouts/Layout.astro",
+      "currentTarget": "src/layouts/Layout.astro",
+      "area": "layout-ui",
+      "added": 44,
+      "removed": 12,
+      "legacyBlob": "28f0068506ac2ef8970679e5297d700e71422cd9",
+      "currentBlob": "300770feeba56c567bf8bb8eeaa79d90f3e21436",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/layouts/MainGridLayout.astro",
+      "currentTarget": "src/layouts/MainGridLayout.astro",
+      "area": "layout-ui",
+      "added": 2,
+      "removed": 1,
+      "legacyBlob": "51ff371845814eab54c95aa8d28c42456e1fe893",
+      "currentBlob": "83b73670f9601048bb75c62bfd21afdb0dc03977",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/pages/[...page].astro",
+      "currentTarget": "src/pages/[...page].astro",
+      "area": "content-routes",
+      "added": 4,
+      "removed": 0,
+      "legacyBlob": "18a82f918def6a5295736f0ab6358a4a41c83125",
+      "currentBlob": "51b08fdff7e66444bb80f4b29882492eead22659",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/pages/about.astro",
+      "currentTarget": "src/pages/about.astro",
+      "area": "content-routes",
+      "added": 2,
+      "removed": 37,
+      "legacyBlob": "1e0c0bbf1dacc35a9fd22dc20c136a870dd8929f",
+      "currentBlob": "0775c1a02279f7f73fbed67b0d07fddded5e7c09",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/pages/en/about.astro",
+      "currentTarget": "src/pages/en/about.astro",
+      "area": "content-routes",
+      "added": 4,
+      "removed": 0,
+      "legacyBlob": "1e0c0bbf1dacc35a9fd22dc20c136a870dd8929f",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/pages/en/index.astro",
+      "currentTarget": "src/pages/en/index.astro",
+      "area": "content-routes",
+      "added": 13,
+      "removed": 0,
+      "legacyBlob": "2bdff04db556e521ad32b41c4ece959ad5aaf05d",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/date-utils.ts",
+      "currentTarget": "src/utils/date-utils.ts",
+      "area": "shared-consumer",
+      "added": 7,
+      "removed": 3,
+      "legacyBlob": "51a04d068868d48f414183a1d190c096570cd0ae",
+      "currentBlob": "f406807e2613bdec61ff4e034750b480b94e1a18",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/deployment-contract.ts",
+      "currentTarget": "src/utils/deployment-contract.ts",
+      "area": "shared-consumer",
+      "added": 18,
+      "removed": 3,
+      "legacyBlob": "fc6091167ba4c81a6afa5f0eb6a07b74a6bfc14b",
+      "currentBlob": "56898472542dfd37dece9200cd61e84ab4cff893",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/immersive-reading-utils.ts",
+      "currentTarget": "src/utils/immersive-reading-utils.ts",
+      "area": "shared-consumer",
+      "added": 1,
+      "removed": 1,
+      "legacyBlob": "a5825318953167b0a49e65d6d0217739adc8cd95",
+      "currentBlob": "7a34ff4f4ffb89b7cbfd9533447c6ec9fe63afc9",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/layout-utils.ts",
+      "currentTarget": "src/utils/layout-utils.ts",
+      "area": "shared-consumer",
+      "added": 5,
+      "removed": 0,
+      "legacyBlob": "d2f04d5e8a820a5672dd4b1f1efa590f50630094",
+      "currentBlob": "6b877dcedff21252ade8374e7ccac07599add6f8",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/locale-contract.ts",
+      "currentTarget": "src/utils/locale-contract.ts",
+      "area": "locale-contract",
+      "added": 72,
+      "removed": 0,
+      "legacyBlob": "ccda7ab61c7e53567c5a53a5660a54fb7d78d204",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/locale-pages.ts",
+      "currentTarget": "src/utils/locale-pages.ts",
+      "area": "locale-contract",
+      "added": 117,
+      "removed": 0,
+      "legacyBlob": "790af8a0ffe00276c1f244fc828fd207a517b8b1",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/locale-preference.ts",
+      "currentTarget": "src/utils/locale-preference.ts",
+      "area": "locale-contract",
+      "added": 158,
+      "removed": 0,
+      "legacyBlob": "b185e81c4154f7cf1dae39390628c69e27ce7636",
+      "currentBlob": null,
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/nav-menu-utils.ts",
+      "currentTarget": "src/utils/nav-menu-utils.ts",
+      "area": "shared-consumer",
+      "added": 16,
+      "removed": 2,
+      "legacyBlob": "d925680f87f4b894a736e0bafb916ce0631b8bcc",
+      "currentBlob": "3db5f0ec4da178dc9a0e14973750c600ad538900",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/navbar-i18n.ts",
+      "currentTarget": "src/utils/navbar-i18n.ts",
+      "area": "shared-consumer",
+      "added": 9,
+      "removed": 5,
+      "legacyBlob": "08ad07ec10d2ef977ab3fe7956995d6988254a50",
+      "currentBlob": "900df49c33bce6844f621c25cc1cddc8202406cd",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/schema-utils.ts",
+      "currentTarget": "src/utils/schema-utils.ts",
+      "area": "shared-consumer",
+      "added": 21,
+      "removed": 10,
+      "legacyBlob": "4e129d01a0a2794feb2c108eb6bc6d29d877333f",
+      "currentBlob": "eb3f1de3b043e635387814371b6b3ba882fee3ea",
+      "migrated": false
+    },
+    {
+      "legacyFile": "src/utils/toc-utils.ts",
+      "currentTarget": "src/utils/toc-utils.ts",
+      "area": "shared-consumer",
+      "added": 1,
+      "removed": 1,
+      "legacyBlob": "728f6f2fad2985b49874d3254c5190f50eb66090",
+      "currentBlob": "5187881e4fc19c91f705f32cc7c303a6c51111a0",
+      "migrated": false
+    }
+  ]
+}

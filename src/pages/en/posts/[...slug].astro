@@ -1,0 +1,11 @@
+---
+import ArticlePage from "@/components/pages/zhenkun-ArticlePage.astro";
+import { getSortedPosts } from "@/utils/content-utils";
+export async function getStaticPaths() {
+	return (await getSortedPosts("en")).map((entry) => ({
+		params: { slug: entry.id },
+		props: { entry },
+	}));
+}
+---
+<ArticlePage entry={Astro.props.entry} />

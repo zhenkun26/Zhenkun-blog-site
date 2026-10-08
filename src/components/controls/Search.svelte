@@ -1,6 +1,12 @@
 <script lang="ts">
+import { getTranslation } from "@/i18n/translation";
+import type { UiLocale } from "@/utils/locale-contract";
+
+export let locale: UiLocale = "zh_CN";
+const i18n = (key: I18nKey) => translate(key, locale);
+
 import I18nKey from "@i18n/i18nKey";
-import { i18n } from "@i18n/translation";
+import { i18n as translate } from "@i18n/translation";
 import { navigateToPage } from "@utils/navigation-utils";
 import { onMount } from "svelte";
 import Icon from "@/components/common/Icon.svelte";
@@ -13,6 +19,7 @@ import { url as formatUrl, getSearchUrl } from "@/utils/url-utils";
 let keyword = "";
 let result: SearchResult[] = [];
 let isSearching = false;
+let hasError = false;
 let session: ReturnType<typeof createSearchSession<SearchResult>> | undefined;
 
 // --- Mocks for Dev Mode ---
@@ -34,7 +41,9 @@ const fakeResult: SearchResult[] = [
 // pagefind.js 是按需加载的（见 Navbar.astro），搜索 UI 一被碰到就触发。
 // 幂等，重复调用只会拿到同一个 promise。
 const requestPagefind = (): void => {
-	window.__loadPagefind?.();
+	window.__loadPagefind?.().catch(() => {
+		/* The query session renders the localized error. */
+	});
 };
 
 const togglePanel = () => {
@@ -91,6 +100,7 @@ onMount(() => {
 		publish: (state) => {
 			result = state.results;
 			isSearching = state.status === "loading";
+			hasError = state.status === "error";
 			if (state.status !== "idle") setPanelVisibility(true);
 			else if (
 				!keyword.trim() &&
@@ -129,7 +139,7 @@ $: if (session) session.setQuery(keyword);
 </div>
 
 <!-- toggle btn for phone/tablet view -->
-<button on:click={togglePanel} aria-label="Search Panel" aria-controls="search-panel" aria-expanded="false" id="search-switch"
+<button on:click={togglePanel} aria-label={i18n(I18nKey.search)} aria-controls="search-panel" aria-expanded="false" id="search-switch"
 		class="btn-plain scale-animation lg:hidden! rounded-lg w-9 h-9 md:w-11 md:h-11 active:scale-90">
     <Icon icon="material-symbols:search" class="text-[1.25rem]"></Icon>
 </button>
@@ -158,6 +168,8 @@ top-20 left-4 md:left-[unset] right-4 shadow-2xl rounded-2xl p-2"
         <div class="transition first-of-type:mt-2 lg:first-of-type:mt-0 block rounded-xl text-lg px-3 py-2 text-50">
             {i18n(I18nKey.searchLoading)}
         </div>
+    {:else if hasError}
+        <div role="status" class="transition block rounded-xl text-lg px-3 py-2 text-50">{getTranslation(locale).uiSearchError}</div>
     {:else if result.length > 0}
         {#each result.slice(0, 5) as item}
             <a href={item.url}
@@ -190,8 +202,8 @@ top-20 left-4 md:left-[unset] right-4 shadow-2xl rounded-2xl p-2"
             </a>
         {/each}
         {#if result.length > 5}
-            <a href={getSearchUrl(keyword)}
-               on:click={(e) => handleResultClick(e, getSearchUrl(keyword))}
+            <a href={getSearchUrl(keyword, locale)}
+               on:click={(e) => handleResultClick(e, getSearchUrl(keyword, locale))}
                class="transition first-of-type:mt-2 lg:first-of-type:mt-0 group block rounded-xl text-lg px-3 py-2 hover:bg-(--btn-plain-bg-hover) active:bg-(--btn-plain-bg-active) text-(--primary) font-bold text-center">
                 <span class="inline-flex items-center">
                     {i18n(I18nKey.searchViewMore).replace('{count}', (result.length - 5).toString())}

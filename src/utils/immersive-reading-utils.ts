@@ -1,6 +1,6 @@
 import { siteConfig } from "@/config";
 import I18nKey from "@/i18n/i18nKey";
-import { i18n } from "@/i18n/translation";
+import { documentI18n as i18n } from "@/i18n/translation";
 import type { ImmersiveReadingConfig } from "@/types/immersiveReadingConfig";
 import { refreshSidebarStickyState } from "@/utils/grid-layout-utils";
 import { isPostPage, TOCManager } from "@/utils/toc-utils";

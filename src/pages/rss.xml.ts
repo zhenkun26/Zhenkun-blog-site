@@ -4,13 +4,16 @@ import { getContainerRenderer as getMDXRenderer } from "@astrojs/mdx/container-r
 import rss, { type RSSFeedItem } from "@astrojs/rss";
 import { getContainerRenderer as getSvelteRenderer } from "@astrojs/svelte/container-renderer";
 import I18nKey from "@i18n/i18nKey";
-import { i18n } from "@i18n/translation";
+import { createTranslator, getTranslation } from "@i18n/translation";
 import { getSortedPosts } from "@utils/content-utils";
 import { getPostUrlBySlug } from "@utils/url-utils";
 import type { APIContext } from "astro";
 import { experimental_AstroContainer as AstroContainer } from "astro/container";
 import sanitizeHtml from "sanitize-html";
 import { siteConfig } from "@/config";
+import { getPageLocale } from "@/utils/deployment-contract";
+import { localePath } from "@/utils/locale-contract";
+import { withDeploymentBase } from "@/utils/post-contract";
 import pkg from "../../package.json";
 
 export const prerender = true;
@@ -24,7 +27,9 @@ function stripInvalidXmlChars(str: string): string {
 }
 
 export async function GET(context: APIContext): Promise<Response> {
-	const blog = await getSortedPosts();
+	const locale = getPageLocale(context.url.pathname, import.meta.env.BASE_URL);
+	const i18n = createTranslator(locale);
+	const blog = await getSortedPosts(locale);
 	const renderers = await loadRenderers([
 		getMDXRenderer(),
 		getSvelteRenderer(),
@@ -37,7 +42,7 @@ export async function GET(context: APIContext): Promise<Response> {
 				title: post.data.title,
 				pubDate: post.data.published,
 				description: post.data.description || "",
-				link: getPostUrlBySlug(post.id),
+				link: getPostUrlBySlug(post.id, locale),
 				content: i18n(I18nKey.passwordProtectedRss),
 			});
 			continue;
@@ -49,7 +54,7 @@ export async function GET(context: APIContext): Promise<Response> {
 			title: post.data.title,
 			pubDate: post.data.published,
 			description: post.data.description || "",
-			link: getPostUrlBySlug(post.id),
+			link: getPostUrlBySlug(post.id, locale),
 			content: sanitizeHtml(cleanedContent, {
 				allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
 			}),
@@ -57,9 +62,12 @@ export async function GET(context: APIContext): Promise<Response> {
 	}
 	return rss({
 		title: siteConfig.title,
-		description: siteConfig.subtitle || "No description",
+		description:
+			locale === "en"
+				? getTranslation(locale).uiSubtitle
+				: siteConfig.subtitle || "No description",
 		site: new URL(
-			import.meta.env.BASE_URL,
+			withDeploymentBase(localePath("/", locale), import.meta.env.BASE_URL),
 			context.site ?? siteConfig.site_url,
 		),
 		customData: `<templateTheme>Firefly</templateTheme>

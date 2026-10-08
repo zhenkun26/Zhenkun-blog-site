@@ -6,9 +6,11 @@ import CoverImage from "@/components/common/CoverImage.astro";
 import PostMetadata from "@/components/layout/PostMeta.astro";
 import PostStats from "@/components/layout/PostStats.astro";
 import { siteConfig } from "@/config";
+import { getPageLocale } from "@/utils/deployment-contract";
 import { getApiUrlList, processCoverImageSync } from "@/utils/image-utils";
 import { getFileDirFromPath, getTagUrl } from "@/utils/url-utils";
 
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
 interface Props {
 	class?: string;
 	entry: CollectionEntry<"posts">;
@@ -183,8 +185,8 @@ const minutes = remarkPluginFrontmatter.minutes;
       >
         {bottomTags.map((tag) => (
           <a
-            href={getTagUrl(tag)}
-            aria-label={`View all posts with the ${tag.trim()} tag`}
+            href={getTagUrl(tag, uiLocale)}
+            aria-label={tag}
             class:list={[
               "transition text-xs font-medium",
               bottomTagsAsText

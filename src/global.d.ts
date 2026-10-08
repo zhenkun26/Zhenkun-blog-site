@@ -9,6 +9,7 @@ declare global {
 	}
 
 	interface Window {
+		__zhenkunStorage: import("./utils/zhenkun-storage").SafeStorage;
 		// biome-ignore lint/suspicious/noExplicitAny: External library
 		swup: any;
 		spineModelInitialized?: boolean;

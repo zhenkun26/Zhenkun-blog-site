@@ -12,10 +12,10 @@ function hasControlCharacter(value: string): boolean {
  * This controls visibility, not confidentiality or access to source files.
  */
 export function isPostVisible(
-	data: { draft?: boolean },
+	data: { draft?: boolean; private?: boolean },
 	production = true,
 ): boolean {
-	return !production || data.draft !== true;
+	return !production || (data.draft !== true && data.private !== true);
 }
 
 /** Prevent a build from selecting development drafts while preflight checks public posts. */

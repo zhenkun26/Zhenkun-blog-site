@@ -3,7 +3,9 @@ import type { CollectionEntry } from "astro:content";
 import { getPostUrlBySlug } from "@utils/url-utils";
 import PostCard from "@/components/layout/PostCard.astro";
 import { siteConfig } from "@/config";
+import { getPageLocale } from "@/utils/deployment-contract";
 
+const uiLocale = getPageLocale(Astro.url.pathname, import.meta.env.BASE_URL);
 const { page } = Astro.props;
 
 let delay = 0;
@@ -47,7 +49,7 @@ const coverPositionClass =
         category={entry.data.category}
         published={entry.data.published}
         updated={entry.data.updated}
-        url={getPostUrlBySlug(entry.id)}
+        url={getPostUrlBySlug(entry.id, uiLocale)}
         image={entry.data.image}
         description={entry.data.description}
         draft={entry.data.draft}
@@ -64,7 +66,7 @@ const coverPositionClass =
 <!-- 立即执行脚本：防止刷新时的布局闪烁 -->
 <script is:inline define:vars={{ defaultLayout, mobileDefaultLayout, columnWidth }}>
   (function() {
-    const savedLayout = localStorage.getItem('postListLayout');
+    const savedLayout = window.__zhenkunStorage.getItem('postListLayout');
     // 根据视口宽度确定有效的默认布局
     const effectiveDefault = window.innerWidth < 780 ? mobileDefaultLayout : defaultLayout;
     // 低于380px强制网格模式
@@ -95,6 +97,8 @@ const coverPositionClass =
 </script>
 
 <script>
+import { safeStorage as localStorage } from "@/utils/zhenkun-storage";
+
   // 动态布局切换脚本
   function initLayout() {
     const postListContainer = document.getElementById("post-list-container");

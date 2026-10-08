@@ -217,6 +217,23 @@
 - **改判条件**：独立复核计数/样例不成立；G6 选择不同路径/回退；单构建配置时插件或 locale 传递无法可靠保持一致；真实正文/搜索/Swup/交付矩阵失败；维护成本/英文内容需求改变。先修订 ADR，再明确增量，不从调查自动升级到重写/批量翻译/外部发布。
 
 
+### ADR-XB-014 amendment: current Astro 7 renderer locale boundary (2026-10-08)
+
+- **证据范围**：当前主线 `a7b31c777f415e725eaf4d280da34380b3fc82cd` 的实际已安装配置renderer seam；并发显式 `zh-CN/en/en/zh-CN`，英文collapse文案/播报仍中文，中文copy title/completion仍英文。调用、两个AST序列化HTML片段及精确installed接口哈希见 [S2 report](../references/s2-locale-spike-2026-10-08/report.md)。不是完整Firefly、双base、页面/搜索/浏览器验收，不能把进程exit0写作单语言PASS。
+- **接口约束**：`astro-expressive-code@0.44.2` 的 `getBlockLocale` 和core逐块locale实际存在；当前Astro7 Satteri file只有path/URL/source，没有旧 `file.data.astro.frontmatter`。`expressive-code-collapsible@0.1.0` 的渲染hook读取创建时闭包四条文案，未读locale；真实frame owner提供locale文本接口但没有中文默认。逐文档语言来源、原插件hook与两个core owner兼容性须先实证，不能按页面临时切全局siteConfig。
+- **A修订候选（proposed，未实施/验证）**：保留单构建，在现有content语言/发布契约上明确document→block locale；仅用小适配层选择原collapse hook及已有catalog文案，补正确owner的copy/terminal/sections locale。保留原行为与单一CSS/JS消费者，不fork插件/引新依赖/永久复制第二字典。须验证真实Markdown/MDX、并发、两core严格类型与实际控件/ARIA；Home/About成功也不豁免正文。
+- **B后备（未实施/验证）**：两次正式完整生成/font/Pagefind，再用manifest/hash受控拼合；额外承担base碰撞、资源归属、SEO/feed/robots/sitemap与最终artifact门，不由更改全站环境变量自动解决。
+- **决定边界**：本批执行提示明确要求出现配置时反例就停在方案决定前。推荐父任务对document-locale与plugin-owner耦合做窄Astra high决策，优先评估A最小修复；这是推断，未接受新架构。复验上述真实seams成立后再记录接受选择。任务停点/实施与交付状态仅在ROADMAP；旧P8资料和已批准五点产品方向继续有效，不把旧候选视作已上线。
+
+### ADR-XB-014 amendment: selected single-build implementation (2026-10-08)
+
+- **决定**：按父任务窄范围架构决策继续 A：单构建、中文旧 URL、英文 `/en/`，复用 catalog 和现有发布资格；B 双构建不采用。本条接受实施方向，不声明整站或发布验收。
+- **归因纠正**：当前 `astro.config.mjs` 明确选择 `unified()`，实际 EC integration 安装 rehype 分支并收到 `file.data.astro.frontmatter`。上一批 renderer 语言反例成立，但将未启用 Satteri 分支误当正文语言阻断；保留原记录，不增加文件语言表或重复解析器。
+- **正文/界面**：正文由 frontmatter `lang` 经同一纯函数归一化，历史缺省中文，非法显式值拒绝；schema/预检/EC一致。UI由去掉base后的明确URL决定，完整正文页断言二者一致。英文spec显式声明lang。配对只来自合格真实内容和translationKey，无译文不生成伪英文正文；偏好不能覆盖深链。
+- **最小插件适配**：由直接依赖的公开re-export读取frame文本表，既有sections包读取其文本表，renderer创建前一次注册固定两语catalog。原整块collapse实例/参数/CSS/JS保持，最后增加当前core的typed block AST hook，按context.locale仅改两按钮文本/两播报属性；不跨旧core委派hook，不增客户端observer或全局活动语言。
+- **实证与限度**：82194d46上的隔离实际configured unified，双base8个并发Markdown/4个MDX编译/36次frontmatter hook；copy/terminal/sections/collapse正确且原JS字节相同。新模块按项目默认编译器+strict/isolatedDeclarations通过。Mac独立headless Edge、本地synthetic、原EC脚本及Swup4.9.2，24次同语替换/8次跨语native reload，控件PASS/页面异常0；clipboard sink stub，未写系统剪贴板。均非整站/真实Pagefind/生产验收，实施后仍跑正式S2矩阵。
+- **客户端与SEO**：同语保留Swup，跨语data-no-swup整文档；不客户端替换正文语言。html lang、canonical、真实互返hreflang、Pagefind/RSS/API/Wiki/OG沿同一eligible locale/pair契约，base只拼一次。新文章/译文/评论仍另验收。
+
 ## ADR-XB-015: Repository identity and address compatibility
 
 - **Status**: Accepted by the owner on 2026-10-02.
@@ -330,3 +347,29 @@
 - The unpublished implementation history and raw evidence are preserved on their original local branch. A new publication commit may use the existing public PR22 head and current deployed main as its parents, retaining ordinary fast-forward PR delivery without force-push or rewriting prior commits. Its application, dependency, test, patch and workflow blobs must equal the final validated candidate.
 - Machine paths and automatic local identities are outside the authorized public identity. Documentation/evidence projections must carry explicit redaction metadata and original SHA256; private protection receipts remain local. Original failing results and advisories are retained, not relabeled PASS. Actual raw audit JSON and hash-bound official fixtures stay byte-identical. All newly reachable publication blobs and commit identities must be checked before push.
 - The graph checker reads immutable SHA-bound copies of the original pre-remediation lock/workspace, retaining exact full comparison on a fresh public clone. This changes evidence access only. Cache deployment boundary is rebound after exact graph and unchanged installed-source checks, then current-bound live proof reruns. Publication source equality and exact Linux CI are required; this does not accept the historical local commit identities.
+
+### ADR-XB-014 implementation checkpoint: actual article interaction remains a gate
+
+- Single-build A is implemented locally through application9ad3a2b. Shared views and consumers use explicit route/body locale; only eligible actual counterparts produce translation links. Source changes do not inherit prior S1/P8 acceptance.
+- Real blocked-storage exceptions justify a bounded optional-preference fallback; language comes from URL and defaults remain usable. Original code-collapse CSS/client script ownership remains with its existing plugin; the adapter adds only rendered text/data.
+- Three complete synthetic article journeys time out on pointer-collapse state, while a bounded one-page diagnostic toggles correctly. Treat the cause as unresolved. Keep original failures and escalate to the coordinator for narrow diagnosis; no source workaround, wide renderer redesign, security rebind or release acceptance is selected at this stop.
+
+
+### ADR-XB-014 amendment: inserted code-control lifecycle (2026-10-08)
+
+- Actual Swup replacement returns new controls while the site's typewriter continuously mutates body descendants. The original collapse plugin's body-wide100ms trailing debounce postpones initialization; the pointer lands correctly before binding. This is a confirmed blocker, although old uninstrumented failures alone cannot identify every individual timeout.
+- Selected narrow repair `d71b893`: adapt only the installed collapse plugin's single MutationObserver registration. Process a mutation batch immediately only when added elements match/contain collapse containers or controls; call its original guarded initializer. Preserve plugin renderer/CSS/handlers/announcements and the independent locale AST adapter. The source-fragment adapter checks exact unique occurrence and module shape at build time; changed upstream registration requires review. No second observer, Swup-specific hook, global active language, package patch, dependency or rendering redesign.
+- Deterministic execution of original installed client demonstrates starvation; adapted execution establishes insertion binding and listener uniqueness without scans for unrelated text. Actual full root/project body journeys pass unchanged assertions. Remaining whole-site/controls/security/delivery gates stay in ROADMAP.
+- S2's static language routes, filtered build-time metadata/feed output and browser-only observer do not introduce a shared request cache, Worker runtime, new image-cache entry, dependency or external service. This permits bounded revalidation under the existing cache exposure decision. It does not grant a security PASS: review final tracked boundary and actual installed hashes/instances, provisionally update only boundarySha256, then rerun current-clock primary records, prod/full raw audits and same-run actual cache/official-counterexample proof. Keep unchanged patch/ledger/primary/test hashes and both existing review deadlines unless independently justified by a new scope-bearing change; never renew a window to make S2 pass.
+
+
+### ADR-XB-014/016 amendment: S2 static exposure revalidation (2026-10-08)
+
+- Current S2 source keeps static Pages, dependency/lock/patch/workflow and image/cache entry bytes. English metadata/feed routes are build-time outputs; browser preferences and the inserted-code observer add no shared request cache or Worker exposure. Four owned test bodies are absent from source and formal output. The final tracked522-file application manifest gives boundary6289eb49733763f0c36d015e0b383c6a7a1ae943455fce302cf5bbdb67e57d2d.
+- Before binding, an owned diagnostic copy enforces that exact reviewed candidate boundary while preserving all existing installed-source demands:8real parent paths, all Astro/cache instances, installed lock, three patch files and pinned tests agree. Real62/62 cache/parent/frozen missing-corrupt patch negatives pass. The canonical contract then changes only boundarySha256; all ledger/patch/primary/test/installed hashes and both2026-10-14T14:27:22Z deadlines stay unchanged. This is a provisional binding for fresh runtime proof, not security acceptance. Same-run live primary records, raw prod/full audits, positive/original-generator counterexamples and stable source snapshots must pass before delivery.
+
+
+### ADR-XB-014/016 amendment: final theme delta and current proof
+
+- A real dark empty-state readability defect justified one existing theme-text class (`text-75`) on the shared Home empty paragraph. Chinese/English light/dark browser contrast passes on both bases (minimum 9.89). No corpus, runtime exposure, dependency or patch bytes changed.
+- The final tracked application boundary is `7219a0810d21ed7df37a75f2db5840befc45fc216038f684ef547132bb05de31`. The one-class delta was reviewed against the prior manifest before the contract-only rebind. Fresh actual-clock collection on `d83072c6bee4a8a28a71786e5f815eb767634a4c` retains both raw high alerts and validates installed parents/patches, 62 positives and official counterexamples; effective PASS has no unresolved finding. Both October 14 review deadlines are unchanged. [Local receipt](../references/s2-integration-2026-10-08/local-receipt.json) records scope and limits; exact remote gates are still required.

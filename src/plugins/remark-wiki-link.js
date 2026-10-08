@@ -8,6 +8,11 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { slug } from "github-slugger";
 import {
+	htmlLocale,
+	localePath,
+	normalizeContentLocale,
+} from "../utils/locale-contract.ts";
+import {
 	getPostPath,
 	isPostVisible,
 	withDeploymentBase,
@@ -45,13 +50,41 @@ function resolveWikiPost(parsed, context) {
 		parsed.contentPath,
 		context.production,
 	);
-	if (result.status === "resolved") return result.post;
+	if (result.status === "resolved") {
+		const key = result.post.data.translationKey;
+		const paired =
+			!parsed.heading &&
+			key &&
+			context.postIndex.posts.find(
+				(post) =>
+					post.data.translationKey === key &&
+					normalizeContentLocale(post.data.lang) === context.locale &&
+					isPostVisible(post.data, context.production),
+			);
+		return paired || result.post;
+	}
 	reportWikiIssue(context, result.status, parsed.destination);
 	return null;
 }
 
+function originalProperties(meta, context) {
+	const locale = normalizeContentLocale(meta.data.lang);
+	return locale === context.locale
+		? {}
+		: {
+				"data-no-swup": "",
+				"data-original-version": "",
+				lang: htmlLocale(locale),
+				"aria-label": context.originalLabels?.[context.locale],
+			};
+}
+
 function createPostUrl(id, context) {
-	return withDeploymentBase(getPostPath(id), context.base);
+	const post = context.postIndex.posts.find((post) => post.id === id);
+	return withDeploymentBase(
+		localePath(getPostPath(id), normalizeContentLocale(post?.data.lang)),
+		context.base,
+	);
 }
 
 function formatPublishedDate(value) {
@@ -323,6 +356,7 @@ function createWikiLinkCard(parsed, context) {
 		{
 			class: "card-wiki-link no-styling",
 			href: createPostUrl(resolvedPath, context),
+			...originalProperties(meta, context),
 		},
 		children,
 	);
@@ -367,6 +401,7 @@ function createWikiLink(value, context) {
 		type: "link",
 		url,
 		children: [createText(text)],
+		data: { hProperties: meta ? originalProperties(meta, context) : {} },
 	};
 }
 
@@ -484,12 +519,15 @@ export function remarkWikiLink({
 	production = true,
 	postIndex,
 	coverApi,
+	originalLabels,
 } = {}) {
 	return (tree, file) => {
 		// Astro renders source drafts during collection loading, before route selection.
 		if (!isPostVisible(file?.data?.astro?.frontmatter ?? {}, production))
 			return;
 		const context = {
+			locale: normalizeContentLocale(file?.data?.astro?.frontmatter?.lang),
+			originalLabels,
 			base,
 			production,
 			file,

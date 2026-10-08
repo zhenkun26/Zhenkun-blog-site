@@ -20,6 +20,7 @@ import {
 	updateNavbarTransparency,
 } from "@/utils/setting-utils";
 import { pathsEqual, url } from "@/utils/url-utils";
+import { safeStorage as localStorage } from "@/utils/zhenkun-storage";
 
 /**
  * 进度条：WAAPI 驱动 transform/opacity（合成线程动画）。

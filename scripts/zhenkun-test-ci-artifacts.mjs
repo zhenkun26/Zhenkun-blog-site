@@ -12,7 +12,16 @@ function fixture(t, options = {}) {
 	mkdirSync(join(root, "pagefind"));
 	writeFileSync(
 		join(root, "api/allPostMeta.json"),
-		JSON.stringify(options.posts ?? []),
+		JSON.stringify(
+			(options.posts ?? []).map((post) => ({ lang: "zh_CN", ...post })),
+		),
+	);
+	mkdirSync(join(root, "en/api"), { recursive: true });
+	writeFileSync(
+		join(root, "en/api/allPostMeta.json"),
+		JSON.stringify(
+			(options.englishPosts ?? []).map((post) => ({ lang: "en", ...post })),
+		),
 	);
 	if (!options.missingModule)
 		writeFileSync(join(root, "pagefind/pagefind.js"), "module");
@@ -31,6 +40,7 @@ function fixture(t, options = {}) {
 test("CI accepts an empty public corpus with a searchable About page", (t) => {
 	assert.deepEqual(inspectCiArtifacts(fixture(t), "/Zhenkun-blog-site/"), {
 		publicPosts: 0,
+		publicPostsByLocale: { zh_CN: 0, en: 0 },
 		indexedLanguages: 1,
 	});
 });
@@ -81,6 +91,46 @@ test("CI rejects duplicate public IDs", (t) => {
 	const post = { id: "approved", url: "/posts/approved/" };
 	assert.throws(
 		() => inspectCiArtifacts(fixture(t, { posts: [post, post] }), "/"),
+		/Duplicate/,
+	);
+});
+
+test("CI counts actual English articles and rejects locale/ID collisions", (t) => {
+	const root = fixture(t, {
+		posts: [{ id: "zh", url: "/posts/zh/" }],
+		englishPosts: [{ id: "en", url: "/en/posts/en/" }],
+	});
+	assert.deepEqual(inspectCiArtifacts(root, "/").publicPostsByLocale, {
+		zh_CN: 1,
+		en: 1,
+	});
+	assert.throws(
+		() =>
+			inspectCiArtifacts(
+				fixture(t, { englishPosts: [{ id: "en", url: "/posts/en/" }] }),
+				"/",
+			),
+		/base\/locale/,
+	);
+	assert.throws(
+		() =>
+			inspectCiArtifacts(
+				fixture(t, {
+					englishPosts: [{ id: "en", url: "/en/posts/en/", lang: "zh_CN" }],
+				}),
+				"/",
+			),
+		/language/,
+	);
+	assert.throws(
+		() =>
+			inspectCiArtifacts(
+				fixture(t, {
+					posts: [{ id: "shared", url: "/posts/shared/" }],
+					englishPosts: [{ id: "shared", url: "/en/posts/shared/" }],
+				}),
+				"/",
+			),
 		/Duplicate/,
 	);
 });

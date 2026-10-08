@@ -1,21 +1,28 @@
 import { type CollectionEntry, getCollection } from "astro:content";
 import I18nKey from "@i18n/i18nKey";
-import { i18n } from "@i18n/translation";
+import { createTranslator } from "@i18n/translation";
 import { getCategoryUrl } from "@utils/url-utils";
+import type { UiLocale } from "./locale-contract";
 import { isPostVisible } from "./post-contract";
 
 /** The collection owns schema validation; every consumer shares visibility selection. */
 export async function getVisiblePosts({
 	production = import.meta.env.PROD,
+	locale,
 }: {
 	production?: boolean;
+	locale?: UiLocale;
 } = {}): Promise<CollectionEntry<"posts">[]> {
-	return getCollection("posts", ({ data }) => isPostVisible(data, production));
+	return getCollection(
+		"posts",
+		({ data }) =>
+			isPostVisible(data, production) && (!locale || data.lang === locale),
+	);
 }
 
 // // Retrieve posts and sort them by publication date
-async function getRawSortedPosts() {
-	const allBlogPosts = await getVisiblePosts();
+async function getRawSortedPosts(locale: UiLocale) {
+	const allBlogPosts = await getVisiblePosts({ locale });
 
 	const sorted = allBlogPosts.sort((a, b) => {
 		// 首先按置顶状态排序，置顶文章在前
@@ -30,8 +37,13 @@ async function getRawSortedPosts() {
 	return sorted;
 }
 
-export async function getSortedPosts(): Promise<CollectionEntry<"posts">[]> {
-	const sorted = await getRawSortedPosts();
+export async function getSortedPosts(
+	locale: UiLocale = "zh_CN",
+): Promise<CollectionEntry<"posts">[]> {
+	const sorted = (await getRawSortedPosts(locale)).map((post) => ({
+		...post,
+		data: { ...post.data },
+	}));
 
 	for (let i = 1; i < sorted.length; i++) {
 		sorted[i].data.nextSlug = sorted[i - 1].id;
@@ -48,8 +60,10 @@ export type PostForList = {
 	id: string;
 	data: CollectionEntry<"posts">["data"];
 };
-export async function getSortedPostsList(): Promise<PostForList[]> {
-	const sortedFullPosts = await getRawSortedPosts();
+export async function getSortedPostsList(
+	locale: UiLocale = "zh_CN",
+): Promise<PostForList[]> {
+	const sortedFullPosts = await getRawSortedPosts(locale);
 
 	// delete post.body
 	const sortedPostsList = sortedFullPosts.map((post) => ({
@@ -95,7 +109,7 @@ export async function getSeriesPosts(
 	const seriesName = currentPost.data.series.trim();
 	if (!seriesName) return null;
 
-	const allPosts = await getSortedPostsList();
+	const allPosts = await getSortedPostsList(currentPost.data.lang);
 	const posts = allPosts.filter((p) => p.data.series.trim() === seriesName);
 	posts.sort(sortBySeriesOrder);
 
@@ -109,8 +123,10 @@ export type Series = { name: string; count: number; posts: PostForList[] };
  * 获取全站所有系列（按文章中 series 字段分组，每组内部按系列序号排序）
  * 供 /series/ 索引页使用
  */
-export async function getSeriesList(): Promise<Series[]> {
-	const allPosts = await getSortedPostsList();
+export async function getSeriesList(
+	locale: UiLocale = "zh_CN",
+): Promise<Series[]> {
+	const allPosts = await getSortedPostsList(locale);
 
 	const groupMap = new Map<string, PostForList[]>();
 	for (const post of allPosts) {
@@ -134,8 +150,8 @@ export type Tag = {
 	count: number;
 };
 
-export async function getTagList(): Promise<Tag[]> {
-	const allBlogPosts = await getVisiblePosts();
+export async function getTagList(locale: UiLocale = "zh_CN"): Promise<Tag[]> {
+	const allBlogPosts = await getVisiblePosts({ locale });
 
 	const countMap: { [key: string]: number } = {};
 	allBlogPosts.forEach((post: { data: { tags: string[] } }) => {
@@ -159,12 +175,14 @@ export type Category = {
 	url: string;
 };
 
-export async function getCategoryList(): Promise<Category[]> {
-	const allBlogPosts = await getVisiblePosts();
+export async function getCategoryList(
+	locale: UiLocale = "zh_CN",
+): Promise<Category[]> {
+	const allBlogPosts = await getVisiblePosts({ locale });
 	const count: { [key: string]: number } = {};
 	allBlogPosts.forEach((post: { data: { category: string | null } }) => {
 		if (!post.data.category) {
-			const ucKey = i18n(I18nKey.uncategorized);
+			const ucKey = createTranslator(locale)(I18nKey.uncategorized);
 			count[ucKey] = count[ucKey] ? count[ucKey] + 1 : 1;
 			return;
 		}
@@ -188,7 +206,7 @@ export async function getCategoryList(): Promise<Category[]> {
 		ret.push({
 			name: c,
 			count: count[c],
-			url: getCategoryUrl(c),
+			url: getCategoryUrl(c, locale),
 		});
 	}
 	return ret;
@@ -234,7 +252,7 @@ export async function getRelatedPosts(
 	currentPost: CollectionEntry<"posts">,
 	maxCount = 5,
 ): Promise<PostForList[]> {
-	const allPosts = await getVisiblePosts();
+	const allPosts = await getVisiblePosts({ locale: currentPost.data.lang });
 
 	// 排除自身和加密文章
 	const candidates = allPosts.filter(

@@ -2,6 +2,7 @@ import { defineCollection } from "astro:content";
 import type { CollectionConfig } from "astro/content/config";
 import { glob } from "astro/loaders";
 import { type ZodType, z } from "astro/zod";
+import { normalizeContentLocale, type UiLocale } from "./utils/locale-contract";
 import { getPostId } from "./utils/post-contract";
 
 type PostData = {
@@ -13,7 +14,9 @@ type PostData = {
 	image: string;
 	tags: string[];
 	category: string | null;
-	lang: string;
+	lang: UiLocale;
+	translationKey?: string;
+	private: boolean;
 	pinned: boolean;
 	author: string;
 	sourceLink: string;
@@ -56,7 +59,9 @@ const postsCollection: ContentCollection<PostData> = defineCollection({
 		image: z.string().optional().default(""),
 		tags: z.array(z.string()).optional().default([]),
 		category: z.string().optional().nullable().default(""),
-		lang: z.string().optional().default(""),
+		lang: z.string().optional().transform(normalizeContentLocale),
+		translationKey: z.string().optional(),
+		private: z.boolean().optional().default(false),
 		pinned: z.boolean().optional().default(false),
 		author: z.string().optional().default(""),
 		sourceLink: z.string().optional().default(""),
@@ -76,11 +81,12 @@ const postsCollection: ContentCollection<PostData> = defineCollection({
 	}),
 });
 
-const specCollection: ContentCollection<Record<string, never>> =
-	defineCollection({
-		loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/spec" }),
-		schema: z.object({}),
-	});
+const specCollection: ContentCollection<{ lang: UiLocale }> = defineCollection({
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/spec" }),
+	schema: z.object({
+		lang: z.string().optional().transform(normalizeContentLocale),
+	}),
+});
 
 const dynamicCollection: ContentCollection<DynamicData> = defineCollection({
 	loader: glob({ pattern: "**/*.md", base: "./src/content/dynamic" }),

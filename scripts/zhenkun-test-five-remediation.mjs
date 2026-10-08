@@ -478,7 +478,11 @@ test("TOML: actual helpers/schema/ID accept null tables, Unicode, Date, BigInt a
 	assert.ok(expression, "actual posts schema");
 	const parsed = runInNewContext(
 		expression[1],
-		{ z: astro("zod").z },
+		{
+			z: astro("zod").z,
+			normalizeContentLocale: (await import("../src/utils/locale-contract.ts"))
+				.normalizeContentLocale,
+		},
 		{ timeout: 1000 },
 	).parse(data);
 	assert.equal(parsed.published instanceof Date, true);

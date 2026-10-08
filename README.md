@@ -7,6 +7,8 @@
 
 🌐 线上地址：**https://zhenkun26.github.io/Zhenkun-blog-site/**
 
+日常修改、写作、双语、排错与回滚从 [维护手册](docs/OPERATIONS.md) 开始；实际任务与待验收事项只看 [ROADMAP](docs/ROADMAP.md)。
+
 这是Zhenkun的个人博客：记录技术学习、项目实践与日常思考，把真实的经验写成文字，也给灵感留一席之地。
 
 ---
@@ -37,14 +39,14 @@
 
 ```bash
 pnpm dev          # 本地开发 http://localhost:4321
-pnpm new-post     # 新建一篇文章（src/content/posts/）
+pnpm new-post my-note # 新建文章；生成器默认 draft:false，先改 true 再写稿
 pnpm build        # 完整构建（图标/LQIP/字体子集/Pagefind 搜索）
 pnpm check        # Astro 诊断
 pnpm type-check   # TypeScript 类型检查
-pnpm lint         # Biome 检查与修复
+pnpm exec biome ci ./src # 只读 Biome 检查；pnpm lint 会写文件
 ```
 
-环境要求：Node ≥ 22.23、pnpm 11（corepack 自动对齐 `packageManager` 锁定版本）。
+与 CI 对齐使用 Node 24.20.0、pnpm 11.22.0；包声明的最低 Node 为 22.23.0，`packageManager` 固定 pnpm 版本。首次安装使用 `pnpm install --frozen-lockfile`。
 
 ## 部署
 

@@ -1,5 +1,14 @@
 import Key from "../i18nKey";
-import type { Translation } from "../translation";
+import type { HomeDirections, Translation } from "../translation";
+
+export const homeDirections: HomeDirections = {
+	heading: "写作方向",
+	topics: [
+		{ title: "AI", description: "人工智能的学习笔记与实践记录。" },
+		{ title: "大气科学", description: "大气科学的学习与思考。" },
+		{ title: "生活随笔", description: "日常片段、阅读与随想。" },
+	],
+};
 
 export const zh_CN: Translation = {
 	[Key.home]: "主页",

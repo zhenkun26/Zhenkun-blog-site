@@ -2,16 +2,28 @@ import { siteConfig } from "../config";
 import type { UiLocale } from "../utils/locale-contract";
 import { normalizeUiLocale } from "../utils/locale-contract";
 import type I18nKey from "./i18nKey";
-import { en } from "./languages/en";
+import { en, homeDirections as englishHomeDirections } from "./languages/en";
 import { ja } from "./languages/ja";
 import { ko } from "./languages/ko";
 import { ru } from "./languages/ru";
-import { zh_CN } from "./languages/zh_CN";
+import {
+	homeDirections as chineseHomeDirections,
+	zh_CN,
+} from "./languages/zh_CN";
 import { zh_TW } from "./languages/zh_TW";
 
 export type Translation = {
 	[K in I18nKey]: string;
 };
+
+export type HomeDirections = {
+	heading: string;
+	topics: readonly { title: string; description: string }[];
+};
+
+export function getHomeDirections(locale: UiLocale): HomeDirections {
+	return locale === "en" ? englishHomeDirections : chineseHomeDirections;
+}
 
 const defaultTranslation = en;
 

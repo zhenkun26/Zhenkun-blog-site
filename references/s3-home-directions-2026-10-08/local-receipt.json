@@ -1,0 +1,76 @@
+{
+  "status": "LOCAL_ACCEPTANCE_PASS_REMOTE_PENDING",
+  "source": "d742d0b7078c2d9f8daa3309fc8991a2d0fd5b37",
+  "base": "7a32c903b2cceba45e92a3679853c8d03ac91e16",
+  "sourceFiles": [
+    "src/components/pages/zhenkun-HomePage.astro",
+    "src/i18n/languages/en.ts",
+    "src/i18n/languages/zh_CN.ts",
+    "src/i18n/translation.ts"
+  ],
+  "native": {
+    "passed": 397,
+    "failed": 0,
+    "skipped": 0
+  },
+  "astro": {
+    "errors": 0,
+    "warnings": 0,
+    "hints": 15
+  },
+  "typeCheck": "PASS",
+  "biome": "PASS",
+  "formalBuildBases": [
+    "/",
+    "/Zhenkun-blog-site/"
+  ],
+  "artifactVerifier": "PASS both bases",
+  "languageAudit": "PASS both bases, 16 common pages each",
+  "formalArticles": {
+    "zh_CN": 0,
+    "en": 0
+  },
+  "launchDraftUnchanged": true,
+  "pagefindPages": 2,
+  "gui": {
+    "environment": "native headed Microsoft Edge on user Mac, isolated owned profile",
+    "perBaseHomeLayouts": 8,
+    "localBases": 2,
+    "widths": [
+      1280,
+      390
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "semanticDlTopics": 3,
+    "interactiveDirectionControls": 0,
+    "overflow": false,
+    "keyboardAbout": "PASS",
+    "sameLocaleSwupReturn": "PASS",
+    "nativeLanguageDocument": "PASS",
+    "reducedMotion": "PASS",
+    "runtimeExceptions": 0,
+    "physicalPhone": "NOT_RUN",
+    "screenshotsVisuallyInspected": true
+  },
+  "security": {
+    "state": "PASS",
+    "actualClock": true,
+    "rawProdHigh": 1,
+    "rawFullHigh": 1,
+    "repair": {
+      "state": "VERIFIED_LOCAL_REPAIR",
+      "error": null
+    },
+    "unresolved": [],
+    "boundarySha256": "065c3798d3bbfbe3aa5b59cbef0771d34548c0bbf68c55e6db37965b998847c2",
+    "bothReviewDeadlines": "2026-10-14T14:27:22.000Z",
+    "precommitDirtyHeadRefusalRetained": true
+  },
+  "personalContentPublished": false,
+  "commentEmailOAuthPermissionWrites": false,
+  "privacy": "public-safe measurement projection; profiles, raw machine records and private manuscript packet retained separately",
+  "at": "2026-10-08T10:10:02.436171+00:00"
+}

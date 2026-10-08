@@ -149,6 +149,12 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
+### S3 homepage directions — 2026-10-08 — 进行中
+
+- **范围**：从实际 main `7a32c903` 补首页首屏的 AI / 大气科学 / 生活随笔说明；英文 AI / Atmospheric Science / Life Notes。共享首页读取现有双语 catalog 的 typed 数据，复用卡片/字体颜色和响应式 grid。保留施工提示、品牌/作者 Zhenkun、原内容列表/空态；不创造文章、数量、过滤链接或专业身份。
+- **本地门完成**：测量源 `d742d0b`，Astro 0 error/warning、15 existing hints；类型、Biome、native 397/397 通过。正式 root/Pages base 完整构建、artifact verifier、各16页面语言审计通过，正式文章仍两语言各0、搜索仅两篇About。用户 Mac 原生 headed Edge 各base八个首页状态确认三列/单列、明暗/无溢出、语义方向说明与键盘About/Swup返回/原生语言导航，0 runtime exception；截图已查看，手机是390px模拟。四个源文件静态差异经审查后仅改绑定hash，实际八父链/两cache/一Astro实例相符；保留dirty-HEAD拒绝，干净提交的真实时钟live gate有效PASS、raw两份各1high，两处截止未扩。证据见 [报告](../references/s3-home-directions-2026-10-08/report.md) / [收据](../references/s3-home-directions-2026-10-08/local-receipt.json)。精确 draft PR/main CI 与 Pages/真实部署仍待完成，不用本地PASS代替。
+- **保持的边界**：依赖/lock/patch/工作流/配置/草稿/评论服务与两个 `2026-10-14T14:27:22Z` 截止不变。首稿的私有审核材料另交站主；未批准正文/附件/英文稿，不发布文章或发送评论。此小批完成后，余项仅站主体验/跟做、首稿审核与真实评论，不新增工程需求。
+
 ### S3/S4 continuation — 2026-10-08 — 进行中（S4 工程文档已交付）
 
 - **本批范围**：从实际 main `6445ddb` 继续 S4 维护说明，新增 [OPERATIONS](OPERATIONS.md) 并接入 README，校正已接纳双语/文章评论契约说明和公告旧状态；不改变应用、配置、依赖、补丁、工作流或稿件。两处安全截止保持 `2026-10-14T14:27:22Z`。

@@ -16,7 +16,11 @@ import PostPage from "@/components/layout/PostPage.astro";
 import Announcement from "@/components/widget/Announcement.astro";
 import { siteConfig } from "@/config";
 import I18nKey from "@/i18n/i18nKey";
-import { createTranslator, getTranslation } from "@/i18n/translation";
+import {
+	createTranslator,
+	getHomeDirections,
+	getTranslation,
+} from "@/i18n/translation";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 
 import { url } from "@/utils/url-utils";
@@ -24,6 +28,7 @@ import { url } from "@/utils/url-utils";
 const { page } = Astro.props;
 
 const len = page.data.length;
+const directions = getHomeDirections(uiLocale);
 
 // 列表页隐藏的 h1：首屏用站点标题，后续页用「首页 · 页码」，避免空 h1
 const heading =
@@ -34,6 +39,19 @@ const heading =
 
 <MainGridLayout heading={heading}>
   {page.currentPage === 1 && <Announcement variant="banner" />}
+  {page.currentPage === 1 && (
+    <section id="home-directions" aria-labelledby="home-directions-title" data-pagefind-ignore class="card-base mb-4 p-5 sm:px-9">
+      <h2 id="home-directions-title" class="text-lg font-semibold text-90">{directions.heading}</h2>
+      <dl class="mt-3 grid gap-3 sm:grid-cols-3">
+        {directions.topics.map((topic) => (
+          <div class="min-w-0">
+            <dt class="font-semibold text-90">{topic.title}</dt>
+            <dd class="mt-1 text-sm leading-relaxed text-75">{topic.description}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  )}
   {uiLocale === "zh_CN" && <p data-locale-preference-hint hidden class="card-base p-4 mb-4"><a data-locale-choice="en" data-no-swup href={url("/en/")} class="btn-plain rounded px-3 py-2">{getTranslation("zh_CN").uiContinueEnglish}</a></p>}
   <PostPage page={page} />
   {len === 0 && <p class="card-base px-9 py-8 text-75">{getTranslation(uiLocale).uiNoEnglishPosts}</p>}

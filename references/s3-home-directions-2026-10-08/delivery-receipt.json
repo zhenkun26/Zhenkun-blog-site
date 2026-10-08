@@ -1,0 +1,230 @@
+{
+  "status": "PASS",
+  "recordedAt": "2026-10-08T10:33:23.783689+00:00",
+  "scope": "S3 independent homepage directions only; engineering delivered; human acceptance remains",
+  "measuredSource": "d742d0b7078c2d9f8daa3309fc8991a2d0fd5b37",
+  "publicPrHead": "4fa052d523c482e480a12fe8cbbc108d553a7def",
+  "testedPrMerge": "ddfac076a27d92ae609f4c423f63e1d27cc3a141",
+  "deployedSource": "b2bbca9ec34f6d7c8c0b7cce83877a3131e9631e",
+  "pr": 31,
+  "normalDraftReadySquashFlow": true,
+  "headTestedMergeMainTreesEqual": true,
+  "runs": [
+    {
+      "run": 37762023252,
+      "head": "4fa052d523c482e480a12fe8cbbc108d553a7def",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "Peer compatibility",
+          "conclusion": "success"
+        },
+        {
+          "name": "Dependency security",
+          "conclusion": "success"
+        },
+        {
+          "name": "Full quality (/Zhenkun-blog-site/)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Full quality (/)",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run": 37762023342,
+      "head": "4fa052d523c482e480a12fe8cbbc108d553a7def",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "quality",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run": 37762670530,
+      "head": "b2bbca9ec34f6d7c8c0b7cce83877a3131e9631e",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "Dependency security",
+          "conclusion": "success"
+        },
+        {
+          "name": "Full quality (/Zhenkun-blog-site/)",
+          "conclusion": "success"
+        },
+        {
+          "name": "Peer compatibility",
+          "conclusion": "success"
+        },
+        {
+          "name": "Full quality (/)",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run": 37762670506,
+      "head": "b2bbca9ec34f6d7c8c0b7cce83877a3131e9631e",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "quality",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "run": 37762670897,
+      "head": "b2bbca9ec34f6d7c8c0b7cce83877a3131e9631e",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "quality / Dependency security",
+          "conclusion": "success"
+        },
+        {
+          "name": "quality / Full quality (/Zhenkun-blog-site/)",
+          "conclusion": "success"
+        },
+        {
+          "name": "quality / Peer compatibility",
+          "conclusion": "success"
+        },
+        {
+          "name": "quality / Full quality (/)",
+          "conclusion": "success"
+        },
+        {
+          "name": "build",
+          "conclusion": "success"
+        },
+        {
+          "name": "deploy",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "uploadedPagesArtifact": {
+    "id": 11542653919,
+    "files": 274,
+    "downloadedTarSha256": "0ada9e304db67c921490d596545b1a01a23c0a25180414cdbad1745c5ba358e2"
+  },
+  "productionHTTP": {
+    "responses": 8,
+    "allFirstAttempt200AndEqualUploadedArtifact": true,
+    "records": [
+      {
+        "url": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+        "attempt": 1,
+        "status": 200,
+        "equalUploadedArtifact": true,
+        "sha256": "5a5a84597e1afa6f8425fa84615e6f6808eab87f24601309d44410e7a078c715"
+      },
+      {
+        "url": "https://zhenkun26.github.io/Zhenkun-blog-site/en/",
+        "attempt": 1,
+        "status": 200,
+        "equalUploadedArtifact": true,
+        "sha256": "b742a3973a16dd315fbd3fc1088947626831e52f5908bb1407f174e691e3872c"
+      },
+      {
+        "url": "https://zhenkun26.github.io/Zhenkun-blog-site/about/",
+        "attempt": 1,
+        "status": 200,
+        "equalUploadedArtifact": true,
+        "sha256": "db7f6be25b3abe5eee493ee09d9fab8a02e03dd61a17ea8c83dce77ff6707429"
+      },
+      {
+        "url": "https://zhenkun26.github.io/Zhenkun-blog-site/en/about/",
+        "attempt": 1,
+        "status": 200,
+        "equalUploadedArtifact": true,
+        "sha256": "2b0aab229a3011f8b15c0cdfeae272c07659fee4e68c2d6e2105db5d52d01eba"
+      },
+      {
+        "url": "https://zhenkun26.github.io/Zhenkun-blog-site/api/allPostMeta.json",
+        "attempt": 1,
+        "status": 200,
+        "equalUploadedArtifact": true,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "url": "https://zhenkun26.github.io/Zhenkun-blog-site/en/api/allPostMeta.json",
+        "attempt": 1,
+        "status": 200,
+        "equalUploadedArtifact": true,
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      {
+        "url": "https://zhenkun26.github.io/Zhenkun-blog-site/pagefind/pagefind-entry.json",
+        "attempt": 1,
+        "status": 200,
+        "equalUploadedArtifact": true,
+        "sha256": "9f06201d8706c7384bdb6104fd018bbb17cdcdc85d5dee123e3fb5c6d4b456da"
+      },
+      {
+        "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/Layout.CNMiNF8b.css",
+        "attempt": 1,
+        "status": 200,
+        "equalUploadedArtifact": true,
+        "sha256": "bd58221fd85d3590537156db2bcc1dbc0545adad892c7070f48c17b639f9ca9f"
+      }
+    ]
+  },
+  "productionGUI": {
+    "environment": "User Mac, native headed Microsoft Edge, own profile; 390x844 is viewport simulation",
+    "source": "b2bbca9ec34f6d7c8c0b7cce83877a3131e9631e",
+    "homeLayoutStates": 8,
+    "runtimeExceptions": 0,
+    "keyboardNavigation": {
+      "name": "keyboard-navigation",
+      "aboutEnter": true,
+      "sameLocaleSwupReturn": true,
+      "nativeLanguageDocument": true,
+      "reducedMotion": true
+    },
+    "visuallyInspected": [
+      "Chinese 390px dark",
+      "English 1280px light"
+    ],
+    "ownedResources": {
+      "status": "PASS",
+      "ports": [
+        {
+          "port": 50211,
+          "closed": true
+        },
+        {
+          "port": 50212,
+          "closed": true
+        }
+      ],
+      "ownedProfilesActiveProcesses": 0
+    }
+  },
+  "publication": {
+    "formalChineseArticles": 0,
+    "formalEnglishArticles": 0,
+    "pagefindPages": 2,
+    "launchDraftSourceSha256": "354d0d65385f644756c72c1a8b0b72ccc7237ef5b3495fd763ec515377235ce9",
+    "launchDraftUnchanged": true,
+    "launchRouteAbsent": true,
+    "realCommentSubmission": "NOT_RUN"
+  },
+  "fixedReviewDeadlines": [
+    "2026-10-14T14:27:22.000Z",
+    "2026-10-14T14:27:22.000Z"
+  ],
+  "receiptDelivery": "Subsequent docs/evidence-only delivery follows authorized normal draft PR/CI/merge. Runtime tree remains the measured deployed source. CI above is not attributed to any later receipt commit.",
+  "remainingHumanWork": [
+    "Owner experience including physical phone and learning",
+    "Exact manuscript/publication metadata and attachments approval",
+    "Real authorized giscus interaction"
+  ]
+}

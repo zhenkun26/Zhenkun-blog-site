@@ -23,4 +23,22 @@ Native headed Microsoft Edge on the user's Mac uses an isolated profile and chec
 | After, Pages-base Chinese mobile dark | [Screenshot](after-zh-mobile-dark.png) |
 | After, Pages-base English mobile light | [Screenshot](after-en-mobile.png) |
 
-[Local receipt](local-receipt.json) is a public-safe projection, not the raw machine record or private review packet. Exact draft-PR/main CI and uploaded Pages/production acceptance are subsequent gates; canonical task status remains only in ROADMAP. This packet finishes the requested independent homepage scope. Further expansion stops at owner experience, exact first-manuscript/attachment review and real authorized comments.
+[Local receipt](local-receipt.json) preserves the measured source snapshot. [Delivery receipt](delivery-receipt.json) records the subsequent actual remote and production checks; both are public-safe projections. Raw machine records and the private manuscript review packet are not included. Canonical task status remains only in ROADMAP.
+
+## Actual remote and production delivery
+
+[PR31](https://github.com/zhenkun26/Zhenkun-blog-site/pull/31) was created as a draft, passed all five exact checks, became ready and was normally squash-merged on 2026-10-08. Public head `4fa052d523c482e480a12fe8cbbc108d553a7def`, tested merge `ddfac076a27d92ae609f4c423f63e1d27cc3a141` and merged/deployed main `b2bbca9ec34f6d7c8c0b7cce83877a3131e9631e` have identical full Git trees. The local measured source differs only in the subsequent documentation/evidence files.
+
+| Actual run | Result |
+|---|---|
+| [PR quality 37762023252](https://github.com/zhenkun26/Zhenkun-blog-site/actions/runs/37762023252) | PASS |
+| [PR Biome 37762023342](https://github.com/zhenkun26/Zhenkun-blog-site/actions/runs/37762023342) | PASS |
+| [Main quality 37762670530](https://github.com/zhenkun26/Zhenkun-blog-site/actions/runs/37762670530) | PASS |
+| [Main Biome 37762670506](https://github.com/zhenkun26/Zhenkun-blog-site/actions/runs/37762670506) | PASS |
+| [Pages 37762670897](https://github.com/zhenkun26/Zhenkun-blog-site/actions/runs/37762670897) | PASS, including actual deploy |
+
+Downloaded uploaded Pages artifact `11542653919` contains 274 files. Eight actual production GET responses—both Home/About pages, both article metadata lists, Pagefind entry and a built stylesheet—return 200 and equal the uploaded files byte-for-byte on their first attempt. Canonicals/languages and the retained notice/new three directions match. Both formal article lists remain empty, the launch draft has no published route, and Pagefind still contains two About pages.
+
+Actual production GUI on the user's Mac repeats the eight affected Home layout states and the keyboard About/Swup-return/native-language navigation check, with zero runtime exceptions. Chinese mobile dark and English desktop light captures were visually inspected. This remains 390px viewport simulation, not a physical-phone or owner learning test. All four S3-owned browser profiles have no active processes and both owned ports are closed.
+
+The final delivery record changes only documentation/evidence and follows the authorized normal draft-PR/CI/merge flow. The runs and uploaded production result above belong to deployed source `b2bbca9`; any later documentation-run results are separate from this measured delivery snapshot. This packet finishes the requested independent homepage engineering scope. Further expansion stops at owner experience/learning, exact first-manuscript/attachment review and real authorized comments. No article, attachment or comment was published.

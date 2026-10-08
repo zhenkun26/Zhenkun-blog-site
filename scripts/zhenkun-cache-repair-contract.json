@@ -8,7 +8,7 @@
 	},
 	"ledgerSha256": "72ecffba9b8d4c3092ee68da0d0cdfb57066bee8090ec9abedb6bb39325ed649",
 	"patchesSha256": "6f77af3b69dcbc44ec8e2b14c60d16053938ecf7808a3b79ad9fc5a039f4db7c",
-	"boundarySha256": "7219a0810d21ed7df37a75f2db5840befc45fc216038f684ef547132bb05de31",
+	"boundarySha256": "78a23881fc7d4b1bdcfe8f69b735e5e2edbe560ec86c1ec7395102a74c0dc1dd",
 	"testFiles": {
 		"scripts/zhenkun-test-cache-policy.mjs": "a71c65964bd02257793339bce64832b7b3ecaad2e78e9f2965506d8c4dd5e850",
 		"scripts/zhenkun-test-astro-cache-generator.mjs": "614943f8c8a28dc84a9baaacbdfe0b2e93f4facda36792f4686e4ae37dcc1c70",

@@ -39,6 +39,7 @@ export function unexpectedLanguage(
 	locale,
 	languageChoice = false,
 	musicMetadata = false,
+	buildMetadata = false,
 ) {
 	if (locale === "en")
 		return (
@@ -46,6 +47,8 @@ export function unexpectedLanguage(
 			!(languageChoice && text === "中文") &&
 			!(musicMetadata && authoredMusicNames.has(text))
 		);
+	if (buildMetadata && ["GitHub Actions", "Linux / x86_64"].includes(text))
+		return false;
 	if (
 		/^https:\/\/zhenkun26\.github\.io\/(Zhenkun-blog-site\/)?(en\/)?rss\.xml$/.test(
 			text,
@@ -79,10 +82,12 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
 			ancestorPath = "",
 			parentLanguageChoice = false,
 			parentMusicMetadata = false,
+			parentBuildMetadata = false,
 		) {
 			let path = ancestorPath;
 			let languageChoice = parentLanguageChoice;
 			let musicMetadata = parentMusicMetadata;
+			let buildMetadata = parentBuildMetadata;
 			if (node.type === "element") {
 				if (["script", "style", "svg"].includes(node.tagName)) return;
 				path +=
@@ -95,6 +100,8 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
 						node.properties.dataLocaleChoice === "zh_CN");
 				musicMetadata =
 					parentMusicMetadata || /music/i.test(node.properties.id ?? "");
+				buildMetadata =
+					parentBuildMetadata || node.properties.id === "site-info";
 				for (const key of ["ariaLabel", "title", "alt", "placeholder"])
 					if (node.properties[key])
 						texts.push({
@@ -103,6 +110,7 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
 							text: node.properties[key],
 							languageChoice,
 							musicMetadata,
+							buildMetadata,
 						});
 			}
 			if (node.type === "text" && node.value.trim())
@@ -111,9 +119,10 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
 					text: node.value.trim(),
 					languageChoice,
 					musicMetadata,
+					buildMetadata,
 				});
 			for (const child of node.children ?? [])
-				walk(child, path, languageChoice, musicMetadata);
+				walk(child, path, languageChoice, musicMetadata, buildMetadata);
 		}
 		walk(document);
 		out[file] = texts;
@@ -123,13 +132,15 @@ if (import.meta.url === pathToFileURL(process.argv[1]).href) {
 		`${JSON.stringify(out, null, 2)}\n`,
 	);
 	for (const [file, texts] of Object.entries(out)) {
-		const leaks = texts.filter(({ text, languageChoice, musicMetadata }) =>
-			unexpectedLanguage(
-				text,
-				file.startsWith("en/") ? "en" : "zh_CN",
-				languageChoice,
-				musicMetadata,
-			),
+		const leaks = texts.filter(
+			({ text, languageChoice, musicMetadata, buildMetadata }) =>
+				unexpectedLanguage(
+					text,
+					file.startsWith("en/") ? "en" : "zh_CN",
+					languageChoice,
+					musicMetadata,
+					buildMetadata,
+				),
 		);
 		console.log(file, JSON.stringify({ records: texts.length, leaks }));
 		assert.deepEqual(

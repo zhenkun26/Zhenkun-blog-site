@@ -240,3 +240,22 @@ test("an English spec must declare its body locale; hidden pairs cannot approve 
  assert.throws(() => buildTranslationPairs([{id:"safe",locale:"en",translationKey:"../unsafe"}]));
  assert.equal(buildTranslationPairs([{id:"zh",locale:"zh_CN",translationKey:"k"},{id:"en",locale:"en",translationKey:"k",private:true}]).get("k").en,undefined);
 });
+
+test("CI build identifiers do not exempt ordinary or extended UI text", async () => {
+	const { unexpectedLanguage } = await import(
+		"./zhenkun-audit-locale-html.mjs"
+	);
+	for (const value of ["GitHub Actions", "Linux / x86_64"]) {
+		assert.equal(unexpectedLanguage(value, "zh_CN", false, false, true), false);
+		assert.equal(unexpectedLanguage(value, "zh_CN"), true);
+		assert.equal(
+			unexpectedLanguage(value + " Welcome", "zh_CN", false, false, true),
+			true,
+		);
+	}
+	assert.equal(unexpectedLanguage("欢迎", "en", false, false, true), true);
+	assert.equal(
+		unexpectedLanguage("Play music", "zh_CN", false, false, true),
+		true,
+	);
+});

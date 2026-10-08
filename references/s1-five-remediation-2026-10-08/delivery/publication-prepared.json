@@ -1,0 +1,16 @@
+{
+  "head": "b3a221a8907a01babc763d139d98d0c34149a242",
+  "tree": "fe3cf58f23c71ee70a2fa390dce864c2c8179ef6",
+  "branch": "codex/blog-security-publication-20261008",
+  "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+  "publicParents": [
+    "d12dd98abf383d4c47bf9bf987516b953baf2904",
+    "f33ff92aaf8d03602202caf46da48f40f5676273"
+  ],
+  "sourceEquivalentFiles": 526,
+  "privacyProjectedFiles": 131,
+  "newReachableCommits": 1,
+  "newReachableBlobsScanned": 581,
+  "findings": [],
+  "state": "PASS"
+}

@@ -251,3 +251,8 @@
 
 - Harness failures came from clicking during a theme transition, waiting for a nonexistent main-container id, and assuming mobile search auto-focus on open. Rejected observations are retained. Source uses swup-container and a nonmodal search panel with no auto-focus promise.
 - Wait for actual hydration/transition/content completion, click the real input before testing focus, and assert panel inert/aria, computed overflow and restored trigger focus. The bounded rerun passes actual desktop/mobile math and Swup. No product source change was needed.
+
+### 2026-10-08 — Trusted authorization and GitHub merge identity
+
+- Upload Auto-review initially rejected authority found only in transferred assistant context. Preserve that refusal. Once original human push/conditional merge/project/audit directions were supplied, exactly one standard review of the identical operation permitted ordinary FF delivery. Do not change client or policy to evade refusal.
+- GitHub rejected the explicit derived noreply address in the first squash author-email parameter before merging. Verify the current account and already-public main author identity, then correct only that parameter and retain head/base/successful-check guards. No private email lookup or account-setting change was needed; ordinary squash succeeded.

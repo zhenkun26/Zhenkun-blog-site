@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "state": "COMPLETE_PRODUCTION_ACCEPTANCE",
+  "pr": "https://github.com/zhenkun26/Zhenkun-blog-site/pull/22",
+  "publicHead": "b3a221a8907a01babc763d139d98d0c34149a242",
+  "prTestMerge": "b3b0205f97f8041715d41cea7a48c4cf6c1d1146",
+  "productionSource": "57264e7c833035b751f9e16f2464a2f358fb81fa",
+  "equalTree": "fe3cf58f23c71ee70a2fa390dce864c2c8179ef6",
+  "sourceEquivalentFiles": 526,
+  "runs": {
+    "prQuality": 37728607600,
+    "prBiome": 37728607598,
+    "mainQuality": 37729198849,
+    "mainBiome": 37729198853,
+    "pages": 37729199074
+  },
+  "rawAuditPerScope": {
+    "records": 1,
+    "high": 1,
+    "exitCode": 1
+  },
+  "liveGate": {
+    "state": "PASS",
+    "exitCode": 0,
+    "repairs": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "unresolved": []
+  },
+  "pagesArtifact": {
+    "files": 253,
+    "tarSha256": "6421b519d64b6d2321cd04341e07959f700210b61daa14c863c13d055e9a84ef",
+    "manifestSha256": "5407fa33fd616a7b3a070c7743bd7002825f2820fa64521d04b01aa4ac6ab308",
+    "productionHttpByteMatches": 24,
+    "publishedArticleCount": 0
+  },
+  "gui": {
+    "source": "57264e7c833035b751f9e16f2464a2f358fb81fa",
+    "browser": "Headed Microsoft Edge154.0.4258.62 on user Mac",
+    "desktop": [
+      1280,
+      900
+    ],
+    "mobileSimulation": [
+      390,
+      844
+    ],
+    "checks": [
+      "Home/About and notice",
+      "First actual Pagefind search",
+      "Swup return",
+      "Theme final state",
+      "Menu/search Escape and focus/scroll restoration"
+    ],
+    "errors": 0,
+    "screenshotsVisuallyInspected": true,
+    "ownedBrowserClosed": true
+  },
+  "reviewBy": "2026-10-14T14:27:22.000Z",
+  "protectedOriginals": "All latest original/security/P8 HEAD/branch/status/index/private-state guards pass; detailed receipts retained locally only.",
+  "limitations": [
+    "Mobile simulation, no physical phone",
+    "No approved real article or actual comment interaction",
+    "No S2/bilingual acceptance"
+  ],
+  "documentationReceipt": "Later documentation-only main receipt may be newer than productionSource; all executable/dependency/test/workflow blobs must remain equal and production remains this successfully deployed SHA."
+}

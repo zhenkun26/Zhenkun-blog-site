@@ -1,0 +1,15 @@
+HTTP/2 200 
+date: Thu, 08 Oct 2026 04:40:51 GMT
+content-type: application/json
+content-length: 1713
+cf-ray: a4727849b97cb964-IAD
+cf-cache-status: HIT
+accept-ranges: bytes
+access-control-allow-origin: *
+age: 160
+cache-control: public, max-age=300
+last-modified: Thu, 08 Oct 2026 04:38:10 GMT
+server: cloudflare
+vary: accept-encoding, accept
+set-cookie: __cf_bm=bRJQBGOALQYHT5np4cTLJuspYSmiZnSfJTmHNr2T6aA-1791434451.477179-1.0.1.1-y.VRoKki8hQX9dXvYyshPKmBCniyyT4FAnD8_c0XyS4pZLLYi.w4C.3EJCwAb.SpZAvFYIL_We5BzvNu4PZnHdbVom3gKRTsUoR8A62DSc3rCkPeEwWnB0Y2tzVx.6C.; HttpOnly; SameSite=None; Secure; Path=/; Domain=npmjs.org; Expires=Thu, 08 Oct 2026 05:10:51 GMT
+

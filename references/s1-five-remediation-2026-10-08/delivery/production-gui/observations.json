@@ -1,0 +1,49 @@
+{
+  "source": "57264e7c833035b751f9e16f2464a2f358fb81fa",
+  "environment": "User Mac, native headed Edge, owned isolated profile and CDP; mobile is viewport/touch simulation",
+  "records": [
+    {
+      "name": "browser",
+      "product": "Edg/154.0.4258.62",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0",
+      "headed": true
+    },
+    {
+      "name": "formal-home",
+      "title": "Zhenkun - 记录、思考与灵感",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "formal-first-search",
+      "query": "气象",
+      "result": "/Zhenkun-blog-site/about/"
+    },
+    {
+      "name": "formal-swup-return",
+      "swup": true,
+      "title": "Zhenkun - 记录、思考与灵感"
+    },
+    {
+      "name": "mobile-menu-escape",
+      "focus": "nav-menu-switch",
+      "restored": true
+    },
+    {
+      "name": "mobile-search-escape",
+      "focus": "search-switch",
+      "restored": true
+    },
+    {
+      "name": "PASS",
+      "limitations": [
+        "Actual production Home/About and first search/menu/theme/Swup",
+        "Mobile viewport simulation, no physical phone",
+        "No article or real comment/email/music playback"
+      ]
+    }
+  ],
+  "errors": []
+}

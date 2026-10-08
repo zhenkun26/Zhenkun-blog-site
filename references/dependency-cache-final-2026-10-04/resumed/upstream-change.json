@@ -1,0 +1,13 @@
+{
+  "state": "UPSTREAM_REVIEW_REQUIRED",
+  "observedLatest": "4.3.0",
+  "publishedAt": "2026-10-04T02:56:05.593Z",
+  "officialTarball": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.3.0.tgz",
+  "distIntegrityVerified": true,
+  "tarballSha256": "d75e1e6a11587954da5e2f0e2b5c4b397a16d28cc2f7bdf64e9027fc2fe593ee",
+  "sourceSha256": "ede1cc404a492fa348eb9d97a3007a0d72aa717bd22cd86a56bd0824c19729ca",
+  "installedOrExecuted": false,
+  "staticFinding": "Vary matching changed; evaluateRequest adds response.status and public status() method. No max-stale or revalidatedPolicy guard changes in 4.2.0-to-4.3.0 source diff. This is not dynamic security acceptance.",
+  "reviewed420FixtureProvenance": "Extracted exact versions[4.2.0] from current official packument; used only as prior-version unit fixture, not a current latest response.",
+  "packumentSha256": "80d047081285fcc7b46d40f2526e1d123fa3b2c02c0d4bb4d718cb678a80e623"
+}

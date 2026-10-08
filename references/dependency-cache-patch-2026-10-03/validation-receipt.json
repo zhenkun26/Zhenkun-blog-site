@@ -1,0 +1,601 @@
+{
+  "sourceCommit": "af1a0379ec9518931ef3d703dacdcbd4102daacf",
+  "base": "ed64aad20e7025afa7834f3eb2008c0c57cc2240",
+  "branch": "codex/dependency-cache-patch-20261003",
+  "platform": "Darwin ARM64",
+  "node": "24.20.0",
+  "pnpm": "11.22.0",
+  "model": "Requested Astra HIGH; actual runtime UNVERIFIED",
+  "sourceHashes": {
+    "package.json": "d07c65f66bc29e18af0f69ffd7c11c37b87d722cb7f401b93fb9382ceb91decc",
+    "pnpm-workspace.yaml": "5c5924aacc40422a63159eff52818bbb0a3c995bad8ab1b66e7ff503479778c5",
+    "pnpm-lock.yaml": "6f4a61e19f5e118ea4636a11984ae52f24e11764d6fdade9cab3d3101fd4d002",
+    "scripts/patches/http-cache-semantics@4.2.0.patch": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3",
+    "scripts/zhenkun-test-cache-policy.mjs": "0139d86d8d69fc522c3667508abb060c059ab7caa78ccae34e2ed83d5c83d923",
+    "references/dependency-cache-patch-2026-10-03/verified-official-baseline.cjs": "01b7d66c854b2fe53ac05c98feb6e0d64722ab8898a778e2d2426a8b468d178f"
+  },
+  "freshCommandReceipts": {
+    "parent-types-strict": {
+      "command": [
+        "pnpm",
+        "exec",
+        "tsc",
+        "--ignoreConfig",
+        "--noEmit",
+        "--strict",
+        "--module",
+        "NodeNext",
+        "--moduleResolution",
+        "NodeNext",
+        "--target",
+        "ES2022",
+        "scripts/zhenkun-swup-parent-types.ts"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1"
+      },
+      "start": "2026-10-03T15:40:16.375986+00:00",
+      "end": "2026-10-03T15:40:17.009886+00:00",
+      "exit": 0
+    },
+    "build-root": {
+      "command": [
+        "pnpm",
+        "build"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "DEPLOY_BASE": "/"
+      },
+      "start": "2026-10-03T15:40:54.303946+00:00",
+      "end": "2026-10-03T15:41:17.266637+00:00",
+      "exit": 0
+    },
+    "graph-post-validation": {
+      "command": [
+        "node",
+        "references/dependency-cache-patch-2026-10-03/graph-check.mjs"
+      ],
+      "end": "2026-10-03T15:41:35.485490+00:00",
+      "exit": 0
+    },
+    "cache-matrix-clock-repaired": {
+      "command": [
+        "node",
+        "--test",
+        "scripts/zhenkun-test-cache-policy.mjs"
+      ],
+      "start": "2026-10-03T15:39:35.333495+00:00",
+      "end": "2026-10-03T15:39:36.146001+00:00",
+      "exit": 0
+    },
+    "http-project": {
+      "command": [
+        "python3",
+        "scripts/zhenkun-verify-deployment.py",
+        "--root",
+        "tmp/cache-artifacts/project",
+        "--base",
+        "/Zhenkun-blog-site/",
+        "--http",
+        "http://127.0.0.1:57053"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "DEPLOY_BASE": "/Zhenkun-blog-site/"
+      },
+      "start": "2026-10-03T15:42:32.017852+00:00",
+      "end": "2026-10-03T15:42:32.126214+00:00",
+      "exit": 0
+    },
+    "native-all": {
+      "command": [
+        "node",
+        "--test",
+        "scripts/zhenkun-test-cache-policy.mjs",
+        "scripts/zhenkun-test-capabilities.mjs",
+        "scripts/zhenkun-test-ci-artifacts.mjs",
+        "scripts/zhenkun-test-deployment.mjs",
+        "scripts/zhenkun-test-nav-menu.mjs",
+        "scripts/zhenkun-test-publication.mjs",
+        "scripts/zhenkun-test-r1-tail.mjs",
+        "scripts/zhenkun-test-r1a-data.mjs",
+        "scripts/zhenkun-test-r1b-uri.mjs",
+        "scripts/zhenkun-test-r2-native.mjs",
+        "scripts/zhenkun-test-search-session.mjs",
+        "scripts/zhenkun-test-swup-parents.mjs",
+        "scripts/zhenkun-test-unifont.mjs"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1"
+      },
+      "start": "2026-10-03T15:39:58.672534+00:00",
+      "end": "2026-10-03T15:40:01.596137+00:00",
+      "exit": 0
+    },
+    "preview-project": {
+      "command": [
+        "pnpm",
+        "exec",
+        "astro",
+        "preview",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "57053"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "DEPLOY_BASE": "/Zhenkun-blog-site/"
+      },
+      "start": "2026-10-03T15:42:30.439532+00:00",
+      "end": "2026-10-03T15:42:32.017477+00:00",
+      "exit": 0
+    },
+    "type-check": {
+      "command": [
+        "pnpm",
+        "type-check"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1"
+      },
+      "start": "2026-10-03T15:40:14.629517+00:00",
+      "end": "2026-10-03T15:40:16.375640+00:00",
+      "exit": 0
+    },
+    "peers": {
+      "command": [
+        "pnpm",
+        "peers",
+        "check"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1"
+      },
+      "start": "2026-10-03T15:40:17.010318+00:00",
+      "end": "2026-10-03T15:40:17.216753+00:00",
+      "exit": 0
+    },
+    "artifacts-project": {
+      "command": [
+        "node",
+        "scripts/zhenkun-verify-ci-artifacts.mjs",
+        "--base",
+        "/Zhenkun-blog-site/"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "DEPLOY_BASE": "/Zhenkun-blog-site/"
+      },
+      "start": "2026-10-03T15:42:30.260635+00:00",
+      "end": "2026-10-03T15:42:30.380285+00:00",
+      "exit": 0
+    },
+    "check": {
+      "command": [
+        "pnpm",
+        "check"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1"
+      },
+      "start": "2026-10-03T15:40:01.596646+00:00",
+      "end": "2026-10-03T15:40:14.268397+00:00",
+      "exit": 0
+    },
+    "preview-project-stop": {
+      "command": [
+        "pnpm",
+        "exec",
+        "astro",
+        "preview",
+        "stop"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "DEPLOY_BASE": "/Zhenkun-blog-site/"
+      },
+      "start": "2026-10-03T15:42:32.126552+00:00",
+      "end": "2026-10-03T15:42:32.601767+00:00",
+      "exit": 0
+    },
+    "build-project": {
+      "command": [
+        "pnpm",
+        "build"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "DEPLOY_BASE": "/Zhenkun-blog-site/"
+      },
+      "start": "2026-10-03T15:42:23.642539+00:00",
+      "end": "2026-10-03T15:42:30.260281+00:00",
+      "exit": 0
+    },
+    "http-root": {
+      "command": [
+        "python3",
+        "scripts/zhenkun-verify-deployment.py",
+        "--root",
+        "tmp/cache-artifacts/root",
+        "--base",
+        "/",
+        "--http",
+        "http://127.0.0.1:56850"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "DEPLOY_BASE": "/"
+      },
+      "start": "2026-10-03T15:41:19.617549+00:00",
+      "end": "2026-10-03T15:41:19.729956+00:00",
+      "exit": 0
+    },
+    "parent-api": {
+      "command": [
+        "node",
+        "references/dependency-peer-2026-10-03/parent-api-check.mjs"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1"
+      },
+      "start": "2026-10-03T15:40:17.217079+00:00",
+      "end": "2026-10-03T15:40:17.497690+00:00",
+      "exit": 0
+    },
+    "artifacts-root": {
+      "command": [
+        "node",
+        "scripts/zhenkun-verify-ci-artifacts.mjs",
+        "--base",
+        "/"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "DEPLOY_BASE": "/"
+      },
+      "start": "2026-10-03T15:41:17.267101+00:00",
+      "end": "2026-10-03T15:41:17.390666+00:00",
+      "exit": 0
+    },
+    "biome": {
+      "command": [
+        "pnpm",
+        "exec",
+        "biome",
+        "ci",
+        "src",
+        "scripts/zhenkun-test-swup-parents.mjs",
+        "scripts/zhenkun-swup-parent-types.ts",
+        "scripts/zhenkun-test-r1a-data.mjs",
+        "scripts/zhenkun-test-r1b-uri.mjs",
+        "scripts/zhenkun-test-r1-tail.mjs",
+        "scripts/zhenkun-test-unifont.mjs",
+        "scripts/zhenkun-test-r2-native.mjs",
+        "scripts/zhenkun-test-cache-policy.mjs"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1"
+      },
+      "start": "2026-10-03T15:40:14.268858+00:00",
+      "end": "2026-10-03T15:40:14.629107+00:00",
+      "exit": 0
+    }
+  },
+  "native": {
+    "pass": 247,
+    "total": 247,
+    "skipped": 0
+  },
+  "cache": {
+    "basis": "design-v2/TEST-MATRIX.md is immutable pre-execution design; this file records actual execution",
+    "specificationGroups": 46,
+    "nodeGroups": 44,
+    "boundedOfficialCounterexampleNodeTests": 1,
+    "nodeTests": 45,
+    "nodePass": 45,
+    "nodeSkip": 0,
+    "rows": [
+      {
+        "id": "A01",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A02",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A03",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A04",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A05",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A06",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A07",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A08",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A09",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A10",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A11",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A12",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A13",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A14",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A15",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A16",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A17",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "A18",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "B01",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "B02",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "B03",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "B04",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "B05",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "B06",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "B07",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "B08",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "B09",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "B10",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C01",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C02",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C03",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C04",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C05",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C06",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C07",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C08",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C09",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C10",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C11",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "C12",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "D01",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "D02",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "D03",
+        "state": "PARTIAL_MAC_PASS_LINUX_NOT_RUN",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "D04",
+        "state": "PASS_MAC",
+        "evidence": "cache-matrix-clock-repaired.log"
+      },
+      {
+        "id": "D05",
+        "state": "PASS_MAC",
+        "evidence": [
+          "native-all.log",
+          "check.log",
+          "biome.log",
+          "type-check.log",
+          "parent-types-strict.log",
+          "build-root.log",
+          "build-project.log",
+          "artifacts-root.log",
+          "artifacts-project.log",
+          "http-root.log",
+          "http-project.log"
+        ]
+      },
+      {
+        "id": "D06",
+        "state": "PARTIAL_INDEPENDENT_DYNAMIC_REVIEW_PENDING",
+        "evidence": [
+          "report.md",
+          "advisory-reconciliation.json",
+          "audit-refresh-blocked.json"
+        ]
+      }
+    ],
+    "counterexamples": [
+      "shared-cookie max-stale",
+      "no-cache direct SWR",
+      "Vary OWS freshness",
+      "own/inherited same-value Vary"
+    ],
+    "D04Boundary": "Kelvin raw-header case covered B08; Web Headers rejects non-ByteString so not fed to actual Astro helper. No claim every loop iteration executed or browser/remote-service coverage."
+  },
+  "quality": "Astro258files/0errors/0warnings/12hints;Biome306files;formal isolatedDeclarations and strict Swup types PASS;peer/public parent APIs PASS",
+  "builds": {
+    "root": {
+      "files": 252,
+      "http": 24,
+      "base": "/",
+      "pagefind": {
+        "language": "zh-cn",
+        "pages": 1,
+        "words": 95
+      }
+    },
+    "project": {
+      "files": 252,
+      "http": 24,
+      "base": "/Zhenkun-blog-site/",
+      "pagefind": {
+        "language": "zh-cn",
+        "pages": 1,
+        "words": 98
+      }
+    }
+  },
+  "frozenInstall": "Same-candidate pre-handoff install-patched-frozen.log PASS15.6s; unchanged patch/lock; current D03 Mac negative install tests PASS. Not a new clean install in this continuation. Linux NOT_RUN.",
+  "audit": "Retained raw prod/full each1high/1GHSA; refresh BLOCKED pending explicit metadata disclosure permission; no waiver/ignore/filter",
+  "review": "Supplied independent static v2 PASS; independent implementation/dynamic review PENDING",
+  "remote": "No push/merge/PR/deploy/R4/security-setting writes",
+  "GUI": "Inherited BLOCKED/NOT_RUN",
+  "Linux": "NOT_RUN for exact cache candidate",
+  "protection": "protection-final.json exact original/R1/phase0/R2/peer HEAD/branch/tracked status/private hash match",
+  "cleanup": "cleanup.json and preview cleanup receipts; owned daemons stopped,4knownports closed,previewlock absent"
+}

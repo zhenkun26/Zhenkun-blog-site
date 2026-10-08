@@ -1,0 +1,253 @@
+{
+  "state": "VERIFIED_LOCAL_REPAIR",
+  "ids": [
+    "GHSA-ch52-4w7c-c8xp",
+    "CVE-2026-93750"
+  ],
+  "executions": [
+    {
+      "name": "repair-positive",
+      "command": [
+        "<local-home>/.local/share/mise/installs/node/24.20.0/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "scripts/zhenkun-test-cache-policy.mjs",
+        "scripts/zhenkun-test-astro-cache-generator.mjs"
+      ],
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdoutSha256": "b72da06a15a8c73fc51dec96b815127079c3a981dbeb99e01a730b3eb8cfbff1",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "repair-generator-original",
+      "command": [
+        "<local-home>/.local/share/mise/installs/node/24.20.0/bin/node",
+        "--test",
+        "--test-reporter=tap",
+        "scripts/zhenkun-test-astro-cache-generator.mjs"
+      ],
+      "exitCode": 1,
+      "signal": null,
+      "error": null,
+      "stdoutSha256": "eaf883883460a422b0e75d75af28f0bdec625794d86b468084f7d4e501e2e311",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "inspection": {
+    "contract": {
+      "schemaVersion": 1,
+      "ids": [
+        "GHSA-ch52-4w7c-c8xp",
+        "CVE-2026-93750"
+      ],
+      "primarySha256": {
+        "ghsa": "a78682ff5bcd3a36f73c2ef90d48fdad48b61d446a2b0ecf9b1d7892ed8213ef",
+        "cve": "3978aaaa849d764766e0bdd6e22ead35ca234f7c8729fe569575db10c0e037c7",
+        "latest": "989dbda5d00cc99697648ac16755c0f3afc73ce2e1f478e54a476838a70a7746"
+      },
+      "ledgerSha256": "bf714abd1214e2d40d037557c74521d7453e6b646b780c6dc2ca666207e45ea3",
+      "patchesSha256": "038b97e2663f36f1e72a57480e440e23400a796007a4c8ca0da08bdcb3d000e1",
+      "boundarySha256": "bee4273289aa182bdfa6cb414ca59d6d75c2d481df67ffa1fab19f6a6e5a84fe",
+      "testFiles": {
+        "scripts/zhenkun-test-cache-policy.mjs": "182d29169a3c2da0955369a7d9272877b2ee72e93f0180f18c44f3f997b946b9",
+        "scripts/zhenkun-test-astro-cache-generator.mjs": "614943f8c8a28dc84a9baaacbdfe0b2e93f4facda36792f4686e4ae37dcc1c70",
+        "references/dependency-cache-patch-2026-10-03/verified-official-baseline.cjs": "01b7d66c854b2fe53ac05c98feb6e0d64722ab8898a778e2d2426a8b468d178f",
+        "references/dependency-cache-final-2026-10-04/astro-generator-official.js": "d35fda4e0a924ab0034f2c43983ccad4a7918667333fe381f355f057d9cb20db"
+      },
+      "astroFiles": {
+        "assets/build/generate.js": "4a1d2ab3527330f97bfe77ab86c091ccaaab06a93fee02b466eee2ad149e33d8",
+        "assets/build/remote.js": "f373fa76e3112446db327c79b34e2bbb1ef1dcad41affb60788adf30edc9588e",
+        "assets/utils/redirectValidation.js": "1c142b4b5042e87fa644a75245af8e8938ea2fd8d8bbfd28180f8ffdccefa688",
+        "assets/internal.js": "c4e3b53849a8294c3ff0e60c6fb0191570c7b6d6455f1a04bd4f3e3d37074c3b"
+      },
+      "parents": [
+        {
+          "owner": "astro@7.2.10(patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47)(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+          "name": "http-cache-semantics",
+          "version": "4.2.0(patch_hash=64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3)"
+        }
+      ],
+      "auditObservation": {
+        "ids": [
+          "GHSA-ch52-4w7c-c8xp"
+        ],
+        "package": "http-cache-semantics",
+        "severity": "high",
+        "vulnerableRange": "<=4.2.0",
+        "patchedRange": ">=4.2.1",
+        "findings": [
+          {
+            "version": "4.2.0",
+            "paths": [
+              ".>@astrojs/cloudflare>astro>http-cache-semantics",
+              ".>@astrojs/mdx>astro>http-cache-semantics",
+              ".>@astrojs/svelte>astro>http-cache-semantics",
+              ".>astro>http-cache-semantics",
+              ".>astro-expressive-code>astro>http-cache-semantics",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+            ],
+            "dev": false,
+            "optional": false,
+            "bundled": false
+          }
+        ],
+        "title": "http-cache-semantics max-stale handling can disclose cross-user cached responses",
+        "url": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp"
+      },
+      "installedVersions": {
+        "http-cache-semantics": "4.2.0",
+        "astro": "7.2.10"
+      },
+      "reviewedUpstream": {
+        "package": "http-cache-semantics",
+        "version": "4.3.0",
+        "integrity": "sha512-M5t5LlJpS1UHMjvwRQVdFHvPISGeLAxNcrWuJkeGh0KxsqCHZ1O3NXZU/8x7cD0BDcGW8kapxMKTvwlqrNkHkA==",
+        "tarball": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.3.0.tgz",
+        "sourceSha256": "ede1cc404a492fa348eb9d97a3007a0d72aa717bd22cd86a56bd0824c19729ca",
+        "reviewedAt": "2026-10-04T00:00:00Z",
+        "reviewBy": "2026-10-10T00:00:00Z",
+        "reviewedBy": "Coordinator-supplied independent Astra review on 2026-10-04",
+        "decision": "retain-reviewed-local-patches",
+        "reason": "Complete official tarball/integrity/source diff review: 4.3.0 fixes part of Vary/own-property and adds status API, but not max-stale/stale/error/304 restriction propagation or Astro parent reuse. Keep exact 4.2.0 policy patch plus Astro entry patch; no upstream execution or dependency change."
+      }
+    },
+    "owners": [
+      {
+        "owner": "astro@7.2.10(patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47)(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+        "name": "http-cache-semantics",
+        "version": "4.2.0(patch_hash=64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3)"
+      }
+    ],
+    "links": [
+      "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/http-cache-semantics",
+      "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/http-cache-semantics",
+      "node_modules/.pnpm/node_modules/http-cache-semantics"
+    ],
+    "resolutions": [
+      {
+        "chain": ".>@astrojs/cloudflare>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>@astrojs/mdx>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>@astrojs/svelte>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>astro-expressive-code>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      }
+    ],
+    "astroInstances": [
+      {
+        "entry": "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js",
+        "version": "7.2.10",
+        "sources": {
+          "assets/build/generate.js": "4a1d2ab3527330f97bfe77ab86c091ccaaab06a93fee02b466eee2ad149e33d8",
+          "assets/build/remote.js": "f373fa76e3112446db327c79b34e2bbb1ef1dcad41affb60788adf30edc9588e",
+          "assets/utils/redirectValidation.js": "1c142b4b5042e87fa644a75245af8e8938ea2fd8d8bbfd28180f8ffdccefa688",
+          "assets/internal.js": "c4e3b53849a8294c3ff0e60c6fb0191570c7b6d6455f1a04bd4f3e3d37074c3b"
+        },
+        "paths": [
+          "root",
+          ".>@astrojs/cloudflare>astro>http-cache-semantics",
+          ".>@astrojs/mdx>astro>http-cache-semantics",
+          ".>@astrojs/svelte>astro>http-cache-semantics",
+          ".>astro>http-cache-semantics",
+          ".>astro-expressive-code>astro>http-cache-semantics",
+          ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+          ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+          ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+        ]
+      }
+    ],
+    "cacheSourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89",
+    "boundarySha256": "bee4273289aa182bdfa6cb414ca59d6d75c2d481df67ffa1fab19f6a6e5a84fe"
+  },
+  "primary": [
+    {
+      "kind": "ghsa",
+      "url": "https://api.github.com/advisories/GHSA-ch52-4w7c-c8xp",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdoutSha256": "add51c3b2a7eb164e075b145f72e8902264bb474a8098617d90f5aabd1ab36bf",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fetchedAt": "2026-10-04T03:41:58.060Z"
+    },
+    {
+      "kind": "cve",
+      "url": "https://cveawg.mitre.org/api/cve/CVE-2026-93750",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdoutSha256": "3978aaaa849d764766e0bdd6e22ead35ca234f7c8729fe569575db10c0e037c7",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fetchedAt": "2026-10-04T03:41:59.294Z"
+    },
+    {
+      "kind": "latest",
+      "url": "https://registry.npmjs.org/http-cache-semantics/latest",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdoutSha256": "c4c95cf8d3becce754366907d8a99b44c6e7a10ce725cc01a5f7b859c0682493",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "fetchedAt": "2026-10-04T03:42:00.812Z"
+    }
+  ],
+  "upstreamStatus": "VERSION_MATCH_RETAINED; no upstream CVE withdrawal or release-wide acceptance",
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "32d0d2a14b1d1d00778825946e456b473592120665a6deaa4ebef9cbf0799bd9",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

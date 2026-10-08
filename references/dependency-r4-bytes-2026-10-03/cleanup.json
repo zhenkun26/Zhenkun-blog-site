@@ -1,0 +1,16 @@
+{
+  "state": "PASS_BOUNDED",
+  "knownNativePortsClosed": [
+    {
+      "port": 65199,
+      "connectExit": 61
+    },
+    {
+      "port": 65204,
+      "connectExit": 61
+    }
+  ],
+  "byteFixtureChildren": "spawnSync owned Node writers completed; temporary test dirs cleaned by existing t.after",
+  "previewStarted": false,
+  "oldR4EvidenceManifestIntact": true
+}

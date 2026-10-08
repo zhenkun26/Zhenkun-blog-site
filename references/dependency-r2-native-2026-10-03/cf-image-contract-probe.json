@@ -1,0 +1,57 @@
+{
+  "originalScriptSha256": "75c59032ec524d5da78b51527eac2b272f7d60f00f483f9894cd3453f2277e9d",
+  "fixtureOrigin": "http://127.0.0.1:56440",
+  "workerOrigin": "http://127.0.0.1:56442",
+  "cf": false,
+  "telemetry": false,
+  "records": [
+    {
+      "input": "svg",
+      "inputSha256": "902ad1d2fa9fbd1ae645dc3296191b5a6f2950531aafe1cbd491184dea55272d",
+      "status": 200,
+      "headers": {
+        "content-type": "image/svg+xml",
+        "date": "Sat, 03 Oct 2026 14:06:53 GMT",
+        "mf-content-encoding": "gzip",
+        "transfer-encoding": "chunked",
+        "x-r2-source": "owned"
+      },
+      "bytes": 153,
+      "sha256": "902ad1d2fa9fbd1ae645dc3296191b5a6f2950531aafe1cbd491184dea55272d",
+      "inputByteEqual": true
+    },
+    {
+      "input": "invalid",
+      "inputSha256": "10c4ccf89acdf868b12468d72e1951a40130845818d4a2f8d7b77f04b9fab74b",
+      "status": 200,
+      "headers": {
+        "content-length": "23",
+        "content-type": "image/invalid",
+        "date": "Sat, 03 Oct 2026 14:06:53 GMT",
+        "x-r2-source": "owned"
+      },
+      "bytes": 23,
+      "sha256": "10c4ccf89acdf868b12468d72e1951a40130845818d4a2f8d7b77f04b9fab74b",
+      "inputByteEqual": true
+    },
+    {
+      "input": "jpeg",
+      "inputSha256": "8b5bb166ff139ca7bc67e84a0e3dbe203a5ecb6e6b4ddd880f296be09efef6de",
+      "status": 200,
+      "headers": {
+        "cf-resized": "internal=ok/m",
+        "content-type": "image/png",
+        "date": "Sat, 03 Oct 2026 14:06:53 GMT",
+        "transfer-encoding": "chunked"
+      },
+      "bytes": 127,
+      "sha256": "2fa06c4a3480b843eb377896c378e8098c246d3539a376dd998a0409400d43d5",
+      "inputByteEqual": false,
+      "decoded": {
+        "width": 3,
+        "height": 4,
+        "format": "png"
+      }
+    }
+  ]
+}

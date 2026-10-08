@@ -1,0 +1,32 @@
+[
+  {
+    "ghsa": "GHSA-5jgf-p345-68v8",
+    "source": "https://github.com/advisories/GHSA-5jgf-p345-68v8",
+    "capturedAt": "2026-10-03T11:42:07.987714+00:00"
+  },
+  {
+    "ghsa": "GHSA-f65p-4m7j-42xc",
+    "source": "https://github.com/advisories/GHSA-f65p-4m7j-42xc",
+    "capturedAt": "2026-10-03T11:42:10.417240+00:00"
+  },
+  {
+    "ghsa": "GHSA-fph4-wmhf-6fwf",
+    "source": "https://github.com/advisories/GHSA-fph4-wmhf-6fwf",
+    "capturedAt": "2026-10-03T11:42:12.600041+00:00"
+  },
+  {
+    "ghsa": "GHSA-hrr3-gc8f-f4qj",
+    "source": "https://github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+    "capturedAt": "2026-10-03T11:42:13.860227+00:00"
+  },
+  {
+    "ghsa": "GHSA-jqff-g426-hqxp",
+    "source": "https://github.com/advisories/GHSA-jqff-g426-hqxp",
+    "capturedAt": "2026-10-03T11:42:15.498782+00:00"
+  },
+  {
+    "ghsa": "GHSA-qw65-cvwx-89v3",
+    "source": "https://github.com/advisories/GHSA-qw65-cvwx-89v3",
+    "capturedAt": "2026-10-03T11:42:17.374243+00:00"
+  }
+]

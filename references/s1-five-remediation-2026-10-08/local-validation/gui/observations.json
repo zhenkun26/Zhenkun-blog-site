@@ -1,0 +1,37 @@
+{
+  "source": "42f94f0186750441981c26b94e21b803e619fa0b",
+  "environment": "User Mac, native headed Edge, owned isolated profile and CDP; mobile is viewport/touch simulation",
+  "records": [
+    {
+      "name": "browser",
+      "product": "Edg/154.0.4258.62",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0",
+      "headed": true
+    },
+    {
+      "name": "formal-home",
+      "title": "Zhenkun - 记录、思考与灵感",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "formal-first-search",
+      "query": "气象",
+      "result": "/Zhenkun-blog-site/about/"
+    },
+    {
+      "name": "FAIL",
+      "message": "GUI condition timeout document.title==='Zhenkun - 记录、思考与灵感'",
+      "stack": "Error: GUI condition timeout document.title==='Zhenkun - 记录、思考与灵感'\n    at until (file://<local-home>/Documents/Codex/2026-10-07/task-4/s1-control/run-five-gui.mjs:52:118)\n    at async file://<local-home>/Documents/Codex/2026-10-07/task-4/s1-control/run-five-gui.mjs:70:47"
+    }
+  ],
+  "errors": [],
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "c1e88a659dc9fa67e82dc720cb5e7a51c40472f9beab9a1a3e39f71cb24ad64b",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

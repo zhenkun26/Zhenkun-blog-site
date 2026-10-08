@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "state": "FAIL",
+  "exitCode": 1,
+  "raw": {
+    "prod": {
+      "state": "VALID",
+      "recordCount": 1,
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 1,
+        "critical": 0
+      }
+    },
+    "full": {
+      "state": "VALID",
+      "recordCount": 1,
+      "counts": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 1,
+        "critical": 0
+      }
+    }
+  },
+  "effective": {
+    "advisories": [
+      {
+        "id": "GHSA-ch52-4w7c-c8xp",
+        "aliases": [
+          "CVE-2026-93748",
+          "GHSA-ch52-4w7c-c8xp"
+        ],
+        "package": "http-cache-semantics",
+        "severity": "high",
+        "observations": [
+          {
+            "kind": "prod",
+            "ids": [
+              "GHSA-ch52-4w7c-c8xp"
+            ],
+            "package": "http-cache-semantics",
+            "severity": "high",
+            "vulnerableRange": "<=4.2.0",
+            "patchedRange": ">=4.2.1",
+            "findings": [
+              {
+                "version": "4.2.0",
+                "paths": [
+                  ".>@astrojs/cloudflare>astro>http-cache-semantics",
+                  ".>@astrojs/mdx>astro>http-cache-semantics",
+                  ".>@astrojs/svelte>astro>http-cache-semantics",
+                  ".>astro>http-cache-semantics",
+                  ".>astro-expressive-code>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+                ],
+                "dev": false,
+                "optional": false,
+                "bundled": false
+              }
+            ],
+            "rawId": "1240991"
+          },
+          {
+            "kind": "full",
+            "ids": [
+              "GHSA-ch52-4w7c-c8xp"
+            ],
+            "package": "http-cache-semantics",
+            "severity": "high",
+            "vulnerableRange": "<=4.2.0",
+            "patchedRange": ">=4.2.1",
+            "findings": [
+              {
+                "version": "4.2.0",
+                "paths": [
+                  ".>@astrojs/cloudflare>astro>http-cache-semantics",
+                  ".>@astrojs/mdx>astro>http-cache-semantics",
+                  ".>@astrojs/svelte>astro>http-cache-semantics",
+                  ".>astro>http-cache-semantics",
+                  ".>astro-expressive-code>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+                  ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+                ],
+                "dev": false,
+                "optional": false,
+                "bundled": false
+              }
+            ],
+            "rawId": "1240991"
+          }
+        ]
+      }
+    ],
+    "knownAffected": [
+      {
+        "id": "GHSA-ch52-4w7c-c8xp",
+        "aliases": [
+          "GHSA-ch52-4w7c-c8xp",
+          "CVE-2026-93748"
+        ],
+        "package": "http-cache-semantics",
+        "severity": "high",
+        "versions": [
+          "4.2.0"
+        ],
+        "ranges": [
+          "<= 4.2.0",
+          "<= 4.2.0"
+        ]
+      },
+      {
+        "id": "CVE-2026-93750",
+        "aliases": [
+          "CVE-2026-93750"
+        ],
+        "package": "http-cache-semantics",
+        "severity": "high",
+        "versions": [
+          "4.2.0"
+        ],
+        "ranges": [
+          "<=4.2.0",
+          "<=4.2.0",
+          "<=4.1.1"
+        ]
+      }
+    ],
+    "mitigation": "NO_EXCEPTIONS_IMPLEMENTED; patch integrity never suppresses raw or known findings"
+  },
+  "blocked": [],
+  "head": "ce800e5b1d2526b9fbe6cf67eac65a1f18b8405a",
+  "executionMode": "INJECTED_OFFLINE",
+  "lockSha256": "6f4a61e19f5e118ea4636a11984ae52f24e11764d6fdade9cab3d3101fd4d002",
+  "collection": "collection.json"
+}

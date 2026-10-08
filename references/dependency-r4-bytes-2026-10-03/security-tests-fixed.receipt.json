@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "scripts/zhenkun-test-security-audit.mjs"
+  ],
+  "exit": 0,
+  "GITHUB_SHA": "735c141482e46af9819bf6c521ce1ac3ee46c388",
+  "at": "2026-10-03T16:27:46.104912+00:00",
+  "liveAudit": "NOT_RUN"
+}

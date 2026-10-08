@@ -1,0 +1,41 @@
+{
+  "original": {
+    "head": "b6c3e39b2bf7ea73ec60234dc42f8240e0e8695f",
+    "branch": "codex/plan-dependency-remediation",
+    "trackedStatus": "",
+    "workbuddy": {
+      "state": "LOCAL_ONLY_PROTECTION_DATA",
+      "originalValueSha256": "888d1b232fad473cafb05f4c9f1aa0e9166c473c995109ce0447dedabc546df0"
+    }
+  },
+  "r1": {
+    "head": "955c78b7009fadab0a0785cb2895e0256588d31c",
+    "branch": "codex/dependency-ar3-20261003",
+    "trackedStatus": "",
+    "workbuddy": {
+      "state": "LOCAL_ONLY_PROTECTION_DATA",
+      "originalValueSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  },
+  "phase0": {
+    "head": "96b7b899dbe80aadd68f83a7ba1482bf386d0eb1",
+    "branch": "codex/dependency-phase0-20261003",
+    "trackedStatus": "",
+    "workbuddy": {
+      "state": "LOCAL_ONLY_PROTECTION_DATA",
+      "originalValueSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    }
+  },
+  "candidate": {
+    "sourceCommit": "ae386d4e452d6e2cb73150e8e67f92f0b6f1b5c6",
+    "sourceBoundaryDiffExit": 0,
+    "nodeModulesShared": false,
+    "nodeModulesPath": "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules"
+  },
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "00d8af8c7a6d3f55a184c8b7a45b4f46a4aa817ffca963d7eb5908f4168f5a6c",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

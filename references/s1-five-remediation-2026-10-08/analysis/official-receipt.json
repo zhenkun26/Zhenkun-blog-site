@@ -1,0 +1,150 @@
+[
+  {
+    "url": "https://registry.npmjs.org/gray-matter/latest",
+    "file": "official/gray-matter@latest.json",
+    "status": 200,
+    "sha256": "a9f3f7f93817c2f41a86930af4f5d0d64a5ca21f1946c315b7622ece906b61aa",
+    "fetchedAt": "2026-10-08T02:58:44.494244+00:00",
+    "curlExit": 0,
+    "stderr": ""
+  },
+  {
+    "url": "https://registry.npmjs.org/js-yaml/3.15.2",
+    "file": "official/js-yaml@3.15.2.json",
+    "status": 200,
+    "sha256": "d3006bce169ddaf8f6589507abeb65994b293b5e3983ba2375d0b47e580a8cc7",
+    "fetchedAt": "2026-10-08T02:58:43.178810+00:00",
+    "curlExit": 0,
+    "stderr": ""
+  },
+  {
+    "url": "https://registry.npmjs.org/argparse/2.0.1",
+    "file": "official/argparse@2.0.1.json",
+    "status": 200,
+    "sha256": "e3da8bcaa628e257bac982670c57088d054beb6dedbabf00612ea8c20f8a6a7b",
+    "fetchedAt": "2026-10-08T02:58:43.194514+00:00",
+    "curlExit": 0,
+    "stderr": ""
+  },
+  {
+    "url": "https://registry.npmjs.org/katex/0.18.5",
+    "file": "official/katex@0.18.5.json",
+    "status": 200,
+    "sha256": "9289e51f26da86c677b9fe5157acf6937bada76097a0829a7c24e248db585c3f",
+    "fetchedAt": "2026-10-08T02:58:48.068350+00:00",
+    "curlExit": 0,
+    "stderr": ""
+  },
+  {
+    "url": "https://registry.npmjs.org/@astrojs%2finternal-helpers/0.10.4",
+    "file": "official/@astrojs__internal-helpers@0.10.4.json",
+    "status": 200,
+    "sha256": "5c683322f9b2b1c172afc63fcc28abae6f2a8285d3eb5ec5b0baa84600282890",
+    "fetchedAt": "2026-10-08T02:58:44.787310+00:00",
+    "curlExit": 0,
+    "stderr": ""
+  },
+  {
+    "url": "https://registry.npmjs.org/@astrojs%2finternal-helpers/0.11.0",
+    "file": "official/@astrojs__internal-helpers@0.11.0.json",
+    "status": 200,
+    "sha256": "57e6739734df7f1212f47d48d5b8fb9683ab1fc0d8294a92f6fa2c3d38921e29",
+    "fetchedAt": "2026-10-08T02:58:44.787391+00:00",
+    "curlExit": 0,
+    "stderr": ""
+  },
+  {
+    "url": "https://registry.npmjs.org/sprintf-js/1.1.4",
+    "file": "official/sprintf-js@1.1.4.json",
+    "status": 404,
+    "sha256": "f2cd4fd14681a68dd93920d2abf37d28e5b6b6bda5170de856d672ea1578a92f",
+    "fetchedAt": "2026-10-08T02:58:46.973923+00:00",
+    "curlExit": 22,
+    "stderr": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "url": "https://registry.npmjs.org/smol-toml/1.8.1",
+    "file": "official/smol-toml@1.8.1.json",
+    "status": 404,
+    "sha256": "a1fec1cca2fb87b51ab1db9668d71c759a65d8e75504b315b0b404e5784395b1",
+    "fetchedAt": "2026-10-08T02:58:52.275798+00:00",
+    "curlExit": 22,
+    "stderr": "curl: (22) The requested URL returned error: 404\n"
+  },
+  {
+    "url": "https://registry.npmjs.org/smol-toml/-/smol-toml-1.9.0.tgz",
+    "file": "official/smol-toml@1.9.0.tgz",
+    "status": 200,
+    "sha256": "4909da857f775ea729461e552fdc85966e7825c1020605066b3a9ad29642dbdc",
+    "fetchedAt": "2026-10-08T02:58:54.076774+00:00",
+    "curlExit": 0,
+    "stderr": "",
+    "integrityVerified": "sha512-hpd+HLON7HdZXqYchMM/+LaTTbdK0AU3NngIJ4KVyWbY9bfQqdL9cD+4yf6dUoU2Ap4VsU0JkQi6FxAI1B2mXQ=="
+  },
+  {
+    "url": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz",
+    "file": "official/source-map-js@1.2.2.tgz",
+    "status": 200,
+    "sha256": "05c8cf8e7c3a6b56cada7668fe9342b10f4b625efc92aba9ba05b9e8fe4d71a3",
+    "fetchedAt": "2026-10-08T02:59:01.963224+00:00",
+    "curlExit": 0,
+    "stderr": "",
+    "integrityVerified": "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw=="
+  },
+  {
+    "url": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-7.1.6.tgz",
+    "file": "official/postcss-selector-parser@7.1.6.tgz",
+    "status": 200,
+    "sha256": "48c903f98c5591d8d26f16f389d5cb3435459474c645209a79f6241bf4b657b6",
+    "fetchedAt": "2026-10-08T02:59:03.838343+00:00",
+    "curlExit": 0,
+    "stderr": "",
+    "integrityVerified": "sha512-7qASPzhKF2l2KLboRZux8CCTRMdGiV08vWmyKzPz22qZ7ZjQBOeY7rNzNoCLSUiftJ7HUq0GERHmxw/t0dCdMw=="
+  },
+  {
+    "url": "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz",
+    "file": "official/argparse@2.0.1.tgz",
+    "status": 200,
+    "sha256": "27903847fc8215e6fc5a33e81490f7baba66403f8aade33771b988cca097728c",
+    "fetchedAt": "2026-10-08T02:59:07.787637+00:00",
+    "curlExit": 0,
+    "stderr": "",
+    "integrityVerified": "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q=="
+  },
+  {
+    "url": "https://api.github.com/repos/KaTeX/KaTeX/commits/0adf7e77db6915d991803b29699f82b1ccf8d4f4",
+    "file": "official/katex-fix.json",
+    "status": 200,
+    "sha256": "3937523a22cf5fd475aa66b04175af8be713c3f51c94b9fb4ea4a98559af3ecb",
+    "fetchedAt": "2026-10-08T02:59:09.006307+00:00",
+    "curlExit": 0,
+    "stderr": ""
+  },
+  {
+    "url": "https://api.github.com/repos/postcss/postcss-selector-parser/commits/62b191792df0a0bc56062e5a875bc74aae2a51cd",
+    "file": "official/selector-fix.json",
+    "status": 200,
+    "sha256": "2f57391ed34260a9cb1b955976c698c88d826129ca4c790bf901c74204607d5f",
+    "fetchedAt": "2026-10-08T02:59:10.213929+00:00",
+    "curlExit": 0,
+    "stderr": ""
+  },
+  {
+    "url": "https://api.github.com/repos/7rulnik/source-map-js/commits/cf7658058ceeaa8619d5ae0ec90be6905209d016",
+    "file": "official/sourcemap-fix.json",
+    "status": 200,
+    "sha256": "741ac3f3fa5ff08b8345bb3aecc996868fc2ba889f1b2c6bf9d627687c239f51",
+    "fetchedAt": "2026-10-08T02:59:12.991078+00:00",
+    "curlExit": 0,
+    "stderr": ""
+  },
+  {
+    "url": "https://api.github.com/repos/squirrelchat/smol-toml/commits/99102aa57fc932f760ea9c15b4cf1c181f952d24",
+    "file": "official/toml-fix.json",
+    "status": 200,
+    "sha256": "2c9a1a5bcce271aade44abe691fc659df744ef9b37f2daed2ed71af407f7fc71",
+    "fetchedAt": "2026-10-08T02:59:16.649800+00:00",
+    "curlExit": 0,
+    "stderr": ""
+  }
+]

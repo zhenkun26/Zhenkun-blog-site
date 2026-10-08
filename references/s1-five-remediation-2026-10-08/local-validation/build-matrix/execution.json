@@ -1,0 +1,158 @@
+[
+  {
+    "name": "build-root",
+    "command": [
+      "pnpm",
+      "build"
+    ],
+    "head": "42f94f0186750441981c26b94e21b803e619fa0b",
+    "DEPLOY_BASE": "/",
+    "exitCode": 0,
+    "seconds": 24.792,
+    "finishedAt": "2026-10-08T04:11:17.054239+00:00"
+  },
+  {
+    "name": "artifacts-root",
+    "command": [
+      "node",
+      "scripts/zhenkun-verify-ci-artifacts.mjs",
+      "--base",
+      "/"
+    ],
+    "head": "42f94f0186750441981c26b94e21b803e619fa0b",
+    "DEPLOY_BASE": "/",
+    "exitCode": 0,
+    "seconds": 0.135,
+    "finishedAt": "2026-10-08T04:11:17.190262+00:00"
+  },
+  {
+    "name": "preview-root",
+    "command": [
+      "pnpm",
+      "exec",
+      "astro",
+      "preview",
+      "--background",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "4357"
+    ],
+    "head": "42f94f0186750441981c26b94e21b803e619fa0b",
+    "DEPLOY_BASE": "/",
+    "exitCode": 0,
+    "seconds": 2.299,
+    "finishedAt": "2026-10-08T04:11:19.504235+00:00"
+  },
+  {
+    "name": "http-root",
+    "command": [
+      "python3.13",
+      "scripts/zhenkun-verify-deployment.py",
+      "--base",
+      "/",
+      "--expected-posts",
+      "0",
+      "--http",
+      "http://127.0.0.1:4357"
+    ],
+    "head": "42f94f0186750441981c26b94e21b803e619fa0b",
+    "DEPLOY_BASE": "/",
+    "exitCode": 0,
+    "seconds": 0.114,
+    "finishedAt": "2026-10-08T04:11:19.618351+00:00"
+  },
+  {
+    "name": "stop-root",
+    "command": [
+      "pnpm",
+      "exec",
+      "astro",
+      "preview",
+      "stop"
+    ],
+    "head": "42f94f0186750441981c26b94e21b803e619fa0b",
+    "DEPLOY_BASE": "/",
+    "exitCode": 0,
+    "seconds": 0.482,
+    "finishedAt": "2026-10-08T04:11:20.100993+00:00"
+  },
+  {
+    "name": "build-project",
+    "command": [
+      "pnpm",
+      "build"
+    ],
+    "head": "42f94f0186750441981c26b94e21b803e619fa0b",
+    "DEPLOY_BASE": "/Zhenkun-blog-site/",
+    "exitCode": 0,
+    "seconds": 7.138,
+    "finishedAt": "2026-10-08T04:11:27.239363+00:00"
+  },
+  {
+    "name": "artifacts-project",
+    "command": [
+      "node",
+      "scripts/zhenkun-verify-ci-artifacts.mjs",
+      "--base",
+      "/Zhenkun-blog-site/"
+    ],
+    "head": "42f94f0186750441981c26b94e21b803e619fa0b",
+    "DEPLOY_BASE": "/Zhenkun-blog-site/",
+    "exitCode": 0,
+    "seconds": 0.126,
+    "finishedAt": "2026-10-08T04:11:27.365438+00:00"
+  },
+  {
+    "name": "preview-project",
+    "command": [
+      "pnpm",
+      "exec",
+      "astro",
+      "preview",
+      "--background",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "4358"
+    ],
+    "head": "42f94f0186750441981c26b94e21b803e619fa0b",
+    "DEPLOY_BASE": "/Zhenkun-blog-site/",
+    "exitCode": 0,
+    "seconds": 1.812,
+    "finishedAt": "2026-10-08T04:11:29.192799+00:00"
+  },
+  {
+    "name": "http-project",
+    "command": [
+      "python3.13",
+      "scripts/zhenkun-verify-deployment.py",
+      "--base",
+      "/Zhenkun-blog-site/",
+      "--expected-posts",
+      "0",
+      "--http",
+      "http://127.0.0.1:4358"
+    ],
+    "head": "42f94f0186750441981c26b94e21b803e619fa0b",
+    "DEPLOY_BASE": "/Zhenkun-blog-site/",
+    "exitCode": 0,
+    "seconds": 0.108,
+    "finishedAt": "2026-10-08T04:11:29.300935+00:00"
+  },
+  {
+    "name": "stop-project",
+    "command": [
+      "pnpm",
+      "exec",
+      "astro",
+      "preview",
+      "stop"
+    ],
+    "head": "42f94f0186750441981c26b94e21b803e619fa0b",
+    "DEPLOY_BASE": "/Zhenkun-blog-site/",
+    "exitCode": 0,
+    "seconds": 0.491,
+    "finishedAt": "2026-10-08T04:11:29.792220+00:00"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "source": "53b0cb559e6d037b1d6971dc3c4ec4c2051adcc1",
+  "sourceFiles": {
+    "package.json": "d07c65f66bc29e18af0f69ffd7c11c37b87d722cb7f401b93fb9382ceb91decc",
+    "pnpm-lock.yaml": "14462544638481af75e4fb22587bcd143b99cbb3b73b1a01016cd78be888a895",
+    "pnpm-workspace.yaml": "7a8f1cd67a3bca177b0898e65839905d7a8bebf0b9acff51c4a6feddeb31b6fd",
+    "scripts/zhenkun-security-policy.json": "84cdc43bbbe65acd95e8558da615c114dae656382ffdc684ee88adb6d195de9f",
+    "scripts/zhenkun-cache-repair-contract.json": "d9d61cef1bbea911e851743ea8282ec565719f063b22b8848794e44471a80244",
+    "scripts/zhenkun-test-security-audit.mjs": "45dd1f497b344be33d1e2c7a0a9392b9ebf0bd518b48d8008d84afe0f3da9c9f"
+  },
+  "installed": {
+    "node": "v24.20.0",
+    "pnpm": "11.22.0"
+  },
+  "frozenInstall": {
+    "status": "PASS",
+    "observedCommand": [
+      "pnpm",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "lockfileChanged": false,
+    "rawLog": "Installer terminal tool output; no local stdout file created"
+  },
+  "securityLive": {
+    "status": "BLOCKED",
+    "attemptExecuted": false,
+    "reason": "Auto-review rejected complete production dependency metadata transmission to npm; explicit local and PR22 CI payload permission pending; no indirect CI trigger"
+  },
+  "githubMutation": {
+    "push": "NOT_RUN",
+    "merge": "NOT_RUN",
+    "deployment": "NOT_RUN"
+  },
+  "protection": {
+    "originalHeadBranchIndexStatus": "PASS",
+    "privateWorkbuddyAggregate": {
+      "state": "LOCAL_ONLY_PROTECTION_DATA",
+      "originalValueSha256": "727e9bd17b077ba162e13ba877135cc6fbc6b30f83da0b34b3e20233f1cc885f"
+    },
+    "securityOriginalHeadBranchIndexStatus": "PASS",
+    "p8HeadBranchIndexStatusSymlink": "PASS"
+  },
+  "acceptedProofLevels": {
+    "native": "53b0cb5:358/358, zero skips",
+    "completeBuilds": "53b0cb5:both bases",
+    "applicationTypesAstroBiomePeers": "9444e03:application and installed graph identical in 53b0cb5; later source edits only temporal test fixtures and docs",
+    "repairBehavior": "53b0cb5:standalone installed proof; no audit classification",
+    "GUI": "53b0cb5:project-base on Mac Edge; mobile simulation"
+  },
+  "applicationInputsUnchangedSinceTypesAstroBiomePeers": true,
+  "proofBinding": "Source acceptance53b0cb5; subsequent checkpoint changes only docs/references and do not substitute new CI",
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "3fa95337744445167c475423b23b98c96e726a246f4fbc6342890a693af9aad6",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

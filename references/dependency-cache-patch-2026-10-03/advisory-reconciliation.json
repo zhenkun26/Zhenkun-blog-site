@@ -1,0 +1,691 @@
+{
+  "basis": "Retained official prod/full raw audit from this candidate before clock-only repair, plus current lock semver reevaluation of retained36 ranges. This continuation audit refresh BLOCKED by automatic approval; not exhaustive discovery or all36 primary-source refresh.",
+  "auditRefresh": {
+    "state": "BLOCKED",
+    "evidence": "audit-refresh-blocked.json"
+  },
+  "implementation": {
+    "sourceCommit": "af1a0379ec9518931ef3d703dacdcbd4102daacf",
+    "boundedMacTests": "45/45 cache;247/247 full native;independent dynamic review pending",
+    "patchedSourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+  },
+  "lockSha256": "6f4a61e19f5e118ea4636a11984ae52f24e11764d6fdade9cab3d3101fd4d002",
+  "audits": {
+    "prod": {
+      "exit": 1,
+      "records": 1,
+      "ghsa": [
+        "GHSA-ch52-4w7c-c8xp"
+      ],
+      "severity": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 1,
+        "critical": 0
+      },
+      "allRawPaths": [
+        ".>@astrojs/cloudflare>astro>http-cache-semantics",
+        ".>@astrojs/mdx>astro>http-cache-semantics",
+        ".>@astrojs/svelte>astro>http-cache-semantics",
+        ".>astro>http-cache-semantics",
+        ".>astro-expressive-code>astro>http-cache-semantics",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+      ],
+      "rawPatchedRange": ">=4.2.1",
+      "localPatch": "Does not change version matching; dynamic review pending. No ignore/waiver/filter."
+    },
+    "full": {
+      "exit": 1,
+      "records": 1,
+      "ghsa": [
+        "GHSA-ch52-4w7c-c8xp"
+      ],
+      "severity": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 1,
+        "critical": 0
+      },
+      "allRawPaths": [
+        ".>@astrojs/cloudflare>astro>http-cache-semantics",
+        ".>@astrojs/mdx>astro>http-cache-semantics",
+        ".>@astrojs/svelte>astro>http-cache-semantics",
+        ".>astro>http-cache-semantics",
+        ".>astro-expressive-code>astro>http-cache-semantics",
+        ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+        ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+      ],
+      "rawPatchedRange": ">=4.2.1",
+      "localPatch": "Does not change version matching; dynamic review pending. No ignore/waiver/filter."
+    }
+  },
+  "known36": {
+    "count": 36,
+    "affected": 1,
+    "rows": [
+      {
+        "ghsa": "GHSA-6j4f-fj2g-mc7p",
+        "package": "brace-expansion",
+        "officialAffectedRanges": [
+          ">= 4.0.0, < 5.0.10",
+          ">= 3.0.0, < 3.0.7",
+          ">= 2.0.0, < 2.1.5",
+          "< 1.1.19"
+        ],
+        "instances": [
+          {
+            "version": "2.1.7",
+            "affected": false
+          },
+          {
+            "version": "5.0.12",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-q2hr-2g5m-vwhr",
+        "package": "brace-expansion",
+        "officialAffectedRanges": [
+          ">= 4.0.0, < 5.0.12",
+          ">= 3.0.0, < 3.0.9",
+          ">= 2.0.0, < 2.1.7",
+          "< 1.1.21"
+        ],
+        "instances": [
+          {
+            "version": "2.1.7",
+            "affected": false
+          },
+          {
+            "version": "5.0.12",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-qhr7-859c-m2p7",
+        "package": "brace-expansion",
+        "officialAffectedRanges": [
+          ">= 4.0.0, < 5.0.11",
+          ">= 3.0.0, < 3.0.8",
+          ">= 2.0.0, < 2.1.6",
+          "< 1.1.20"
+        ],
+        "instances": [
+          {
+            "version": "2.1.7",
+            "affected": false
+          },
+          {
+            "version": "5.0.12",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-2wm5-q62r-hmrv",
+        "package": "colord",
+        "officialAffectedRanges": [
+          "< 2.9.4"
+        ],
+        "instances": [],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-4q55-j62x-fr9h",
+        "package": "devalue",
+        "officialAffectedRanges": [
+          "<= 5.9.2"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-hx4r-w6wj-j8fg",
+        "package": "devalue",
+        "officialAffectedRanges": [
+          "<= 5.9.2"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-j22f-vq7h-c4qm",
+        "package": "devalue",
+        "officialAffectedRanges": [
+          ">= 5.1.0, <= 5.9.2"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-mcm9-63f2-9j32",
+        "package": "devalue",
+        "officialAffectedRanges": [
+          "<= 5.9.2"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-wf3x-273g-mvxv",
+        "package": "devalue",
+        "officialAffectedRanges": [
+          ">= 1.0.0, <= 5.9.2"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-x5rw-q4pp-hg5g",
+        "package": "devalue",
+        "officialAffectedRanges": [
+          ">= 5.8.0, <= 5.9.2"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-5jgf-p345-68v8",
+        "package": "fast-uri",
+        "officialAffectedRanges": [
+          ">= 2.4.2, < 2.4.5",
+          ">= 3.1.3, < 3.1.6",
+          ">= 4.0.1, < 4.1.3"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-f65p-4m7j-42xc",
+        "package": "fast-uri",
+        "officialAffectedRanges": [
+          ">= 2.3.1, < 2.4.5",
+          ">= 3.0.0, < 3.1.6",
+          ">= 4.0.0, < 4.1.3"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-fph4-wmhf-6fwf",
+        "package": "fast-uri",
+        "officialAffectedRanges": [
+          ">= 2.4.1, < 2.4.5",
+          ">= 3.1.2, < 3.1.6",
+          ">= 4.0.0, < 4.1.3"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-hrr3-gc8f-f4qj",
+        "package": "fast-uri",
+        "officialAffectedRanges": [
+          "< 2.4.7",
+          ">= 3.0.0, < 3.1.8",
+          ">= 4.0.0, < 4.1.5"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-jqff-g426-hqxp",
+        "package": "fast-uri",
+        "officialAffectedRanges": [
+          ">= 2.3.1, < 2.4.5",
+          ">= 3.0.0, < 3.1.6",
+          ">= 4.0.0, < 4.1.3"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-qw65-cvwx-89v3",
+        "package": "fast-uri",
+        "officialAffectedRanges": [
+          "< 2.4.6",
+          ">= 3.0.0, < 3.1.7",
+          ">= 4.0.0, < 4.1.4"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-ch52-4w7c-c8xp",
+        "package": "http-cache-semantics",
+        "officialAffectedRanges": [
+          "<= 4.2.0"
+        ],
+        "instances": [
+          {
+            "version": "4.2.0",
+            "affected": true
+          }
+        ],
+        "status": "VERSION_MATCH_LOCAL_PATCH_UNREVIEWED"
+      },
+      {
+        "ghsa": "GHSA-2883-xcg3-v3hh",
+        "package": "js-yaml",
+        "officialAffectedRanges": [
+          ">= 4.0.0, < 4.3.2",
+          ">= 3.0.0, < 3.15.2"
+        ],
+        "instances": [
+          {
+            "version": "3.15.2",
+            "affected": false
+          },
+          {
+            "version": "4.3.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-5c6j-r48x-rmvq",
+        "package": "serialize-javascript",
+        "officialAffectedRanges": [
+          "<= 7.0.2"
+        ],
+        "instances": [],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-gfhx-hw2g-v5hg",
+        "package": "serialize-javascript",
+        "officialAffectedRanges": [
+          ">= 7.1.1, < 7.1.2"
+        ],
+        "instances": [],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-qj8w-gfj5-8c6v",
+        "package": "serialize-javascript",
+        "officialAffectedRanges": [
+          ">= 5.0.0, < 7.0.5"
+        ],
+        "instances": [],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-rgj7-g3m4-5g8c",
+        "package": "sharp",
+        "officialAffectedRanges": [
+          "< 0.35.4"
+        ],
+        "instances": [
+          {
+            "version": "0.35.5",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-wq5f-xc86-pv6w",
+        "package": "sharp",
+        "officialAffectedRanges": [
+          "< 0.35.5"
+        ],
+        "instances": [
+          {
+            "version": "0.35.5",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-4vpr-x523-8j87",
+        "package": "svgo",
+        "officialAffectedRanges": [
+          ">= 1.0.0, < 2.8.4",
+          ">= 3.0.0, < 3.3.5",
+          ">= 4.0.0, < 4.1.0"
+        ],
+        "instances": [
+          {
+            "version": "4.1.0",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-w27v-7q3p-w38r",
+        "package": "svgo",
+        "officialAffectedRanges": [
+          ">= 1.0.0, < 2.8.4",
+          ">= 3.0.0, < 3.3.5",
+          ">= 4.0.0, < 4.1.0"
+        ],
+        "instances": [
+          {
+            "version": "4.1.0",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-2gqq-gqf2-x968",
+        "package": "undici",
+        "officialAffectedRanges": [
+          ">= 7.1.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-2jfj-6hjv-fm6j",
+        "package": "undici",
+        "officialAffectedRanges": [
+          ">= 7.0.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-3wwx-pv8p-q78v",
+        "package": "undici",
+        "officialAffectedRanges": [
+          ">= 6.25.0, < 6.28.1",
+          ">= 7.28.0, < 7.29.1",
+          ">= 8.1.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-3xpg-4rpp-hhhm",
+        "package": "undici",
+        "officialAffectedRanges": [
+          ">= 7.15.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-8436-99hf-9mmv",
+        "package": "undici",
+        "officialAffectedRanges": [
+          ">= 7.0.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-pmjh-fq2x-6v4x",
+        "package": "undici",
+        "officialAffectedRanges": [
+          ">= 7.11.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-r53p-7pc4-xj5r",
+        "package": "undici",
+        "officialAffectedRanges": [
+          "< 6.28.1",
+          ">= 7.0.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-rfgv-xxqx-mfg5",
+        "package": "undici",
+        "officialAffectedRanges": [
+          ">= 6.7.0, < 6.28.1",
+          ">= 7.0.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-rx4f-c7p8-82vq",
+        "package": "undici",
+        "officialAffectedRanges": [
+          ">= 7.0.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-vp8m-p9jh-q5pm",
+        "package": "undici",
+        "officialAffectedRanges": [
+          ">= 8.10.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      },
+      {
+        "ghsa": "GHSA-w293-vg96-wgc3",
+        "package": "undici",
+        "officialAffectedRanges": [
+          ">= 7.24.1, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH"
+      }
+    ]
+  },
+  "additionalCVE93750": {
+    "versionMatch": true,
+    "belongsToRetained36": false,
+    "localPatch": "Unreviewed local candidate targets mechanism, not advisory closure"
+  },
+  "sources": [
+    {
+      "id": "GHSA-ch52-4w7c-c8xp",
+      "cve": "CVE-2026-93748",
+      "url": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp",
+      "severity": "GitHub Reviewed High/CVSS4.0 8.7",
+      "range": "<=4.2.0",
+      "patched": "None",
+      "updated": "2026-10-02"
+    },
+    {
+      "id": "upstream issue57",
+      "url": "https://github.com/kornelski/http-cache-semantics/issues/57",
+      "severity": "Reporter Medium/CVSS3.1 5.9",
+      "range": "<=4.1.1",
+      "note": "Vary wildcard/OWS/list/prototype mechanism; differing range and severity retained"
+    },
+    {
+      "id": "CVE-2026-93750",
+      "url": "https://www.vulncheck.com/advisories/http-cache-semantics-through-4.2.0-cross-client-cache-disclosure-via-vary-wildcard",
+      "severity": "Publisher/CNA High/CVSS4.0 8.2",
+      "range": "<=4.2.0",
+      "published": "2026-09-18",
+      "ghsa": "Not established by bounded consulted primary sources; no global absence claim"
+    }
+  ],
+  "review": "Independent static designv2 PASS supplied; implementation/dynamic independent review PENDING",
+  "Linux": "NOT_RUN",
+  "GUI": "BLOCKED/NOT_RUN",
+  "officialPackage": "4.2.0; no fake4.2.1/fork/published repair claim"
+}

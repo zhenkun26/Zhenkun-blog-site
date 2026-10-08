@@ -1,0 +1,147 @@
+{
+  "node": "v24.20.0",
+  "tomlPositiveCases": 5,
+  "tomlPrototypeChange": "ordinary objects become null-prototype tables; preserved explicitly, compared data values separately",
+  "helpers": [
+    {
+      "version": "0.10.4",
+      "TOMLandYAML": true
+    },
+    {
+      "version": "0.11.0",
+      "TOMLandYAML": true
+    }
+  ],
+  "tomlMeasurements": [
+    {
+      "n": 1000,
+      "bytes": 8890,
+      "old": {
+        "dotSearches": 1000,
+        "searchedSuffixUnits": 4499395,
+        "ms": 1.339583000000001
+      },
+      "fixed": {
+        "dotSearches": 0,
+        "searchedSuffixUnits": 0,
+        "ms": 0.8882080000000023
+      }
+    },
+    {
+      "n": 2000,
+      "bytes": 18890,
+      "old": {
+        "dotSearches": 2000,
+        "searchedSuffixUnits": 19504395,
+        "ms": 1.8015419999999978
+      },
+      "fixed": {
+        "dotSearches": 0,
+        "searchedSuffixUnits": 0,
+        "ms": 0.8947500000000019
+      }
+    },
+    {
+      "n": 4000,
+      "bytes": 38890,
+      "old": {
+        "dotSearches": 4000,
+        "searchedSuffixUnits": 79514395,
+        "ms": 3.2993749999999977
+      },
+      "fixed": {
+        "dotSearches": 0,
+        "searchedSuffixUnits": 0,
+        "ms": 1.423957999999999
+      }
+    }
+  ],
+  "sourcemapInvalidOffsets": [
+    {
+      "field": "line",
+      "value": "-1"
+    },
+    {
+      "field": "column",
+      "value": "-1"
+    },
+    {
+      "field": "line",
+      "value": "1.5"
+    },
+    {
+      "field": "column",
+      "value": "1.5"
+    },
+    {
+      "field": "line",
+      "value": "NaN"
+    },
+    {
+      "field": "column",
+      "value": "NaN"
+    },
+    {
+      "field": "line",
+      "value": "Infinity"
+    },
+    {
+      "field": "column",
+      "value": "Infinity"
+    },
+    {
+      "field": "line",
+      "value": "9007199254740992"
+    },
+    {
+      "field": "column",
+      "value": "9007199254740992"
+    },
+    {
+      "field": "line",
+      "value": "1"
+    },
+    {
+      "field": "column",
+      "value": "1"
+    },
+    {
+      "field": "line",
+      "value": "null"
+    },
+    {
+      "field": "column",
+      "value": "null"
+    }
+  ],
+  "oldAcceptsOversizedOffset": true,
+  "newRejectsOversizedAndNestedOffsets": true,
+  "sourceReads": [
+    {
+      "label": "old",
+      "reads": 531441
+    },
+    {
+      "label": "fixed",
+      "reads": 1
+    }
+  ],
+  "parentChecks": [
+    {
+      "name": "css-tree",
+      "version": "2.2.1",
+      "pass": true
+    },
+    {
+      "name": "css-tree",
+      "version": "3.2.1",
+      "pass": true
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.26",
+      "pass": true
+    }
+  ],
+  "scope": "bounded library and selected real parent copies; Astro file/settings, magicast and Tailwind node full integration remain implementation gates"
+}

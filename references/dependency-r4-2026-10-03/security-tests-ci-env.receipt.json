@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "scripts/zhenkun-test-security-audit.mjs"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1",
+    "GITHUB_SHA": "66d8b1ec5d8eac585af69c5dfa74ea6eb9346e5a"
+  },
+  "start": "2026-10-03T16:07:39.800071+00:00",
+  "end": "2026-10-03T16:07:40.344585+00:00",
+  "exit": 0
+}

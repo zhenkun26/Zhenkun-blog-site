@@ -1,0 +1,46 @@
+[
+  {
+    "name": "review",
+    "source": "1ffbe4c99f0a48c8d7e70498c7f8bb921eb24435",
+    "inputStdoutHex": "31ff0a",
+    "inputStderrHex": "fe",
+    "savedStdoutHex": "31ff0a",
+    "savedStderrHex": "fe",
+    "stdoutSha256": "9625860231882deaaf24fb961a6ca3e184fe19193771ea0e0401c05501924aa3",
+    "stderrSha256": "aa687b58b0e73e2e383f8c500d75b591e188efe0168b3ffbcd3771caaa6dd4c7",
+    "state": "BLOCKED",
+    "exitCode": 2,
+    "calls": [
+      {
+        "encoding": null
+      },
+      {
+        "encoding": null
+      }
+    ],
+    "mode": "INJECTED_OFFLINE",
+    "meaning": "Owned Node byte writer only; no npm audit executed"
+  },
+  {
+    "name": "truncated",
+    "source": "1ffbe4c99f0a48c8d7e70498c7f8bb921eb24435",
+    "inputStdoutHex": "e282",
+    "inputStderrHex": "f09f8c",
+    "savedStdoutHex": "e282",
+    "savedStderrHex": "f09f8c",
+    "stdoutSha256": "eed0eb1f664e53388c1f00a4a9ba9b8da60fe792af9eb5f6f4b5ee852a91f03f",
+    "stderrSha256": "7f526fe9768983c1207a7593427944c31271bf866ae79d6455327fc80bdbfec1",
+    "state": "BLOCKED",
+    "exitCode": 2,
+    "calls": [
+      {
+        "encoding": null
+      },
+      {
+        "encoding": null
+      }
+    ],
+    "mode": "INJECTED_OFFLINE",
+    "meaning": "Owned Node byte writer only; no npm audit executed"
+  }
+]

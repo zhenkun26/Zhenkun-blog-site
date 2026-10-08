@@ -1,0 +1,15 @@
+✔ R1a exact real-parent versions and unaffected YAML4 (1.013125ms)
+✔ devalue stringify/parse preserves supported rich data, identity and cycles (4.203167ms)
+✔ devalue uneval escapes harmless HTML data and reconstructs its value (1.255125ms)
+✔ devalue serializes only the visible bytes of a bounded owned Buffer view (0.378083ms)
+✔ actual Astro store serialization and chunk parser round-trip Unicode/date data (2.907542ms)
+✔ actual Svelte server payload and client hydratable data handoff (11.741292ms)
+✔ actual gray-matter frontmatter preserves dates, Unicode tags and aliases (1.937ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 221.150042

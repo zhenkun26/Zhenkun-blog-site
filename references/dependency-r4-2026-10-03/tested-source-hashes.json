@@ -1,0 +1,8 @@
+{
+  ".github/workflows/build.yml": "be080c8798c9ee961ab41b5cc44d37c36cc78905497d4f1e059e06da4d432fd0",
+  "scripts/zhenkun-security-audit.mjs": "4f4b6e77fde80a5a7f7bac01bc37cd240191e770960ef7be03235f93d76febb4",
+  "scripts/zhenkun-security-policy.json": "94866e6b9ce8697b8b7f46a73ca0dac420218c18f7a040d65bf9c10ef57d9daa",
+  "scripts/zhenkun-test-security-audit.mjs": "aa1a4f724c57c773f952731cced2022e51982746259455c8ee2c346ca1abf2e2",
+  "references/dependency-r4-2026-10-03/workflow-baseline.json": "dd2c43708defff13e0745d3b34277d94ecba08bdcf16511e419d22133df3023a",
+  "docs/DECISIONS.md": "317636282552c9db430cf628cd693d753da453df3d7ad9cd430ffa5d82a40972"
+}

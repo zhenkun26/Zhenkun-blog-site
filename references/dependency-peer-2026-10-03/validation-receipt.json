@@ -1,0 +1,148 @@
+{
+  "base": "b974258753ca07347eae535a3f5ca94e902f033a",
+  "sourceCommit": "c55990fbdd6e0386c8689e92954520539edf7ae1",
+  "branch": "codex/dependency-peer-20261003",
+  "scope": "Only root exact Markdown peer declaration and package-manager lock; evidence scripts do not change production or CI",
+  "sourceHashes": {
+    "package.json": "d07c65f66bc29e18af0f69ffd7c11c37b87d722cb7f401b93fb9382ceb91decc",
+    "pnpm-lock.yaml": "fc0a156bad77566be6445cabf61a7e920c0cb06e4eae744eac85ea95e8f23029",
+    "pnpm-workspace.yaml": "67d1dcfd5636b54bd57d881d5c917b99efd5512e190c2e0a94ce2d9f32179e89",
+    "astro.config.mjs": "e61536e8c59d86788efa7288c4e7eb73eb6f2fc05c022c0d96ddb84b0a2b1724",
+    "scripts/zhenkun-test-r2-native.mjs": "3265dbcab2dae00b595ba2b5676b686e027ba430b653a8aa7e625e741aaeb296"
+  },
+  "Node": "24.20.0",
+  "pnpm": "11.22.0",
+  "platform": "Darwin ARM64/macOS",
+  "model": "Requested6.1Solxhigh standard/noFast, complexAstrahigh; actualUNVERIFIED",
+  "commands": [
+    {
+      "name": "lock",
+      "command": "pnpm install --lockfile-only --ignore-scripts --registry=https://registry.npmjs.org",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "install",
+      "command": "env npm_config_registry=https://registry.npmjs.org pnpm install --frozen-lockfile --registry=https://registry.npmjs.org",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "graph-candidate-parser",
+      "command": "node references/dependency-peer-2026-10-03/graph-check.mjs",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "peers",
+      "command": "pnpm peers check",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "parent-api",
+      "command": "node references/dependency-peer-2026-10-03/parent-api-check.mjs",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "check",
+      "command": "env -u CF_WORKERS ASTRO_TELEMETRY_DISABLED=1 pnpm check",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "native-all",
+      "command": "env -u CF_WORKERS node --test scripts/zhenkun-test-*.mjs",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "biome",
+      "command": "pnpm exec biome ci src scripts/zhenkun-test-swup-parents.mjs scripts/zhenkun-swup-parent-types.ts scripts/zhenkun-test-r1a-data.mjs scripts/zhenkun-test-r1b-uri.mjs scripts/zhenkun-test-r1-tail.mjs scripts/zhenkun-test-unifont.mjs scripts/zhenkun-test-r2-native.mjs",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "type-check",
+      "command": "pnpm type-check",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "parent-types-strict",
+      "command": "pnpm exec tsc --ignoreConfig --noEmit --strict --module NodeNext --moduleResolution NodeNext --target ES2022 scripts/zhenkun-swup-parent-types.ts",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "build-root",
+      "command": "env -u CF_WORKERS ASTRO_TELEMETRY_DISABLED=1 DEPLOY_BASE=/ pnpm build",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "artifacts-root",
+      "command": "node scripts/zhenkun-verify-ci-artifacts.mjs --base /",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "http-root",
+      "command": "python3 scripts/zhenkun-verify-deployment.py --root tmp/peer-artifacts/root --base / --http http://127.0.0.1:4321",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "build-project",
+      "command": "env -u CF_WORKERS ASTRO_TELEMETRY_DISABLED=1 DEPLOY_BASE=/Zhenkun-blog-site/ pnpm build",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "artifacts-project",
+      "command": "node scripts/zhenkun-verify-ci-artifacts.mjs --base /Zhenkun-blog-site/",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "http-project",
+      "command": "python3 scripts/zhenkun-verify-deployment.py --root tmp/peer-artifacts/project --base /Zhenkun-blog-site/ --http http://127.0.0.1:4321",
+      "exit": 0,
+      "state": "PASS"
+    },
+    {
+      "name": "audit-prod",
+      "command": "pnpm audit --prod --registry=https://registry.npmjs.org --json",
+      "exit": 1,
+      "state": "FAIL_RESIDUAL_CACHE"
+    },
+    {
+      "name": "audit-full",
+      "command": "pnpm audit --registry=https://registry.npmjs.org --json",
+      "exit": 1,
+      "state": "FAIL_RESIDUAL_CACHE"
+    }
+  ],
+  "graph": "895\u2192895 allpackage records identical;899\u2192898 removes exactly oneMDX0.4peer snapshot;1779refs;onlyroot2importer changes; allremaining snapshots/settings/8guards unchanged",
+  "peer": "PASS nopeer dependency issues; installedoptionalpeer validated, noignore",
+  "actualParentRanges": "root0.3.7 exact/MDX7.0.8 ^0.3.1 shareactual0.3.7; Astro7.2.10 own0.4.0; allnativeSatteri0.10.5",
+  "realAPIs": "ThreeparentpublicSatteri render/headings/frontmatter; actualpublicMDXintegrationhooks\u2192returnedViteplugins\u2192publicAstroprerendercontainer\u2192publicRSSresponses bothbases, syntheticownedfixture only",
+  "native": {
+    "total": 202,
+    "pass": 202,
+    "skip": 0,
+    "R2ExistingFixtureUnchanged": true
+  },
+  "quality": "Astro258/0error/0warning/12hints;isolatedDeclarations+strictSwup typesPASS;Biome305filesPASS",
+  "dualBase": "full8stagebuild/Pagefindzh-cn1page95/98words;252files/base;24HTTPbytes/basePASS;notbrowser search",
+  "audits": "Freshprod/full each exit1,1highrecord/1GHSA/1cachepackage;retained36rangesreevaluated1affected,noallsourcefreshnessorexhaustivenessclaim",
+  "Linux": "NOT_RUN newpeer candidate. PreviousR2 or old330Linuxnotreused. R2remoteapprovalhandled separately bycoordinator.",
+  "GUI": "InheritedBLOCKED/NOT_RUN,noalternativeclientorroute",
+  "cache": "Noverifiedpublishedrepairorwaiver;noglobalpatch/ignore/R4change",
+  "cleanup": "OwnedpreviewPIDs30003/30327stopped;actualR2fixturedisposeawaited,3knownportsrefused/previewlockabsent;ignoredsnapshotsretained",
+  "protected": "Originalb6c3e39/private.workbuddy,R1955/phase096b7/R2b974allunchanged/clean;candidateexistingR2evidence/app/scripts/CI/guardsunchanged",
+  "remote": "NoGitHub writes/push/merge/PR/deploy/securitysettingschange",
+  "review": "Localpeer compatibility candidate awaiting independentreview;overallsecurityPARTIAL",
+  "whitespace": "Full staged check exit2 on preserved raw logs/diff; scoped nonraw exit0, exact exclusions in whitespace-receipt.json."
+}

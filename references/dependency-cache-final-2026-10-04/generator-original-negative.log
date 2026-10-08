@@ -1,0 +1,257 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 7be7cc6728e9b07f052cfbb9da2359e2b251e359f3446696cd882372159b9292; local raw original retained.
+✖ generator restriction 0: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (4.005667ms)
+✖ generator restriction 1: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.969333ms)
+✖ generator restriction 2: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.811625ms)
+✖ generator restriction 3: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.710459ms)
+✖ generator restriction 4: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.826166ms)
+✖ generator restriction 5: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.648584ms)
+✖ generator restriction 6: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.653ms)
+✖ generator failure network: stale validators cannot publish old bytes (7.529292ms)
+✖ generator failure 304: stale validators cannot publish old bytes (0.937416ms)
+✖ generator failure 404: stale validators cannot publish old bytes (1.323ms)
+✖ generator failure 500: stale validators cannot publish old bytes (0.799625ms)
+✖ generator failure 503: stale validators cannot publish old bytes (0.648833ms)
+✖ generator successful remote miss does not create persistent cache (2.411667ms)
+✔ generator local image cache positive control remains usable offline (0.614042ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 1
+ℹ fail 13
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 65.401583
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:53:2
+✖ generator restriction 0: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (4.005667ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:59:11
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:57:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:53:2
+✖ generator restriction 1: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.969333ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:59:11
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:57:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:53:2
+✖ generator restriction 2: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.811625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:59:11
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:57:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:53:2
+✖ generator restriction 3: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.710459ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:59:11
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:57:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:53:2
+✖ generator restriction 4: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.826166ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:59:11
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:57:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:53:2
+✖ generator restriction 5: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.648584ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:59:11
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:57:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:53:2
+✖ generator restriction 6: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.653ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1
+  
+      at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:59:11
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:57:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:68:2
+✖ generator failure network: stale validators cannot publish old bytes (7.529292ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:71:4
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:70:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:68:2
+✖ generator failure 304: stale validators cannot publish old bytes (0.937416ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:71:4
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:70:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:68:2
+✖ generator failure 404: stale validators cannot publish old bytes (1.323ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:71:4
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:70:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:68:2
+✖ generator failure 500: stale validators cannot publish old bytes (0.799625ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:71:4
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:70:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:68:2
+✖ generator failure 503: stale validators cannot publish old bytes (0.648833ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:71:4
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:70:3)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-cache-generator.mjs:78:1
+✖ generator successful remote miss does not create persistent cache (2.411667ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:83:10
+      at async fetching (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:41:8)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-astro-cache-generator.mjs:80:2)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

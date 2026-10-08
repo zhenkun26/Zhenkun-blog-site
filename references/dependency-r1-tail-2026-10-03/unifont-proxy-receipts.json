@@ -1,0 +1,72 @@
+[
+  {
+    "mode": "none",
+    "selected": "Agent",
+    "fontBytes": 52928,
+    "fontSha256": "8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1",
+    "customCalls": 0,
+    "downloadVerified": true,
+    "missingCssEmpty": true,
+    "missingFont404": true,
+    "aborted": true,
+    "activeDownloadAborted": true,
+    "proxyRequests": 0,
+    "originRequests": 6
+  },
+  {
+    "mode": "proxy",
+    "selected": "EnvHttpProxyAgent",
+    "fontBytes": 52928,
+    "fontSha256": "8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1",
+    "customCalls": 0,
+    "downloadVerified": true,
+    "missingCssEmpty": true,
+    "missingFont404": true,
+    "aborted": true,
+    "activeDownloadAborted": true,
+    "proxyRequests": 6,
+    "originRequests": 6
+  },
+  {
+    "mode": "no_proxy",
+    "selected": "EnvHttpProxyAgent",
+    "fontBytes": 52928,
+    "fontSha256": "8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1",
+    "customCalls": 0,
+    "downloadVerified": true,
+    "missingCssEmpty": true,
+    "missingFont404": true,
+    "aborted": true,
+    "activeDownloadAborted": true,
+    "proxyRequests": 0,
+    "originRequests": 6
+  },
+  {
+    "mode": "custom",
+    "selected": "OwnedDispatcher",
+    "fontBytes": 52928,
+    "fontSha256": "8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1",
+    "customCalls": 6,
+    "downloadVerified": true,
+    "missingCssEmpty": true,
+    "missingFont404": true,
+    "aborted": true,
+    "activeDownloadAborted": true,
+    "proxyRequests": 0,
+    "originRequests": 6
+  },
+  {
+    "mode": "retry",
+    "selected": "Agent",
+    "fontBytes": 52928,
+    "fontSha256": "8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1",
+    "customCalls": 0,
+    "downloadVerified": true,
+    "missingCssEmpty": true,
+    "missingFont404": true,
+    "aborted": true,
+    "activeDownloadAborted": true,
+    "proxyRequests": 0,
+    "originRequests": 6
+  }
+]

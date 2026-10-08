@@ -1,0 +1,31 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 8093633c3d76babc7363304b414575322b5b84a6d1cfb7c5bebb50692741f8e1; local raw original retained.
+✖ R2 real Sharp parents and local Miniflare APIs (265.817917ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 408.542208
+
+✖ failing tests:
+
+test at tmp/r2/r2-contract-probe.mjs:97:1
+✖ R2 real Sharp parents and local Miniflare APIs (265.817917ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + undefined
+  - 'owned'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/tmp/r2/r2-contract-probe.mjs:221:10)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 'owned',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

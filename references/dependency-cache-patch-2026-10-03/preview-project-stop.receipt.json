@@ -1,0 +1,17 @@
+{
+  "command": [
+    "pnpm",
+    "exec",
+    "astro",
+    "preview",
+    "stop"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1",
+    "DEPLOY_BASE": "/Zhenkun-blog-site/"
+  },
+  "start": "2026-10-03T15:42:32.126552+00:00",
+  "end": "2026-10-03T15:42:32.601767+00:00",
+  "exit": 0
+}

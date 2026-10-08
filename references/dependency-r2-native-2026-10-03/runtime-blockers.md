@@ -1,0 +1,18 @@
+# Historical runtime gates — ordinary sandbox blocked
+
+The second targeted R2 test run passed all three real Sharp parents on macOS: 0.35.5, libvips 8.18.7, librsvg 2.63.2, one actual Darwin ARM64 `.node` with SHA256 `791921f975371be33aed727e06283282cc001c960792eb52505b579fdaaf1b55`. All PNG/JPEG/SVG decode/rotate/resize to PNG/WebP checks ran and 18 harmless result images were retained. The first attempt had stopped before native execution because the test used a CJS resolver on Cloudflare Vite-plugin's ESM-only main export. The correction locates the real parent's package and uses its declared public `import` entry; it neither imports a private plugin API nor removes that parent check.
+
+After those three native passes, `fixture.listen(0, "127.0.0.1")` failed with `listen EPERM`. This is an execution boundary, not an observed Miniflare API incompatibility. Miniflare was not instantiated, no workerd child or fixture listener was left, and all direct Images/cf.image/dispatchFetch checks remain NOT_RUN. No alternative address, port, path, subprocess or network setting was tried.
+
+The first ordinary root-base full package build separately failed when the existing tsx CLI attempted its standard Unix IPC listener in the original TMPDIR (`tsx-501/26824.pipe`). No build stage completed. No TMPDIR change, alternative tsx entrypoint or wrapper bypass was attempted. Project-base build and dependent Pagefind/artifact/HTTP gates remain blocked by this same execution requirement.
+
+Formal TypeScript was initially started concurrently with Astro sync in a fresh checkout and returned three content-type diagnostics. Source bytes were unchanged. After Astro sync finished, the single normal formal rerun passed. Ordering is the inferred explanation, consistent with the repository's earlier recovery record; no reproduction by deleting generated files was performed. Astro passed 258 files, zero errors/warnings and 12 retained hints; strict parent declarations and 305-file Biome passed. Inherited mdx/satteri peer FAIL remains the only reported peer issue.
+
+The parent has been given the exact scripts, raw logs and resource effects to decide a minimum reviewed runtime permission covering these existing local listeners and pipelines. The metadata/lock/install/audit package permission does not authorize this new escalation. Preserve the originals and wait for a direct permission handoff. Linux remains NOT_RUN; no remote writes or browser-policy workaround.
+
+
+## Explicit runtime permission and final execution
+
+The parent relayed direct human permission at 2026-10-03 13:49:26 UTC for the bounded local runtime package, including loopback Miniflare/HTTP listeners and existing tsx IPC. Reviewed execution then completed the actual parent APIs, full 202/202 native suite, both complete builds/Pagefind, artifacts and 24 HTTP/byte checks per base. No alternate route, TMPDIR, security setting or tsx entrypoint was used. Original EPERM logs remain historical evidence.
+
+The first authorized API run exposed a contract assertion error (public SVG 200 versus expected internal 422). Independent Astra HIGH traced helper metadata → internal 422 → WorkerCore origin fallback. A single three-case probe captured full SVG/invalid fallback bytes and JPEG positive control. Its mistaken extra origin-header assertion on transformed JPEG is preserved; offline evaluation of the specified three-case contract passed before the formal fixture was corrected. Final full regression passed with precise fallback assertions, without skips. See validation-receipt.json and the final report for current state. Linux NOT_RUN, GUI BLOCKED, inherited peer FAIL and residual cache remain open.

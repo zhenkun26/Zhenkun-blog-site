@@ -1,0 +1,9 @@
+{
+  "parent": "root",
+  "input": "jpeg",
+  "width": 3,
+  "height": 4,
+  "format": "png",
+  "bytes": 127,
+  "sha256": "2fa06c4a3480b843eb377896c378e8098c246d3539a376dd998a0409400d43d5"
+}

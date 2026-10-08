@@ -1,0 +1,24 @@
+{
+  "command": [
+    "node",
+    "node_modules/typescript/bin/tsc",
+    "--ignoreConfig",
+    "--noEmit",
+    "--strict",
+    "--module",
+    "NodeNext",
+    "--moduleResolution",
+    "NodeNext",
+    "--target",
+    "ES2022",
+    "scripts/zhenkun-swup-parent-types.ts"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1",
+    "GITHUB_SHA": null
+  },
+  "start": "2026-10-03T16:07:39.362739+00:00",
+  "end": "2026-10-03T16:07:39.799637+00:00",
+  "exit": 0
+}

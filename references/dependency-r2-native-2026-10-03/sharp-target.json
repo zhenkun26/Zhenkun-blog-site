@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "message": "GET https://registry.npmjs.org/sharp: fetch failed"
+  }
+}

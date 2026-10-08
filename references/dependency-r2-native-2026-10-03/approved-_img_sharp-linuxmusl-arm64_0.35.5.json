@@ -1,0 +1,222 @@
+{
+  "os": [
+    "linux"
+  ],
+  "_id": "@img/sharp-linuxmusl-arm64@0.35.5",
+  "cpu": [
+    "arm64"
+  ],
+  "bugs": {
+    "url": "https://github.com/lovell/sharp/issues"
+  },
+  "dist": {
+    "shasum": "92d0904211086d10bd3c929de715dd8a81fa7268",
+    "tarball": "https://registry.npmjs.org/@img/sharp-linuxmusl-arm64/-/sharp-linuxmusl-arm64-0.35.5.tgz",
+    "fileCount": 5,
+    "integrity": "sha512-9HbMclmI1zlNkFRs3z9/eBtDjfD0sGlrX1z6b1qwmiFY5ElDLh4BC0LPBdVp7z1DXFiKlIcznf+ZlsuZzLxQqg==",
+    "signatures": [
+      {
+        "sig": "MEQCIF+5MGU+t+5YwhRnPUP25NONL9an9FjvjumHIoYhyE1hAiAiun3+34blgJGFa5bT9H/VDfUauE7ROJ0faGQ2esGyuA==",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEQCIBEXCTtgFUA4cZOe/6D7caX5ljpCVzqHfUJNxemB5u4rAiBa3ILNp/CAr0H0TQDh31HDFwUQksX7I9RcNEVWLe91yA=="
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@img%2fsharp-linuxmusl-arm64@0.35.5",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 341907
+  },
+  "libc": [
+    "musl"
+  ],
+  "name": "@img/sharp-linuxmusl-arm64",
+  "type": "commonjs",
+  "author": "Lovell Fuller",
+  "config": {
+    "musl": ">=1.2.5"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "exports": {
+    "./package": "./package.json",
+    "./sharp.node": "./index.cjs"
+  },
+  "funding": {
+    "url": "https://opencollective.com/libvips"
+  },
+  "gitHead": "51a990faa26ade5586a4934ac9673c98d8893326",
+  "license": "Apache-2.0",
+  "version": "0.35.5",
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "oidc:b6ff7453-a673-4968-bc4d-bef616108e15"
+    }
+  },
+  "homepage": "https://sharp.pixelplumbing.com",
+  "repository": {
+    "url": "git+https://github.com/lovell/sharp.git",
+    "type": "git",
+    "directory": "npm/linuxmusl-arm64"
+  },
+  "_npmVersion": "11.19.0",
+  "description": "Prebuilt sharp for use with Linux (musl) 64-bit ARM",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "lovell",
+      "email": "npm@lovell.info"
+    }
+  ],
+  "_nodeVersion": "24.21.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "_hasShrinkwrap": false,
+  "preferUnplugged": true,
+  "optionalDependencies": {
+    "@img/sharp-libvips-linuxmusl-arm64": "1.3.4"
+  },
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages-npm-production",
+    "tmp": "tmp/sharp-linuxmusl-arm64_0.35.5_1790516824576_0.9608384959347447"
+  },
+  "versions": [
+    "0.33.0-alpha.9",
+    "0.33.0-alpha.10",
+    "0.33.0-alpha.11",
+    "0.33.0-rc.2",
+    "0.33.0",
+    "0.33.1-rc.0",
+    "0.33.1-rc.2",
+    "0.33.1-rc.3",
+    "0.33.1",
+    "0.33.2-rc.0",
+    "0.33.2-rc.1",
+    "0.33.2",
+    "0.33.3-rc.0",
+    "0.33.3",
+    "0.33.4-rc.0",
+    "0.33.4",
+    "0.33.5-rc.0",
+    "0.33.5-rc.1",
+    "0.33.5",
+    "0.34.0-rc.0",
+    "0.34.0-rc.1",
+    "0.34.0",
+    "0.34.1",
+    "0.34.2-rc.0",
+    "0.34.2",
+    "0.34.3-rc.0",
+    "0.34.3-rc.1",
+    "0.34.3",
+    "0.34.4-rc.3",
+    "0.34.4-rc.4",
+    "0.34.4",
+    "0.34.5-rc.0",
+    "0.34.5-rc.1",
+    "0.34.5",
+    "0.35.0-rc.0",
+    "0.35.0-rc.2",
+    "0.35.0-rc.3",
+    "0.35.0-rc.4",
+    "0.35.0-rc.5",
+    "0.35.0-rc.6",
+    "0.35.0-rc.8",
+    "0.35.0",
+    "0.35.1-rc.0",
+    "0.35.1-rc.1",
+    "0.35.1",
+    "0.35.2-rc.0",
+    "0.35.2-rc.1",
+    "0.35.2-rc.2",
+    "0.35.2",
+    "0.35.3-rc.1",
+    "0.35.3-rc.2",
+    "0.35.3",
+    "0.35.4-rc.0",
+    "0.35.4",
+    "0.35.5-rc.0",
+    "0.35.5-rc.1",
+    "0.35.5"
+  ],
+  "versionsCount": 57,
+  "distTags": {
+    "latest": "0.35.5",
+    "next": "0.35.5-rc.1"
+  },
+  "dist-tags": {
+    "latest": "0.35.5",
+    "next": "0.35.5-rc.1"
+  },
+  "time": {
+    "created": "2023-10-13T14:22:24.973Z",
+    "modified": "2026-09-27T13:47:05.025Z",
+    "0.33.0-alpha.9": "2023-10-13T14:22:25.435Z",
+    "0.33.0-alpha.10": "2023-11-04T20:06:42.655Z",
+    "0.33.0-alpha.11": "2023-11-10T09:16:35.365Z",
+    "0.33.0-rc.2": "2023-11-22T12:44:11.749Z",
+    "0.33.0": "2023-11-29T12:53:50.328Z",
+    "0.33.1-rc.0": "2023-12-12T09:36:43.840Z",
+    "0.33.1-rc.2": "2023-12-17T18:48:34.722Z",
+    "0.33.1-rc.3": "2023-12-17T19:48:29.283Z",
+    "0.33.1": "2023-12-17T20:35:44.692Z",
+    "0.33.2-rc.0": "2024-01-11T17:06:45.607Z",
+    "0.33.2-rc.1": "2024-01-12T10:24:12.873Z",
+    "0.33.2": "2024-01-12T11:13:10.726Z",
+    "0.33.3-rc.0": "2024-03-22T15:23:22.930Z",
+    "0.33.3": "2024-03-23T12:24:02.615Z",
+    "0.33.4-rc.0": "2024-05-16T11:38:29.050Z",
+    "0.33.4": "2024-05-16T12:10:20.206Z",
+    "0.33.5-rc.0": "2024-08-13T16:31:47.902Z",
+    "0.33.5-rc.1": "2024-08-14T08:29:45.358Z",
+    "0.33.5": "2024-08-16T13:09:20.330Z",
+    "0.34.0-rc.0": "2025-03-16T09:06:31.426Z",
+    "0.34.0-rc.1": "2025-04-03T20:44:58.328Z",
+    "0.34.0": "2025-04-04T14:04:24.090Z",
+    "0.34.1": "2025-04-07T20:13:24.880Z",
+    "0.34.2-rc.0": "2025-05-14T12:51:41.218Z",
+    "0.34.2": "2025-05-20T14:08:03.060Z",
+    "0.34.3-rc.0": "2025-06-14T21:17:02.552Z",
+    "0.34.3-rc.1": "2025-07-09T20:41:07.655Z",
+    "0.34.3": "2025-07-10T07:57:33.859Z",
+    "0.34.4-rc.3": "2025-09-15T10:33:27.886Z",
+    "0.34.4-rc.4": "2025-09-17T12:27:45.303Z",
+    "0.34.4": "2025-09-17T13:19:43.838Z",
+    "0.34.5-rc.0": "2025-11-05T16:00:02.576Z",
+    "0.34.5-rc.1": "2025-11-06T11:47:05.483Z",
+    "0.34.5": "2025-11-06T14:19:13.518Z",
+    "0.35.0-rc.0": "2026-01-02T11:28:11.544Z",
+    "0.35.0-rc.2": "2026-04-04T22:01:36.192Z",
+    "0.35.0-rc.3": "2026-04-19T20:41:27.433Z",
+    "0.35.0-rc.4": "2026-04-19T21:49:38.410Z",
+    "0.35.0-rc.5": "2026-04-21T21:09:38.675Z",
+    "0.35.0-rc.6": "2026-06-07T09:48:06.905Z",
+    "0.35.0-rc.8": "2026-06-10T13:54:24.725Z",
+    "0.35.0": "2026-06-10T17:06:40.580Z",
+    "0.35.1-rc.0": "2026-06-11T08:01:17.809Z",
+    "0.35.1-rc.1": "2026-06-11T12:46:48.055Z",
+    "0.35.1": "2026-06-11T17:10:05.189Z",
+    "0.35.2-rc.0": "2026-06-16T16:09:23.185Z",
+    "0.35.2-rc.1": "2026-06-18T09:12:03.499Z",
+    "0.35.2-rc.2": "2026-06-18T10:16:00.821Z",
+    "0.35.2": "2026-06-19T13:46:57.547Z",
+    "0.35.3-rc.1": "2026-06-27T12:13:31.598Z",
+    "0.35.3-rc.2": "2026-06-30T12:01:59.997Z",
+    "0.35.3": "2026-07-01T11:28:01.834Z",
+    "0.35.4-rc.0": "2026-08-25T23:02:36.202Z",
+    "0.35.4": "2026-08-26T09:40:37.456Z",
+    "0.35.5-rc.0": "2026-09-22T14:22:11.387Z",
+    "0.35.5-rc.1": "2026-09-27T08:59:17.160Z",
+    "0.35.5": "2026-09-27T13:47:04.679Z"
+  }
+}

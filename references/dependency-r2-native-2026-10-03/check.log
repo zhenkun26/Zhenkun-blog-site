@@ -1,0 +1,71 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 c543cd4752f09a97d6b3d196241d676f8918a7e6507f0fa129b2bc4d74419187; local raw original retained.
+09:41:14 [content] Syncing content
+09:41:14 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/dynamic"
+09:41:14 [content] Synced content
+09:41:14 [types] Generated 284ms
+09:41:14 [check] Getting diagnostics for Astro files in <local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2...
+[96msrc/pages/bangumi.astro[0m:[93m16[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m16[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/bilibili.astro[0m:[93m13[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m13[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/booknav.astro[0m:[93m15[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m15[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/friends.astro[0m:[93m17[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m17[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/guestbook.astro[0m:[93m12[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m12[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/myanimelist.astro[0m:[93m18[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m18[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/sponsor.astro[0m:[93m12[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m12[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/vndb.astro[0m:[93m20[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m20[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/dynamic/comments.astro[0m:[93m7[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m7[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/dynamic/index.astro[0m:[93m13[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m13[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/gallery/[album].astro[0m:[93m14[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m14[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+[96msrc/pages/gallery/index.astro[0m:[93m11[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'notFoundPath' is declared but its value is never read.
+
+[7m11[0m const notFoundPath = getNotFoundPath(import.meta.env.BASE_URL);
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+Result (258 files): 
+- 0 errors
+- 0 warnings
+- 12 hints
+

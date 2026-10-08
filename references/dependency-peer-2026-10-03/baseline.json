@@ -1,0 +1,17 @@
+{
+  "base": "b974258753ca07347eae535a3f5ca94e902f033a",
+  "scope": "Independent peer compatibility packet. Root markdown-satteri only ^0.4.0\u2192exact0.3.7; generated lock; unchanged Astro own0.4.0, MDX7.0.8/unified and all R2 guards. No global override/allowedVersions/R4/cache patch.",
+  "hashes": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-lock.yaml": "4436d4089ab376e4a94e749d7fe35a4465c617c3a152340b1f38fd35861d709b",
+    "pnpm-workspace.yaml": "67d1dcfd5636b54bd57d881d5c917b99efd5512e190c2e0a94ce2d9f32179e89",
+    "astro.config.mjs": "e61536e8c59d86788efa7288c4e7eb73eb6f2fc05c022c0d96ddb84b0a2b1724"
+  },
+  "Node": "v24.20.0",
+  "pnpm": "11.22.0",
+  "baselinePeer": "R2 freshly reproduced inherited mdx7.0.8 optionalpeer ^0.3.1 with root0.4.0; optional peer does not mean installed incompatible version is acceptable.",
+  "newLinux": "NOT_RUN",
+  "GUI": "Inherited BLOCKED/NOT_RUN",
+  "cache": "No verified repair or waiver; still open",
+  "remote": "No writes; R2b974Linux permission pending separately in coordinator task."
+}

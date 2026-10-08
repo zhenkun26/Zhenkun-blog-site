@@ -1,0 +1,126 @@
+{
+  "capturedAt": "2026-10-03T10:17:31.323451+00:00",
+  "sourceHead": "b6c3e39b2bf7ea73ec60234dc42f8240e0e8695f",
+  "branch": "codex/dependency-phase0-20261003",
+  "result": "PASS",
+  "checks": [
+    "All JSON parsed; 51 audit records / 33 GHSA / 10 packages and severity totals agree in both fresh audits",
+    "36-GHSA union contains all 32 historical IDs, 34 current affected IDs and 2 candidate guards",
+    "Each target instance has declared lockfile parent edges; candidate versions outside all reviewed affected ranges",
+    "Cache repair discrepancy preserved as BLOCKED; no unpublished target selected",
+    "Official tarball integrity and ESM/types equality verified; CJS difference retained, not called byte-identical",
+    "Document links, code fences, override selectors and bounded scope checked",
+    "Dependency hashes unchanged in isolated and original source checkouts",
+    "Application/configuration/scripts/dependencies/CI identical to deployed source",
+    "Original source branch/HEAD/tracked/index/untracked status and private-file aggregate unchanged",
+    "No node_modules in isolated clone; no install, application tests, build, PoC or browser execution"
+  ],
+  "applicationValidation": "NOT_RUN: phase-0 documentation and evidence only",
+  "auditResult": "FAIL: vulnerabilities found, exit 1",
+  "remainingBlockers": [
+    "http-cache-semantics has no verified published fix",
+    "Actual Swup parent/API/browser candidate compatibility untested",
+    "Miniflare override/Linux native candidate untested",
+    "Actual current dev listeners unobserved"
+  ],
+  "model": "UNVERIFIED: requested Astra xhigh; active runtime model not exposed",
+  "toolchain": {
+    "node": "v24.20.0",
+    "pnpm": "11.22.0 (direct existing CLI verified)"
+  },
+  "sourceProtection": "PASS",
+  "files": [
+    {
+      "path": "references/dependency-phase0-2026-10-03/additional-sources.json",
+      "sha256": "302c3167689b98bd0f6b490dfcc3de91ee6e193fa3e02a8b84a234c65ec09090",
+      "bytes": 6602
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/advisory-matrix.json",
+      "sha256": "cbc4b573a711022398eeb12a7e2917db1768d0079fa89fa8131461482afbd16a",
+      "bytes": 119129
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/advisory-matrix.md",
+      "sha256": "ee1326d22093ecd5adc48e98c9d6b1737bf7d96c90f1fcf21c47f7ad9f0a0add",
+      "bytes": 9080
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/advisory-sources.json",
+      "sha256": "6b535363cb655e88df04e27961bb21f1fbc6ccc1778a2b73b22f24b0ac8b129c",
+      "bytes": 113264
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/audit-full.json",
+      "sha256": "8c8fa3a022ea142b131c486b67a7b42a042eeb48efd7f26297c1caad809b8c63",
+      "bytes": 60667
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/audit-prod.json",
+      "sha256": "79e4fa21074fddd7e3643187baeb4a54227857899593493d6ebd08b96a3391f7",
+      "bytes": 60432
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/audit-receipt.json",
+      "sha256": "f169a4e2de52669474c0272f63de3a2e25287d4641e516ae30f9207a80bec989",
+      "bytes": 798
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/local-baseline.json",
+      "sha256": "5e77febc11d30a68accc18ad95b254ae90702d3934b4179a72d431aa6b0c7d5e",
+      "bytes": 28474
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/package-source-review.json",
+      "sha256": "7e9cf7d6cd65935d9482c3602d184b87b06a5df0019a30cd6141f945a7012f21",
+      "bytes": 8798
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/phase0-review.md",
+      "sha256": "4d0b4bd0c43c9e09376c7ba6098dc3cbdcc943777dfd73ec09ce0fbb2a41785c",
+      "bytes": 12290
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/registry-sources.json",
+      "sha256": "fffb0c03267c127e150a979b7ef0fccf11cff83a55c3a20b87451a70d93506d7",
+      "bytes": 68478
+    },
+    {
+      "path": "references/dependency-phase0-2026-10-03/source-inspection.json",
+      "sha256": "c69756629eb343907b36c14d4e20a136b55100e54a22651737bb8eb78e824081",
+      "bytes": 4278
+    }
+  ],
+  "documentHashes": {
+    "docs/DEPENDENCY_REMEDIATION_PLAN.md": "4aca61600863ce2f34e82d8fa78e9c2b7bcdf6d77f784503c5dbb3ac97b01c9a",
+    "docs/ROADMAP.md": "e4c1ed653d5cffa7d171df88eb5d27107946a215bc204bb52e72d81a17f21c30",
+    "docs/DECISIONS.md": "65721d754feaeb56dec659fd1a1ae828d130a21540c1a447c536f09439f54281"
+  },
+  "postReviewCorrection": {
+    "date": "2026-10-03",
+    "scope": "P3: brace-expansion freshAuditPaths are prod/full union; historical audit files retained unchanged",
+    "rows": [
+      {
+        "ghsa": "GHSA-6j4f-fj2g-mc7p",
+        "pathCount": 33,
+        "added": [
+          ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
+        ]
+      },
+      {
+        "ghsa": "GHSA-q2hr-2g5m-vwhr",
+        "pathCount": 33,
+        "added": [
+          ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
+        ]
+      },
+      {
+        "ghsa": "GHSA-qhr7-859c-m2p7",
+        "pathCount": 33,
+        "added": [
+          ".>@tailwindcss/vite>vite>stylus>glob>minimatch>brace-expansion"
+        ]
+      }
+    ]
+  }
+}

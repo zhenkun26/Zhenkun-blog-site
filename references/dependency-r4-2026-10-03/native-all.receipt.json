@@ -1,0 +1,27 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "scripts/zhenkun-test-cache-policy.mjs",
+    "scripts/zhenkun-test-capabilities.mjs",
+    "scripts/zhenkun-test-ci-artifacts.mjs",
+    "scripts/zhenkun-test-deployment.mjs",
+    "scripts/zhenkun-test-nav-menu.mjs",
+    "scripts/zhenkun-test-publication.mjs",
+    "scripts/zhenkun-test-r1-tail.mjs",
+    "scripts/zhenkun-test-r1a-data.mjs",
+    "scripts/zhenkun-test-r1b-uri.mjs",
+    "scripts/zhenkun-test-r2-native.mjs",
+    "scripts/zhenkun-test-search-session.mjs",
+    "scripts/zhenkun-test-security-audit.mjs",
+    "scripts/zhenkun-test-swup-parents.mjs",
+    "scripts/zhenkun-test-unifont.mjs"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1"
+  },
+  "start": "2026-10-03T16:06:46.992482+00:00",
+  "end": "2026-10-03T16:06:50.209381+00:00",
+  "exit": 0
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "owner": "@astrojs/internal-helpers@0.10.4",
+    "kind": "dependencies",
+    "name": "smol-toml",
+    "version": "1.8.0"
+  },
+  {
+    "owner": "@astrojs/internal-helpers@0.11.0",
+    "kind": "dependencies",
+    "name": "smol-toml",
+    "version": "1.8.0"
+  },
+  {
+    "owner": "@csstools/selector-resolve-nested@4.0.1(postcss-selector-parser@7.1.5)",
+    "kind": "dependencies",
+    "name": "postcss-selector-parser",
+    "version": "7.1.5"
+  },
+  {
+    "owner": "@csstools/selector-specificity@6.0.0(postcss-selector-parser@7.1.5)",
+    "kind": "dependencies",
+    "name": "postcss-selector-parser",
+    "version": "7.1.5"
+  },
+  {
+    "owner": "@tailwindcss/node@4.3.3",
+    "kind": "dependencies",
+    "name": "source-map-js",
+    "version": "1.2.1"
+  },
+  {
+    "owner": "@tailwindcss/typography@0.5.20(tailwindcss@4.3.3)",
+    "kind": "dependencies",
+    "name": "postcss-selector-parser",
+    "version": "6.0.10"
+  },
+  {
+    "owner": "argparse@1.0.10",
+    "kind": "dependencies",
+    "name": "sprintf-js",
+    "version": "1.0.3"
+  },
+  {
+    "owner": "astro@7.2.10(patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47)(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+    "kind": "dependencies",
+    "name": "smol-toml",
+    "version": "1.8.0"
+  },
+  {
+    "owner": "css-tree@2.2.1",
+    "kind": "dependencies",
+    "name": "source-map-js",
+    "version": "1.2.1"
+  },
+  {
+    "owner": "css-tree@3.2.1",
+    "kind": "dependencies",
+    "name": "source-map-js",
+    "version": "1.2.1"
+  },
+  {
+    "owner": "magicast@0.5.4",
+    "kind": "dependencies",
+    "name": "source-map-js",
+    "version": "1.2.1"
+  },
+  {
+    "owner": "micromark-extension-math@3.1.0",
+    "kind": "dependencies",
+    "name": "katex",
+    "version": "0.16.47"
+  },
+  {
+    "owner": "postcss-nested@6.2.0(postcss@8.5.26)",
+    "kind": "dependencies",
+    "name": "postcss-selector-parser",
+    "version": "6.1.4"
+  },
+  {
+    "owner": "postcss-nesting@14.0.1(postcss@8.5.26)",
+    "kind": "dependencies",
+    "name": "postcss-selector-parser",
+    "version": "7.1.5"
+  },
+  {
+    "owner": "postcss@8.5.26",
+    "kind": "dependencies",
+    "name": "source-map-js",
+    "version": "1.2.1"
+  },
+  {
+    "owner": "rehype-katex@7.0.1",
+    "kind": "dependencies",
+    "name": "katex",
+    "version": "0.16.47"
+  }
+]

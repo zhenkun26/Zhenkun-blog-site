@@ -126,8 +126,128 @@
 - The host Python tarfile API does not support `extractall(filter=...)`. The first extraction attempt failed before writing files; a subsequent artifact check consequently had no input. Recovery validated every archive entry as a relative, non-traversing regular file/directory with no links, then used exclusive file creation in a new ignored directory. Keep dependent checks behind successful extraction; do not claim the failed attempt passed or remove extraction safety to accommodate an older API.
 - Local browser navigation was blocked by the client, and an existing live tab later produced a clipboard focus-token mismatch/inconsistent input state. Those attempts were excluded from GUI PASS. A separate deployed-host tab with observed controls completed the actual smoke checks. Keep automation-input failures separate from product defects, re-establish visible state, and use a dedicated test tab. Restore temporary viewport overrides afterward.
 
+
+## 2026-10-03 — Lock graph comparison must cover peer contexts and aliases
+
+- Error: the first A/R3 graph checker stripped two resolved peer suffixes but retained two other obsolete transitive peer names; the second treated three existing pnpm alias references as ordinary name/version references. Both stopped before recording PASS and neither changed the package candidate.
+- Recovery: assert the exact four removed old-build peer names on only the three affected Swup nodes, resolve a full alias snapshot key before composing name@version, then compare every surviving snapshot and prove optional flags from all production/development root paths. Raw diffs and diagnostics remain preserved.
+- Prevention: distinguish package-version sets from actual parent edges, peer variants, alias references and required/optional reachability. Never approve patch drift or mask a mismatch merely to make a structural checker pass.
+
+- Evidence-format diagnostic in the same packet: checking newly staged raw `.diff` artifacts reported 1201 context-blank lines as trailing whitespace (1160 full diff, 41 correction diff). Preserve byte-exact Git evidence rather than trim its context markers; inspect every diagnostic category and run the whitespace gate on all other files. Record the full diagnostic and scoped PASS separately. The first pre-stage diff check did not cover untracked evidence.
+
+
+### 2026-10-03 — A/R3 validation tooling and GUI boundary
+
+- Error: TypeScript 6 rejects command-line file compilation next to tsconfig without `--ignoreConfig` (TS5112). Correction: use explicit isolated fixture options with `--ignoreConfig`; keep the separately required formal `pnpm type-check` script's `--isolatedDeclarations` unchanged. Both final checks passed.
+- Error: raw GitHub advisory ranges contain commas; npm semver does not interpret those as conjunctions, causing an incorrect initial count of 6. Correction: preserve raw ranges, normalize commas to spaces for semver matching, rerun to 32 and confirm all 31 fresh audit GHSA are in the union. The initial count is rejected in the receipt.
+- Boundary: Browser Use URL policy rejected acquisition of a prior localhost connection-error data-document tab. Candidate GUI never loaded; do not switch clients/routes or reuse historical GUI results. Record exact blocker and continue independent artifact/API checks.
+
+
+### 2026-10-03 — R1a final fixture format diagnostic
+
+- Adding the benign owned Buffer-view roundtrip assertion caused one Biome formatting diagnostic. Preserve initial raw output in `biome-buffer-initial.log`, apply formatter only to the new fixture and rerun final Biome (300 files) and complete native suite (166 tests). Both final exits zero; no dependency/application changes after full builds. Do not mark the initial formatter failure as product or final-gate PASS.
+
+
+### 2026-10-03 — Linux CI metadata field boundary
+
+- Read-only jobs summary assumed `runner_os`, which this GitHub jobs payload does not expose (KeyError). Corrected summary uses returned runner labels and explicit Ubuntu version/image lines in actual job logs. The diagnostic did not alter CI or candidate and is not a failed product check. Avoid inventing runtime metadata from missing fields.
+
+
+### 2026-10-03 — R1b URI transitive resolution and HTTP sandbox
+
+- A root resolver cannot require an undeclared transitive Ajv package in isolated pnpm layout; historical Ajv8.18 metadata was initially queried. Corrected before update by traversing actual check→language-server→volar→YAML→Ajv8.20 path and reading its ^3.0.1 child range. Tests use that real parent chain; no root dependency added.
+- Initial HTTP loopback request was denied by shell sandbox (PermissionError), retained in http-root-sandbox-initial.stderr/exit. The identical checker and URL succeeded through standard tool approval. Browser URL-policy refusal remains blocked and no alternate client/route was used.
+
+
+### 2026-10-03 — R1 font proxy fixture protocol and version probes
+
+- The initial brace-expansion 5 child-major concern was an unverified assumption. Both old 5.0.9 and target 5.0.12 already use balanced-match 4.0.4 within ^4.0.2. Corrected before mutation; no transitive migration occurred.
+- SVGO package.json is not publicly exported. The initial version probe failed while actual Iconify behavior passed. Use public SVGO.VERSION; retain the initial failure and the final strict PASS.
+- The first local proxy fixture supported only CONNECT and returned 400 to valid HTTP forwarding; 13/14 tests passed. Installed undici ProxyAgent selects forwarding for HTTP unless tunneling is requested. Add guarded forwarding only to the owned localhost origin and keep strict EnvHttpProxyAgent, traffic and download assertions. Final 14/14 target tests and 186/186 full tests passed. Provider fallback or a silent catch cannot establish proxy/download success.
+
+
+### 2026-10-03 — Cache patch installation, fixture clocks and preview lifecycle
+
+- pnpm patch requires the installed virtual-store lock (`node_modules/.pnpm/lock.yaml`), not just the project lock. Initial patch attempts stopped with PATCH_NO_LOCKFILE; approved ordinary frozen installation supplied the correct state. Store SQLite permission errors required normal tool escalation, not custom registry/security settings. Inactive original package directories can remain after patch install: validate all current lock edges/symlinks rather than infer live exposure from directory existence or delete shared caches.
+- Private Module._compile without the expected filename caused a Node 24 native assertion. Use public createRequire to load a hash-verified, dependency-free official baseline plus license; preserve initial crash output. Epoch plus 59.9996 seconds did not preserve the decimal exactly; use representable quarter-ms ticks and strict fresh/exact-boundary/stale assertions, not epsilon. Final 45/45 and 247/247 logs supersede but do not erase 44/45 failure.
+- Astro 7 preview CLI starts a daemon and exits. Initial killpg cleanup returned EPERM; inspect the exact preview lock and use official `astro preview stop` for the owned daemon. Final PID/port/lock receipts passed. Ordinary ps query was sandbox-denied and not retried; do not claim machine-wide cleanup. A reused peer probe rewrote its historical proof with the current path: preserve new output in this packet and restore only that self-written historical file to HEAD bytes.
+- Full source whitespace checking flags eight single-space context lines in the formal unified patch. Verify each is a context-only line, retain byte/hash identity and raw diagnostic, then separately check all non-patch source. Never trim pnpm patch evidence to make a checker green.
+
+
+### 2026-10-03 — R4 offline gate schema and execution context
+
+- First security fixture run failed 22/47: a new range assertion was outside its finding loop, and retained GitHub severity uses `medium` while pnpm uses `moderate`. Move the assertion into the exact scope; map only the equivalent severity name while retaining raw source labels. Keep the failed log, positive controls and every negative assertion. Final 49 security / 296 full native tests passed; no severity downgrade or exception was added.
+- A copied node_modules directory caused `pnpm exec` to enter its automatic install check and fail with store SQLite access before formatting. Do not retry installation or alter dependency/security settings to run an offline check. Use the already installed documented bin for authorized local tooling, and label it accurately; this is not a frozen/clean-install claim. The first Astro command also used obsolete `astro.js`; resolve `bin/astro.mjs` from that actual package manifest before execution and retain both logs.
+- Offline collectors must label injected execution in their own receipt, not rely on surrounding prose. GitHub SHA is injected explicitly in fixture orchestration so hosted environment variables cannot invalidate a synthetic identity. Tests for unchanged workflow structure read a committed fixed baseline instead of relying on a historical commit that may be absent from checkout's shallow clone.
+
+
+### 2026-10-03 — R4 audit raw bytes must precede decoding
+
+- Independent review found one P2: spawnSync encoding:utf8 replaced malformed stdout31ff0a with31efbfbd0a and stderrfe with efbfbd before evidence retention/hash. Original string-only mocks did not exercise that transport boundary. Preserve the supplied finding, an owned-child reproduction and red regression log.
+- Receive Buffer output with encoding:null, write/hash the original bytes, then decode both streams with fatal UTF-8 into separate parser input. Record stream-specific decode errors and block before JSON parsing, while still collecting the second audit. Do not reject a legitimately encoded U+FFFD, normalize invalid bytes or change the raw artifact. Six new owned-Node byte tests plus all prior tests pass (55 security,302 native); sources, policy, workflow and live-audit permission stay unchanged.
+
+
+### 2026-10-04 — Astro patch registration changed unrelated lock edges
+
+- Error: pnpm 11.22.0 `patch-commit` re-resolved four non-target packages while adding the exact Astro patch. No lifecycle hooks were enabled; the graph drift was noticed after bounded generator probes.
+- Response: stop implementation, retain complete lock diff and package/snapshot comparison, mark the whole experiment unaccepted. No hand-edited lock or new overrides; original candidate untouched.
+- Prevention: future patch registration should use an inspected lock-only path where available and verify every package/snapshot/parent edge before executing candidate probes or full gates. Initial unsupported `--ignore-scripts` CLI spelling failed without mutation; supported `--config.ignore-scripts=true` was used. Store permission failures are execution blockers, not code defects, and require reviewed escalation rather than alternate stores.
+
+
+### 2026-10-04 — Primary-source freshness changed during cache closeout
+
+- Observed: official npm latest became4.3.0 while the implementation still targeted reviewed4.2.0. New primary-source guard refused contract generation, correctly preventing stale acceptance. Read-only verified tarball comparison found Vary/status changes; no automatic install or claim of full repair.
+- Response: retain the4.2.0 reviewed contract and add an explicit4.3.0 rejection test. Unit fixture metadata for4.2.0 is labelled as extracted historical metadata, not latest. Independent upstream review precedes any acceptance-contract refresh.
+- Test wiring: initial primary-source unit additions lacked two imports and an old D01 assertion allowed only one patch; both were corrected explicitly and passing reruns retained. Initial formatting checks also found multi-variable declarations. None were production security PASS.
+- Approval: final live audit was denied before process creation due to retained no-disclosure instructions. Stop that exact action; require explicit current authorization evidence rather than alternate HTTP transport or treating it as a code failure.
+
+
+### 2026-10-04 — Nested Astro parent verification and background preview recovery
+
+- P2: the gate pinned only root Astro files while audit-path resolution checked the terminal cache package. A fixture with patched root and cache but MDX→original nested generator was incorrectly accepted. Reproduced before changing code; fixed by collecting/deduplicating every actual Astro entry and checking each version/four source hashes. Exact original negative, two-patched-instances positive and changed-version negative now pass.
+- Validation driver: Astro7 preview detects agent execution and launches a background server; the CLI exits0. The first driver treated that exit as failure and its attempted process-group cleanup found no group. Root build/artifact had already passed. Inspected CLI/logs, resumed only HTTP/root plus the unrun project build via documented background status/stop; no full-matrix repetition or application change. Final HTTP and explicit preview stops pass; original diagnostic log retained.
+
 ## 2026-10-05 — Local homepage verification environment
 
 - Copied dependencies did not prevent pnpm11's automatic install check; it failed opening the store SQLite database. Do not retry installation. Use the existing isolated official binaries and record exact commands, rather than claiming literal pnpm/frozen-install PASS.
 - Astro dev/build required local port listening, which failed with sandbox EPERM. Only the scoped local verification escalation was approved; that approval does not authorize uploading the separate remediation candidate. First Pagefind execution lacked the isolated `.bin` in PATH; add the executable path and rerun that stage, then continue dependent artifact checks.
 - The first local browser render was dev mode and included the retained draft. No dev screenshot was saved/staged; deliver only production-preview captures, which confirm zero public articles. A read-only DOM query's unavailable navigator object is an API limit, not evidence that Edge disconnected.
+
+
+## 2026-10-07 — Protected-checkout guards must use read-only Git commands
+
+- Initial guard attempted `git write-tree` against the original checkout and the filesystem sandbox rejected its index.lock before a mutation. Replaced it with an SHA256 of `git ls-files --stage`, optional locks disabled; fresh HEAD/branch/status and local-only private aggregate now establish protection without writing original Git metadata. Do not escalate a guard that should be read-only.
+### 2026-10-07 — S1 renewed JSON formatting
+
+- Error: JSON serialization expanded previously compact arrays; the targeted Biome CI check reported two formatting errors. The shell command's final diff command returned zero, so that overall shell exit was not a Biome PASS.
+- Repair: run the configured formatter on only the two renewed JSON files, preserve their parsed objects, rerun targeted Biome, and record the source correction as a separate commit before runtime acceptance.
+- Prevention: capture each gate's actual exit code separately; a later command in a multi-command shell cell must not hide an earlier check failure. Do not infer PASS from a terminal cell's final exit.
+## 2026-10-07 — Renewal expiration fixtures
+
+- Error: the first new native run passed 356/358; two repair negatives still used the former October 10 expiry, now inside the renewed window. Neither failure established a runtime patch defect.
+- Repair: derive expiration from policy.reviewBy and upstream.reviewBy, check one millisecond before each reviewedAt, and retain actual-clock enforcement in the live CLI. Preserve the first failed matrix and rerun native regressions on the corrected exact source.
+- Prevention: renewal must update temporal fixtures to exercise window boundaries, never change expected BLOCKED/exception behavior to PASS.
+
+
+### 2026-10-08 — graph checker must include the changed parser peer references
+
+- Error: the first bounded graph assertion rejected postcss-nesting14.0.1 because its two csstools dependency strings carry selector-parser7.1.5 peer suffixes; the intended parser update necessarily changes those references to7.1.6.
+- Repair: add the two explicit owner/dependency reference substitutions already required by the approved plan; do not globally normalize unknown suffixes. Whole 892-snapshot comparison then passed, with19explained edges and unchanged retained package/integrity/root records.
+- Prevention: validate both peer owner keys and the inbound dependency strings, and keep unexplained graph differences blocking.
+
+### 2026-10-08 — real parent test APIs and offline installer context
+
+- Initial five-family fixture errors used a read-only prototype property, expected unknown-command output to be katex-error, reversed typography pseudo API output, treated Astro data-entry objects as tuples, and treated Tailwind raw map text as an object. Actual source/API inspection corrected only the fixtures; physical old sprintf cache was preserved outside the new clean install. Original outputs remain in owned ignored tmp.
+- TOML assertions twice misread error contracts: file loader logs a numbered codeblock rather than literal line/column labels, and AstroError exposes loc rather than the constructor input location. Per the coordinator stop rule, the corresponding gate paused for bounded Astra analysis. Actual old1.8.0/new1.9.0 ESM/CJS error objects match for the LF fixture, including inherited name Error; Astro therefore retains its existing generic message and file-only loc. Exact parser fields/codeblock, Astro name/type/message/loc and loader diagnostics now pass, with CRLF controls. No framework/dependency error implementation was changed.
+- First offline patch-negative run failed on sandbox access to the default pnpm SQLite store, so61/62 was not accepted. The unchanged command through standard Auto-review passed62/62 including all six missing/corrupt negatives; no store/path substitution. A receipt harness then wrongly assumed all negative exit codes were1; missing patches actually exit254, corrupt patches1. Explicit variant records and real semantic rejection tests are retained.
+- Tool orchestration twice failed before executing because nested literal delimiters broke JavaScript parsing. No project mutation ran in those failed calls. Temporary transport loss was handled by reading existing logs and Git state; the lost23955 session was not restarted.
+- Prevention: inspect real public declarations and implementation before asserting field names; target the intended namespace without polluting unrelated registries; retain exact negative causes and distinguish installer policy rejection from sandbox/transport failure.
+
+- Follow-up: security Biome exposed two graph-checker variable/style diagnostics before the final matrix. A shell batch continued to the evidence commit after that failure; no formatting PASS was accepted. A separate correction commit retains the failure and applies exact Biome styles, re-runs the graph validator and rebinds only the changed checker boundary; all10files now pass security Biome. Use fail-fast drivers for acceptance sequences.
+
+- Final-matrix native run370/371 failed only because the workflow contract still expected the untouched historical quality job. The approved exact strict-parent-types step was added to a clone of that baseline; complete equality remains enforced and the original baseline bytes stay unchanged. Focused workflow test now passes. Unchanged peers, Astro/formal/strict types and source formatting results remain valid; rerun native plus affected test formatting, then continue full builds.
+
+### 2026-10-08 — GUI harness contracts and transition completion
+
+- Harness failures came from clicking during a theme transition, waiting for a nonexistent main-container id, and assuming mobile search auto-focus on open. Rejected observations are retained. Source uses swup-container and a nonmodal search panel with no auto-focus promise.
+- Wait for actual hydration/transition/content completion, click the real input before testing focus, and assert panel inert/aria, computed overflow and restored trigger focus. The bounded rerun passes actual desktop/mobile math and Swup. No product source change was needed.

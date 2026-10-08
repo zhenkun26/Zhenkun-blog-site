@@ -1,0 +1,10 @@
+{
+  "state": "BLOCKED",
+  "execution": "No command executed",
+  "reason": "Automatic approval rejected public npm audit dependency metadata disclosure; explicit authorization pending. No alternate route or retry.",
+  "preservedRaw": [
+    "audit-prod.json",
+    "audit-full.json"
+  ],
+  "countsNotRefreshedInThisContinuation": true
+}

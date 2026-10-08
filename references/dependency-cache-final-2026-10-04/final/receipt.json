@@ -1,0 +1,666 @@
+{
+  "state": "LOCAL_PASS_INDEPENDENT_REVIEW_PENDING",
+  "sourceCommit": "e5355c2ede7f5a2baff1f5952ffc6cc912484a20",
+  "baseCommit": "8f5e9488bb0fbd9b8255db2ed5773af4889ce69e",
+  "recordedAt": "2026-10-04T03:51:03.052411+00:00",
+  "workspace": "<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final",
+  "branch": "codex/cache-final-20261004",
+  "graph": {
+    "state": "PASS",
+    "testedSource": "e5355c2ede7f5a2baff1f5952ffc6cc912484a20",
+    "packages": 895,
+    "snapshots": 898,
+    "guards": 14,
+    "unchangedPackageRecordsIntegrityAndParentEdges": true,
+    "onlyIdentifierNormalization": "(patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47)",
+    "lockSha256": "14462544638481af75e4fb22587bcd143b99cbb3b73b1a01016cd78be888a895"
+  },
+  "tests": {
+    "native": 358,
+    "security": 94,
+    "generator": 17,
+    "P2Targeted": 3,
+    "cache": 45,
+    "skipped": 0,
+    "sameRunPositiveProof": 62,
+    "originalGeneratorNegative": {
+      "pass": 2,
+      "expectedAssertionFailures": 15
+    }
+  },
+  "matrix": {
+    "steps": [
+      {
+        "name": "peers",
+        "command": [
+          "corepack",
+          "pnpm",
+          "peers",
+          "check"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1"
+        },
+        "exitCode": 0,
+        "seconds": 0.4
+      },
+      {
+        "name": "biome",
+        "command": [
+          "corepack",
+          "pnpm",
+          "exec",
+          "biome",
+          "ci",
+          "src",
+          "scripts/zhenkun-security-audit.mjs",
+          "scripts/zhenkun-test-security-audit.mjs",
+          "scripts/zhenkun-security-policy.json",
+          "scripts/zhenkun-cache-remediation.mjs",
+          "scripts/zhenkun-cache-repair-contract.json",
+          "scripts/zhenkun-test-cache-policy.mjs",
+          "scripts/zhenkun-test-astro-cache-generator.mjs"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1"
+        },
+        "exitCode": 0,
+        "seconds": 0.444
+      },
+      {
+        "name": "astro-check",
+        "command": [
+          "corepack",
+          "pnpm",
+          "check"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1"
+        },
+        "exitCode": 0,
+        "seconds": 13.57
+      },
+      {
+        "name": "types",
+        "command": [
+          "corepack",
+          "pnpm",
+          "type-check"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1"
+        },
+        "exitCode": 0,
+        "seconds": 1.926
+      },
+      {
+        "name": "strict-parent-types",
+        "command": [
+          "corepack",
+          "pnpm",
+          "exec",
+          "tsc",
+          "--ignoreConfig",
+          "--noEmit",
+          "--strict",
+          "--module",
+          "NodeNext",
+          "--moduleResolution",
+          "NodeNext",
+          "--target",
+          "ES2022",
+          "scripts/zhenkun-swup-parent-types.ts"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1"
+        },
+        "exitCode": 0,
+        "seconds": 0.655
+      },
+      {
+        "name": "native",
+        "command": [
+          "node",
+          "--test",
+          "scripts/zhenkun-test-astro-cache-generator.mjs",
+          "scripts/zhenkun-test-cache-policy.mjs",
+          "scripts/zhenkun-test-capabilities.mjs",
+          "scripts/zhenkun-test-ci-artifacts.mjs",
+          "scripts/zhenkun-test-deployment.mjs",
+          "scripts/zhenkun-test-nav-menu.mjs",
+          "scripts/zhenkun-test-publication.mjs",
+          "scripts/zhenkun-test-r1-tail.mjs",
+          "scripts/zhenkun-test-r1a-data.mjs",
+          "scripts/zhenkun-test-r1b-uri.mjs",
+          "scripts/zhenkun-test-r2-native.mjs",
+          "scripts/zhenkun-test-search-session.mjs",
+          "scripts/zhenkun-test-security-audit.mjs",
+          "scripts/zhenkun-test-swup-parents.mjs",
+          "scripts/zhenkun-test-unifont.mjs"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1"
+        },
+        "exitCode": 0,
+        "seconds": 4.554
+      },
+      {
+        "name": "build-root",
+        "command": [
+          "corepack",
+          "pnpm",
+          "build"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1",
+          "DEPLOY_BASE": "/"
+        },
+        "exitCode": 0,
+        "seconds": 17.091
+      },
+      {
+        "name": "artifacts-root",
+        "command": [
+          "node",
+          "scripts/zhenkun-verify-ci-artifacts.mjs",
+          "--base",
+          "/"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1"
+        },
+        "exitCode": 0,
+        "seconds": 0.187
+      },
+      {
+        "name": "preview-root-background",
+        "command": [
+          "corepack",
+          "pnpm",
+          "exec",
+          "astro",
+          "preview",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "4347"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1",
+          "DEPLOY_BASE": "/"
+        },
+        "exitCode": 0,
+        "seconds": 2.343
+      },
+      {
+        "name": "http-root",
+        "command": [
+          "python3",
+          "scripts/zhenkun-verify-deployment.py",
+          "--base",
+          "/",
+          "--expected-posts",
+          "0",
+          "--http",
+          "http://127.0.0.1:4347"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1"
+        },
+        "exitCode": 0,
+        "seconds": 0.133
+      },
+      {
+        "name": "preview-root-stop",
+        "command": [
+          "corepack",
+          "pnpm",
+          "exec",
+          "astro",
+          "preview",
+          "stop"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1",
+          "DEPLOY_BASE": "/"
+        },
+        "exitCode": 0,
+        "seconds": 0.505
+      },
+      {
+        "name": "build-project",
+        "command": [
+          "corepack",
+          "pnpm",
+          "build"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1",
+          "DEPLOY_BASE": "/Zhenkun-blog-site/"
+        },
+        "exitCode": 0,
+        "seconds": 7.196
+      },
+      {
+        "name": "artifacts-project",
+        "command": [
+          "node",
+          "scripts/zhenkun-verify-ci-artifacts.mjs",
+          "--base",
+          "/Zhenkun-blog-site/"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1"
+        },
+        "exitCode": 0,
+        "seconds": 0.131
+      },
+      {
+        "name": "preview-project-background",
+        "command": [
+          "corepack",
+          "pnpm",
+          "exec",
+          "astro",
+          "preview",
+          "--host",
+          "127.0.0.1",
+          "--port",
+          "4348"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1",
+          "DEPLOY_BASE": "/Zhenkun-blog-site/"
+        },
+        "exitCode": 0,
+        "seconds": 1.807
+      },
+      {
+        "name": "http-project",
+        "command": [
+          "python3",
+          "scripts/zhenkun-verify-deployment.py",
+          "--base",
+          "/Zhenkun-blog-site/",
+          "--expected-posts",
+          "0",
+          "--http",
+          "http://127.0.0.1:4348"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1"
+        },
+        "exitCode": 0,
+        "seconds": 0.131
+      },
+      {
+        "name": "preview-project-stop",
+        "command": [
+          "corepack",
+          "pnpm",
+          "exec",
+          "astro",
+          "preview",
+          "stop"
+        ],
+        "env": {
+          "CF_WORKERS": "unset",
+          "NODE_OPTIONS": "unset",
+          "ASTRO_TELEMETRY_DISABLED": "1",
+          "DEPLOY_BASE": "/Zhenkun-blog-site/"
+        },
+        "exitCode": 0,
+        "seconds": 0.504
+      }
+    ],
+    "astro": {
+      "files": 258,
+      "errors": 0,
+      "warnings": 0,
+      "hints": 12
+    },
+    "biomeFiles": 305,
+    "buildsPerBase": 1,
+    "artifactFilesPerBase": 252,
+    "httpByteChecksPerBase": 24,
+    "knownLocalDriverFailure": "Astro preview daemon CLI exits normally; corrected remaining orchestration only. Both builds ran once."
+  },
+  "security": {
+    "state": "PASS",
+    "raw": {
+      "prod": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      },
+      "full": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      }
+    },
+    "captures": {
+      "prod": {
+        "command": [
+          "pnpm",
+          "audit",
+          "--prod",
+          "--registry=https://registry.npmjs.org",
+          "--json"
+        ],
+        "startedAt": "2026-10-04T03:41:52.299Z",
+        "endedAt": "2026-10-04T03:41:53.935Z",
+        "exitCode": 1,
+        "signal": null,
+        "error": null,
+        "stdoutSha256": "452df9b275eff15fa64ae825f9c25e0d64350de4d194cc262079f08a22c4a030",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "decodingErrors": []
+      },
+      "full": {
+        "command": [
+          "pnpm",
+          "audit",
+          "--registry=https://registry.npmjs.org",
+          "--json"
+        ],
+        "startedAt": "2026-10-04T03:41:53.935Z",
+        "endedAt": "2026-10-04T03:41:55.812Z",
+        "exitCode": 1,
+        "signal": null,
+        "error": null,
+        "stdoutSha256": "61321161e0cb006c871b7ed853f325c3707deb1f719542017dec3427ea0911c3",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "decodingErrors": []
+      }
+    },
+    "verifiedLocalRepairs": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "actualAstroInstances": [
+      {
+        "entry": "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js",
+        "version": "7.2.10",
+        "sources": {
+          "assets/build/generate.js": "4a1d2ab3527330f97bfe77ab86c091ccaaab06a93fee02b466eee2ad149e33d8",
+          "assets/build/remote.js": "f373fa76e3112446db327c79b34e2bbb1ef1dcad41affb60788adf30edc9588e",
+          "assets/utils/redirectValidation.js": "1c142b4b5042e87fa644a75245af8e8938ea2fd8d8bbfd28180f8ffdccefa688",
+          "assets/internal.js": "c4e3b53849a8294c3ff0e60c6fb0191570c7b6d6455f1a04bd4f3e3d37074c3b"
+        },
+        "paths": [
+          "root",
+          ".>@astrojs/cloudflare>astro>http-cache-semantics",
+          ".>@astrojs/mdx>astro>http-cache-semantics",
+          ".>@astrojs/svelte>astro>http-cache-semantics",
+          ".>astro>http-cache-semantics",
+          ".>astro-expressive-code>astro>http-cache-semantics",
+          ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+          ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+          ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+        ]
+      }
+    ],
+    "resolvedPaths": [
+      {
+        "chain": ".>@astrojs/cloudflare>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>@astrojs/mdx>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>@astrojs/svelte>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>astro-expressive-code>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      },
+      {
+        "chain": ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics",
+        "astroEntries": [
+          "node_modules/.pnpm/astro@7.2.10_patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d4_4faeae70002dafc334d84ed43dd902c4/node_modules/astro/dist/index.js"
+        ],
+        "sourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89"
+      }
+    ],
+    "primary": [
+      {
+        "kind": "ghsa",
+        "url": "https://api.github.com/advisories/GHSA-ch52-4w7c-c8xp",
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdoutSha256": "add51c3b2a7eb164e075b145f72e8902264bb474a8098617d90f5aabd1ab36bf",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fetchedAt": "2026-10-04T03:41:58.060Z"
+      },
+      {
+        "kind": "cve",
+        "url": "https://cveawg.mitre.org/api/cve/CVE-2026-93750",
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdoutSha256": "3978aaaa849d764766e0bdd6e22ead35ca234f7c8729fe569575db10c0e037c7",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fetchedAt": "2026-10-04T03:41:59.294Z"
+      },
+      {
+        "kind": "latest",
+        "url": "https://registry.npmjs.org/http-cache-semantics/latest",
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdoutSha256": "c4c95cf8d3becce754366907d8a99b44c6e7a10ce725cc01a5f7b859c0682493",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "fetchedAt": "2026-10-04T03:42:00.812Z"
+      }
+    ],
+    "proofExecutions": [
+      {
+        "name": "repair-positive",
+        "command": [
+          "<local-home>/.local/share/mise/installs/node/24.20.0/bin/node",
+          "--test",
+          "--test-reporter=tap",
+          "scripts/zhenkun-test-cache-policy.mjs",
+          "scripts/zhenkun-test-astro-cache-generator.mjs"
+        ],
+        "exitCode": 0,
+        "signal": null,
+        "error": null,
+        "stdoutSha256": "b72da06a15a8c73fc51dec96b815127079c3a981dbeb99e01a730b3eb8cfbff1",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "repair-generator-original",
+        "command": [
+          "<local-home>/.local/share/mise/installs/node/24.20.0/bin/node",
+          "--test",
+          "--test-reporter=tap",
+          "scripts/zhenkun-test-astro-cache-generator.mjs"
+        ],
+        "exitCode": 1,
+        "signal": null,
+        "error": null,
+        "stdoutSha256": "eaf883883460a422b0e75d75af28f0bdec625794d86b468084f7d4e501e2e311",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "scope": "Local patched repair under exact graph/source/tests/deployment/primary review, not upstream CVE withdrawal or Linux/release acceptance"
+  },
+  "protectedRepositories": [
+    {
+      "path": "<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4",
+      "head": "8f5e9488bb0fbd9b8255db2ed5773af4889ce69e",
+      "trackedStatus": ""
+    },
+    {
+      "path": "<local-home>/GitHub/Zhenkun-blog-site",
+      "head": "b6c3e39b2bf7ea73ec60234dc42f8240e0e8695f",
+      "trackedStatus": ""
+    }
+  ],
+  "privateWorkbuddy": {
+    "state": "LOCAL_ONLY_PROTECTION_DATA",
+    "originalValueSha256": "e32174529f6b5b3502bdc1add5405357964ca543579ff39ac38bf8db7863bfa3"
+  },
+  "ownedPreviewPortsClosed": {
+    "4347": true,
+    "4348": true
+  },
+  "remaining": [
+    "Independent final-source acceptance",
+    "Exact Linux frozen install and patch absence/tamper negatives",
+    "Linux peer/security/native/two-base/Pagefind",
+    "New-candidate GUI",
+    "Authorized coordinator PR22 upload and later conditional merge/deployment"
+  ],
+  "sourceHashes": {
+    ".github/workflows/build.yml": "a6b34bd95decbff37c90fb66610bb7414468f599effe0c10fdb77683caa653eb",
+    "pnpm-lock.yaml": "14462544638481af75e4fb22587bcd143b99cbb3b73b1a01016cd78be888a895",
+    "pnpm-workspace.yaml": "7a8f1cd67a3bca177b0898e65839905d7a8bebf0b9acff51c4a6feddeb31b6fd",
+    "scripts/patches/astro@7.2.10.patch": "e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47",
+    "scripts/zhenkun-cache-remediation.mjs": "00b1cde996900d2923180a041698c72ec89371a29f7b1bac6fb81707d7db754b",
+    "scripts/zhenkun-cache-repair-contract.json": "516096cbf05e8b682e1be8dad515b886f36d9fd3deecef8541a478a2f9f405aa",
+    "scripts/zhenkun-security-audit.mjs": "7835045617eaad73e011268105f13160965c20f3ebd0da543d220ccfeb8ce28b",
+    "scripts/zhenkun-security-policy.json": "d3d015dddd798892de46b94963ef57e07fcfd4fc4ba96346e13002f5ce42921c",
+    "scripts/zhenkun-test-astro-cache-generator.mjs": "614943f8c8a28dc84a9baaacbdfe0b2e93f4facda36792f4686e4ae37dcc1c70",
+    "scripts/zhenkun-test-cache-policy.mjs": "182d29169a3c2da0955369a7d9272877b2ee72e93f0180f18c44f3f997b946b9",
+    "scripts/zhenkun-test-security-audit.mjs": "ff55cad20f589c680ee7b0d43eec6604bca8ad7ce208cd5e45abaf7c45ea8e24"
+  },
+  "evidenceHashes": {
+    "continue-final-matrix.py": "adeebd3a42e2f91efdd6f1cdf2d91033a8bf854a7085ec8f8966bc695d8e959b",
+    "final-graph.json": "5bce447ec33b2e08606ee91bd8dac22d90850098b6d84172d3cc5b29a9635958",
+    "final-image-exposure.json": "4306535a0998ce161ccc42505e774834e1acbdeac012edea5279a6a055396a83",
+    "final-matrix-continue.log": "4b3d39b9651fa976fa6aeb192fb3f2a32d11059633fc3961cdf23ce54eaeb66a",
+    "final-matrix-driver.log": "d0d8e6d0800de41951964792a5fd9ff94ca516e6c7ceb9a4b431e95e11908c91",
+    "matrix/artifacts-project.log": "0e5c87548243802c257bba2147497dad53496578eae6dac87420690dfe87cd45",
+    "matrix/artifacts-root.log": "28957a6dbc7dae65a459cc2d7e9dd009404a6b28885308cfc341137760212c72",
+    "matrix/astro-check.log": "19887a1eb5edf34993d9722ed3b8b88517919323484338c5e6ef61a7b517e1e9",
+    "matrix/biome.log": "a5e26b12ea4f6180cb678ff0aec1eb68f7e8a3ff3485dd87a4cbedecb998459c",
+    "matrix/build-project.log": "efefabd5eb7466d078a30429ec426b6c777404f29b6ff536f9b79d6ebe6cb20e",
+    "matrix/build-root.log": "839fcc3a6ba45019769e126ab9e96bfb7e0eed645695ec03e88a0aed2a348a8b",
+    "matrix/execution.json": "712647733515c17d90350bb778f5b535471193c2f6d90cf096aed772b7802f0f",
+    "matrix/http-project.log": "7c6ec1f35b0431b22062b90263cf489c48bed1eef60c8f05597ba9605561223e",
+    "matrix/http-root.log": "2af0305af681444a21ae4895734f9cace944f9d11ad3abae59d5b0af4ca27167",
+    "matrix/manifest-project.json": "9ddacd3006044bc1a512b7e235422fac6c6fa1c2a250b25bbb2d081a03c21740",
+    "matrix/manifest-root.json": "9316130009e40f734c03cc1a9109f1e0a98c93b6aa2c0e3d4c69d3af7186f293",
+    "matrix/native.log": "b6b46218045e33d577d801cb28f5e1765152e8969a8a5222a9ccc2e22b17555c",
+    "matrix/peers.log": "5ecf82a3fc1f9007eeea79ce3bf0d9c587150219ef245bb5a5a23609cdb562fb",
+    "matrix/preview-project-background.log": "c791524f30dd0b6910d77e52a1427f5c82f18134fb692f04d9e1a8b232c6295a",
+    "matrix/preview-project-stop.log": "5cfbbbd3b8e425ea768cc198a6dd01d3696645afd3530fa50135db3fd7586e54",
+    "matrix/preview-root-background.log": "71049198450d4cca669f14594e862831b720dc52aa6dc9e4b10b19bf77307684",
+    "matrix/preview-root-stop.log": "05acee519fc2bdd91a2e0c1060101c3c4ccfe4bdade0dc6ad299d19df0802383",
+    "matrix/preview-root.log": "1a49c7a3204c745561f5a8625b883e505a09155c204ea5ffaf7b0b872314812c",
+    "matrix/strict-parent-types.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matrix/types.log": "ca8f4ac3289d0dcb73cf6fb4ab668b1f4d0a8a60cebe23fdd87c996243cc91c8",
+    "p2-after.log": "52cbe371fea919a4a8c31137f57e3fd61336e4ba3421c5a2faf0a9039107b9f2",
+    "p2-before.log": "7258a24f02d345db0474cae9905cb374094b4590dbdf7dd425bc508f7e715d45",
+    "p2-final-biome.log": "7836591e4b9e8dccf8a3528ebb294e2d7c6bdc536b176355fec71996573fbf34",
+    "p2-security-all.log": "dcc0bb402939bea9aefb839ffec6e107badd253d9da2053e70669a24582d8531",
+    "run-final-matrix.py": "5501c0cf8d91269525c03e393f0b3259f66cca1960a64f4140b68eaa2c982c8c",
+    "security/collection.json": "1db0f0013c8b25ba1d29254ea2aa937d65a7709763f28c7ada5351fe8625f46d",
+    "security/full.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "security/full.stdout.json": "61321161e0cb006c871b7ed853f325c3707deb1f719542017dec3427ea0911c3",
+    "security/primary-cve.json": "3978aaaa849d764766e0bdd6e22ead35ca234f7c8729fe569575db10c0e037c7",
+    "security/primary-cve.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "security/primary-ghsa.json": "add51c3b2a7eb164e075b145f72e8902264bb474a8098617d90f5aabd1ab36bf",
+    "security/primary-ghsa.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "security/primary-latest.json": "c4c95cf8d3becce754366907d8a99b44c6e7a10ce725cc01a5f7b859c0682493",
+    "security/primary-latest.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "security/prod.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "security/prod.stdout.json": "452df9b275eff15fa64ae825f9c25e0d64350de4d194cc262079f08a22c4a030",
+    "security/repair-evidence.json": "32d0d2a14b1d1d00778825946e456b473592120665a6deaa4ebef9cbf0799bd9",
+    "security/repair-generator-original.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "security/repair-generator-original.stdout.tap": "eaf883883460a422b0e75d75af28f0bdec625794d86b468084f7d4e501e2e311",
+    "security/repair-positive.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "security/repair-positive.stdout.tap": "b72da06a15a8c73fc51dec96b815127079c3a981dbeb99e01a730b3eb8cfbff1",
+    "security/verdict.json": "4d30dec10c66d3e29bad4ce0a50020c7baf35979812186410732bec1f78b310f",
+    "security-p2-final-command.log": "fb8f9a2d05b05caeb95e0e848ef100ebe4fdcfdb5c6cea94beb06e9040ebbd7a",
+    "report.md": "2254634f13e22adeab660189c8aa64c266c5f6a15feb5e18efc99535be82cdad"
+  },
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "1bfbf7c4c750cde3eaf8c5859681bc433374ad9bf464c1946b68b65ee91f0e25",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

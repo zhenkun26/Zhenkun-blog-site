@@ -1,0 +1,32 @@
+{
+  "result": "PASS",
+  "oldSha256": "45a6056beedfdd583caf9561fc33f8033f24311d7fdefcf5fa7a813b7ac443bd",
+  "newSha256": "cbc4b573a711022398eeb12a7e2917db1768d0079fa89fa8131461482afbd16a",
+  "audits": {
+    "prod": {
+      "unchanged": true,
+      "sha256": "79e4fa21074fddd7e3643187baeb4a54227857899593493d6ebd08b96a3391f7"
+    },
+    "full": {
+      "unchanged": true,
+      "sha256": "8c8fa3a022ea142b131c486b67a7b42a042eeb48efd7f26297c1caad809b8c63"
+    }
+  },
+  "rows": [
+    {
+      "ghsa": "GHSA-6j4f-fj2g-mc7p",
+      "pathCount": 33,
+      "unionVerified": true
+    },
+    {
+      "ghsa": "GHSA-q2hr-2g5m-vwhr",
+      "pathCount": 33,
+      "unionVerified": true
+    },
+    {
+      "ghsa": "GHSA-qhr7-859c-m2p7",
+      "pathCount": 33,
+      "unionVerified": true
+    }
+  ]
+}

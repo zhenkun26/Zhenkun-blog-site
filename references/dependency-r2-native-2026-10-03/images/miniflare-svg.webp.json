@@ -1,0 +1,9 @@
+{
+  "parent": "Miniflare",
+  "input": "svg",
+  "width": 3,
+  "height": 4,
+  "format": "webp",
+  "bytes": 116,
+  "sha256": "130d4c39467c6d87a07ad5968f8f0f166965d1db0f207b1694344ec504b94c73"
+}

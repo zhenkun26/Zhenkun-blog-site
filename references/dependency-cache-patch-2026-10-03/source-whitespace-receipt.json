@@ -1,0 +1,14 @@
+{
+  "fullExit": 2,
+  "scopedCommand": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)scripts/patches/http-cache-semantics@4.2.0.patch"
+  ],
+  "scopedExit": 0,
+  "reason": "Exactly eight single-space unified-diff blank context lines; formal pnpm patch bytes/hash preserved. No actual patched source trailing-space edit."
+}

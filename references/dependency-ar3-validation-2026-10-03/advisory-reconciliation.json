@@ -1,0 +1,862 @@
+{
+  "basis": "Fresh installed-candidate audits and phase-0 bounded official advisory ranges; no new exhaustive official discovery",
+  "dependencyFiles": {
+    "package.json": 3851,
+    "pnpm-workspace.yaml": 217,
+    "pnpm-lock.yaml": 298460
+  },
+  "audits": {
+    "prod": {
+      "records": 44,
+      "ghsa": [
+        "GHSA-2883-xcg3-v3hh",
+        "GHSA-2gqq-gqf2-x968",
+        "GHSA-2jfj-6hjv-fm6j",
+        "GHSA-3wwx-pv8p-q78v",
+        "GHSA-3xpg-4rpp-hhhm",
+        "GHSA-4q55-j62x-fr9h",
+        "GHSA-4vpr-x523-8j87",
+        "GHSA-5jgf-p345-68v8",
+        "GHSA-6j4f-fj2g-mc7p",
+        "GHSA-8436-99hf-9mmv",
+        "GHSA-ch52-4w7c-c8xp",
+        "GHSA-f65p-4m7j-42xc",
+        "GHSA-fph4-wmhf-6fwf",
+        "GHSA-hrr3-gc8f-f4qj",
+        "GHSA-hx4r-w6wj-j8fg",
+        "GHSA-j22f-vq7h-c4qm",
+        "GHSA-jqff-g426-hqxp",
+        "GHSA-mcm9-63f2-9j32",
+        "GHSA-pmjh-fq2x-6v4x",
+        "GHSA-q2hr-2g5m-vwhr",
+        "GHSA-qhr7-859c-m2p7",
+        "GHSA-qw65-cvwx-89v3",
+        "GHSA-r53p-7pc4-xj5r",
+        "GHSA-rfgv-xxqx-mfg5",
+        "GHSA-rgj7-g3m4-5g8c",
+        "GHSA-rx4f-c7p8-82vq",
+        "GHSA-vp8m-p9jh-q5pm",
+        "GHSA-w27v-7q3p-w38r",
+        "GHSA-w293-vg96-wgc3",
+        "GHSA-wf3x-273g-mvxv",
+        "GHSA-x5rw-q4pp-hg5g"
+      ],
+      "packages": [
+        "brace-expansion",
+        "devalue",
+        "fast-uri",
+        "http-cache-semantics",
+        "js-yaml",
+        "sharp",
+        "svgo",
+        "undici"
+      ],
+      "severity": {
+        "info": 0,
+        "low": 7,
+        "moderate": 16,
+        "high": 21,
+        "critical": 0
+      },
+      "exit": 1,
+      "beforeRecords": 51,
+      "removedGhsa": [
+        "GHSA-5c6j-r48x-rmvq",
+        "GHSA-2wm5-q62r-hmrv"
+      ]
+    },
+    "full": {
+      "records": 44,
+      "ghsa": [
+        "GHSA-2883-xcg3-v3hh",
+        "GHSA-2gqq-gqf2-x968",
+        "GHSA-2jfj-6hjv-fm6j",
+        "GHSA-3wwx-pv8p-q78v",
+        "GHSA-3xpg-4rpp-hhhm",
+        "GHSA-4q55-j62x-fr9h",
+        "GHSA-4vpr-x523-8j87",
+        "GHSA-5jgf-p345-68v8",
+        "GHSA-6j4f-fj2g-mc7p",
+        "GHSA-8436-99hf-9mmv",
+        "GHSA-ch52-4w7c-c8xp",
+        "GHSA-f65p-4m7j-42xc",
+        "GHSA-fph4-wmhf-6fwf",
+        "GHSA-hrr3-gc8f-f4qj",
+        "GHSA-hx4r-w6wj-j8fg",
+        "GHSA-j22f-vq7h-c4qm",
+        "GHSA-jqff-g426-hqxp",
+        "GHSA-mcm9-63f2-9j32",
+        "GHSA-pmjh-fq2x-6v4x",
+        "GHSA-q2hr-2g5m-vwhr",
+        "GHSA-qhr7-859c-m2p7",
+        "GHSA-qw65-cvwx-89v3",
+        "GHSA-r53p-7pc4-xj5r",
+        "GHSA-rfgv-xxqx-mfg5",
+        "GHSA-rgj7-g3m4-5g8c",
+        "GHSA-rx4f-c7p8-82vq",
+        "GHSA-vp8m-p9jh-q5pm",
+        "GHSA-w27v-7q3p-w38r",
+        "GHSA-w293-vg96-wgc3",
+        "GHSA-wf3x-273g-mvxv",
+        "GHSA-x5rw-q4pp-hg5g"
+      ],
+      "packages": [
+        "brace-expansion",
+        "devalue",
+        "fast-uri",
+        "http-cache-semantics",
+        "js-yaml",
+        "sharp",
+        "svgo",
+        "undici"
+      ],
+      "severity": {
+        "info": 0,
+        "low": 7,
+        "moderate": 16,
+        "high": 21,
+        "critical": 0
+      },
+      "exit": 1,
+      "beforeRecords": 51,
+      "removedGhsa": [
+        "GHSA-5c6j-r48x-rmvq",
+        "GHSA-2wm5-q62r-hmrv"
+      ]
+    }
+  },
+  "officialUnionCount": 36,
+  "officialCurrentAffectedCount": 32,
+  "officialRows": [
+    {
+      "ghsa": "GHSA-6j4f-fj2g-mc7p",
+      "package": "brace-expansion",
+      "versions": [
+        "2.1.4",
+        "5.0.9"
+      ],
+      "affectedVersions": [
+        "2.1.4",
+        "5.0.9"
+      ],
+      "source": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "officialAffectedRanges": [
+        ">= 4.0.0, < 5.0.10",
+        ">= 3.0.0, < 3.0.7",
+        ">= 2.0.0, < 2.1.5",
+        "< 1.1.19"
+      ],
+      "semverRanges": [
+        ">= 4.0.0  < 5.0.10",
+        ">= 3.0.0  < 3.0.7",
+        ">= 2.0.0  < 2.1.5",
+        "< 1.1.19"
+      ]
+    },
+    {
+      "ghsa": "GHSA-q2hr-2g5m-vwhr",
+      "package": "brace-expansion",
+      "versions": [
+        "2.1.4",
+        "5.0.9"
+      ],
+      "affectedVersions": [
+        "2.1.4",
+        "5.0.9"
+      ],
+      "source": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "officialAffectedRanges": [
+        ">= 4.0.0, < 5.0.12",
+        ">= 3.0.0, < 3.0.9",
+        ">= 2.0.0, < 2.1.7",
+        "< 1.1.21"
+      ],
+      "semverRanges": [
+        ">= 4.0.0  < 5.0.12",
+        ">= 3.0.0  < 3.0.9",
+        ">= 2.0.0  < 2.1.7",
+        "< 1.1.21"
+      ]
+    },
+    {
+      "ghsa": "GHSA-qhr7-859c-m2p7",
+      "package": "brace-expansion",
+      "versions": [
+        "2.1.4",
+        "5.0.9"
+      ],
+      "affectedVersions": [
+        "2.1.4",
+        "5.0.9"
+      ],
+      "source": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "officialAffectedRanges": [
+        ">= 4.0.0, < 5.0.11",
+        ">= 3.0.0, < 3.0.8",
+        ">= 2.0.0, < 2.1.6",
+        "< 1.1.20"
+      ],
+      "semverRanges": [
+        ">= 4.0.0  < 5.0.11",
+        ">= 3.0.0  < 3.0.8",
+        ">= 2.0.0  < 2.1.6",
+        "< 1.1.20"
+      ]
+    },
+    {
+      "ghsa": "GHSA-2wm5-q62r-hmrv",
+      "package": "colord",
+      "versions": [],
+      "affectedVersions": [],
+      "source": "https://github.com/advisories/GHSA-2wm5-q62r-hmrv",
+      "officialAffectedRanges": [
+        "< 2.9.4"
+      ],
+      "semverRanges": [
+        "< 2.9.4"
+      ]
+    },
+    {
+      "ghsa": "GHSA-4q55-j62x-fr9h",
+      "package": "devalue",
+      "versions": [
+        "5.9.2"
+      ],
+      "affectedVersions": [
+        "5.9.2"
+      ],
+      "source": "https://github.com/advisories/GHSA-4q55-j62x-fr9h",
+      "officialAffectedRanges": [
+        "<= 5.9.2"
+      ],
+      "semverRanges": [
+        "<= 5.9.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-hx4r-w6wj-j8fg",
+      "package": "devalue",
+      "versions": [
+        "5.9.2"
+      ],
+      "affectedVersions": [
+        "5.9.2"
+      ],
+      "source": "https://github.com/advisories/GHSA-hx4r-w6wj-j8fg",
+      "officialAffectedRanges": [
+        "<= 5.9.2"
+      ],
+      "semverRanges": [
+        "<= 5.9.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-j22f-vq7h-c4qm",
+      "package": "devalue",
+      "versions": [
+        "5.9.2"
+      ],
+      "affectedVersions": [
+        "5.9.2"
+      ],
+      "source": "https://github.com/advisories/GHSA-j22f-vq7h-c4qm",
+      "officialAffectedRanges": [
+        ">= 5.1.0, <= 5.9.2"
+      ],
+      "semverRanges": [
+        ">= 5.1.0  <= 5.9.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-mcm9-63f2-9j32",
+      "package": "devalue",
+      "versions": [
+        "5.9.2"
+      ],
+      "affectedVersions": [
+        "5.9.2"
+      ],
+      "source": "https://github.com/advisories/GHSA-mcm9-63f2-9j32",
+      "officialAffectedRanges": [
+        "<= 5.9.2"
+      ],
+      "semverRanges": [
+        "<= 5.9.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-wf3x-273g-mvxv",
+      "package": "devalue",
+      "versions": [
+        "5.9.2"
+      ],
+      "affectedVersions": [
+        "5.9.2"
+      ],
+      "source": "https://github.com/advisories/GHSA-wf3x-273g-mvxv",
+      "officialAffectedRanges": [
+        ">= 1.0.0, <= 5.9.2"
+      ],
+      "semverRanges": [
+        ">= 1.0.0  <= 5.9.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-x5rw-q4pp-hg5g",
+      "package": "devalue",
+      "versions": [
+        "5.9.2"
+      ],
+      "affectedVersions": [
+        "5.9.2"
+      ],
+      "source": "https://github.com/advisories/GHSA-x5rw-q4pp-hg5g",
+      "officialAffectedRanges": [
+        ">= 5.8.0, <= 5.9.2"
+      ],
+      "semverRanges": [
+        ">= 5.8.0  <= 5.9.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-5jgf-p345-68v8",
+      "package": "fast-uri",
+      "versions": [
+        "3.1.5"
+      ],
+      "affectedVersions": [
+        "3.1.5"
+      ],
+      "source": "https://github.com/advisories/GHSA-5jgf-p345-68v8",
+      "officialAffectedRanges": [
+        ">= 2.4.2, < 2.4.5",
+        ">= 3.1.3, < 3.1.6",
+        ">= 4.0.1, < 4.1.3"
+      ],
+      "semverRanges": [
+        ">= 2.4.2  < 2.4.5",
+        ">= 3.1.3  < 3.1.6",
+        ">= 4.0.1  < 4.1.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-f65p-4m7j-42xc",
+      "package": "fast-uri",
+      "versions": [
+        "3.1.5"
+      ],
+      "affectedVersions": [
+        "3.1.5"
+      ],
+      "source": "https://github.com/advisories/GHSA-f65p-4m7j-42xc",
+      "officialAffectedRanges": [
+        ">= 2.3.1, < 2.4.5",
+        ">= 3.0.0, < 3.1.6",
+        ">= 4.0.0, < 4.1.3"
+      ],
+      "semverRanges": [
+        ">= 2.3.1  < 2.4.5",
+        ">= 3.0.0  < 3.1.6",
+        ">= 4.0.0  < 4.1.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-fph4-wmhf-6fwf",
+      "package": "fast-uri",
+      "versions": [
+        "3.1.5"
+      ],
+      "affectedVersions": [
+        "3.1.5"
+      ],
+      "source": "https://github.com/advisories/GHSA-fph4-wmhf-6fwf",
+      "officialAffectedRanges": [
+        ">= 2.4.1, < 2.4.5",
+        ">= 3.1.2, < 3.1.6",
+        ">= 4.0.0, < 4.1.3"
+      ],
+      "semverRanges": [
+        ">= 2.4.1  < 2.4.5",
+        ">= 3.1.2  < 3.1.6",
+        ">= 4.0.0  < 4.1.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-hrr3-gc8f-f4qj",
+      "package": "fast-uri",
+      "versions": [
+        "3.1.5"
+      ],
+      "affectedVersions": [
+        "3.1.5"
+      ],
+      "source": "https://github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+      "officialAffectedRanges": [
+        "< 2.4.7",
+        ">= 3.0.0, < 3.1.8",
+        ">= 4.0.0, < 4.1.5"
+      ],
+      "semverRanges": [
+        "< 2.4.7",
+        ">= 3.0.0  < 3.1.8",
+        ">= 4.0.0  < 4.1.5"
+      ]
+    },
+    {
+      "ghsa": "GHSA-jqff-g426-hqxp",
+      "package": "fast-uri",
+      "versions": [
+        "3.1.5"
+      ],
+      "affectedVersions": [
+        "3.1.5"
+      ],
+      "source": "https://github.com/advisories/GHSA-jqff-g426-hqxp",
+      "officialAffectedRanges": [
+        ">= 2.3.1, < 2.4.5",
+        ">= 3.0.0, < 3.1.6",
+        ">= 4.0.0, < 4.1.3"
+      ],
+      "semverRanges": [
+        ">= 2.3.1  < 2.4.5",
+        ">= 3.0.0  < 3.1.6",
+        ">= 4.0.0  < 4.1.3"
+      ]
+    },
+    {
+      "ghsa": "GHSA-qw65-cvwx-89v3",
+      "package": "fast-uri",
+      "versions": [
+        "3.1.5"
+      ],
+      "affectedVersions": [
+        "3.1.5"
+      ],
+      "source": "https://github.com/advisories/GHSA-qw65-cvwx-89v3",
+      "officialAffectedRanges": [
+        "< 2.4.6",
+        ">= 3.0.0, < 3.1.7",
+        ">= 4.0.0, < 4.1.4"
+      ],
+      "semverRanges": [
+        "< 2.4.6",
+        ">= 3.0.0  < 3.1.7",
+        ">= 4.0.0  < 4.1.4"
+      ]
+    },
+    {
+      "ghsa": "GHSA-ch52-4w7c-c8xp",
+      "package": "http-cache-semantics",
+      "versions": [
+        "4.2.0"
+      ],
+      "affectedVersions": [
+        "4.2.0"
+      ],
+      "source": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp",
+      "officialAffectedRanges": [
+        "<= 4.2.0"
+      ],
+      "semverRanges": [
+        "<= 4.2.0"
+      ]
+    },
+    {
+      "ghsa": "GHSA-2883-xcg3-v3hh",
+      "package": "js-yaml",
+      "versions": [
+        "3.15.1",
+        "4.3.2"
+      ],
+      "affectedVersions": [
+        "3.15.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "officialAffectedRanges": [
+        ">= 4.0.0, < 4.3.2",
+        ">= 3.0.0, < 3.15.2"
+      ],
+      "semverRanges": [
+        ">= 4.0.0  < 4.3.2",
+        ">= 3.0.0  < 3.15.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-5c6j-r48x-rmvq",
+      "package": "serialize-javascript",
+      "versions": [],
+      "affectedVersions": [],
+      "source": "https://github.com/advisories/GHSA-5c6j-r48x-rmvq",
+      "officialAffectedRanges": [
+        "<= 7.0.2"
+      ],
+      "semverRanges": [
+        "<= 7.0.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-gfhx-hw2g-v5hg",
+      "package": "serialize-javascript",
+      "versions": [],
+      "affectedVersions": [],
+      "source": "https://github.com/advisories/GHSA-gfhx-hw2g-v5hg",
+      "officialAffectedRanges": [
+        ">= 7.1.1, < 7.1.2"
+      ],
+      "semverRanges": [
+        ">= 7.1.1  < 7.1.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-qj8w-gfj5-8c6v",
+      "package": "serialize-javascript",
+      "versions": [],
+      "affectedVersions": [],
+      "source": "https://github.com/advisories/GHSA-qj8w-gfj5-8c6v",
+      "officialAffectedRanges": [
+        ">= 5.0.0, < 7.0.5"
+      ],
+      "semverRanges": [
+        ">= 5.0.0  < 7.0.5"
+      ]
+    },
+    {
+      "ghsa": "GHSA-rgj7-g3m4-5g8c",
+      "package": "sharp",
+      "versions": [
+        "0.35.2",
+        "0.35.4"
+      ],
+      "affectedVersions": [
+        "0.35.2"
+      ],
+      "source": "https://github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+      "officialAffectedRanges": [
+        "< 0.35.4"
+      ],
+      "semverRanges": [
+        "< 0.35.4"
+      ]
+    },
+    {
+      "ghsa": "GHSA-wq5f-xc86-pv6w",
+      "package": "sharp",
+      "versions": [
+        "0.35.2",
+        "0.35.4"
+      ],
+      "affectedVersions": [
+        "0.35.2",
+        "0.35.4"
+      ],
+      "source": "https://github.com/lovell/sharp/security/advisories/GHSA-wq5f-xc86-pv6w",
+      "officialAffectedRanges": [
+        "< 0.35.5"
+      ],
+      "semverRanges": [
+        "< 0.35.5"
+      ]
+    },
+    {
+      "ghsa": "GHSA-4vpr-x523-8j87",
+      "package": "svgo",
+      "versions": [
+        "4.0.2",
+        "4.1.0"
+      ],
+      "affectedVersions": [
+        "4.0.2"
+      ],
+      "source": "https://github.com/advisories/GHSA-4vpr-x523-8j87",
+      "officialAffectedRanges": [
+        ">= 1.0.0, < 2.8.4",
+        ">= 3.0.0, < 3.3.5",
+        ">= 4.0.0, < 4.1.0"
+      ],
+      "semverRanges": [
+        ">= 1.0.0  < 2.8.4",
+        ">= 3.0.0  < 3.3.5",
+        ">= 4.0.0  < 4.1.0"
+      ]
+    },
+    {
+      "ghsa": "GHSA-w27v-7q3p-w38r",
+      "package": "svgo",
+      "versions": [
+        "4.0.2",
+        "4.1.0"
+      ],
+      "affectedVersions": [
+        "4.0.2"
+      ],
+      "source": "https://github.com/advisories/GHSA-w27v-7q3p-w38r",
+      "officialAffectedRanges": [
+        ">= 1.0.0, < 2.8.4",
+        ">= 3.0.0, < 3.3.5",
+        ">= 4.0.0, < 4.1.0"
+      ],
+      "semverRanges": [
+        ">= 1.0.0  < 2.8.4",
+        ">= 3.0.0  < 3.3.5",
+        ">= 4.0.0  < 4.1.0"
+      ]
+    },
+    {
+      "ghsa": "GHSA-2gqq-gqf2-x968",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-2gqq-gqf2-x968",
+      "officialAffectedRanges": [
+        ">= 7.1.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        ">= 7.1.0  < 7.29.1",
+        ">= 8.0.0  < 8.10.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-2jfj-6hjv-fm6j",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+      "officialAffectedRanges": [
+        ">= 7.0.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        ">= 7.0.0  < 7.29.1",
+        ">= 8.0.0  < 8.10.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-3wwx-pv8p-q78v",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-3wwx-pv8p-q78v",
+      "officialAffectedRanges": [
+        ">= 6.25.0, < 6.28.1",
+        ">= 7.28.0, < 7.29.1",
+        ">= 8.1.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        ">= 6.25.0  < 6.28.1",
+        ">= 7.28.0  < 7.29.1",
+        ">= 8.1.0  < 8.10.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-3xpg-4rpp-hhhm",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+      "officialAffectedRanges": [
+        ">= 7.15.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        ">= 7.15.0  < 7.29.1",
+        ">= 8.0.0  < 8.10.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-8436-99hf-9mmv",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-8436-99hf-9mmv",
+      "officialAffectedRanges": [
+        ">= 7.0.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        ">= 7.0.0  < 7.29.1",
+        ">= 8.0.0  < 8.10.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-pmjh-fq2x-6v4x",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+      "officialAffectedRanges": [
+        ">= 7.11.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        ">= 7.11.0  < 7.29.1",
+        ">= 8.0.0  < 8.10.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-r53p-7pc4-xj5r",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-r53p-7pc4-xj5r",
+      "officialAffectedRanges": [
+        "< 6.28.1",
+        ">= 7.0.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        "< 6.28.1",
+        ">= 7.0.0  < 7.29.1",
+        ">= 8.0.0  < 8.10.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-rfgv-xxqx-mfg5",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+      "officialAffectedRanges": [
+        ">= 6.7.0, < 6.28.1",
+        ">= 7.0.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        ">= 6.7.0  < 6.28.1",
+        ">= 7.0.0  < 7.29.1",
+        ">= 8.0.0  < 8.10.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-rx4f-c7p8-82vq",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-rx4f-c7p8-82vq",
+      "officialAffectedRanges": [
+        ">= 7.0.0, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        ">= 7.0.0  < 7.29.1",
+        ">= 8.0.0  < 8.10.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-vp8m-p9jh-q5pm",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-vp8m-p9jh-q5pm",
+      "officialAffectedRanges": [
+        ">= 8.10.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        ">= 8.10.0  < 8.10.2"
+      ]
+    },
+    {
+      "ghsa": "GHSA-w293-vg96-wgc3",
+      "package": "undici",
+      "versions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "affectedVersions": [
+        "7.29.0",
+        "8.10.1"
+      ],
+      "source": "https://github.com/advisories/GHSA-w293-vg96-wgc3",
+      "officialAffectedRanges": [
+        ">= 7.24.1, < 7.29.1",
+        ">= 8.0.0, < 8.10.2"
+      ],
+      "semverRanges": [
+        ">= 7.24.1  < 7.29.1",
+        ">= 8.0.0  < 8.10.2"
+      ]
+    }
+  ],
+  "checkerCorrection": "Initial raw GitHub comma-separated ranges were not valid npm semver conjunctions; normalized commas to spaces and reran. Raw official ranges retained. Initial 6 count rejected, not acceptance.",
+  "officialOnlyAffected": [
+    {
+      "ghsa": "GHSA-wq5f-xc86-pv6w",
+      "package": "sharp",
+      "versions": [
+        "0.35.2",
+        "0.35.4"
+      ],
+      "affectedVersions": [
+        "0.35.2",
+        "0.35.4"
+      ],
+      "source": "https://github.com/lovell/sharp/security/advisories/GHSA-wq5f-xc86-pv6w",
+      "officialAffectedRanges": [
+        "< 0.35.5"
+      ],
+      "semverRanges": [
+        "< 0.35.5"
+      ]
+    }
+  ],
+  "auditOnlyGhsa": []
+}

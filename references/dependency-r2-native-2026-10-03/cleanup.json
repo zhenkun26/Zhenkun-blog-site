@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "previewLockAbsent": true,
+  "ownedOrigins": [
+    {
+      "origin": "http://127.0.0.1:4321",
+      "state": "CLOSED",
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "origin": "http://127.0.0.1:56909",
+      "state": "CLOSED",
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "origin": "http://127.0.0.1:56917",
+      "state": "CLOSED",
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "origin": "http://127.0.0.1:56440",
+      "state": "CLOSED",
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "origin": "http://127.0.0.1:56442",
+      "state": "CLOSED",
+      "errorCode": "ECONNREFUSED"
+    }
+  ],
+  "limit": "Checks only this task’s known loopback ports after awaited fixture disposal and Astro preview stop; no process inventory or broad kill."
+}

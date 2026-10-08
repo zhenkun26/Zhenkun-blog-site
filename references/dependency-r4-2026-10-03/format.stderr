@@ -1,0 +1,28 @@
+scripts/zhenkun-test-security-audit.mjs:668:29 lint/suspicious/noTemplateCurlyInString ━━━━━━━━━━━━━
+
+  ! Unexpected template string placeholder.
+  
+    666 │ 	);
+    667 │ 	assert.equal(audit.length, 1);
+  > 668 │ 	assert.equal(audit[0].if, "${{ always() && !cancelled() }}");
+        │ 	                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    669 │ 	assert.match(audit[0].run, /--live --output tmp\/security-audit$/);
+    670 │ 	const upload = security.at(-1);
+  
+  i Turn the string into a template string.
+  
+
+scripts/zhenkun-test-security-audit.mjs:671:27 lint/suspicious/noTemplateCurlyInString ━━━━━━━━━━━━━
+
+  ! Unexpected template string placeholder.
+  
+    669 │ 	assert.match(audit[0].run, /--live --output tmp\/security-audit$/);
+    670 │ 	const upload = security.at(-1);
+  > 671 │ 	assert.equal(upload.if, "${{ always() }}");
+        │ 	                         ^^^^^^^^^^^^^^
+    672 │ 	assert.equal(
+    673 │ 		upload.uses,
+  
+  i Turn the string into a template string.
+  
+

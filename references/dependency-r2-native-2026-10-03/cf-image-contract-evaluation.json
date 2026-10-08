@@ -1,0 +1,8 @@
+{
+  "status": "PASS_RECORDED_THREE_CASE_CONTRACT",
+  "runtimeProbeExit": 1,
+  "instrumentationDiagnostic": "Probe mistakenly required the origin header on transformed JPEG; this header was required only for fallback cases. No runtime retry.",
+  "svgAndInvalid": "Exact status/type/source header/no cf-resized/body hash and byte equality passed",
+  "jpegPositive": "200 image/png internal=ok/m decoded 3x4 passed",
+  "internal422": "Source fact from Sharp helper and outbound fallback; not runtime-captured. No production inference."
+}

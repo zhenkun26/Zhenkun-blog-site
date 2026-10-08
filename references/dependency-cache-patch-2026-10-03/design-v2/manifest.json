@@ -1,0 +1,42 @@
+{
+  "designRevision": "v2",
+  "status": "DESIGN_ONLY_NOT_APPLIED_NOT_EXECUTED",
+  "sourcePackage": "http-cache-semantics@4.2.0",
+  "sourcePath": "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/http-cache-semantics@4.2.0/node_modules/http-cache-semantics",
+  "sourceReadThisRevision": "task-local upstream-index.js.txt only; historical sourcePath not accessed",
+  "sourceSha256": "01b7d66c854b2fe53ac05c98feb6e0d64722ab8898a778e2d2426a8b468d178f",
+  "sourceRepositoryHeadObserved": "b974258753ca07347eae535a3f5ca94e902f033a",
+  "thirdPartyDiffCopied": false,
+  "license": "BSD-2-Clause; upstream notice retained",
+  "reviewFindingsAddressedInText": [
+    "P2-1 ASCII validation precedes lowercase",
+    "P2-2 stale restrictions apply to expired fallback only"
+  ],
+  "v1Evidence": "v1/ and v1-archive-receipt.json; original bytes retained",
+  "artifacts": {
+    "01-reuse-restrictions.patch": "08a8008870a965a609d254c776aa82789bdd5dd82cf4ce143e296344d9e89f6e",
+    "02-vary-normalization.patch": "a44b043aceb22c12043c2ad49a1c0b6ae35411486722d3f123c3345711bb6835",
+    "http-cache-semantics@4.2.0.candidate.patch": "a11b24cff385c1f9d96c608f43ea0d9043b71c0138c2ade31982551966c0a3b2",
+    "upstream-index.js.txt": "01b7d66c854b2fe53ac05c98feb6e0d64722ab8898a778e2d2426a8b468d178f",
+    "candidate-index.js.txt": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89",
+    "LICENSE.upstream.txt": "ab868ad5a2ef5068560d9cd3b2180ec63c140bb4c5cae1ba779d300a0ac74fa3",
+    "v1-to-v2.candidate.diff": "7fe34e0377e8a4f833a769efc4a18bce189564fce73830226031fcddb4531fd4",
+    "DESIGN.md": "cbbf1889dda70b079240a98a2b1032ab6f7365b71db86eb5ea5436e976529a1e",
+    "TEST-MATRIX.md": "a61e1dec651643f15d52ef1c80216e78ad96d19c1dcafdf522d68db76f1220bb",
+    "REVISION-v2.md": "1b16fbf0b12ec2ad303517c1dee7bc5c049d3fd4316a18c3d30ba1d729a8b12d",
+    "author_patch.py": "3ecd57e286860cbb03e9b6b8f79345673a3f0734a968db4a5aefdd0eb2636f93",
+    "v1-archive-receipt.json": "b30bbd19ddd7340cbc1ddaf582590004f5e357f0444de03dce3efd5ea7df1888"
+  },
+  "checks": {
+    "textReplacementAnchorsUnique": true,
+    "candidateSyntaxOrRuntime": "NOT_RUN",
+    "patchApply": "NOT_RUN",
+    "securityRegressionTests": "NOT_RUN"
+  },
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "95aed58ec748852b633fefff576f0a74a8bc9da6384e802c812de9021f891d7a",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

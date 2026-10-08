@@ -1,0 +1,9 @@
+{
+  "parent": "getImagesBinding",
+  "input": "png",
+  "width": 3,
+  "height": 4,
+  "format": "png",
+  "bytes": 127,
+  "sha256": "cec755ecf0637637c8bc1c1a507ff03877c52bc5c8c75d92feacd35da37731c1"
+}

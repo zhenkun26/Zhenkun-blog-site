@@ -1,0 +1,35 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 0d0fe3c4c30817dc281b3f2c51d36692cfdbedff6311caa09ef3e119fd274b64; local raw original retained.
+node:internal/modules/esm/resolve:315
+  return new ERR_PACKAGE_PATH_NOT_EXPORTED(
+         ^
+
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: No "exports" main defined in <local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/@astrojs+cloudflare@14.2.6_@types+node@26.4.1_astro@7.2.10_@astrojs+markdown-remark@7.3_c5c62df535986285e756a07481ecc7fd/node_modules/@cloudflare/vite-plugin/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:315:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:606:13)
+    at resolveExports (node:internal/modules/cjs/loader:754:36)
+    at Module._findPath (node:internal/modules/cjs/loader:821:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1557:27)
+    at wrapResolveFilename (node:internal/modules/cjs/loader:1118:27)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1169:12)
+    at require.resolve (node:internal/modules/helpers:175:31)
+    at file://<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/scripts/zhenkun-test-r2-native.mjs:14:20
+    at ModuleJob.run (node:internal/modules/esm/module_job:561:25) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
+}
+
+Node.js v24.20.0
+✖ scripts/zhenkun-test-r2-native.mjs (40.696042ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 0
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 44.389917
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-r2-native.mjs:1:1
+✖ scripts/zhenkun-test-r2-native.mjs (40.696042ms)
+  'test failed'

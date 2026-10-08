@@ -1,0 +1,514 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 6b3d840c09aeaeae0283f8f043a7be8c8fa3e811d94803f20241c33790479396; local raw original retained.
+✔ generator restriction 0: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (25.818458ms)
+✔ generator restriction 1: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (2.807916ms)
+✔ generator restriction 2: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (3.104584ms)
+✔ generator restriction 3: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (3.319167ms)
+✔ generator restriction 4: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (2.185084ms)
+✔ generator restriction 5: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (1.570375ms)
+✔ generator restriction 6: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (2.57125ms)
+✔ generator failure network: stale validators cannot publish old bytes (1.186792ms)
+✔ generator failure 304: stale validators cannot publish old bytes (0.741584ms)
+✔ generator failure 404: stale validators cannot publish old bytes (2.251834ms)
+✔ generator failure 500: stale validators cannot publish old bytes (1.216458ms)
+✔ generator failure 503: stale validators cannot publish old bytes (1.654666ms)
+✔ generator successful remote miss does not create persistent cache (2.163209ms)
+✔ generator local image cache positive control remains usable offline (1.522459ms)
+✔ generator local first transform writes reusable local cache (4.190375ms)
+✔ generator same remote source multi-size transforms fetch once within invocation (3.890459ms)
+✔ generator deliberately refetches valid public unexpired cache (7.513833ms)
+CACHE_REACHABLE graphParents=1 actualLinks=2 source=55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89
+CACHE_NEGATIVE http-cache-semantics@4.2.0 missing exit=254 ✓ Lockfile passes supply-chain policies (verified 41m ago)
+[ENOENT] ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-G3vqCC/scripts/patches/http-cache-semantics@4.2.0.patch'
+
+pnpm: ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-G3vqCC/scripts/patches/http-cache-semantics@4.2.0.patch'
+    at async open (node:internal/fs/promises:1345:25)
+    at async Object.readFile (node:internal/fs/promises:1996:14)
+    at async readNormalizedFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99206:19)
+    at async createHexHashFromFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99203:24)
+    at async file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208269:20
+    at async Promise.all (index 1)
+    at async pMapValues (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208268:3)
+    at async _install (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:212483:126)
+CACHE_NEGATIVE http-cache-semantics@4.2.0 corrupt exit=1 ✓ Lockfile passes supply-chain policies (verified 41m ago)
+[ERR_PNPM_LOCKFILE_CONFIG_MISMATCH] Cannot proceed with the frozen installation. The current "patchedDependencies" configuration doesn't match the value found in the lockfile
+
+Update your lockfile using "pnpm install --no-frozen-lockfile"
+CACHE_NEGATIVE astro@7.2.10 missing exit=254 ✓ Lockfile passes supply-chain policies (verified 41m ago)
+[ENOENT] ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-mFSFj7/scripts/patches/astro@7.2.10.patch'
+
+pnpm: ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-mFSFj7/scripts/patches/astro@7.2.10.patch'
+    at async open (node:internal/fs/promises:1345:25)
+    at async Object.readFile (node:internal/fs/promises:1996:14)
+    at async readNormalizedFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99206:19)
+    at async createHexHashFromFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99203:24)
+    at async file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208269:20
+    at async Promise.all (index 0)
+    at async pMapValues (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208268:3)
+    at async _install (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:212483:126)
+CACHE_NEGATIVE astro@7.2.10 corrupt exit=1 ✓ Lockfile passes supply-chain policies (verified 41m ago)
+[ERR_PNPM_LOCKFILE_CONFIG_MISMATCH] Cannot proceed with the frozen installation. The current "patchedDependencies" configuration doesn't match the value found in the lockfile
+
+Update your lockfile using "pnpm install --no-frozen-lockfile"
+CACHE_NEGATIVE js-yaml@3.15.2 missing exit=254 ✓ Lockfile passes supply-chain policies (verified 41m ago)
+[ENOENT] ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-pJg0Ca/scripts/patches/js-yaml@3.15.2.patch'
+
+pnpm: ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-pJg0Ca/scripts/patches/js-yaml@3.15.2.patch'
+    at async open (node:internal/fs/promises:1345:25)
+    at async Object.readFile (node:internal/fs/promises:1996:14)
+    at async readNormalizedFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99206:19)
+    at async createHexHashFromFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99203:24)
+    at async file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208269:20
+    at async Promise.all (index 2)
+    at async pMapValues (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208268:3)
+    at async _install (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:212483:126)
+CACHE_NEGATIVE js-yaml@3.15.2 corrupt exit=1 ✓ Lockfile passes supply-chain policies (verified 41m ago)
+[ERR_PNPM_LOCKFILE_CONFIG_MISMATCH] Cannot proceed with the frozen installation. The current "patchedDependencies" configuration doesn't match the value found in the lockfile
+
+Update your lockfile using "pnpm install --no-frozen-lockfile"
+CACHE_PARENT legacy Astro stale-file branch remains in source; separate actual-generator tests verify the patched local-only cache entry restriction.
+CACHE_BASELINE expected assertion failure: 93748 cookie max-stale
+CACHE_BASELINE expected assertion failure: 93748 no-cache direct SWR
+CACHE_BASELINE expected assertion failure: 93750 wildcard OWS
+CACHE_BASELINE expected assertion failure: 93750 own/inherited
+✔ A01 shared cookie restrictions cover five reuse APIs (3.162958ms)
+✔ A02 incoming max-stale cannot unlock shared cookies (1.099375ms)
+✔ A03 no-cache and qualified no-cache cover five APIs (0.57375ms)
+✔ A04 shared proxy-revalidate and private control (1.402417ms)
+✔ A05 all unstoreable policies deny stale reuse (0.982291ms)
+✔ A06 must-revalidate preserves fresh helpers and conservative evaluate (0.474458ms)
+✔ A07 shared s-maxage fresh boundary stale and zero cross error matrix (1.770166ms)
+✔ A08 shared false does not acquire proxy or s-maxage restriction (1.353875ms)
+✔ A09 public immutable and private cookie exceptions remain usable (1.674417ms)
+✔ A10 ordinary expiry max-stale keeps strict window boundary (0.287042ms)
+✔ A11 ordinary zero freshness is not a security restriction (0.211625ms)
+✔ A12 ordinary fresh no extensions remains a cache hit (0.081541ms)
+✔ A13 SWR inside boundary outside retains async contract (0.177ms)
+✔ A14 SIE strict boundary all errors and non-error controls (0.188542ms)
+✔ A15 SIE requires URL host method and Vary matching (0.225166ms)
+✔ A16 incoming no-cache and pragma deny error fallback (0.098542ms)
+✔ A17 cross method error fallback denied normal HEAD validators preserved (0.125709ms)
+✔ A18 max-age versus shared s-maxage preserves fresh fallback (2.165166ms)
+✔ B01 wildcard and list wildcard forbid all reuse (1.458292ms)
+✔ B02 field case OWS duplicates empty items preserve values (0.434333ms)
+✔ B03 absent empty and empty lists introduce no variant (0.237792ms)
+✔ B04 own presence and value comparisons (0.302125ms)
+✔ B05 prototype tokens and null-prototype maps use own values (0.664917ms)
+✔ B06 own versus inherited same value is a mismatch both ways (0.210291ms)
+✔ B07 two inherited-only fields are both absent (0.170209ms)
+✔ B08 raw ASCII validation precedes lowercase and survives roundtrip (4.94525ms)
+✔ B09 variant mismatch cannot be rescued by stale extensions (0.107125ms)
+✔ B10 wildcard validators are not attached to incoming requests (0.054875ms)
+✔ C01 version one serialization preserves every safety restriction (2.234ms)
+✔ C02 trusted hand-authored historical v1 fixtures are restricted (0.472ms)
+✔ C03 modes cookie opt-ins and own special fields survive JSON (0.853625ms)
+✔ C04 valid ETag Last-Modified 304 and 200 keep public result shape (0.733625ms)
+✔ C05 first 304 cache-control restrictions are retained (0.684833ms)
+✔ C06 first 304 wildcard and cookie restrictions are retained (0.787791ms)
+✔ C07 first pragma no-cache retained existing cache-control precedence (0.198583ms)
+✔ C08 valid 304 can replace no-cache with public fresh policy (0.080333ms)
+✔ C09 non-target 304 validation and header merging stay baseline-compatible (0.351ms)
+✔ C10 accessors preserve API types and do not authorize cookie reuse (0.059708ms)
+✔ C11 ordinary request cache-control pragma and method branches stay compatible (0.097083ms)
+✔ C12 independent clocks constructors returned policies and TTL rounding (0.120708ms)
+✔ D01 official source patch registration integrity and license (34.661375ms)
+✔ D02 all current graph and actual links resolve the approved candidate (543.064208ms)
+✔ D03 missing and corrupt patches fail the normal frozen offline installer (2074.703708ms)
+✔ D04 actual Astro remote helpers use bounded synthetic fetch and real policy TTL (14.871917ms)
+✔ official baseline counterexamples reproduce bounded failures (1.059125ms)
+✔ disabled dynamic endpoint returns no configured content and performs no work (26.358ms)
+✔ disabled dynamic endpoint succeeds without even loading a failing content source (0.803542ms)
+✔ enabled dynamic endpoint preserves real Markdown, image metadata, sorting and JSON schema (46.300459ms)
+✔ enabled dynamic endpoint retains a valid empty collection response (0.389625ms)
+✔ CI accepts an empty public corpus with a searchable About page (5.459458ms)
+✔ CI follows public metadata count when approved articles are added (2.278667ms)
+✔ CI rejects Astro-only output without the Pagefind module (0.9845ms)
+✔ CI rejects a module without any indexed language (1.361792ms)
+✔ CI rejects an empty Pagefind language (1.000291ms)
+✔ CI rejects a public post URL that lost the deployment base (1.161042ms)
+✔ CI rejects duplicate public IDs (0.887708ms)
+✔ / logical routes retain their identity when the base name collides (0.775042ms)
+✔ /Zhenkun-blog-site/ logical routes retain their identity when the base name collides (0.095334ms)
+✔ /about/ logical routes retain their identity when the base name collides (0.060125ms)
+✔ /archive/ logical routes retain their identity when the base name collides (0.057875ms)
+✔ / sitemap excludes closed booknav/ (0.07075ms)
+✔ / sitemap excludes closed friends/ (0.043125ms)
+✔ / sitemap excludes closed sponsor/ (0.033583ms)
+✔ / sitemap excludes closed guestbook/ (0.030542ms)
+✔ / sitemap excludes closed bangumi/ (0.046334ms)
+✔ / sitemap excludes closed vndb/ (0.074708ms)
+✔ / sitemap excludes closed myanimelist/ (0.047417ms)
+✔ / sitemap excludes closed gallery/ (0.032167ms)
+✔ / sitemap excludes closed gallery/album/ (0.032333ms)
+✔ / sitemap excludes closed bilibili/ (0.028375ms)
+✔ / sitemap excludes closed dynamic/ (0.030042ms)
+✔ / sitemap excludes closed dynamic/comments/ (0.023958ms)
+✔ / sitemap excludes closed 404/ (0.021083ms)
+✔ / sitemap excludes closed 404.html (0.021458ms)
+✔ / enabled parent admits its child; unrelated routes survive (0.060583ms)
+✔ / comments require both the parent and comment capability (0.764916ms)
+✔ / public images accept one existing base prefix (0.092917ms)
+✔ / OG uses literal encoded identity under the deployment base (0.390042ms)
+✔ / canonical strips filter query and fragment without changing the input (0.0825ms)
+✔ / error destination points at the emitted static file (0.033125ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed booknav/ (0.027292ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed friends/ (0.020708ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed sponsor/ (0.024ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed guestbook/ (0.017875ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed bangumi/ (0.017875ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed vndb/ (0.017291ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed myanimelist/ (0.023084ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed gallery/ (0.017291ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed gallery/album/ (0.017167ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed bilibili/ (0.017ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed dynamic/ (0.021375ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed dynamic/comments/ (0.019625ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed 404/ (0.01975ms)
+✔ /Zhenkun-blog-site/ sitemap excludes closed 404.html (0.016625ms)
+✔ /Zhenkun-blog-site/ enabled parent admits its child; unrelated routes survive (0.036167ms)
+✔ /Zhenkun-blog-site/ comments require both the parent and comment capability (0.021ms)
+✔ /Zhenkun-blog-site/ public images accept one existing base prefix (0.031875ms)
+✔ /Zhenkun-blog-site/ OG uses literal encoded identity under the deployment base (0.053208ms)
+✔ /Zhenkun-blog-site/ canonical strips filter query and fragment without changing the input (0.031625ms)
+✔ /Zhenkun-blog-site/ error destination points at the emitted static file (0.017917ms)
+✔ base stripping is segment aware and strips only once (0.055334ms)
+✔ public asset traversal and unsafe bases fail (0.05175ms)
+✔ five fixes: actual parent/peer resolvers and physical old-chain removal (55.064917ms)
+✔ YAML: unchanged library and actual patched CLI inputs, diagnostics and exits (778.504667ms)
+✔ KaTeX: inherited/default/processor trust, namespaces and group restoration (9.364625ms)
+✔ KaTeX: actual Astro Markdown and micromark math HTML, mhchem and fallback (145.6615ms)
+✔ CSS: actual typography, nested, nesting and both Expressive Code owners (85.437917ms)
+✔ CSS: official flat-complexity controls, pseudos, escapes and AST clone (1001.781834ms)
+✔ TOML: actual helpers/schema/ID accept null tables, Unicode, Date, BigInt and errors (68.843125ms)
+✔ TOML: actual Astro data-entry/file loader and bounded dot-free parser (109.657958ms)
+✔ source maps: offset limits, exhaustion and linear nested sources traversal (2.828666ms)
+✔ source maps: actual PostCSS/css-tree/Tailwind/magicast preserve Unicode content (98.752459ms)
+✔ repeated SPA script execution installs only one set of document delegates (2.016584ms)
+✔ one accordion click makes exactly one transition after repeated SPA visits (0.931916ms)
+✔ root: inline and standalone links use the same public route (23.305791ms)
+✔ root: aliases, Obsidian automatic aliases and multiple references (5.662625ms)
+✔ root: compatible heading links retain anchors and avoid cards (7.939834ms)
+✔ root: production rejects draft target by slug without metadata disclosure (1.069458ms)
+✔ root: production rejects draft target by path without metadata disclosure (0.444375ms)
+✔ root: production rejects draft target by basename without metadata disclosure (0.368ms)
+✔ root: production rejects missing targets and development leaves actionable text (0.940625ms)
+✔ root: unsupported embeds and block references do not become links (3.6245ms)
+✔ subpath: inline and standalone links use the same public route (1.374959ms)
+✔ subpath: aliases, Obsidian automatic aliases and multiple references (4.513083ms)
+✔ subpath: compatible heading links retain anchors and avoid cards (1.727625ms)
+✔ subpath: production rejects draft target by slug without metadata disclosure (1.765417ms)
+✔ subpath: production rejects draft target by path without metadata disclosure (10.511834ms)
+✔ subpath: production rejects draft target by basename without metadata disclosure (4.12ms)
+✔ subpath: production rejects missing targets and development leaves actionable text (2.111417ms)
+✔ subpath: unsupported embeds and block references do not become links (0.968042ms)
+✔ source drafts skip production Wiki conversion before resolving targets (3.957208ms)
+✔ development can deliberately preview draft metadata (2.156959ms)
+✔ duplicate basename is ambiguous regardless of enumeration order (one/public) (2.85875ms)
+✔ duplicate basename is ambiguous regardless of enumeration order (two/public) (1.431958ms)
+✔ a hidden exact path cannot fall back to another public basename (1.282084ms)
+✔ duplicate article IDs reject the index instead of selecting the first entry (0.538916ms)
+✔ invalid or unsupported source target is not a ghost link: ../secret (1.183041ms)
+✔ invalid or unsupported source target is not a ghost link: /drafts/secret (0.317083ms)
+✔ invalid or unsupported source target is not a ghost link: guide/../../secret (0.262042ms)
+✔ invalid or unsupported source target is not a ghost link: guide\source (0.343125ms)
+✔ invalid or unsupported source target is not a ghost link: guide//source (0.238375ms)
+✔ invalid or unsupported source target is not a ghost link: guide/source.markdown (1.576584ms)
+✔ unsafe article ID fails before metadata can render: "../secret" (0.290875ms)
+✔ unsafe article ID fails before metadata can render: "/secret" (0.082416ms)
+✔ unsafe article ID fails before metadata can render: "a//b" (0.061875ms)
+✔ unsafe article ID fails before metadata can render: "a\\b" (0.058875ms)
+✔ unsafe article ID fails before metadata can render: "a%2fb" (0.052708ms)
+✔ unsafe article ID fails before metadata can render: "a?b" (0.054375ms)
+✔ unsafe article ID fails before metadata can render: "a#b" (0.083083ms)
+✔ unsafe article ID fails before metadata can render: "https:note" (0.118708ms)
+✔ unsafe article ID fails before metadata can render: "a\u0000b" (0.106833ms)
+✔ unsafe article ID fails before metadata can render: "é" (0.069ms)
+✔ unsafe article ID fails before metadata can render: " padded" (0.081625ms)
+✔ unsafe article ID fails before metadata can render: "a/ padded" (0.034709ms)
+✔ article identity agrees with installed Astro and literal route: topic-folder/my-note (3.605792ms)
+✔ article identity agrees with installed Astro and literal route: section (5.666542ms)
+✔ article identity agrees with installed Astro and literal route: 中文/文章 (2.643625ms)
+✔ article identity agrees with installed Astro and literal route: custom/index (4.044917ms)
+✔ article identity agrees with installed Astro and literal route: custom/article.md (3.084208ms)
+✔ article identity agrees with installed Astro and literal route: Case/Space Note (3.60625ms)
+✔ source extension aliases resolve while explicit .md article IDs stay literal (1.512541ms)
+✔ public/remote card cover uses its correct URL: /assets/cover.webp at / (0.947167ms)
+✔ public/remote card cover uses its correct URL: /assets/cover.webp at /Zhenkun-blog-site/ (1.131917ms)
+✔ public/remote card cover uses its correct URL: /Zhenkun-blog-site/assets/cover.webp at /Zhenkun-blog-site/ (0.57575ms)
+✔ public/remote card cover uses its correct URL: /assets/cover.webp?version=2#preview at /Zhenkun-blog-site/ (0.447208ms)
+✔ public/remote card cover uses its correct URL: https://images.example.invalid/cover.webp at /Zhenkun-blog-site/ (4.179959ms)
+✔ public/remote card cover uses its correct URL: //images.example.invalid/cover.webp at /Zhenkun-blog-site/ (2.924834ms)
+✔ missing relative cover omits the image without failing the reference (2.06975ms)
+✔ relative cover outside approved source roots rejects publication (1.479ms)
+✔ API card cover uses injected deterministic URLs and the literal article ID (0.793041ms)
+✔ protected public cards expose allowed metadata but never password or target body (0.396667ms)
+✔ Wiki syntax inside code and existing Markdown links remains unchanged (2.247584ms)
+✔ native MDX compiles public inline references and metadata cards (12.318792ms)
+✔ native MDX leaves JSX attributes, JSX children, expressions and ESM untouched (6.970375ms)
+✔ native MDX applies production rejection and development diagnostics (3.575583ms)
+✔ real scanner admits lowercase Markdown/MDX, skips dotfiles and excluded extensions (13.255083ms)
+✔ real scanner rejects visible symlinks without following file or directory targets (0.522125ms)
+✔ real scanner rejects a source root that passes through a symlink (0.128083ms)
+✔ real scanner fails malformed frontmatter and invalid draft/slug data without disclosure (1.55325ms)
+✔ real scanner duplicate .md/.mdx identities fail index construction (0.333833ms)
+✔ logical routes always get their base while explicit public-asset deduplication is bounded (1.031ms)
+✔ deployment configuration rejects authority, traversal and control-character bases (0.138375ms)
+✔ internal URL input rejects browser authority reinterpretation and path traversal (0.107958ms)
+✔ explicit nonstandard slug is safely encoded without changing identity: quote/"double" (4.796417ms)
+✔ explicit nonstandard slug is safely encoded without changing identity: quote/'single' (2.732583ms)
+✔ explicit nonstandard slug is safely encoded without changing identity: html/<svg onload='run()'>& (1.109542ms)
+✔ publication build gate permits only the production environment (0.128542ms)
+✔ draft preview and synchronization commands do not trigger the build gate (0.044375ms)
+✔ actual Iconify parent resolves the already accepted SVGO 4.1.0 (100.574ms)
+✔ actual Iconify optimization preserves viewBox, paint refs and repeat stability (29.977459ms)
+✔ actual Iconify parser rejects a small non-SVG input (0.203708ms)
+✔ Stylus/glob10: actual minimatch loads its original-major brace patch (0.39725ms)
+✔ Stylus/glob10: ESM/CJS expand bounded nested/number ranges and match files (7.177334ms)
+✔ Stylus/glob10: actual glob discovery returns the exact owned input set (10.706458ms)
+✔ root/glob13: actual minimatch loads its original-major brace patch (0.352459ms)
+✔ root/glob13: ESM/CJS expand bounded nested/number ranges and match files (6.32675ms)
+✔ root/glob13: actual glob discovery returns the exact owned input set (2.610542ms)
+✔ R1a exact real-parent versions and unaffected YAML4 (1.602167ms)
+✔ devalue stringify/parse preserves supported rich data, identity and cycles (2.392792ms)
+✔ devalue uneval escapes harmless HTML data and reconstructs its value (1.3465ms)
+✔ devalue serializes only the visible bytes of a bounded owned Buffer view (1.059375ms)
+✔ actual Astro store serialization and chunk parser round-trip Unicode/date data (3.518667ms)
+✔ actual Svelte server payload and client hydratable data handoff (26.102125ms)
+✔ actual gray-matter frontmatter preserves dates, Unicode tags and aliases (5.113709ms)
+✔ actual YAML/Ajv parent resolves the approved fast-uri patch (3.967125ms)
+✔ URI normalization preserves encoded path/query and valid IDN/IPv6 (4.652708ms)
+✔ relative schema URI paths, queries and fragments resolve independently (0.325ms)
+✔ actual Ajv resolves external/local schema refs and reports missing refs (17.41375ms)
+✔ actual Ajv async schema loading uses normalized owned fixture URIs (13.166542ms)
+✔ actual YAML service validates Unicode values and relative external schema refs (22.497083ms)
+▶ R2 real Sharp parents and local Miniflare APIs
+  ✔ root: actual native Sharp decodes PNG/JPEG/SVG and rotates/resizes PNG/WebP (12.659834ms)
+  ✔ Astro: actual native Sharp decodes PNG/JPEG/SVG and rotates/resizes PNG/WebP (11.689042ms)
+  ✔ Miniflare: actual native Sharp decodes PNG/JPEG/SVG and rotates/resizes PNG/WebP (9.544208ms)
+  ✔ getImagesBinding info parses bitmap and harmless SVG (40.1655ms)
+  ✔ getImagesBinding input/transform/output uses native PNG/WebP paths (44.889084ms)
+  ✔ getImagesBinding exposes its bounded unsupported GIF output error (5.098ms)
+  ✔ worker cf.image native png result and headers (4.275125ms)
+  ✔ worker cf.image native webp result and headers (2.411541ms)
+  ✔ worker cf.image JSON reports original and transformed metadata (10.160416ms)
+  ✔ worker cf.image svg conversion failure preserves the origin response (2.736208ms)
+  ✔ worker cf.image invalid conversion failure preserves the origin response (1.616416ms)
+  ✔ dispatchFetch preserves method, headers and exact binary bytes through real Undici parent (0.94675ms)
+  ✔ dispatchFetch accepts streamed uploads and controlled streamed response bytes (52.119333ms)
+  ✔ dispatchFetch handles followed and manual redirects (2.583208ms)
+  ✔ dispatchFetch cancellation of active stream is followed by successful recovery (2.276959ms)
+✔ R2 real Sharp parents and local Miniflare APIs (2806.426083ms)
+ℹ {"parent":"root","entry":"<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/sharp@0.35.5_@types+node@26.4.1/node_modules/sharp/dist/index.cjs","native":"<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/@img+sharp-darwin-arm64@0.35.5/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64-0.35.5.node","nativeSha256":"791921f975371be33aed727e06283282cc001c960792eb52505b579fdaaf1b55","versions":{"aom":"3.15.1","archive":"3.8.9","cairo":"1.18.6","cgif":"0.5.4","exif":"0.6.26","expat":"2.8.5","ffi":"3.8.0","fontconfig":"2.18.3","freetype":"2.14.3","fribidi":"1.0.17","glib":"2.90.0","harfbuzz":"14.5.0","heif":"1.23.5","highway":"1.4.0","imagequant":"2.4.1","lcms":"2.19.1","mozjpeg":"0826579","pango":"1.58.2","pixman":"0.46.4","png":"1.6.58","proxy-libintl":"0.5","rsvg":"2.63.2","tiff":"4.7.2","uhdr":"2.0.2","vips":"8.18.7","webp":"1.6.0","xml2":"2.15.4","zlib-ng":"2.3.3","sharp":"0.35.5"}}
+ℹ {"parent":"Astro","entry":"<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/sharp@0.35.5_@types+node@26.4.1/node_modules/sharp/dist/index.cjs","native":"<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/@img+sharp-darwin-arm64@0.35.5/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64-0.35.5.node","nativeSha256":"791921f975371be33aed727e06283282cc001c960792eb52505b579fdaaf1b55","versions":{"aom":"3.15.1","archive":"3.8.9","cairo":"1.18.6","cgif":"0.5.4","exif":"0.6.26","expat":"2.8.5","ffi":"3.8.0","fontconfig":"2.18.3","freetype":"2.14.3","fribidi":"1.0.17","glib":"2.90.0","harfbuzz":"14.5.0","heif":"1.23.5","highway":"1.4.0","imagequant":"2.4.1","lcms":"2.19.1","mozjpeg":"0826579","pango":"1.58.2","pixman":"0.46.4","png":"1.6.58","proxy-libintl":"0.5","rsvg":"2.63.2","tiff":"4.7.2","uhdr":"2.0.2","vips":"8.18.7","webp":"1.6.0","xml2":"2.15.4","zlib-ng":"2.3.3","sharp":"0.35.5"}}
+ℹ {"parent":"Miniflare","entry":"<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/sharp@0.35.5_@types+node@26.4.1/node_modules/sharp/dist/index.cjs","native":"<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/@img+sharp-darwin-arm64@0.35.5/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64-0.35.5.node","nativeSha256":"791921f975371be33aed727e06283282cc001c960792eb52505b579fdaaf1b55","versions":{"aom":"3.15.1","archive":"3.8.9","cairo":"1.18.6","cgif":"0.5.4","exif":"0.6.26","expat":"2.8.5","ffi":"3.8.0","fontconfig":"2.18.3","freetype":"2.14.3","fribidi":"1.0.17","glib":"2.90.0","harfbuzz":"14.5.0","heif":"1.23.5","highway":"1.4.0","imagequant":"2.4.1","lcms":"2.19.1","mozjpeg":"0826579","pango":"1.58.2","pixman":"0.46.4","png":"1.6.58","proxy-libintl":"0.5","rsvg":"2.63.2","tiff":"4.7.2","uhdr":"2.0.2","vips":"8.18.7","webp":"1.6.0","xml2":"2.15.4","zlib-ng":"2.3.3","sharp":"0.35.5"}}
+ℹ {"input":"svg","status":200,"headers":{"content-type":"image/svg+xml","date":"Thu, 08 Oct 2026 04:09:21 GMT","mf-content-encoding":"gzip","transfer-encoding":"chunked","x-r2-source":"owned"},"bytes":153,"sha256":"902ad1d2fa9fbd1ae645dc3296191b5a6f2950531aafe1cbd491184dea55272d","inputSha256":"902ad1d2fa9fbd1ae645dc3296191b5a6f2950531aafe1cbd491184dea55272d","inputByteEqual":true}
+ℹ {"input":"invalid","status":200,"headers":{"content-length":"23","content-type":"image/invalid","date":"Thu, 08 Oct 2026 04:09:21 GMT","x-r2-source":"owned"},"bytes":23,"sha256":"10c4ccf89acdf868b12468d72e1951a40130845818d4a2f8d7b77f04b9fab74b","inputSha256":"10c4ccf89acdf868b12468d72e1951a40130845818d4a2f8d7b77f04b9fab74b","inputByteEqual":true}
+ℹ {"fixtureOrigin":"http://127.0.0.1:52617","workerOrigin":"http://127.0.0.1:52666","cf":false,"telemetry":false,"remoteBindings":false,"dispatchTransport":"<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/undici@7.29.1/node_modules/undici/index.js"}
+✔ first query survives lazy backend initialization (13.083542ms)
+✔ rapid edits debounce to the latest query (26.7275ms)
+✔ older search response cannot replace a newer result (21.370084ms)
+✔ older result data cannot replace a newer result (17.449ms)
+✔ clearing to "" invalidates an in-flight query (11.310292ms)
+✔ clearing to "  \n " invalidates an in-flight query (12.181833ms)
+✔ empty query never loads or searches the backend (6.796583ms)
+✔ zero results complete without leaving a spinner (5.723584ms)
+✔ backend failure clears stale results and permits a retry (17.546208ms)
+✔ stale failure cannot clear the newer success (18.014959ms)
+✔ cancel before debounce prevents any backend call (22.486042ms)
+✔ cancel during initialization cannot resurrect a closed panel (11.624958ms)
+✔ dispose before debounce prevents any backend call (22.576042ms)
+✔ dispose during initialization cannot resurrect a closed panel (11.786291ms)
+✔ a new SPA session is independent of disposed work (18.445917ms)
+✔ dispose is idempotent and future edits publish nothing (7.050208ms)
+✔ closing and reopening the same query searches again (12.331834ms)
+✔ old completion does not stop a newer pending query (25.014333ms)
+✔ security: valid empty audits and no known affected versions pass (6.451708ms)
+✔ security: known42 ledger includes verified aliases and preserves CVE93750 source disagreement (0.749667ms)
+✔ security: every raw info finding blocks without a severity downgrade (1.259792ms)
+✔ security: every raw low finding blocks without a severity downgrade (1.739291ms)
+✔ security: every raw moderate finding blocks without a severity downgrade (0.952958ms)
+✔ security: every raw high finding blocks without a severity downgrade (0.878042ms)
+✔ security: every raw critical finding blocks without a severity downgrade (0.817083ms)
+✔ security: GHSA and CVE duplicates retain each raw version/path and highest severity (1.158875ms)
+✔ security: full audit cannot silently lose a prod finding (0.899ms)
+✔ security: one affected version still fails when another is repaired (1.020875ms)
+✔ security: official-only cache CVE and sharp still fail an empty registry report (0.894333ms)
+✔ security: commas in official ranges and prereleases cannot hide affected versions (0.977833ms)
+✔ security: a narrower row cannot override the retained publisher affected range (1.479375ms)
+✔ security: unknown extra advisory fails closed even with low severity (0.429084ms)
+✔ security: a new unverified alias of a known advisory requires review (0.579792ms)
+✔ security: unknown GHSA/CVE overlap is deduplicated but never accepted (0.331833ms)
+✔ security: contradictory package identities and new withdrawal cannot pass (0.558083ms)
+✔ security: stale findings absent from the current graph are blocked (0.281916ms)
+✔ security parser: HTML is BLOCKED (0.2905ms)
+✔ security parser: broken JSON is BLOCKED (0.273625ms)
+✔ security parser: empty stdout is BLOCKED (0.2675ms)
+✔ security parser: zero-exit error object is BLOCKED (0.263459ms)
+✔ security parser: missing metadata is BLOCKED (0.261167ms)
+✔ security parser: missing severity count is BLOCKED (0.275208ms)
+✔ security parser: nonzero count without records is BLOCKED (0.636667ms)
+✔ security parser: unknown severity count is BLOCKED (0.316833ms)
+✔ security parser: missing dependency count is BLOCKED (0.307041ms)
+✔ security parser: empty dependency graph is BLOCKED (0.262375ms)
+✔ security parser: network exit is BLOCKED (0.240167ms)
+✔ security parser: timeout with valid partial stdout is BLOCKED (0.233875ms)
+✔ security parser: signal with valid stdout is BLOCKED (0.230042ms)
+✔ security parser: nonzero empty report is BLOCKED (0.234459ms)
+✔ security parser: alert exit zero and incomplete findings are invalid (0.298ms)
+✔ security policy: expiry is exact, unreviewed severity changes and invalid ranges fail closed (1.785833ms)
+✔ security policy: ignore/waiver keys and missing ledger entries are not supported (0.69175ms)
+✔ security: installed approved patch integrity does not grant a cache exception (19.552208ms)
+✔ security patch integrity: missing is BLOCKED (14.416833ms)
+✔ security patch integrity: tampered is BLOCKED (12.551875ms)
+✔ security patch integrity: registration is BLOCKED (17.265209ms)
+✔ security patch integrity: installed hash is BLOCKED (13.328042ms)
+✔ security CLI patch integrity: missing is BLOCKED for the exact cause (9.973583ms)
+✔ security CLI patch integrity: tampered is BLOCKED for the exact cause (10.477959ms)
+✔ security CLI patch integrity: installed hash is BLOCKED for the exact cause (12.482667ms)
+✔ security collector: exactly prod/full once, lossless raw output and bounded command arguments (2.3515ms)
+✔ security collector: first transport failure still attempts full and saves both failures (1.30475ms)
+✔ security orchestration: retained current audit is FAIL, artifacts written without any live process (11.555291ms)
+✔ security orchestration: source mutation and dirty/mismatched HEAD block (10.053834ms)
+✔ security orchestration: missing project inputs still preserve both raw attempts and BLOCKED verdict (1.484291ms)
+✔ security snapshot binds actual checkout and exact source/lock bytes (35.889458ms)
+✔ security orchestration: expected CI checkout SHA must match (8.538417ms)
+✔ security CLI refuses an invocation without explicit live collection selection (44.656ms)
+✔ security bytes: review bytes retained exactly and rejected before JSON interpretation (71.807083ms)
+✔ security bytes: illegal byte inside otherwise parseable JSON retained exactly and rejected before JSON interpretation (60.817625ms)
+✔ security bytes: truncated multibyte sequences retained exactly and rejected before JSON interpretation (62.574083ms)
+✔ security bytes: stderr-only malformed byte retained exactly and rejected before JSON interpretation (57.239167ms)
+✔ security bytes: valid multibyte UTF-8 and literal replacement character remain accepted (67.645791ms)
+✔ security bytes: invalid prod still collects and parses valid full independently (53.936459ms)
+✖ security workflow: independent quality/peer/security jobs, immutable action and fail-closed upload (2.358209ms)
+✔ repair classification: raw high, both observations, version matches and publisher CVE remain visible (0.663041ms)
+✔ repair classification: missing evidence cannot close findings (0.354333ms)
+✔ repair classification: UNVERIFIED evidence cannot close findings (0.46175ms)
+✔ repair classification: NOT_RUN evidence cannot close findings (0.289291ms)
+✔ repair classification: HASH_ONLY evidence cannot close findings (0.272625ms)
+✔ repair classification: changed audit title fails closed (0.486083ms)
+✔ repair classification: changed audit url fails closed (0.3425ms)
+✔ repair classification: changed audit severity fails closed (0.283ms)
+✔ repair classification: changed audit vulnerable_versions fails closed (0.293458ms)
+✔ repair classification: changed audit patched_versions fails closed (0.256125ms)
+✔ repair classification: changed audit path fails closed (0.248792ms)
+✔ repair classification: changed audit alias fails closed (0.253125ms)
+✔ repair classification: unknown advisory remains blocked alongside exact repaired finding (0.604917ms)
+✔ repair classification: extra affected installed version cannot be covered (0.497166ms)
+✔ repair classification: clean audit cannot conceal required version observations (0.244375ms)
+✔ repair classification: expiration still blocks with synthetic positive proof (0.221208ms)
+✔ repair classification: other known affected packages remain unresolved (0.324541ms)
+✔ repair inspection: actual graph paths and installed source agree (488.486541ms)
+✔ repair inspection: environment CF_WORKERS invalidates deployment proof (0.199292ms)
+✔ repair inspection: environment NODE_OPTIONS invalidates deployment proof (0.089ms)
+✔ repair inspection: environment ZHENKUN_CACHE_POLICY_BASELINE invalidates deployment proof (0.075667ms)
+✔ repair inspection: environment ZHENKUN_ASTRO_CACHE_BASELINE invalidates deployment proof (0.0725ms)
+✔ repair inspection: ledger and expected installed hashes cannot silently change (0.302333ms)
+✔ repair inspection: actual owned application mutation fails closed (385.606458ms)
+✔ repair inspection: actual owned test mutation fails closed (353.10825ms)
+✔ repair inspection: actual owned parents mutation fails closed (346.958875ms)
+✔ repair inspection: actual owned installed lock mutation fails closed (689.447875ms)
+✔ repair inspection: actual owned extra installed cache mutation fails closed (332.550333ms)
+✔ repair primary records: pinned exact source records validate (1.215375ms)
+✔ repair primary records: missing or changed ghsa fails closed (0.308542ms)
+✔ repair primary records: missing or changed cve fails closed (0.20925ms)
+✔ repair primary records: missing or changed latest fails closed (0.166875ms)
+✔ repair primary records: withdrawal and CVE rejection invalidate evidence (0.174125ms)
+✔ repair primary records: EPSS/comment counters do not change advisory scope (0.14525ms)
+✔ repair primary records: reviewed upstream 4.3.0 is separate from installed patched 4.2.0 (0.201334ms)
+✔ repair primary records: missing or expired upstream review cannot pass (0.235667ms)
+✔ P2 nested Astro original generator fails even when root and cache endpoints are patched (329.454ms)
+✔ P2 nested Astro patched positive control inventories both real instances (353.67975ms)
+✔ P2 nested Astro changed version is rejected even with matching source files (333.650584ms)
+✔ ESM: @swup/parallel-plugin resolves exact cross-major base and requirements (12.226791ms)
+✔ ESM: @swup/route-name-plugin resolves exact cross-major base and requirements (1.813458ms)
+✔ ESM: actual Swup hooks mount/unmount twice, route naming and classes (1.718417ms)
+✔ ESM: parallel visit marking, insertion, restoration, cleanup and disabled visit (1.118666ms)
+✔ CJS: @swup/parallel-plugin resolves exact cross-major base and requirements (2.051667ms)
+✔ CJS: @swup/route-name-plugin resolves exact cross-major base and requirements (0.529625ms)
+✔ CJS: actual Swup hooks mount/unmount twice, route naming and classes (1.095125ms)
+✔ CJS: parallel visit marking, insertion, restoration, cleanup and disabled visit (0.605208ms)
+✔ createUnifont none: observable dispatcher and real local font chain (197.691125ms)
+ℹ {"mode":"none","selected":"Agent","fontBytes":52928,"fontSha256":"8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1","customCalls":0,"downloadVerified":true,"missingCssEmpty":true,"missingFont404":true,"aborted":true,"activeDownloadAborted":true,"proxyRequests":0,"originRequests":6}
+✔ createUnifont proxy: observable dispatcher and real local font chain (156.416458ms)
+ℹ {"mode":"proxy","selected":"EnvHttpProxyAgent","fontBytes":52928,"fontSha256":"8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1","customCalls":0,"downloadVerified":true,"missingCssEmpty":true,"missingFont404":true,"aborted":true,"activeDownloadAborted":true,"proxyRequests":6,"originRequests":6}
+✔ createUnifont no_proxy: observable dispatcher and real local font chain (151.563458ms)
+ℹ {"mode":"no_proxy","selected":"EnvHttpProxyAgent","fontBytes":52928,"fontSha256":"8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1","customCalls":0,"downloadVerified":true,"missingCssEmpty":true,"missingFont404":true,"aborted":true,"activeDownloadAborted":true,"proxyRequests":0,"originRequests":6}
+✔ createUnifont custom: observable dispatcher and real local font chain (193.122709ms)
+ℹ {"mode":"custom","selected":"OwnedDispatcher","fontBytes":52928,"fontSha256":"8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1","customCalls":6,"downloadVerified":true,"missingCssEmpty":true,"missingFont404":true,"aborted":true,"activeDownloadAborted":true,"proxyRequests":0,"originRequests":6}
+✔ createUnifont retry: observable dispatcher and real local font chain (1191.174875ms)
+ℹ {"mode":"retry","selected":"Agent","fontBytes":52928,"fontSha256":"8ce032f679bca53a32a4b6127d51d6be4a769bce4a83896560f025df68584fa1","customCalls":0,"downloadVerified":true,"missingCssEmpty":true,"missingFont404":true,"aborted":true,"activeDownloadAborted":true,"proxyRequests":0,"originRequests":6}
+ℹ tests 371
+ℹ suites 0
+ℹ pass 370
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4816.08425
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-security-audit.mjs:854:1
+✖ security workflow: independent quality/peer/security jobs, immutable action and fail-closed upload (2.358209ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+      'runs-on': 'ubuntu-latest',
+      'timeout-minutes': 20,
+      env: {
+        DEPLOY_BASE: '${{ matrix.base }}'
+  ...
+        {
+  +       name: 'Check actual overridden parent declarations strictly',
+  +       run: 'pnpm exec tsc --ignoreConfig --noEmit --strict --skipLibCheck false --module NodeNext --moduleResolution NodeNext --target ES2022 scripts/zhenkun-swup-parent-types.ts\n' +
+  +         'node scripts/zhenkun-five-parent-types.mjs\n'
+  +     },
+  +     {
+          name: 'Run native contract regressions',
+          run: 'node --test scripts/zhenkun-test-*.mjs'
+        },
+        {
+          name: 'Build complete production site and Pagefind',
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/scripts/zhenkun-test-security-audit.mjs:864:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: {
+      name: 'Full quality (${{ matrix.base }})',
+      'runs-on': 'ubuntu-latest',
+      'timeout-minutes': 20,
+      strategy: { 'fail-fast': false, matrix: [Object] },
+      env: { DEPLOY_BASE: '${{ matrix.base }}' },
+      steps: [
+        [Object], [Object],
+        [Object], [Object],
+        [Object], [Object],
+        [Object], [Object],
+        [Object], [Object],
+        [Object]
+      ]
+    },
+    expected: {
+      name: 'Full quality (${{ matrix.base }})',
+      'runs-on': 'ubuntu-latest',
+      'timeout-minutes': 20,
+      strategy: { 'fail-fast': false, matrix: [Object] },
+      env: { DEPLOY_BASE: '${{ matrix.base }}' },
+      steps: [
+        [Object], [Object],
+        [Object], [Object],
+        [Object], [Object],
+        [Object], [Object],
+        [Object], [Object]
+      ]
+    },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

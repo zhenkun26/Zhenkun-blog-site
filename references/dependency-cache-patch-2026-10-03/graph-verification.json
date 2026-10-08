@@ -1,0 +1,44 @@
+{
+  "status": "PASS_EXACT_CACHE_PATCH_SCOPE",
+  "base": "ed64aad20e7025afa7834f3eb2008c0c57cc2240",
+  "packages": [
+    895,
+    895
+  ],
+  "snapshots": [
+    898,
+    898
+  ],
+  "references": 1779,
+  "parents": [
+    "astro@7.2.10(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)"
+  ],
+  "patch": "scripts/patches/http-cache-semantics@4.2.0.patch",
+  "patchHash": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3",
+  "sourceHash": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89",
+  "entry": "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-cache/node_modules/.pnpm/http-cache-semantics@4.2.0_patch_hash=64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3/node_modules/http-cache-semantics/index.js",
+  "instances": [
+    "node_modules/.pnpm/http-cache-semantics@4.2.0/node_modules/http-cache-semantics/index.js",
+    "node_modules/.pnpm/http-cache-semantics@4.2.0_patch_hash=64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3/node_modules/http-cache-semantics/index.js"
+  ],
+  "links": [
+    "node_modules/.pnpm/astro@7.2.10_@astrojs+markdown-remark@7.3.0_supports-color@10.2.2__@emnapi+core@1.11.1__7f15187ac94bc0cdda80a0a70cc04b37/node_modules/http-cache-semantics",
+    "node_modules/.pnpm/node_modules/http-cache-semantics"
+  ],
+  "inactiveInstances": [
+    {
+      "file": "node_modules/.pnpm/http-cache-semantics@4.2.0/node_modules/http-cache-semantics/index.js",
+      "hash": "01b7d66c854b2fe53ac05c98feb6e0d64722ab8898a778e2d2426a8b468d178f",
+      "state": "INACTIVE_PHYSICAL_CACHE_NO_LINK_OR_CURRENT_LOCK_EDGE"
+    }
+  ],
+  "allPackageRecordsAndOtherSnapshotsIdentical": true,
+  "rootPeerAnd8GuardsAndAllowBuildsUnchanged": true,
+  "lockHash": "6f4a61e19f5e118ea4636a11984ae52f24e11764d6fdade9cab3d3101fd4d002",
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "d83859815b7a71db490f93fc1e8a947ac57fbe8c8aff7140ca12effddeccdafb",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

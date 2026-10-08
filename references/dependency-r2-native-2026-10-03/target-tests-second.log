@@ -1,0 +1,32 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 88ff86be102142bbba64e0c6f6005af4b9b17524eeb1e3a3a2c99ceae3e16481; local raw original retained.
+▶ R2 real Sharp parents and local Miniflare APIs
+  ✔ root: actual native Sharp decodes PNG/JPEG/SVG and rotates/resizes PNG/WebP (9.355834ms)
+  ✔ Astro: actual native Sharp decodes PNG/JPEG/SVG and rotates/resizes PNG/WebP (7.677667ms)
+  ✔ Miniflare: actual native Sharp decodes PNG/JPEG/SVG and rotates/resizes PNG/WebP (6.946708ms)
+✖ R2 real Sharp parents and local Miniflare APIs (668.961416ms)
+ℹ {"parent":"root","entry":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/sharp@0.35.5_@types+node@26.4.1/node_modules/sharp/dist/index.cjs","native":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/@img+sharp-darwin-arm64@0.35.5/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64-0.35.5.node","nativeSha256":"791921f975371be33aed727e06283282cc001c960792eb52505b579fdaaf1b55","versions":{"aom":"3.15.1","archive":"3.8.9","cairo":"1.18.6","cgif":"0.5.4","exif":"0.6.26","expat":"2.8.5","ffi":"3.8.0","fontconfig":"2.18.3","freetype":"2.14.3","fribidi":"1.0.17","glib":"2.90.0","harfbuzz":"14.5.0","heif":"1.23.5","highway":"1.4.0","imagequant":"2.4.1","lcms":"2.19.1","mozjpeg":"0826579","pango":"1.58.2","pixman":"0.46.4","png":"1.6.58","proxy-libintl":"0.5","rsvg":"2.63.2","tiff":"4.7.2","uhdr":"2.0.2","vips":"8.18.7","webp":"1.6.0","xml2":"2.15.4","zlib-ng":"2.3.3","sharp":"0.35.5"}}
+ℹ {"parent":"Astro","entry":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/sharp@0.35.5_@types+node@26.4.1/node_modules/sharp/dist/index.cjs","native":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/@img+sharp-darwin-arm64@0.35.5/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64-0.35.5.node","nativeSha256":"791921f975371be33aed727e06283282cc001c960792eb52505b579fdaaf1b55","versions":{"aom":"3.15.1","archive":"3.8.9","cairo":"1.18.6","cgif":"0.5.4","exif":"0.6.26","expat":"2.8.5","ffi":"3.8.0","fontconfig":"2.18.3","freetype":"2.14.3","fribidi":"1.0.17","glib":"2.90.0","harfbuzz":"14.5.0","heif":"1.23.5","highway":"1.4.0","imagequant":"2.4.1","lcms":"2.19.1","mozjpeg":"0826579","pango":"1.58.2","pixman":"0.46.4","png":"1.6.58","proxy-libintl":"0.5","rsvg":"2.63.2","tiff":"4.7.2","uhdr":"2.0.2","vips":"8.18.7","webp":"1.6.0","xml2":"2.15.4","zlib-ng":"2.3.3","sharp":"0.35.5"}}
+ℹ {"parent":"Miniflare","entry":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/sharp@0.35.5_@types+node@26.4.1/node_modules/sharp/dist/index.cjs","native":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/@img+sharp-darwin-arm64@0.35.5/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64-0.35.5.node","nativeSha256":"791921f975371be33aed727e06283282cc001c960792eb52505b579fdaaf1b55","versions":{"aom":"3.15.1","archive":"3.8.9","cairo":"1.18.6","cgif":"0.5.4","exif":"0.6.26","expat":"2.8.5","ffi":"3.8.0","fontconfig":"2.18.3","freetype":"2.14.3","fribidi":"1.0.17","glib":"2.90.0","harfbuzz":"14.5.0","heif":"1.23.5","highway":"1.4.0","imagequant":"2.4.1","lcms":"2.19.1","mozjpeg":"0826579","pango":"1.58.2","pixman":"0.46.4","png":"1.6.58","proxy-libintl":"0.5","rsvg":"2.63.2","tiff":"4.7.2","uhdr":"2.0.2","vips":"8.18.7","webp":"1.6.0","xml2":"2.15.4","zlib-ng":"2.3.3","sharp":"0.35.5"}}
+ℹ tests 4
+ℹ suites 0
+ℹ pass 3
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 858.37775
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-r2-native.mjs:97:1
+✖ R2 real Sharp parents and local Miniflare APIs (668.961416ms)
+  Error: listen EPERM: operation not permitted 127.0.0.1
+      at Server.setupListenHandle [as _listen2] (node:net:2302:21)
+      at listenInCluster (node:net:2433:12)
+      at node:net:2662:7
+      at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'EPERM',
+    errno: -1,
+    syscall: 'listen',
+    address: '127.0.0.1'
+  }

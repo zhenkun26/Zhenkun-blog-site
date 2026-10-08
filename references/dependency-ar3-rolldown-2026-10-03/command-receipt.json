@@ -1,0 +1,20 @@
+{
+  "startedAt": "2026-10-03T10:35:30.301180+00:00",
+  "finishedAt": "2026-10-03T10:35:33.000655+00:00",
+  "command": "node <existing pnpm 11.22.0>/bin/pnpm.cjs install --lockfile-only --ignore-scripts --registry=https://registry.npmjs.org",
+  "exitCode": 0,
+  "afterHashes": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-lock.yaml": "a214c80c3a120501007ff385c28b47a7d9f224c7d6b8f97d9ae2acdb9e6d4a87",
+    "pnpm-workspace.yaml": "1de2acb8e271995fde0bca24ee3fbf7636d9eb6f89cc5fbd5adaccc75553c122"
+  },
+  "nodeModulesPresent": false,
+  "notRun": [
+    "frozen install",
+    "lifecycle scripts",
+    "tests",
+    "build",
+    "PoC",
+    "browser"
+  ]
+}

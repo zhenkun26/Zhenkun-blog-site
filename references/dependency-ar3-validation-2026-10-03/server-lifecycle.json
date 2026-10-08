@@ -1,0 +1,20 @@
+{
+  "state": "PASS",
+  "bind": "127.0.0.1 only",
+  "initialSandboxBind": "PermissionError: [Errno 1] Operation not permitted; same command authorized by reviewed escalation",
+  "servers": [
+    {
+      "pid": 12024,
+      "port": 4321,
+      "directory": "tmp/ar3-root/dist"
+    },
+    {
+      "pid": 12412,
+      "port": 4322,
+      "directory": "tmp/ar3-project"
+    }
+  ],
+  "lsofAndPsMatchedOwnCommands": true,
+  "termination": "kill -TERM 12024 12412; exit 0",
+  "browserBypass": false
+}

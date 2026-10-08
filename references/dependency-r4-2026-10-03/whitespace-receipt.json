@@ -1,0 +1,23 @@
+{
+  "fullExit": 2,
+  "scopedExit": 0,
+  "exactExcludedRawFiles": [
+    "references/dependency-r4-2026-10-03/check-correct-entry.log",
+    "references/dependency-r4-2026-10-03/format.stderr",
+    "references/dependency-r4-2026-10-03/security-tests-initial.log",
+    "references/dependency-r4-2026-10-03/whitespace-full.log"
+  ],
+  "reason": "Preserve raw diagnostic byte sequences; no source/docs/policy JSON excluded.",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)references/dependency-r4-2026-10-03/check-correct-entry.log",
+    ":(exclude)references/dependency-r4-2026-10-03/format.stderr",
+    ":(exclude)references/dependency-r4-2026-10-03/security-tests-initial.log",
+    ":(exclude)references/dependency-r4-2026-10-03/whitespace-full.log"
+  ]
+}

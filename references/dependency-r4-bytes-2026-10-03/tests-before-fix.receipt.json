@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "--test-name-pattern=security bytes:",
+    "scripts/zhenkun-test-security-audit.mjs"
+  ],
+  "exit": 1,
+  "at": "2026-10-03T16:26:46.340401+00:00",
+  "purpose": "Expected failing regression tests before code repair; owned byte writer only, no npm audit"
+}

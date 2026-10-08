@@ -1,0 +1,24 @@
+{
+  "command": [
+    "pnpm",
+    "exec",
+    "tsc",
+    "--ignoreConfig",
+    "--noEmit",
+    "--strict",
+    "--module",
+    "NodeNext",
+    "--moduleResolution",
+    "NodeNext",
+    "--target",
+    "ES2022",
+    "scripts/zhenkun-swup-parent-types.ts"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1"
+  },
+  "start": "2026-10-03T15:40:16.375986+00:00",
+  "end": "2026-10-03T15:40:17.009886+00:00",
+  "exit": 0
+}

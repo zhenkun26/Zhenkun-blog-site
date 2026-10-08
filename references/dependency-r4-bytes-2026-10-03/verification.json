@@ -1,0 +1,21 @@
+{
+  "state": "PASS_LOCAL_BYTE_EVIDENCE_CONSISTENCY",
+  "sourceCommit": "1ffbe4c99f0a48c8d7e70498c7f8bb921eb24435",
+  "at": "2026-10-03T16:32:10.287811+00:00",
+  "reportLinks": [
+    "initial-reproduction.json",
+    "after-fix-verification.json",
+    "tests-before-fix.log",
+    "security-tests-fixed.log",
+    "native-all.log",
+    "biome.log",
+    "validation-receipt.json",
+    "tested-source-hashes.json",
+    "protection.json",
+    "cleanup.json"
+  ],
+  "rawByteHashesMatchInput": true,
+  "sourceHashesMatchTested": true,
+  "liveAudit": "NOT_RUN",
+  "independentRereview": "PENDING"
+}

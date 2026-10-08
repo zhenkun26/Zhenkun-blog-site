@@ -1,0 +1,130 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 c596383636f65412bfc3393443fbae4bb4f59b80930098ad1614aa434ef75b9f; local raw original retained.
+[GITHUB-CARD] Cached 0 repositories (0 refreshed).
+Loaded 23 existing entries from src/constants/lqips.json
+Found 23 images, 0 new to process.
+
+Done! Processed 0/0 new images. Total: 23. Output: src/constants/lqips.json
+[VNDB] Page not enabled, skipping cover download
+11:40:57 [content] Syncing content
+11:40:57 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/dynamic"
+11:40:57 [content] Synced content
+11:40:57 [types] Generated 172ms
+11:40:57 [build] output: "static"
+11:40:57 [build] mode: "static"
+11:40:57 [build] directory: <local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-cache/dist/
+11:40:57 [build] Collecting build info...
+11:40:57 [build] ✓ Completed in 235ms.
+11:40:57 [build] Building static entrypoints...
+11:41:07 [WARN] [astro-icon] Failed to load icons from "src/icons": ENOENT: no such file or directory, scandir 'src/icons/'
+11:41:07 [assets] Copying fonts (22 files)...
+11:41:12 [vite] ✓ built in 15.22s
+11:41:13 [WARN] [vite] [plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+11:41:13 [vite] ✓ built in 397ms
+11:41:13 [build] Rearranging server assets...
+
+ generating static routes 
+11:41:13   ├─ /404.html (+26ms) 
+11:41:13   ├─ /about/index.html (+7ms) 
+11:41:13   ├─ /api/allPostMeta.json (+1ms) 
+11:41:13   ├─ /api/dynamic.json (+1ms) 
+11:41:13   ├─ /archive/index.html (+7ms) 
+11:41:13   ├─ /bangumi/index.html (+2ms) 
+11:41:13   ├─ /bilibili/index.html (+1ms) 
+11:41:13   ├─ /booknav/index.html (+1ms) 
+11:41:13   ├─ /categories/index.html (+5ms) 
+11:41:13   ├─ /dynamic/comments/index.html (+1ms) 
+11:41:13   ├─ /dynamic/index.html (+4ms) 
+11:41:13   ├─ /friends/index.html (+1ms) 
+11:41:13   ├─ /gallery/firefly-2026/index.html (+1ms) 
+11:41:13   ├─ /gallery/encrypted-test/index.html (+0ms) 
+11:41:13   ├─ /gallery/index.html (+1ms) 
+11:41:13   ├─ /guestbook/index.html (+1ms) 
+11:41:13   ├─ /myanimelist/index.html (+1ms) 
+11:41:13   ├─ /robots.txt (+0ms) 
+11:41:13   ├─ /rss/index.html (+6ms) 
+11:41:13   ├─ /rss.xml (+56ms) 
+11:41:13   ├─ /search/index.html (+6ms) 
+11:41:13   ├─ /series/index.html (+5ms) 
+11:41:13   ├─ /sponsor/index.html (+1ms) 
+11:41:13   ├─ /tags/index.html (+6ms) 
+11:41:13   ├─ /vndb/index.html (+2ms) 
+11:41:13   ├─ /index.html (+5ms) 
+11:41:13 ✓ Completed in 357ms.
+
+ generating optimized images 
+11:41:13   ▶ /_astro/avatar.Vt-Igtud_1tWPX7.webp (before: 64kB, after: 14kB) (+220ms) (1/32)
+11:41:13   ▶ /_astro/m2.DdvPaSds_IzGBP.webp (before: 27kB, after: 31kB) (+220ms) (2/32)
+11:41:13   ▶ /_astro/m1.DEh_M2ue_Z1S1lrt.webp (before: 135kB, after: 70kB) (+220ms) (3/32)
+11:41:13   ▶ /_astro/m3.D3bdkV68_1B5y44.webp (before: 118kB, after: 64kB) (+220ms) (4/32)
+11:41:13   ▶ /_astro/m5.UNwLEw9O_Z1lqfdc.webp (before: 79kB, after: 54kB) (+220ms) (5/32)
+11:41:13   ▶ /_astro/m6.Ca2EuEDu_P3oOm.webp (before: 73kB, after: 42kB) (+220ms) (6/32)
+11:41:13   ▶ /_astro/d2.G7EObyHu_Z1DLAKS.webp (before: 56kB, after: 51kB) (+220ms) (7/32)
+11:41:13   ▶ /_astro/d1.v_J1gD3P_tz0F7.webp (before: 71kB, after: 70kB) (+400ms) (8/32)
+11:41:13   ▶ /_astro/m4.DzLJp29g_1oUPkN.webp (before: 142kB, after: 68kB) (+400ms) (9/32)
+11:41:13   ▶ /_astro/m2.DdvPaSds_rxT1.webp (before: 27kB, after: 42kB) (+180ms) (10/32)
+11:41:13   ▶ /_astro/avatar.Vt-Igtud_Q1OuE.webp (before: 64kB, after: 64kB) (+180ms) (11/32)
+11:41:13   ▶ /_astro/d3.CGCRs0-H_Z4ue21.webp (before: 99kB, after: 87kB) (+400ms) (12/32)
+11:41:13   ▶ /_astro/m1.DEh_M2ue_Z1L1IBE.webp (before: 135kB, after: 104kB) (+180ms) (13/32)
+11:41:13   ▶ /_astro/m3.D3bdkV68_1I5aSS.webp (before: 118kB, after: 94kB) (+180ms) (14/32)
+11:41:14   ▶ /_astro/m6.Ca2EuEDu_rBfB3.webp (before: 73kB, after: 60kB) (+376ms) (15/32)
+11:41:14   ▶ /_astro/m5.UNwLEw9O_16Ihom.webp (before: 79kB, after: 77kB) (+378ms) (16/32)
+11:41:14   ▶ /_astro/d2.G7EObyHu_2sTS0J.webp (before: 56kB, after: 87kB) (+378ms) (17/32)
+11:41:14   ▶ /_astro/m4.DzLJp29g_Z1siWVv.webp (before: 142kB, after: 100kB) (+199ms) (18/32)
+11:41:14   ▶ /_astro/d1.v_J1gD3P_ZDw30v.webp (before: 71kB, after: 124kB) (+199ms) (19/32)
+11:41:14   ▶ /_astro/d3.CGCRs0-H_Z11YS4k.webp (before: 99kB, after: 150kB) (+199ms) (20/32)
+11:41:14   ▶ /_astro/firefly-light.DZ-mS7Sc_Z4p5YL.webp (before: 3kB, after: 0kB) (+199ms) (21/32)
+11:41:14   ▶ /_astro/firefly-dark.b7MsfgPt_RPm6p.webp (before: 4kB, after: 0kB) (+6ms) (22/32)
+11:41:14   ▶ /_astro/firefly-light.DZ-mS7Sc_Z1n8zmu.webp (before: 3kB, after: 1kB) (+5ms) (23/32)
+11:41:14   ▶ /_astro/firefly-dark.b7MsfgPt_1Ub8hw.webp (before: 4kB, after: 1kB) (+8ms) (24/32)
+11:41:14   ▶ /_astro/firefly-light.DZ-mS7Sc_Z3pH8y.webp (before: 3kB, after: 2kB) (+8ms) (25/32)
+11:41:14   ▶ /_astro/firefly-dark.b7MsfgPt_Zr6Cr1.webp (before: 4kB, after: 2kB) (+4ms) (26/32)
+11:41:14   ▶ /_astro/d4.Brgr35k-_QbpD3.webp (before: 73kB, after: 74kB) (+228ms) (27/32)
+11:41:14   ▶ /_astro/d5.z7QGp_dj_1EwU7g.webp (before: 50kB, after: 60kB) (+232ms) (28/32)
+11:41:14   ▶ /_astro/d6.DetxM4Sl_wvX9N.webp (before: 64kB, after: 62kB) (+266ms) (29/32)
+11:41:14   ▶ /_astro/d5.z7QGp_dj_H2g4W.webp (before: 50kB, after: 93kB) (+133ms) (30/32)
+11:41:14   ▶ /_astro/d4.Brgr35k-_ZgTD2z.webp (before: 73kB, after: 126kB) (+141ms) (31/32)
+11:41:14   ▶ /_astro/d6.DetxM4Sl_ZpXFRv.webp (before: 64kB, after: 106kB) (+140ms) (32/32)
+11:41:14 ✓ Completed in 807ms.
+
+11:41:14 [build] ✓ Completed in 16.84s.
+11:41:14 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+11:41:14 [build] 22 page(s) built in 17.08s
+11:41:14 [build] Complete!
+🎎 Pruning unused mascot assets in dist/...
+   ✂ pio (14.62 MiB)
+   ✂ _astro/Live2DWidget.astro_astro_type_script_index_0_lang.CnuKuERK.js (0.63 MiB)
+✨ Pruned 2 mascot assets, freed 15.26 MiB
+🔤 Font subsetting started...
+   ⏭ Skipping '--font-greatvibes' — not referenced in selected or any font region.
+   No local fonts with subset: true found. Skipping.
+🗜 Minifying inline scripts in dist/...
+✨ Minified 259 inline scripts in 9/22 HTML files, saved 379.3 KiB
+
+Running Pagefind v1.5.2 (Extended)
+Running from: "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-cache"
+Source:       "dist"
+Output:       "dist/pagefind"
+
+[Walking source directory]
+Found 22 files matching **/*.{html}
+
+[Parsing files]
+Found a data-pagefind-body element on the site.
+↳ Ignoring pages without this tag.
+
+[Reading languages]
+Discovered 1 language: zh-cn
+
+[Building search indexes]
+Total: 
+  Indexed 1 language
+  Indexed 1 page
+  Indexed 95 words
+  Indexed 0 filters
+  Indexed 0 sorts
+
+Finished in 0.120 seconds

@@ -1,0 +1,10 @@
+{
+  "state": "PASS",
+  "testedSource": "e5355c2ede7f5a2baff1f5952ffc6cc912484a20",
+  "packages": 895,
+  "snapshots": 898,
+  "guards": 14,
+  "unchangedPackageRecordsIntegrityAndParentEdges": true,
+  "onlyIdentifierNormalization": "(patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47)",
+  "lockSha256": "14462544638481af75e4fb22587bcd143b99cbb3b73b1a01016cd78be888a895"
+}

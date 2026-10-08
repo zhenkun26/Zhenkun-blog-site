@@ -1,0 +1,72 @@
+references/dependency-r4-2026-10-03/check-correct-entry.log:69: trailing whitespace.
++Result (258 files): 
+references/dependency-r4-2026-10-03/check-correct-entry.log:73: new blank line at EOF.
+references/dependency-r4-2026-10-03/format.stderr:4: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/format.stderr:11: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/format.stderr:13: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/format.stderr:18: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/format.stderr:25: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/format.stderr:27: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/format.stderr:27: new blank line at EOF.
+references/dependency-r4-2026-10-03/security-tests-initial.log:62: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:64: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:94: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:96: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:115: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:117: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:136: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:138: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:157: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:159: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:178: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:180: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:199: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:201: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:239: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:241: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:260: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:262: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:281: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:283: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:302: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:304: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:437: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:439: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:468: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:470: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:489: trailing whitespace.
++  
+references/dependency-r4-2026-10-03/security-tests-initial.log:491: trailing whitespace.
++  

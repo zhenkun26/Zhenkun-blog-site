@@ -1,0 +1,92 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 ad3c69ae5909a1f54daa2a8d481d0a5917b73be983b0b39a3f74e40615800798; local raw original retained.
+00:13:34 [content] Syncing content
+00:13:34 [WARN] [glob-loader] No files found matching "**/*.md" in directory "src/content/dynamic"
+00:13:34 [content] Synced content
+00:13:34 [types] Generated 294ms
+00:13:34 [build] output: "static"
+00:13:34 [build] mode: "static"
+00:13:34 [build] directory: <local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/tmp/s1-five-20261008/synthetic/site/
+00:13:34 [build] Collecting build info...
+00:13:34 [build] ✓ Completed in 357ms.
+00:13:34 [build] Building static entrypoints...
+00:13:35 [WARN] [astro-icon] Failed to load icons from "src/icons": ENOENT: no such file or directory, scandir 'src/icons/'
+00:13:35 [assets] Copying fonts (22 files)...
+00:13:35 [vite] ✓ built in 1.15s
+00:13:36 [WARN] [vite] [plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+00:13:36 [vite] ✓ built in 376ms
+00:13:36 [build] Rearranging server assets...
+
+ generating static routes 
+00:13:36   ├─ /404.html (+30ms) 
+00:13:36   ├─ /about/index.html (+8ms) 
+00:13:36   ├─ /api/allPostMeta.json (+1ms) 
+00:13:36   ├─ /api/dynamic.json (+1ms) 
+00:13:36   ├─ /archive/index.html (+7ms) 
+00:13:36   ├─ /bangumi/index.html (+2ms) 
+00:13:36   ├─ /bilibili/index.html (+1ms) 
+00:13:36   ├─ /booknav/index.html (+1ms) 
+00:13:36   ├─ /categories/index.html (+6ms) 
+00:13:36   ├─ /dynamic/comments/index.html (+1ms) 
+00:13:36   ├─ /dynamic/index.html (+3ms) 
+00:13:36   ├─ /friends/index.html (+1ms) 
+00:13:36   ├─ /gallery/firefly-2026/index.html (+1ms) 
+00:13:36   ├─ /gallery/encrypted-test/index.html (+0ms) 
+00:13:36   ├─ /gallery/index.html (+1ms) 
+00:13:36   ├─ /guestbook/index.html (+1ms) 
+00:13:36   ├─ /myanimelist/index.html (+1ms) 
+00:13:36   ├─ /og/zhenkun-security-fixture.png/ (+7.51s) 
+00:13:44   ├─ /posts/zhenkun-security-fixture/index.html (+12ms) 
+00:13:44   ├─ /robots.txt (+2ms) 
+00:13:44   ├─ /rss/index.html (+9ms) 
+00:13:44   ├─ /rss.xml (+68ms) 
+00:13:44   ├─ /search/index.html (+7ms) 
+00:13:44   ├─ /series/index.html (+6ms) 
+00:13:44   ├─ /sponsor/index.html (+1ms) 
+00:13:44   ├─ /tags/index.html (+6ms) 
+00:13:44   ├─ /vndb/index.html (+2ms) 
+00:13:44   ├─ /index.html (+6ms) 
+00:13:44 ✓ Completed in 7.94s.
+
+ generating optimized images 
+00:13:44   ▶ /_astro/avatar.Vt-Igtud_Z1euN8K.webp (reused cache entry) (+1ms) (1/32)
+00:13:44   ▶ /_astro/m2.DdvPaSds_1VHfKI.webp (reused cache entry) (+1ms) (2/32)
+00:13:44   ▶ /_astro/m3.D3bdkV68_Wf0DU.webp (reused cache entry) (+1ms) (3/32)
+00:13:44   ▶ /_astro/m1.DEh_M2ue_3fm99.webp (reused cache entry) (+1ms) (4/32)
+00:13:44   ▶ /_astro/m6.Ca2EuEDu_1xiHm.webp (reused cache entry) (+1ms) (5/32)
+00:13:44   ▶ /_astro/d1.v_J1gD3P_ZdONv8.webp (reused cache entry) (+2ms) (6/32)
+00:13:44   ▶ /_astro/m4.DzLJp29g_ZJs1Ko.webp (reused cache entry) (+2ms) (7/32)
+00:13:44   ▶ /_astro/m5.UNwLEw9O_sA6Rs.webp (reused cache entry) (+2ms) (8/32)
+00:13:44   ▶ /_astro/d3.CGCRs0-H_20WKzV.webp (reused cache entry) (+3ms) (9/32)
+00:13:44   ▶ /_astro/d2.G7EObyHu_qFnQ4.webp (reused cache entry) (+3ms) (10/32)
+00:13:44   ▶ /_astro/avatar.Vt-Igtud_JhzDK.webp (reused cache entry) (+2ms) (11/32)
+00:13:44   ▶ /_astro/m2.DdvPaSds_8pjwV.webp (reused cache entry) (+2ms) (12/32)
+00:13:44   ▶ /_astro/m1.DEh_M2ue_1J0Sx0.webp (reused cache entry) (+2ms) (13/32)
+00:13:44   ▶ /_astro/m6.Ca2EuEDu_Z1i7Woq.webp (reused cache entry) (+2ms) (14/32)
+00:13:44   ▶ /_astro/m3.D3bdkV68_Z2rbALa.webp (reused cache entry) (+3ms) (15/32)
+00:13:44   ▶ /_astro/d1.v_J1gD3P_BOt7J.webp (reused cache entry) (+3ms) (16/32)
+00:13:44   ▶ /_astro/m4.DzLJp29g_IxVXx.webp (reused cache entry) (+3ms) (17/32)
+00:13:44   ▶ /_astro/m5.UNwLEw9O_Lr6z6.webp (reused cache entry) (+3ms) (18/32)
+00:13:44   ▶ /_astro/d2.G7EObyHu_TahXU.webp (reused cache entry) (+2ms) (19/32)
+00:13:44   ▶ /_astro/d3.CGCRs0-H_2trEHM.webp (reused cache entry) (+3ms) (20/32)
+00:13:44   ▶ /_astro/d4.Brgr35k-_8LArN.webp (reused cache entry) (+3ms) (21/32)
+00:13:44   ▶ /_astro/firefly-light.DZ-mS7Sc_vX7G3.webp (reused cache entry) (+2ms) (22/32)
+00:13:44   ▶ /_astro/d5.z7QGp_dj_Z1kce4I.webp (reused cache entry) (+3ms) (23/32)
+00:13:44   ▶ /_astro/d6.DetxM4Sl_Z2sdb2b.webp (reused cache entry) (+3ms) (24/32)
+00:13:44   ▶ /_astro/firefly-dark.b7MsfgPt_J0y4b.webp (reused cache entry) (+1ms) (25/32)
+00:13:44   ▶ /_astro/d4.Brgr35k-_YqS5F.webp (reused cache entry) (+1ms) (26/32)
+00:13:44   ▶ /_astro/firefly-light.DZ-mS7Sc_ZHQC47.webp (reused cache entry) (+1ms) (27/32)
+00:13:44   ▶ /_astro/d5.z7QGp_dj_ZQHjVR.webp (reused cache entry) (+1ms) (28/32)
+00:13:44   ▶ /_astro/firefly-dark.b7MsfgPt_ZlB5BS.webp (reused cache entry) (+1ms) (29/32)
+00:13:44   ▶ /_astro/firefly-light.DZ-mS7Sc_Q3GXQ.webp (reused cache entry) (+1ms) (30/32)
+00:13:44   ▶ /_astro/firefly-dark.b7MsfgPt_yHSA1.webp (reused cache entry) (+1ms) (31/32)
+00:13:44   ▶ /_astro/d6.DetxM4Sl_Z1YIgTk.webp (reused cache entry) (+2ms) (32/32)
+00:13:44 ✓ Completed in 9ms.
+
+00:13:44 [build] ✓ Completed in 9.53s.
+00:13:44 [@astrojs/sitemap] `sitemap-index.xml` created at `tmp/s1-five-20261008/synthetic/site`
+00:13:44 [build] 23 page(s) built in 9.89s
+00:13:44 [build] Complete!

@@ -1,0 +1,936 @@
+{
+  "_id": "sharp@0.35.5",
+  "bugs": {
+    "url": "https://github.com/lovell/sharp/issues"
+  },
+  "dist": {
+    "shasum": "43fb539872ec5f53cc7162eb850dbf6514692fbf",
+    "tarball": "https://registry.npmjs.org/sharp/-/sharp-0.35.5.tgz",
+    "fileCount": 47,
+    "integrity": "sha512-Ywn4OnzGukp7CDMrp08RQ50YKmuwG47brZgIVPTvBaaAfQlRlygrRqSrxdCiL9M+LlzLBiJ68IR1QqvzHyjC7g==",
+    "signatures": [
+      {
+        "sig": "MEYCIQCyo1+tlBV7a2cmC8I84ARsUqvoaq+mx3W0/6VAa9nYqQIhAKtWlbR8qYS2H2IkE4lauEeV7TxILFTO0u9eFy0Q9IMU",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEYCIQCLF9gSVuxlR9XSVusRLR+gKnSG05ojWaD3C+ne9L4uJgIhAPnnnMqW+1wcolOGQeXmk5qBoWsvJqs+OQjJRFLEIIrW"
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/sharp@0.35.5",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 962168
+  },
+  "main": "./dist/index.cjs",
+  "name": "sharp",
+  "type": "commonjs",
+  "types": "./dist/index.d.mts",
+  "author": "Lovell Fuller",
+  "config": {
+    "libvips": ">=8.18.7"
+  },
+  "module": "./dist/index.mjs",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "funding": {
+    "url": "https://opencollective.com/libvips"
+  },
+  "gitHead": "51a990faa26ade5586a4934ac9673c98d8893326",
+  "license": "Apache-2.0",
+  "scripts": {
+    "lint": "npm run lint-cpp && npm run lint-js && npm run lint-types && npm run lint-publish",
+    "test": "npm run lint && npm run test-unit",
+    "build": "node install/build.js",
+    "clean": "rm -rf src/build/ test/fixtures/output.*",
+    "lint-js": "biome lint",
+    "lint-cpp": "cpplint --quiet src/*.h src/*.cc",
+    "test-leak": "./test/leak/leak.sh",
+    "test-unit": "node --experimental-test-coverage test/unit.mjs",
+    "build:dist": "node scripts/build.mjs",
+    "docs-build": "node docs/build.mjs",
+    "docs-serve": "cd docs && npm start",
+    "lint-types": "tsd --files ./test/types/sharp.test-d.{cts,mts}",
+    "docs-publish": "cd docs && npm run build && npx firebase-tools deploy --project pixelplumbing --only hosting:pixelplumbing-sharp",
+    "lint-publish": "publint --strict",
+    "package-release-notes": "node npm/release-notes.js",
+    "package-wasm-wrappers": "node npm/wasm-wrappers.js",
+    "package-from-local-build": "node npm/from-local-build.js"
+  },
+  "version": "0.35.5",
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "oidc:d0f693c3-ada3-4197-b34c-b7aaeb524f11"
+    }
+  },
+  "homepage": "https://sharp.pixelplumbing.com",
+  "keywords": [
+    "jpeg",
+    "png",
+    "webp",
+    "avif",
+    "tiff",
+    "gif",
+    "svg",
+    "jp2",
+    "dzi",
+    "image",
+    "resize",
+    "thumbnail",
+    "crop",
+    "embed",
+    "libvips",
+    "vips"
+  ],
+  "repository": {
+    "url": "git+https://github.com/lovell/sharp.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.19.0",
+  "description": "High performance Node.js image processing, the fastest module to resize JPEG, PNG, WebP, GIF, AVIF and TIFF images",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "lovell",
+      "email": "npm@lovell.info"
+    }
+  ],
+  "sideEffects": true,
+  "_nodeVersion": "24.21.0",
+  "contributors": [
+    {
+      "name": "Pierre Inglebert",
+      "email": "pierre.inglebert@gmail.com"
+    },
+    {
+      "name": "Jonathan Ong",
+      "email": "jonathanrichardong@gmail.com"
+    },
+    {
+      "name": "Chanon Sajjamanochai",
+      "email": "chanon.s@gmail.com"
+    },
+    {
+      "name": "Juliano Julio",
+      "email": "julianojulio@gmail.com"
+    },
+    {
+      "name": "Daniel Gasienica",
+      "email": "daniel@gasienica.ch"
+    },
+    {
+      "name": "Julian Walker",
+      "email": "julian@fiftythree.com"
+    },
+    {
+      "name": "Amit Pitaru",
+      "email": "pitaru.amit@gmail.com"
+    },
+    {
+      "name": "Brandon Aaron",
+      "email": "hello.brandon@aaron.sh"
+    },
+    {
+      "name": "Andreas Lind",
+      "email": "andreas@one.com"
+    },
+    {
+      "name": "Maurus Cuelenaere",
+      "email": "mcuelenaere@gmail.com"
+    },
+    {
+      "name": "Linus Unnebäck",
+      "email": "linus@folkdatorn.se"
+    },
+    {
+      "name": "Victor Mateevitsi",
+      "email": "mvictoras@gmail.com"
+    },
+    {
+      "name": "Alaric Holloway",
+      "email": "alaric.holloway@gmail.com"
+    },
+    {
+      "name": "Bernhard K. Weisshuhn",
+      "email": "bkw@codingforce.com"
+    },
+    {
+      "name": "Chris Riley",
+      "email": "criley@primedia.com"
+    },
+    {
+      "name": "David Carley",
+      "email": "dacarley@gmail.com"
+    },
+    {
+      "name": "John Tobin",
+      "email": "john@limelightmobileinc.com"
+    },
+    {
+      "name": "Kenton Gray",
+      "email": "kentongray@gmail.com"
+    },
+    {
+      "name": "Felix Bünemann",
+      "email": "Felix.Buenemann@gmail.com"
+    },
+    {
+      "name": "Samy Al Zahrani",
+      "email": "samyalzahrany@gmail.com"
+    },
+    {
+      "name": "Chintan Thakkar",
+      "email": "lemnisk8@gmail.com"
+    },
+    {
+      "name": "F. Orlando Galashan",
+      "email": "frulo@gmx.de"
+    },
+    {
+      "name": "Kleis Auke Wolthuizen",
+      "email": "info@kleisauke.nl"
+    },
+    {
+      "name": "Matt Hirsch",
+      "email": "mhirsch@media.mit.edu"
+    },
+    {
+      "name": "Matthias Thoemmes",
+      "email": "thoemmes@gmail.com"
+    },
+    {
+      "name": "Patrick Paskaris",
+      "email": "patrick@paskaris.gr"
+    },
+    {
+      "name": "Jérémy Lal",
+      "email": "kapouer@melix.org"
+    },
+    {
+      "name": "Rahul Nanwani",
+      "email": "r.nanwani@gmail.com"
+    },
+    {
+      "name": "Alice Monday",
+      "email": "alice0meta@gmail.com"
+    },
+    {
+      "name": "Kristo Jorgenson",
+      "email": "kristo.jorgenson@gmail.com"
+    },
+    {
+      "name": "YvesBos",
+      "email": "yves_bos@outlook.com"
+    },
+    {
+      "name": "Guy Maliar",
+      "email": "guy@tailorbrands.com"
+    },
+    {
+      "name": "Nicolas Coden",
+      "email": "nicolas@ncoden.fr"
+    },
+    {
+      "name": "Matt Parrish",
+      "email": "matt.r.parrish@gmail.com"
+    },
+    {
+      "name": "Marcel Bretschneider",
+      "email": "marcel.bretschneider@gmail.com"
+    },
+    {
+      "name": "Matthew McEachen",
+      "email": "matthew+github@mceachen.org"
+    },
+    {
+      "name": "Jarda Kotěšovec",
+      "email": "jarda.kotesovec@gmail.com"
+    },
+    {
+      "name": "Kenric D'Souza",
+      "email": "kenric.dsouza@gmail.com"
+    },
+    {
+      "name": "Oleh Aleinyk",
+      "email": "oleg.aleynik@gmail.com"
+    },
+    {
+      "name": "Marcel Bretschneider",
+      "email": "marcel.bretschneider@gmail.com"
+    },
+    {
+      "name": "Andrea Bianco",
+      "email": "andrea.bianco@unibas.ch"
+    },
+    {
+      "name": "Rik Heywood",
+      "email": "rik@rik.org"
+    },
+    {
+      "name": "Thomas Parisot",
+      "email": "hi@oncletom.io"
+    },
+    {
+      "name": "Nathan Graves",
+      "email": "nathanrgraves+github@gmail.com"
+    },
+    {
+      "name": "Tom Lokhorst",
+      "email": "tom@lokhorst.eu"
+    },
+    {
+      "name": "Espen Hovlandsdal",
+      "email": "espen@hovlandsdal.com"
+    },
+    {
+      "name": "Sylvain Dumont",
+      "email": "sylvain.dumont35@gmail.com"
+    },
+    {
+      "name": "Alun Davies",
+      "email": "alun.owain.davies@googlemail.com"
+    },
+    {
+      "name": "Aidan Hoolachan",
+      "email": "ajhoolachan21@gmail.com"
+    },
+    {
+      "name": "Axel Eirola",
+      "email": "axel.eirola@iki.fi"
+    },
+    {
+      "name": "Freezy",
+      "email": "freezy@xbmc.org"
+    },
+    {
+      "name": "Daiz",
+      "email": "taneli.vatanen@gmail.com"
+    },
+    {
+      "name": "Julian Aubourg",
+      "email": "j@ubourg.net"
+    },
+    {
+      "name": "Keith Belovay",
+      "email": "keith@picthrive.com"
+    },
+    {
+      "name": "Michael B. Klein",
+      "email": "mbklein@gmail.com"
+    },
+    {
+      "name": "Jordan Prudhomme",
+      "email": "jordan@raboland.fr"
+    },
+    {
+      "name": "Ilya Ovdin",
+      "email": "iovdin@gmail.com"
+    },
+    {
+      "name": "Andargor",
+      "email": "andargor@yahoo.com"
+    },
+    {
+      "name": "Paul Neave",
+      "email": "paul.neave@gmail.com"
+    },
+    {
+      "name": "Brendan Kennedy",
+      "email": "brenwken@gmail.com"
+    },
+    {
+      "name": "Brychan Bennett-Odlum",
+      "email": "git@brychan.io"
+    },
+    {
+      "name": "Edward Silverton",
+      "email": "e.silverton@gmail.com"
+    },
+    {
+      "name": "Roman Malieiev",
+      "email": "aromaleev@gmail.com"
+    },
+    {
+      "name": "Tomas Szabo",
+      "email": "tomas.szabo@deftomat.com"
+    },
+    {
+      "name": "Robert O'Rourke",
+      "email": "robert@o-rourke.org"
+    },
+    {
+      "name": "Guillermo Alfonso Varela Chouciño",
+      "email": "guillevch@gmail.com"
+    },
+    {
+      "name": "Christian Flintrup",
+      "email": "chr@gigahost.dk"
+    },
+    {
+      "name": "Manan Jadhav",
+      "email": "manan@motionden.com"
+    },
+    {
+      "name": "Leon Radley",
+      "email": "leon@radley.se"
+    },
+    {
+      "name": "alza54",
+      "email": "alza54@thiocod.in"
+    },
+    {
+      "name": "Jacob Smith",
+      "email": "jacob@frende.me"
+    },
+    {
+      "name": "Michael Nutt",
+      "email": "michael@nutt.im"
+    },
+    {
+      "name": "Brad Parham",
+      "email": "baparham@gmail.com"
+    },
+    {
+      "name": "Taneli Vatanen",
+      "email": "taneli.vatanen@gmail.com"
+    },
+    {
+      "name": "Joris Dugué",
+      "email": "zaruike10@gmail.com"
+    },
+    {
+      "name": "Chris Banks",
+      "email": "christopher.bradley.banks@gmail.com"
+    },
+    {
+      "name": "Ompal Singh",
+      "email": "ompal.hitm09@gmail.com"
+    },
+    {
+      "name": "Brodan",
+      "email": "christopher.hranj@gmail.com"
+    },
+    {
+      "name": "Ankur Parihar",
+      "email": "ankur.github@gmail.com"
+    },
+    {
+      "name": "Brahim Ait elhaj",
+      "email": "brahima@gmail.com"
+    },
+    {
+      "name": "Mart Jansink",
+      "email": "m.jansink@gmail.com"
+    },
+    {
+      "name": "Lachlan Newman",
+      "email": "lachnewman007@gmail.com"
+    },
+    {
+      "name": "Dennis Beatty",
+      "email": "dennis@dcbeatty.com"
+    },
+    {
+      "name": "Ingvar Stepanyan",
+      "email": "me@rreverser.com"
+    },
+    {
+      "name": "Don Denton",
+      "email": "don@happycollision.com"
+    },
+    {
+      "name": "Dmytro Tiapukhin",
+      "email": "cool.gegeg@gmail.com"
+    },
+    {
+      "name": "Florian Lefebvre",
+      "email": "contact@florian-lefebvre.dev"
+    }
+  ],
+  "dependencies": {
+    "semver": "^7.8.5",
+    "@img/colour": "^1.1.0",
+    "detect-libc": "^2.1.2"
+  },
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "icc": "^4.0.0",
+    "tsd": "^0.33.0",
+    "yauzl": "^3.4.0",
+    "emnapi": "^1.11.3",
+    "tar-fs": "^3.1.3",
+    "publint": "^0.3.24",
+    "node-gyp": "^12.4.0",
+    "@types/node": "*",
+    "exif-reader": "^2.0.3",
+    "@cpplint/cli": "^0.1.0",
+    "@biomejs/biome": "^2.5.14",
+    "node-addon-api": "^8.9.2",
+    "@emnapi/runtime": "^1.11.3",
+    "@img/sharp-libvips-dev": "1.3.4",
+    "@img/sharp-libvips-win32-x64": "1.3.4",
+    "@img/sharp-libvips-dev-wasm32": "1.3.4",
+    "@img/sharp-libvips-win32-ia32": "1.3.4",
+    "@img/sharp-libvips-win32-arm64": "1.3.4"
+  },
+  "optionalDependencies": {
+    "@img/sharp-linux-arm": "0.35.5",
+    "@img/sharp-linux-x64": "0.35.5",
+    "@img/sharp-win32-x64": "0.35.5",
+    "@img/sharp-darwin-x64": "0.35.5",
+    "@img/sharp-win32-ia32": "0.35.5",
+    "@img/sharp-linux-arm64": "0.35.5",
+    "@img/sharp-linux-ppc64": "0.35.5",
+    "@img/sharp-linux-s390x": "0.35.5",
+    "@img/sharp-win32-arm64": "0.35.5",
+    "@img/sharp-darwin-arm64": "0.35.5",
+    "@img/sharp-linux-riscv64": "0.35.5",
+    "@img/sharp-linuxmusl-x64": "0.35.5",
+    "@img/sharp-freebsd-wasm32": "0.35.5",
+    "@img/sharp-linuxmusl-arm64": "0.35.5",
+    "@img/sharp-libvips-linux-arm": "1.3.4",
+    "@img/sharp-libvips-linux-x64": "1.3.4",
+    "@img/sharp-libvips-darwin-x64": "1.3.4",
+    "@img/sharp-libvips-linux-arm64": "1.3.4",
+    "@img/sharp-libvips-linux-ppc64": "1.3.4",
+    "@img/sharp-libvips-linux-s390x": "1.3.4",
+    "@img/sharp-libvips-darwin-arm64": "1.3.4",
+    "@img/sharp-webcontainers-wasm32": "0.35.5",
+    "@img/sharp-libvips-linux-riscv64": "1.3.4",
+    "@img/sharp-libvips-linuxmusl-x64": "1.3.4",
+    "@img/sharp-libvips-linuxmusl-arm64": "1.3.4"
+  },
+  "peerDependenciesMeta": {
+    "@types/node": {
+      "optional": true
+    }
+  },
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages-npm-production",
+    "tmp": "tmp/sharp_0.35.5_1790516784407_0.846551761561793"
+  },
+  "versions": [
+    "0.0.1",
+    "0.0.2",
+    "0.0.3",
+    "0.0.4",
+    "0.0.5",
+    "0.0.6",
+    "0.0.7",
+    "0.0.8",
+    "0.0.9",
+    "0.1.0",
+    "0.1.1",
+    "0.1.2",
+    "0.1.3",
+    "0.1.4",
+    "0.1.5",
+    "0.1.6",
+    "0.1.7",
+    "0.1.8",
+    "0.2.0",
+    "0.3.0",
+    "0.4.0",
+    "0.4.1",
+    "0.4.2",
+    "0.5.0",
+    "0.5.1",
+    "0.5.2",
+    "0.6.0",
+    "0.6.1",
+    "0.6.2",
+    "0.7.0",
+    "0.7.1",
+    "0.7.2",
+    "0.8.0",
+    "0.8.1",
+    "0.8.2",
+    "0.8.3",
+    "0.8.4",
+    "0.9.0",
+    "0.9.1",
+    "0.9.2",
+    "0.9.3",
+    "0.10.0",
+    "0.10.1",
+    "0.11.0",
+    "0.11.1",
+    "0.11.2",
+    "0.11.3",
+    "0.11.4",
+    "0.12.0",
+    "0.12.1",
+    "0.12.2",
+    "0.13.0",
+    "0.13.1",
+    "0.14.0",
+    "0.14.1",
+    "0.15.0",
+    "0.15.1",
+    "0.16.0",
+    "0.16.1",
+    "0.16.2",
+    "0.17.0",
+    "0.17.1",
+    "0.17.2",
+    "0.17.3",
+    "0.18.0",
+    "0.18.1",
+    "0.18.2",
+    "0.18.3",
+    "0.18.4",
+    "0.19.0",
+    "0.19.1",
+    "0.20.0",
+    "0.20.1",
+    "0.20.2",
+    "0.20.3",
+    "0.20.4",
+    "0.20.5",
+    "0.20.6",
+    "0.20.7",
+    "0.20.8",
+    "0.21.0",
+    "0.21.1",
+    "0.21.2",
+    "0.21.3",
+    "0.22.0",
+    "0.22.1",
+    "0.23.0",
+    "0.23.1",
+    "0.23.2",
+    "0.23.3",
+    "0.23.4",
+    "0.24.0",
+    "0.24.1",
+    "0.25.0",
+    "0.25.1",
+    "0.25.2",
+    "0.25.3",
+    "0.25.4",
+    "0.26.0",
+    "0.26.1",
+    "0.26.2",
+    "0.26.3",
+    "0.27.0",
+    "0.27.1",
+    "0.27.2",
+    "0.28.0",
+    "0.28.1",
+    "0.28.2",
+    "0.28.3",
+    "0.29.0",
+    "0.29.1",
+    "0.29.2",
+    "0.29.3",
+    "0.30.0",
+    "0.30.1",
+    "0.30.2",
+    "0.30.3",
+    "0.30.4",
+    "0.30.5",
+    "0.30.6",
+    "0.30.7",
+    "0.31.0",
+    "0.31.1",
+    "0.31.2",
+    "0.31.3",
+    "0.32.0",
+    "0.32.1",
+    "0.32.2",
+    "0.32.3",
+    "0.32.4",
+    "0.32.5",
+    "0.32.6",
+    "0.33.0-alpha.3",
+    "0.33.0-alpha.4",
+    "0.33.0-alpha.6",
+    "0.33.0-alpha.7",
+    "0.33.0-alpha.8",
+    "0.33.0-alpha.9",
+    "0.33.0-alpha.10",
+    "0.33.0-alpha.11",
+    "0.33.0-rc.2",
+    "0.33.0",
+    "0.33.1-rc.0",
+    "0.33.1-rc.2",
+    "0.33.1-rc.3",
+    "0.33.1",
+    "0.33.2-rc.0",
+    "0.33.2-rc.1",
+    "0.33.2",
+    "0.33.3-rc.0",
+    "0.33.3",
+    "0.33.4-rc.0",
+    "0.33.4",
+    "0.33.5-rc.0",
+    "0.33.5-rc.1",
+    "0.33.5",
+    "0.34.0-rc.0",
+    "0.34.0-rc.1",
+    "0.34.0",
+    "0.34.1",
+    "0.34.2-rc.0",
+    "0.34.2",
+    "0.34.3-rc.0",
+    "0.34.3-rc.1",
+    "0.34.3",
+    "0.34.4-rc.3",
+    "0.34.4-rc.4",
+    "0.34.4",
+    "0.34.5-rc.0",
+    "0.34.5-rc.1",
+    "0.34.5",
+    "0.35.0-rc.0",
+    "0.35.0-rc.2",
+    "0.35.0-rc.3",
+    "0.35.0-rc.4",
+    "0.35.0-rc.5",
+    "0.35.0-rc.6",
+    "0.35.0-rc.8",
+    "0.35.0",
+    "0.35.1-rc.0",
+    "0.35.1-rc.1",
+    "0.35.1",
+    "0.35.2-rc.0",
+    "0.35.2-rc.1",
+    "0.35.2-rc.2",
+    "0.35.2",
+    "0.35.3-rc.1",
+    "0.35.3-rc.2",
+    "0.35.3",
+    "0.35.4-rc.0",
+    "0.35.4",
+    "0.35.5-rc.0",
+    "0.35.5-rc.1",
+    "0.35.5"
+  ],
+  "versionsCount": 194,
+  "depsCount": 3,
+  "distTags": {
+    "latest": "0.35.5",
+    "next": "0.35.5-rc.1"
+  },
+  "dist-tags": {
+    "latest": "0.35.5",
+    "next": "0.35.5-rc.1"
+  },
+  "time": {
+    "created": "2013-08-20T23:01:17.993Z",
+    "modified": "2026-09-27T13:46:24.838Z",
+    "0.0.1": "2013-08-20T23:01:27.754Z",
+    "0.0.2": "2013-08-26T15:16:20.143Z",
+    "0.0.3": "2013-09-23T20:50:22.014Z",
+    "0.0.4": "2013-10-23T21:19:47.414Z",
+    "0.0.5": "2013-10-26T15:41:34.500Z",
+    "0.0.6": "2013-11-23T22:11:44.019Z",
+    "0.0.7": "2014-01-11T22:18:05.325Z",
+    "0.0.8": "2014-01-15T22:11:37.844Z",
+    "0.0.9": "2014-01-16T22:54:05.924Z",
+    "0.1.0": "2014-01-19T21:44:08.483Z",
+    "0.1.1": "2014-01-21T22:53:27.006Z",
+    "0.1.2": "2014-02-01T23:02:09.431Z",
+    "0.1.3": "2014-02-03T23:23:17.497Z",
+    "0.1.4": "2014-02-06T22:35:31.536Z",
+    "0.1.5": "2014-02-12T22:40:15.877Z",
+    "0.1.6": "2014-02-22T21:54:40.347Z",
+    "0.1.7": "2014-02-25T23:34:32.654Z",
+    "0.1.8": "2014-03-03T23:27:15.893Z",
+    "0.2.0": "2014-03-09T21:55:34.514Z",
+    "0.3.0": "2014-04-16T21:13:14.629Z",
+    "0.4.0": "2014-05-19T21:53:31.971Z",
+    "0.4.1": "2014-05-21T23:34:37.388Z",
+    "0.4.2": "2014-05-26T08:40:34.978Z",
+    "0.5.0": "2014-06-02T21:20:59.955Z",
+    "0.5.1": "2014-06-18T20:59:45.610Z",
+    "0.5.2": "2014-07-13T22:07:16.600Z",
+    "0.6.0": "2014-08-22T16:07:26.319Z",
+    "0.6.1": "2014-08-25T17:26:05.934Z",
+    "0.6.2": "2014-09-12T18:43:14.357Z",
+    "0.7.0": "2014-10-17T11:42:42.271Z",
+    "0.7.1": "2014-10-28T11:29:42.522Z",
+    "0.7.2": "2014-11-11T18:56:28.834Z",
+    "0.8.0": "2014-11-17T13:30:11.359Z",
+    "0.8.1": "2014-11-26T15:35:54.821Z",
+    "0.8.2": "2014-12-11T16:41:35.399Z",
+    "0.8.3": "2014-12-15T16:13:01.649Z",
+    "0.8.4": "2015-01-15T15:44:17.664Z",
+    "0.9.0": "2015-01-23T16:49:11.949Z",
+    "0.9.1": "2015-01-29T23:05:10.693Z",
+    "0.9.2": "2015-02-16T11:35:13.677Z",
+    "0.9.3": "2015-02-27T15:51:49.760Z",
+    "0.10.0": "2015-04-23T13:51:54.101Z",
+    "0.10.1": "2015-06-01T13:08:13.503Z",
+    "0.11.0": "2015-07-15T15:11:51.767Z",
+    "0.11.1": "2015-08-12T09:34:52.776Z",
+    "0.11.2": "2015-08-28T10:17:29.587Z",
+    "0.11.3": "2015-09-08T18:50:04.692Z",
+    "0.11.4": "2015-11-05T21:57:32.914Z",
+    "0.12.0": "2015-11-23T13:19:03.204Z",
+    "0.12.1": "2015-12-12T11:11:33.514Z",
+    "0.12.2": "2016-01-16T12:01:45.235Z",
+    "0.13.0": "2016-02-15T19:50:29.347Z",
+    "0.13.1": "2016-02-27T17:24:08.043Z",
+    "0.14.0": "2016-04-02T12:37:34.893Z",
+    "0.14.1": "2016-04-16T20:35:42.716Z",
+    "0.15.0": "2016-05-21T15:09:38.274Z",
+    "0.15.1": "2016-07-12T15:34:15.220Z",
+    "0.16.0": "2016-08-18T08:31:10.635Z",
+    "0.16.1": "2016-10-13T12:58:36.316Z",
+    "0.16.2": "2016-10-22T17:55:36.877Z",
+    "0.17.0": "2016-12-11T19:32:09.050Z",
+    "0.17.1": "2017-01-15T15:50:39.280Z",
+    "0.17.2": "2017-02-11T10:48:13.301Z",
+    "0.17.3": "2017-04-01T09:33:57.005Z",
+    "0.18.0": "2017-05-30T07:37:28.548Z",
+    "0.18.1": "2017-05-30T20:05:16.823Z",
+    "0.18.2": "2017-07-01T09:48:40.569Z",
+    "0.18.3": "2017-09-13T11:14:35.020Z",
+    "0.18.4": "2017-09-18T19:55:52.389Z",
+    "0.19.0": "2018-01-11T23:24:54.301Z",
+    "0.19.1": "2018-02-24T10:33:02.782Z",
+    "0.20.0": "2018-03-05T09:20:08.497Z",
+    "0.20.1": "2018-03-17T14:46:32.561Z",
+    "0.20.2": "2018-04-28T18:16:26.968Z",
+    "0.20.3": "2018-05-29T08:12:42.727Z",
+    "0.20.4": "2018-06-20T08:28:20.408Z",
+    "0.20.5": "2018-06-27T08:52:45.927Z",
+    "0.20.6": "2018-08-20T11:12:41.883Z",
+    "0.20.7": "2018-08-21T11:16:21.867Z",
+    "0.20.8": "2018-09-05T08:11:08.841Z",
+    "0.21.0": "2018-10-04T13:00:18.861Z",
+    "0.21.1": "2018-12-07T20:15:20.951Z",
+    "0.21.2": "2019-01-13T10:49:29.781Z",
+    "0.21.3": "2019-01-19T15:10:47.370Z",
+    "0.22.0": "2019-03-18T23:59:38.512Z",
+    "0.22.1": "2019-04-25T19:31:10.756Z",
+    "0.23.0": "2019-07-29T14:12:21.343Z",
+    "0.23.1": "2019-09-26T10:20:14.617Z",
+    "0.23.2": "2019-10-28T19:44:21.133Z",
+    "0.23.3": "2019-11-17T16:09:13.843Z",
+    "0.23.4": "2019-12-05T10:33:18.327Z",
+    "0.24.0": "2020-01-16T20:17:01.819Z",
+    "0.24.1": "2020-02-15T14:38:44.594Z",
+    "0.25.0": "2020-03-07T14:29:49.108Z",
+    "0.25.1": "2020-03-07T22:39:34.684Z",
+    "0.25.2": "2020-03-20T21:09:05.716Z",
+    "0.25.3": "2020-05-17T13:47:11.324Z",
+    "0.25.4": "2020-06-12T15:44:42.263Z",
+    "0.26.0": "2020-08-25T18:57:54.377Z",
+    "0.26.1": "2020-09-20T09:12:07.914Z",
+    "0.26.2": "2020-10-14T18:36:48.932Z",
+    "0.26.3": "2020-11-16T21:30:51.865Z",
+    "0.27.0": "2020-12-22T12:19:37.034Z",
+    "0.27.1": "2021-01-27T20:21:11.663Z",
+    "0.27.2": "2021-02-22T21:08:24.881Z",
+    "0.28.0": "2021-03-29T14:02:41.901Z",
+    "0.28.1": "2021-04-05T12:26:42.142Z",
+    "0.28.2": "2021-05-10T17:22:06.956Z",
+    "0.28.3": "2021-05-24T15:54:01.326Z",
+    "0.29.0": "2021-08-17T14:24:51.658Z",
+    "0.29.1": "2021-09-07T10:01:26.818Z",
+    "0.29.2": "2021-10-21T09:01:17.642Z",
+    "0.29.3": "2021-11-14T12:08:57.815Z",
+    "0.30.0": "2022-02-01T21:13:31.743Z",
+    "0.30.1": "2022-02-09T17:56:14.324Z",
+    "0.30.2": "2022-03-02T11:35:26.996Z",
+    "0.30.3": "2022-03-14T12:10:48.426Z",
+    "0.30.4": "2022-04-18T09:26:15.811Z",
+    "0.30.5": "2022-05-23T11:38:48.719Z",
+    "0.30.6": "2022-05-30T08:10:27.723Z",
+    "0.30.7": "2022-06-22T16:11:20.815Z",
+    "0.31.0": "2022-09-05T09:33:44.441Z",
+    "0.31.1": "2022-09-29T14:17:31.990Z",
+    "0.31.2": "2022-11-04T10:12:44.965Z",
+    "0.31.3": "2022-12-21T16:09:59.338Z",
+    "0.32.0": "2023-03-24T17:40:16.019Z",
+    "0.32.1": "2023-04-27T09:14:14.382Z",
+    "0.32.2": "2023-07-11T11:25:04.817Z",
+    "0.32.3": "2023-07-14T10:28:47.472Z",
+    "0.32.4": "2023-07-21T11:04:48.317Z",
+    "0.32.5": "2023-08-15T19:44:54.647Z",
+    "0.32.6": "2023-09-18T19:55:32.745Z",
+    "0.33.0-alpha.3": "2023-10-06T10:37:08.939Z",
+    "0.33.0-alpha.4": "2023-10-06T16:10:52.883Z",
+    "0.33.0-alpha.6": "2023-10-09T11:13:24.431Z",
+    "0.33.0-alpha.7": "2023-10-10T14:47:40.948Z",
+    "0.33.0-alpha.8": "2023-10-10T20:32:07.096Z",
+    "0.33.0-alpha.9": "2023-10-13T14:24:13.119Z",
+    "0.33.0-alpha.10": "2023-11-04T20:26:37.613Z",
+    "0.33.0-alpha.11": "2023-11-10T09:18:32.376Z",
+    "0.33.0-rc.2": "2023-11-22T12:46:53.590Z",
+    "0.33.0": "2023-11-29T12:58:12.464Z",
+    "0.33.1-rc.0": "2023-12-12T09:38:46.233Z",
+    "0.33.1-rc.2": "2023-12-17T18:49:54.457Z",
+    "0.33.1-rc.3": "2023-12-17T19:54:25.540Z",
+    "0.33.1": "2023-12-17T20:36:47.429Z",
+    "0.33.2-rc.0": "2024-01-11T17:08:21.210Z",
+    "0.33.2-rc.1": "2024-01-12T10:27:43.919Z",
+    "0.33.2": "2024-01-12T11:14:26.040Z",
+    "0.33.3-rc.0": "2024-03-22T15:26:35.619Z",
+    "0.33.3": "2024-03-23T12:25:24.118Z",
+    "0.33.4-rc.0": "2024-05-16T11:41:21.664Z",
+    "0.33.4": "2024-05-16T12:12:09.734Z",
+    "0.33.5-rc.0": "2024-08-13T16:33:21.467Z",
+    "0.33.5-rc.1": "2024-08-14T08:31:28.695Z",
+    "0.33.5": "2024-08-16T13:11:48.811Z",
+    "0.34.0-rc.0": "2025-03-16T09:09:05.617Z",
+    "0.34.0-rc.1": "2025-04-03T21:01:54.507Z",
+    "0.34.0": "2025-04-04T14:05:58.217Z",
+    "0.34.1": "2025-04-07T20:18:51.978Z",
+    "0.34.2-rc.0": "2025-05-14T12:52:43.590Z",
+    "0.34.2": "2025-05-20T14:09:59.418Z",
+    "0.34.3-rc.0": "2025-06-14T21:18:54.436Z",
+    "0.34.3-rc.1": "2025-07-09T20:42:20.259Z",
+    "0.34.3": "2025-07-10T07:59:00.726Z",
+    "0.34.4-rc.3": "2025-09-15T10:33:50.544Z",
+    "0.34.4-rc.4": "2025-09-17T12:28:09.031Z",
+    "0.34.4": "2025-09-17T13:20:20.737Z",
+    "0.34.5-rc.0": "2025-11-05T16:00:28.201Z",
+    "0.34.5-rc.1": "2025-11-06T11:47:29.564Z",
+    "0.34.5": "2025-11-06T14:19:40.989Z",
+    "0.35.0-rc.0": "2026-01-02T11:28:35.158Z",
+    "0.35.0-rc.2": "2026-04-04T22:02:04.452Z",
+    "0.35.0-rc.3": "2026-04-19T20:41:54.682Z",
+    "0.35.0-rc.4": "2026-04-19T21:50:02.504Z",
+    "0.35.0-rc.5": "2026-04-21T21:10:04.906Z",
+    "0.35.0-rc.6": "2026-06-07T09:48:33.593Z",
+    "0.35.0-rc.8": "2026-06-10T13:54:57.394Z",
+    "0.35.0": "2026-06-10T17:07:14.319Z",
+    "0.35.1-rc.0": "2026-06-11T08:01:50.341Z",
+    "0.35.1-rc.1": "2026-06-11T12:47:17.729Z",
+    "0.35.1": "2026-06-11T17:10:33.369Z",
+    "0.35.2-rc.0": "2026-06-16T16:09:54.811Z",
+    "0.35.2-rc.1": "2026-06-18T09:12:32.922Z",
+    "0.35.2-rc.2": "2026-06-18T10:16:31.890Z",
+    "0.35.2": "2026-06-19T13:47:27.073Z",
+    "0.35.3-rc.1": "2026-06-27T12:14:01.340Z",
+    "0.35.3-rc.2": "2026-06-30T12:02:30.745Z",
+    "0.35.3": "2026-07-01T11:28:34.077Z",
+    "0.35.4-rc.0": "2026-08-25T23:09:23.804Z",
+    "0.35.4": "2026-08-26T09:42:27.903Z",
+    "0.35.5-rc.0": "2026-09-22T14:24:36.754Z",
+    "0.35.5-rc.1": "2026-09-27T08:58:51.329Z",
+    "0.35.5": "2026-09-27T13:46:24.509Z"
+  }
+}

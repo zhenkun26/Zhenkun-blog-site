@@ -1,0 +1,18 @@
+{
+  "status": "PASS_METADATA_AND_STATIC_HASHES",
+  "officialPackage": "http-cache-semantics4.2.0",
+  "registry": "https://registry.npmjs.org",
+  "officialTarball": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.2.0.tgz",
+  "officialIntegrity": "sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==",
+  "lockIntegrityMatches": true,
+  "upstreamSourceSha256": "01b7d66c854b2fe53ac05c98feb6e0d64722ab8898a778e2d2426a8b468d178f",
+  "approvedCandidateSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89",
+  "license": "BSD-2-Clause",
+  "licenseSha256": "ab868ad5a2ef5068560d9cd3b2180ec63c140bb4c5cae1ba779d300a0ac74fa3",
+  "review": "Supplied independent AstraHIGH staticv2PASS, dynamicgateonly;v1/generatornotexecuted",
+  "designInputsUnchanged": true,
+  "diagnostics": [
+    "Ordinarymetadatafetchfailed;normalapprovedsame-querysucceeded",
+    "pnpm patch prepare attempted twice before modules install:ERR_PNPM_PATCH_NO_LOCKFILE,notpermissionreject;parentnotifiedandaffectedgatepaused"
+  ]
+}

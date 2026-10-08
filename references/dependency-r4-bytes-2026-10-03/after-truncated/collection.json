@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "executionMode": "INJECTED_OFFLINE",
+  "registry": "https://registry.npmjs.org",
+  "node": "v24.20.0",
+  "expectedHead": "1ffbe4c99f0a48c8d7e70498c7f8bb921eb24435",
+  "startedAt": "2026-10-03T16:29:47.564Z",
+  "before": {
+    "head": "1ffbe4c99f0a48c8d7e70498c7f8bb921eb24435",
+    "trackedDirty": false,
+    "files": {
+      "package.json": "d07c65f66bc29e18af0f69ffd7c11c37b87d722cb7f401b93fb9382ceb91decc",
+      "pnpm-lock.yaml": "6f4a61e19f5e118ea4636a11984ae52f24e11764d6fdade9cab3d3101fd4d002",
+      "pnpm-workspace.yaml": "5c5924aacc40422a63159eff52818bbb0a3c995bad8ab1b66e7ff503479778c5",
+      "scripts/zhenkun-security-policy.json": "94866e6b9ce8697b8b7f46a73ca0dac420218c18f7a040d65bf9c10ef57d9daa",
+      "scripts/zhenkun-security-audit.mjs": "8f2708c99ee469f2208710f9e07b02ef0801718fb8db5c0f914a85aa828bdda7",
+      "scripts/patches/http-cache-semantics@4.2.0.patch": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3"
+    }
+  },
+  "captures": {
+    "prod": {
+      "command": [
+        "pnpm",
+        "audit",
+        "--prod",
+        "--registry=https://registry.npmjs.org",
+        "--json"
+      ],
+      "startedAt": "2026-10-03T16:29:47.564Z",
+      "endedAt": "2026-10-03T16:29:47.585Z",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdoutSha256": "eed0eb1f664e53388c1f00a4a9ba9b8da60fe792af9eb5f6f4b5ee852a91f03f",
+      "stderrSha256": "7f526fe9768983c1207a7593427944c31271bf866ae79d6455327fc80bdbfec1",
+      "decodingErrors": [
+        "stdout",
+        "stderr"
+      ]
+    },
+    "full": {
+      "command": [
+        "pnpm",
+        "audit",
+        "--registry=https://registry.npmjs.org",
+        "--json"
+      ],
+      "startedAt": "2026-10-03T16:29:47.585Z",
+      "endedAt": "2026-10-03T16:29:47.607Z",
+      "exitCode": 0,
+      "signal": null,
+      "error": null,
+      "stdoutSha256": "eed0eb1f664e53388c1f00a4a9ba9b8da60fe792af9eb5f6f4b5ee852a91f03f",
+      "stderrSha256": "7f526fe9768983c1207a7593427944c31271bf866ae79d6455327fc80bdbfec1",
+      "decodingErrors": [
+        "stdout",
+        "stderr"
+      ]
+    }
+  },
+  "after": {
+    "head": "1ffbe4c99f0a48c8d7e70498c7f8bb921eb24435",
+    "trackedDirty": false,
+    "files": {
+      "package.json": "d07c65f66bc29e18af0f69ffd7c11c37b87d722cb7f401b93fb9382ceb91decc",
+      "pnpm-lock.yaml": "6f4a61e19f5e118ea4636a11984ae52f24e11764d6fdade9cab3d3101fd4d002",
+      "pnpm-workspace.yaml": "5c5924aacc40422a63159eff52818bbb0a3c995bad8ab1b66e7ff503479778c5",
+      "scripts/zhenkun-security-policy.json": "94866e6b9ce8697b8b7f46a73ca0dac420218c18f7a040d65bf9c10ef57d9daa",
+      "scripts/zhenkun-security-audit.mjs": "8f2708c99ee469f2208710f9e07b02ef0801718fb8db5c0f914a85aa828bdda7",
+      "scripts/patches/http-cache-semantics@4.2.0.patch": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3"
+    }
+  },
+  "endedAt": "2026-10-03T16:29:47.618Z"
+}

@@ -1,0 +1,1064 @@
+{
+  "schemaVersion": 1,
+  "state": "PREPARED_SOURCE_EQUIVALENT_PUBLIC_PROJECTION",
+  "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+  "parents": [
+    "d12dd98abf383d4c47bf9bf987516b953baf2904",
+    "f33ff92aaf8d03602202caf46da48f40f5676273"
+  ],
+  "identity": "Zhenkun <310396674+zhenkun26@users.noreply.github.com>",
+  "sourceFiles": 526,
+  "sourceManifestSha256": "70e93aa51bba051e00f0175ce5a9300db2b396ed618e3bff6d4ea822274e5182",
+  "projections": [
+    {
+      "path": "docs/DECISIONS.md",
+      "originalBlob": "6407867c73cc93a940df71cecbf323eccc9d389c",
+      "originalSha256": "47f3e7b40cb4db1185020b19862ae9c2421704a76f5bc641c5e80b54e29af1a2",
+      "publicBlob": "e4f9137659ca12a5521552c22bbc89a0315f663e",
+      "publicSha256": "b0591b48edcb627fcaf7b38c5fa0d72f2cb3de9f260fb421b83167712846ff6e",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "originalBlob": "56459b8733824f1266ab97a2ab8373d61ac9d25e",
+      "originalSha256": "e67d32f94a7e1192de07503356c31a18d2f58da6910d86d8c2bd638c7fa5696a",
+      "publicBlob": "eaac0ed499fbdb6c43dd83433ac6fc8dddd9c169",
+      "publicSha256": "d9aa31ed9d3f1ab699d050584e3f3ba8e3c15ecdb17d1ecf6f9e48f5b493e746",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/baseline-focused-reviewed.log",
+      "originalBlob": "144dc1f6be744b1c67c3788b001f0304b15d560e",
+      "originalSha256": "2ffdbf6e1c6cbcd6d81be810626f7ed64c12c7cdeaeac28dd13e0433a0971e4d",
+      "publicBlob": "38561d9408408248eaf8b551a33e5b9cdd956ec0",
+      "publicSha256": "0cbf30c2bc4b6f45db984ff19d066a84b3a098a344d4317ab37638bbb531fb79",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/baseline-focused.log",
+      "originalBlob": "a5e76727fff7d6b8c3dd79c32522a930fa263587",
+      "originalSha256": "43d4e575fe44237785a6877b26c3ab717abb11dceedcaf4acb7067c2f0061705",
+      "publicBlob": "5c729ea53ccfcc134459e79e59478d278446aa90",
+      "publicSha256": "2037acced1237200c7038bef307af1d5618ecdfa83ce3a8834e1bc9ce6983922",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/baseline-install-reviewed.log",
+      "originalBlob": "211427f78dc39c997ce910b43bb73c688d0a1610",
+      "originalSha256": "c1629ca8fd27e7d9ac3ebdceb96edf808509341a094cb1579384105dc7a18000",
+      "publicBlob": "c3a20fcfa11bcdcd4b62f63a4cdad004167f4e2a",
+      "publicSha256": "f2726f3d8fb541774160ece4f827531cee48dcaf9e83a7262374d0f90f3e70b2",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/baseline-install.log",
+      "originalBlob": "25cedcf14fa64142d1632b3c75f2b5b138b3e853",
+      "originalSha256": "33382bfe3e9888dcd5f2ab9dd64fc9f110e5e4f952cdf33d808596cb7ec9f6ec",
+      "publicBlob": "c7b1fb53522eb8605be1c339e0586a75fa17952c",
+      "publicSha256": "29563878de99dcdc731ff20137adf485c914965953ec4b0a0b9b098f154b8659",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/final-matrix-driver.log",
+      "originalBlob": "3997e0ce974d33e629a9be17b3333f956c666444",
+      "originalSha256": "d0d8e6d0800de41951964792a5fd9ff94ca516e6c7ceb9a4b431e95e11908c91",
+      "publicBlob": "1585d2c60b5466a5b2507e86f0a0133fb2bb398a",
+      "publicSha256": "309f9018f57d4980d7cb05a8879b0728a514d8f6126c52812543123f96598530",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/matrix/astro-check.log",
+      "originalBlob": "fc444eacfc439883efea67d35ae7777094230f81",
+      "originalSha256": "19887a1eb5edf34993d9722ed3b8b88517919323484338c5e6ef61a7b517e1e9",
+      "publicBlob": "a142015af977b7064bd6221bc9fbb67ac48168e3",
+      "publicSha256": "559ca56fff1c1c8b22f4c60304411ce3048bcf2a97177d8ac607928241af83b1",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/matrix/build-project.log",
+      "originalBlob": "e237a63b3bbc96989c896b9835d8bc41806eab95",
+      "originalSha256": "efefabd5eb7466d078a30429ec426b6c777404f29b6ff536f9b79d6ebe6cb20e",
+      "publicBlob": "da0dc187fb54db2313b791cc0ad82c8825f90f01",
+      "publicSha256": "61324824eb0cd6ef9e5bee0e33b003765bd6a6f7973c995c5754d012c0d6aad0",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/matrix/build-root.log",
+      "originalBlob": "0b192ccdb2c525cb3bfcd15642e5154d217d5b92",
+      "originalSha256": "839fcc3a6ba45019769e126ab9e96bfb7e0eed645695ec03e88a0aed2a348a8b",
+      "publicBlob": "a8b250b754b6147d82e487850a613417c6e7c9ae",
+      "publicSha256": "0546f7809eb98fc40ab0537c083545903972d44467bf9998b4e44c54307e8000",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/matrix/native.log",
+      "originalBlob": "efa6039e4677548f1eda5118c40e0af1e2bcb6e1",
+      "originalSha256": "b6b46218045e33d577d801cb28f5e1765152e8969a8a5222a9ccc2e22b17555c",
+      "publicBlob": "b1485e95ee147df2457f9038efba88c77447bc08",
+      "publicSha256": "42913309ea5e3c21614ae438eb4e0d926a3dd90511ca87ac012eeaa3e9e0d68e",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/p2-before.log",
+      "originalBlob": "d354f6d8084dfdd9b0a42040ad7981550c745e41",
+      "originalSha256": "7258a24f02d345db0474cae9905cb374094b4590dbdf7dd425bc508f7e715d45",
+      "publicBlob": "8e569dc0c9087b6cf283e45176ae54032177bc71",
+      "publicSha256": "2a6dac56b74730a9712b7bef478b478079ff8e26084a7a446fc349facefeafed",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/receipt.json",
+      "originalBlob": "f4af3b74aab26ca9c705a08b844596047ba28249",
+      "originalSha256": "1bfbf7c4c750cde3eaf8c5859681bc433374ad9bf464c1946b68b65ee91f0e25",
+      "publicBlob": "9e4895eebb387ef486f613b87c0f1981f0682968",
+      "publicSha256": "ebe580a46e8faf87b631c68d95e7d7bd5c6947a67a6b0cd580e3c35cd8cc0bd0",
+      "privateProtectionFieldsOmitted": 1
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/report.md",
+      "originalBlob": "106b79287e7fed31a71614c0b20a807800a2a42f",
+      "originalSha256": "2254634f13e22adeab660189c8aa64c266c5f6a15feb5e18efc99535be82cdad",
+      "publicBlob": "7da08153b1c636d62295f30d1dccfc8b0713f72d",
+      "publicSha256": "1e0913ecc9ddfe40cfeae13a8c7825af3209009c089f17fff75ad5ef9793b5e1",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/security/repair-evidence.json",
+      "originalBlob": "2ec61102383556134721c3d469236a6a1c4bebc5",
+      "originalSha256": "32d0d2a14b1d1d00778825946e456b473592120665a6deaa4ebef9cbf0799bd9",
+      "publicBlob": "ada25cf5272de990ab916bc50fa4ab48b7cadaa5",
+      "publicSha256": "0c4c5c870738aaea18b660b4f4d1e81bb4a74d9d52097dbe73c3f419c04b1708",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/security/repair-generator-original.stdout.tap",
+      "originalBlob": "c5636b94c083e1ff9552f8bf0072f2a8a611411e",
+      "originalSha256": "eaf883883460a422b0e75d75af28f0bdec625794d86b468084f7d4e501e2e311",
+      "publicBlob": "6447d9717777f61108ea582a02cb842442006418",
+      "publicSha256": "802e21982d48c41449c51764b6c56c384bbedcf387e162f33de329b805611a10",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/final/security/repair-positive.stdout.tap",
+      "originalBlob": "28144a69fc98f105997cb36cbc97c46b6fced830",
+      "originalSha256": "b72da06a15a8c73fc51dec96b815127079c3a981dbeb99e01a730b3eb8cfbff1",
+      "publicBlob": "568aa1e1d86b1287419f88ee8eb5a59b47e154cf",
+      "publicSha256": "f6de2345c6139884fbb110b681b36694b187e6b0bbd545f47ebab0c0abc09c78",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/generator-original-negative.log",
+      "originalBlob": "0f5d3149f6b8454b27210f25fa1d03d0e7e3e27a",
+      "originalSha256": "7be7cc6728e9b07f052cfbb9da2359e2b251e359f3446696cd882372159b9292",
+      "publicBlob": "8330e14b4ee418f7ace570fc506e6b58d9d0a376",
+      "publicSha256": "29dd2f1f8cdc87935c64c57501812ea79217e76a8ac886f8b37a870562700d6d",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/graph-stop.json",
+      "originalBlob": "dd130818a099d947ce21d8c94ba8d86e2015cff5",
+      "originalSha256": "1eaeff0a5d8c413613ad77497d3b7b75fd127390abe61f40212d8a9f939d4ca1",
+      "publicBlob": "d44e025dc6fb2d7f6dacc21248a5379725c0945b",
+      "publicSha256": "e44d96bd0c93cfed408371906ef8b7ce1556aeb36140f7939a13391f64e39a5c",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/patch-prepare.log",
+      "originalBlob": "cda10415f2fdd9e9fd7dc03094d790569dbb240a",
+      "originalSha256": "0fdf64efae3b41889d545f657fd32ea07397057900909a46ada5efffb8cd4c6a",
+      "publicBlob": "527858fd5c12b6a83bbc59d78369e75f854cc79a",
+      "publicSha256": "46a7d991c303d290d0b58c6fe6be7608d71dcbad9c1f334d3ddbc09cc3657de8",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/receipt.json",
+      "originalBlob": "411274619c4fe7f6f52afc32169abb953ccfe06b",
+      "originalSha256": "2c58d5fd8fa07eb4af64f1699cbcaeb8a438592244d3134285c3821b6969c6d4",
+      "publicBlob": "5676d75628e36a42a290966f36ae26eb72c6333e",
+      "publicSha256": "b402615c80f3be3323afa45644a0ea459e260437242c900c0e89009ef1597575",
+      "privateProtectionFieldsOmitted": 1
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/report.md",
+      "originalBlob": "ef934eadfe55d1097c1ede9ac9fe3c3bc12ab9de",
+      "originalSha256": "90c0375f0d0a98069e932f53c5ecca10e3e6826ba0dc8ce8b622ed0067a81c18",
+      "publicBlob": "135610e9f13226e3324106d3f3e45b133534485e",
+      "publicSha256": "12445ee7a627374b3d4af9f079fc32b57931ab6c58abf4303c5d14e9a39ee571",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/resumed/corrected-frozen.ndjson",
+      "originalBlob": "4c0b9999e123b332fe97ed47651b561a344214b0",
+      "originalSha256": "a427253ba5e8ac267ce1052392e9f505c8d5c6b7b5f1b1f142666ae5fdb2f5cd",
+      "publicBlob": "2e0ee9e7b8b65c81df42361c73a2a422f5af06ca",
+      "publicSha256": "dc28bca11989429a3a0066066068caa9538e1bf7f03b2dde5bb981102d297f36",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/resumed/lock-correction.ndjson",
+      "originalBlob": "ff347a5d9f015d545a51a285201e92af47f7d6c7",
+      "originalSha256": "a6b5378c1271855790dccd81fa0079e919a9ab63d07237d93cb6cbcd9f84c433",
+      "publicBlob": "85a17f6279badcd1def671a44611a5cc0dfa455d",
+      "publicSha256": "4e7a015011d9663022d852ed73338b258db976eeaa0438dae64b95e1dd346a28",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/resumed/receipt.json",
+      "originalBlob": "e42410ee942b31ebc312aa7c59c4986cc621a735",
+      "originalSha256": "0c7b7e0c939b2c77ae263daeee70a948936da52477f486e2694095551913b10c",
+      "publicBlob": "4730555d348488374cb1c5f157485fd4daec3a7c",
+      "publicSha256": "99b89ac414ebbb6ea2180c11b9cd0d30c1f4943d830ebfc64645e836d3667139",
+      "privateProtectionFieldsOmitted": 1
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/resumed/repair-proof-dev/repair-evidence.json",
+      "originalBlob": "7185bd69efb992dbf382f07afe4ae87a5e278942",
+      "originalSha256": "89d694b392873a2270a6d993c0aa99c1af16cfbd7380f8e8b2f4dc8041c11234",
+      "publicBlob": "ca95080fa795be763375c9d7ed27e7bf1fb1555d",
+      "publicSha256": "87020c0e661c6a8b5fc682dffbf78cfb96100c27588fa981153d6888eb7ab054",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/resumed/repair-proof-dev/repair-positive.stdout.tap",
+      "originalBlob": "d104bcc3bc0bb384d4a2793837d5432e98aba311",
+      "originalSha256": "b96f2192bf8b44656cfec09201fe93c09ef911d5780e05a878fe401b848e5dcd",
+      "publicBlob": "391b827a311d68d01afca8ee993fe42c1c8c866a",
+      "publicSha256": "3bd46ecee58a651c2db9b73f4987b4f52c296b1698568ebe805cac96a9cb1333",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/resumed/repair-proof-v2/repair-evidence.json",
+      "originalBlob": "bfe164e965619002dc45c50a3cb900a06aec1e03",
+      "originalSha256": "e6a068e24e26915ad8386dc10612afdcdd358f7f7f919a96ee5b9af3b05cfe51",
+      "publicBlob": "868c954d9d7c74784b3a3fb4f45bbbf83bc91e49",
+      "publicSha256": "4ecffcda8e7d7afc69cb06c8b68e7e76a34edb7918a2c93b3d4d4349f201bf37",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/resumed/repair-proof-v2/repair-generator-original.stdout.tap",
+      "originalBlob": "85fc710ad13b28e7faec9be3be6ad454e975ac6f",
+      "originalSha256": "f7182890dfb7b6d899a9c6e9a0a2688f0ab19f6b68818a778c0d7c4ab455dc46",
+      "publicBlob": "3aeb2b9ea6905c814e076a2d898c258be205681d",
+      "publicSha256": "eddeb14c12c00c2e0997d70d72053f71950b370fdbcbbedc606d4d0065b587a8",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/resumed/repair-proof-v2/repair-positive.stdout.tap",
+      "originalBlob": "0f2d04e47e11b6d44d59475a988fab4ee6bd6448",
+      "originalSha256": "84a16d9a625def7795d0df13ddc368471934595d63e63421c80ad1ca56dfd32e",
+      "publicBlob": "d3a8bda3367256709bbe3e700120706eb0705c9c",
+      "publicSha256": "5cd49c11c43997566e977847a503ea7a351d6616a0739210e1ca8e00919cb605",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/resumed/resumed-final-focused.log",
+      "originalBlob": "8095cb08e0f0a96b67cf6537affe917277a8eb37",
+      "originalSha256": "45ecceea8a430267fc0c2892e6f3b93708877306aae4e63b820cb66a9537d7b5",
+      "publicBlob": "99e90ea4ca5eb037f9dc2b2308620b1f3d26aa16",
+      "publicSha256": "429325928098f212d86cd74554cb2e17a838133dc61cd2db5f872c5cbe5ee55a",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-final-2026-10-04/resumed/security-final-focused.log",
+      "originalBlob": "6e226c9f5c76d556fe7341d1caa3b63e1de87a5c",
+      "originalSha256": "6c5ab2484bc857054e09753dced7fb91ac124bcea736a80fb53f3399fe75f762",
+      "publicBlob": "f0bba701390a30f459f2c9fb0dc0e21bc12f0c44",
+      "publicSha256": "bcb99283367fb49ddc14d680f8df70ec4d7ab9c20f1772eed51caf0633315136",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/build-project.log",
+      "originalBlob": "6a9f5b5e4e8c13906639bfcd7c0f121b8fa54e02",
+      "originalSha256": "133e40cbcc43d44bef2e96dbc4a1a9d1c119ab8fd57759ac3b5458d9c2adfc64",
+      "publicBlob": "cdc86c6fdefac18604333fdcdffb41d9a86ac00a",
+      "publicSha256": "c05ecd8a3ede33c012ffdfc094e79cd4f1eda964f4a728eb8ceaba0a19527b32",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/build-root.log",
+      "originalBlob": "303b1bc75e2b8c10af8ec9dbbdae38e8f1488af2",
+      "originalSha256": "c596383636f65412bfc3393443fbae4bb4f59b80930098ad1614aa434ef75b9f",
+      "publicBlob": "94610d5f575206ed3c1d669ffa2cb986bc4ef607",
+      "publicSha256": "185029e57c45c701cf907e86a838c8c9c8c8406e0e6de72c66d8728384dfcb3e",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/cache-matrix-after-public-loader.log",
+      "originalBlob": "9ad81bf393938ef586b58a84dac2b0b20ba4d4e6",
+      "originalSha256": "33e94031961fd93686932002649d08b31a72c31c750e6ae60577e0eaa5179e67",
+      "publicBlob": "04411be14a5fda3dfca68e061043d8dc75da958f",
+      "publicSha256": "12136203963487d35359821dd68e8f8e09facd64d305465f5e572c0e710dd150",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/cache-matrix-clock-repaired.log",
+      "originalBlob": "95ebecce80f9b97ffe0d08b95033b6e6c8982e5a",
+      "originalSha256": "3afe2520662383b51633a78b0720214e7c295c33588de5a440b86b505c33c13f",
+      "publicBlob": "63910366dfbe2714234d59e20ef2b0d81afab649",
+      "publicSha256": "ccb6a07164aa19478b9616139a36036b80eacd4d8dbeee01ab04420174364245",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/cache-matrix-first.log",
+      "originalBlob": "752ab0b1f13478608be0b552a1da7d23c33dd739",
+      "originalSha256": "7b581ae1d90a7d4dec1a1a957e7a1216618ea5780f64ce11d702d0f0d6cd9bf5",
+      "publicBlob": "bf43c02e17e056f027f14e04bf3642476c9a0ac9",
+      "publicSha256": "d22bf8a17146870c0873388927256f6c9cb2f86d3aff914c4069b538b31824b5",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/check.log",
+      "originalBlob": "251c4894abc71375a877833283838c044468bed9",
+      "originalSha256": "fd9956c4a411e3918997b54ce343b7db66fabe474acc88bdd862da169df207e2",
+      "publicBlob": "25c228c57e5a3caec057ad7d6b94fdcc13b38eeb",
+      "publicSha256": "f6d71f7df78d69dd429a4baa374203dcc047508a67923e5f8181362da9c18bdc",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/design-v2/DESIGN.md",
+      "originalBlob": "587a5a02dad3be095c0cc9a360402587e5bc5894",
+      "originalSha256": "cbbf1889dda70b079240a98a2b1032ab6f7365b71db86eb5ea5436e976529a1e",
+      "publicBlob": "68a8742e5682dec08bfbb1a01e3cf9359fc5eece",
+      "publicSha256": "23b57603b66220372732ed5c6ec126b33ee6e37948398b2adf67bcc0a5e1a931",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/design-v2/manifest.json",
+      "originalBlob": "6a7eec4e5b9eb2c892fbc4dffe00eb078f882945",
+      "originalSha256": "95aed58ec748852b633fefff576f0a74a8bc9da6384e802c812de9021f891d7a",
+      "publicBlob": "3531ff142cba93aa2ff19d8fe40301e895bfc345",
+      "publicSha256": "95fc78fa0368dc6868a2f11ab8b387d014478b37671f770ede1c9ae3215d7465",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/graph-after-frozen.log",
+      "originalBlob": "d83890a26e5af23cb702dd2d8eb52eaf052b0ed7",
+      "originalSha256": "d89b010bd6244f8467d3bf1ac44277543d24dd561c1e5656bb265291b38e9e72",
+      "publicBlob": "bb576ac67fddc617222c9c77e404286f2d82a954",
+      "publicSha256": "d3be173aa5dd3ef3fe86158d7ea99058bc3b76220958566351967dd222d28ce3",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/graph-final.log",
+      "originalBlob": "d83890a26e5af23cb702dd2d8eb52eaf052b0ed7",
+      "originalSha256": "d89b010bd6244f8467d3bf1ac44277543d24dd561c1e5656bb265291b38e9e72",
+      "publicBlob": "bb576ac67fddc617222c9c77e404286f2d82a954",
+      "publicSha256": "d3be173aa5dd3ef3fe86158d7ea99058bc3b76220958566351967dd222d28ce3",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/graph-physical-diagnostic.stderr",
+      "originalBlob": "51caf47d1ce527963ec9887da29b2accc32c2ba6",
+      "originalSha256": "9763eb3af2ee1eda7f39302db6fa94cb23b84905f394a7a782a1d3835086f55e",
+      "publicBlob": "7b7050088edb6dee2da723fd7517d5146401d04f",
+      "publicSha256": "e41f8e807eb269b086aefe4d628676d94c445bc2787d873450c229362e850aac",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/graph-post-validation.log",
+      "originalBlob": "d83890a26e5af23cb702dd2d8eb52eaf052b0ed7",
+      "originalSha256": "d89b010bd6244f8467d3bf1ac44277543d24dd561c1e5656bb265291b38e9e72",
+      "publicBlob": "bb576ac67fddc617222c9c77e404286f2d82a954",
+      "publicSha256": "d3be173aa5dd3ef3fe86158d7ea99058bc3b76220958566351967dd222d28ce3",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/graph-verification.json",
+      "originalBlob": "d479d965f94cb220af8b51279b0985886e42a800",
+      "originalSha256": "d83859815b7a71db490f93fc1e8a947ac57fbe8c8aff7140ca12effddeccdafb",
+      "publicBlob": "f1afe40dc57194078924f7722087b62499e6fe4c",
+      "publicSha256": "08f69f1eea4473f246d733b264101a726d5845674b029a4ce71a50e06c6748ec",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/graph.stderr",
+      "originalBlob": "51caf47d1ce527963ec9887da29b2accc32c2ba6",
+      "originalSha256": "9763eb3af2ee1eda7f39302db6fa94cb23b84905f394a7a782a1d3835086f55e",
+      "publicBlob": "7b7050088edb6dee2da723fd7517d5146401d04f",
+      "publicSha256": "e41f8e807eb269b086aefe4d628676d94c445bc2787d873450c229362e850aac",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/install-base-approved.log",
+      "originalBlob": "c32528352ea4eb201f42ff9d2d80110d4c16fc5a",
+      "originalSha256": "83157840ec0ff99e148c5629967f754b576d67f54a90b6408ba1dc66c8a2cc02",
+      "publicBlob": "442ceb37172c668210c0b62206a9818591bd7ae0",
+      "publicSha256": "0ee919220263f347cc99dc07cacae564ff8e794da332134ca84a7581db441ecb",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/install-base-normal.log",
+      "originalBlob": "25cedcf14fa64142d1632b3c75f2b5b138b3e853",
+      "originalSha256": "33382bfe3e9888dcd5f2ab9dd64fc9f110e5e4f952cdf33d808596cb7ec9f6ec",
+      "publicBlob": "c7b1fb53522eb8605be1c339e0586a75fa17952c",
+      "publicSha256": "29563878de99dcdc731ff20137adf485c914965953ec4b0a0b9b098f154b8659",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/native-all.log",
+      "originalBlob": "94e990f027ae0e8d93d44cbaa0e69e7817580e88",
+      "originalSha256": "1b82a4123705d3c382e18e2929cb9b7c40f54c8aceab49f629b523d640b16b5e",
+      "publicBlob": "111a9a77bdfb2099242f0eea738422eb41341a1b",
+      "publicSha256": "f6ae5e6247f42556a9eb0d475f437488a2d69ebb88fe0837d8d921d2e8bec349",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/parent-api-proof.json",
+      "originalBlob": "041bcbc4574b8788dba581f468920cfa87112723",
+      "originalSha256": "e915c74810e212f5fad16758affd14c2f64b6c23569cd93ae3a79b082a9fcb0a",
+      "publicBlob": "22b4abb913dd2dd5c2a8403ad92d7552f311e3b6",
+      "publicSha256": "72247adf90521185414ebe4214281d80939876cab865c9502441028c4eb73089",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/parent-api.log",
+      "originalBlob": "15563c2c978ce6d7c6bb1d364198769f7349a9d9",
+      "originalSha256": "e56a74aa8254bc40f9ddf0bfd60c308f52fb8fa76733d69b0fee0da9997cfed7",
+      "publicBlob": "6ddf1faf4c5e6b9d0862dfacea59c12f2f02e38f",
+      "publicSha256": "e5a7d61bf6eea4687bbfffb6618524c1b0f94f515f4378dda37bc5492fa88b4f",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/patch-commit-normal.log",
+      "originalBlob": "ee64b1748402b921bc2d85c7dca4d781bbea3784",
+      "originalSha256": "83b4f75ee17e5a097d6e318b46ce37a16755bb1e6e588ba89e466db2efb81a48",
+      "publicBlob": "f68155c3098429a06c43d1f423836d61c7fcac73",
+      "publicSha256": "fbc2d321cc5af1326f55f431f23e6e1a3574e6062540a076b630d6563d2d3ae7",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/patch-prepare-after-install.log",
+      "originalBlob": "682191a7ae976ab80dd1f106fe9ceccf64a100a0",
+      "originalSha256": "c012fd53f1c6e1b83c14bb980bb732da487e1779d30619c731f5a6f57350d6c0",
+      "publicBlob": "285daf4b56a87c13522cfc3aa3ae51ba6c3a8e02",
+      "publicSha256": "8f80c965bb62ce530dcb2071529c8e771d3281f822a62743adca3ea660e7ca78",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/patch-prepare-store-approved.log",
+      "originalBlob": "bc917fdcd86d4bacb78511456042d94d84aa156a",
+      "originalSha256": "ddb85f560538d87d3dc8ca8681c65cd28080cb8d0e907c8b3e0e19ffb9abfc4c",
+      "publicBlob": "39ceb70e4e56ea747dddc5abda054fecac46c33a",
+      "publicSha256": "36523136f3d64bdd782cd7b32126a8f07507e6196007bee9067908e7014bcb6c",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/protection-before.json",
+      "originalBlob": "233344298761bf47c25dc492703e8750677d5708",
+      "originalSha256": "f161ce97665f71815e59df03755f4b16399de213ed44a80eabaf3a8beecf75ba",
+      "publicBlob": "eb1762804dbd550b469798ad466f2ddc4bbb77df",
+      "publicSha256": "502bfb9a122c8f263690ce6cefdb6fb703ab87c4e84f4dcad8d9dea3f00857fc",
+      "privateProtectionFieldsOmitted": 5
+    },
+    {
+      "path": "references/dependency-cache-patch-2026-10-03/protection-final.json",
+      "originalBlob": "085529326a368327760e93297a728bedfe31de35",
+      "originalSha256": "444d21e8a68027505f98c7d01d488a1ad2e8d1205acbadbf01f97471ec62d577",
+      "publicBlob": "bba15e7ecf3f7bdd2fee6df6e0975049c014093a",
+      "publicSha256": "82913070a1be5234734141870dcf4563d43e58a88e32842b5c09bf57f941c855",
+      "privateProtectionFieldsOmitted": 5
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/artifact-manifests.json",
+      "originalBlob": "1d7a604a610f436b2de868e554611f2652f074d8",
+      "originalSha256": "cc0cd23b601b79a0202e6ac9bacb98656f5f2292f87e694c1cd0c2d0d88e8d98",
+      "publicBlob": "3e2e47f01564946ef4237e991a84bdb25dac41f2",
+      "publicSha256": "3571e388d1b87dfb5c80f73cc929acc4bfa5514fa547673b8ae58405b8cb4471",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/build-project.log",
+      "originalBlob": "e13f7eb1ede7ee992531343c5f86a0b9f0e84c75",
+      "originalSha256": "b349a2355f030bbe5ddff57859725d4224471bd449afff97f072a0200aff52fc",
+      "publicBlob": "6a1185540120befed89041ec7e32db0e3d6b5c94",
+      "publicSha256": "29809961314f94ddc34b2bfc0964794b4a6a649b5ac9d3a717f7c241548f129a",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/build-root.log",
+      "originalBlob": "589f2f26a81240a4cf51b462491ba1181715f0da",
+      "originalSha256": "cf31277ecbd005a652e48c401631a9dad1b6266e536b72914a5a13d769e86e03",
+      "publicBlob": "ea5e5410098d695ff8b5c82651b8893274e1e7f5",
+      "publicSha256": "be217c66a53fc241bb62cc237ad5465c25590004ac1c72187ff42733878392f2",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/check.log",
+      "originalBlob": "2dfa16fc42e544d557e0e2c732be858d609e349c",
+      "originalSha256": "d216041db8b60bf3d7dcd23fc3514bb6edbfe4e08dec028f119f7f03a78d9070",
+      "publicBlob": "930b8aff1d0e5fcca28e63ad74d70551c5950bb7",
+      "publicSha256": "354c9bae133239321fd7b39be68da40cfa02fe142af03b8e7408fbaa90093cbd",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/install.log",
+      "originalBlob": "a5d6597a5729d45ecfd43c2638b1678bfc0eab43",
+      "originalSha256": "46fcef6107d190e2f4df5db9e114ab0e34cbfcd8dedd67caf7a2aac6683df2ff",
+      "publicBlob": "c65144e66bc9367bc1d466f01b7b5f46faa99b31",
+      "publicSha256": "34cec5693e34332f5c8c5bbd1045b76995f1ad054215018b5ffe414744dc3b0c",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/native-all.log",
+      "originalBlob": "6bbce896dea6c2a14dbb3d11bbdf20213b17700c",
+      "originalSha256": "68bf924c1fa2e2eb834f9149e79c727c23f6f62448d83ca3fc5724bfdc4dfcb2",
+      "publicBlob": "318b1892cead6bd1f10b2a5071e31a91001d139a",
+      "publicSha256": "38f5d311461bd7f1a191022107dc2af6c8007172c15facdb2589b3ce65cc5679",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/parent-api-proof.json",
+      "originalBlob": "ee5535080a9d4adf569b2a1a95d6c2eb68150d81",
+      "originalSha256": "f3fcaa9d21a109aacfedeebd3872efe1769edf9d98769d61cba1de01bf3229bf",
+      "publicBlob": "168ab42003dbcf1260c48beb66d1f6e61c9301cd",
+      "publicSha256": "dd0c3862eabcb92ba8b92e5f8d960427e3bdaadbf48614a17861327a698b1fd1",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/parent-api.log",
+      "originalBlob": "0d85d35c067ea89befc02b86433a0a366dbfdd73",
+      "originalSha256": "246a1c3f42939c905fd0761ad3b46610d2d3d70e9da438f85aff78d47b9cacb6",
+      "publicBlob": "f16b9fe7eba6777e9cb0aa9ce8028f87bbadcbb0",
+      "publicSha256": "f58a08f00403de4faadbaed1138b2819c4b789dec30313ead01c289f9f7f20a3",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/protection-before.json",
+      "originalBlob": "446fef8d773752fc0040d296962c0087bfe9b9cd",
+      "originalSha256": "ee517717839494f156e00748de5b0d040eb6b585f9bee6f1da72824cbf7aaedd",
+      "publicBlob": "1e6dec378eb9b6a73225e2e100598a4633b44f1e",
+      "publicSha256": "024d8136563a08859115b3efb44b1f5edeaeb7e37affe088411f2c379e9e6bdf",
+      "privateProtectionFieldsOmitted": 4
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/protection-final.json",
+      "originalBlob": "cd6913ad750db2890bb5b82dcbfc229421deff87",
+      "originalSha256": "1a34988433d7772d0ae122adac652b1c7dab9a3bd90ec9ff96c4dbd236f9f022",
+      "publicBlob": "b176afe5cb6b0d6d4fba705e31b000425438270a",
+      "publicSha256": "2b4204ee3caaa2e9321c60e65c33c6dba57cfffe3dd6e16fe77b8beaec6947d5",
+      "privateProtectionFieldsOmitted": 4
+    },
+    {
+      "path": "references/dependency-peer-2026-10-03/report.md",
+      "originalBlob": "20272d7741324a3a7e3b7b5ba2f5b37e608b3a3d",
+      "originalSha256": "d383a1aaffd887ad273f2a14bcd51ebb6caa9c5dd4fcfb5a18b46ab08d2ff625",
+      "publicBlob": "f343e608acee90b2af2cd3bae309660a137e3ae0",
+      "publicSha256": "8b8391ae07d7fb620b570ebf32369d96fbfea67ca97f00fe793a45b4302856d1",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/approved-miniflare_5.20260828.0-alpha.json",
+      "originalBlob": "6aa7688838864364dbe9de9171478030e3518a32",
+      "originalSha256": "628a425d014a8023c7bd281fa46aeacc5513569fbef556b5c83d033e54ee32f7",
+      "publicBlob": "10fb643cd15b3eba09c792a2e4f9728f541a801c",
+      "publicSha256": "f542cbb5f5318abc95823fb9b48a706e3d4194662c632afa35171bf0c89b3ce5",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/artifact-manifests.json",
+      "originalBlob": "57c90487106c5fcc21181132b45d3bd99c2f2ed0",
+      "originalSha256": "b6aacb1f9dce5c22973789271fec0f9ddd7b1b404237d6a819464108559cf481",
+      "publicBlob": "5edc2b16a516e0e241f52096b5e681589c83e0b5",
+      "publicSha256": "6616221996e83e961a9cc359e6567c675ba15c4f0015158866e546bb1c0c527b",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/blocker-receipt.json",
+      "originalBlob": "cf27b1eae91465b5278cd6fb80e9284eae90b6bf",
+      "originalSha256": "9c44932e6602895d877171c0d27a157846971851ebb2c1cea5a76f2208d7011a",
+      "publicBlob": "ab5f0d8f884c35f538478c260babf977e4cd7788",
+      "publicSha256": "2b89049cef718b999f509a8ee799bfdfe90e44293ca6878e381d22aaee70eeb6",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/build-project.log",
+      "originalBlob": "64b4304fb457ec65df7005231230690008148b7b",
+      "originalSha256": "5244874808efd4ab8be71a32f48ac5edb3becaf7740ed6b25f29d8fcd92122c2",
+      "publicBlob": "9064b81e8bea56f08684b895ebdf1d1c4d9db885",
+      "publicSha256": "9f3fb591b86351456230bf67a9e56637aed4552cae83ea260eab738579dea347",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/build-root-initial.stderr",
+      "originalBlob": "7a80e2e765b69738234d1d9c5e16af6d3cb08798",
+      "originalSha256": "940580a8a1d7965b3d3a0888d3689ed0d9d69ad53318802928fca52d8cdd1ba5",
+      "publicBlob": "7f66c5de264f18cd12e4000f6513a1b9ffc44b10",
+      "publicSha256": "de95b16069ccfbc7bbc87a80d46dfdba8ae0e80e712487b39bfc3fda03693a70",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/build-root.log",
+      "originalBlob": "3ee2d07a0e34185f8c6d86f37bf32cd05c5953fa",
+      "originalSha256": "0c0019db0a429802e2af2a876774b1cc1eb0e88cb72596b1b336456cd2a0aaaf",
+      "publicBlob": "6fc6b93646ee8b8557ef1686fab7dda4b6a86353",
+      "publicSha256": "5ae5552cc843f65d0ad3ae54ac28e544a3f9e82d4120438346875b78c725cb73",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/cf-image-contract-probe.log",
+      "originalBlob": "3965b272a9096ad847ba500bc02a5bf878085576",
+      "originalSha256": "8093633c3d76babc7363304b414575322b5b84a6d1cfb7c5bebb50692741f8e1",
+      "publicBlob": "94fdf0f158870e744b3a1891b6ca571d3a5393c2",
+      "publicSha256": "fc1dabb16923f3226724ad983b3ce6b32b7680dc37d37083d0920ab3d8601c7a",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/check.log",
+      "originalBlob": "48b948c42e7f99a830576ac08d80ab265ca570ec",
+      "originalSha256": "c543cd4752f09a97d6b3d196241d676f8918a7e6507f0fa129b2bc4d74419187",
+      "publicBlob": "4856472f31fd7a46062a6a8abd82fcab91cfa2c8",
+      "publicSha256": "5e54c73c390b3f55219dda8ba25eb7f5321efdea3613995a59ebc201f496eb14",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/http-project-initial.stderr",
+      "originalBlob": "32800345e10bc75363b9a212d8fab69efae4bc2e",
+      "originalSha256": "e0f481afbd392245140837f27eeb6ce895cfed4f69c1f3cf3f3a75aa3e59ae6f",
+      "publicBlob": "df501b2d567f3a393709aa101c1e8b427ce7f340",
+      "publicSha256": "4b29a88fc18946e419fde9708c7903b2d1754c1c24270fc6790a877bf0e5e0cb",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/install.log",
+      "originalBlob": "779c690e2e6c0ba6add37cd3c9c177e9745b140c",
+      "originalSha256": "12a3f262cacb6876f5cb6c5fc09e333e4299f75f44215351c2f0aa062fc8a2d7",
+      "publicBlob": "a0fb2682f811392db2590e5c44481963c0d79d11",
+      "publicSha256": "6b78ad424538c0d7fff04f7ce9483248cedd2b0a7766064eeb41677eebfa0604",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/native-all.log",
+      "originalBlob": "bae10031a6743de889c0bac3783099fd8474199f",
+      "originalSha256": "ab2563deee364ab23782320d47d4b4b5eea04b063025839896a3d2a26f334e00",
+      "publicBlob": "c8dd49682768b104a1907dbc699f4ad7b49b3711",
+      "publicSha256": "01ca96da9a2426ccbc8f4130b30c5fefbad103ad34cc3f65372b6d28ff4a359f",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/native-parents-final-mac.json",
+      "originalBlob": "46c2b456466416b80dea626a2b5572b013389ca8",
+      "originalSha256": "d315bb15944dfd643c8c1751fe62f5ead292522f5b144af33c12b3e01ca0d363",
+      "publicBlob": "73079b5959f00558c36f9f27f5b53cd82870c75d",
+      "publicSha256": "523daa78411d376bc7380d6f717e81c2baff62622457108413ea9f5c0637ff67",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/native-parents-mac.json",
+      "originalBlob": "bb3cd9feef5ab3cb75527e97bcfd627d1d960ea5",
+      "originalSha256": "3eb0f7be38806e3daa47295d6a96c810d88c53175b4918f3b478a61bc4c82da3",
+      "publicBlob": "de2309857aa705ae0974e2bf43dd14380b6f10d3",
+      "publicSha256": "61dc5e7b4cad1e6496c70df7c9b5d492a59fc47c2c883e138ee00ecf445590eb",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/pending-confirmation-package.md",
+      "originalBlob": "3a42b8d39288a337b173875f3dc2f93059df9a10",
+      "originalSha256": "9c4c777c5d07a469ddd4d7c00e0c29c4887e37cd65fa36728fd7cabebabaaa58",
+      "publicBlob": "ea50c3f138769ba659dee150a685ded6dcaa849f",
+      "publicSha256": "443f5667c08e4d4a33d1cf7ad5c0e4f3100dbc2da31a2980c4c7fb721f86c7fb",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/protection-after.json",
+      "originalBlob": "0894cf5f20c591d1beacaf1384cac6ced1c1be44",
+      "originalSha256": "17217f17b0c5cbbd835d310595b6ee68ebfb9bd9c270d9b0d03524d38c604477",
+      "publicBlob": "ede9bf57bf0f3f250a601b970a29534d77204055",
+      "publicSha256": "f4ba4088fccd6638acab15f602bcf8479ed59fff1e851faef8faf039f84aec18",
+      "privateProtectionFieldsOmitted": 3
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/protection-before.json",
+      "originalBlob": "3b256ef8fe6aea43520ca5201afcebf1db5dafa1",
+      "originalSha256": "ce6887bc27b7a47c99d79bb20b9b5b901a58d7671604547d26ed0112c643df8d",
+      "publicBlob": "3f8649a5c23b8ed8efb90407eea45f0dfc03d870",
+      "publicSha256": "b0c7c2b7bcd60ceb547f742aa2bad74e832d499d6cdfcc5cbdeaa326a03b2002",
+      "privateProtectionFieldsOmitted": 3
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/protection-final.json",
+      "originalBlob": "0e87aa16f5ec11d891028f48e405d1db9cebb96a",
+      "originalSha256": "00d8af8c7a6d3f55a184c8b7a45b4f46a4aa817ffca963d7eb5908f4168f5a6c",
+      "publicBlob": "0e2f67dab6df70f749e87f86b00eaa14787c4d91",
+      "publicSha256": "59eb08c03e5496317a300ebc89506ffd0dd1fbaa18015af52f8d1bd834f0d500",
+      "privateProtectionFieldsOmitted": 3
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/r1-linux-blocked-at-955.md",
+      "originalBlob": "0abfb5bb1342001c4ff2f4a79650b4741b8b10d0",
+      "originalSha256": "a98ad584328f0a84fa6d91ce841db044a070dc77785d3b44230686299133006b",
+      "publicBlob": "f387833369f44d34735281371b77d18b6c0db58d",
+      "publicSha256": "3bc4f8d2ff7206f5add23f1877e764bec0cdf95a5422b5e520273948d0a39c2e",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/report.md",
+      "originalBlob": "bd61ea3e3b215073ece669480ead7d5aa133be6e",
+      "originalSha256": "b79e39625d18d0638b106aa118d0c3ef65c32ef3c0c999cf06b3ef27fd612dfa",
+      "publicBlob": "3388840a664cba56052da76775a3aead05eb4fa5",
+      "publicSha256": "d0b7a0b077bbbf88e3c2add69585ec7e2d50ad7ce2222458151cf7865b64c624",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/target-tests-initial.log",
+      "originalBlob": "64395c2391267c9b823fee56455b00c5eb9af594",
+      "originalSha256": "0d0fe3c4c30817dc281b3f2c51d36692cfdbedff6311caa09ef3e119fd274b64",
+      "publicBlob": "32d9f9c9f74a6835edc406083a03a72afd89e16e",
+      "publicSha256": "3a0b8444cef65a59d76ce002de87c6deded9626e0ad538b87aea0494ca6673f5",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/target-tests-runtime.log",
+      "originalBlob": "18f8744ae86414a7818bf8742a46ce9446acabe1",
+      "originalSha256": "53ef29f992b5e47a5179e24e59c79284327b61483355fa5bde46eb4463e097d6",
+      "publicBlob": "e1252fac3f19809f8aeb624224b5d5834e97ec91",
+      "publicSha256": "9953369d561b038bf9454139566c3ba1a619a5a66eada93d4e7fda963ebc2005",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r2-native-2026-10-03/target-tests-second.log",
+      "originalBlob": "cc192131c78c08ac7909e762eb15c36ca6d780b3",
+      "originalSha256": "88ff86be102142bbba64e0c6f6005af4b9b17524eeb1e3a3a2c99ceae3e16481",
+      "publicBlob": "989e3652cdd2a9db3ab0366e98b5544d2d1b8fc5",
+      "publicSha256": "a312917ec801a190143c9eb3d540e57039bdcb93ab6d0b6da3c02629f1d80c30",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r4-2026-10-03/check-correct-entry.log",
+      "originalBlob": "f9f43442eabbba45cf818e799469aa9594415a2f",
+      "originalSha256": "18416f3b001e2cc58f75a1f96a09de72ef94c6ac6963ccdef641600477054423",
+      "publicBlob": "bd48c667522a87e7d36e46d5c9c7473551de2ff2",
+      "publicSha256": "4288791f3d97fa1660f970971eb7df9c04c1e4ce01c466e9b27291ca5f94a732",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r4-2026-10-03/check.stderr",
+      "originalBlob": "fcbe739c526102e2867476c2177e94cf04bc93c6",
+      "originalSha256": "6f5478af87e9c0cbf66e3450d916f6667e0e3ed5c22b171ce6f3c9591a281024",
+      "publicBlob": "f4c6fd57579d96ef840c1ab237550b298f977528",
+      "publicSha256": "57f899f71d036d3423a6b9a8847b0a45f5f834749a982f985ea66c1a1767f9d2",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r4-2026-10-03/native-all.log",
+      "originalBlob": "b6ee7ab3d71c3398a6839e9a058e1947435d5aba",
+      "originalSha256": "ba59dbead211f98f1219ad730a569cfcfb168b5e43148b02f703adbc80d030ec",
+      "publicBlob": "f086ee1ac5337d4066c0df3ed38dcee81fc5d366",
+      "publicSha256": "ac1202058492a2582fc26d23a1c233326b0d3957fed9c17c5b6dc4d98c06b836",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r4-2026-10-03/native-final-ci-env.log",
+      "originalBlob": "19ebfd0ce38c8eee3deaa528800dafcc439e340c",
+      "originalSha256": "f6999eef1bc84f95238ffb0f2bac45410beebc4ce6c2519f20eb4fb0216c6545",
+      "publicBlob": "77d38f4cb94c0d833c265b22018fd1ce424564ea",
+      "publicSha256": "73e48798cb39ca604b1d08556664635c42fa086bf48c42132772c0752fe74e54",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r4-2026-10-03/protection-before.json",
+      "originalBlob": "1d714e449ca351742626ec6e48820806bb3a0514",
+      "originalSha256": "7bb3de275a22f85a207591e3979d7d346590fbc5b2cacae3ef4e9453e83a3d00",
+      "publicBlob": "07a79d2f737a336e48a8416d8d78bc641fa3e5f8",
+      "publicSha256": "c773cad52c32842dc80d5a16925825e80e794a32eaa32e58e965516c21b27a7c",
+      "privateProtectionFieldsOmitted": 6
+    },
+    {
+      "path": "references/dependency-r4-2026-10-03/protection-final.json",
+      "originalBlob": "d8dc8f18f7aadaae4ff7f41d51e9915fb3c54425",
+      "originalSha256": "5e87e12fcaf1d216322a5be303f4d57357da8d32140621af44d2a9f5b4bc81ee",
+      "publicBlob": "be02dd46136181f9db9b83be6d1385e8e364485d",
+      "publicSha256": "7a10f6508cc7bb702a83febf5c3edd6b4f6cf3a8e71e4098b7933cbd73be8248",
+      "privateProtectionFieldsOmitted": 6
+    },
+    {
+      "path": "references/dependency-r4-2026-10-03/report.md",
+      "originalBlob": "7858b29855be2af2bbca2ec44ecd3c1aafaeed31",
+      "originalSha256": "029424d5c4b1a42a7221f44bd1011afdaabbf3f61bc5487a15462952ab13690b",
+      "publicBlob": "5a60e6d533ed52dde72246860704161f81697454",
+      "publicSha256": "983009aa2ec1b210dc56772648089d180798d5329eab33f40feadeb58f56f317",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r4-2026-10-03/security-tests-initial.log",
+      "originalBlob": "230f2b2c28a933d7f10f5847d57a7d20630a5798",
+      "originalSha256": "3c594525361fbadeefb20de215cf53777d4824e929b63cc7586524e1e2d29e63",
+      "publicBlob": "b5cef563d7b67d98162b5c16d00f7c596109a186",
+      "publicSha256": "9ad0c66c8540739a3d7ebc099d35e8dc8df5d61e892faa15c45fc3e7b7d1533f",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r4-bytes-2026-10-03/native-all.log",
+      "originalBlob": "f25f7ce2f70f1fc0b83e187e879490d2676b2974",
+      "originalSha256": "320303edc4e9e538b0199ef7e2cd3dfeb0a8ab351c049e875c770a7b5f02440e",
+      "publicBlob": "0f476dbe2ecb22a8c8f780f47738aa90f6e4babc",
+      "publicSha256": "de6a4c1906dd3691f5b91bcec93b64e6ef1642a9b85016967ab7e50399918599",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/dependency-r4-bytes-2026-10-03/protection.json",
+      "originalBlob": "83fe27939310eccbaaa6721fa239fb1b2d847585",
+      "originalSha256": "c97bd7740a6d897807643832ac64ec7bc4f2cbea1238ba47be0b4db6e4cdcda0",
+      "publicBlob": "46ac50a71b161469c7938951cec484c9b734077f",
+      "publicSha256": "e131009cc1147a5cf7ced9e9dd422ae9b6d1720a2d7e08b16c5ac20b6ed8fc0f",
+      "privateProtectionFieldsOmitted": 6
+    },
+    {
+      "path": "references/dependency-r4-bytes-2026-10-03/tests-before-fix.log",
+      "originalBlob": "66a172bae1f92f54fd22ca2775d74cec9c506ddb",
+      "originalSha256": "699dec14821883d835fad631588005a1da9f85d1bc387f4a232f2f31b0d92908",
+      "publicBlob": "8e968816ade3de871dbe429aaf4f839b79ba4951",
+      "publicSha256": "d77948a9f1d3e360dbd46d468e8c30f922ed765d731fd85ebf40b9ec2454b243",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/home-construction-2026-10-05/summary.json",
+      "originalBlob": "26169132b0863ed31caa00a434abba718695f6bd",
+      "originalSha256": "269066a7c16b1d74c24a128dfe37419ed7a5d50e0f694ffc65e3d4721627a0f4",
+      "publicBlob": "cdb5961d43337e93090bc4a0489b03929aa218ef",
+      "publicSha256": "a9e16c3daa5f1b9ac9e86fd2a38ab4721365594bab50fcbd28d08b57cdc72079",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-audit-refresh-2026-10-08/security-live/repair-evidence.json",
+      "originalBlob": "3815a020ea40f4b4f398f816245cb6b266afe44f",
+      "originalSha256": "5aa8b7afc5fa872284df16d4f1b1b0132302beb8b669f141d1e919893ebbe011",
+      "publicBlob": "18c6a9754f6742781fae648676e1d72fb3edbd52",
+      "publicSha256": "ff1581a4b5faff0d9937bdc33d8b86ff3e7d17288d175307ce0c7c495b1a6dcd",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-audit-refresh-2026-10-08/security-live/repair-generator-original.stdout.tap",
+      "originalBlob": "750c64d007bf2f7330066b4244610dbaeae1f298",
+      "originalSha256": "b5a3218161e2127e3601ad5a726cf421a8b5fed4ad5667a557ee2f12bf55affa",
+      "publicBlob": "fa4ef8bdded3c8ef88743d8cb629a6e4adb767b0",
+      "publicSha256": "963a77d260bd2ed66a55bb92d34f3b0c9ad77c528089e4c114291bd91d3e47f8",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-audit-refresh-2026-10-08/security-live/repair-positive.stdout.tap",
+      "originalBlob": "c5dae9e8d004fea582a0046f196828f642fd6eaf",
+      "originalSha256": "b9d9cd73a65b264286ab957de874421179eaa9a5f4864cfa26b67129193db57c",
+      "publicBlob": "93199cd3c11350ee8de7495bcf4580f61d317a50",
+      "publicSha256": "def290594c961e2314774af4f82c5b3bd41671cf286ba8b2b8ac9b32fae99d2f",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/analysis/sprintf-adapter-probe.json",
+      "originalBlob": "daa1cb36f39de6d2f5d77de670a04e2c4e007847",
+      "originalSha256": "f7bd0afbefd1c9f880f1c6842efb7293841618205ae4e1b0de55f4ff88c97ef5",
+      "publicBlob": "257c48f77612ed0e92f5434fb9b45cd7a146d0cb",
+      "publicSha256": "d226c27d6ac35bd98c7fc1a35489c5cbd14c62d36590deb490f822227aad60bf",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/analysis/sprintf-probe.json",
+      "originalBlob": "f090aa5a17fe5ab410d43aad0a856ca61ad8f272",
+      "originalSha256": "53dada50b2af9d3b4f0d7d79ee4fbcfdf6868ec4a74f135cd26bc8e67747466c",
+      "publicBlob": "fe1658c6e0950786765f62505385f042300560ac",
+      "publicSha256": "1656a3204e11c91e2a541e03a38d8017d47d06efbcfebb9ceba32261e6edb238",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/build-matrix/build-project.stdout.log",
+      "originalBlob": "c7d0d77377bcc126ea66672a4d7aef4de3ba5473",
+      "originalSha256": "4abefbecdd217f55b2adf3d92e8d6535a985086b05d1351090874d6e0aca73bf",
+      "publicBlob": "e2f6d6d9a0bb7faa805627c131688887e59cd36d",
+      "publicSha256": "f3493c8a5a83321c026539395bd8ab5986611be72b5117ca6e11958ca0475be8",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/build-matrix/build-root.stdout.log",
+      "originalBlob": "134e05f9ba1072f27b53a02120aceaf538a8286e",
+      "originalSha256": "e601102ca744a3cbb6709085d0e21184af70760479008db6b5832ad529e44581",
+      "publicBlob": "6188f39703328ef2d5cbb897dcfca6d3c3a9b845",
+      "publicSha256": "2179c149d05614b8d68d3622233d5a6c86272e5f2f44d1d2d16a5d3c2d3c4e07",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/gui-accepted/observations.json",
+      "originalBlob": "1be9e1ebd66158d72d22072c42c0a819a573287c",
+      "originalSha256": "03027427e60ea04814b9c77cd3f61d144b9166373c80b092afc5126eeaf78ec1",
+      "publicBlob": "ff6054cad0fb5ae512cc0a1e215065c422bf5aba",
+      "publicSha256": "9ef6399441d4bfaa376233e7b96b0a7f1fea005cbbc4c77e371f14e4d674d3cf",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/gui-final/observations.json",
+      "originalBlob": "067df6f1d3c98c5574e6d5cb9945f3abc4595c71",
+      "originalSha256": "6b5a46d6602b130d3e799c5f3490cac7ce311c7f9dc55a0fbbf5e144fd2615f2",
+      "publicBlob": "9f03d34e01a9811363e8e3785a2d6546c36165e9",
+      "publicSha256": "7d34e61b63065f7cb4cef5f0dfa8e4c3a3bc1fb30bc21fe198b835c27fbf6ee0",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/gui/observations.json",
+      "originalBlob": "7a34320d4201779a74b5030427d72f5b5e47f625",
+      "originalSha256": "c1e88a659dc9fa67e82dc720cb5e7a51c40472f9beab9a1a3e39f71cb24ad64b",
+      "publicBlob": "577b919afe227da20937a53d999fdca814f4c8f5",
+      "publicSha256": "c1b2719ec6daa6c250e90fafe1ffc2de7c1658bc15cb690c53c37e62fbaf7a4d",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/local-matrix/astro-check.stdout.log",
+      "originalBlob": "457c1e2ffd38fc3a679810377f9b8ef1708fa656",
+      "originalSha256": "bcf3ea8372610709c71f4037eb6e85a8e5f8497f4d1e7c3ce218e4829ee366f4",
+      "publicBlob": "d4b1133f3f6e6e5c37812164c9e3959da468e3c3",
+      "publicSha256": "40512c4ea6dd22a71d902ae3a4600623921eb76aa1e8537f6e68947da1d14421",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/local-matrix/native.stdout.log",
+      "originalBlob": "85fde9f29b652471454b62cec51b51ae5522eae4",
+      "originalSha256": "6b3d840c09aeaeae0283f8f043a7be8c8fa3e811d94803f20241c33790479396",
+      "publicBlob": "980992deb3c41c2435d3693bdad39370510fc6dc",
+      "publicSha256": "f5909d1d29f99ef74f091acce2112ca7647f732dee84d2f4d92debe4e7e0f4c0",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/native-final.stdout.log",
+      "originalBlob": "24211d23baa72fca43563882f3b23c6bbea91614",
+      "originalSha256": "5b8f1b04a2f793cc402d55a4674ae45dc0415f3ad130c8214e097e3e296b7a7a",
+      "publicBlob": "7697a6ce147bfe3431abfc2b83b0353748165bd6",
+      "publicSha256": "3aaca11a9727bdd3599aa1e4c418273a19d81ac9e9a6dc34cb02777ff9394179",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/security-live-final/repair-evidence.json",
+      "originalBlob": "f4132faea076a8aae710a92621a39a0f6e389815",
+      "originalSha256": "bf8a3358c3459c9b7dd2cca5ceba0815f46cc561b52aba959d4fbcf7848a5779",
+      "publicBlob": "21c69117fac4bc35d091edbdc44148a49fad3989",
+      "publicSha256": "6f5a7df3fbce4a4cb73fa0c308ab50ace8d7875cee662ddf4add838871ac3a8d",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/security-live-final/repair-generator-original.stdout.tap",
+      "originalBlob": "eccad1b09addf61f7f459fcfa8d8e1e53a4b55c6",
+      "originalSha256": "cd7acacebfa51f64d00f78bea1c87a3e86dabaee255b29a6a9f8a83f6330c781",
+      "publicBlob": "8a45f678eaa3d97c1a8b71a20cbd340be9e82d61",
+      "publicSha256": "cefdb3cd693fb75f7d4c49c88e0c7045030c02cdb398c90cfbfabbc45ee7de25",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/security-live-final/repair-positive.stdout.tap",
+      "originalBlob": "4336717a73faa830196570f124665e7ba47461ae",
+      "originalSha256": "bfdf1702ce431c32fe9c90dfac15657413808c772e12e60b020337876f2b3b23",
+      "publicBlob": "100a0b66ca86e9ddf634963e84e0befe061a4281",
+      "publicSha256": "d00c631610980ca356383ac99d9bffece8be0b576237c86e9057ef538ded050a",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/security-live/repair-evidence.json",
+      "originalBlob": "c9833709668317c4c80922d72f35c063ed925c4a",
+      "originalSha256": "375921361fc0d1132db44a6d3793d8914de3ad659c395ce998b234575e799a50",
+      "publicBlob": "d77be1c90157ad5d292808d138783ce3b2e2993c",
+      "publicSha256": "e2c30eaf010979a40ce29b0a80ab003dec9de94adf97f670eb36281444525e6e",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/security-live/repair-generator-original.stdout.tap",
+      "originalBlob": "4248a5058393707f4f7f92145dd678798d62e285",
+      "originalSha256": "029c36aaaace78613c1614f6301b7a653bcc286a1f1851e77707265a7a77451a",
+      "publicBlob": "78f8ed91e7c698efa3843b9ab3dd17288ad5d542",
+      "publicSha256": "92dac606cb7345b3e33b5b42fb2523d3cceca1db328e374b8cf08931934c603c",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/security-live/repair-positive.stdout.tap",
+      "originalBlob": "2fc6a918947720ae6de468c40ac0cfc8b8b2e2f1",
+      "originalSha256": "293236d1d388cd9fe2257d51e6aa44072944eea8b85591a5fbb27bc38cf6eb1b",
+      "publicBlob": "a6b777a0c0dbd19147af056cf316ca0c3a2d868c",
+      "publicSha256": "8d0191c0d84c604a401f522d7b2c44c9a8f59ca2fa1bab1be0b638798605ba93",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/synthetic/astro-build.stdout.log",
+      "originalBlob": "581661fd29ba9ddb2755de8bbb3b95accce9c391",
+      "originalSha256": "ad3c69ae5909a1f54daa2a8d481d0a5917b73be983b0b39a3f74e40615800798",
+      "publicBlob": "e11c4d47a02868b35c416d7fdc8b6e0ddd0291bb",
+      "publicSha256": "fbbcc6bae2fc3cb4377666c3c115a719778d01ff84073f7c564aaa6035861340",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-five-remediation-2026-10-08/local-validation/synthetic/pagefind.stdout.log",
+      "originalBlob": "4f8dd3b01829e98095beca237241055e8f1bcf69",
+      "originalSha256": "1d722632545b9bf52ed4ea127c61e11ea414f3fa8caac71ec1e6e53f36181242",
+      "publicBlob": "6e59c8d6fca99b127e8c2e3f6f3fb1ccefa1cab9",
+      "publicSha256": "7ba6df654714094f61fdd3f077e946231aca8aa661dabd64cb8e48f1f4984927",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-integration-2026-10-07/build-matrix/build-project.stdout.log",
+      "originalBlob": "c992b7f30354b5740ecc18085928b4c95b4f7bfc",
+      "originalSha256": "c5fd7418e5999c7a3bafb57664f88c390910085b74a1f682d9fa4d07f45b7704",
+      "publicBlob": "37654a95f91d116355458cfb7fb8e8038777c8bb",
+      "publicSha256": "a5924e25e040b1fe7c686a71cf4340252c5793c2fd17595c20be469fbc630416",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-integration-2026-10-07/build-matrix/build-root.stdout.log",
+      "originalBlob": "a42d6c7edcb512bf41ba82f9385249dedbddda14",
+      "originalSha256": "67adcf6295195c35d120e35b80d67be4b7284bb15b350b62bf018fd68996b5eb",
+      "publicBlob": "532f8b6cf8df0ac7624af78af038a08f95793b70",
+      "publicSha256": "7c7e48be14a3e317b32385f9fd61983b4b3e7692300d4900910e22d3edce558f",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-integration-2026-10-07/local-matrix/astro-check.stdout.log",
+      "originalBlob": "56ffe0958c0e839f7f969edfc4d05194cb52dfe9",
+      "originalSha256": "e927572a4a084fe0036227e655c30a3778e3596956543b56e484f688a933ce94",
+      "publicBlob": "bb44ea11fd7d59589a76c5d244e37de508e255f5",
+      "publicSha256": "d14f5591e9fbd7e670287d090f4d13409b683aad942201fd5663b7fe166c68d2",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-integration-2026-10-07/local-matrix/native.stdout.log",
+      "originalBlob": "ee77e1dad7d3c72ff3525a363043758e3dc02cfa",
+      "originalSha256": "876853f28b750a95061f8a20d2a634aa89ded66bbf8620e59316cf9047f59b80",
+      "publicBlob": "f5f5a5df4e984742a20a07f5dcd4864782b91446",
+      "publicSha256": "c50429b8552799b2b6c8ad7ca2725cacf47f51c3c7eb4d4b84381465eb90ca91",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-integration-2026-10-07/native-renewal-fix/stdout.log",
+      "originalBlob": "d22f1a9861822771a5072fd6ec0e3a3e60b1f262",
+      "originalSha256": "668b9f219daf2e3455b8cc09f9d88881ac21738b4e0e7c2fef981b4282fedccf",
+      "publicBlob": "6d18c4a377309af287075f92329b16498b69c136",
+      "publicSha256": "fa402f7c726c0ef6841df0e9f3001d77aa90fc922825ceabf48196fbb1cb3d81",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-integration-2026-10-07/receipt.json",
+      "originalBlob": "126dc34de2e4834f86eda906cb3c98ec3ffdda47",
+      "originalSha256": "3fa95337744445167c475423b23b98c96e726a246f4fbc6342890a693af9aad6",
+      "publicBlob": "312fddbed4fc05f13243e7176254977f4f9231ff",
+      "publicSha256": "0edaa549d5f166eee8fcae80fed6481f021bfa108e172b92cda08a96d1cb2e77",
+      "privateProtectionFieldsOmitted": 1
+    },
+    {
+      "path": "references/s1-integration-2026-10-07/repair-only-proof/repair-evidence.json",
+      "originalBlob": "09856853f79c537dd8e4f317691efc0a4116ff14",
+      "originalSha256": "f43b984bd340d80d18eb55fd1875ee4830418cfd9bbaa0e2a4512d1935273906",
+      "publicBlob": "3b0e69909bb344e4e6ab9957b1405b4c11b0870c",
+      "publicSha256": "7d445b50aecd82f160aec0b4fc00e9bdc6302990a2656b6dd7031c290c3f01f7",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-integration-2026-10-07/repair-only-proof/repair-generator-original.stdout.tap",
+      "originalBlob": "8ebfcd8969295120702af82f426ac22423caddae",
+      "originalSha256": "9f852bbdb7df31eb39611c36ca8ef83e6cb57f92c72837d4bbb44e1222be8aef",
+      "publicBlob": "1e1a3d6cd254df7c2c85aad977afa6973746fbba",
+      "publicSha256": "f526f1ab1a6a02b1b07a2dfed36e55ef8b60d8f749fd4d1e4047bebd3d1c09c4",
+      "privateProtectionFieldsOmitted": 0
+    },
+    {
+      "path": "references/s1-integration-2026-10-07/repair-only-proof/repair-positive.stdout.tap",
+      "originalBlob": "7535adae510178f202f088155c65f1b88e82d02d",
+      "originalSha256": "88dc02b53952b4ef366a2c568d6153bcb426190ce2441bf1c13db078c30eac8a",
+      "publicBlob": "2b8a5dc0c62bec28e13cac482c3943cc671c320a",
+      "publicSha256": "707c8cca240e9418d17b4b32751c518b40467115e2cf7c3f9cbd9d89f599bf9d",
+      "privateProtectionFieldsOmitted": 0
+    }
+  ],
+  "rawEvidence": "Unchanged raw audit JSON and official hash-bound source fixtures remain exact. Every projection is separately identified; original raw bytes and original commit history remain on the local implementation branch. No local candidate commit is a publication ancestor.",
+  "limitations": "Linux exact-head CI and final remote/Pages acceptance still pending; no article/bilingual acceptance."
+}

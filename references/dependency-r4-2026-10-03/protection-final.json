@@ -1,0 +1,72 @@
+{
+  "state": "PASS",
+  "exactMatchBefore": true,
+  "checkouts": {
+    "original": {
+      "path": "<local-home>/GitHub/Zhenkun-blog-site",
+      "head": "b6c3e39b2bf7ea73ec60234dc42f8240e0e8695f",
+      "branch": "codex/plan-dependency-remediation",
+      "trackedStatus": "",
+      "workbuddy": {
+        "state": "LOCAL_ONLY_PROTECTION_DATA",
+        "originalValueSha256": "888d1b232fad473cafb05f4c9f1aa0e9166c473c995109ce0447dedabc546df0"
+      }
+    },
+    "r1": {
+      "path": "<local-home>/Documents/Codex/2026-10-03/task-3/zhenkun-ar3",
+      "head": "955c78b7009fadab0a0785cb2895e0256588d31c",
+      "branch": "codex/dependency-ar3-20261003",
+      "trackedStatus": "",
+      "workbuddy": {
+        "state": "LOCAL_ONLY_PROTECTION_DATA",
+        "originalValueSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    },
+    "phase0": {
+      "path": "<local-home>/Documents/Codex/2026-10-03/task/zhenkun-dependency-phase0",
+      "head": "96b7b899dbe80aadd68f83a7ba1482bf386d0eb1",
+      "branch": "codex/dependency-phase0-20261003",
+      "trackedStatus": "",
+      "workbuddy": {
+        "state": "LOCAL_ONLY_PROTECTION_DATA",
+        "originalValueSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    },
+    "r2": {
+      "path": "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2",
+      "head": "b974258753ca07347eae535a3f5ca94e902f033a",
+      "branch": "codex/dependency-r2-native-20261003",
+      "trackedStatus": "",
+      "workbuddy": {
+        "state": "LOCAL_ONLY_PROTECTION_DATA",
+        "originalValueSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    },
+    "peer": {
+      "path": "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-peer",
+      "head": "ed64aad20e7025afa7834f3eb2008c0c57cc2240",
+      "branch": "codex/dependency-peer-20261003",
+      "trackedStatus": "",
+      "workbuddy": {
+        "state": "LOCAL_ONLY_PROTECTION_DATA",
+        "originalValueSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    },
+    "cache": {
+      "path": "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-cache",
+      "head": "66d8b1ec5d8eac585af69c5dfa74ea6eb9346e5a",
+      "branch": "codex/dependency-cache-patch-20261003",
+      "trackedStatus": "",
+      "workbuddy": {
+        "state": "LOCAL_ONLY_PROTECTION_DATA",
+        "originalValueSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      }
+    }
+  },
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "5e87e12fcaf1d216322a5be303f4d57357da8d32140621af44d2a9f5b4bc81ee",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

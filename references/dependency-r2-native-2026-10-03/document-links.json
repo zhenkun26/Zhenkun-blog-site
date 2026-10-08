@@ -1,0 +1,116 @@
+{
+  "status": "PASS",
+  "scope": "All local links in current R2 report; inherited historical document links not asserted",
+  "checks": [
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "final-lock-graph.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "astra-stage1-decision.md",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "dependencies.diff",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "graph-review-tool.mjs",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "artifact-manifests.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "http-root.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "http-project.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "native-parents-final-mac.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "native-all.log",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "image-inventory.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "images/root-svg.png",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "r2-fixture-before-contract.mjs",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "cf-image-contract-probe.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "cf-image-contract-evaluation.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "audit-full.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "advisory-reconciliation.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "r1-linux-blocked-at-955.md",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "protection-final.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "cleanup.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "validation-receipt.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "whitespace-receipt.json",
+      "exists": true
+    },
+    {
+      "file": "references/dependency-r2-native-2026-10-03/report.md",
+      "target": "bounded-secret-scan.json",
+      "exists": true
+    }
+  ]
+}

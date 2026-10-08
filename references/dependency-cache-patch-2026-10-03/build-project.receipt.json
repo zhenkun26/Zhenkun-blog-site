@@ -1,0 +1,14 @@
+{
+  "command": [
+    "pnpm",
+    "build"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1",
+    "DEPLOY_BASE": "/Zhenkun-blog-site/"
+  },
+  "start": "2026-10-03T15:42:23.642539+00:00",
+  "end": "2026-10-03T15:42:30.260281+00:00",
+  "exit": 0
+}

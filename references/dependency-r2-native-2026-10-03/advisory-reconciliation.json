@@ -1,0 +1,887 @@
+{
+  "capturedAt": "2026-10-03T13:46:34.841Z",
+  "basis": "Fresh candidate prod/full official npm audits plus fresh reevaluation of retained 36 official range rows; not exhaustive discovery or fresh retrieval of all 36 sources",
+  "lockSha256": "4436d4089ab376e4a94e749d7fe35a4465c617c3a152340b1f38fd35861d709b",
+  "audits": {
+    "prod": {
+      "exit": 1,
+      "records": 1,
+      "ghsa": [
+        "GHSA-ch52-4w7c-c8xp"
+      ],
+      "packages": [
+        "http-cache-semantics"
+      ],
+      "severity": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 1,
+        "critical": 0
+      }
+    },
+    "full": {
+      "exit": 1,
+      "records": 1,
+      "ghsa": [
+        "GHSA-ch52-4w7c-c8xp"
+      ],
+      "packages": [
+        "http-cache-semantics"
+      ],
+      "severity": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 1,
+        "critical": 0
+      }
+    }
+  },
+  "known36": {
+    "count": 36,
+    "affected": 1,
+    "rows": [
+      {
+        "ghsa": "GHSA-6j4f-fj2g-mc7p",
+        "package": "brace-expansion",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+        "officialAffectedRanges": [
+          ">= 4.0.0, < 5.0.10",
+          ">= 3.0.0, < 3.0.7",
+          ">= 2.0.0, < 2.1.5",
+          "< 1.1.19"
+        ],
+        "officialFixes": [
+          "5.0.10",
+          "3.0.7",
+          "2.1.5",
+          "1.1.19"
+        ],
+        "instances": [
+          {
+            "version": "2.1.7",
+            "affected": false
+          },
+          {
+            "version": "5.0.12",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-q2hr-2g5m-vwhr",
+        "package": "brace-expansion",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+        "officialAffectedRanges": [
+          ">= 4.0.0, < 5.0.12",
+          ">= 3.0.0, < 3.0.9",
+          ">= 2.0.0, < 2.1.7",
+          "< 1.1.21"
+        ],
+        "officialFixes": [
+          "5.0.12",
+          "3.0.9",
+          "2.1.7",
+          "1.1.21"
+        ],
+        "instances": [
+          {
+            "version": "2.1.7",
+            "affected": false
+          },
+          {
+            "version": "5.0.12",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-qhr7-859c-m2p7",
+        "package": "brace-expansion",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-qhr7-859c-m2p7",
+        "officialAffectedRanges": [
+          ">= 4.0.0, < 5.0.11",
+          ">= 3.0.0, < 3.0.8",
+          ">= 2.0.0, < 2.1.6",
+          "< 1.1.20"
+        ],
+        "officialFixes": [
+          "5.0.11",
+          "3.0.8",
+          "2.1.6",
+          "1.1.20"
+        ],
+        "instances": [
+          {
+            "version": "2.1.7",
+            "affected": false
+          },
+          {
+            "version": "5.0.12",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-2wm5-q62r-hmrv",
+        "package": "colord",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-2wm5-q62r-hmrv",
+        "officialAffectedRanges": [
+          "< 2.9.4"
+        ],
+        "officialFixes": [
+          "2.9.4"
+        ],
+        "instances": [],
+        "status": "ABSENT_FROM_GRAPH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-4q55-j62x-fr9h",
+        "package": "devalue",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-4q55-j62x-fr9h",
+        "officialAffectedRanges": [
+          "<= 5.9.2"
+        ],
+        "officialFixes": [
+          "5.9.3"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-hx4r-w6wj-j8fg",
+        "package": "devalue",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-hx4r-w6wj-j8fg",
+        "officialAffectedRanges": [
+          "<= 5.9.2"
+        ],
+        "officialFixes": [
+          "5.9.3"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-j22f-vq7h-c4qm",
+        "package": "devalue",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-j22f-vq7h-c4qm",
+        "officialAffectedRanges": [
+          ">= 5.1.0, <= 5.9.2"
+        ],
+        "officialFixes": [
+          "5.9.3"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-mcm9-63f2-9j32",
+        "package": "devalue",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-mcm9-63f2-9j32",
+        "officialAffectedRanges": [
+          "<= 5.9.2"
+        ],
+        "officialFixes": [
+          "5.9.3"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-wf3x-273g-mvxv",
+        "package": "devalue",
+        "severity": "low",
+        "source": "https://api.github.com/advisories/GHSA-wf3x-273g-mvxv",
+        "officialAffectedRanges": [
+          ">= 1.0.0, <= 5.9.2"
+        ],
+        "officialFixes": [
+          "5.9.3"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-x5rw-q4pp-hg5g",
+        "package": "devalue",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-x5rw-q4pp-hg5g",
+        "officialAffectedRanges": [
+          ">= 5.8.0, <= 5.9.2"
+        ],
+        "officialFixes": [
+          "5.9.3"
+        ],
+        "instances": [
+          {
+            "version": "5.9.3",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-5jgf-p345-68v8",
+        "package": "fast-uri",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-5jgf-p345-68v8",
+        "officialAffectedRanges": [
+          ">= 2.4.2, < 2.4.5",
+          ">= 3.1.3, < 3.1.6",
+          ">= 4.0.1, < 4.1.3"
+        ],
+        "officialFixes": [
+          "2.4.5",
+          "3.1.6",
+          "4.1.3"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-f65p-4m7j-42xc",
+        "package": "fast-uri",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-f65p-4m7j-42xc",
+        "officialAffectedRanges": [
+          ">= 2.3.1, < 2.4.5",
+          ">= 3.0.0, < 3.1.6",
+          ">= 4.0.0, < 4.1.3"
+        ],
+        "officialFixes": [
+          "2.4.5",
+          "3.1.6",
+          "4.1.3"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-fph4-wmhf-6fwf",
+        "package": "fast-uri",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-fph4-wmhf-6fwf",
+        "officialAffectedRanges": [
+          ">= 2.4.1, < 2.4.5",
+          ">= 3.1.2, < 3.1.6",
+          ">= 4.0.0, < 4.1.3"
+        ],
+        "officialFixes": [
+          "2.4.5",
+          "3.1.6",
+          "4.1.3"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-hrr3-gc8f-f4qj",
+        "package": "fast-uri",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+        "officialAffectedRanges": [
+          "< 2.4.7",
+          ">= 3.0.0, < 3.1.8",
+          ">= 4.0.0, < 4.1.5"
+        ],
+        "officialFixes": [
+          "2.4.7",
+          "3.1.8",
+          "4.1.5"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-jqff-g426-hqxp",
+        "package": "fast-uri",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-jqff-g426-hqxp",
+        "officialAffectedRanges": [
+          ">= 2.3.1, < 2.4.5",
+          ">= 3.0.0, < 3.1.6",
+          ">= 4.0.0, < 4.1.3"
+        ],
+        "officialFixes": [
+          "2.4.5",
+          "3.1.6",
+          "4.1.3"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-qw65-cvwx-89v3",
+        "package": "fast-uri",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-qw65-cvwx-89v3",
+        "officialAffectedRanges": [
+          "< 2.4.6",
+          ">= 3.0.0, < 3.1.7",
+          ">= 4.0.0, < 4.1.4"
+        ],
+        "officialFixes": [
+          "2.4.6",
+          "3.1.7",
+          "4.1.4"
+        ],
+        "instances": [
+          {
+            "version": "3.1.8",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-ch52-4w7c-c8xp",
+        "package": "http-cache-semantics",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-ch52-4w7c-c8xp",
+        "officialAffectedRanges": [
+          "<= 4.2.0"
+        ],
+        "officialFixes": [
+          null
+        ],
+        "instances": [
+          {
+            "version": "4.2.0",
+            "affected": true
+          }
+        ],
+        "status": "AFFECTED_OPEN",
+        "originalLedgerStatus": "BLOCKED_NO_VERIFIED_PUBLISHED_FIX"
+      },
+      {
+        "ghsa": "GHSA-2883-xcg3-v3hh",
+        "package": "js-yaml",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-2883-xcg3-v3hh",
+        "officialAffectedRanges": [
+          ">= 4.0.0, < 4.3.2",
+          ">= 3.0.0, < 3.15.2"
+        ],
+        "officialFixes": [
+          "4.3.2",
+          "3.15.2"
+        ],
+        "instances": [
+          {
+            "version": "3.15.2",
+            "affected": false
+          },
+          {
+            "version": "4.3.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-5c6j-r48x-rmvq",
+        "package": "serialize-javascript",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-5c6j-r48x-rmvq",
+        "officialAffectedRanges": [
+          "<= 7.0.2"
+        ],
+        "officialFixes": [
+          "7.0.3"
+        ],
+        "instances": [],
+        "status": "ABSENT_FROM_GRAPH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-gfhx-hw2g-v5hg",
+        "package": "serialize-javascript",
+        "severity": "low",
+        "source": "https://api.github.com/advisories/GHSA-gfhx-hw2g-v5hg",
+        "officialAffectedRanges": [
+          ">= 7.1.1, < 7.1.2"
+        ],
+        "officialFixes": [
+          "7.1.2"
+        ],
+        "instances": [],
+        "status": "ABSENT_FROM_GRAPH",
+        "originalLedgerStatus": "NOT_AFFECTED_CURRENT_CANDIDATE_GUARD"
+      },
+      {
+        "ghsa": "GHSA-qj8w-gfj5-8c6v",
+        "package": "serialize-javascript",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-qj8w-gfj5-8c6v",
+        "officialAffectedRanges": [
+          ">= 5.0.0, < 7.0.5"
+        ],
+        "officialFixes": [
+          "7.0.5"
+        ],
+        "instances": [],
+        "status": "ABSENT_FROM_GRAPH",
+        "originalLedgerStatus": "NOT_AFFECTED_CURRENT_CANDIDATE_GUARD"
+      },
+      {
+        "ghsa": "GHSA-rgj7-g3m4-5g8c",
+        "package": "sharp",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+        "officialAffectedRanges": [
+          "< 0.35.4"
+        ],
+        "officialFixes": [
+          "0.35.4"
+        ],
+        "instances": [
+          {
+            "version": "0.35.5",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-wq5f-xc86-pv6w",
+        "package": "sharp",
+        "severity": "high",
+        "source": "https://api.github.com/repos/lovell/sharp/security-advisories/GHSA-wq5f-xc86-pv6w",
+        "officialAffectedRanges": [
+          "< 0.35.5"
+        ],
+        "officialFixes": [
+          ">= 0.35.5"
+        ],
+        "instances": [
+          {
+            "version": "0.35.5",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-4vpr-x523-8j87",
+        "package": "svgo",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-4vpr-x523-8j87",
+        "officialAffectedRanges": [
+          ">= 1.0.0, < 2.8.4",
+          ">= 3.0.0, < 3.3.5",
+          ">= 4.0.0, < 4.1.0"
+        ],
+        "officialFixes": [
+          "2.8.4",
+          "3.3.5",
+          "4.1.0"
+        ],
+        "instances": [
+          {
+            "version": "4.1.0",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-w27v-7q3p-w38r",
+        "package": "svgo",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-w27v-7q3p-w38r",
+        "officialAffectedRanges": [
+          ">= 1.0.0, < 2.8.4",
+          ">= 3.0.0, < 3.3.5",
+          ">= 4.0.0, < 4.1.0"
+        ],
+        "officialFixes": [
+          "2.8.4",
+          "3.3.5",
+          "4.1.0"
+        ],
+        "instances": [
+          {
+            "version": "4.1.0",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-2gqq-gqf2-x968",
+        "package": "undici",
+        "severity": "low",
+        "source": "https://api.github.com/advisories/GHSA-2gqq-gqf2-x968",
+        "officialAffectedRanges": [
+          ">= 7.1.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "7.29.1",
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-2jfj-6hjv-fm6j",
+        "package": "undici",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+        "officialAffectedRanges": [
+          ">= 7.0.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "7.29.1",
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-3wwx-pv8p-q78v",
+        "package": "undici",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-3wwx-pv8p-q78v",
+        "officialAffectedRanges": [
+          ">= 6.25.0, < 6.28.1",
+          ">= 7.28.0, < 7.29.1",
+          ">= 8.1.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "6.28.1",
+          "7.29.1",
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-3xpg-4rpp-hhhm",
+        "package": "undici",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+        "officialAffectedRanges": [
+          ">= 7.15.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "7.29.1",
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-8436-99hf-9mmv",
+        "package": "undici",
+        "severity": "low",
+        "source": "https://api.github.com/advisories/GHSA-8436-99hf-9mmv",
+        "officialAffectedRanges": [
+          ">= 7.0.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "7.29.1",
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-pmjh-fq2x-6v4x",
+        "package": "undici",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+        "officialAffectedRanges": [
+          ">= 7.11.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "7.29.1",
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-r53p-7pc4-xj5r",
+        "package": "undici",
+        "severity": "low",
+        "source": "https://api.github.com/advisories/GHSA-r53p-7pc4-xj5r",
+        "officialAffectedRanges": [
+          "< 6.28.1",
+          ">= 7.0.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "6.28.1",
+          "7.29.1",
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-rfgv-xxqx-mfg5",
+        "package": "undici",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+        "officialAffectedRanges": [
+          ">= 6.7.0, < 6.28.1",
+          ">= 7.0.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "6.28.1",
+          "7.29.1",
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-rx4f-c7p8-82vq",
+        "package": "undici",
+        "severity": "medium",
+        "source": "https://api.github.com/advisories/GHSA-rx4f-c7p8-82vq",
+        "officialAffectedRanges": [
+          ">= 7.0.0, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "7.29.1",
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-vp8m-p9jh-q5pm",
+        "package": "undici",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-vp8m-p9jh-q5pm",
+        "officialAffectedRanges": [
+          ">= 8.10.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      },
+      {
+        "ghsa": "GHSA-w293-vg96-wgc3",
+        "package": "undici",
+        "severity": "high",
+        "source": "https://api.github.com/advisories/GHSA-w293-vg96-wgc3",
+        "officialAffectedRanges": [
+          ">= 7.24.1, < 7.29.1",
+          ">= 8.0.0, < 8.10.2"
+        ],
+        "officialFixes": [
+          "7.29.1",
+          "8.10.2"
+        ],
+        "instances": [
+          {
+            "version": "7.29.1",
+            "affected": false
+          },
+          {
+            "version": "8.10.2",
+            "affected": false
+          }
+        ],
+        "status": "NO_CURRENT_VERSION_MATCH",
+        "originalLedgerStatus": "OPEN_AFFECTED_VERSION"
+      }
+    ]
+  },
+  "securityClosure": "BLOCKED: cache has no verified published repair or exemption; compatibility/runtime acceptance separate",
+  "Linux": "NOT_RUN"
+}

@@ -1,0 +1,27 @@
+{
+  "state": "BLOCKED",
+  "client": "Codex In-app Browser via cua_repl",
+  "attempts": [
+    {
+      "action": "createBrowserTab(iab, http://127.0.0.1:4321, visible:true)",
+      "result": "ERR_CONNECTION_REFUSED",
+      "context": "before local server was started; diagnostic only"
+    },
+    {
+      "action": "browser.tabs.get(\"1\") before goto(http://127.0.0.1:4321/)",
+      "result": "Blocked browser navigation by Browser Use URL policy: data:text/html;charset=utf-8,<encoded connection-error document>",
+      "context": "after authorized loopback server started; tab acquisition rejected, goto never reached"
+    }
+  ],
+  "notRun": [
+    "Home/About navigation and repeat cycles",
+    "interrupted navigation",
+    "back/forward history",
+    "first/replacement/clear/reopen search",
+    "mobile menu keyboard and focus",
+    "scroll and inert cleanup",
+    "actual DOM fixture for optional route/parallel features"
+  ],
+  "noBypass": true,
+  "screenshots": "NOT_RUN; no candidate GUI observed"
+}

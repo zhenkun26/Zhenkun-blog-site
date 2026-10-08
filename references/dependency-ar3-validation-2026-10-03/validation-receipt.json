@@ -1,0 +1,144 @@
+{
+  "sourceCandidate": "d39b89677c11bef3fbad9d5e94fc6e89601674a6",
+  "dependencyInput": "84ee2bcf6b1d955537425407f695e12706f005dc",
+  "node": "v24.20.0",
+  "pnpm": "11.22.0",
+  "platform": "macOS Darwin arm64; Linux NOT_RUN",
+  "sourceFiles": {
+    "scripts/zhenkun-test-swup-parents.mjs": "1806238503e5eea9a7ce258840d901aba45d195d3035878270422688ffb068f3",
+    "scripts/zhenkun-swup-parent-types.ts": "153e7121b77c5717a35ab5a1c08b4b3bd50f80abbdd1648a2edb27651c1423bc"
+  },
+  "commands": [
+    {
+      "command": "pnpm install --frozen-lockfile --registry=https://registry.npmjs.org",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:46:00.326705+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/install.exit"
+    },
+    {
+      "command": "pnpm check",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:50:57.446237+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/check.exit"
+    },
+    {
+      "command": "pnpm type-check",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:50:01.273248+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/type-check.exit"
+    },
+    {
+      "command": "pnpm exec biome ci ./src",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:46:40.796884+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/biome-src.exit"
+    },
+    {
+      "command": "pnpm exec biome ci scripts/zhenkun-test-swup-parents.mjs scripts/zhenkun-swup-parent-types.ts",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:51:06.539773+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/biome-new-final.exit"
+    },
+    {
+      "command": "node --test scripts/zhenkun-test-*.mjs",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:49:18.277282+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/native.exit"
+    },
+    {
+      "command": "pnpm exec tsc --ignoreConfig --noEmit --strict --skipLibCheck --module NodeNext --moduleResolution NodeNext --target ES2022 scripts/zhenkun-swup-parent-types.ts",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:50:01.752291+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/parent-types.exit"
+    },
+    {
+      "command": "pnpm exec tsc --ignoreConfig --noEmit --strict --module NodeNext --moduleResolution NodeNext --target ES2022 scripts/zhenkun-swup-parent-types.ts",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:52:05.621669+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/parent-types-strict.exit"
+    },
+    {
+      "command": "env -u CF_WORKERS DEPLOY_BASE=/ pnpm build",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:47:25.342435+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/build-root.exit"
+    },
+    {
+      "command": "env -u CF_WORKERS DEPLOY_BASE=/Zhenkun-blog-site/ pnpm build",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:48:59.613573+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/build-project.exit"
+    },
+    {
+      "command": "node scripts/zhenkun-verify-ci-artifacts.mjs --base /",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:48:27.747375+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/artifacts-root.exit"
+    },
+    {
+      "command": "node scripts/zhenkun-verify-ci-artifacts.mjs --base /Zhenkun-blog-site/",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:49:34.077704+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/artifacts-project.exit"
+    },
+    {
+      "command": "python3 scripts/zhenkun-verify-deployment.py --root tmp/ar3-root/dist --base / --http http://127.0.0.1:4321",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:50:16.242357+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/http-root.exit"
+    },
+    {
+      "command": "python3 scripts/zhenkun-verify-deployment.py --root tmp/ar3-project/Zhenkun-blog-site --base /Zhenkun-blog-site/ --http http://127.0.0.1:4322",
+      "exitCode": 0,
+      "state": "PASS",
+      "completedAtFromExitFile": "2026-10-03T10:50:46.845769+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/http-project.exit"
+    },
+    {
+      "command": "pnpm audit --prod --registry=https://registry.npmjs.org --json",
+      "exitCode": 1,
+      "state": "FAIL",
+      "completedAtFromExitFile": "2026-10-03T10:49:40.495470+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/audit-prod.exit",
+      "classification": "FAIL_VULNERABILITIES"
+    },
+    {
+      "command": "pnpm audit --registry=https://registry.npmjs.org --json",
+      "exitCode": 1,
+      "state": "FAIL",
+      "completedAtFromExitFile": "2026-10-03T10:49:47.436848+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/audit-full.exit",
+      "classification": "FAIL_VULNERABILITIES"
+    },
+    {
+      "command": "pnpm peers check",
+      "exitCode": 1,
+      "state": "FAIL",
+      "completedAtFromExitFile": "2026-10-03T10:49:46.399160+00:00",
+      "exitFile": "references/dependency-ar3-validation-2026-10-03/peers.exit",
+      "classification": "INHERITED_PEER_WARNING"
+    }
+  ],
+  "nativeCounts": {
+    "tests": 159,
+    "pass": 159,
+    "fail": 0,
+    "skipped": 0
+  },
+  "parentTestsIncludedInNative": 8,
+  "browser": "BLOCKED by Browser Use URL policy on error-document tab retrieval; no successful candidate GUI capture",
+  "overall": "BLOCKED: partial evidence; no candidate acceptance"
+}

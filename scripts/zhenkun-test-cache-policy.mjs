@@ -1,0 +1,1159 @@
+import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
+import { createHash } from "node:crypto";
+import {
+	copyFileSync,
+	existsSync,
+	mkdirSync,
+	mkdtempSync,
+	readdirSync,
+	readFileSync,
+	realpathSync,
+	rmSync,
+	writeFileSync,
+} from "node:fs";
+import { createRequire } from "node:module";
+import { tmpdir } from "node:os";
+import { dirname, join, resolve } from "node:path";
+import test from "node:test";
+import { pathToFileURL } from "node:url";
+
+// Actual Astro parent resolution; no added top-level cache-policy dependency.
+const require = createRequire(import.meta.url);
+const astroEntry = require.resolve("astro");
+const astroRequire = createRequire(astroEntry);
+const cacheEntry = realpathSync(astroRequire.resolve("http-cache-semantics"));
+const installed = astroRequire("http-cache-semantics");
+const packet = resolve("references/dependency-cache-patch-2026-10-03");
+const sha = (bytes) => createHash("sha256").update(bytes).digest("hex");
+const sourceHash =
+	"55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89";
+const originalHash =
+	"01b7d66c854b2fe53ac05c98feb6e0d64722ab8898a778e2d2426a8b468d178f";
+const baselinePath = join(packet, "verified-official-baseline.cjs");
+const originalSource = readFileSync(baselinePath);
+assert.equal(sha(originalSource), originalHash);
+// This specific hash-verified official source has no imports or path dependencies.
+const official = require(baselinePath);
+const CachePolicy =
+	process.env.ZHENKUN_CACHE_POLICY_BASELINE === "1" ? official : installed;
+const T = Date.parse("2026-10-03T00:00:00Z");
+const URL = "https://example.invalid/image.png";
+const date = (time = T) => new Date(time).toUTCString();
+const errors = [500, 502, 503, 504, undefined];
+const extensions = "stale-if-error=30, stale-while-revalidate=30";
+const serializationKeys = [
+	"v",
+	"t",
+	"sh",
+	"ch",
+	"imm",
+	"icc",
+	"st",
+	"resh",
+	"rescc",
+	"m",
+	"u",
+	"h",
+	"a",
+	"reqh",
+	"reqcc",
+].sort();
+
+function request(headers = {}, method = "GET", url = URL) {
+	return { url, method, headers: { host: "example.invalid", ...headers } };
+}
+
+function clock(Parent = CachePolicy) {
+	let now = T;
+	class TimedPolicy extends Parent {
+		now() {
+			return now;
+		}
+	}
+	return {
+		Policy: TimedPolicy,
+		setAge: (seconds) => {
+			now = T + seconds * 1000;
+		},
+		now: () => now,
+	};
+}
+
+function fixture({
+	cc = `public, max-age=60, ${extensions}`,
+	headers = {},
+	req = request(),
+	options = {},
+	status = 200,
+	age = 0,
+	Parent = CachePolicy,
+} = {}) {
+	const time = clock(Parent);
+	const responseHeaders = { date: date(), ...headers };
+	if (cc !== null) responseHeaders["cache-control"] = cc;
+	const policy = new time.Policy(
+		req,
+		{ status, headers: responseHeaders },
+		options,
+	);
+	time.setAge(age);
+	assert.equal(policy.now(), time.now());
+	assert.equal(policy.age(), age + Number.parseInt(headers.age ?? "0", 10));
+	return { policy, req, time };
+}
+
+function miss(policy, req) {
+	const result = policy.evaluateRequest(req);
+	assert.equal(result.response, undefined);
+	assert.equal(result.revalidation.synchronous, true);
+	assert.equal(policy.satisfiesWithoutRevalidation(req), false);
+}
+
+function hit(policy, req) {
+	const result = policy.evaluateRequest(req);
+	assert.equal(typeof result.response.headers, "object");
+	assert.equal(result.revalidation, undefined);
+	assert.equal(policy.satisfiesWithoutRevalidation(req), true);
+}
+
+function fallback(policy, req, time, allowed, statuses = errors) {
+	for (const status of statuses) {
+		if (status === undefined && !allowed) {
+			assert.throws(
+				() => policy.revalidatedPolicy(req, undefined),
+				/Response headers missing/,
+			);
+			continue;
+		}
+		const response =
+			status === undefined
+				? undefined
+				: {
+						status,
+						headers: { date: date(time.now()), "cache-control": "no-store" },
+					};
+		const result = policy.revalidatedPolicy(req, response);
+		assert.deepEqual(Object.keys(result).sort(), [
+			"matches",
+			"modified",
+			"policy",
+		]);
+		assert.equal(result.policy === policy, allowed, `fallback ${status}`);
+		assert.equal(result.modified, !allowed);
+		assert.equal(result.matches, allowed);
+		assert.equal(result.policy.now(), time.now());
+		if (!allowed) {
+			assert.equal(result.policy.age(), 0);
+			assert.equal(result.policy.timeToLive(), 0);
+		}
+	}
+}
+
+function blocked(policy, req, time) {
+	const createdAt = (policy.toObject().t - T) / 1000;
+	for (const age of [0, 61]) {
+		time.setAge(createdAt + age);
+		miss(policy, req);
+		assert.equal(policy.maxAge(), 0);
+		assert.equal(policy.timeToLive(), 0);
+		assert.equal(policy.useStaleWhileRevalidate(), false);
+		fallback(policy, req, time, false);
+	}
+}
+
+function roundtrips(policy, time) {
+	const object = policy.toObject();
+	assert.deepEqual(Object.keys(object).sort(), serializationKeys);
+	assert.equal(object.v, 1);
+	assert.equal(Object.hasOwn(object, "_blocked"), false);
+	return [
+		policy,
+		time.Policy.fromObject(object),
+		time.Policy.fromObject(JSON.parse(JSON.stringify(object))),
+	];
+}
+
+function update(policy, req, time, headers, status = 304) {
+	const result = policy.revalidatedPolicy(req, {
+		status,
+		headers: { date: date(time.now()), ...headers },
+	});
+	assert.notEqual(result.policy, policy);
+	assert.equal(result.policy.now(), time.now());
+	assert.equal(result.policy.age(), 0);
+	assert.equal(result.modified, status !== 304);
+	assert.equal(result.matches, status === 304);
+	return result.policy;
+}
+
+test("A01 shared cookie restrictions cover five reuse APIs", () => {
+	const f = fixture({
+		cc: `max-age=60, ${extensions}`,
+		headers: { "set-cookie": "fixture=plain" },
+	});
+	blocked(f.policy, f.req, f.time);
+});
+test("A02 incoming max-stale cannot unlock shared cookies", () => {
+	for (const value of ["max-stale", "max-stale=30", "max-stale=999999"]) {
+		const f = fixture({
+			cc: `max-age=60, ${extensions}`,
+			headers: { "set-cookie": "fixture=plain" },
+		});
+		blocked(f.policy, request({ "cache-control": value }), f.time);
+	}
+});
+test("A03 no-cache and qualified no-cache cover five APIs", () => {
+	for (const directive of ["no-cache", 'no-cache="x-fixture"']) {
+		const f = fixture({
+			cc: `public, max-age=60, ${directive}, ${extensions}`,
+		});
+		blocked(f.policy, request({ "cache-control": "max-stale" }), f.time);
+	}
+});
+test("A04 shared proxy-revalidate and private control", () => {
+	for (const publicValue of ["", "public,"]) {
+		const f = fixture({
+			cc: `${publicValue} max-age=60, proxy-revalidate, ${extensions}`,
+		});
+		blocked(f.policy, request({ "cache-control": "max-stale" }), f.time);
+	}
+	const f = fixture({
+		cc: `max-age=60, proxy-revalidate, ${extensions}`,
+		options: { shared: false },
+	});
+	hit(f.policy, f.req);
+	f.time.setAge(61);
+	fallback(f.policy, f.req, f.time, true);
+});
+test("A05 all unstoreable policies deny stale reuse", () => {
+	for (const config of [
+		{ cc: `public, no-store, max-age=60, ${extensions}` },
+		{ cc: `private, max-age=60, ${extensions}` },
+		{ status: 418 },
+		{ req: request({}, "PUT") },
+		{ req: request({ "cache-control": "no-store" }) },
+	]) {
+		const f = fixture(config);
+		assert.equal(f.policy.storable(), false);
+		blocked(f.policy, f.req, f.time);
+	}
+});
+test("A06 must-revalidate preserves fresh helpers and conservative evaluate", () => {
+	const f = fixture({
+		cc: `public, max-age=60, must-revalidate, ${extensions}`,
+		age: 10,
+	});
+	miss(f.policy, f.req);
+	assert.equal(f.policy.maxAge(), 60);
+	assert.equal(f.policy.timeToLive(), 50000);
+	assert.equal(f.policy.useStaleWhileRevalidate(), true);
+	fallback(f.policy, f.req, f.time, true);
+	for (const age of [60, 61]) {
+		f.time.setAge(age);
+		miss(f.policy, request({ "cache-control": "max-stale" }));
+		assert.equal(f.policy.timeToLive(), 0);
+		assert.equal(f.policy.useStaleWhileRevalidate(), false);
+		fallback(f.policy, f.req, f.time, false);
+	}
+});
+test("A07 shared s-maxage fresh boundary stale and zero cross error matrix", () => {
+	for (const max of [60, 0])
+		for (const ext of ["", extensions])
+			for (const age of [10, 60, 61]) {
+				const f = fixture({ cc: `public, s-maxage=${max}, ${ext}`, age });
+				const fresh = age < max;
+				if (fresh) hit(f.policy, f.req);
+				else miss(f.policy, request({ "cache-control": "max-stale" }));
+				assert.equal(f.policy.maxAge(), max);
+				assert.equal(f.policy.timeToLive(), Math.max(0, max - age) * 1000);
+				assert.equal(f.policy.useStaleWhileRevalidate(), fresh && Boolean(ext));
+				fallback(f.policy, f.req, f.time, fresh);
+			}
+});
+test("A08 shared false does not acquire proxy or s-maxage restriction", () => {
+	for (const cc of [
+		`max-age=60, proxy-revalidate, ${extensions}`,
+		`max-age=60, s-maxage=0, ${extensions}`,
+	]) {
+		const f = fixture({ cc, age: 61, options: { shared: false } });
+		assert.equal(f.policy.maxAge(), 60);
+		hit(f.policy, request({ "cache-control": "max-stale" }));
+		assert.equal(f.policy.useStaleWhileRevalidate(), true);
+		fallback(f.policy, f.req, f.time, true);
+	}
+});
+test("A09 public immutable and private cookie exceptions remain usable", () => {
+	for (const config of [
+		{ cc: `public, max-age=60, ${extensions}` },
+		{ cc: `immutable, max-age=60, ${extensions}` },
+		{ cc: `max-age=60, ${extensions}`, options: { shared: false } },
+	]) {
+		const f = fixture({
+			...config,
+			headers: { "set-cookie": "fixture=plain" },
+		});
+		hit(f.policy, f.req);
+		f.time.setAge(61);
+		fallback(f.policy, f.req, f.time, true);
+		for (const restriction of ["no-cache", "no-store"]) {
+			const g = fixture({
+				...config,
+				cc: `${config.cc}, ${restriction}`,
+				headers: { "set-cookie": "fixture=plain" },
+			});
+			blocked(g.policy, g.req, g.time);
+		}
+		const g = fixture({
+			...config,
+			headers: { "set-cookie": "fixture=plain", vary: " * " },
+		});
+		blocked(g.policy, g.req, g.time);
+	}
+});
+test("A10 ordinary expiry max-stale keeps strict window boundary", () => {
+	for (const headers of [{}, { expires: date(T + 60000) }]) {
+		const f = fixture({
+			cc: headers.expires ? null : "public,max-age=60",
+			headers,
+			age: 70,
+		});
+		hit(f.policy, request({ "cache-control": "max-stale" }));
+		hit(f.policy, request({ "cache-control": "max-stale=11" }));
+		miss(f.policy, request({ "cache-control": "max-stale=10" }));
+		miss(f.policy, request({ "cache-control": "max-stale=9" }));
+	}
+});
+test("A11 ordinary zero freshness is not a security restriction", () => {
+	for (const config of [
+		{ cc: `max-age=0, ${extensions}` },
+		{ cc: extensions, headers: { expires: date(T - 1000) } },
+		{ cc: extensions },
+	]) {
+		const f = fixture({ ...config, age: 1 });
+		assert.equal(f.policy.maxAge(), 0);
+		hit(f.policy, request({ "cache-control": "max-stale=2" }));
+		assert.equal(f.policy.useStaleWhileRevalidate(), true);
+		fallback(f.policy, f.req, f.time, true);
+	}
+});
+test("A12 ordinary fresh no extensions remains a cache hit", () => {
+	const f = fixture({ cc: "public,max-age=60", age: 10 });
+	hit(f.policy, f.req);
+	assert.equal(f.policy.timeToLive(), 50000);
+	assert.equal(f.policy.useStaleWhileRevalidate(), false);
+	fallback(f.policy, f.req, f.time, true);
+});
+test("A13 SWR inside boundary outside retains async contract", () => {
+	for (const age of [61, 89.999, 90, 90.001]) {
+		const f = fixture({
+			cc: "public,max-age=60,stale-while-revalidate=30",
+			age,
+		});
+		if (age < 90) {
+			const result = f.policy.evaluateRequest(f.req);
+			assert.ok(result.response);
+			assert.equal(result.revalidation.synchronous, false);
+			assert.equal(f.policy.satisfiesWithoutRevalidation(f.req), false);
+		} else miss(f.policy, f.req);
+		assert.equal(f.policy.useStaleWhileRevalidate(), age < 90);
+		assert.equal(
+			f.policy.timeToLive(),
+			Math.round(Math.max(0, 90 - age) * 1000),
+		);
+	}
+});
+test("A14 SIE strict boundary all errors and non-error controls", () => {
+	for (const age of [61, 89.999, 90, 90.001]) {
+		const f = fixture({ cc: "public,max-age=60,stale-if-error=30", age });
+		fallback(f.policy, f.req, f.time, age < 90);
+		fallback(f.policy, f.req, f.time, false, [400, 404]);
+	}
+});
+test("A15 SIE requires URL host method and Vary matching", () => {
+	const f = fixture({
+		headers: { vary: "Accept" },
+		req: request({ accept: "image/png" }),
+		age: 61,
+	});
+	fallback(f.policy, f.req, f.time, true);
+	for (const req of [
+		request({ accept: "image/png" }, "GET", `${URL}?other`),
+		request({ host: "other.invalid", accept: "image/png" }),
+		request({ accept: "image/png" }, "POST"),
+		request({ accept: "image/webp" }),
+	]) {
+		miss(f.policy, req);
+		fallback(f.policy, req, f.time, false);
+	}
+});
+test("A16 incoming no-cache and pragma deny error fallback", () => {
+	const f = fixture({ age: 61 });
+	for (const headers of [
+		{ "cache-control": "no-cache" },
+		{ pragma: "no-cache" },
+	])
+		fallback(f.policy, request(headers), f.time, false);
+	fallback(f.policy, request({ "cache-control": "no-store" }), f.time, true);
+});
+test("A17 cross method error fallback denied normal HEAD validators preserved", () => {
+	for (const [cached, incoming] of [
+		["GET", "HEAD"],
+		["HEAD", "GET"],
+	]) {
+		const f = fixture({
+			req: request({}, cached),
+			headers: { etag: '"fixture"' },
+			age: 61,
+		});
+		fallback(f.policy, request({}, incoming), f.time, false);
+		fallback(f.policy, f.req, f.time, true);
+		if (cached === "GET")
+			assert.equal(
+				f.policy.revalidationHeaders(request({}, "HEAD"))["if-none-match"],
+				'"fixture"',
+			);
+	}
+});
+test("A18 max-age versus shared s-maxage preserves fresh fallback", () => {
+	for (const directive of ["max-age", "s-maxage"])
+		for (const age of [10, 60, 61])
+			for (const ext of ["", "stale-if-error=30"]) {
+				const f = fixture({ cc: `public,${directive}=60,${ext}`, age });
+				const allowed = age < 60 || (directive === "max-age" && Boolean(ext));
+				fallback(f.policy, f.req, f.time, allowed);
+				fallback(f.policy, f.req, f.time, false, [400, 404]);
+				assert.equal(f.policy.age(), age);
+				assert.equal(
+					f.policy.timeToLive(),
+					Math.max(0, (directive === "max-age" && ext ? 90 : 60) - age) * 1000,
+				);
+			}
+});
+
+test("B01 wildcard and list wildcard forbid all reuse", () => {
+	for (const vary of [
+		"*",
+		" * ",
+		"\t*\t",
+		"Accept, *",
+		"*, Accept",
+		",, * ,,",
+	]) {
+		const f = fixture({ headers: { vary } });
+		blocked(f.policy, request({ "cache-control": "max-stale" }), f.time);
+	}
+});
+test("B02 field case OWS duplicates empty items preserve values", () => {
+	for (const vary of [
+		"Accept",
+		" ACCEPT\t",
+		"accept, Accept",
+		",, Accept, ,",
+	]) {
+		const f = fixture({
+			headers: { vary },
+			req: request({ accept: "Image/PNG" }),
+		});
+		hit(f.policy, f.req);
+		miss(f.policy, request({ accept: "image/png" }));
+	}
+});
+test("B03 absent empty and empty lists introduce no variant", () => {
+	for (const vary of [undefined, "", ", ,\t,"]) {
+		const f = fixture({ headers: vary === undefined ? {} : { vary } });
+		hit(f.policy, request({ accept: "different" }));
+	}
+});
+test("B04 own presence and value comparisons", () => {
+	for (const [stored, incoming, matches] of [
+		[{}, {}, true],
+		[{ accept: "a" }, {}, false],
+		[{}, { accept: "a" }, false],
+		[{ accept: "a" }, { accept: "a" }, true],
+		[{ accept: "a" }, { accept: "b" }, false],
+	]) {
+		const f = fixture({ headers: { vary: "Accept" }, req: request(stored) });
+		(matches ? hit : miss)(f.policy, request(incoming));
+	}
+});
+function headerMap(base, name, value, own) {
+	const headers =
+		base === "null"
+			? Object.create(null)
+			: Object.create(own ? Object.prototype : { [name]: value });
+	headers.host = "example.invalid";
+	if (own)
+		Object.defineProperty(headers, name, {
+			value,
+			enumerable: true,
+			writable: true,
+		});
+	return headers;
+}
+test("B05 prototype tokens and null-prototype maps use own values", () => {
+	for (const name of [
+		"constructor",
+		"__proto__",
+		"hasownproperty",
+		"hasOwnProperty",
+	])
+		for (const base of ["plain", "null"]) {
+			const lower = name.toLowerCase();
+			const req = { ...request(), headers: headerMap(base, lower, "a", true) };
+			const f = fixture({ headers: { vary: name }, req });
+			hit(f.policy, { ...req, headers: headerMap(base, lower, "a", true) });
+			miss(f.policy, { ...req, headers: headerMap(base, lower, "b", true) });
+		}
+});
+test("B06 own versus inherited same value is a mismatch both ways", () => {
+	for (const own of [true, false]) {
+		const req = {
+			...request(),
+			headers: headerMap("plain", "accept", "a", own),
+		};
+		const f = fixture({ headers: { vary: "accept" }, req });
+		miss(f.policy, {
+			...req,
+			headers: headerMap("plain", "accept", "a", !own),
+		});
+	}
+});
+test("B07 two inherited-only fields are both absent", () => {
+	const req = {
+		...request(),
+		headers: headerMap("plain", "accept", "a", false),
+	};
+	const f = fixture({ headers: { vary: "accept" }, req });
+	for (const value of ["a", "b"])
+		hit(f.policy, {
+			...req,
+			headers: headerMap("plain", "accept", value, false),
+		});
+});
+test("B08 raw ASCII validation precedes lowercase and survives roundtrip", () => {
+	for (const vary of [
+		"K",
+		"Accept, K",
+		"K, K",
+		" \tK\t ",
+		"é",
+		"accept\n",
+		"accept\r",
+		"accept\v",
+		"accept\f",
+		"accept\u00a0",
+		"a b",
+		"a:b",
+		"a/b",
+		true,
+		0,
+		null,
+		[],
+	]) {
+		const f = fixture({ headers: { vary } });
+		for (const policy of roundtrips(f.policy, f.time))
+			blocked(policy, f.req, f.time);
+	}
+	for (const vary of ["K", "K, Accept", "x*"]) {
+		const name = vary === "x*" ? "x*" : "k";
+		for (const [stored, incoming, matches] of [
+			[{}, {}, true],
+			[{ [name]: "a" }, { [name]: "a" }, true],
+			[{ [name]: "a" }, { [name]: "b" }, false],
+			[{ [name]: "a" }, {}, false],
+		]) {
+			const f = fixture({ headers: { vary }, req: request(stored), age: 61 });
+			const req = request({ ...incoming, "cache-control": "max-stale" });
+			(matches ? hit : miss)(f.policy, req);
+			assert.equal(f.policy.timeToLive(), 29000);
+			assert.equal(f.policy.useStaleWhileRevalidate(), true);
+			fallback(f.policy, req, f.time, matches);
+		}
+	}
+});
+test("B09 variant mismatch cannot be rescued by stale extensions", () => {
+	const f = fixture({
+		headers: { vary: "accept" },
+		req: request({ accept: "a" }),
+		age: 61,
+	});
+	const req = request({ accept: "b", "cache-control": "max-stale" });
+	miss(f.policy, req);
+	fallback(f.policy, req, f.time, false);
+	assert.equal(
+		f.policy.useStaleWhileRevalidate(),
+		true,
+		"direct helper is response-side only",
+	);
+});
+test("B10 wildcard validators are not attached to incoming requests", () => {
+	const f = fixture({
+		headers: { vary: " * ", etag: '"old"', "last-modified": date(T - 1000) },
+	});
+	const headers = f.policy.revalidationHeaders(f.req);
+	assert.equal(headers["if-none-match"], undefined);
+	assert.equal(headers["if-modified-since"], undefined);
+});
+
+test("C01 version one serialization preserves every safety restriction", () => {
+	for (const config of [
+		{ cc: `no-cache,max-age=60,${extensions}` },
+		{ cc: `no-store,max-age=60,${extensions}` },
+		{ cc: `private,max-age=60,${extensions}` },
+		{ cc: `proxy-revalidate,max-age=60,${extensions}` },
+		{
+			cc: `max-age=60,${extensions}`,
+			headers: { "set-cookie": "fixture=plain" },
+		},
+		{ headers: { vary: " * " } },
+	]) {
+		const f = fixture(config);
+		for (const policy of roundtrips(f.policy, f.time))
+			blocked(policy, f.req, f.time);
+	}
+	for (const directive of [
+		"must-revalidate,max-age=60",
+		"public,s-maxage=60",
+	]) {
+		const f = fixture({ cc: `${directive},${extensions}`, age: 61 });
+		for (const policy of roundtrips(f.policy, f.time)) {
+			miss(policy, request({ "cache-control": "max-stale" }));
+			assert.equal(policy.timeToLive(), 0);
+			assert.equal(policy.useStaleWhileRevalidate(), false);
+			fallback(policy, f.req, f.time, false);
+		}
+	}
+});
+test("C02 trusted hand-authored historical v1 fixtures are restricted", () => {
+	// Literal official v1 schema, not generated by executing the old implementation.
+	const historical = {
+		v: 1,
+		t: T,
+		sh: true,
+		ch: 0.1,
+		imm: 86400000,
+		icc: false,
+		st: 200,
+		resh: {
+			date: date(),
+			"cache-control": "max-age=60,stale-if-error=30,stale-while-revalidate=30",
+			"set-cookie": "fixture=plain",
+		},
+		rescc: {
+			"max-age": "60",
+			"stale-if-error": "30",
+			"stale-while-revalidate": "30",
+		},
+		m: "GET",
+		u: URL,
+		h: "example.invalid",
+		a: true,
+		reqh: null,
+		reqcc: {},
+	};
+	const time = clock();
+	blocked(time.Policy.fromObject(historical), request(), time);
+	const wildcard = structuredClone(historical);
+	delete wildcard.resh["set-cookie"];
+	wildcard.resh.vary = "K";
+	wildcard.reqh = { host: "example.invalid" };
+	blocked(time.Policy.fromObject(wildcard), request(), time);
+});
+test("C03 modes cookie opt-ins and own special fields survive JSON", () => {
+	for (const config of [
+		{ cc: `public,max-age=60,${extensions}` },
+		{ cc: `immutable,max-age=60,${extensions}` },
+		{ cc: `max-age=60,${extensions}`, options: { shared: false } },
+	]) {
+		const req = {
+			...request(),
+			headers: headerMap("null", "__proto__", "plain", true),
+		};
+		const f = fixture({
+			...config,
+			headers: { vary: "__proto__", "set-cookie": "fixture=plain" },
+			req,
+		});
+		for (const policy of roundtrips(f.policy, f.time)) {
+			f.time.setAge(0);
+			hit(policy, req);
+			assert.equal(policy.toObject().sh, config.options?.shared !== false);
+			f.time.setAge(61);
+			fallback(policy, req, f.time, true);
+		}
+	}
+});
+test("C04 valid ETag Last-Modified 304 and 200 keep public result shape", () => {
+	for (const validator of [
+		{ etag: '"fixture"' },
+		{ "last-modified": date(T - 1000) },
+	]) {
+		const f = fixture({ cc: "public,max-age=60", headers: validator, age: 61 });
+		const next = update(f.policy, f.req, f.time, {
+			...validator,
+			"cache-control": "public,max-age=120",
+		});
+		hit(next, f.req);
+		assert.equal(next.timeToLive(), 120000);
+		const changed = update(
+			next,
+			f.req,
+			f.time,
+			{ "cache-control": "public,max-age=180" },
+			200,
+		);
+		assert.equal(changed.timeToLive(), 180000);
+	}
+});
+test("C05 first 304 cache-control restrictions are retained", () => {
+	for (const cc of ["no-cache", "private", "no-store"]) {
+		const f = fixture({
+			cc: null,
+			headers: { expires: date(T + 60000), etag: '"fixture"' },
+			age: 61,
+		});
+		const next = update(f.policy, f.req, f.time, {
+			etag: '"fixture"',
+			"cache-control": `${cc},${extensions}`,
+		});
+		assert.equal(next.toObject().resh["cache-control"], `${cc},${extensions}`);
+		blocked(next, f.req, f.time);
+	}
+});
+test("C06 first 304 wildcard and cookie restrictions are retained", () => {
+	for (const headers of [
+		{ vary: "*" },
+		{ vary: " * " },
+		{ vary: "Accept,*" },
+		{ "set-cookie": "fixture=plain" },
+	]) {
+		const f = fixture({
+			cc: null,
+			headers: { expires: date(T + 60000), etag: '"fixture"' },
+			age: 61,
+		});
+		const next = update(f.policy, f.req, f.time, {
+			etag: '"fixture"',
+			...headers,
+		});
+		for (const [key, value] of Object.entries(headers))
+			assert.equal(next.toObject().resh[key], value);
+		blocked(next, f.req, f.time);
+	}
+});
+test("C07 first pragma no-cache retained existing cache-control precedence", () => {
+	const f = fixture({
+		cc: null,
+		headers: { expires: date(T + 60000), etag: '"fixture"' },
+		age: 61,
+	});
+	blocked(
+		update(f.policy, f.req, f.time, { etag: '"fixture"', pragma: "no-cache" }),
+		f.req,
+		f.time,
+	);
+	const g = fixture({
+		cc: "public,max-age=60",
+		headers: { etag: '"fixture"' },
+		age: 61,
+	});
+	const next = update(g.policy, g.req, g.time, {
+		etag: '"fixture"',
+		pragma: "no-cache",
+	});
+	hit(next, g.req);
+	assert.equal(next.timeToLive(), 60000);
+});
+test("C08 valid 304 can replace no-cache with public fresh policy", () => {
+	const f = fixture({
+		cc: "no-cache,max-age=60",
+		headers: { etag: '"fixture"', "set-cookie": "fixture=plain" },
+		age: 61,
+	});
+	const next = update(f.policy, f.req, f.time, {
+		etag: '"fixture"',
+		"cache-control": "public,max-age=60",
+	});
+	hit(next, f.req);
+	assert.equal(next.timeToLive(), 60000);
+});
+test("C09 non-target 304 validation and header merging stay baseline-compatible", () => {
+	for (const Parent of [CachePolicy, official]) {
+		const f = fixture({
+			Parent,
+			cc: "public,max-age=60",
+			headers: { etag: '"old"', "x-existing": "a", "content-length": "20" },
+			age: 61,
+		});
+		const mismatch = f.policy.revalidatedPolicy(f.req, {
+			status: 304,
+			headers: { etag: '"other"' },
+		});
+		assert.equal(mismatch.matches, false);
+		assert.equal(
+			mismatch.modified,
+			false,
+			"legacy mismatched 304 cannot establish body authorization",
+		);
+		const next = update(f.policy, f.req, f.time, {
+			etag: '"old"',
+			"x-existing": "b",
+			"x-new": "not-merged",
+			"content-length": "99",
+		});
+		assert.equal(next.toObject().resh["x-existing"], "b");
+		assert.equal(next.toObject().resh["x-new"], undefined);
+		assert.equal(next.toObject().resh["content-length"], "20");
+	}
+});
+test("C10 accessors preserve API types and do not authorize cookie reuse", () => {
+	const f = fixture({
+		cc: "max-age=60",
+		headers: { "set-cookie": "fixture=plain" },
+	});
+	assert.equal(f.policy.responseHeaders()["set-cookie"], "fixture=plain");
+	assert.equal(typeof f.policy.revalidationHeaders(f.req), "object");
+	assert.equal(typeof f.policy.maxAge(), "number");
+	assert.equal(typeof f.policy.timeToLive(), "number");
+	miss(f.policy, f.req);
+});
+test("C11 ordinary request cache-control pragma and method branches stay compatible", () => {
+	const f = fixture({ cc: "public,max-age=60", age: 10 });
+	for (const req of [
+		request({ "cache-control": "no-cache" }),
+		request({ pragma: "no-cache" }),
+		request({ "cache-control": "max-age=9" }),
+		request({ "cache-control": "min-fresh=51" }),
+		request({}, "HEAD"),
+	])
+		miss(f.policy, req);
+	hit(f.policy, request({ "cache-control": "max-age=10,min-fresh=50" }));
+	hit(f.policy, f.req);
+});
+test("C12 independent clocks constructors returned policies and TTL rounding", () => {
+	const a = fixture({ age: 59.99975 });
+	const b = fixture({ age: 10 });
+	assert.equal(a.policy.timeToLive(), 30000);
+	assert.equal(b.policy.age(), 10);
+	const restored = a.time.Policy.fromObject(a.policy.toObject());
+	assert.equal(restored.now(), a.time.now());
+	assert.equal(restored.age(), a.policy.age());
+	const changed = update(
+		a.policy,
+		a.req,
+		a.time,
+		{ "cache-control": "public,max-age=60" },
+		200,
+	);
+	assert.equal(changed.timeToLive(), 60000);
+	assert.equal(b.policy.age(), 10);
+	assert.throws(
+		() =>
+			a.policy.revalidatedPolicy(
+				request({ "cache-control": "no-cache" }),
+				undefined,
+			),
+		/Response headers missing/,
+	);
+	assert.equal(a.policy.age(), 59.99975);
+	// Quarter-millisecond ticks are exactly representable at this epoch.
+	// Rounded TTL zero is distinct from the exact freshness boundary.
+	const edge = fixture({ cc: "public,max-age=60", age: 59.99975 });
+	assert.equal(edge.policy.timeToLive(), 0);
+	assert.equal(edge.policy.stale(), false);
+	edge.time.setAge(60);
+	assert.equal(edge.policy.age(), 60);
+	assert.equal(edge.policy.stale(), true);
+	edge.time.setAge(60.00025);
+	assert.equal(edge.policy.age(), 60.00025);
+	assert.equal(edge.policy.stale(), true);
+});
+
+test("D01 official source patch registration integrity and license", () => {
+	assert.equal(sha(readFileSync(cacheEntry)), sourceHash);
+	assert.equal(
+		sha(readFileSync(join(dirname(cacheEntry), "package.json"))),
+		"bee0609d5ab09a590afe0e1209d3702b0afb0a3c158492f90902a724d889d22b",
+	);
+	assert.equal(
+		sha(readFileSync(join(dirname(cacheEntry), "LICENSE"))),
+		"ab868ad5a2ef5068560d9cd3b2180ec63c140bb4c5cae1ba779d300a0ac74fa3",
+	);
+	const yaml = astroRequire("js-yaml");
+	const ws = yaml.load(readFileSync("pnpm-workspace.yaml", "utf8"));
+	assert.deepEqual(ws.patchedDependencies, {
+		"astro@7.2.10": "scripts/patches/astro@7.2.10.patch",
+		"js-yaml@3.15.2": "scripts/patches/js-yaml@3.15.2.patch",
+		"http-cache-semantics@4.2.0":
+			"scripts/patches/http-cache-semantics@4.2.0.patch",
+	});
+	const lock = yaml.load(readFileSync("pnpm-lock.yaml", "utf8"));
+	assert.equal(
+		lock.patchedDependencies["http-cache-semantics@4.2.0"],
+		sha(readFileSync(ws.patchedDependencies["http-cache-semantics@4.2.0"])),
+	);
+	assert.equal(
+		lock.packages["http-cache-semantics@4.2.0"].resolution.integrity,
+		"sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==",
+	);
+});
+test("D02 all current graph and actual links resolve the approved candidate", () => {
+	const instances = readdirSync("node_modules/.pnpm").filter((name) =>
+		name.startsWith("http-cache-semantics@"),
+	);
+	const yaml = astroRequire("js-yaml");
+	const lock = yaml.load(readFileSync("pnpm-lock.yaml", "utf8"));
+	const moduleLock = yaml.load(
+		readFileSync("node_modules/.pnpm/lock.yaml", "utf8"),
+	);
+	assert.deepEqual(moduleLock, lock);
+	const owners = [];
+	for (const [owner, body] of Object.entries(lock.snapshots))
+		for (const kind of ["dependencies", "optionalDependencies"])
+			for (const [name, version] of Object.entries(body[kind] ?? {})) {
+				if (
+					name === "http-cache-semantics" ||
+					version.startsWith("http-cache-semantics@")
+				) {
+					assert.match(version, /patch_hash=/);
+					owners.push(owner);
+				}
+			}
+	assert.equal(owners.length, 1);
+	assert.ok(owners[0].startsWith("astro@7.2.10("));
+	const links = [];
+	function scan(directory) {
+		for (const file of readdirSync(directory, { withFileTypes: true })) {
+			const path = join(directory, file.name);
+			if (file.isDirectory()) scan(path);
+			else if (file.isSymbolicLink()) {
+				const target = realpathSync(path);
+				const manifest = join(target, "package.json");
+				if (
+					existsSync(manifest) &&
+					JSON.parse(readFileSync(manifest, "utf8")).name ===
+						"http-cache-semantics"
+				) {
+					assert.equal(sha(readFileSync(join(target, "index.js"))), sourceHash);
+					assert.equal(realpathSync(join(target, "index.js")), cacheEntry);
+					links.push(path);
+				}
+			}
+		}
+	}
+	scan("node_modules");
+	assert.ok(links.length >= 1);
+	for (const name of instances) {
+		const entry = realpathSync(
+			join(
+				"node_modules/.pnpm",
+				name,
+				"node_modules/http-cache-semantics/index.js",
+			),
+		);
+		if (entry !== cacheEntry) {
+			assert.equal(sha(readFileSync(entry)), originalHash);
+			console.log(
+				`CACHE_INACTIVE physical original ${name}; no current lock edge or actual symlink points here`,
+			);
+		}
+	}
+	console.log(
+		`CACHE_REACHABLE graphParents=${owners.length} actualLinks=${links.length} source=${sourceHash}`,
+	);
+});
+test("D03 missing and corrupt patches fail the normal frozen offline installer", () => {
+	for (const target of [
+		"http-cache-semantics@4.2.0",
+		"astro@7.2.10",
+		"js-yaml@3.15.2",
+	])
+		for (const variant of ["missing", "corrupt"]) {
+			const directory = mkdtempSync(join(tmpdir(), "zhenkun-cache-negative-"));
+			try {
+				for (const file of [
+					"package.json",
+					"pnpm-workspace.yaml",
+					"pnpm-lock.yaml",
+				])
+					copyFileSync(file, join(directory, file));
+				mkdirSync(join(directory, "scripts/patches"), { recursive: true });
+				for (const other of [
+					"http-cache-semantics@4.2.0",
+					"astro@7.2.10",
+					"js-yaml@3.15.2",
+				]) {
+					if (other === target && variant === "missing") continue;
+					const file = `scripts/patches/${other}.patch`;
+					const bytes = readFileSync(file);
+					writeFileSync(
+						join(directory, file),
+						other === target
+							? Buffer.concat([
+									bytes,
+									Buffer.from("\n# owned negative fixture\n"),
+								])
+							: bytes,
+					);
+				}
+				const result = spawnSync(
+					"pnpm",
+					["install", "--frozen-lockfile", "--offline", "--ignore-scripts"],
+					{ cwd: directory, encoding: "utf8", timeout: 30000 },
+				);
+				assert.equal(result.error, undefined);
+				assert.notEqual(result.status, 0);
+				const output = `${result.stdout}${result.stderr}`;
+				assert.match(
+					output,
+					variant === "missing"
+						? new RegExp(
+								`ENOENT.*${target.replaceAll(".", "\\.")}\\.patch`,
+								"s",
+							)
+						: /ERR_PNPM_(PATCH_CHANGED|LOCKFILE_CONFIG_MISMATCH)/,
+				);
+				assert.doesNotMatch(
+					output,
+					/ERR_SQLITE_ERROR|EPERM|EACCES|META_FETCH_FAIL/,
+				);
+				console.log(
+					`CACHE_NEGATIVE ${target} ${variant} exit=${result.status} ${output.trim()}`,
+				);
+			} finally {
+				rmSync(directory, { recursive: true, force: true });
+			}
+		}
+});
+test("D04 actual Astro remote helpers use bounded synthetic fetch and real policy TTL", async () => {
+	const remote = await import(
+		pathToFileURL(join(dirname(astroEntry), "assets/build/remote.js"))
+	);
+	const imageConfig = { domains: ["example.invalid"], remotePatterns: [] };
+	const bytes = Buffer.from("owned-image-byte-fixture");
+	const etag = '"fixture"';
+	const lm = date(T - 1000);
+	for (const headers of [
+		{ "cache-control": "public,max-age=60", age: "10" },
+		{ "cache-control": "public,s-maxage=60,stale-if-error=30", age: "10" },
+		{ "cache-control": "no-cache,max-age=60,stale-if-error=30" },
+		{ "cache-control": "no-store,max-age=60" },
+		{
+			"cache-control": "max-age=60,stale-if-error=30",
+			"set-cookie": "fixture=plain",
+		},
+		{ "cache-control": "public,max-age=60", vary: " * " },
+		{ "cache-control": "public,max-age=60", vary: "K" },
+	]) {
+		const zero =
+			Object.hasOwn(headers, "set-cookie") ||
+			headers.vary !== undefined ||
+			headers["cache-control"].startsWith("no-");
+		for (const status of [200, 304]) {
+			if (headers.vary === "K") continue; // Web Headers correctly rejects non-ByteString; B08 covers raw CachePolicy.
+			let calls = 0;
+			const fakeFetch = async (req, options) => {
+				assert.equal(req.url, URL);
+				assert.equal(req.method, "GET");
+				assert.equal(options.redirect, "manual");
+				assert.equal(++calls, 1);
+				if (status === 304) {
+					assert.equal(req.headers.get("if-none-match"), etag);
+					assert.equal(req.headers.get("if-modified-since"), lm);
+				}
+				return new Response(status === 304 ? null : bytes, {
+					status,
+					headers: { ...headers, etag, "last-modified": lm },
+				});
+			};
+			const before = Date.now();
+			const result =
+				status === 200
+					? await remote.loadRemoteImage(URL, fakeFetch, imageConfig)
+					: await remote.revalidateRemoteImage(
+							URL,
+							{ etag, lastModified: lm },
+							fakeFetch,
+							imageConfig,
+						);
+			const after = Date.now();
+			const ttl = zero ? 0 : 50000;
+			assert.ok(
+				result.expires >= before + ttl && result.expires <= after + ttl,
+			);
+			assert.equal(calls, 1);
+			assert.equal(result.etag, etag);
+			assert.equal(result.lastModified, lm);
+			assert.deepEqual(result.data, status === 304 ? null : bytes);
+		}
+	}
+	for (const status of [400, 404, 500, 502, 503, 504]) {
+		const fakeFetch = async () => new Response("owned error", { status });
+		await assert.rejects(
+			remote.loadRemoteImage(URL, fakeFetch, imageConfig),
+			/Failed to load/,
+		);
+		await assert.rejects(
+			remote.revalidateRemoteImage(URL, {}, fakeFetch, imageConfig),
+			/Failed to revalidate/,
+		);
+	}
+	await assert.rejects(
+		remote.loadRemoteImage(
+			URL,
+			async () => {
+				throw new Error("owned network failure");
+			},
+			imageConfig,
+		),
+		/owned network failure/,
+	);
+	const generateSource = readFileSync(
+		join(dirname(astroEntry), "assets/build/generate.js"),
+		"utf8",
+	);
+	assert.match(generateSource, /Proceeding with stale cache/);
+	console.log(
+		"CACHE_PARENT legacy Astro stale-file branch remains in source; separate actual-generator tests verify the patched local-only cache entry restriction.",
+	);
+});
+
+test("official baseline counterexamples reproduce bounded failures", () => {
+	for (const [id, config, verify] of [
+		[
+			"93748 cookie max-stale",
+			{
+				cc: `max-age=60,${extensions}`,
+				headers: { "set-cookie": "fixture=plain" },
+			},
+			(f) => miss(f.policy, request({ "cache-control": "max-stale" })),
+		],
+		[
+			"93748 no-cache direct SWR",
+			{ cc: `no-cache,max-age=60,${extensions}` },
+			(f) => assert.equal(f.policy.useStaleWhileRevalidate(), false),
+		],
+		[
+			"93750 wildcard OWS",
+			{ headers: { vary: " * " } },
+			(f) => assert.equal(f.policy.maxAge(), 0),
+		],
+		[
+			"93750 own/inherited",
+			{
+				headers: { vary: "accept" },
+				req: { ...request(), headers: headerMap("plain", "accept", "a", true) },
+			},
+			(f) =>
+				miss(f.policy, {
+					...request(),
+					headers: headerMap("plain", "accept", "a", false),
+				}),
+		],
+	]) {
+		const f = fixture({ ...config, Parent: official });
+		assert.throws(() => verify(f), assert.AssertionError, id);
+		console.log(`CACHE_BASELINE expected assertion failure: ${id}`);
+	}
+});

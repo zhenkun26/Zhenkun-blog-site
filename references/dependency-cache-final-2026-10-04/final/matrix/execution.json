@@ -1,0 +1,314 @@
+[
+  {
+    "name": "peers",
+    "command": [
+      "corepack",
+      "pnpm",
+      "peers",
+      "check"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "exitCode": 0,
+    "seconds": 0.4
+  },
+  {
+    "name": "biome",
+    "command": [
+      "corepack",
+      "pnpm",
+      "exec",
+      "biome",
+      "ci",
+      "src",
+      "scripts/zhenkun-security-audit.mjs",
+      "scripts/zhenkun-test-security-audit.mjs",
+      "scripts/zhenkun-security-policy.json",
+      "scripts/zhenkun-cache-remediation.mjs",
+      "scripts/zhenkun-cache-repair-contract.json",
+      "scripts/zhenkun-test-cache-policy.mjs",
+      "scripts/zhenkun-test-astro-cache-generator.mjs"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "exitCode": 0,
+    "seconds": 0.444
+  },
+  {
+    "name": "astro-check",
+    "command": [
+      "corepack",
+      "pnpm",
+      "check"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "exitCode": 0,
+    "seconds": 13.57
+  },
+  {
+    "name": "types",
+    "command": [
+      "corepack",
+      "pnpm",
+      "type-check"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "exitCode": 0,
+    "seconds": 1.926
+  },
+  {
+    "name": "strict-parent-types",
+    "command": [
+      "corepack",
+      "pnpm",
+      "exec",
+      "tsc",
+      "--ignoreConfig",
+      "--noEmit",
+      "--strict",
+      "--module",
+      "NodeNext",
+      "--moduleResolution",
+      "NodeNext",
+      "--target",
+      "ES2022",
+      "scripts/zhenkun-swup-parent-types.ts"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "exitCode": 0,
+    "seconds": 0.655
+  },
+  {
+    "name": "native",
+    "command": [
+      "node",
+      "--test",
+      "scripts/zhenkun-test-astro-cache-generator.mjs",
+      "scripts/zhenkun-test-cache-policy.mjs",
+      "scripts/zhenkun-test-capabilities.mjs",
+      "scripts/zhenkun-test-ci-artifacts.mjs",
+      "scripts/zhenkun-test-deployment.mjs",
+      "scripts/zhenkun-test-nav-menu.mjs",
+      "scripts/zhenkun-test-publication.mjs",
+      "scripts/zhenkun-test-r1-tail.mjs",
+      "scripts/zhenkun-test-r1a-data.mjs",
+      "scripts/zhenkun-test-r1b-uri.mjs",
+      "scripts/zhenkun-test-r2-native.mjs",
+      "scripts/zhenkun-test-search-session.mjs",
+      "scripts/zhenkun-test-security-audit.mjs",
+      "scripts/zhenkun-test-swup-parents.mjs",
+      "scripts/zhenkun-test-unifont.mjs"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "exitCode": 0,
+    "seconds": 4.554
+  },
+  {
+    "name": "build-root",
+    "command": [
+      "corepack",
+      "pnpm",
+      "build"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1",
+      "DEPLOY_BASE": "/"
+    },
+    "exitCode": 0,
+    "seconds": 17.091
+  },
+  {
+    "name": "artifacts-root",
+    "command": [
+      "node",
+      "scripts/zhenkun-verify-ci-artifacts.mjs",
+      "--base",
+      "/"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "exitCode": 0,
+    "seconds": 0.187
+  },
+  {
+    "name": "preview-root-background",
+    "command": [
+      "corepack",
+      "pnpm",
+      "exec",
+      "astro",
+      "preview",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "4347"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1",
+      "DEPLOY_BASE": "/"
+    },
+    "exitCode": 0,
+    "seconds": 2.343
+  },
+  {
+    "name": "http-root",
+    "command": [
+      "python3",
+      "scripts/zhenkun-verify-deployment.py",
+      "--base",
+      "/",
+      "--expected-posts",
+      "0",
+      "--http",
+      "http://127.0.0.1:4347"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "exitCode": 0,
+    "seconds": 0.133
+  },
+  {
+    "name": "preview-root-stop",
+    "command": [
+      "corepack",
+      "pnpm",
+      "exec",
+      "astro",
+      "preview",
+      "stop"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1",
+      "DEPLOY_BASE": "/"
+    },
+    "exitCode": 0,
+    "seconds": 0.505
+  },
+  {
+    "name": "build-project",
+    "command": [
+      "corepack",
+      "pnpm",
+      "build"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1",
+      "DEPLOY_BASE": "/Zhenkun-blog-site/"
+    },
+    "exitCode": 0,
+    "seconds": 7.196
+  },
+  {
+    "name": "artifacts-project",
+    "command": [
+      "node",
+      "scripts/zhenkun-verify-ci-artifacts.mjs",
+      "--base",
+      "/Zhenkun-blog-site/"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "exitCode": 0,
+    "seconds": 0.131
+  },
+  {
+    "name": "preview-project-background",
+    "command": [
+      "corepack",
+      "pnpm",
+      "exec",
+      "astro",
+      "preview",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "4348"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1",
+      "DEPLOY_BASE": "/Zhenkun-blog-site/"
+    },
+    "exitCode": 0,
+    "seconds": 1.807
+  },
+  {
+    "name": "http-project",
+    "command": [
+      "python3",
+      "scripts/zhenkun-verify-deployment.py",
+      "--base",
+      "/Zhenkun-blog-site/",
+      "--expected-posts",
+      "0",
+      "--http",
+      "http://127.0.0.1:4348"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1"
+    },
+    "exitCode": 0,
+    "seconds": 0.131
+  },
+  {
+    "name": "preview-project-stop",
+    "command": [
+      "corepack",
+      "pnpm",
+      "exec",
+      "astro",
+      "preview",
+      "stop"
+    ],
+    "env": {
+      "CF_WORKERS": "unset",
+      "NODE_OPTIONS": "unset",
+      "ASTRO_TELEMETRY_DISABLED": "1",
+      "DEPLOY_BASE": "/Zhenkun-blog-site/"
+    },
+    "exitCode": 0,
+    "seconds": 0.504
+  }
+]

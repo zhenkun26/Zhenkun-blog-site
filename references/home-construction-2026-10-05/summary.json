@@ -69,7 +69,13 @@
     }
   ],
   "mobile_navigation": "PASS Home → About (0 notice) → Home (1 notice)",
-  "original_preservation": "PASS HEAD/branch/main/status/.workbuddy/package/lock",
+  "original_preservation": "PASS HEAD/branch/main/status/<private-local-state>",
   "remediation_candidate_imported": false,
-  "deployed": false
+  "deployed": false,
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "269066a7c16b1d74c24a128dfe37419ed7a5d50e0f694ffc65e3d4721627a0f4",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
 }

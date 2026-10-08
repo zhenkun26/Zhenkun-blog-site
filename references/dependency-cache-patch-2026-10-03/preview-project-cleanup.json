@@ -1,0 +1,25 @@
+{
+  "daemon": {
+    "pid": 32791,
+    "port": 57053,
+    "url": "http://127.0.0.1:57053",
+    "urls": {
+      "local": [
+        "http://127.0.0.1:57053/Zhenkun-blog-site/"
+      ],
+      "network": [],
+      "networkInterfaceNames": []
+    },
+    "background": true,
+    "startedAt": "2026-10-03T15:42:32.001Z"
+  },
+  "portClosed": true,
+  "lockRemoved": true,
+  "command": [
+    "pnpm",
+    "exec",
+    "astro",
+    "preview",
+    "stop"
+  ]
+}

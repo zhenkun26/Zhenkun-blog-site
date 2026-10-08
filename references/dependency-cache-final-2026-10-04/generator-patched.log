@@ -1,0 +1,22 @@
+✔ generator restriction 0: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (10.859083ms)
+✔ generator restriction 1: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (1.073417ms)
+✔ generator restriction 2: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (1.084625ms)
+✔ generator restriction 3: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.944792ms)
+✔ generator restriction 4: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.9945ms)
+✔ generator restriction 5: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.844458ms)
+✔ generator restriction 6: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes (0.893083ms)
+✔ generator failure network: stale validators cannot publish old bytes (0.781708ms)
+✔ generator failure 304: stale validators cannot publish old bytes (0.520417ms)
+✔ generator failure 404: stale validators cannot publish old bytes (0.526ms)
+✔ generator failure 500: stale validators cannot publish old bytes (1.037875ms)
+✔ generator failure 503: stale validators cannot publish old bytes (0.421667ms)
+✔ generator successful remote miss does not create persistent cache (0.558417ms)
+✔ generator local image cache positive control remains usable offline (0.556792ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 68.43425

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "references/dependency-peer-2026-10-03/parent-api-check.mjs"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1"
+  },
+  "start": "2026-10-03T15:40:17.217079+00:00",
+  "end": "2026-10-03T15:40:17.497690+00:00",
+  "exit": 0
+}

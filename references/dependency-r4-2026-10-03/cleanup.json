@@ -1,0 +1,24 @@
+{
+  "state": "PASS_BOUNDED_CHECK",
+  "nativeFixtureKnownPortsClosed": [
+    {
+      "port": 61371,
+      "connectExit": 61
+    },
+    {
+      "port": 61380,
+      "connectExit": 61
+    },
+    {
+      "port": 61866,
+      "connectExit": 61
+    },
+    {
+      "port": 61873,
+      "connectExit": 61
+    }
+  ],
+  "newPreviewStarted": false,
+  "ownedSecurityFixtures": "t.after removes only each mkdtemp directory; no shared dependency deletion",
+  "ignoredNativeArtifactsRetained": true
+}

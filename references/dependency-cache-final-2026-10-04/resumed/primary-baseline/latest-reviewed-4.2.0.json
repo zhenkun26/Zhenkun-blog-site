@@ -1,0 +1,60 @@
+{
+  "name": "http-cache-semantics",
+  "version": "4.2.0",
+  "author": {
+    "url": "https://kornel.ski/",
+    "name": "Kornel Lesi\u0144ski",
+    "email": "npms2@geekhood.net"
+  },
+  "license": "BSD-2-Clause",
+  "_id": "http-cache-semantics@4.2.0",
+  "maintainers": [
+    {
+      "name": "kornel",
+      "email": "npmspam@geekhood.net"
+    }
+  ],
+  "homepage": "https://github.com/kornelski/http-cache-semantics#readme",
+  "bugs": {
+    "url": "https://github.com/kornelski/http-cache-semantics/issues"
+  },
+  "dist": {
+    "shasum": "205f4db64f8562b76a4ff9235aa5279839a09dd5",
+    "tarball": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.2.0.tgz",
+    "fileCount": 4,
+    "integrity": "sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ==",
+    "signatures": [
+      {
+        "sig": "MEUCIBDylgJy1goQjk/YkybVnYDfrvUnbHzz8tdqOJPdjynvAiEAxYJ+Q4Vb6vXYQwFoq7tZTzjUCqQpCwlWDDHZYHcFisY=",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      }
+    ],
+    "unpackedSize": 49973
+  },
+  "main": "index.js",
+  "types": "index.js",
+  "gitHead": "83810982b8f8996b101ed761548ea7e87a9132ea",
+  "scripts": {
+    "test": "mocha"
+  },
+  "_npmUser": {
+    "name": "kornel",
+    "email": "npmspam@geekhood.net"
+  },
+  "repository": {
+    "url": "git+https://github.com/kornelski/http-cache-semantics.git",
+    "type": "git"
+  },
+  "_npmVersion": "11.3.0",
+  "description": "Parses Cache-Control and other headers. Helps building correct HTTP caches and proxies",
+  "directories": {},
+  "_nodeVersion": "23.11.0",
+  "_hasShrinkwrap": false,
+  "devDependencies": {
+    "mocha": "^11.0"
+  },
+  "_npmOperationalInternal": {
+    "tmp": "tmp/http-cache-semantics_4.2.0_1746797891650_0.9523367787642567",
+    "host": "s3://npm-registry-packages-npm-production"
+  }
+}

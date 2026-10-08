@@ -1,0 +1,82 @@
+{
+  "state": "BLOCKED_UNAPPROVED_GRAPH_DRIFT",
+  "sourceCommit": "d5acbda03883dd0a34c875cceb2c7981bf2ee9d4",
+  "baseCommit": "8f5e9488bb0fbd9b8255db2ed5773af4889ce69e",
+  "workspace": "<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final",
+  "branch": "codex/cache-final-20261004",
+  "recordedAt": "2026-10-04T02:55:35.997206+00:00",
+  "runtime": {
+    "node": "v24.20.0",
+    "pnpm": "11.22.0 via corepack"
+  },
+  "protectedRepositories": [
+    {
+      "path": "<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4",
+      "head": "8f5e9488bb0fbd9b8255db2ed5773af4889ce69e",
+      "trackedStatus": ""
+    },
+    {
+      "path": "<local-home>/GitHub/Zhenkun-blog-site",
+      "head": "b6c3e39b2bf7ea73ec60234dc42f8240e0e8695f",
+      "trackedStatus": ""
+    }
+  ],
+  "privateWorkbuddy": {
+    "state": "LOCAL_ONLY_PROTECTION_DATA",
+    "originalValueSha256": "1a62a9066220b402705a71351447ca91285235dc82b1ef7c2f3dd49e09e45141"
+  },
+  "validation": {
+    "baselineFrozenInstall": "PASS through reviewed escalation; ignore-scripts and official registry",
+    "baselineCacheSecurity": {
+      "tests": 100,
+      "passed": 100,
+      "failed": 0,
+      "skipped": 0
+    },
+    "generatorPatchedDiagnostic": {
+      "tests": 14,
+      "passed": 14,
+      "failed": 0,
+      "skipped": 0
+    },
+    "generatorOfficialNegative": {
+      "tests": 14,
+      "passed": 1,
+      "failed": 13,
+      "skipped": 0
+    },
+    "lockScope": "FAIL: four added packages and six unrelated parent edges",
+    "finalMatrix": "NOT_RUN after stop",
+    "strictPatchAwareSecurity": "NOT_IMPLEMENTED; original fail-closed gate unchanged",
+    "remoteWrites": "NONE"
+  },
+  "hashes": {
+    "scripts/patches/astro@7.2.10.patch": "e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47",
+    "scripts/patches/http-cache-semantics@4.2.0.patch": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3",
+    "pnpm-lock.yaml": "d4bdd333ce854b4d6e8bb86684ccc030c193966b5d4a89ac564f81e8fd9689f4",
+    "scripts/zhenkun-test-astro-cache-generator.mjs": "8eaf9ea12bedaa39c85ff9e09473c15f537c8a6bcb38f2a5e01918c68af86405",
+    "tmp/astro-edit/dist/assets/build/generate.js": "4a1d2ab3527330f97bfe77ab86c091ccaaab06a93fee02b466eee2ad149e33d8"
+  },
+  "evidenceHashes": {
+    "astro-LICENSE": "4aa72be797aad0e5e21827eaae6a1df9e122d7a401f07d2c308a6b9a5f0e1278",
+    "astro-generator-official.js": "d35fda4e0a924ab0034f2c43983ccad4a7918667333fe381f355f057d9cb20db",
+    "baseline-focused-reviewed.log": "2ffdbf6e1c6cbcd6d81be810626f7ed64c12c7cdeaeac28dd13e0433a0971e4d",
+    "baseline-focused.log": "43d4e575fe44237785a6877b26c3ab717abb11dceedcaf4acb7067c2f0061705",
+    "baseline-install-reviewed.log": "c1629ca8fd27e7d9ac3ebdceb96edf808509341a094cb1579384105dc7a18000",
+    "baseline-install.log": "33382bfe3e9888dcd5f2ab9dd64fc9f110e5e4f952cdf33d808596cb7ec9f6ec",
+    "generator-original-negative.log": "7be7cc6728e9b07f052cfbb9da2359e2b251e359f3446696cd882372159b9292",
+    "generator-patched.log": "e65499383f99209b3e78fc412948cb785eb9adff9f7ebb98fd954b7b56698d4e",
+    "graph-stop.json": "1eaeff0a5d8c413613ad77497d3b7b75fd127390abe61f40212d8a9f939d4ca1",
+    "patch-commit-reviewed.log": "8e10193d16ce53fc3b57596674eef767a209d7182a509717056fa2b795be2586",
+    "patch-commit.log": "bef102f67daa0a87f0f0b108a3c3eb094e5ea2ee4bc607f2afb00a7b32615f3b",
+    "patch-prepare.log": "0fdf64efae3b41889d545f657fd32ea07397057900909a46ada5efffb8cd4c6a",
+    "rejected-lock.diff": "e7e01e8b52a4f421af7d9e93f8d40921af95f67a91432285d730f702ae5d65c4"
+  },
+  "nextAction": "Coordinator review of graph drift; do not upload this rejected candidate. Resume a bounded generated-lock correction only with scope resolved.",
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "2c58d5fd8fa07eb4af64f1699cbcaeb8a438592244d3134285c3821b6969c6d4",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "full": {
+    "command": "git diff --cached --check",
+    "exit": 2,
+    "state": "FAIL",
+    "diagnostics": 107,
+    "categories": {
+      "trailing whitespace.": 106,
+      "new blank line at EOF.": 1
+    },
+    "files": {
+      "references/dependency-r1-tail-2026-10-03/build-project.log": 34,
+      "references/dependency-r1-tail-2026-10-03/build-root.log": 34,
+      "references/dependency-r1-tail-2026-10-03/check.log": 2,
+      "references/dependency-r1-tail-2026-10-03/dependencies.diff": 29,
+      "references/dependency-r1-tail-2026-10-03/font-tests-initial.log": 8
+    },
+    "rawLog": "whitespace-full.log",
+    "scanPoint": "Staged raw packet before derived whitespace logs/receipt; original raw files remain byte-identical."
+  },
+  "scoped": {
+    "exit": 0,
+    "state": "PASS",
+    "rawLog": "whitespace-scoped.log",
+    "exactExcludedPaths": [
+      "references/dependency-r1-tail-2026-10-03/build-project.log",
+      "references/dependency-r1-tail-2026-10-03/build-root.log",
+      "references/dependency-r1-tail-2026-10-03/check.log",
+      "references/dependency-r1-tail-2026-10-03/dependencies.diff",
+      "references/dependency-r1-tail-2026-10-03/font-tests-initial.log",
+      "references/dependency-r1-tail-2026-10-03/whitespace-full.log"
+    ],
+    "reason": "Preserve byte-for-byte raw build/check/initial-failure logs, generated dependency diff and the full diagnostic log. No broad path exclusion and no raw whitespace rewriting."
+  }
+}

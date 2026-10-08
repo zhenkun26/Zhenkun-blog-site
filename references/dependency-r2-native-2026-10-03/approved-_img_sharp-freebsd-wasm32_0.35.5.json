@@ -1,0 +1,157 @@
+{
+  "os": [
+    "freebsd"
+  ],
+  "_id": "@img/sharp-freebsd-wasm32@0.35.5",
+  "bugs": {
+    "url": "https://github.com/lovell/sharp/issues"
+  },
+  "dist": {
+    "shasum": "53b6041958608afa2f5f08323091101407e99086",
+    "tarball": "https://registry.npmjs.org/@img/sharp-freebsd-wasm32/-/sharp-freebsd-wasm32-0.35.5.tgz",
+    "fileCount": 9,
+    "integrity": "sha512-Y/z91nEZ4uIBX5X3nfTovjU9lHNKFYbL2lpHCLVNmXQK03VIZvXBBt0KxbPGp2SdGSF+2mQU4e+hQaWOt86iAw==",
+    "signatures": [
+      {
+        "sig": "MEQCIB7Vlzyp/702mVtVKYRB6mkJPYSL/ALlvYETrBG97mJsAiBJ+6ThRxSM1CJc28mh1VInH1bB9/b5lH5iiMO6axKk8Q==",
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+      },
+      {
+        "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+        "sig": "MEUCIFsgsigayh2wWYc2s4zi4MMNBDatUWOVf0bZ5ABls4/XAiEAnJrAIJ67yTszxRV0+6SjmyzAYAjE22TcUkyxiJXT7/4="
+      }
+    ],
+    "attestations": {
+      "url": "https://registry.npmjs.org/-/npm/v1/attestations/@img%2fsharp-freebsd-wasm32@0.35.5",
+      "provenance": {
+        "predicateType": "https://slsa.dev/provenance/v1"
+      }
+    },
+    "unpackedSize": 12416
+  },
+  "name": "@img/sharp-freebsd-wasm32",
+  "type": "commonjs",
+  "author": "Lovell Fuller",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "exports": {
+    "./package": {
+      "import": "./export/package.mjs",
+      "require": "./export/package.cjs"
+    },
+    "./versions": {
+      "import": "./export/versions.mjs",
+      "require": "./export/versions.cjs"
+    },
+    "./sharp.node": {
+      "import": "./export/sharp.node.mjs",
+      "require": "./export/sharp.node.cjs"
+    }
+  },
+  "funding": {
+    "url": "https://opencollective.com/libvips"
+  },
+  "gitHead": "51a990faa26ade5586a4934ac9673c98d8893326",
+  "license": "Apache-2.0",
+  "version": "0.35.5",
+  "_npmUser": {
+    "name": "GitHub Actions",
+    "email": "npm-oidc-no-reply@github.com",
+    "trustedPublisher": {
+      "id": "github",
+      "oidcConfigId": "oidc:58affd93-82b8-4bee-bc1b-95feb36d8c8e"
+    }
+  },
+  "homepage": "https://sharp.pixelplumbing.com",
+  "repository": {
+    "url": "git+https://github.com/lovell/sharp.git",
+    "type": "git",
+    "directory": "npm/freebsd-wasm32"
+  },
+  "_npmVersion": "11.19.0",
+  "description": "Prebuilt sharp for use with FreeBSD (WebAssembly)",
+  "directories": {},
+  "maintainers": [
+    {
+      "name": "lovell",
+      "email": "npm@lovell.info"
+    }
+  ],
+  "_nodeVersion": "24.21.0",
+  "dependencies": {
+    "@img/sharp-wasm32": "0.35.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "_hasShrinkwrap": false,
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages-npm-production",
+    "tmp": "tmp/sharp-freebsd-wasm32_0.35.5_1790516749446_0.2356413148880221"
+  },
+  "versions": [
+    "0.35.0-rc.1",
+    "0.35.0-rc.2",
+    "0.35.0-rc.3",
+    "0.35.0-rc.4",
+    "0.35.0-rc.5",
+    "0.35.0-rc.6",
+    "0.35.0-rc.7",
+    "0.35.0-rc.8",
+    "0.35.0",
+    "0.35.1-rc.0",
+    "0.35.1-rc.1",
+    "0.35.1",
+    "0.35.2-rc.0",
+    "0.35.2-rc.1",
+    "0.35.2-rc.2",
+    "0.35.2",
+    "0.35.3-rc.1",
+    "0.35.3-rc.2",
+    "0.35.3",
+    "0.35.4-rc.0",
+    "0.35.4",
+    "0.35.5-rc.0",
+    "0.35.5-rc.1",
+    "0.35.5"
+  ],
+  "versionsCount": 24,
+  "depsCount": 1,
+  "distTags": {
+    "latest": "0.35.5",
+    "next": "0.35.5-rc.1"
+  },
+  "dist-tags": {
+    "latest": "0.35.5",
+    "next": "0.35.5-rc.1"
+  },
+  "time": {
+    "created": "2026-04-04T21:28:00.500Z",
+    "modified": "2026-09-27T13:45:49.915Z",
+    "0.35.0-rc.1": "2026-04-04T21:28:00.768Z",
+    "0.35.0-rc.2": "2026-04-04T22:01:16.462Z",
+    "0.35.0-rc.3": "2026-04-19T20:41:09.248Z",
+    "0.35.0-rc.4": "2026-04-19T21:49:21.126Z",
+    "0.35.0-rc.5": "2026-04-21T21:09:18.361Z",
+    "0.35.0-rc.6": "2026-06-07T09:47:44.364Z",
+    "0.35.0-rc.7": "2026-06-10T08:59:40.184Z",
+    "0.35.0-rc.8": "2026-06-10T13:53:59.493Z",
+    "0.35.0": "2026-06-10T17:06:16.058Z",
+    "0.35.1-rc.0": "2026-06-11T08:00:54.522Z",
+    "0.35.1-rc.1": "2026-06-11T12:46:26.569Z",
+    "0.35.1": "2026-06-11T17:09:43.488Z",
+    "0.35.2-rc.0": "2026-06-16T16:08:58.611Z",
+    "0.35.2-rc.1": "2026-06-18T09:11:39.407Z",
+    "0.35.2-rc.2": "2026-06-18T10:15:38.130Z",
+    "0.35.2": "2026-06-19T13:46:35.093Z",
+    "0.35.3-rc.1": "2026-06-27T12:13:07.351Z",
+    "0.35.3-rc.2": "2026-06-30T12:01:35.215Z",
+    "0.35.3": "2026-07-01T11:27:37.586Z",
+    "0.35.4-rc.0": "2026-08-25T23:00:52.395Z",
+    "0.35.4": "2026-08-26T09:39:00.233Z",
+    "0.35.5-rc.0": "2026-09-22T14:21:21.696Z",
+    "0.35.5-rc.1": "2026-09-27T08:57:56.177Z",
+    "0.35.5": "2026-09-27T13:45:49.555Z"
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "prod": {
+    "sha256": "6f663bd52355f8edc4e442eb5ee91543723ade7bc04309f74b5edeb98272f423",
+    "advisories": [
+      {
+        "package": "http-cache-semantics",
+        "ghsa": "GHSA-ch52-4w7c-c8xp",
+        "severity": "high",
+        "instances": [
+          {
+            "version": "4.2.0",
+            "pathCount": 8,
+            "paths": [
+              ".>@astrojs/cloudflare>astro>http-cache-semantics",
+              ".>@astrojs/mdx>astro>http-cache-semantics",
+              ".>@astrojs/svelte>astro>http-cache-semantics",
+              ".>astro>http-cache-semantics",
+              ".>astro-expressive-code>astro>http-cache-semantics",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+            ]
+          }
+        ]
+      },
+      {
+        "package": "sprintf-js",
+        "ghsa": "GHSA-hp3w-g68c-fv3c",
+        "severity": "moderate",
+        "instances": [
+          {
+            "version": "1.0.3",
+            "pathCount": 1,
+            "paths": [
+              ".>gray-matter>js-yaml>argparse>sprintf-js"
+            ]
+          }
+        ]
+      },
+      {
+        "package": "smol-toml",
+        "ghsa": "GHSA-r4xh-jqrq-34v2",
+        "severity": "moderate",
+        "instances": [
+          {
+            "version": "1.8.0",
+            "pathCount": 43,
+            "paths": [
+              ".>@astrojs/cloudflare>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/cloudflare>astro>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/cloudflare>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/cloudflare>astro>smol-toml",
+              ".>@astrojs/cloudflare>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>astro>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>astro>smol-toml",
+              ".>@astrojs/mdx>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/svelte>astro>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/svelte>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/svelte>astro>smol-toml",
+              ".>@astrojs/svelte>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>astro>@astrojs/internal-helpers>smol-toml",
+              ".>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>astro>smol-toml",
+              ".>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>astro-expressive-code>astro>@astrojs/internal-helpers>smol-toml",
+              ".>astro-expressive-code>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>astro-expressive-code>astro>smol-toml",
+              ".>astro-expressive-code>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml"
+            ]
+          }
+        ]
+      },
+      {
+        "package": "katex",
+        "ghsa": "GHSA-238p-pmpm-9mq7",
+        "severity": "low",
+        "instances": [
+          {
+            "version": "0.16.47",
+            "pathCount": 2,
+            "paths": [
+              ".>rehype-katex>katex",
+              ".>remark-math>micromark-extension-math>katex"
+            ]
+          }
+        ]
+      },
+      {
+        "package": "source-map-js",
+        "ghsa": "GHSA-68fv-2mgg-jv7q",
+        "severity": "high",
+        "instances": [
+          {
+            "version": "1.2.1",
+            "pathCount": 83,
+            "paths": [
+              ".>@astrojs/cloudflare>@cloudflare/vite-plugin>vite>postcss>source-map-js",
+              ".>@astrojs/cloudflare>astro>magicast>source-map-js",
+              ".>@astrojs/cloudflare>astro>svgo>css-tree>source-map-js",
+              ".>@astrojs/cloudflare>astro>svgo>csso>css-tree>source-map-js",
+              ".>@astrojs/cloudflare>astro>unifont>css-tree>source-map-js",
+              ".>@astrojs/cloudflare>astro>vite>postcss>source-map-js",
+              ".>@astrojs/cloudflare>astro>vitefu>vite>postcss>source-map-js",
+              ".>@astrojs/cloudflare>vite>postcss>source-map-js",
+              ".>@astrojs/mdx>astro>magicast>source-map-js",
+              ".>@astrojs/mdx>astro>svgo>css-tree>source-map-js",
+              ".>@astrojs/mdx>astro>svgo>csso>css-tree>source-map-js",
+              ".>@astrojs/mdx>astro>unifont>css-tree>source-map-js",
+              ".>@astrojs/mdx>astro>vite>postcss>source-map-js",
+              ".>@astrojs/mdx>astro>vitefu>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vitefu>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>astro>magicast>source-map-js",
+              ".>@astrojs/svelte>astro>svgo>css-tree>source-map-js",
+              ".>@astrojs/svelte>astro>svgo>csso>css-tree>source-map-js",
+              ".>@astrojs/svelte>astro>unifont>css-tree>source-map-js",
+              ".>@astrojs/svelte>astro>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>astro>vitefu>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>vitefu>vite>postcss>source-map-js",
+              ".>@expressive-code/plugin-collapsible-sections>@expressive-code/core>postcss>source-map-js",
+              ".>@expressive-code/plugin-collapsible-sections>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>@expressive-code/plugin-line-numbers>@expressive-code/core>postcss>source-map-js",
+              ".>@expressive-code/plugin-line-numbers>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>astro>magicast>source-map-js",
+              ".>astro>svgo>css-tree>source-map-js",
+              ".>astro>svgo>csso>css-tree>source-map-js",
+              ".>astro>unifont>css-tree>source-map-js",
+              ".>astro>vite>postcss>source-map-js",
+              ".>astro>vitefu>vite>postcss>source-map-js",
+              ".>astro-expressive-code>astro>magicast>source-map-js",
+              ".>astro-expressive-code>astro>svgo>css-tree>source-map-js",
+              ".>astro-expressive-code>astro>svgo>csso>css-tree>source-map-js",
+              ".>astro-expressive-code>astro>unifont>css-tree>source-map-js",
+              ".>astro-expressive-code>astro>vite>postcss>source-map-js",
+              ".>astro-expressive-code>astro>vitefu>vite>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>astro-icon>@iconify/tools>svgo>css-tree>source-map-js",
+              ".>astro-icon>@iconify/tools>svgo>csso>css-tree>source-map-js",
+              ".>ec-lang-logo>@expressive-code/core>postcss>source-map-js",
+              ".>ec-lang-logo>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-collapsible>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-collapsible>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>magicast>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>svgo>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>svgo>csso>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vitefu>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>magicast>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>svgo>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>svgo>csso>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>vitefu>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>magicast>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>svgo>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>svgo>csso>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-language-badge>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-language-badge>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>sanitize-html>postcss>source-map-js"
+            ]
+          }
+        ]
+      },
+      {
+        "package": "postcss-selector-parser",
+        "ghsa": "GHSA-rj75-hqrm-r3gf",
+        "severity": "moderate",
+        "instances": [
+          {
+            "version": "6.1.4",
+            "pathCount": 13,
+            "paths": [
+              ".>@expressive-code/plugin-collapsible-sections>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>@expressive-code/plugin-line-numbers>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>ec-lang-logo>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-collapsible>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-language-badge>@expressive-code/core>postcss-nested>postcss-selector-parser"
+            ]
+          },
+          {
+            "version": "6.0.10",
+            "pathCount": 1,
+            "paths": [
+              ".>@tailwindcss/typography>postcss-selector-parser"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "full": {
+    "sha256": "48691ba2a918447d4aeb690c84ab1ea02e4ad8ec28f9ff77905dc6f09d2002a1",
+    "advisories": [
+      {
+        "package": "http-cache-semantics",
+        "ghsa": "GHSA-ch52-4w7c-c8xp",
+        "severity": "high",
+        "instances": [
+          {
+            "version": "4.2.0",
+            "pathCount": 8,
+            "paths": [
+              ".>@astrojs/cloudflare>astro>http-cache-semantics",
+              ".>@astrojs/mdx>astro>http-cache-semantics",
+              ".>@astrojs/svelte>astro>http-cache-semantics",
+              ".>astro>http-cache-semantics",
+              ".>astro-expressive-code>astro>http-cache-semantics",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+            ]
+          }
+        ]
+      },
+      {
+        "package": "sprintf-js",
+        "ghsa": "GHSA-hp3w-g68c-fv3c",
+        "severity": "moderate",
+        "instances": [
+          {
+            "version": "1.0.3",
+            "pathCount": 1,
+            "paths": [
+              ".>gray-matter>js-yaml>argparse>sprintf-js"
+            ]
+          }
+        ]
+      },
+      {
+        "package": "smol-toml",
+        "ghsa": "GHSA-r4xh-jqrq-34v2",
+        "severity": "moderate",
+        "instances": [
+          {
+            "version": "1.8.0",
+            "pathCount": 43,
+            "paths": [
+              ".>@astrojs/cloudflare>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/cloudflare>astro>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/cloudflare>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/cloudflare>astro>smol-toml",
+              ".>@astrojs/cloudflare>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>astro>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>astro>smol-toml",
+              ".>@astrojs/mdx>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/mdx>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/svelte>astro>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/svelte>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>@astrojs/svelte>astro>smol-toml",
+              ".>@astrojs/svelte>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>astro>@astrojs/internal-helpers>smol-toml",
+              ".>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>astro>smol-toml",
+              ".>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>astro-expressive-code>astro>@astrojs/internal-helpers>smol-toml",
+              ".>astro-expressive-code>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>astro-expressive-code>astro>smol-toml",
+              ".>astro-expressive-code>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>@astrojs/markdown-satteri>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/markdown-remark>@astrojs/internal-helpers>smol-toml"
+            ]
+          }
+        ]
+      },
+      {
+        "package": "katex",
+        "ghsa": "GHSA-238p-pmpm-9mq7",
+        "severity": "low",
+        "instances": [
+          {
+            "version": "0.16.47",
+            "pathCount": 2,
+            "paths": [
+              ".>rehype-katex>katex",
+              ".>remark-math>micromark-extension-math>katex"
+            ]
+          }
+        ]
+      },
+      {
+        "package": "source-map-js",
+        "ghsa": "GHSA-68fv-2mgg-jv7q",
+        "severity": "high",
+        "instances": [
+          {
+            "version": "1.2.1",
+            "pathCount": 87,
+            "paths": [
+              ".>@astrojs/cloudflare>@cloudflare/vite-plugin>vite>postcss>source-map-js",
+              ".>@astrojs/cloudflare>astro>magicast>source-map-js",
+              ".>@astrojs/cloudflare>astro>svgo>css-tree>source-map-js",
+              ".>@astrojs/cloudflare>astro>svgo>csso>css-tree>source-map-js",
+              ".>@astrojs/cloudflare>astro>unifont>css-tree>source-map-js",
+              ".>@astrojs/cloudflare>astro>vite>postcss>source-map-js",
+              ".>@astrojs/cloudflare>astro>vitefu>vite>postcss>source-map-js",
+              ".>@astrojs/cloudflare>vite>postcss>source-map-js",
+              ".>@astrojs/mdx>astro>magicast>source-map-js",
+              ".>@astrojs/mdx>astro>svgo>css-tree>source-map-js",
+              ".>@astrojs/mdx>astro>svgo>csso>css-tree>source-map-js",
+              ".>@astrojs/mdx>astro>unifont>css-tree>source-map-js",
+              ".>@astrojs/mdx>astro>vite>postcss>source-map-js",
+              ".>@astrojs/mdx>astro>vitefu>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>@sveltejs/vite-plugin-svelte>vitefu>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>astro>magicast>source-map-js",
+              ".>@astrojs/svelte>astro>svgo>css-tree>source-map-js",
+              ".>@astrojs/svelte>astro>svgo>csso>css-tree>source-map-js",
+              ".>@astrojs/svelte>astro>unifont>css-tree>source-map-js",
+              ".>@astrojs/svelte>astro>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>astro>vitefu>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>vite>postcss>source-map-js",
+              ".>@astrojs/svelte>vitefu>vite>postcss>source-map-js",
+              ".>@expressive-code/plugin-collapsible-sections>@expressive-code/core>postcss>source-map-js",
+              ".>@expressive-code/plugin-collapsible-sections>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>@expressive-code/plugin-line-numbers>@expressive-code/core>postcss>source-map-js",
+              ".>@expressive-code/plugin-line-numbers>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>astro>magicast>source-map-js",
+              ".>astro>svgo>css-tree>source-map-js",
+              ".>astro>svgo>csso>css-tree>source-map-js",
+              ".>astro>unifont>css-tree>source-map-js",
+              ".>astro>vite>postcss>source-map-js",
+              ".>astro>vitefu>vite>postcss>source-map-js",
+              ".>astro-expressive-code>astro>magicast>source-map-js",
+              ".>astro-expressive-code>astro>svgo>css-tree>source-map-js",
+              ".>astro-expressive-code>astro>svgo>csso>css-tree>source-map-js",
+              ".>astro-expressive-code>astro>unifont>css-tree>source-map-js",
+              ".>astro-expressive-code>astro>vite>postcss>source-map-js",
+              ".>astro-expressive-code>astro>vitefu>vite>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss>source-map-js",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>astro-icon>@iconify/tools>svgo>css-tree>source-map-js",
+              ".>astro-icon>@iconify/tools>svgo>csso>css-tree>source-map-js",
+              ".>ec-lang-logo>@expressive-code/core>postcss>source-map-js",
+              ".>ec-lang-logo>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-collapsible>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-collapsible>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>magicast>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>svgo>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>svgo>csso>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>unifont>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>vitefu>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>magicast>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>svgo>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>svgo>csso>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>unifont>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro>vitefu>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>magicast>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>svgo>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>svgo>csso>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>unifont>css-tree>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>vitefu>vite>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>expressive-code-language-badge>@expressive-code/core>postcss>source-map-js",
+              ".>expressive-code-language-badge>@expressive-code/core>postcss-nested>postcss>source-map-js",
+              ".>sanitize-html>postcss>source-map-js",
+              ".>@tailwindcss/vite>@tailwindcss/node>source-map-js",
+              ".>@tailwindcss/vite>vite>postcss>source-map-js",
+              ".>postcss-import>postcss>source-map-js",
+              ".>postcss-nesting>postcss>source-map-js"
+            ]
+          }
+        ]
+      },
+      {
+        "package": "postcss-selector-parser",
+        "ghsa": "GHSA-rj75-hqrm-r3gf",
+        "severity": "moderate",
+        "instances": [
+          {
+            "version": "6.1.4",
+            "pathCount": 13,
+            "paths": [
+              ".>@expressive-code/plugin-collapsible-sections>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>@expressive-code/plugin-line-numbers>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>ec-lang-logo>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-collapsible>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-frames>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-shiki>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>rehype-expressive-code>expressive-code>@expressive-code/plugin-text-markers>@expressive-code/core>postcss-nested>postcss-selector-parser",
+              ".>expressive-code-language-badge>@expressive-code/core>postcss-nested>postcss-selector-parser"
+            ]
+          },
+          {
+            "version": "6.0.10",
+            "pathCount": 1,
+            "paths": [
+              ".>@tailwindcss/typography>postcss-selector-parser"
+            ]
+          },
+          {
+            "version": "7.1.5",
+            "pathCount": 3,
+            "paths": [
+              ".>postcss-nesting>@csstools/selector-resolve-nested>postcss-selector-parser",
+              ".>postcss-nesting>@csstools/selector-specificity>postcss-selector-parser",
+              ".>postcss-nesting>postcss-selector-parser"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+[
+  {
+    "name": "devalue",
+    "version": "5.9.3",
+    "source": "https://registry.npmjs.org/devalue/5.9.3",
+    "engines": {},
+    "type": "module",
+    "dependencies": {},
+    "repository": {
+      "url": "git+https://github.com/sveltejs/devalue.git",
+      "type": "git"
+    },
+    "integrity": "sha512-xRumYOCUZN/EesqHEU3WOXanOZNvfZFZ/o1AHVFDX1yI0UAkZkOgDXt341CzKoBVIkgQba55/+DjGBKrIoKcHw=="
+  },
+  {
+    "name": "js-yaml",
+    "version": "3.15.2",
+    "source": "https://registry.npmjs.org/js-yaml/3.15.2",
+    "engines": {},
+    "type": "unspecified",
+    "dependencies": {
+      "esprima": "^4.0.0",
+      "argparse": "^1.0.7"
+    },
+    "repository": {
+      "url": "git+https://github.com/nodeca/js-yaml.git",
+      "type": "git"
+    },
+    "integrity": "sha512-6EuL879VkRA+1Cz578mKMiKvjPNEuk6+r1JaFzoSWejZmtf7xWbIyw1e3KkxlkzTIt9Taw6JBhEppG7utc1P+w=="
+  },
+  {
+    "name": "svgo",
+    "version": "2.8.4",
+    "source": "https://registry.npmjs.org/svgo/2.8.4",
+    "engines": {
+      "node": ">=10.13.0"
+    },
+    "type": "unspecified",
+    "dependencies": {
+      "sax": "^1.5.0",
+      "csso": "^4.2.0",
+      "stable": "^0.1.8",
+      "css-tree": "^1.1.3",
+      "commander": "^7.2.0",
+      "css-select": "^4.1.3",
+      "picocolors": "^1.0.0"
+    },
+    "repository": {
+      "url": "git://github.com/svg/svgo.git",
+      "type": "git"
+    },
+    "integrity": "sha512-2GJ4h3rl13qYTdwllaK6QlL8tG+UrM8626V2Ylcd/yBUv2Y/EwLsYisVV6UDCRmlk+C74G8nMpxJCk0RWPdDCw=="
+  },
+  {
+    "name": "svgo",
+    "version": "4.1.0",
+    "source": "https://registry.npmjs.org/svgo/4.1.0",
+    "engines": {
+      "node": ">=16"
+    },
+    "type": "module",
+    "dependencies": {
+      "sax": "1.6.1",
+      "csso": "^5.0.5",
+      "css-tree": "^3.0.1",
+      "css-what": "^7.0.0",
+      "commander": "^11.1.0",
+      "css-select": "^6.0.0",
+      "picocolors": "^1.1.1"
+    },
+    "repository": {
+      "url": "git://github.com/svg/svgo.git",
+      "type": "git"
+    },
+    "integrity": "sha512-bkxnTg1kSU0guhIBmibA6UUhrQmPVA1XsQLN+ylCd+UWzbnLkySOcXpyk1mrl05f+pcaCx2eHb+sp6BgMZWX+Q=="
+  },
+  {
+    "name": "undici",
+    "version": "7.29.1",
+    "source": "https://registry.npmjs.org/undici/7.29.1",
+    "engines": {
+      "node": ">=20.18.1"
+    },
+    "type": "unspecified",
+    "dependencies": {},
+    "repository": {
+      "url": "git+https://github.com/nodejs/undici.git",
+      "type": "git"
+    },
+    "integrity": "sha512-RYONW2MeafgYlkVOKYKkA/Ag7BmXqgIWCa8t1m0JcxrQg9pI9lEqRhAOruOBCbAohOa/gkCF+iPi9hrgvTzu6Q=="
+  },
+  {
+    "name": "undici",
+    "version": "8.10.2",
+    "source": "https://registry.npmjs.org/undici/8.10.2",
+    "engines": {
+      "node": ">=22.19.0"
+    },
+    "type": "unspecified",
+    "dependencies": {},
+    "repository": {
+      "url": "git+https://github.com/nodejs/undici.git",
+      "type": "git"
+    },
+    "integrity": "sha512-/y4/bH9YNU5hi9NIrpOuvGXFcxrj3CMrV+/AYpowAYTpHn8gX/XPFjNy766FPoYY0miQhdW977JFWKGNhBdwyQ=="
+  },
+  {
+    "name": "sharp",
+    "version": "0.35.4",
+    "source": "https://registry.npmjs.org/sharp/0.35.4",
+    "engines": {
+      "node": ">=20.9.0"
+    },
+    "type": "commonjs",
+    "dependencies": {
+      "semver": "^7.8.5",
+      "@img/colour": "^1.1.0",
+      "detect-libc": "^2.1.2"
+    },
+    "repository": {
+      "url": "git+https://github.com/lovell/sharp.git",
+      "type": "git"
+    },
+    "integrity": "sha512-n++8XWcj+jCOr2IOl7h8LbKnGBDY4aPbmprMONBNFdn0ImXqpGVv5zliDs0V9HbmbCQLpbuo2ej9rAoOQTvMDA=="
+  },
+  {
+    "name": "fast-uri",
+    "version": "3.1.8",
+    "source": "https://registry.npmjs.org/fast-uri/3.1.8",
+    "engines": {},
+    "type": "commonjs",
+    "dependencies": {},
+    "repository": {
+      "url": "git+https://github.com/fastify/fast-uri.git",
+      "type": "git"
+    },
+    "integrity": "sha512-GZMtZUTNRpOVIECoXwLNZS5xUGE+mVNbTB8h/7Rwh2TFWcBQiPzTgyZi05BF9UMZKkLJv8XBRJTlU7zg8+ZfMg=="
+  },
+  {
+    "name": "brace-expansion",
+    "version": "1.1.21",
+    "source": "https://registry.npmjs.org/brace-expansion/1.1.21",
+    "engines": {},
+    "type": "unspecified",
+    "dependencies": {
+      "concat-map": "0.0.1",
+      "balanced-match": "^1.0.0"
+    },
+    "repository": {
+      "url": "git://github.com/juliangruber/brace-expansion.git",
+      "type": "git"
+    },
+    "integrity": "sha512-9zeA+KLZNNzglF2TPKRQEDyx6Yby7daAkuy8MiPzpXPsYDWi/DRM8jmwUDxokQjYqBpv5DgPiwD4h4ZZSy1Ujw=="
+  },
+  {
+    "name": "brace-expansion",
+    "version": "2.1.7",
+    "source": "https://registry.npmjs.org/brace-expansion/2.1.7",
+    "engines": {},
+    "type": "unspecified",
+    "dependencies": {
+      "balanced-match": "^1.0.0"
+    },
+    "repository": {
+      "url": "git://github.com/juliangruber/brace-expansion.git",
+      "type": "git"
+    },
+    "integrity": "sha512-uZbew1NqdmPDTMJ8ah1y+b+9QEJrfkXFk3RcTQw3X0jW/xRUvFKsg1CfQdSYGdTbXZWExtU3J3ccxtnfw1Fi0g=="
+  },
+  {
+    "name": "brace-expansion",
+    "version": "5.0.12",
+    "source": "https://registry.npmjs.org/brace-expansion/5.0.12",
+    "engines": {
+      "node": "20 || >=22"
+    },
+    "type": "module",
+    "dependencies": {
+      "balanced-match": "^4.0.2"
+    },
+    "repository": {
+      "url": "git+https://github.com/juliangruber/brace-expansion.git",
+      "type": "git"
+    },
+    "integrity": "sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ=="
+  },
+  {
+    "name": "colord",
+    "version": "2.9.4",
+    "source": "https://registry.npmjs.org/colord/2.9.4",
+    "engines": {},
+    "type": "unspecified",
+    "dependencies": {},
+    "repository": {
+      "url": "git+https://github.com/omgovich/colord.git",
+      "type": "git"
+    },
+    "integrity": "sha512-z0nTt5300AIviCn9FTEL4G2DzPkfEDfghx6Do0ZfM3u0rOINBtfw2H8lD4VXyZF/o8HTzzyiCztaG2X/+IMeZA=="
+  },
+  {
+    "name": "serialize-javascript",
+    "version": "7.0.3",
+    "source": "https://registry.npmjs.org/serialize-javascript/7.0.3",
+    "engines": {
+      "node": ">=20.0.0"
+    },
+    "type": "unspecified",
+    "dependencies": {},
+    "repository": {
+      "url": "git+https://github.com/yahoo/serialize-javascript.git",
+      "type": "git"
+    },
+    "integrity": "sha512-h+cZ/XXarqDgCjo+YSyQU/ulDEESGGf8AMK9pPNmhNSl/FzPl6L8pMp1leca5z6NuG6tvV/auC8/43tmovowww=="
+  }
+]

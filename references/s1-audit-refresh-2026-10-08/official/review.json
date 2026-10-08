@@ -1,0 +1,426 @@
+{
+  "fetchedAt": "2026-10-08T02:43:34.245690+00:00",
+  "records": [
+    {
+      "name": "GHSA-hp3w-g68c-fv3c",
+      "url": "https://api.github.com/advisories/GHSA-hp3w-g68c-fv3c",
+      "status": 200,
+      "sha256": "1615cfd3d7382bbefb81df03f3fedb173925b69b57d8558f06d4f1a653f918f0",
+      "ghsa_id": "GHSA-hp3w-g68c-fv3c",
+      "cve_id": "CVE-2026-97058",
+      "summary": "sprintf-js vulnerable to denial of service through unbounded precision specifiers",
+      "severity": "medium",
+      "published_at": "2026-09-24T15:31:31Z",
+      "updated_at": "2026-10-05T23:47:35Z",
+      "withdrawn_at": null,
+      "vulnerabilities": [
+        {
+          "package": {
+            "ecosystem": "npm",
+            "name": "sprintf-js"
+          },
+          "vulnerable_version_range": "<= 1.1.3",
+          "first_patched_version": null,
+          "vulnerable_functions": []
+        }
+      ],
+      "references": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-97058",
+        "https://github.com/alexei/sprintf.js/issues/237",
+        "https://github.com/alexei/sprintf.js/blob/3a0d8c26d291b5bd9f1974877ecc50739921d6f5/src/sprintf.js#L17",
+        "https://github.com/alexei/sprintf.js/blob/3a0d8c26d291b5bd9f1974877ecc50739921d6f5/src/sprintf.js#L84-L90",
+        "https://www.vulncheck.com/advisories/sprintf-js-through-1.1.3-denial-of-service-via-unbounded-precision",
+        "https://github.com/advisories/GHSA-hp3w-g68c-fv3c"
+      ]
+    },
+    {
+      "name": "GHSA-r4xh-jqrq-34v2",
+      "url": "https://api.github.com/advisories/GHSA-r4xh-jqrq-34v2",
+      "status": 200,
+      "sha256": "77b4998991d006cd4e084939b7b3ec377bcbaede476261c0f0ca4e4022eb1133",
+      "ghsa_id": "GHSA-r4xh-jqrq-34v2",
+      "cve_id": null,
+      "summary": "smol-toml: Quadratic-time parse() from parseKey rescanning to end of document on each key line",
+      "severity": "medium",
+      "published_at": "2026-10-05T23:41:14Z",
+      "updated_at": "2026-10-05T23:41:15Z",
+      "withdrawn_at": null,
+      "vulnerabilities": [
+        {
+          "package": {
+            "ecosystem": "npm",
+            "name": "smol-toml"
+          },
+          "vulnerable_version_range": "<= 1.8.0",
+          "first_patched_version": "1.9.0",
+          "vulnerable_functions": []
+        }
+      ],
+      "references": [
+        "https://github.com/squirrelchat/smol-toml/security/advisories/GHSA-r4xh-jqrq-34v2",
+        "https://github.com/squirrelchat/smol-toml/commit/99102aa57fc932f760ea9c15b4cf1c181f952d24",
+        "https://github.com/squirrelchat/smol-toml/releases/tag/v1.9.0",
+        "https://github.com/advisories/GHSA-r4xh-jqrq-34v2"
+      ]
+    },
+    {
+      "name": "GHSA-238p-pmpm-9mq7",
+      "url": "https://api.github.com/advisories/GHSA-238p-pmpm-9mq7",
+      "status": 200,
+      "sha256": "1ee61ac855b3bd71787d7f385d71ad0a1864ef4add5cc67c826dbfe9315944ea",
+      "ghsa_id": "GHSA-238p-pmpm-9mq7",
+      "cve_id": "CVE-2026-103923",
+      "summary": "KaTeX: Existing prototype pollution can bypass trust restrictions",
+      "severity": "low",
+      "published_at": "2026-10-05T23:41:05Z",
+      "updated_at": "2026-10-05T23:41:06Z",
+      "withdrawn_at": null,
+      "vulnerabilities": [
+        {
+          "package": {
+            "ecosystem": "npm",
+            "name": "katex"
+          },
+          "vulnerable_version_range": ">= 0.11.0, < 0.18.2",
+          "first_patched_version": "0.18.2",
+          "vulnerable_functions": []
+        }
+      ],
+      "references": [
+        "https://github.com/KaTeX/KaTeX/security/advisories/GHSA-238p-pmpm-9mq7",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-103923",
+        "https://github.com/KaTeX/KaTeX/pull/4260",
+        "https://github.com/KaTeX/KaTeX/commit/0adf7e77db6915d991803b29699f82b1ccf8d4f4",
+        "https://github.com/KaTeX/KaTeX/releases/tag/v0.18.2",
+        "https://github.com/advisories/GHSA-238p-pmpm-9mq7"
+      ]
+    },
+    {
+      "name": "GHSA-68fv-2mgg-jv7q",
+      "url": "https://api.github.com/advisories/GHSA-68fv-2mgg-jv7q",
+      "status": 200,
+      "sha256": "eb21a14220bff681c7e5054d9da233b82d9358e916ecef4d7549e01e2f0d3389",
+      "ghsa_id": "GHSA-68fv-2mgg-jv7q",
+      "cve_id": "CVE-2026-93749",
+      "summary": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+      "severity": "high",
+      "published_at": "2026-09-18T18:31:44Z",
+      "updated_at": "2026-10-05T23:31:22Z",
+      "withdrawn_at": null,
+      "vulnerabilities": [
+        {
+          "package": {
+            "ecosystem": "npm",
+            "name": "source-map-js"
+          },
+          "vulnerable_version_range": ">= 1.0.0, < 1.2.2",
+          "first_patched_version": "1.2.2",
+          "vulnerable_functions": []
+        }
+      ],
+      "references": [
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-93749",
+        "https://github.com/7rulnik/source-map-js/issues/76",
+        "https://github.com/7rulnik/source-map-js",
+        "https://github.com/7rulnik/source-map-js/blob/c1cd8904bb7bd0c7fb5879fcda48134d82a27934/lib/source-node.js#L115-L118",
+        "https://www.vulncheck.com/advisories/source-map-js-through-1.2.1-event-loop-denial-of-service",
+        "https://github.com/7rulnik/source-map-js/pull/79",
+        "https://github.com/7rulnik/source-map-js/commit/cf7658058ceeaa8619d5ae0ec90be6905209d016",
+        "https://github.com/7rulnik/source-map-js/releases/tag/v1.2.2",
+        "https://github.com/advisories/GHSA-68fv-2mgg-jv7q"
+      ]
+    },
+    {
+      "name": "GHSA-rj75-hqrm-r3gf",
+      "url": "https://api.github.com/advisories/GHSA-rj75-hqrm-r3gf",
+      "status": 200,
+      "sha256": "e98ee683abb4f138fd18d98ec3fd60cee989bebf6f48d280e321947597b3146b",
+      "ghsa_id": "GHSA-rj75-hqrm-r3gf",
+      "cve_id": "CVE-2026-104844",
+      "summary": "PostCSS: Quadratic complexity in flat selector parsing allows CPU exhaustion",
+      "severity": "medium",
+      "published_at": "2026-10-05T22:53:54Z",
+      "updated_at": "2026-10-05T22:53:57Z",
+      "withdrawn_at": null,
+      "vulnerabilities": [
+        {
+          "package": {
+            "ecosystem": "npm",
+            "name": "postcss-selector-parser"
+          },
+          "vulnerable_version_range": "< 7.1.6",
+          "first_patched_version": "7.1.6",
+          "vulnerable_functions": []
+        }
+      ],
+      "references": [
+        "https://github.com/postcss/postcss-selector-parser/security/advisories/GHSA-rj75-hqrm-r3gf",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-104844",
+        "https://github.com/postcss/postcss-selector-parser/commit/62b191792df0a0bc56062e5a875bc74aae2a51cd",
+        "https://github.com/postcss/postcss-selector-parser/releases/tag/7.1.6",
+        "https://github.com/advisories/GHSA-rj75-hqrm-r3gf"
+      ]
+    },
+    {
+      "name": null,
+      "url": "https://registry.npmjs.org/sprintf-js/1.1.4",
+      "status": "BLOCKED",
+      "error": "HTTP Error 404: Not Found",
+      "version": null,
+      "dependencies": null,
+      "peerDependencies": null,
+      "engines": null,
+      "dist": null
+    },
+    {
+      "name": null,
+      "url": "https://registry.npmjs.org/smol-toml/1.8.1",
+      "status": "BLOCKED",
+      "error": "HTTP Error 404: Not Found",
+      "version": null,
+      "dependencies": null,
+      "peerDependencies": null,
+      "engines": null,
+      "dist": null
+    },
+    {
+      "name": "source-map-js",
+      "url": "https://registry.npmjs.org/source-map-js/1.2.2",
+      "status": 200,
+      "sha256": "2a7a225c550e3a0e75f9af72a635e33d7b2e4a0fca4f596679a2775971f53ed6",
+      "version": "1.2.2",
+      "dependencies": null,
+      "peerDependencies": null,
+      "engines": {
+        "node": ">=0.10.0"
+      },
+      "dist": {
+        "shasum": "79fb88d97535a21cb27162cb05d211b67acea4ab",
+        "tarball": "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.2.tgz",
+        "fileCount": 18,
+        "integrity": "sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCZPHMjtDeHbdrm8FkXj5rlr8cwbP4XoW93v0jVGGdWcQIgDcavClXA2dNCvB2XyxxKW7ZkgwaSlqeBeaayOtgq3ik=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEQCIAIRiJPeK+kn49RlwVL7LPl5GHFd6PnL/DKFgl/oQu6HAiBd4xIiwYFmu+pXEiZr7YrCXUt4BQ3XkahaDqCpu90zYA==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 142723
+      }
+    },
+    {
+      "name": "katex",
+      "url": "https://registry.npmjs.org/katex/0.18.2",
+      "status": 200,
+      "sha256": "d4e4765ca2acc083ee1b16c964979c7cf2f7f8db733c518279454ddbb22ac2fa",
+      "version": "0.18.2",
+      "dependencies": {
+        "commander": "^8.3.0"
+      },
+      "peerDependencies": null,
+      "engines": null,
+      "dist": {
+        "shasum": "7ab6ff83e21c097a59c9afd213b2d2955fa6c6ce",
+        "tarball": "https://registry.npmjs.org/katex/-/katex-0.18.2.tgz",
+        "fileCount": 213,
+        "integrity": "sha512-3snve4y0SXTMequLim1FMiPvLGElySam0blN5xQZBqEY3lOJz1TnuaaiugnBZBqHzlSAGmFTYL7MCQkORuLKCA==",
+        "signatures": [
+          {
+            "sig": "MEUCICGM1FurLoTqeOxdIo9LYWYof5vtSotWd5vzkUvQ0cHYAiEA01gJ2ruJGAuuLmE7YbeiTXACqv6AFXprjo9otQUotrc=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIC6EgUr+yFiy+Ahfhp0NMJ0kmhN3V3akkn1dBbqXjBLxAiEAkhWhQgTwLhqnL8pGMVFaYkzbxyhaOVhlNlW9p+zf8D4=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 4032120
+      }
+    },
+    {
+      "name": "postcss-selector-parser",
+      "url": "https://registry.npmjs.org/postcss-selector-parser/7.1.6",
+      "status": 200,
+      "sha256": "554fd0e9526a4f17f2e0021b9e39d8f1e1f3caa8d50b78902022bdbfb2326e3c",
+      "version": "7.1.6",
+      "dependencies": {
+        "cssesc": "^3.0.0",
+        "util-deprecate": "^1.0.2"
+      },
+      "peerDependencies": null,
+      "engines": {
+        "node": ">=4"
+      },
+      "dist": {
+        "shasum": "45e970f2d93d4547d6754167ed1132f43012c4bf",
+        "tarball": "https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-7.1.6.tgz",
+        "fileCount": 37,
+        "integrity": "sha512-7qASPzhKF2l2KLboRZux8CCTRMdGiV08vWmyKzPz22qZ7ZjQBOeY7rNzNoCLSUiftJ7HUq0GERHmxw/t0dCdMw==",
+        "signatures": [
+          {
+            "sig": "MEUCIARvTjM5MvisOcYdgtg4+teinUMCEMbWTigr+w/V7tvzAiEAxeE+X+IHLAlTmRn53zg+ojvC0x4gikJ78G1DfRKfJZg=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEYCIQDxnJJ31lCe5d/BEXkYm2ExC1wSkGJ24+qfFUQ62u8yuAIhALDUNyvN/kI7BTSqXQUzS5+/ORkpGQt+i87ttC0LWPLq",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 215009
+      }
+    },
+    {
+      "name": "argparse",
+      "url": "https://registry.npmjs.org/argparse/1.0.10",
+      "status": 200,
+      "sha256": "fee725b3c54f5e068ae9d706f7894972fd5994c1713d697ca443de37ed564364",
+      "version": "1.0.10",
+      "dependencies": {
+        "sprintf-js": "~1.0.2"
+      },
+      "peerDependencies": null,
+      "engines": null,
+      "dist": {
+        "shasum": "bcd6791ea5ae09725e17e5ad988134cd40b3d911",
+        "tarball": "https://registry.npmjs.org/argparse/-/argparse-1.0.10.tgz",
+        "fileCount": 27,
+        "integrity": "sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDGBSlWYqJJS8ly2A5x23cEqG4hBghOCO+4VmmjZBC4dwIhAMvtmzy1dCR3dTOg8Gp0+gqBp9fCBeqO6fyG9uUEmdyJ",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 116446
+      }
+    },
+    {
+      "name": "rehype-katex",
+      "url": "https://registry.npmjs.org/rehype-katex/7.0.1",
+      "status": 200,
+      "sha256": "12c6ea72642a8d79eaa0e4b77a8e4a59f01c8c4c7a787720161ebdbfa3fd3cc9",
+      "version": "7.0.1",
+      "dependencies": {
+        "katex": "^0.16.0",
+        "vfile": "^6.0.0",
+        "@types/hast": "^3.0.0",
+        "@types/katex": "^0.16.0",
+        "hast-util-to-text": "^4.0.0",
+        "unist-util-visit-parents": "^6.0.0",
+        "hast-util-from-html-isomorphic": "^2.0.0"
+      },
+      "peerDependencies": null,
+      "engines": null,
+      "dist": {
+        "shasum": "832e6d7af2744a228981d1b0fe89483a9e7c93a1",
+        "tarball": "https://registry.npmjs.org/rehype-katex/-/rehype-katex-7.0.1.tgz",
+        "fileCount": 8,
+        "integrity": "sha512-OiM2wrZ/wuhKkigASodFoo8wimG3H12LWQaH8qSPVJn9apWKFSH3YOCtbKpBorTVw/eI7cuT21XBbvwEswbIOA==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDI6mhBKaDSrk1nMZ44BN9rG1U1BswcSghFRm+MgZ0fIQIgKbvn5AJFWuqrzBAhV2lsG0KNUzcodBbA7XX5psoNY7k=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 16035
+      }
+    },
+    {
+      "name": "micromark-extension-math",
+      "url": "https://registry.npmjs.org/micromark-extension-math/3.1.0",
+      "status": 200,
+      "sha256": "d6fc892a9c095bda9c749bcdffbcea94de527585093ce6cf353f70221985149c",
+      "version": "3.1.0",
+      "dependencies": {
+        "katex": "^0.16.0",
+        "devlop": "^1.0.0",
+        "@types/katex": "^0.16.0",
+        "micromark-util-types": "^2.0.0",
+        "micromark-util-symbol": "^2.0.0",
+        "micromark-factory-space": "^2.0.0",
+        "micromark-util-character": "^2.0.0"
+      },
+      "peerDependencies": null,
+      "engines": null,
+      "dist": {
+        "shasum": "c42ee3b1dd5a9a03584e83dd8f08e3de510212c1",
+        "tarball": "https://registry.npmjs.org/micromark-extension-math/-/micromark-extension-math-3.1.0.tgz",
+        "fileCount": 23,
+        "integrity": "sha512-lvEqd+fHjATVs+2v/8kg9i5Q0AP2k85H0WUOwpIVvUML8BapsMvh1XAogmQjOCsLpoKRCVQqEkQBB3NhVBcsOg==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDpcrLjNUHK4q5K7Mp+GUXJFFXDYwObTUTXLcIN6+IGUgIgRNSaxD16F9R7Af4+vLETSrny+yNs9dsJ0V3qFGEZ4mM=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 53884
+      }
+    },
+    {
+      "name": "postcss-nested",
+      "url": "https://registry.npmjs.org/postcss-nested/6.2.0",
+      "status": 200,
+      "sha256": "669bd2e140018b307850e0206befea762e4f4b12555e238d4c8d364a132893b4",
+      "version": "6.2.0",
+      "dependencies": {
+        "postcss-selector-parser": "^6.1.1"
+      },
+      "peerDependencies": {
+        "postcss": "^8.2.14"
+      },
+      "engines": {
+        "node": ">=12.0"
+      },
+      "dist": {
+        "shasum": "4c2d22ab5f20b9cb61e2c5c5915950784d068131",
+        "tarball": "https://registry.npmjs.org/postcss-nested/-/postcss-nested-6.2.0.tgz",
+        "fileCount": 5,
+        "integrity": "sha512-HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ==",
+        "signatures": [
+          {
+            "sig": "MEUCIQC2ZN5wu+EF30g6HMdnL+zSCRTXKqC1q7SdYGGytLoy6wIgOyA56oLzTq0quFBs4n2L47RiotybH6W/1ysZ3XdG3xU=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 13962
+      }
+    },
+    {
+      "name": "@tailwindcss/typography",
+      "url": "https://registry.npmjs.org/@tailwindcss%2ftypography/0.5.20",
+      "status": 200,
+      "sha256": "b0de6be7546def361fc7ac579698dcddddcc1bd783afdded06b217e923ef3a46",
+      "version": "0.5.20",
+      "dependencies": {
+        "postcss-selector-parser": "6.0.10"
+      },
+      "peerDependencies": {
+        "tailwindcss": ">=3.0.0 || >=4.0.0 || insiders"
+      },
+      "engines": null,
+      "dist": {
+        "shasum": "9feb7fb1d5f2f7b5360c22e24651210db74c34df",
+        "tarball": "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.5.20.tgz",
+        "fileCount": 8,
+        "integrity": "sha512-hwbzQuNUfcPvbegQFatVPl/MY/tcM9KLl963hQ5laJKPh81TEZ1+dNG9PirGvcaDBkp+BCshExAyKVPW91dozw==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCEWTKh5te5QmKEzCydczFcZRYpt0CyOvCln0EZGYTqoAIgZ9GVWSFc5lN8aVrjdiWux+Y7O70l0wuPRj3D3Y0+qx4=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/@tailwindcss%2ftypography@0.5.20",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 114582
+      }
+    }
+  ]
+}

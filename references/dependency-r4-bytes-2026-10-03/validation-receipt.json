@@ -1,0 +1,144 @@
+{
+  "sourceCommit": "1ffbe4c99f0a48c8d7e70498c7f8bb921eb24435",
+  "base": "735c141482e46af9819bf6c521ce1ac3ee46c388",
+  "initialR4Source": "ce800e5b1d2526b9fbe6cf67eac65a1f18b8405a",
+  "suppliedReview": "1 P2 raw-byte preservation; no P1. Independent rereview PENDING.",
+  "sourceHashes": {
+    "scripts/zhenkun-security-audit.mjs": "8f2708c99ee469f2208710f9e07b02ef0801718fb8db5c0f914a85aa828bdda7",
+    "scripts/zhenkun-test-security-audit.mjs": "5b2d37d128e4b0a88c38dbbd8bcb82469bf9784cd4bdfedcc0a8eaa8681f339a"
+  },
+  "commands": {
+    "types": {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--isolatedDeclarations"
+      ],
+      "start": "2026-10-03T16:28:19.916889+00:00",
+      "end": "2026-10-03T16:28:21.005514+00:00",
+      "exit": 0,
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": "735c141482e46af9819bf6c521ce1ac3ee46c388"
+      },
+      "liveAudit": "NOT_RUN"
+    },
+    "native-all": {
+      "command": [
+        "node",
+        "--test",
+        "scripts/zhenkun-test-cache-policy.mjs",
+        "scripts/zhenkun-test-capabilities.mjs",
+        "scripts/zhenkun-test-ci-artifacts.mjs",
+        "scripts/zhenkun-test-deployment.mjs",
+        "scripts/zhenkun-test-nav-menu.mjs",
+        "scripts/zhenkun-test-publication.mjs",
+        "scripts/zhenkun-test-r1-tail.mjs",
+        "scripts/zhenkun-test-r1a-data.mjs",
+        "scripts/zhenkun-test-r1b-uri.mjs",
+        "scripts/zhenkun-test-r2-native.mjs",
+        "scripts/zhenkun-test-search-session.mjs",
+        "scripts/zhenkun-test-security-audit.mjs",
+        "scripts/zhenkun-test-swup-parents.mjs",
+        "scripts/zhenkun-test-unifont.mjs"
+      ],
+      "start": "2026-10-03T16:28:17.801457+00:00",
+      "end": "2026-10-03T16:28:19.916429+00:00",
+      "exit": 0,
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": "735c141482e46af9819bf6c521ce1ac3ee46c388"
+      },
+      "liveAudit": "NOT_RUN"
+    },
+    "security-tests-fixed": {
+      "command": [
+        "node",
+        "--test",
+        "scripts/zhenkun-test-security-audit.mjs"
+      ],
+      "exit": 0,
+      "GITHUB_SHA": "735c141482e46af9819bf6c521ce1ac3ee46c388",
+      "at": "2026-10-03T16:27:46.104912+00:00",
+      "liveAudit": "NOT_RUN"
+    },
+    "types-strict": {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--ignoreConfig",
+        "--noEmit",
+        "--strict",
+        "--module",
+        "NodeNext",
+        "--moduleResolution",
+        "NodeNext",
+        "--target",
+        "ES2022",
+        "scripts/zhenkun-swup-parent-types.ts"
+      ],
+      "start": "2026-10-03T16:28:21.005942+00:00",
+      "end": "2026-10-03T16:28:21.433302+00:00",
+      "exit": 0,
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": "735c141482e46af9819bf6c521ce1ac3ee46c388"
+      },
+      "liveAudit": "NOT_RUN"
+    },
+    "tests-before-fix": {
+      "command": [
+        "node",
+        "--test",
+        "--test-name-pattern=security bytes:",
+        "scripts/zhenkun-test-security-audit.mjs"
+      ],
+      "exit": 1,
+      "at": "2026-10-03T16:26:46.340401+00:00",
+      "purpose": "Expected failing regression tests before code repair; owned byte writer only, no npm audit"
+    },
+    "biome": {
+      "command": [
+        "node",
+        "node_modules/@biomejs/biome/bin/biome",
+        "ci",
+        "src",
+        "scripts/zhenkun-security-audit.mjs",
+        "scripts/zhenkun-test-security-audit.mjs",
+        "scripts/zhenkun-security-policy.json"
+      ],
+      "start": "2026-10-03T16:28:21.433724+00:00",
+      "end": "2026-10-03T16:28:21.522117+00:00",
+      "exit": 0,
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": "735c141482e46af9819bf6c521ce1ac3ee46c388"
+      },
+      "liveAudit": "NOT_RUN"
+    }
+  },
+  "securityTests": {
+    "pass": 55,
+    "total": 55,
+    "newByteCases": 6,
+    "skip": 0
+  },
+  "fullNative": {
+    "pass": 302,
+    "total": 302,
+    "skip": 0
+  },
+  "types": "formal isolatedDeclarations and strict Swup fixture PASS",
+  "biome": "301 files PASS",
+  "unchanged": "workflow,37-entry ledger,dependencies,permissions and prior evidence unchanged; only two source scripts changed",
+  "liveAudit": "NOT_RUN;no metadata disclosure or alternate connector",
+  "dualBaseAndAstro": "NOT_RUN this byte-only correction; prior execution evidence not relabeled",
+  "hostedLinuxUpload": "NOT_RUN;authorization boundaries unchanged",
+  "protection": "six protected checkouts/private hash match previous guard",
+  "model": "Requested Astra HIGH; actual runtime UNVERIFIED"
+}

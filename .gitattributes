@@ -1,2 +1,5 @@
 *.js linguist-language=astro
 * text=auto eol=lf
+
+# Preserve captured HTTP response headers byte-for-byte as security evidence.
+references/s1-five-remediation-2026-10-08/local-validation/**/primary-*.headers -text

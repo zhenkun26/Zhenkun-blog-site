@@ -1,0 +1,133 @@
+{
+  "source": "42f94f0186750441981c26b94e21b803e619fa0b",
+  "environment": "User Mac, native headed Edge, owned isolated profile and CDP; mobile is viewport/touch simulation",
+  "records": [
+    {
+      "name": "browser",
+      "product": "Edg/154.0.4258.62",
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0",
+      "headed": true
+    },
+    {
+      "name": "mobile-menu-escape",
+      "focus": "nav-menu-switch",
+      "restored": true
+    },
+    {
+      "name": "mobile-search-escape",
+      "focus": "search-switch",
+      "restored": true
+    },
+    {
+      "name": "synthetic-desktop-dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 4,
+      "display": 2,
+      "error": 1,
+      "code": 1,
+      "font": "KaTeX_Main, \"Times New Roman\", serif",
+      "fontsLoaded": true,
+      "displayOverflow": [
+        {
+          "client": 482,
+          "scroll": 482,
+          "overflow": "auto"
+        },
+        {
+          "client": 482,
+          "scroll": 958,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "name": "synthetic-desktop-light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "math": 4,
+      "display": 2,
+      "error": 1,
+      "code": 1,
+      "font": "KaTeX_Main, \"Times New Roman\", serif",
+      "fontsLoaded": true,
+      "displayOverflow": [
+        {
+          "client": 482,
+          "scroll": 482,
+          "overflow": "auto"
+        },
+        {
+          "client": 482,
+          "scroll": 958,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "name": "synthetic-desktop-swup",
+      "sameDocument": true,
+      "mathRestored": true
+    },
+    {
+      "name": "synthetic-mobile-dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 4,
+      "display": 2,
+      "error": 1,
+      "code": 1,
+      "font": "KaTeX_Main, \"Times New Roman\", serif",
+      "fontsLoaded": true,
+      "displayOverflow": [
+        {
+          "client": 334,
+          "scroll": 334,
+          "overflow": "auto"
+        },
+        {
+          "client": 334,
+          "scroll": 838,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "name": "synthetic-mobile-light",
+      "width": 390,
+      "scrollWidth": 390,
+      "math": 4,
+      "display": 2,
+      "error": 1,
+      "code": 1,
+      "font": "KaTeX_Main, \"Times New Roman\", serif",
+      "fontsLoaded": true,
+      "displayOverflow": [
+        {
+          "client": 334,
+          "scroll": 334,
+          "overflow": "auto"
+        },
+        {
+          "client": 334,
+          "scroll": 838,
+          "overflow": "auto"
+        }
+      ]
+    },
+    {
+      "name": "synthetic-mobile-swup",
+      "sameDocument": true,
+      "mathRestored": true
+    },
+    {
+      "name": "PASS",
+      "limitations": [
+        "Project-base real GUI; root-base has full static/HTTP proof",
+        "Mobile simulation, no physical phone",
+        "Safe synthetic only; no manuscript, actual comment/email or music playback"
+      ]
+    }
+  ],
+  "errors": []
+}

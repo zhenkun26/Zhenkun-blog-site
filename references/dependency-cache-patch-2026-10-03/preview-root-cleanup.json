@@ -1,0 +1,16 @@
+{
+  "command": [
+    "pnpm",
+    "exec",
+    "astro",
+    "preview",
+    "stop"
+  ],
+  "exit": 0,
+  "pid": 32554,
+  "port": 56850,
+  "portClosed": true,
+  "lockRemoved": true,
+  "initialCleanup": "killpg raised EPERM after preview launcher already exited; used official stop for the exact owned daemon",
+  "time": "2026-10-03T15:42:04.286103+00:00"
+}

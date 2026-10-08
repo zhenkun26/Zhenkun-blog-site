@@ -1,0 +1,143 @@
+{
+  "base": "1bde54cb488cfae291efef528391da2d511fb73c",
+  "lockSha256": "276b00be82d1860fa689504bd837e0c994936ebd606d1ce3d706a004ba4be6a0",
+  "packages": 889,
+  "snapshots": 892,
+  "guards": 27,
+  "rootImportersUnchanged": true,
+  "retainedPackageRecordsUnchanged": true,
+  "existingPatchHashesUnchanged": true,
+  "additions": [
+    "postcss-selector-parser@7.1.6",
+    "smol-toml@1.9.0",
+    "source-map-js@1.2.2"
+  ],
+  "removals": [
+    "argparse@1.0.10",
+    "commander@8.3.0",
+    "katex@0.16.47",
+    "postcss-selector-parser@6.0.10",
+    "postcss-selector-parser@6.1.4",
+    "postcss-selector-parser@7.1.5",
+    "smol-toml@1.8.0",
+    "source-map-js@1.2.1",
+    "sprintf-js@1.0.3"
+  ],
+  "edges": [
+    {
+      "owner": "@astrojs/internal-helpers@0.10.4",
+      "name": "smol-toml",
+      "before": "1.8.0",
+      "after": "1.9.0"
+    },
+    {
+      "owner": "@astrojs/internal-helpers@0.11.0",
+      "name": "smol-toml",
+      "before": "1.8.0",
+      "after": "1.9.0"
+    },
+    {
+      "owner": "@csstools/selector-resolve-nested@4.0.1(postcss-selector-parser@7.1.5)",
+      "name": "postcss-selector-parser",
+      "before": "7.1.5",
+      "after": "7.1.6"
+    },
+    {
+      "owner": "@csstools/selector-specificity@6.0.0(postcss-selector-parser@7.1.5)",
+      "name": "postcss-selector-parser",
+      "before": "7.1.5",
+      "after": "7.1.6"
+    },
+    {
+      "owner": "@tailwindcss/node@4.3.3",
+      "name": "source-map-js",
+      "before": "1.2.1",
+      "after": "1.2.2"
+    },
+    {
+      "owner": "@tailwindcss/typography@0.5.20(tailwindcss@4.3.3)",
+      "name": "postcss-selector-parser",
+      "before": "6.0.10",
+      "after": "7.1.6"
+    },
+    {
+      "owner": "astro@7.2.10(patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47)(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+      "name": "smol-toml",
+      "before": "1.8.0",
+      "after": "1.9.0"
+    },
+    {
+      "owner": "css-tree@2.2.1",
+      "name": "source-map-js",
+      "before": "1.2.1",
+      "after": "1.2.2"
+    },
+    {
+      "owner": "css-tree@3.2.1",
+      "name": "source-map-js",
+      "before": "1.2.1",
+      "after": "1.2.2"
+    },
+    {
+      "owner": "gray-matter@4.0.3",
+      "name": "js-yaml",
+      "before": "3.15.2",
+      "after": "3.15.2(patch_hash=07651746469f816f13a27e690c0f8b089f78b153b4c7e5318c48daefab34d942)"
+    },
+    {
+      "owner": "js-yaml@3.15.2",
+      "name": "argparse",
+      "before": "1.0.10",
+      "after": "2.0.1"
+    },
+    {
+      "owner": "magicast@0.5.4",
+      "name": "source-map-js",
+      "before": "1.2.1",
+      "after": "1.2.2"
+    },
+    {
+      "owner": "micromark-extension-math@3.1.0",
+      "name": "katex",
+      "before": "0.16.47",
+      "after": "0.18.5"
+    },
+    {
+      "owner": "postcss-nested@6.2.0(postcss@8.5.26)",
+      "name": "postcss-selector-parser",
+      "before": "6.1.4",
+      "after": "7.1.6"
+    },
+    {
+      "owner": "postcss-nesting@14.0.1(postcss@8.5.26)",
+      "name": "postcss-selector-parser",
+      "before": "7.1.5",
+      "after": "7.1.6"
+    },
+    {
+      "owner": "postcss-nesting@14.0.1(postcss@8.5.26)",
+      "name": "@csstools/selector-resolve-nested",
+      "before": "4.0.1(postcss-selector-parser@7.1.5)",
+      "after": "4.0.1(postcss-selector-parser@7.1.6)"
+    },
+    {
+      "owner": "postcss-nesting@14.0.1(postcss@8.5.26)",
+      "name": "@csstools/selector-specificity",
+      "before": "6.0.0(postcss-selector-parser@7.1.5)",
+      "after": "6.0.0(postcss-selector-parser@7.1.6)"
+    },
+    {
+      "owner": "postcss@8.5.26",
+      "name": "source-map-js",
+      "before": "1.2.1",
+      "after": "1.2.2"
+    },
+    {
+      "owner": "rehype-katex@7.0.1",
+      "name": "katex",
+      "before": "0.16.47",
+      "after": "0.18.5"
+    }
+  ],
+  "verdict": "PASS_EXACT_BOUNDED_GRAPH"
+}

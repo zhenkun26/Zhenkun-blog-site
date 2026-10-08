@@ -1,5 +1,23 @@
 import Key from "../i18nKey";
-import type { Translation } from "../translation";
+import type { HomeDirections, Translation } from "../translation";
+
+export const homeDirections: HomeDirections = {
+	heading: "What I write about",
+	topics: [
+		{
+			title: "AI",
+			description: "Learning and exploring artificial intelligence.",
+		},
+		{
+			title: "Atmospheric Science",
+			description: "Learning and thinking about the atmosphere.",
+		},
+		{
+			title: "Life Notes",
+			description: "Everyday moments, reading, and reflections.",
+		},
+	],
+};
 
 export const en: Translation = {
 	[Key.home]: "Home",

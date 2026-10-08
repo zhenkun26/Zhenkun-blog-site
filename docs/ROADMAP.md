@@ -149,6 +149,12 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
+### S3 homepage directions — 2026-10-08 — 进行中
+
+- **范围**：从实际 main `7a32c903` 补首页首屏的 AI / 大气科学 / 生活随笔说明；英文 AI / Atmospheric Science / Life Notes。共享首页读取现有双语 catalog 的 typed 数据，复用卡片/字体颜色和响应式 grid。保留施工提示、品牌/作者 Zhenkun、原内容列表/空态；不创造文章、数量、过滤链接或专业身份。
+- **本地门**：Astro/类型/定向 locale/完整 native 397/397 已执行；仅新增 import 的 Biome 格式问题修正后复验。新增静态来源会改变安全绑定边界，已核对四个源文件差异与实际安装闭包，仅暂绑 boundarySha256；干净候选的当前时钟 live gate、正式两 base 构建与实际桌面/窄屏、键盘/导航、精确 PR/main CI/Pages 尚须完成，不复用旧 PASS。
+- **保持的边界**：依赖/lock/patch/工作流/配置/草稿/评论服务与两个 `2026-10-14T14:27:22Z` 截止不变。首稿的私有审核材料另交站主；未批准正文/附件/英文稿，不发布文章或发送评论。此小批完成后，余项仅站主体验/跟做、首稿审核与真实评论，不新增工程需求。
+
 ### S3/S4 continuation — 2026-10-08 — 进行中（S4 工程文档已交付）
 
 - **本批范围**：从实际 main `6445ddb` 继续 S4 维护说明，新增 [OPERATIONS](OPERATIONS.md) 并接入 README，校正已接纳双语/文章评论契约说明和公告旧状态；不改变应用、配置、依赖、补丁、工作流或稿件。两处安全截止保持 `2026-10-14T14:27:22Z`。

@@ -1,0 +1,257 @@
+{
+  "sourceCommit": "ae386d4e452d6e2cb73150e8e67f92f0b6f1b5c6",
+  "base": "d12dd98abf383d4c47bf9bf987516b953baf2904",
+  "staticCheckpoint": "eecc387021b1e6da2cc79dd796ffdb14ba799366",
+  "branch": "codex/dependency-r2-native-20261003",
+  "status": "LOCAL_R2_CANDIDATE_REVIEW_PENDING_OVERALL_PARTIAL",
+  "sourceHashes": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-workspace.yaml": "67d1dcfd5636b54bd57d881d5c917b99efd5512e190c2e0a94ce2d9f32179e89",
+    "pnpm-lock.yaml": "4436d4089ab376e4a94e749d7fe35a4465c617c3a152340b1f38fd35861d709b",
+    "scripts/zhenkun-test-r2-native.mjs": "3265dbcab2dae00b595ba2b5676b686e027ba430b653a8aa7e625e741aaeb296",
+    "docs/DECISIONS.md": "9e4d45ab8e8af7957ed716456c62d573e93be84cb4f6d6697d450a38a476944d"
+  },
+  "oldFixtureSha256": "75c59032ec524d5da78b51527eac2b272f7d60f00f483f9894cd3453f2277e9d",
+  "Node": "24.20.0",
+  "pnpm": "11.22.0",
+  "platform": "Darwin ARM64/macOS",
+  "requestedModel": "6.1 Sol xhigh, standard service tier, no Fast; complex Astra high",
+  "actualModel": "UNVERIFIED",
+  "permissions": [
+    {
+      "timeUTC": "2026-10-03 12:51:18",
+      "scope": "one exact reviewed read-only official Sharp query"
+    },
+    {
+      "timeUTC": "2026-10-03 13:07:29",
+      "scope": "human full permission in response to bounded 27 metadata reads, two locks, frozen install, two audits; normal review used"
+    },
+    {
+      "timeUTC": "2026-10-03 13:49:26",
+      "scope": "human explicit local runtime permission including R2/fullnative loopback Miniflare, quality, dual-base builds/HTTP and standard tsx IPC; normal review used"
+    }
+  ],
+  "commands": [
+    {
+      "name": "lock-overrides",
+      "command": "pnpm install --lockfile-only --ignore-scripts --registry=https://registry.npmjs.org",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "lock-sharp",
+      "command": "pnpm update sharp@0.35.5 --no-save --lockfile-only --ignore-scripts --registry=https://registry.npmjs.org",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "install",
+      "command": "env npm_config_registry=https://registry.npmjs.org pnpm install --frozen-lockfile --registry=https://registry.npmjs.org",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "target-tests-initial",
+      "command": "env -u CF_WORKERS ZHENKUN_R2_EVIDENCE=1 node --test scripts/zhenkun-test-r2-native.mjs",
+      "exit": 1,
+      "state": "DIAGNOSTIC",
+      "diagnostic": "CJS resolution of an ESM-only Vite-plugin main, before native execution"
+    },
+    {
+      "name": "target-tests-second",
+      "command": "env -u CF_WORKERS ZHENKUN_R2_EVIDENCE=1 node --test scripts/zhenkun-test-r2-native.mjs",
+      "exit": 1,
+      "state": "BLOCKED_HISTORICAL",
+      "diagnostic": "three native Sharp passes then ordinary loopback listen EPERM"
+    },
+    {
+      "name": "check",
+      "command": "pnpm check",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "type-check",
+      "command": "pnpm type-check",
+      "exit": 2,
+      "state": "DIAGNOSTIC",
+      "diagnostic": "initial concurrent Astro sync; inference only, no source changes"
+    },
+    {
+      "name": "type-check-after-sync",
+      "command": "pnpm type-check",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "parent-types-strict",
+      "command": "pnpm exec tsc --ignoreConfig --noEmit --strict --module NodeNext --moduleResolution NodeNext --target ES2022 scripts/zhenkun-swup-parent-types.ts",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "biome",
+      "command": "pnpm exec biome ci src scripts/zhenkun-test-swup-parents.mjs scripts/zhenkun-swup-parent-types.ts scripts/zhenkun-test-r1a-data.mjs scripts/zhenkun-test-r1b-uri.mjs scripts/zhenkun-test-r1-tail.mjs scripts/zhenkun-test-unifont.mjs scripts/zhenkun-test-r2-native.mjs",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "peers",
+      "command": "pnpm peers check",
+      "exit": 1,
+      "state": "FAIL_INHERITED",
+      "diagnostic": "mdx7.0.8 requires markdown-satteri ^0.3.1, actual0.4.0"
+    },
+    {
+      "name": "build-root-initial",
+      "command": "env -u CF_WORKERS DEPLOY_BASE=/ pnpm build",
+      "exit": 1,
+      "state": "BLOCKED_HISTORICAL",
+      "diagnostic": "ordinary tsx IPC listen EPERM before build stages"
+    },
+    {
+      "name": "target-tests-runtime",
+      "command": "env -u CF_WORKERS ZHENKUN_R2_EVIDENCE=1 node --test scripts/zhenkun-test-r2-native.mjs",
+      "exit": 1,
+      "state": "DIAGNOSTIC",
+      "diagnostic": "13/15 counts pass, public SVG response200 mismatched incorrect expected422, later invalid assertion not reached"
+    },
+    {
+      "name": "cf-image-contract-probe",
+      "command": "env -u CF_WORKERS node --test tmp/r2/r2-contract-probe.mjs",
+      "exit": 1,
+      "state": "INSTRUMENTATION_DIAGNOSTIC",
+      "diagnostic": "All three records captured. Incorrect extra origin-header assertion for transformed JPEG; stored requested contract offline PASS, no runtime retry"
+    },
+    {
+      "name": "native-all",
+      "command": "env -u CF_WORKERS ZHENKUN_R2_EVIDENCE=1 node --test scripts/zhenkun-test-*.mjs",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "build-root",
+      "command": "env -u CF_WORKERS ASTRO_TELEMETRY_DISABLED=1 DEPLOY_BASE=/ pnpm build",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "build-project",
+      "command": "env -u CF_WORKERS ASTRO_TELEMETRY_DISABLED=1 DEPLOY_BASE=/Zhenkun-blog-site/ pnpm build",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "artifacts-root",
+      "command": "node scripts/zhenkun-verify-ci-artifacts.mjs --base /",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "artifacts-project",
+      "command": "node scripts/zhenkun-verify-ci-artifacts.mjs --base /Zhenkun-blog-site/",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "http-root",
+      "command": "python3 scripts/zhenkun-verify-deployment.py --root tmp/r2-artifacts/root --base / --http http://127.0.0.1:4321",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "http-project-initial",
+      "command": "python3 scripts/zhenkun-verify-deployment.py --root tmp/r2-artifacts/project/Zhenkun-blog-site --base /Zhenkun-blog-site/ --http http://127.0.0.1:4321",
+      "exit": 1,
+      "state": "DIAGNOSTIC",
+      "diagnostic": "incorrect saved artifact path, before HTTP requests; corrected to actual project root, same server"
+    },
+    {
+      "name": "http-project",
+      "command": "python3 scripts/zhenkun-verify-deployment.py --root tmp/r2-artifacts/project --base /Zhenkun-blog-site/ --http http://127.0.0.1:4321",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "biome-final",
+      "command": "pnpm exec biome ci src scripts/zhenkun-test-swup-parents.mjs scripts/zhenkun-swup-parent-types.ts scripts/zhenkun-test-r1a-data.mjs scripts/zhenkun-test-r1b-uri.mjs scripts/zhenkun-test-r1-tail.mjs scripts/zhenkun-test-unifont.mjs scripts/zhenkun-test-r2-native.mjs",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": null
+    },
+    {
+      "name": "audit-prod",
+      "command": "pnpm audit --prod --registry=https://registry.npmjs.org --json",
+      "exit": 1,
+      "state": "FAIL_RESIDUAL_CACHE",
+      "diagnostic": null
+    },
+    {
+      "name": "audit-full",
+      "command": "pnpm audit --registry=https://registry.npmjs.org --json",
+      "exit": 1,
+      "state": "FAIL_RESIDUAL_CACHE",
+      "diagnostic": null
+    },
+    {
+      "name": "graph-final-replay",
+      "command": "node references/dependency-r2-native-2026-10-03/graph-review-tool.mjs",
+      "exit": 0,
+      "state": "PASS",
+      "diagnostic": "Verifier now uses candidate Astro pure YAML parser and retained stage snapshots; initial snapshot matches exact git base. Runtime/dependency source unchanged."
+    }
+  ],
+  "metadata": "Sharp + 27 exact official queries PASS, no global registry or security configuration change",
+  "graph": "922\u2192895 package records,926\u2192899 snapshots;28added55removed0commonchanged;1795 references verified;four exact independently reviewed context maps only",
+  "nativeTests": {
+    "total": 202,
+    "pass": 202,
+    "fail": 0,
+    "skip": 0,
+    "r2IncludingParent": 16
+  },
+  "sharp": "All three actual parents0.35.5, native Darwinarm64 module, vips8.18.7,rsvg2.63.2; noWASM",
+  "miniflare": "ActualWrangler and CloudflareVite parent resolve same5.20260828.0-alpha; Undici7.29.1; Images info/input/transform/output/error, worker cf.image success/JSON/fallback, actualdispatch method/headers/binary/stream/redirect/activecancel/recovery PASS",
+  "cfImageInternal422": "Source fact after metadata SVG parsing, not runtime-captured; bounded actual public fallbacks prove exactoriginbytes and JPEG control. No productionCloudflare inference.",
+  "images": 26,
+  "astro": {
+    "files": 258,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 12
+  },
+  "biomeFiles": 305,
+  "typeChecks": "formal isolatedDeclarations plus standalone strict Swup parents PASS after Astro sync",
+  "dualBase": {
+    "fullEightStageBuilds": 2,
+    "pagefind": "v1.5.2 emitted zh-cn1page, root95words/project98words; not browser/runtime search",
+    "artifactFilesPerBase": 252,
+    "httpByteChecksPerBase": 24
+  },
+  "audits": "prod/full fresh exit1;each1highrecord/1GHSA/1package http-cache-semantics4.2.0",
+  "known36": "all36 retained official ranges freshly reevaluated against actual final graph:1affected cache; not all36 sources freshlyretrieved or exhaustive discovery",
+  "Linux": "NOT_RUN R2; officialplatformmetadata does not prove nativeLinux execution",
+  "GUI": "BLOCKED/NOT_RUN inherited browserpolicy, noalternativeclient/route",
+  "peer": "FAIL inherited mdx7.0.8/markdown-satteri0.4.0, no waiver",
+  "securityClosure": "BLOCKED residualcache noverifiedpublishedfix/noexemption",
+  "overrideReview": "Coordinator by2026-10-17, earliernewadvisory/parentchanges; noautomaticguarddeletion",
+  "protection": "Exactoriginalb6c3e39/private.workbuddy,R1955c78b,phase096b7b899 unchanged; application/public/.github/Node-pnpm/allowBuilds unchanged",
+  "cleanup": "AwaitedMiniflare.dispose,timers/fixture connectionsclosed; AstropreviewownPIDs27710/28145stopped; fiveknownloopbackportsECONNREFUSED, previewlockabsent; ignoredartifact snapshotsretained",
+  "remote": "No GitHub writes/push/PR/merge/deploy/CIedit/R4/bilingual work. Separate parent d12Linux task result not observed here.",
+  "whitespace": "Full staged raw evidence diff check FAIL exit2; scoped nonraw check PASS exit0 with exact diagnosed raw exclusions; originals untouched.",
+  "boundedSecretScan": "PASS four exact patterns on all changed candidate files, not exhaustive."
+}

@@ -1,0 +1,1 @@
+PASS actual rehype-katex and micromark math declarations; strict, skipLibCheck=false

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "previewLockAbsent": true,
+  "knownOwnedLoopback": [
+    {
+      "origin": "http://127.0.0.1:4321",
+      "state": "CLOSED",
+      "error": "ECONNREFUSED"
+    },
+    {
+      "origin": "http://127.0.0.1:62575",
+      "state": "CLOSED",
+      "error": "ECONNREFUSED"
+    },
+    {
+      "origin": "http://127.0.0.1:62584",
+      "state": "CLOSED",
+      "error": "ECONNREFUSED"
+    }
+  ],
+  "limit": "Only current peer fixture/worker/preview ports; awaited dispose and owned Astro stop; no process inventory/broad kill. Ignored build/compiled fixture snapshots retained."
+}

@@ -1,0 +1,9 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 0fdf64efae3b41889d545f657fd32ea07397057900909a46ada5efffb8cd4c6a; local raw original retained.
+Patch: You can now edit the package at:
+
+  <local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/tmp/astro-edit
+
+To commit your changes, run:
+
+  pnpm patch-commit '<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/tmp/astro-edit'
+

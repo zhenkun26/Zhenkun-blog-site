@@ -1,0 +1,24 @@
+{
+  "basis": "Read-only installed R1 baseline source; not an installed R2 candidate",
+  "files": {
+    "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/dist/src/index.js": "58ca83056cf67838add064edcbfd1d654ed204527b8eb01307ba208d7e59fa20",
+    "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/dist/src/index.d.ts": "7e0c4b6c1cdf6b4207e4c8651e04a453b759a1cdc4a3cd5691da016050e9193a",
+    "node_modules/.pnpm/miniflare@5.20260828.0-alpha/node_modules/miniflare/dist/src/workers/images/images.worker.js": "e044d0eb25cfc575795eb3661ae967e686319861d1ec498bedc53b885b5361f8"
+  },
+  "sourceConfirmed": [
+    "Miniflare public getImagesBinding and dispatchFetch entrypoints are declared.",
+    "Miniflare5 constructor validates modern options; public convertV4MiniflareOptions converts a V4-shaped local fixture into modern options.",
+    "Shared cf accepts boolean false; telemetry.enabled defaults false and must remain explicitly false in planned fixture.",
+    "Images binding local fetcher dynamically imports sharp; info parses PNG/JPEG/SVG metadata and transform applies rotate/resize and PNG/WebP output.",
+    "cf.image local fetcher parses Sharp metadata before rejecting SVG, then implements JSON metadata, rotate/resize, PNG/WebP and error responses."
+  ],
+  "unverified": [
+    "All target registry metadata and optional-platform closure",
+    "Target install and native module versions/paths",
+    "getImagesBinding info/input/transform/output runtime behavior",
+    "cf.image runtime metadata/transforms/errors/headers",
+    "dispatchFetch binary/stream/headers/redirect/cancellation/recovery",
+    "All Mac candidate quality/build/audit gates",
+    "All Linux and GUI gates"
+  ]
+}

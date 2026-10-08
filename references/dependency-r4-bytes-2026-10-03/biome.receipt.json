@@ -1,0 +1,20 @@
+{
+  "command": [
+    "node",
+    "node_modules/@biomejs/biome/bin/biome",
+    "ci",
+    "src",
+    "scripts/zhenkun-security-audit.mjs",
+    "scripts/zhenkun-test-security-audit.mjs",
+    "scripts/zhenkun-security-policy.json"
+  ],
+  "start": "2026-10-03T16:28:21.433724+00:00",
+  "end": "2026-10-03T16:28:21.522117+00:00",
+  "exit": 0,
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1",
+    "GITHUB_SHA": "735c141482e46af9819bf6c521ce1ac3ee46c388"
+  },
+  "liveAudit": "NOT_RUN"
+}

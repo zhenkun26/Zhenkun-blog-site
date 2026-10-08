@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "state": "BLOCKED",
+  "exitCode": 2,
+  "raw": {
+    "prod": {
+      "state": "BLOCKED",
+      "error": "AUDIT_INVALID_UTF8"
+    },
+    "full": {
+      "state": "BLOCKED",
+      "error": "AUDIT_INVALID_UTF8"
+    }
+  },
+  "effective": {
+    "advisories": [],
+    "knownAffected": [
+      {
+        "id": "GHSA-ch52-4w7c-c8xp",
+        "aliases": [
+          "GHSA-ch52-4w7c-c8xp",
+          "CVE-2026-93748"
+        ],
+        "package": "http-cache-semantics",
+        "severity": "high",
+        "versions": [
+          "4.2.0"
+        ],
+        "ranges": [
+          "<= 4.2.0",
+          "<= 4.2.0"
+        ]
+      },
+      {
+        "id": "CVE-2026-93750",
+        "aliases": [
+          "CVE-2026-93750"
+        ],
+        "package": "http-cache-semantics",
+        "severity": "high",
+        "versions": [
+          "4.2.0"
+        ],
+        "ranges": [
+          "<=4.2.0",
+          "<=4.2.0",
+          "<=4.1.1"
+        ]
+      }
+    ],
+    "mitigation": "NO_EXCEPTIONS_IMPLEMENTED; patch integrity never suppresses raw or known findings"
+  },
+  "blocked": [
+    {
+      "code": "AUDIT_INVALID_UTF8",
+      "scope": "prod"
+    },
+    {
+      "code": "AUDIT_INVALID_UTF8",
+      "scope": "full"
+    }
+  ],
+  "head": "1ffbe4c99f0a48c8d7e70498c7f8bb921eb24435",
+  "executionMode": "INJECTED_OFFLINE",
+  "lockSha256": "6f4a61e19f5e118ea4636a11984ae52f24e11764d6fdade9cab3d3101fd4d002",
+  "collection": "collection.json"
+}

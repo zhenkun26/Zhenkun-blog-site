@@ -1,0 +1,153 @@
+{
+  "node": "v24.20.0",
+  "ast": [
+    {
+      "input": ".prose :where(h1,h2):not(:where(.not-prose *))",
+      "output": ".prose :where(h1,h2):not(:where(.not-prose *))"
+    },
+    {
+      "input": "a::before,b::before",
+      "output": "a::before,b::before"
+    },
+    {
+      "input": ".中文\\:测试 > [data-x=\"a,b\"]::after",
+      "output": ".中文\\:测试 > [data-x=\"a,b\"]::after"
+    },
+    {
+      "input": ":is(.a,#b) > &",
+      "output": ":is(.a,#b) > &"
+    },
+    {
+      "input": "svg|a[href^=\"https:\"]",
+      "output": "svg|a[href^=\"https:\"]"
+    },
+    {
+      "input": "&:hover, &:focus",
+      "output": "&:hover, &:focus"
+    },
+    {
+      "input": ".a/*x*/.b",
+      "output": ".a/*x*/.b"
+    },
+    {
+      "input": "#{foo}.x",
+      "output": "#{foo}.x"
+    },
+    {
+      "input": ".a\\.b#x",
+      "output": ".a\\.b#x"
+    },
+    {
+      "input": ":nth-child(2n + 1 of .a,.b)",
+      "output": ":nth-child(2n + 1 of .a,.b)"
+    }
+  ],
+  "typography": [
+    {
+      "input": ".prose :where(h1,h2):not(:where(.not-prose *))",
+      "result": [
+        null,
+        ".prose :where(h1,h2):not(:where(.not-prose *))"
+      ]
+    },
+    {
+      "input": "a::before,b::before",
+      "result": [
+        "::before",
+        "a,b"
+      ]
+    },
+    {
+      "input": ".中文\\:测试 > [data-x=\"a,b\"]::after",
+      "result": [
+        "::after",
+        ".中文\\:测试 > [data-x=\"a,b\"]"
+      ]
+    },
+    {
+      "input": ":is(.a,#b) > &",
+      "result": [
+        null,
+        ":is(.a,#b) > &"
+      ]
+    },
+    {
+      "input": "svg|a[href^=\"https:\"]",
+      "result": [
+        null,
+        "svg|a[href^=\"https:\"]"
+      ]
+    },
+    {
+      "input": "&:hover, &:focus",
+      "result": [
+        null,
+        "&:hover, &:focus"
+      ]
+    },
+    {
+      "input": ".a/*x*/.b",
+      "result": [
+        null,
+        ".a/*x*/.b"
+      ]
+    },
+    {
+      "input": "#{foo}.x",
+      "result": [
+        null,
+        "#{foo}.x"
+      ]
+    },
+    {
+      "input": ".a\\.b#x",
+      "result": [
+        null,
+        ".a\\.b#x"
+      ]
+    },
+    {
+      "input": ":nth-child(2n + 1 of .a,.b)",
+      "result": [
+        null,
+        ":nth-child(2n + 1 of .a,.b)"
+      ]
+    }
+  ],
+  "nested": [
+    {
+      "input": ".a {color:red;&:hover {color:blue} .b,.c {display:block}}",
+      "output": ".a {color:red;}.a:hover {color:blue}.a .b,.a .c {display:block}"
+    },
+    {
+      "input": ".a { @media (min-width: 10px) { & > .b {color:red} } }",
+      "output": "@media (min-width: 10px) { .a > .b {color:red} }"
+    },
+    {
+      "input": "@supports (display:grid){.a { & + & {color:red}}}",
+      "output": "@supports (display:grid){ .a + .a {color:red}}"
+    },
+    {
+      "input": ".a { @at-root .b {color:red} &::before {content:\"Ω\"} }",
+      "output": ".b {color:red} .a::before {content:\"Ω\"}"
+    }
+  ],
+  "timingMs": [
+    {
+      "n": 2000,
+      "old6": 1.8280829999999924,
+      "fixed7": 0.9717079999999925
+    },
+    {
+      "n": 4000,
+      "old6": 3.755790999999988,
+      "fixed7": 1.7378750000000025
+    },
+    {
+      "n": 8000,
+      "old6": 11.83512499999999,
+      "fixed7": 2.476124999999996
+    }
+  ],
+  "scope": "isolated actual typography and postcss-nested copies with parser7.1.6; not full Tailwind/ExpressiveCode build or pnpm peer resolution"
+}

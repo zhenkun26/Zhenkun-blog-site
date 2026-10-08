@@ -1,0 +1,104 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 33e94031961fd93686932002649d08b31a72c31c750e6ae60577e0eaa5179e67; local raw original retained.
+CACHE_INACTIVE physical original http-cache-semantics@4.2.0; no current lock edge or actual symlink points here
+CACHE_REACHABLE graphParents=1 actualLinks=2 source=55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89
+CACHE_NEGATIVE missing exit=254 ✓ Lockfile passes supply-chain policies (verified 5m ago)
+[ENOENT] ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-sAqr0f/scripts/patches/http-cache-semantics@4.2.0.patch'
+
+pnpm: ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-sAqr0f/scripts/patches/http-cache-semantics@4.2.0.patch'
+    at async open (node:internal/fs/promises:1345:25)
+    at async Object.readFile (node:internal/fs/promises:1996:14)
+    at async readNormalizedFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99206:19)
+    at async createHexHashFromFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99203:24)
+    at async file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208269:20
+    at async Promise.all (index 0)
+    at async pMapValues (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208268:3)
+    at async _install (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:212483:126)
+CACHE_NEGATIVE corrupt exit=1 ✓ Lockfile passes supply-chain policies (verified 5m ago)
+[ERR_PNPM_LOCKFILE_CONFIG_MISMATCH] Cannot proceed with the frozen installation. The current "patchedDependencies" configuration doesn't match the value found in the lockfile
+
+Update your lockfile using "pnpm install --no-frozen-lockfile"
+CACHE_PARENT Astro build owns an additional stale-file fallback outside this package patch; source-confirmed, not a covered mitigation.
+CACHE_BASELINE expected assertion failure: 93748 cookie max-stale
+CACHE_BASELINE expected assertion failure: 93748 no-cache direct SWR
+CACHE_BASELINE expected assertion failure: 93750 wildcard OWS
+CACHE_BASELINE expected assertion failure: 93750 own/inherited
+✔ A01 shared cookie restrictions cover five reuse APIs (2.117334ms)
+✔ A02 incoming max-stale cannot unlock shared cookies (0.31575ms)
+✔ A03 no-cache and qualified no-cache cover five APIs (0.199834ms)
+✔ A04 shared proxy-revalidate and private control (0.302792ms)
+✔ A05 all unstoreable policies deny stale reuse (0.320667ms)
+✔ A06 must-revalidate preserves fresh helpers and conservative evaluate (0.158125ms)
+✔ A07 shared s-maxage fresh boundary stale and zero cross error matrix (0.499458ms)
+✔ A08 shared false does not acquire proxy or s-maxage restriction (0.381334ms)
+✔ A09 public immutable and private cookie exceptions remain usable (0.696375ms)
+✔ A10 ordinary expiry max-stale keeps strict window boundary (0.228041ms)
+✔ A11 ordinary zero freshness is not a security restriction (0.202583ms)
+✔ A12 ordinary fresh no extensions remains a cache hit (0.061083ms)
+✔ A13 SWR inside boundary outside retains async contract (0.149375ms)
+✔ A14 SIE strict boundary all errors and non-error controls (0.152541ms)
+✔ A15 SIE requires URL host method and Vary matching (0.193666ms)
+✔ A16 incoming no-cache and pragma deny error fallback (0.0845ms)
+✔ A17 cross method error fallback denied normal HEAD validators preserved (0.108417ms)
+✔ A18 max-age versus shared s-maxage preserves fresh fallback (0.432666ms)
+✔ B01 wildcard and list wildcard forbid all reuse (0.541084ms)
+✔ B02 field case OWS duplicates empty items preserve values (0.134292ms)
+✔ B03 absent empty and empty lists introduce no variant (0.07125ms)
+✔ B04 own presence and value comparisons (0.103167ms)
+✔ B05 prototype tokens and null-prototype maps use own values (0.2505ms)
+✔ B06 own versus inherited same value is a mismatch both ways (0.056875ms)
+✔ B07 two inherited-only fields are both absent (0.043167ms)
+✔ B08 raw ASCII validation precedes lowercase and survives roundtrip (2.357458ms)
+✔ B09 variant mismatch cannot be rescued by stale extensions (0.057459ms)
+✔ B10 wildcard validators are not attached to incoming requests (0.03575ms)
+✔ C01 version one serialization preserves every safety restriction (0.908958ms)
+✔ C02 trusted hand-authored historical v1 fixtures are restricted (0.172542ms)
+✔ C03 modes cookie opt-ins and own special fields survive JSON (0.26375ms)
+✔ C04 valid ETag Last-Modified 304 and 200 keep public result shape (0.172333ms)
+✔ C05 first 304 cache-control restrictions are retained (0.188875ms)
+✔ C06 first 304 wildcard and cookie restrictions are retained (0.243ms)
+✔ C07 first pragma no-cache retained existing cache-control precedence (0.094875ms)
+✔ C08 valid 304 can replace no-cache with public fresh policy (0.057708ms)
+✔ C09 non-target 304 validation and header merging stay baseline-compatible (0.236708ms)
+✔ C10 accessors preserve API types and do not authorize cookie reuse (0.03875ms)
+✔ C11 ordinary request cache-control pragma and method branches stay compatible (0.064ms)
+✖ C12 independent clocks constructors returned policies and TTL rounding (0.383166ms)
+✔ D01 official source patch registration integrity and license (14.194417ms)
+✔ D02 all current graph and actual links resolve the approved candidate (233.255917ms)
+✔ D03 missing and corrupt patches fail the normal frozen offline installer (468.580542ms)
+✔ D04 actual Astro remote helpers use bounded synthetic fetch and real policy TTL (14.232041ms)
+✔ official baseline counterexamples reproduce bounded failures (0.751792ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 44
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 790.126542
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-cache-policy.mjs:834:1
+✖ C12 independent clocks constructors returned policies and TTL rounding (0.383166ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 59.99960009765625
+  - 59.9996
+           ^
+  
+      at fixture (file://<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-cache/scripts/zhenkun-test-cache-policy.mjs:102:9)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-cache/scripts/zhenkun-test-cache-policy.mjs:835:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 59.99960009765625,
+    expected: 59.9996,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,11 @@
+{
+  "action": "actions/upload-artifact",
+  "version": "v4.6.2",
+  "sha": "ea165f8d65b6e75b540449e92b4886f43607fa02",
+  "verifiedAt": "2026-10-03",
+  "sources": [
+    "https://github.com/actions/upload-artifact/releases/tag/v4.6.2",
+    "https://github.com/actions/upload-artifact/commit/ea165f8d65b6e75b540449e92b4886f43607fa02"
+  ],
+  "observed": "Official release links matching commit; commit page resolves. No action executed. Existing checkout/setup-node/pnpm pins retained."
+}

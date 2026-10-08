@@ -1,0 +1,35 @@
+{
+  "state": "PASS",
+  "base": "8f5e9488bb0fbd9b8255db2ed5773af4889ce69e",
+  "packages": 895,
+  "snapshots": 898,
+  "packageRecordsUnchanged": true,
+  "allEdgesAndImportersUnchangedAfterOnlyExactAstroPatchSuffixRemoval": true,
+  "additionalOverrides": [
+    [
+      "@astrojs/starlight@0.41.7>mdast-util-to-markdown",
+      "2.1.2"
+    ],
+    [
+      "@expressive-code/core@0.41.7>@ctrl/tinycolor",
+      "4.2.0"
+    ],
+    [
+      "mdast-util-directive@3.1.0>mdast-util-to-markdown",
+      "2.1.2"
+    ],
+    [
+      "micromark-util-character@2.1.1>micromark-util-types",
+      "2.0.2"
+    ],
+    [
+      "micromark-util-classify-character@2.0.1>micromark-util-types",
+      "2.0.2"
+    ],
+    [
+      "postcss@8.5.26>source-map-js",
+      "1.2.1"
+    ]
+  ],
+  "patchHash": "e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47"
+}

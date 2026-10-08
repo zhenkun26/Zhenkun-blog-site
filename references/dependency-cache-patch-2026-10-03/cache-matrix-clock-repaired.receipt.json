@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "scripts/zhenkun-test-cache-policy.mjs"
+  ],
+  "start": "2026-10-03T15:39:35.333495+00:00",
+  "end": "2026-10-03T15:39:36.146001+00:00",
+  "exit": 0
+}

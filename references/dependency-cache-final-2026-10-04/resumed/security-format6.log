@@ -1,0 +1,35 @@
+scripts/zhenkun-test-security-audit.mjs:916:3 lint/style/useSingleVarDeclarator  FIXABLE  ━━━━━━━━━━
+
+  × Declare variables separately
+  
+    914 │ ]) {
+    915 │ 	test(`repair classification: changed audit ${field} fails closed`, () => {
+  > 916 │ 		const data = clone(raw),
+        │ 		^^^^^^^^^^^^^^^^^^^^^^^^
+  > 917 │ 			row = Object.values(data.advisories)[0];
+        │ 			^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    918 │ 		if (field === "path")
+    919 │ 			row.findings[0].paths.push(".>unknown>http-cache-semantics");
+  
+  i Unsafe fix: Break out into multiple declarations
+  
+     914  914 │   ]) {
+     915  915 │     test(`repair classification: changed audit ${field} fails closed`, () => {
+     916      │ - → → const·data·=·clone(raw),
+     917      │ - → → → row·=·Object.values(data.advisories)[0];
+          916 │ + → → const·data·=·clone(raw);
+          917 │ + → → const·row·=·Object.values(data.advisories)[0];
+     918  918 │       if (field === "path")
+     919  919 │         row.findings[0].paths.push(".>unknown>http-cache-semantics");
+  
+
+Skipped 1 suggested fixes.
+If you wish to apply the suggested (unsafe) fixes, use the command biome check --write --unsafe
+
+Checked 1 file in 66ms. Fixed 1 file.
+Found 1 error.
+check ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while applying fixes.
+  
+

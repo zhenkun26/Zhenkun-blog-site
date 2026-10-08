@@ -1,0 +1,8 @@
+{
+  "command": [
+    "node",
+    "references/dependency-cache-patch-2026-10-03/graph-check.mjs"
+  ],
+  "end": "2026-10-03T15:41:35.485490+00:00",
+  "exit": 0
+}

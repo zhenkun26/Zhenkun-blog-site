@@ -1,0 +1,141 @@
+{
+  "state": "BLOCKED_UPSTREAM_REVIEW_AND_LIVE_AUDIT_APPROVAL",
+  "sourceCommit": "612d22061b3553ec56c3e5df22b4311eeda89621",
+  "baseCommit": "8f5e9488bb0fbd9b8255db2ed5773af4889ce69e",
+  "workspace": "<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final",
+  "recordedAt": "2026-10-04T03:27:16.837721+00:00",
+  "graph": {
+    "state": "PASS",
+    "base": "8f5e9488bb0fbd9b8255db2ed5773af4889ce69e",
+    "packages": 895,
+    "snapshots": 898,
+    "packageRecordsUnchanged": true,
+    "allEdgesAndImportersUnchangedAfterOnlyExactAstroPatchSuffixRemoval": true,
+    "additionalOverrides": [
+      [
+        "@astrojs/starlight@0.41.7>mdast-util-to-markdown",
+        "2.1.2"
+      ],
+      [
+        "@expressive-code/core@0.41.7>@ctrl/tinycolor",
+        "4.2.0"
+      ],
+      [
+        "mdast-util-directive@3.1.0>mdast-util-to-markdown",
+        "2.1.2"
+      ],
+      [
+        "micromark-util-character@2.1.1>micromark-util-types",
+        "2.0.2"
+      ],
+      [
+        "micromark-util-classify-character@2.0.1>micromark-util-types",
+        "2.0.2"
+      ],
+      [
+        "postcss@8.5.26>source-map-js",
+        "1.2.1"
+      ]
+    ],
+    "patchHash": "e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47"
+  },
+  "validation": {
+    "frozenInstall": "PASS ignore-scripts",
+    "combinedOffline": {
+      "tests": 152,
+      "passed": 152,
+      "failed": 0,
+      "skipped": 0
+    },
+    "security": 90,
+    "generator": 17,
+    "cache": 45,
+    "positiveProofBeforeFreshnessAddition": 62,
+    "originalGeneratorCounterexample": {
+      "passed": 2,
+      "expectedAssertionFailures": 15
+    },
+    "biomeFiles": 7,
+    "liveAudit": "BLOCKED_BEFORE_EXECUTION",
+    "finalFullMatrix": "NOT_RUN",
+    "LinuxAndBrowser": "NOT_RUN"
+  },
+  "deniedAction": {
+    "command": "node scripts/zhenkun-security-audit.mjs --live --output tmp/security-final-live",
+    "cwd": "<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final",
+    "target": "https://registry.npmjs.org",
+    "reason": "Automatic approval rejected dependency metadata disclosure, citing retained older no-live-audit authorization instructions. No retry or alternate transport.",
+    "processStarted": false
+  },
+  "upstream": {
+    "state": "UPSTREAM_REVIEW_REQUIRED",
+    "observedLatest": "4.3.0",
+    "publishedAt": "2026-10-04T02:56:05.593Z",
+    "officialTarball": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.3.0.tgz",
+    "distIntegrityVerified": true,
+    "tarballSha256": "d75e1e6a11587954da5e2f0e2b5c4b397a16d28cc2f7bdf64e9027fc2fe593ee",
+    "sourceSha256": "ede1cc404a492fa348eb9d97a3007a0d72aa717bd22cd86a56bd0824c19729ca",
+    "installedOrExecuted": false,
+    "staticFinding": "Vary matching changed; evaluateRequest adds response.status and public status() method. No max-stale or revalidatedPolicy guard changes in 4.2.0-to-4.3.0 source diff. This is not dynamic security acceptance.",
+    "reviewed420FixtureProvenance": "Extracted exact versions[4.2.0] from current official packument; used only as prior-version unit fixture, not a current latest response.",
+    "packumentSha256": "80d047081285fcc7b46d40f2526e1d123fa3b2c02c0d4bb4d718cb678a80e623"
+  },
+  "protectedRepositories": [
+    {
+      "path": "<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4",
+      "head": "8f5e9488bb0fbd9b8255db2ed5773af4889ce69e",
+      "trackedStatus": ""
+    },
+    {
+      "path": "<local-home>/GitHub/Zhenkun-blog-site",
+      "head": "b6c3e39b2bf7ea73ec60234dc42f8240e0e8695f",
+      "trackedStatus": ""
+    }
+  ],
+  "privateWorkbuddy": {
+    "state": "LOCAL_ONLY_PROTECTION_DATA",
+    "originalValueSha256": "ce60e9c21305386da3d2682191c7bd6292b21d4810bde2087e87b7bf4d612165"
+  },
+  "sourceHashes": {
+    "pnpm-lock.yaml": "14462544638481af75e4fb22587bcd143b99cbb3b73b1a01016cd78be888a895",
+    "pnpm-workspace.yaml": "7a8f1cd67a3bca177b0898e65839905d7a8bebf0b9acff51c4a6feddeb31b6fd",
+    "scripts/patches/astro@7.2.10.patch": "e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47",
+    "scripts/patches/http-cache-semantics@4.2.0.patch": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3",
+    "scripts/zhenkun-cache-remediation.mjs": "7a7a7072175f059d2f1fe45fbc2027254b34a900d1e1248ec7908ec196df3a5c",
+    "scripts/zhenkun-cache-repair-contract.json": "bfe348de744adb747d0e02db3ed6d30415cf11ddb4dfa87d524ca4fb01ccd68b",
+    "scripts/zhenkun-security-audit.mjs": "7835045617eaad73e011268105f13160965c20f3ebd0da543d220ccfeb8ce28b",
+    "scripts/zhenkun-security-policy.json": "d3d015dddd798892de46b94963ef57e07fcfd4fc4ba96346e13002f5ce42921c"
+  },
+  "evidenceHashes": {
+    "corrected-frozen.ndjson": "a427253ba5e8ac267ce1052392e9f505c8d5c6b7b5f1b1f142666ae5fdb2f5cd",
+    "final-source-format.log": "8577caaf650cf3440fd5d50d0dfa834abfd37c351a58cdafdf0b4a6c286ba5bc",
+    "gate-final-format.log": "bc3fd1952b03b7ee8975d4e5f274ff66f74a1a17e6d378b60da6b8e9822dbde8",
+    "generator-controls.log": "0b2116598a8b03253dce811dac263ad537f40305ca3304cd2920f6ec3cb592ff",
+    "graph-correction.json": "8da038aad7c433925609f028382e327512940be026a09f0b9be9148ec7e995e4",
+    "lock-correction.ndjson": "a6b5378c1271855790dccd81fa0079e919a9ab63d07237d93cb6cbcd9f84c433",
+    "primary-baseline/cve.json": "3978aaaa849d764766e0bdd6e22ead35ca234f7c8729fe569575db10c0e037c7",
+    "primary-baseline/ghsa.json": "add51c3b2a7eb164e075b145f72e8902264bb474a8098617d90f5aabd1ab36bf",
+    "primary-baseline/latest-reviewed-4.2.0.json": "f6ab03d33efb0af81a23289062b1a49845e2430c48d09b29ead31a7ff95649f4",
+    "primary-baseline/latest.json": "c4c95cf8d3becce754366907d8a99b44c6e7a10ce725cc01a5f7b859c0682493",
+    "repair-proof-dev/repair-evidence.json": "89d694b392873a2270a6d993c0aa99c1af16cfbd7380f8e8b2f4dc8041c11234",
+    "repair-proof-dev/repair-positive.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "repair-proof-dev/repair-positive.stdout.tap": "b96f2192bf8b44656cfec09201fe93c09ef911d5780e05a878fe401b848e5dcd",
+    "repair-proof-v2/repair-evidence.json": "e6a068e24e26915ad8386dc10612afdcdd358f7f7f919a96ee5b9af3b05cfe51",
+    "repair-proof-v2/repair-generator-original.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "repair-proof-v2/repair-generator-original.stdout.tap": "f7182890dfb7b6d899a9c6e9a0a2688f0ab19f6b68818a778c0d7c4ab455dc46",
+    "repair-proof-v2/repair-positive.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "repair-proof-v2/repair-positive.stdout.tap": "84a16d9a625def7795d0df13ddc368471934595d63e63421c80ad1ca56dfd32e",
+    "resumed-final-focused.log": "45ecceea8a430267fc0c2892e6f3b93708877306aae4e63b820cb66a9537d7b5",
+    "security-final-focused-v2.log": "230d14e67e3ca6c53495bbfc69fde1bef5caa153fa778503cdd1afa02f35da84",
+    "security-final-focused.log": "6c5ab2484bc857054e09753dced7fb91ac124bcea736a80fb53f3399fe75f762",
+    "security-format6.log": "3892dbcf5700593690c8d3a45a25cab12ca5f536311789f05704bdd55161ef03",
+    "upstream-4.3.0.diff": "0f8fa340b2abcbac4849a527442ce246c4a083bf45c250a415efbcd98341b719",
+    "upstream-change.json": "37cc71c46dcf7ea97a5964e64f9479baf9b0a4599e7c3cabcddd7c745bc1a5f2"
+  },
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "0c7b7e0c939b2c77ae263daeee70a948936da52477f486e2694095551913b10c",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

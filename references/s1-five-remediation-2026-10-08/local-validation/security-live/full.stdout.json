@@ -1,0 +1,46 @@
+{
+  "advisories": {
+    "1240991": {
+      "findings": [
+        {
+          "version": "4.2.0",
+          "paths": [
+            ".>@astrojs/cloudflare>astro>http-cache-semantics",
+            ".>@astrojs/mdx>astro>http-cache-semantics",
+            ".>@astrojs/svelte>astro>http-cache-semantics",
+            ".>astro>http-cache-semantics",
+            ".>astro-expressive-code>astro>http-cache-semantics",
+            ".>expressive-code-language-badge>@astrojs/starlight>@astrojs/mdx>astro>http-cache-semantics",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro>http-cache-semantics",
+            ".>expressive-code-language-badge>@astrojs/starlight>astro-expressive-code>astro>http-cache-semantics"
+          ],
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "id": 1240991,
+      "title": "http-cache-semantics max-stale handling can disclose cross-user cached responses",
+      "module_name": "http-cache-semantics",
+      "vulnerable_versions": "<=4.2.0",
+      "patched_versions": ">=4.2.1",
+      "severity": "high",
+      "cwe": "CWE-524",
+      "github_advisory_id": "GHSA-ch52-4w7c-c8xp",
+      "url": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp"
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 1,
+      "critical": 0
+    },
+    "dependencies": 659,
+    "devDependencies": 70,
+    "optionalDependencies": 191,
+    "totalDependencies": 889
+  }
+}

@@ -1,0 +1,409 @@
+{
+  "root": {
+    "optimizedOutputs": 32,
+    "uniqueLocalSourceStems": 15,
+    "allOutputStemsMapToLocalSourceFiles": true,
+    "mappings": [
+      {
+        "output": "/_astro/avatar.Vt-Igtud_1tWPX7.webp",
+        "localSources": [
+          "src/assets/images/zhenkun/avatar.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m2.DdvPaSds_IzGBP.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m2.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m1.DEh_M2ue_Z1S1lrt.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m1.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m5.UNwLEw9O_Z1lqfdc.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m5.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m4.DzLJp29g_1oUPkN.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m4.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d2.G7EObyHu_Z1DLAKS.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d2.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m3.D3bdkV68_1B5y44.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m3.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d1.v_J1gD3P_tz0F7.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d1.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m6.Ca2EuEDu_P3oOm.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m6.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d3.CGCRs0-H_Z4ue21.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d3.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m2.DdvPaSds_rxT1.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m2.avif"
+        ]
+      },
+      {
+        "output": "/_astro/avatar.Vt-Igtud_Q1OuE.webp",
+        "localSources": [
+          "src/assets/images/zhenkun/avatar.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m1.DEh_M2ue_Z1L1IBE.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m1.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m4.DzLJp29g_Z1siWVv.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m4.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m5.UNwLEw9O_16Ihom.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m5.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d2.G7EObyHu_2sTS0J.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d2.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m3.D3bdkV68_1I5aSS.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m3.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m6.Ca2EuEDu_rBfB3.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m6.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d1.v_J1gD3P_ZDw30v.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d1.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d4.Brgr35k-_QbpD3.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d4.avif"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-light.DZ-mS7Sc_Z4p5YL.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-light.png"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-dark.b7MsfgPt_RPm6p.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-dark.png"
+        ]
+      },
+      {
+        "output": "/_astro/d3.CGCRs0-H_Z11YS4k.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d3.avif"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-light.DZ-mS7Sc_Z1n8zmu.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-light.png"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-dark.b7MsfgPt_1Ub8hw.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-dark.png"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-light.DZ-mS7Sc_Z3pH8y.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-light.png"
+        ]
+      },
+      {
+        "output": "/_astro/d5.z7QGp_dj_1EwU7g.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d5.avif"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-dark.b7MsfgPt_Zr6Cr1.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-dark.png"
+        ]
+      },
+      {
+        "output": "/_astro/d6.DetxM4Sl_wvX9N.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d6.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d4.Brgr35k-_ZgTD2z.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d4.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d5.z7QGp_dj_H2g4W.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d5.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d6.DetxM4Sl_ZpXFRv.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d6.avif"
+        ]
+      }
+    ],
+    "artifactFiles": 252,
+    "httpByteChecks": 24
+  },
+  "project": {
+    "optimizedOutputs": 32,
+    "uniqueLocalSourceStems": 15,
+    "allOutputStemsMapToLocalSourceFiles": true,
+    "mappings": [
+      {
+        "output": "/_astro/avatar.Vt-Igtud_Z1euN8K.webp",
+        "localSources": [
+          "src/assets/images/zhenkun/avatar.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m2.DdvPaSds_1VHfKI.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m2.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m3.D3bdkV68_Wf0DU.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m3.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m5.UNwLEw9O_sA6Rs.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m5.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m6.Ca2EuEDu_1xiHm.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m6.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d1.v_J1gD3P_ZdONv8.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d1.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d2.G7EObyHu_qFnQ4.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d2.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m4.DzLJp29g_ZJs1Ko.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m4.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m1.DEh_M2ue_3fm99.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m1.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d3.CGCRs0-H_20WKzV.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d3.avif"
+        ]
+      },
+      {
+        "output": "/_astro/avatar.Vt-Igtud_JhzDK.webp",
+        "localSources": [
+          "src/assets/images/zhenkun/avatar.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m2.DdvPaSds_8pjwV.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m2.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m3.D3bdkV68_Z2rbALa.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m3.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m5.UNwLEw9O_Lr6z6.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m5.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m6.Ca2EuEDu_Z1i7Woq.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m6.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d1.v_J1gD3P_BOt7J.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d1.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m1.DEh_M2ue_1J0Sx0.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m1.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d2.G7EObyHu_TahXU.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d2.avif"
+        ]
+      },
+      {
+        "output": "/_astro/m4.DzLJp29g_IxVXx.webp",
+        "localSources": [
+          "src/assets/images/MobileWallpaper/m4.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d6.DetxM4Sl_Z2sdb2b.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d6.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d5.z7QGp_dj_Z1kce4I.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d5.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d4.Brgr35k-_8LArN.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d4.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d3.CGCRs0-H_2trEHM.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d3.avif"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-light.DZ-mS7Sc_vX7G3.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-light.png"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-dark.b7MsfgPt_J0y4b.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-dark.png"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-light.DZ-mS7Sc_ZHQC47.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-light.png"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-dark.b7MsfgPt_ZlB5BS.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-dark.png"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-light.DZ-mS7Sc_Q3GXQ.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-light.png"
+        ]
+      },
+      {
+        "output": "/_astro/firefly-dark.b7MsfgPt_yHSA1.webp",
+        "localSources": [
+          "src/assets/images/logo/firefly-dark.png"
+        ]
+      },
+      {
+        "output": "/_astro/d4.Brgr35k-_YqS5F.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d4.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d5.z7QGp_dj_ZQHjVR.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d5.avif"
+        ]
+      },
+      {
+        "output": "/_astro/d6.DetxM4Sl_Z1YIgTk.webp",
+        "localSources": [
+          "src/assets/images/DesktopWallpaper/d6.avif"
+        ]
+      }
+    ],
+    "artifactFiles": 252,
+    "httpByteChecks": 24
+  },
+  "currentRemoteOptimizationCount": {
+    "count": 0,
+    "basis": "SOURCE_CONFIRMED: only ImageWrapper/Navbar image component import sites; both restrict Astro optimization to local metadata and emit remote strings as raw img. Source content has no remote Markdown/MDX images and no getImage calls; current image config adds no authorized remote domains. Full build logs show32 outputs per base, all stems mapped to15 local source files. This is source/build correlation, not a runtime network trace.",
+    "cost": "The patched generator disables persistent remote caching for any future remote optimized input, including public responses; each new build refetches and may fail offline."
+  }
+}

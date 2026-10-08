@@ -1,0 +1,51 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 53ef29f992b5e47a5179e24e59c79284327b61483355fa5bde46eb4463e097d6; local raw original retained.
+▶ R2 real Sharp parents and local Miniflare APIs
+  ✔ root: actual native Sharp decodes PNG/JPEG/SVG and rotates/resizes PNG/WebP (16.433833ms)
+  ✔ Astro: actual native Sharp decodes PNG/JPEG/SVG and rotates/resizes PNG/WebP (6.884084ms)
+  ✔ Miniflare: actual native Sharp decodes PNG/JPEG/SVG and rotates/resizes PNG/WebP (6.325791ms)
+  ✔ getImagesBinding info parses bitmap and harmless SVG (31.736917ms)
+  ✔ getImagesBinding input/transform/output uses native PNG/WebP paths (36.503166ms)
+  ✔ getImagesBinding exposes its bounded unsupported GIF output error (3.500833ms)
+  ✔ worker cf.image native png result and headers (4.2415ms)
+  ✔ worker cf.image native webp result and headers (2.422584ms)
+  ✔ worker cf.image JSON reports original and transformed metadata (6.089042ms)
+  ✖ worker cf.image SVG rejection follows metadata parsing; invalid input reports transform error (2.466625ms)
+  ✔ dispatchFetch preserves method, headers and exact binary bytes through real Undici parent (1.333708ms)
+  ✔ dispatchFetch accepts streamed uploads and controlled streamed response bytes (52.117958ms)
+  ✔ dispatchFetch handles followed and manual redirects (2.766583ms)
+  ✔ dispatchFetch cancellation of active stream is followed by successful recovery (2.345875ms)
+✖ R2 real Sharp parents and local Miniflare APIs (2360.993042ms)
+ℹ {"parent":"root","entry":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/sharp@0.35.5_@types+node@26.4.1/node_modules/sharp/dist/index.cjs","native":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/@img+sharp-darwin-arm64@0.35.5/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64-0.35.5.node","nativeSha256":"791921f975371be33aed727e06283282cc001c960792eb52505b579fdaaf1b55","versions":{"aom":"3.15.1","archive":"3.8.9","cairo":"1.18.6","cgif":"0.5.4","exif":"0.6.26","expat":"2.8.5","ffi":"3.8.0","fontconfig":"2.18.3","freetype":"2.14.3","fribidi":"1.0.17","glib":"2.90.0","harfbuzz":"14.5.0","heif":"1.23.5","highway":"1.4.0","imagequant":"2.4.1","lcms":"2.19.1","mozjpeg":"0826579","pango":"1.58.2","pixman":"0.46.4","png":"1.6.58","proxy-libintl":"0.5","rsvg":"2.63.2","tiff":"4.7.2","uhdr":"2.0.2","vips":"8.18.7","webp":"1.6.0","xml2":"2.15.4","zlib-ng":"2.3.3","sharp":"0.35.5"}}
+ℹ {"parent":"Astro","entry":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/sharp@0.35.5_@types+node@26.4.1/node_modules/sharp/dist/index.cjs","native":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/@img+sharp-darwin-arm64@0.35.5/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64-0.35.5.node","nativeSha256":"791921f975371be33aed727e06283282cc001c960792eb52505b579fdaaf1b55","versions":{"aom":"3.15.1","archive":"3.8.9","cairo":"1.18.6","cgif":"0.5.4","exif":"0.6.26","expat":"2.8.5","ffi":"3.8.0","fontconfig":"2.18.3","freetype":"2.14.3","fribidi":"1.0.17","glib":"2.90.0","harfbuzz":"14.5.0","heif":"1.23.5","highway":"1.4.0","imagequant":"2.4.1","lcms":"2.19.1","mozjpeg":"0826579","pango":"1.58.2","pixman":"0.46.4","png":"1.6.58","proxy-libintl":"0.5","rsvg":"2.63.2","tiff":"4.7.2","uhdr":"2.0.2","vips":"8.18.7","webp":"1.6.0","xml2":"2.15.4","zlib-ng":"2.3.3","sharp":"0.35.5"}}
+ℹ {"parent":"Miniflare","entry":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/sharp@0.35.5_@types+node@26.4.1/node_modules/sharp/dist/index.cjs","native":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/@img+sharp-darwin-arm64@0.35.5/node_modules/@img/sharp-darwin-arm64/lib/sharp-darwin-arm64-0.35.5.node","nativeSha256":"791921f975371be33aed727e06283282cc001c960792eb52505b579fdaaf1b55","versions":{"aom":"3.15.1","archive":"3.8.9","cairo":"1.18.6","cgif":"0.5.4","exif":"0.6.26","expat":"2.8.5","ffi":"3.8.0","fontconfig":"2.18.3","freetype":"2.14.3","fribidi":"1.0.17","glib":"2.90.0","harfbuzz":"14.5.0","heif":"1.23.5","highway":"1.4.0","imagequant":"2.4.1","lcms":"2.19.1","mozjpeg":"0826579","pango":"1.58.2","pixman":"0.46.4","png":"1.6.58","proxy-libintl":"0.5","rsvg":"2.63.2","tiff":"4.7.2","uhdr":"2.0.2","vips":"8.18.7","webp":"1.6.0","xml2":"2.15.4","zlib-ng":"2.3.3","sharp":"0.35.5"}}
+ℹ {"fixtureOrigin":"http://127.0.0.1:54040","workerOrigin":"http://127.0.0.1:54050","cf":false,"telemetry":false,"remoteBindings":false,"dispatchTransport":"<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/undici@7.29.1/node_modules/undici/index.js"}
+ℹ tests 15
+ℹ suites 0
+ℹ pass 13
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2540.807541
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-r2-native.mjs:374:10
+✖ worker cf.image SVG rejection follows metadata parsing; invalid input reports transform error (2.466625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  200 !== 422
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/scripts/zhenkun-test-r2-native.mjs:382:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/scripts/zhenkun-test-r2-native.mjs:374:2)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 200,
+    expected: 422,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,9 @@
+{
+  "parent": "root",
+  "input": "png",
+  "width": 3,
+  "height": 4,
+  "format": "webp",
+  "bytes": 86,
+  "sha256": "6b88d68d19d7dcbf2d49d3fe89cde25d82505bc7c63df48b14d0224fa40ad679"
+}

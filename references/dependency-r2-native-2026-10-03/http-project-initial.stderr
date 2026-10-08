@@ -1,0 +1,7 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 e0f481afbd392245140837f27eeb6ce895cfed4f69c1f3cf3f3a75aa3e59ae6f; local raw original retained.
+Traceback (most recent call last):
+  File "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/scripts/zhenkun-verify-deployment.py", line 102, in <module>
+    page = Page(artifact(expected).read_text())
+  File "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/scripts/zhenkun-verify-deployment.py", line 68, in artifact
+    assert path.is_file(), (url, str(path))
+AssertionError: ('https://zhenkun26.github.io/Zhenkun-blog-site/', '<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/tmp/r2-artifacts/project/Zhenkun-blog-site/index.html')

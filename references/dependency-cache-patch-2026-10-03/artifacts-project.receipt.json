@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "scripts/zhenkun-verify-ci-artifacts.mjs",
+    "--base",
+    "/Zhenkun-blog-site/"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1",
+    "DEPLOY_BASE": "/Zhenkun-blog-site/"
+  },
+  "start": "2026-10-03T15:42:30.260635+00:00",
+  "end": "2026-10-03T15:42:30.380285+00:00",
+  "exit": 0
+}

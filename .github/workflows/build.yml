@@ -52,6 +52,11 @@ jobs:
       - name: Check TypeScript
         run: pnpm type-check
 
+      - name: Check actual overridden parent declarations strictly
+        run: |
+          pnpm exec tsc --ignoreConfig --noEmit --strict --skipLibCheck false --module NodeNext --moduleResolution NodeNext --target ES2022 scripts/zhenkun-swup-parent-types.ts
+          node scripts/zhenkun-five-parent-types.mjs
+
       - name: Run native contract regressions
         run: node --test scripts/zhenkun-test-*.mjs
 
@@ -60,3 +65,56 @@ jobs:
 
       - name: Verify deployment artifacts and Pagefind
         run: node scripts/zhenkun-verify-ci-artifacts.mjs --base "$DEPLOY_BASE"
+
+  compatibility:
+    name: Peer compatibility
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Setup Node.js
+        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
+        with:
+          node-version: '24.20.0'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+        with:
+          version: 11.22.0
+          run_install: false
+      - name: Frozen install without lifecycle scripts
+        run: pnpm install --frozen-lockfile --ignore-scripts
+      - name: Check peers independently of security
+        run: pnpm peers check
+
+  security:
+    name: Dependency security
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Setup Node.js
+        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
+        with:
+          node-version: '24.20.0'
+      - name: Setup pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+        with:
+          version: 11.22.0
+          run_install: false
+      - name: Frozen install without lifecycle scripts
+        run: pnpm install --frozen-lockfile --ignore-scripts
+      - name: Check security gate code and ledger formatting
+        run: pnpm exec biome ci scripts/zhenkun-security-audit.mjs scripts/zhenkun-test-security-audit.mjs scripts/zhenkun-security-policy.json scripts/zhenkun-cache-remediation.mjs scripts/zhenkun-cache-repair-contract.json scripts/zhenkun-test-cache-policy.mjs scripts/zhenkun-test-astro-cache-generator.mjs scripts/zhenkun-five-remediation-graph.mjs scripts/zhenkun-test-five-remediation.mjs scripts/zhenkun-five-parent-types.mjs
+      - name: Collect both raw audits and enforce security policy
+        if: ${{ always() && !cancelled() }}
+        run: node scripts/zhenkun-security-audit.mjs --live --output tmp/security-audit
+      - name: Retain security evidence on success or failure
+        if: ${{ always() }}
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: dependency-security-${{ github.run_id }}-${{ github.run_attempt }}
+          path: tmp/security-audit/
+          if-no-files-found: error
+          retention-days: 7

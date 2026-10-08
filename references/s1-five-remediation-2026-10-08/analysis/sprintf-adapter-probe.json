@@ -1,0 +1,84 @@
+{
+  "node": "v24.20.0",
+  "cases": [
+    {
+      "id": "help",
+      "status": 0,
+      "stdout": "usage: js-yaml [-h] [-v] [-c] [-t] [file]\n\npositional arguments:\n  file           File to read, utf-8 encoded without BOM\n\noptional arguments:\n  -h, --help     show this help message and exit\n  -v, --version  show program's version number and exit\n  -c, --compact  Display errors in compact mode\n  -t, --trace    Show stack trace on error\n",
+      "stderr": "",
+      "stdoutEqual": false
+    },
+    {
+      "id": "version",
+      "status": 0,
+      "stdout": "3.15.2\n",
+      "stderr": "",
+      "stdoutEqual": true
+    },
+    {
+      "id": "yaml",
+      "status": 0,
+      "stdout": "{\n  \"title\": \"中文气象\",\n  \"tags\": [\n    \"天气\",\n    \"科学\"\n  ],\n  \"alias\": [\n    \"天气\",\n    \"科学\"\n  ],\n  \"draft\": true\n}\n",
+      "stderr": "",
+      "stdoutEqual": true
+    },
+    {
+      "id": "json",
+      "status": 0,
+      "stdout": "title: Ω\ndraft: true\ntags:\n  - 气象\n\n",
+      "stderr": "",
+      "stdoutEqual": true
+    },
+    {
+      "id": "multi-doc",
+      "status": 0,
+      "stdout": "[\n  {\n    \"a\": 1\n  },\n  {\n    \"a\": 2\n  }\n]\n",
+      "stderr": "",
+      "stdoutEqual": true
+    },
+    {
+      "id": "compact-error",
+      "status": 1,
+      "stdout": "",
+      "stderr": "YAMLException: unexpected end of the stream within a flow collection\n",
+      "stdoutEqual": true
+    },
+    {
+      "id": "trace-error",
+      "status": 1,
+      "stdout": "",
+      "stderr": "YAMLException: unexpected end of the stream within a flow collection at line 2, column 1:\n    \n    ^\n    at generateError (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2-adapter/lib/js-yaml/loader.js:185:10)\n    at throwError (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2-adapter/lib/js-yaml/loader.js:191:9)\n    at readFlowCollection (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2-adapter/lib/js-yaml/loader.js:805:3)\n    at composeNode (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2-adapter/lib/js-yaml/loader.js:1395:11)\n    at readBlockMapping (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2-adapter/lib/js-yaml/loader.js:1124:11)\n    at composeNode (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2-adapter/lib/js-yaml/loader.js:1394:12)\n    at readDocument (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2-adapter/lib/js-yaml/loader.js:1560:3)\n    at loadDocuments (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2-adapter/lib/js-yaml/loader.js:1623:5)\n    at Object.loadAll (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2-adapter/lib/js-yaml/loader.js:1636:19)\n    at <local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2-adapter/bin/js-yaml.js:112:14\n",
+      "stdoutEqual": true
+    },
+    {
+      "id": "unknown-option",
+      "status": 2,
+      "stdout": "",
+      "stderr": "usage: js-yaml [-h] [-v] [-c] [-t] [file]\njs-yaml: error: unrecognized arguments: --no-such-option\n",
+      "stdoutEqual": false
+    },
+    {
+      "id": "missing-file",
+      "status": 2,
+      "stdout": "",
+      "stderr": "File not found: <local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/does-not-exist.yaml\n",
+      "stdoutEqual": true
+    },
+    {
+      "id": "deprecated-json",
+      "status": 0,
+      "stdout": "{\n  \"x\": 1\n}\n",
+      "stderr": "",
+      "stdoutEqual": true
+    }
+  ],
+  "decision": "bare argparse override rejected: blank --version and deprecations; CLI adapter restores version/parse outputs and removes deprecations",
+  "remainingChanges": "help capitalization/wording; unknown-argument usage moves from stdout to stderr; JSON/YAML/result exit codes and version stdout preserved",
+  "scope": "design-only copied package; no candidate dependency or source mutation",
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "f7bd0afbefd1c9f880f1c6842efb7293841618205ae4e1b0de55f4ff88c97ef5",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

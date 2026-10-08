@@ -1,0 +1,30 @@
+{
+  "sourceHead": "42f94f0186750441981c26b94e21b803e619fa0b",
+  "fixtureSha256": "fd814aa02ee30765339e23e36f43c1891d12e12bec3650588c99f707227cbf64",
+  "scope": "PRIVATE SYNTHETIC diagnostic production build; no draft content or remote publication; formal dist remains the clean zero-post build",
+  "executions": [
+    {
+      "name": "astro-build",
+      "command": [
+        "pnpm",
+        "exec",
+        "astro",
+        "build",
+        "--outDir",
+        "tmp/s1-five-20261008/synthetic/site"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "pagefind",
+      "command": [
+        "pnpm",
+        "exec",
+        "pagefind",
+        "--site",
+        "tmp/s1-five-20261008/synthetic/site"
+      ],
+      "exitCode": 0
+    }
+  ]
+}

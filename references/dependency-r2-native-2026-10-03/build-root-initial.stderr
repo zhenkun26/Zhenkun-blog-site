@@ -1,0 +1,22 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 940580a8a1d7965b3d3a0888d3689ed0d9d69ad53318802928fca52d8cdd1ba5; local raw original retained.
+$ pnpm exec tsx scripts/generate-github-card-data.ts && pnpm exec tsx scripts/generate-lqips.ts && pnpm exec tsx scripts/generate-vndb-covers.ts && astro build && pnpm exec tsx scripts/prune-pio-assets.ts && pnpm exec tsx scripts/subset-fonts.ts && pnpm exec tsx scripts/minify-inline-scripts.ts && pnpm exec tsx scripts/run-pagefind.ts
+node:net:2302
+      const error = new UVExceptionWithHostPort(rval, 'listen', address, port);
+                    ^
+
+Error: listen EPERM: operation not permitted <local-temp>/tsx-501/26824.pipe
+    at Server.setupListenHandle [as _listen2] (node:net:2302:21)
+    at listenInCluster (node:net:2433:12)
+    at Server.listen (node:net:2575:5)
+    at file://<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/tsx@4.23.13/node_modules/tsx/dist/cli.mjs:53:31472
+    at new Promise (<anonymous>)
+    at createIpcServer (file://<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/tsx@4.23.13/node_modules/tsx/dist/cli.mjs:53:31450)
+    at async file://<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2/node_modules/.pnpm/tsx@4.23.13/node_modules/tsx/dist/cli.mjs:55:542 {
+  code: 'EPERM',
+  errno: -1,
+  syscall: 'listen',
+  address: '<local-temp>/tsx-501/26824.pipe',
+  port: -1
+}
+
+Node.js v24.20.0

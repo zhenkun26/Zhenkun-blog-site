@@ -1,0 +1,19 @@
+{
+  "fullExit": 2,
+  "scopedExit": 0,
+  "exactExcludedRawFiles": [
+    "references/dependency-r4-bytes-2026-10-03/tests-before-fix.log",
+    "references/dependency-r4-bytes-2026-10-03/whitespace-full.log"
+  ],
+  "reason": "Preserve initial assertion log byte sequences; no source/docs excluded",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)references/dependency-r4-bytes-2026-10-03/tests-before-fix.log",
+    ":(exclude)references/dependency-r4-bytes-2026-10-03/whitespace-full.log"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "state": "PASS_EVIDENCE_CONSISTENCY",
+  "sourceCommit": "ce800e5b1d2526b9fbe6cf67eac65a1f18b8405a",
+  "at": "2026-10-03T16:15:09.327829+00:00",
+  "reportLinks": [
+    "action-provenance.json",
+    "validation-receipt.json",
+    "tested-source-hashes.json",
+    "native-final-ci-env.log",
+    "check-correct-entry.log",
+    "biome-final.log",
+    "offline-evidence-provenance.json",
+    "offline-retained-findings/verdict.json",
+    "offline-transport-error/verdict.json",
+    "offline-invalid-json/verdict.json",
+    "protection-final.json",
+    "cleanup.json"
+  ],
+  "sourceBytesMatchTestedHashes": true,
+  "offlineRawHashesAndActualHeadMatch": true,
+  "liveAudit": "NOT_RUN",
+  "independentR4Review": "PENDING"
+}

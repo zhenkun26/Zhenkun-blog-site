@@ -1,0 +1,69 @@
+{
+  "requests": [
+    {
+      "url": "https://registry.npmjs.org/js-yaml",
+      "file": "official/js-yaml-versions.json",
+      "status": 200,
+      "exit": 0,
+      "sha256": "432b8744a54cfdf52acb49c553c0117d5c390f2bf0f4af2ac14277dc5ea6fd12",
+      "fetchedAt": "2026-10-08T03:11:13.444189+00:00"
+    },
+    {
+      "url": "https://registry.npmjs.org/katex/-/katex-0.18.5.tgz",
+      "file": "official/katex@0.18.5.tgz",
+      "status": 200,
+      "exit": 0,
+      "sha256": "3a37c3713a2cdda03b135f717dd8dcf908d4fddac688b38128c38afa21119ec5",
+      "fetchedAt": "2026-10-08T03:11:20.162291+00:00",
+      "verifiedIntegrity": "sha512-1FU5H3RjGJVj6GT9fMjf2uMIXmPQp232aXS3UEeQzf0dxefHg/CKMvNB3DuOC46LFG/E5PNxrE8dOwB782FDGg=="
+    }
+  ],
+  "latestYamlMajors": [
+    {
+      "version": "3.15.2",
+      "dependencies": {
+        "esprima": "^4.0.0",
+        "argparse": "^1.0.7"
+      }
+    },
+    {
+      "version": "4.3.2",
+      "dependencies": {
+        "argparse": "^2.0.1"
+      }
+    },
+    {
+      "version": "5.4.3",
+      "dependencies": {
+        "argparse": "^2.0.1"
+      }
+    }
+  ],
+  "katexOfficialMatches": [
+    {
+      "file": "package.json",
+      "same": true,
+      "sha256": "3d06053aa66e1fa481e83b56d2c9ef82df1212cff8d5264dac83c313c58da988"
+    },
+    {
+      "file": "dist/katex.mjs",
+      "same": true,
+      "sha256": "ffe6a02dbd5a2963cc0a1801825757082fb6690d0cd753edeb9c22526c33d606"
+    },
+    {
+      "file": "dist/katex.js",
+      "same": true,
+      "sha256": "45361352338a53dffe49f5f18901fa66a2372fcf436735532e4de2e0c0c0e313"
+    },
+    {
+      "file": "dist/contrib/mhchem.mjs",
+      "same": true,
+      "sha256": "d590d100ede9335bda7648d029db5510877205538af36b53d56cd8bac1de79c1"
+    },
+    {
+      "file": "types/katex.d.ts",
+      "same": true,
+      "sha256": "ed50aaad0f0648e7775213e9afe37b3ff194b88c63fa6fce1c38a7a8a1e3fbd8"
+    }
+  ]
+}

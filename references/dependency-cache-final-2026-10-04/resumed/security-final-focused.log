@@ -1,0 +1,383 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 6c5ab2484bc857054e09753dced7fb91ac124bcea736a80fb53f3399fe75f762; local raw original retained.
+✔ security: valid empty audits and no known affected versions pass (3.516291ms)
+✔ security: known37 ledger includes verified aliases and preserves CVE93750 source disagreement (0.282666ms)
+✔ security: every raw info finding blocks without a severity downgrade (0.490625ms)
+✔ security: every raw low finding blocks without a severity downgrade (0.390875ms)
+✔ security: every raw moderate finding blocks without a severity downgrade (0.62925ms)
+✔ security: every raw high finding blocks without a severity downgrade (0.36875ms)
+✔ security: every raw critical finding blocks without a severity downgrade (0.250458ms)
+✔ security: GHSA and CVE duplicates retain each raw version/path and highest severity (0.332959ms)
+✔ security: full audit cannot silently lose a prod finding (0.274125ms)
+✔ security: one affected version still fails when another is repaired (0.256083ms)
+✔ security: official-only cache CVE and sharp still fail an empty registry report (0.320792ms)
+✔ security: commas in official ranges and prereleases cannot hide affected versions (0.376875ms)
+✔ security: a narrower row cannot override the retained publisher affected range (0.523792ms)
+✔ security: unknown extra advisory fails closed even with low severity (0.350334ms)
+✔ security: a new unverified alias of a known advisory requires review (0.306ms)
+✔ security: unknown GHSA/CVE overlap is deduplicated but never accepted (0.462083ms)
+✔ security: contradictory package identities and new withdrawal cannot pass (0.536959ms)
+✔ security: stale findings absent from the current graph are blocked (0.221833ms)
+✔ security parser: HTML is BLOCKED (0.251167ms)
+✔ security parser: broken JSON is BLOCKED (0.198708ms)
+✔ security parser: empty stdout is BLOCKED (0.213416ms)
+✔ security parser: zero-exit error object is BLOCKED (0.256375ms)
+✔ security parser: missing metadata is BLOCKED (0.25675ms)
+✔ security parser: missing severity count is BLOCKED (0.258959ms)
+✔ security parser: nonzero count without records is BLOCKED (0.266458ms)
+✔ security parser: unknown severity count is BLOCKED (0.245959ms)
+✔ security parser: missing dependency count is BLOCKED (0.377917ms)
+✔ security parser: empty dependency graph is BLOCKED (0.211875ms)
+✔ security parser: network exit is BLOCKED (0.196875ms)
+✔ security parser: timeout with valid partial stdout is BLOCKED (0.18975ms)
+✔ security parser: signal with valid stdout is BLOCKED (0.193042ms)
+✔ security parser: nonzero empty report is BLOCKED (0.1895ms)
+✔ security parser: alert exit zero and incomplete findings are invalid (0.253875ms)
+✔ security policy: expiry is exact, unreviewed severity changes and invalid ranges fail closed (0.386625ms)
+✔ security policy: ignore/waiver keys and missing ledger entries are not supported (0.260083ms)
+✔ security: installed approved patch integrity does not grant a cache exception (13.588833ms)
+✔ security patch integrity: missing is BLOCKED (8.589167ms)
+✔ security patch integrity: tampered is BLOCKED (7.426417ms)
+✔ security patch integrity: registration is BLOCKED (6.464208ms)
+✔ security patch integrity: installed hash is BLOCKED (7.101208ms)
+✔ security collector: exactly prod/full once, lossless raw output and bounded command arguments (3.945584ms)
+✔ security collector: first transport failure still attempts full and saves both failures (1.225459ms)
+✔ security orchestration: retained current audit is FAIL, artifacts written without any live process (7.042458ms)
+✔ security orchestration: source mutation and dirty/mismatched HEAD block (6.722792ms)
+✔ security orchestration: missing project inputs still preserve both raw attempts and BLOCKED verdict (1.10425ms)
+✔ security snapshot binds actual checkout and exact source/lock bytes (24.669625ms)
+✔ security orchestration: expected CI checkout SHA must match (6.609291ms)
+✔ security CLI refuses an invocation without explicit live collection selection (26.979334ms)
+✔ security bytes: review bytes retained exactly and rejected before JSON interpretation (44.058791ms)
+✔ security bytes: illegal byte inside otherwise parseable JSON retained exactly and rejected before JSON interpretation (42.636167ms)
+✔ security bytes: truncated multibyte sequences retained exactly and rejected before JSON interpretation (44.673416ms)
+✔ security bytes: stderr-only malformed byte retained exactly and rejected before JSON interpretation (42.066875ms)
+✔ security bytes: valid multibyte UTF-8 and literal replacement character remain accepted (44.72325ms)
+✔ security bytes: invalid prod still collects and parses valid full independently (45.306416ms)
+✔ security workflow: independent quality/peer/security jobs, immutable action and fail-closed upload (1.504ms)
+✔ repair classification: raw high, both observations, version matches and publisher CVE remain visible (0.526541ms)
+✔ repair classification: missing evidence cannot close findings (0.280167ms)
+✔ repair classification: UNVERIFIED evidence cannot close findings (0.24125ms)
+✔ repair classification: NOT_RUN evidence cannot close findings (0.237625ms)
+✔ repair classification: HASH_ONLY evidence cannot close findings (0.223083ms)
+✔ repair classification: changed audit title fails closed (0.252667ms)
+✔ repair classification: changed audit url fails closed (0.239458ms)
+✔ repair classification: changed audit severity fails closed (0.213583ms)
+✔ repair classification: changed audit vulnerable_versions fails closed (0.240791ms)
+✔ repair classification: changed audit patched_versions fails closed (0.234834ms)
+✔ repair classification: changed audit path fails closed (0.259ms)
+✔ repair classification: changed audit alias fails closed (0.254375ms)
+✔ repair classification: unknown advisory remains blocked alongside exact repaired finding (0.252875ms)
+✔ repair classification: extra affected installed version cannot be covered (0.43925ms)
+✔ repair classification: clean audit cannot conceal required version observations (0.2205ms)
+✔ repair classification: expiration still blocks with synthetic positive proof (0.125666ms)
+✔ repair classification: other known affected packages remain unresolved (0.26425ms)
+✖ repair inspection: actual graph paths and installed source agree (50.145083ms)
+✔ repair inspection: environment CF_WORKERS invalidates deployment proof (0.145542ms)
+✔ repair inspection: environment NODE_OPTIONS invalidates deployment proof (0.072875ms)
+✔ repair inspection: environment ZHENKUN_CACHE_POLICY_BASELINE invalidates deployment proof (0.060041ms)
+✔ repair inspection: environment ZHENKUN_ASTRO_CACHE_BASELINE invalidates deployment proof (0.054917ms)
+✔ repair inspection: ledger and expected installed hashes cannot silently change (0.236167ms)
+✔ repair inspection: actual owned application mutation fails closed (310.699834ms)
+✖ repair inspection: actual owned test mutation fails closed (324.820959ms)
+✖ repair inspection: actual owned parents mutation fails closed (311.462375ms)
+✖ repair inspection: actual owned installed lock mutation fails closed (295.981458ms)
+✖ repair inspection: actual owned extra installed cache mutation fails closed (295.279458ms)
+✖ repair primary records: pinned exact source records validate (0.08525ms)
+✖ repair primary records: missing or changed ghsa fails closed (0.351375ms)
+✖ repair primary records: missing or changed cve fails closed (0.114959ms)
+✖ repair primary records: missing or changed latest fails closed (0.099792ms)
+✖ repair primary records: withdrawal and CVE rejection invalidate evidence (0.124542ms)
+✖ repair primary records: EPSS/comment counters do not change advisory scope (0.092291ms)
+ℹ tests 89
+ℹ suites 0
+ℹ pass 78
+ℹ fail 11
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2049.477875
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-security-audit.mjs:965:1
+✖ repair inspection: actual graph paths and installed source agree (50.145083ms)
+  Error: REPAIR_DEPLOYMENT_BOUNDARY_CHANGED
+      at demand (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-cache-remediation.mjs:19:17)
+      at inspectCacheBoundary (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-cache-remediation.mjs:178:2)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:966:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at scripts/zhenkun-test-security-audit.mjs:1006:2
+✖ repair inspection: actual owned test mutation fails closed (324.820959ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /REPAIR_TEST_CHANGED/. Input:
+  
+  'Error: REPAIR_DEPLOYMENT_BOUNDARY_CHANGED'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: REPAIR_DEPLOYMENT_BOUNDARY_CHANGED
+        at demand (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-cache-remediation.mjs:19:17)
+        at inspectCacheBoundary (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-cache-remediation.mjs:178:2)
+        at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:23
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19),
+    expected: /REPAIR_TEST_CHANGED/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:1006:2
+✖ repair inspection: actual owned parents mutation fails closed (311.462375ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /REPAIR_PARENT_SET_CHANGED/. Input:
+  
+  'Error: REPAIR_DEPLOYMENT_BOUNDARY_CHANGED'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: REPAIR_DEPLOYMENT_BOUNDARY_CHANGED
+        at demand (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-cache-remediation.mjs:19:17)
+        at inspectCacheBoundary (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-cache-remediation.mjs:178:2)
+        at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:23
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19),
+    expected: /REPAIR_PARENT_SET_CHANGED/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:1006:2
+✖ repair inspection: actual owned installed lock mutation fails closed (295.981458ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /REPAIR_INSTALLED_LOCK_MISMATCH/. Input:
+  
+  'Error: REPAIR_DEPLOYMENT_BOUNDARY_CHANGED'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: REPAIR_DEPLOYMENT_BOUNDARY_CHANGED
+        at demand (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-cache-remediation.mjs:19:17)
+        at inspectCacheBoundary (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-cache-remediation.mjs:178:2)
+        at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:23
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19),
+    expected: /REPAIR_INSTALLED_LOCK_MISMATCH/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:1006:2
+✖ repair inspection: actual owned extra installed cache mutation fails closed (295.279458ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /REPAIR_UNCOVERED_INSTALLED_INSTANCE/. Input:
+  
+  'Error: REPAIR_DEPLOYMENT_BOUNDARY_CHANGED'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: REPAIR_DEPLOYMENT_BOUNDARY_CHANGED
+        at demand (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-cache-remediation.mjs:19:17)
+        at inspectCacheBoundary (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-cache-remediation.mjs:178:2)
+        at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:23
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1068:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19),
+    expected: /REPAIR_UNCOVERED_INSTALLED_INSTANCE/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:1085:1
+✖ repair primary records: pinned exact source records validate (0.08525ms)
+  ReferenceError: verifyPrimaryRecords is not defined
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1086:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)
+
+test at scripts/zhenkun-test-security-audit.mjs:1089:2
+✖ repair primary records: missing or changed ghsa fails closed (0.351375ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /REPAIR_PRIMARY_CHANGED/. Input:
+  
+  'ReferenceError: verifyPrimaryRecords is not defined'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1092:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: ReferenceError: verifyPrimaryRecords is not defined
+        at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1093:10
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1092:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19)
+        at Test.run (node:internal/test_runner/test:1462:12)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:969:7),
+    expected: /REPAIR_PRIMARY_CHANGED/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:1089:2
+✖ repair primary records: missing or changed cve fails closed (0.114959ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /REPAIR_PRIMARY_CHANGED/. Input:
+  
+  'ReferenceError: verifyPrimaryRecords is not defined'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1092:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: ReferenceError: verifyPrimaryRecords is not defined
+        at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1093:10
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1092:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19)
+        at Test.run (node:internal/test_runner/test:1462:12)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:969:7),
+    expected: /REPAIR_PRIMARY_CHANGED/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:1089:2
+✖ repair primary records: missing or changed latest fails closed (0.099792ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /REPAIR_PRIMARY_CHANGED/. Input:
+  
+  'ReferenceError: verifyPrimaryRecords is not defined'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1092:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: ReferenceError: verifyPrimaryRecords is not defined
+        at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1093:10
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1092:10)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19)
+        at Test.run (node:internal/test_runner/test:1462:12)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:969:7),
+    expected: /REPAIR_PRIMARY_CHANGED/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:1106:1
+✖ repair primary records: withdrawal and CVE rejection invalidate evidence (0.124542ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /REPAIR_PRIMARY_IDENTITY/. Input:
+  
+  'ReferenceError: primaryProjection is not defined'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1109:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: ReferenceError: primaryProjection is not defined
+        at file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1110:9
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1109:9)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19)
+        at Test.run (node:internal/test_runner/test:1462:12)
+        at async Test.processPendingSubtests (node:internal/test_runner/test:969:7),
+    expected: /REPAIR_PRIMARY_IDENTITY/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:1117:1
+✖ repair primary records: EPSS/comment counters do not change advisory scope (0.092291ms)
+  ReferenceError: verifyPrimaryRecords is not defined
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-security-audit.mjs:1121:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7)

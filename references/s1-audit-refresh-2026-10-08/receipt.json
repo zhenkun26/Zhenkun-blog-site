@@ -1,0 +1,204 @@
+{
+  "head": "c658c1a8a182368446f3606c11414ac8b01ca53c",
+  "applicationInputsEqualTested53b0cb5": true,
+  "utcCollection": "2026-10-08T02:40:06.981Z",
+  "inputSha256": {
+    "package.json": "d07c65f66bc29e18af0f69ffd7c11c37b87d722cb7f401b93fb9382ceb91decc",
+    "pnpm-lock.yaml": "14462544638481af75e4fb22587bcd143b99cbb3b73b1a01016cd78be888a895",
+    "pnpm-workspace.yaml": "7a8f1cd67a3bca177b0898e65839905d7a8bebf0b9acff51c4a6feddeb31b6fd",
+    "scripts/zhenkun-security-policy.json": "84cdc43bbbe65acd95e8558da615c114dae656382ffdc684ee88adb6d195de9f",
+    "scripts/zhenkun-cache-repair-contract.json": "d9d61cef1bbea911e851743ea8282ec565719f063b22b8848794e44471a80244",
+    "scripts/patches/astro@7.2.10.patch": "e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47",
+    "scripts/patches/http-cache-semantics@4.2.0.patch": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3"
+  },
+  "rawAudit": {
+    "prod": {
+      "exitCode": 1,
+      "counts": {
+        "info": 0,
+        "low": 1,
+        "moderate": 3,
+        "high": 2,
+        "critical": 0
+      },
+      "recordCount": 6
+    },
+    "full": {
+      "exitCode": 1,
+      "counts": {
+        "info": 0,
+        "low": 1,
+        "moderate": 3,
+        "high": 2,
+        "critical": 0
+      },
+      "recordCount": 6
+    }
+  },
+  "gate": {
+    "state": "BLOCKED",
+    "exitCode": 2,
+    "blocked": [
+      {
+        "code": "UNKNOWN_ADVISORY_OR_ALIAS",
+        "kind": "prod",
+        "ids": [
+          "GHSA-hp3w-g68c-fv3c"
+        ]
+      },
+      {
+        "code": "UNKNOWN_ADVISORY_OR_ALIAS",
+        "kind": "prod",
+        "ids": [
+          "GHSA-r4xh-jqrq-34v2"
+        ]
+      },
+      {
+        "code": "UNKNOWN_ADVISORY_OR_ALIAS",
+        "kind": "prod",
+        "ids": [
+          "GHSA-238p-pmpm-9mq7"
+        ]
+      },
+      {
+        "code": "UNKNOWN_ADVISORY_OR_ALIAS",
+        "kind": "prod",
+        "ids": [
+          "GHSA-68fv-2mgg-jv7q"
+        ]
+      },
+      {
+        "code": "UNKNOWN_ADVISORY_OR_ALIAS",
+        "kind": "prod",
+        "ids": [
+          "GHSA-rj75-hqrm-r3gf"
+        ]
+      },
+      {
+        "code": "UNKNOWN_ADVISORY_OR_ALIAS",
+        "kind": "full",
+        "ids": [
+          "GHSA-hp3w-g68c-fv3c"
+        ]
+      },
+      {
+        "code": "UNKNOWN_ADVISORY_OR_ALIAS",
+        "kind": "full",
+        "ids": [
+          "GHSA-r4xh-jqrq-34v2"
+        ]
+      },
+      {
+        "code": "UNKNOWN_ADVISORY_OR_ALIAS",
+        "kind": "full",
+        "ids": [
+          "GHSA-238p-pmpm-9mq7"
+        ]
+      },
+      {
+        "code": "UNKNOWN_ADVISORY_OR_ALIAS",
+        "kind": "full",
+        "ids": [
+          "GHSA-68fv-2mgg-jv7q"
+        ]
+      },
+      {
+        "code": "UNKNOWN_ADVISORY_OR_ALIAS",
+        "kind": "full",
+        "ids": [
+          "GHSA-rj75-hqrm-r3gf"
+        ]
+      }
+    ]
+  },
+  "repairBehavior": {
+    "state": "VERIFIED_LOCAL_REPAIR",
+    "error": null,
+    "executions": [
+      {
+        "name": "repair-positive",
+        "exitCode": 0,
+        "stdoutSha256": "b9d9cd73a65b264286ab957de874421179eaa9a5f4864cfa26b67129193db57c",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "repair-generator-original",
+        "exitCode": 1,
+        "stdoutSha256": "b5a3218161e2127e3601ad5a726cf421a8b5fed4ad5667a557ee2f12bf55affa",
+        "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  },
+  "advisories": [
+    {
+      "id": "GHSA-ch52-4w7c-c8xp",
+      "package": "http-cache-semantics",
+      "severity": "high",
+      "versions": [
+        "4.2.0"
+      ],
+      "rawVulnerableRange": "<=4.2.0",
+      "rawPatchedRange": ">=4.2.1",
+      "rawPathCount": 8
+    },
+    {
+      "id": "GHSA-hp3w-g68c-fv3c",
+      "package": "sprintf-js",
+      "severity": "moderate",
+      "versions": [
+        "1.0.3"
+      ],
+      "rawVulnerableRange": "<=1.1.3",
+      "rawPatchedRange": ">=1.1.4",
+      "rawPathCount": 1
+    },
+    {
+      "id": "GHSA-r4xh-jqrq-34v2",
+      "package": "smol-toml",
+      "severity": "moderate",
+      "versions": [
+        "1.8.0"
+      ],
+      "rawVulnerableRange": "<=1.8.0",
+      "rawPatchedRange": ">=1.8.1",
+      "rawPathCount": 43
+    },
+    {
+      "id": "GHSA-238p-pmpm-9mq7",
+      "package": "katex",
+      "severity": "low",
+      "versions": [
+        "0.16.47"
+      ],
+      "rawVulnerableRange": ">=0.11.0 <0.18.2",
+      "rawPatchedRange": ">=0.18.2",
+      "rawPathCount": 2
+    },
+    {
+      "id": "GHSA-68fv-2mgg-jv7q",
+      "package": "source-map-js",
+      "severity": "high",
+      "versions": [
+        "1.2.1"
+      ],
+      "rawVulnerableRange": ">=1.0.0 <1.2.2",
+      "rawPatchedRange": ">=1.2.2",
+      "rawPathCount": 83
+    },
+    {
+      "id": "GHSA-rj75-hqrm-r3gf",
+      "package": "postcss-selector-parser",
+      "severity": "moderate",
+      "versions": [
+        "6.0.10",
+        "6.1.4"
+      ],
+      "rawVulnerableRange": "<7.1.6",
+      "rawPatchedRange": ">=7.1.6",
+      "rawPathCount": 14
+    }
+  ],
+  "sourceDependenciesUnchanged": true,
+  "remoteActions": "NOT_RUN; existing draftPR22d12/mainf33 unchanged",
+  "originalProtection": "All exact checks passed; private guard receipt retained only task-local"
+}

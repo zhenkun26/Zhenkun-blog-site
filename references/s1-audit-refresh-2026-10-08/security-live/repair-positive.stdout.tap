@@ -1,0 +1,417 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 b9d9cd73a65b264286ab957de874421179eaa9a5f4864cfa26b67129193db57c; local raw original retained.
+TAP version 13
+# Subtest: generator restriction 0: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+ok 1 - generator restriction 0: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+  ---
+  duration_ms: 13.79775
+  type: 'test'
+  ...
+# Subtest: generator restriction 1: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+ok 2 - generator restriction 1: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+  ---
+  duration_ms: 1.417083
+  type: 'test'
+  ...
+# Subtest: generator restriction 2: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+ok 3 - generator restriction 2: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+  ---
+  duration_ms: 1.042625
+  type: 'test'
+  ...
+# Subtest: generator restriction 3: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+ok 4 - generator restriction 3: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+  ---
+  duration_ms: 1.084458
+  type: 'test'
+  ...
+# Subtest: generator restriction 4: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+ok 5 - generator restriction 4: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+  ---
+  duration_ms: 0.840583
+  type: 'test'
+  ...
+# Subtest: generator restriction 5: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+ok 6 - generator restriction 5: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+  ---
+  duration_ms: 1.433
+  type: 'test'
+  ...
+# Subtest: generator restriction 6: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+ok 7 - generator restriction 6: ignores fresh old metadata, transforms current bytes, leaves no reusable remote writes
+  ---
+  duration_ms: 1.572208
+  type: 'test'
+  ...
+# Subtest: generator failure network: stale validators cannot publish old bytes
+ok 8 - generator failure network: stale validators cannot publish old bytes
+  ---
+  duration_ms: 0.764375
+  type: 'test'
+  ...
+# Subtest: generator failure 304: stale validators cannot publish old bytes
+ok 9 - generator failure 304: stale validators cannot publish old bytes
+  ---
+  duration_ms: 0.614
+  type: 'test'
+  ...
+# Subtest: generator failure 404: stale validators cannot publish old bytes
+ok 10 - generator failure 404: stale validators cannot publish old bytes
+  ---
+  duration_ms: 1.362167
+  type: 'test'
+  ...
+# Subtest: generator failure 500: stale validators cannot publish old bytes
+ok 11 - generator failure 500: stale validators cannot publish old bytes
+  ---
+  duration_ms: 0.484917
+  type: 'test'
+  ...
+# Subtest: generator failure 503: stale validators cannot publish old bytes
+ok 12 - generator failure 503: stale validators cannot publish old bytes
+  ---
+  duration_ms: 0.534667
+  type: 'test'
+  ...
+# Subtest: generator successful remote miss does not create persistent cache
+ok 13 - generator successful remote miss does not create persistent cache
+  ---
+  duration_ms: 0.636208
+  type: 'test'
+  ...
+# Subtest: generator local image cache positive control remains usable offline
+ok 14 - generator local image cache positive control remains usable offline
+  ---
+  duration_ms: 0.62775
+  type: 'test'
+  ...
+# Subtest: generator local first transform writes reusable local cache
+ok 15 - generator local first transform writes reusable local cache
+  ---
+  duration_ms: 0.91275
+  type: 'test'
+  ...
+# Subtest: generator same remote source multi-size transforms fetch once within invocation
+ok 16 - generator same remote source multi-size transforms fetch once within invocation
+  ---
+  duration_ms: 0.797208
+  type: 'test'
+  ...
+# Subtest: generator deliberately refetches valid public unexpired cache
+ok 17 - generator deliberately refetches valid public unexpired cache
+  ---
+  duration_ms: 0.662167
+  type: 'test'
+  ...
+# CACHE_REACHABLE graphParents=1 actualLinks=2 source=55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89
+# CACHE_NEGATIVE http-cache-semantics@4.2.0 missing exit=254 ✓ Lockfile passes supply-chain policies (verified 3d ago)
+# [ENOENT] ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-44jdpN/scripts/patches/http-cache-semantics@4.2.0.patch'
+# pnpm: ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-44jdpN/scripts/patches/http-cache-semantics@4.2.0.patch'
+#     at async open (node:internal/fs/promises:1345:25)
+#     at async Object.readFile (node:internal/fs/promises:1996:14)
+#     at async readNormalizedFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99206:19)
+#     at async createHexHashFromFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99203:24)
+#     at async file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208269:20
+#     at async Promise.all (index 1)
+#     at async pMapValues (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208268:3)
+#     at async _install (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:212483:126)
+# CACHE_NEGATIVE http-cache-semantics@4.2.0 corrupt exit=1 ✓ Lockfile passes supply-chain policies (verified 3d ago)
+# [ERR_PNPM_LOCKFILE_CONFIG_MISMATCH] Cannot proceed with the frozen installation. The current "patchedDependencies" configuration doesn't match the value found in the lockfile
+# Update your lockfile using "pnpm install --no-frozen-lockfile"
+# CACHE_NEGATIVE astro@7.2.10 missing exit=254 ✓ Lockfile passes supply-chain policies (verified 3d ago)
+# [ENOENT] ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-kNQyvm/scripts/patches/astro@7.2.10.patch'
+# pnpm: ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-kNQyvm/scripts/patches/astro@7.2.10.patch'
+#     at async open (node:internal/fs/promises:1345:25)
+#     at async Object.readFile (node:internal/fs/promises:1996:14)
+#     at async readNormalizedFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99206:19)
+#     at async createHexHashFromFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99203:24)
+#     at async file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208269:20
+#     at async Promise.all (index 0)
+#     at async pMapValues (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208268:3)
+#     at async _install (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:212483:126)
+# CACHE_NEGATIVE astro@7.2.10 corrupt exit=1 ✓ Lockfile passes supply-chain policies (verified 3d ago)
+# [ERR_PNPM_LOCKFILE_CONFIG_MISMATCH] Cannot proceed with the frozen installation. The current "patchedDependencies" configuration doesn't match the value found in the lockfile
+# Update your lockfile using "pnpm install --no-frozen-lockfile"
+# CACHE_PARENT legacy Astro stale-file branch remains in source; separate actual-generator tests verify the patched local-only cache entry restriction.
+# CACHE_BASELINE expected assertion failure: 93748 cookie max-stale
+# CACHE_BASELINE expected assertion failure: 93748 no-cache direct SWR
+# CACHE_BASELINE expected assertion failure: 93750 wildcard OWS
+# CACHE_BASELINE expected assertion failure: 93750 own/inherited
+# Subtest: A01 shared cookie restrictions cover five reuse APIs
+ok 18 - A01 shared cookie restrictions cover five reuse APIs
+  ---
+  duration_ms: 2.024125
+  type: 'test'
+  ...
+# Subtest: A02 incoming max-stale cannot unlock shared cookies
+ok 19 - A02 incoming max-stale cannot unlock shared cookies
+  ---
+  duration_ms: 0.3405
+  type: 'test'
+  ...
+# Subtest: A03 no-cache and qualified no-cache cover five APIs
+ok 20 - A03 no-cache and qualified no-cache cover five APIs
+  ---
+  duration_ms: 0.21325
+  type: 'test'
+  ...
+# Subtest: A04 shared proxy-revalidate and private control
+ok 21 - A04 shared proxy-revalidate and private control
+  ---
+  duration_ms: 0.28975
+  type: 'test'
+  ...
+# Subtest: A05 all unstoreable policies deny stale reuse
+ok 22 - A05 all unstoreable policies deny stale reuse
+  ---
+  duration_ms: 0.315291
+  type: 'test'
+  ...
+# Subtest: A06 must-revalidate preserves fresh helpers and conservative evaluate
+ok 23 - A06 must-revalidate preserves fresh helpers and conservative evaluate
+  ---
+  duration_ms: 0.145875
+  type: 'test'
+  ...
+# Subtest: A07 shared s-maxage fresh boundary stale and zero cross error matrix
+ok 24 - A07 shared s-maxage fresh boundary stale and zero cross error matrix
+  ---
+  duration_ms: 0.505
+  type: 'test'
+  ...
+# Subtest: A08 shared false does not acquire proxy or s-maxage restriction
+ok 25 - A08 shared false does not acquire proxy or s-maxage restriction
+  ---
+  duration_ms: 0.341708
+  type: 'test'
+  ...
+# Subtest: A09 public immutable and private cookie exceptions remain usable
+ok 26 - A09 public immutable and private cookie exceptions remain usable
+  ---
+  duration_ms: 0.586833
+  type: 'test'
+  ...
+# Subtest: A10 ordinary expiry max-stale keeps strict window boundary
+ok 27 - A10 ordinary expiry max-stale keeps strict window boundary
+  ---
+  duration_ms: 0.197792
+  type: 'test'
+  ...
+# Subtest: A11 ordinary zero freshness is not a security restriction
+ok 28 - A11 ordinary zero freshness is not a security restriction
+  ---
+  duration_ms: 0.17725
+  type: 'test'
+  ...
+# Subtest: A12 ordinary fresh no extensions remains a cache hit
+ok 29 - A12 ordinary fresh no extensions remains a cache hit
+  ---
+  duration_ms: 0.064708
+  type: 'test'
+  ...
+# Subtest: A13 SWR inside boundary outside retains async contract
+ok 30 - A13 SWR inside boundary outside retains async contract
+  ---
+  duration_ms: 0.146625
+  type: 'test'
+  ...
+# Subtest: A14 SIE strict boundary all errors and non-error controls
+ok 31 - A14 SIE strict boundary all errors and non-error controls
+  ---
+  duration_ms: 0.163167
+  type: 'test'
+  ...
+# Subtest: A15 SIE requires URL host method and Vary matching
+ok 32 - A15 SIE requires URL host method and Vary matching
+  ---
+  duration_ms: 0.207333
+  type: 'test'
+  ...
+# Subtest: A16 incoming no-cache and pragma deny error fallback
+ok 33 - A16 incoming no-cache and pragma deny error fallback
+  ---
+  duration_ms: 0.130875
+  type: 'test'
+  ...
+# Subtest: A17 cross method error fallback denied normal HEAD validators preserved
+ok 34 - A17 cross method error fallback denied normal HEAD validators preserved
+  ---
+  duration_ms: 0.113625
+  type: 'test'
+  ...
+# Subtest: A18 max-age versus shared s-maxage preserves fresh fallback
+ok 35 - A18 max-age versus shared s-maxage preserves fresh fallback
+  ---
+  duration_ms: 0.563917
+  type: 'test'
+  ...
+# Subtest: B01 wildcard and list wildcard forbid all reuse
+ok 36 - B01 wildcard and list wildcard forbid all reuse
+  ---
+  duration_ms: 0.718792
+  type: 'test'
+  ...
+# Subtest: B02 field case OWS duplicates empty items preserve values
+ok 37 - B02 field case OWS duplicates empty items preserve values
+  ---
+  duration_ms: 0.167958
+  type: 'test'
+  ...
+# Subtest: B03 absent empty and empty lists introduce no variant
+ok 38 - B03 absent empty and empty lists introduce no variant
+  ---
+  duration_ms: 0.151042
+  type: 'test'
+  ...
+# Subtest: B04 own presence and value comparisons
+ok 39 - B04 own presence and value comparisons
+  ---
+  duration_ms: 0.156292
+  type: 'test'
+  ...
+# Subtest: B05 prototype tokens and null-prototype maps use own values
+ok 40 - B05 prototype tokens and null-prototype maps use own values
+  ---
+  duration_ms: 0.284667
+  type: 'test'
+  ...
+# Subtest: B06 own versus inherited same value is a mismatch both ways
+ok 41 - B06 own versus inherited same value is a mismatch both ways
+  ---
+  duration_ms: 0.0905
+  type: 'test'
+  ...
+# Subtest: B07 two inherited-only fields are both absent
+ok 42 - B07 two inherited-only fields are both absent
+  ---
+  duration_ms: 0.062083
+  type: 'test'
+  ...
+# Subtest: B08 raw ASCII validation precedes lowercase and survives roundtrip
+ok 43 - B08 raw ASCII validation precedes lowercase and survives roundtrip
+  ---
+  duration_ms: 3.505708
+  type: 'test'
+  ...
+# Subtest: B09 variant mismatch cannot be rescued by stale extensions
+ok 44 - B09 variant mismatch cannot be rescued by stale extensions
+  ---
+  duration_ms: 0.095125
+  type: 'test'
+  ...
+# Subtest: B10 wildcard validators are not attached to incoming requests
+ok 45 - B10 wildcard validators are not attached to incoming requests
+  ---
+  duration_ms: 0.049416
+  type: 'test'
+  ...
+# Subtest: C01 version one serialization preserves every safety restriction
+ok 46 - C01 version one serialization preserves every safety restriction
+  ---
+  duration_ms: 1.001334
+  type: 'test'
+  ...
+# Subtest: C02 trusted hand-authored historical v1 fixtures are restricted
+ok 47 - C02 trusted hand-authored historical v1 fixtures are restricted
+  ---
+  duration_ms: 0.190417
+  type: 'test'
+  ...
+# Subtest: C03 modes cookie opt-ins and own special fields survive JSON
+ok 48 - C03 modes cookie opt-ins and own special fields survive JSON
+  ---
+  duration_ms: 0.293625
+  type: 'test'
+  ...
+# Subtest: C04 valid ETag Last-Modified 304 and 200 keep public result shape
+ok 49 - C04 valid ETag Last-Modified 304 and 200 keep public result shape
+  ---
+  duration_ms: 0.210417
+  type: 'test'
+  ...
+# Subtest: C05 first 304 cache-control restrictions are retained
+ok 50 - C05 first 304 cache-control restrictions are retained
+  ---
+  duration_ms: 0.201041
+  type: 'test'
+  ...
+# Subtest: C06 first 304 wildcard and cookie restrictions are retained
+ok 51 - C06 first 304 wildcard and cookie restrictions are retained
+  ---
+  duration_ms: 0.258375
+  type: 'test'
+  ...
+# Subtest: C07 first pragma no-cache retained existing cache-control precedence
+ok 52 - C07 first pragma no-cache retained existing cache-control precedence
+  ---
+  duration_ms: 0.107542
+  type: 'test'
+  ...
+# Subtest: C08 valid 304 can replace no-cache with public fresh policy
+ok 53 - C08 valid 304 can replace no-cache with public fresh policy
+  ---
+  duration_ms: 0.053916
+  type: 'test'
+  ...
+# Subtest: C09 non-target 304 validation and header merging stay baseline-compatible
+ok 54 - C09 non-target 304 validation and header merging stay baseline-compatible
+  ---
+  duration_ms: 0.2875
+  type: 'test'
+  ...
+# Subtest: C10 accessors preserve API types and do not authorize cookie reuse
+ok 55 - C10 accessors preserve API types and do not authorize cookie reuse
+  ---
+  duration_ms: 0.052834
+  type: 'test'
+  ...
+# Subtest: C11 ordinary request cache-control pragma and method branches stay compatible
+ok 56 - C11 ordinary request cache-control pragma and method branches stay compatible
+  ---
+  duration_ms: 0.090875
+  type: 'test'
+  ...
+# Subtest: C12 independent clocks constructors returned policies and TTL rounding
+ok 57 - C12 independent clocks constructors returned policies and TTL rounding
+  ---
+  duration_ms: 0.127959
+  type: 'test'
+  ...
+# Subtest: D01 official source patch registration integrity and license
+ok 58 - D01 official source patch registration integrity and license
+  ---
+  duration_ms: 14.223791
+  type: 'test'
+  ...
+# Subtest: D02 all current graph and actual links resolve the approved candidate
+ok 59 - D02 all current graph and actual links resolve the approved candidate
+  ---
+  duration_ms: 232.108042
+  type: 'test'
+  ...
+# Subtest: D03 missing and corrupt patches fail the normal frozen offline installer
+ok 60 - D03 missing and corrupt patches fail the normal frozen offline installer
+  ---
+  duration_ms: 999.191875
+  type: 'test'
+  ...
+# Subtest: D04 actual Astro remote helpers use bounded synthetic fetch and real policy TTL
+ok 61 - D04 actual Astro remote helpers use bounded synthetic fetch and real policy TTL
+  ---
+  duration_ms: 12.571292
+  type: 'test'
+  ...
+# Subtest: official baseline counterexamples reproduce bounded failures
+ok 62 - official baseline counterexamples reproduce bounded failures
+  ---
+  duration_ms: 1.0125
+  type: 'test'
+  ...
+1..62
+# tests 62
+# suites 0
+# pass 62
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1321.950709

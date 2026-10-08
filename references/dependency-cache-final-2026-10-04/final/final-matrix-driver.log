@@ -1,0 +1,20 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 d0d8e6d0800de41951964792a5fd9ff94ca516e6c7ceb9a4b431e95e11908c91; local raw original retained.
+{"name": "peers", "command": ["corepack", "pnpm", "peers", "check"], "env": {"CF_WORKERS": "unset", "NODE_OPTIONS": "unset", "ASTRO_TELEMETRY_DISABLED": "1"}, "exitCode": 0, "seconds": 0.4}
+{"name": "biome", "command": ["corepack", "pnpm", "exec", "biome", "ci", "src", "scripts/zhenkun-security-audit.mjs", "scripts/zhenkun-test-security-audit.mjs", "scripts/zhenkun-security-policy.json", "scripts/zhenkun-cache-remediation.mjs", "scripts/zhenkun-cache-repair-contract.json", "scripts/zhenkun-test-cache-policy.mjs", "scripts/zhenkun-test-astro-cache-generator.mjs"], "env": {"CF_WORKERS": "unset", "NODE_OPTIONS": "unset", "ASTRO_TELEMETRY_DISABLED": "1"}, "exitCode": 0, "seconds": 0.444}
+{"name": "astro-check", "command": ["corepack", "pnpm", "check"], "env": {"CF_WORKERS": "unset", "NODE_OPTIONS": "unset", "ASTRO_TELEMETRY_DISABLED": "1"}, "exitCode": 0, "seconds": 13.57}
+{"name": "types", "command": ["corepack", "pnpm", "type-check"], "env": {"CF_WORKERS": "unset", "NODE_OPTIONS": "unset", "ASTRO_TELEMETRY_DISABLED": "1"}, "exitCode": 0, "seconds": 1.926}
+{"name": "strict-parent-types", "command": ["corepack", "pnpm", "exec", "tsc", "--ignoreConfig", "--noEmit", "--strict", "--module", "NodeNext", "--moduleResolution", "NodeNext", "--target", "ES2022", "scripts/zhenkun-swup-parent-types.ts"], "env": {"CF_WORKERS": "unset", "NODE_OPTIONS": "unset", "ASTRO_TELEMETRY_DISABLED": "1"}, "exitCode": 0, "seconds": 0.655}
+{"name": "native", "command": ["node", "--test", "scripts/zhenkun-test-astro-cache-generator.mjs", "scripts/zhenkun-test-cache-policy.mjs", "scripts/zhenkun-test-capabilities.mjs", "scripts/zhenkun-test-ci-artifacts.mjs", "scripts/zhenkun-test-deployment.mjs", "scripts/zhenkun-test-nav-menu.mjs", "scripts/zhenkun-test-publication.mjs", "scripts/zhenkun-test-r1-tail.mjs", "scripts/zhenkun-test-r1a-data.mjs", "scripts/zhenkun-test-r1b-uri.mjs", "scripts/zhenkun-test-r2-native.mjs", "scripts/zhenkun-test-search-session.mjs", "scripts/zhenkun-test-security-audit.mjs", "scripts/zhenkun-test-swup-parents.mjs", "scripts/zhenkun-test-unifont.mjs"], "env": {"CF_WORKERS": "unset", "NODE_OPTIONS": "unset", "ASTRO_TELEMETRY_DISABLED": "1"}, "exitCode": 0, "seconds": 4.554}
+{"name": "build-root", "command": ["corepack", "pnpm", "build"], "env": {"CF_WORKERS": "unset", "NODE_OPTIONS": "unset", "ASTRO_TELEMETRY_DISABLED": "1", "DEPLOY_BASE": "/"}, "exitCode": 0, "seconds": 17.091}
+{"name": "artifacts-root", "command": ["node", "scripts/zhenkun-verify-ci-artifacts.mjs", "--base", "/"], "env": {"CF_WORKERS": "unset", "NODE_OPTIONS": "unset", "ASTRO_TELEMETRY_DISABLED": "1"}, "exitCode": 0, "seconds": 0.187}
+Traceback (most recent call last):
+  File "<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/tmp/run-final-matrix.py", line 31, in <module>
+    if server.poll() is not None:raise RuntimeError('preview exited before readiness')
+RuntimeError: preview exited before readiness
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/tmp/run-final-matrix.py", line 39, in <module>
+    os.killpg(server.pid,signal.SIGTERM)
+ProcessLookupError: [Errno 3] No such process

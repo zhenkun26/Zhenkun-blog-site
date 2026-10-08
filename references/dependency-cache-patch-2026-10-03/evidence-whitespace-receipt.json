@@ -1,0 +1,37 @@
+{
+  "fullExit": 2,
+  "scopedExit": 0,
+  "exactExcludedRawFiles": [
+    "references/dependency-cache-patch-2026-10-03/build-project.log",
+    "references/dependency-cache-patch-2026-10-03/build-project.stderr",
+    "references/dependency-cache-patch-2026-10-03/build-root.log",
+    "references/dependency-cache-patch-2026-10-03/build-root.stderr",
+    "references/dependency-cache-patch-2026-10-03/cache-matrix-after-public-loader.log",
+    "references/dependency-cache-patch-2026-10-03/check.log",
+    "references/dependency-cache-patch-2026-10-03/design-v2/http-cache-semantics@4.2.0.candidate.patch",
+    "references/dependency-cache-patch-2026-10-03/evidence-whitespace-full.log",
+    "references/dependency-cache-patch-2026-10-03/patch-commit-approved.log",
+    "references/dependency-cache-patch-2026-10-03/patch-prepare-store-approved.log",
+    "references/dependency-cache-patch-2026-10-03/source-whitespace-full.log"
+  ],
+  "reason": "Retain exact raw tool and unified-diff evidence. No docs/code/JSON excluded.",
+  "scopedCommand": [
+    "git",
+    "diff",
+    "--cached",
+    "--check",
+    "--",
+    ".",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/build-project.log",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/build-project.stderr",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/build-root.log",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/build-root.stderr",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/cache-matrix-after-public-loader.log",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/check.log",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/design-v2/http-cache-semantics@4.2.0.candidate.patch",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/evidence-whitespace-full.log",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/patch-commit-approved.log",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/patch-prepare-store-approved.log",
+    ":(exclude)references/dependency-cache-patch-2026-10-03/source-whitespace-full.log"
+  ]
+}

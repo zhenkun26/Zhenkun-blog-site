@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "node_modules/astro/./bin/astro.mjs",
+    "check"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1",
+    "GITHUB_SHA": null
+  },
+  "start": "2026-10-03T16:07:26.082055+00:00",
+  "end": "2026-10-03T16:07:38.047118+00:00",
+  "exit": 0
+}

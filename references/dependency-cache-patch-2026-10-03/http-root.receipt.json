@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "scripts/zhenkun-verify-deployment.py",
+    "--root",
+    "tmp/cache-artifacts/root",
+    "--base",
+    "/",
+    "--http",
+    "http://127.0.0.1:56850"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1",
+    "DEPLOY_BASE": "/"
+  },
+  "start": "2026-10-03T15:41:19.617549+00:00",
+  "end": "2026-10-03T15:41:19.729956+00:00",
+  "exit": 0
+}

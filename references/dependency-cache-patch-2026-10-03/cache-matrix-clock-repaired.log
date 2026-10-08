@@ -1,0 +1,77 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 3afe2520662383b51633a78b0720214e7c295c33588de5a440b86b505c33c13f; local raw original retained.
+CACHE_INACTIVE physical original http-cache-semantics@4.2.0; no current lock edge or actual symlink points here
+CACHE_REACHABLE graphParents=1 actualLinks=2 source=55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89
+CACHE_NEGATIVE missing exit=254 ✓ Lockfile passes supply-chain policies (verified 12m ago)
+[ENOENT] ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-gS50vl/scripts/patches/http-cache-semantics@4.2.0.patch'
+
+pnpm: ENOENT: no such file or directory, open '<local-temp>/zhenkun-cache-negative-gS50vl/scripts/patches/http-cache-semantics@4.2.0.patch'
+    at async open (node:internal/fs/promises:1345:25)
+    at async Object.readFile (node:internal/fs/promises:1996:14)
+    at async readNormalizedFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99206:19)
+    at async createHexHashFromFile (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:99203:24)
+    at async file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208269:20
+    at async Promise.all (index 0)
+    at async pMapValues (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:208268:3)
+    at async _install (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:212483:126)
+CACHE_NEGATIVE corrupt exit=1 ✓ Lockfile passes supply-chain policies (verified 12m ago)
+[ERR_PNPM_LOCKFILE_CONFIG_MISMATCH] Cannot proceed with the frozen installation. The current "patchedDependencies" configuration doesn't match the value found in the lockfile
+
+Update your lockfile using "pnpm install --no-frozen-lockfile"
+CACHE_PARENT Astro build owns an additional stale-file fallback outside this package patch; source-confirmed, not a covered mitigation.
+CACHE_BASELINE expected assertion failure: 93748 cookie max-stale
+CACHE_BASELINE expected assertion failure: 93748 no-cache direct SWR
+CACHE_BASELINE expected assertion failure: 93750 wildcard OWS
+CACHE_BASELINE expected assertion failure: 93750 own/inherited
+✔ A01 shared cookie restrictions cover five reuse APIs (1.727709ms)
+✔ A02 incoming max-stale cannot unlock shared cookies (0.305042ms)
+✔ A03 no-cache and qualified no-cache cover five APIs (0.194625ms)
+✔ A04 shared proxy-revalidate and private control (0.511667ms)
+✔ A05 all unstoreable policies deny stale reuse (0.46ms)
+✔ A06 must-revalidate preserves fresh helpers and conservative evaluate (0.225917ms)
+✔ A07 shared s-maxage fresh boundary stale and zero cross error matrix (0.556084ms)
+✔ A08 shared false does not acquire proxy or s-maxage restriction (0.377708ms)
+✔ A09 public immutable and private cookie exceptions remain usable (0.664ms)
+✔ A10 ordinary expiry max-stale keeps strict window boundary (0.213292ms)
+✔ A11 ordinary zero freshness is not a security restriction (0.187416ms)
+✔ A12 ordinary fresh no extensions remains a cache hit (0.070208ms)
+✔ A13 SWR inside boundary outside retains async contract (0.150458ms)
+✔ A14 SIE strict boundary all errors and non-error controls (0.152792ms)
+✔ A15 SIE requires URL host method and Vary matching (0.210792ms)
+✔ A16 incoming no-cache and pragma deny error fallback (0.082875ms)
+✔ A17 cross method error fallback denied normal HEAD validators preserved (0.106833ms)
+✔ A18 max-age versus shared s-maxage preserves fresh fallback (0.428708ms)
+✔ B01 wildcard and list wildcard forbid all reuse (0.505625ms)
+✔ B02 field case OWS duplicates empty items preserve values (0.146667ms)
+✔ B03 absent empty and empty lists introduce no variant (0.064708ms)
+✔ B04 own presence and value comparisons (0.098041ms)
+✔ B05 prototype tokens and null-prototype maps use own values (0.232833ms)
+✔ B06 own versus inherited same value is a mismatch both ways (0.057875ms)
+✔ B07 two inherited-only fields are both absent (0.045625ms)
+✔ B08 raw ASCII validation precedes lowercase and survives roundtrip (2.341625ms)
+✔ B09 variant mismatch cannot be rescued by stale extensions (0.056917ms)
+✔ B10 wildcard validators are not attached to incoming requests (0.034333ms)
+✔ C01 version one serialization preserves every safety restriction (0.965167ms)
+✔ C02 trusted hand-authored historical v1 fixtures are restricted (0.183708ms)
+✔ C03 modes cookie opt-ins and own special fields survive JSON (0.277625ms)
+✔ C04 valid ETag Last-Modified 304 and 200 keep public result shape (0.198417ms)
+✔ C05 first 304 cache-control restrictions are retained (0.175458ms)
+✔ C06 first 304 wildcard and cookie restrictions are retained (0.225959ms)
+✔ C07 first pragma no-cache retained existing cache-control precedence (0.09425ms)
+✔ C08 valid 304 can replace no-cache with public fresh policy (0.05725ms)
+✔ C09 non-target 304 validation and header merging stay baseline-compatible (0.251375ms)
+✔ C10 accessors preserve API types and do not authorize cookie reuse (0.040792ms)
+✔ C11 ordinary request cache-control pragma and method branches stay compatible (0.064792ms)
+✔ C12 independent clocks constructors returned policies and TTL rounding (0.0965ms)
+✔ D01 official source patch registration integrity and license (13.200667ms)
+✔ D02 all current graph and actual links resolve the approved candidate (231.075166ms)
+✔ D03 missing and corrupt patches fail the normal frozen offline installer (470.088791ms)
+✔ D04 actual Astro remote helpers use bounded synthetic fetch and real policy TTL (13.744375ms)
+✔ official baseline counterexamples reproduce bounded failures (0.995542ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 45
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 784.431708

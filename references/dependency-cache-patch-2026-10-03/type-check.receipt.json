@@ -1,0 +1,13 @@
+{
+  "command": [
+    "pnpm",
+    "type-check"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1"
+  },
+  "start": "2026-10-03T15:40:14.629517+00:00",
+  "end": "2026-10-03T15:40:16.375640+00:00",
+  "exit": 0
+}

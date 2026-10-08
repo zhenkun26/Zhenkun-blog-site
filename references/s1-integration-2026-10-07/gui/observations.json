@@ -1,0 +1,118 @@
+{
+  "source": "53b0cb559e6d037b1d6971dc3c4ec4c2051adcc1",
+  "environment": "User Mac; Edge extension, local production preview; mobile viewport simulation, not physical phone",
+  "records": [
+    {
+      "name": "desktop-home",
+      "source": "53b0cb559e6d037b1d6971dc3c4ec4c2051adcc1",
+      "body": "Zhenkun\n主页\n文章\n归档\n分类\n标签\n系列\n关于我\n请输入搜索关键词。\n使一颗心免于哀伤\n\n知更鸟 / HOYO-MiX / Chevy\n\n0:00\n/\n0:00\n暂无歌词\nWelcome to my little corner\n随手记下，慢慢成长\nZhenkun\n探索气象学、人工智能与计算机科学的交叉，记录学习、实践与生活。\n音乐\n使一颗心免于哀伤\n\n知更鸟 / HOYO-MiX / Chevy\n\n0:00\n/\n0:00\n暂无歌词\n分类\n标签\n归档\n0\n更多\nZhenkun\n🚧\n网站建设中\n\n内容与功能正在逐步完善，欢迎随时回来看看。\n\n站点统计\n文章\n0\n分类\n0\n标签\n0\n总字数\n0\n运行时长\n33\n天\n最后活动\n0\n天前\n站点信息\n构建平台\nLocal\n博客版本\nFirefly v6.16.7\n文章许可\nCC BY-NC-SA 4.0\n站点域名\nzhenkun26.github.io/Zhenkun-blog-site\nFirefly\nv6.16.7\nAstro\nv7.2.10\nNode\nv24.20.0\npnpm\nv11.22.0\n构建时间\n2026年10月7日 22:35:36\n系统信息\nmacOS / ARM64\n展开构建信息\n2026年10月\n日\n一\n二\n三\n四\n五\n六\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n©\n2026\nZhenkun. All Rights Reserved.\n/\nRSS\n/\nSitemap\nPowered by\nAstro\n&\nFirefly\nZhenkun\n主页\n文章\n归档\n分类\n标签\n系列\n关于我",
+      "height": 720,
+      "htmlClass": "bg-(--page-bg) text-[14px] md:text-[16px] swup-enabled",
+      "lang": "zh-CN",
+      "notice": "网站建设中",
+      "noticeCount": 1,
+      "title": "Zhenkun - 记录、思考与灵感",
+      "width": 1265
+    },
+    {
+      "name": "desktop-pagefind-search",
+      "query": "气象",
+      "results": [
+        {
+          "href": "/Zhenkun-blog-site/about/",
+          "text": "关于我  Zhenkun，这里是我的随记小站。 探索气象学、人工智能与计算机科学的"
+        }
+      ]
+    },
+    {
+      "name": "desktop-about-dark-after-search",
+      "headings": [
+        "关于我",
+        "关于我 / About Me#",
+        "✍️ 这里写什么#",
+        "🛠️ 关于本站#"
+      ],
+      "htmlClass": "bg-(--page-bg) text-[14px] md:text-[16px] swup-enabled dark",
+      "lang": "zh-CN",
+      "mainText": "关于我关于我 / About Me#你好，我是 Zhenkun，这里是我的随记小站。探索气象学、人工智能与计算机科学的交叉，记录学习、实践与生活。我非计算机科班出身，在学习探索气象学科知识的同时，自学并动手实践深度学习、RAG、Agent 等 AI 领域的项目。✍️ 这里写什么#\nAI\n大气科学\n生活随笔\n🛠️ 关于本站#本站基于 Firefly（Fuwari 的二次开发主题）构建，Astro 驱动，部署在 GitHub Pages。\nGitHub：@zhenkun26\n邮箱：zhenkunz25@gmail.com\n感谢你的来访！如果某篇笔记恰好对你有用，那就再好不过了。",
+      "noticeCount": 0,
+      "title": "关于我 - Zhenkun"
+    },
+    {
+      "name": "mobile-home-dark-after-swup",
+      "requestedViewport": {
+        "width": 390,
+        "height": 844
+      },
+      "height": 844,
+      "htmlClass": "bg-(--page-bg) text-[14px] md:text-[16px] swup-enabled dark",
+      "notice": "网站建设中",
+      "noticeCount": 1,
+      "scrollWidth": 375,
+      "title": "Zhenkun - 记录、思考与灵感",
+      "width": 375
+    },
+    {
+      "name": "mobile-menu-escape",
+      "activeId": "nav-menu-switch",
+      "bodyOverflow": "",
+      "expanded": "false"
+    },
+    {
+      "name": "mobile-pagefind-search",
+      "activeTag": "INPUT",
+      "results": [
+        {
+          "href": "/Zhenkun-blog-site/about/",
+          "text": "关于我  Zhenkun，这里是我的随记小站。 探索气象学、人工智能与计算机科学的"
+        }
+      ]
+    },
+    {
+      "name": "mobile-search-escape",
+      "activeId": "search-switch",
+      "bodyOverflow": "",
+      "expanded": "false"
+    },
+    {
+      "name": "mobile-home-light",
+      "height": 844,
+      "htmlClass": "bg-(--page-bg) text-[14px] md:text-[16px] swup-enabled",
+      "noticeCount": 1,
+      "scrollWidth": 375,
+      "title": "Zhenkun - 记录、思考与灵感",
+      "width": 375
+    }
+  ],
+  "consoleErrors": [
+    {
+      "level": "error",
+      "message": "Error: A listener indicated an asynchronous response by returning true, but the message channel closed before a response was received",
+      "timestamp": "2026-10-07T14:39:07.966Z",
+      "url": "http://127.0.0.1:4359/Zhenkun-blog-site/"
+    },
+    {
+      "level": "error",
+      "message": "Error: Could not establish connection. Receiving end does not exist.",
+      "timestamp": "2026-10-07T14:41:18.872Z",
+      "url": "http://127.0.0.1:4359/Zhenkun-blog-site/about/"
+    },
+    {
+      "level": "error",
+      "message": "Error: Could not establish connection. Receiving end does not exist.",
+      "timestamp": "2026-10-07T14:42:33.964Z",
+      "url": "http://127.0.0.1:4359/Zhenkun-blog-site/"
+    },
+    {
+      "level": "error",
+      "message": "Error: Could not establish connection. Receiving end does not exist.",
+      "timestamp": "2026-10-07T14:44:17.690Z",
+      "url": "http://127.0.0.1:4359/Zhenkun-blog-site/"
+    }
+  ],
+  "limitations": [
+    "Existing mixed-language hero/About preserved; bilingual excluded",
+    "No music playback, article publication, comment or email writes",
+    "Only project-base GUI checked; both bases have full static/HTTP proof"
+  ]
+}

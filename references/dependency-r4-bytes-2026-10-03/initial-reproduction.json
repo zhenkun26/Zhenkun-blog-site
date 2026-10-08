@@ -1,0 +1,17 @@
+{
+  "base": "735c141482e46af9819bf6c521ce1ac3ee46c388",
+  "review": "Supplied independent review:1P2/noP1, raw bytes were decoded before retention",
+  "fixture": "Owned Node child writes specified bytes; pnpm command never executed; INJECTED_OFFLINE",
+  "stdout": {
+    "inputHex": "31ff0a",
+    "savedHex": "31efbfbd0a",
+    "inputSha256": "9625860231882deaaf24fb961a6ca3e184fe19193771ea0e0401c05501924aa3",
+    "savedSha256": "397a00a77c76a276675e02139261bc5bac61576844de458206e7454fa1398d72"
+  },
+  "stderr": {
+    "inputHex": "fe",
+    "savedHex": "efbfbd",
+    "inputSha256": "aa687b58b0e73e2e383f8c500d75b591e188efe0168b3ffbcd3771caaa6dd4c7",
+    "savedSha256": "83d544ccc223c057d2bf80d3f2a32982c32c3c0db8e2674820da5064783fb097"
+  }
+}

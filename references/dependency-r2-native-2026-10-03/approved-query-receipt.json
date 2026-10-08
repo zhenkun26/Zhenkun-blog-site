@@ -1,0 +1,195 @@
+{
+  "permissionAt": "2026-10-03 13:07:29 UTC",
+  "scope": "Exact previously supplied bounded package; no global/security configuration changes",
+  "queries": [
+    {
+      "package": "undici@7.29.1",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-undici_7.29.1.json"
+    },
+    {
+      "package": "miniflare@5.20260828.0-alpha",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-miniflare_5.20260828.0-alpha.json"
+    },
+    {
+      "package": "@img/sharp-darwin-arm64@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-darwin-arm64_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-darwin-x64@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-darwin-x64_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-freebsd-wasm32@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-freebsd-wasm32_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-linux-arm@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-linux-arm_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-linux-arm64@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-linux-arm64_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-linux-ppc64@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-linux-ppc64_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-linux-riscv64@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-linux-riscv64_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-linux-s390x@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-linux-s390x_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-linux-x64@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-linux-x64_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-linuxmusl-arm64@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-linuxmusl-arm64_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-linuxmusl-x64@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-linuxmusl-x64_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-webcontainers-wasm32@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-webcontainers-wasm32_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-win32-arm64@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-win32-arm64_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-win32-ia32@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-win32-ia32_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-win32-x64@0.35.5",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-win32-x64_0.35.5.json"
+    },
+    {
+      "package": "@img/sharp-libvips-darwin-arm64@1.3.4",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-libvips-darwin-arm64_1.3.4.json"
+    },
+    {
+      "package": "@img/sharp-libvips-darwin-x64@1.3.4",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-libvips-darwin-x64_1.3.4.json"
+    },
+    {
+      "package": "@img/sharp-libvips-linux-arm@1.3.4",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-libvips-linux-arm_1.3.4.json"
+    },
+    {
+      "package": "@img/sharp-libvips-linux-arm64@1.3.4",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-libvips-linux-arm64_1.3.4.json"
+    },
+    {
+      "package": "@img/sharp-libvips-linux-ppc64@1.3.4",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-libvips-linux-ppc64_1.3.4.json"
+    },
+    {
+      "package": "@img/sharp-libvips-linux-riscv64@1.3.4",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-libvips-linux-riscv64_1.3.4.json"
+    },
+    {
+      "package": "@img/sharp-libvips-linux-s390x@1.3.4",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-libvips-linux-s390x_1.3.4.json"
+    },
+    {
+      "package": "@img/sharp-libvips-linux-x64@1.3.4",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-libvips-linux-x64_1.3.4.json"
+    },
+    {
+      "package": "@img/sharp-libvips-linuxmusl-arm64@1.3.4",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-libvips-linuxmusl-arm64_1.3.4.json"
+    },
+    {
+      "package": "@img/sharp-libvips-linuxmusl-x64@1.3.4",
+      "exit": 0,
+      "sandbox": "require_escalated",
+      "registry": "https://registry.npmjs.org",
+      "stdout": "approved-_img_sharp-libvips-linuxmusl-x64_1.3.4.json"
+    }
+  ]
+}

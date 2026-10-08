@@ -1,0 +1,138 @@
+{
+  "versions": [
+    "6.0.10",
+    "6.1.4",
+    "7.1.5"
+  ],
+  "fixed": "7.1.6",
+  "uniqueSelectors": 2836,
+  "checked": 2836,
+  "sources": [
+    {
+      "file": "src/styles/banner-title.css",
+      "sha256": "4f4e3ee116945d4bf72c823d3fee0712f59fba1725ccb31ba95aa267791cb109"
+    },
+    {
+      "file": "src/styles/categories.css",
+      "sha256": "8aa9f272d71947ff21b50ab7100626babd34509ed230034dd537da0dce17271e"
+    },
+    {
+      "file": "src/styles/custom-scrollbar.css",
+      "sha256": "785b4ae0f27e0e2006265de6f3c0fbfe6efcbb7cc2d482c846a35cc448274b18"
+    },
+    {
+      "file": "src/styles/display-settings.css",
+      "sha256": "b782f024ec43fd245721b3e5f2aefa46b637223bbc89acbc412b39b0d0b58d27"
+    },
+    {
+      "file": "src/styles/dynamic.css",
+      "sha256": "040153d895054263becf9d9b2b14adeb8e74ee74a1cb33a9881ac80c047fe99d"
+    },
+    {
+      "file": "src/styles/expressive-code.css",
+      "sha256": "41227e03136e7160e626c60c28b5e68bfd70110cb73b16d8b9f0b7d0f32a7e93"
+    },
+    {
+      "file": "src/styles/fancybox-custom.css",
+      "sha256": "cdeca47cbe20acaf5e638ed6a8af5fd7709b15ef1469a00ea9be88c52fbba812"
+    },
+    {
+      "file": "src/styles/gallery.css",
+      "sha256": "0cbb35c138de6865205e84d2322aae0a61de8756d91249860c65a374ebc16625"
+    },
+    {
+      "file": "src/styles/immersive-reading.css",
+      "sha256": "bae4ce7bf18b9b7495bb2e30f2b56b1f1ac4e45d0e266423f786ad33515c2123"
+    },
+    {
+      "file": "src/styles/layout-base.css",
+      "sha256": "e72988ebdce0c44bf879023577a774d7c825946dbd1035fb8fbcc2f71ef006c0"
+    },
+    {
+      "file": "src/styles/layout-styles.css",
+      "sha256": "ca62e905e891fa5a69343f5c28448004e4af582b98dd6fc487bd6dade8ce11a7"
+    },
+    {
+      "file": "src/styles/main.css",
+      "sha256": "552aea86d4d0d6df6997d993cd911878b2edbed84d778dc46310be13add5c259"
+    },
+    {
+      "file": "src/styles/markdown.css",
+      "sha256": "8db851cf6437fe3e379c5cbe69638e707a184d78fde26f57f0eeb8d283d3a91a"
+    },
+    {
+      "file": "src/styles/media-grid.css",
+      "sha256": "64314a05000e23b860664d2e695e975529f7c8fe5327a8bdbbcfb8e4adec622f"
+    },
+    {
+      "file": "src/styles/navbar.css",
+      "sha256": "33fc5c5c5d7e9b0b4799bb6bd66afe74ba8b33876e0c4d3cc5e3ea3e2625dc3a"
+    },
+    {
+      "file": "src/styles/photoswipe.css",
+      "sha256": "9c622f740a4f8ffd2d5851ab49f9078ef0261eec3d84edee9d736f9d3360f407"
+    },
+    {
+      "file": "src/styles/scrollbar.css",
+      "sha256": "d5bcadad32cfc76f74e998dbfb891227f3798d620533d7bc9aa515341e6cd8c1"
+    },
+    {
+      "file": "src/styles/tags.css",
+      "sha256": "3e3e182c0cd0851ea8a7eb464c5965f13c8e978765f526d4eb18cf4489460f2a"
+    },
+    {
+      "file": "src/styles/toc.css",
+      "sha256": "ddb8284b15a12570461ceddccaf60ad52633f3b8c8cb9cb63d705d28c8e2ba48"
+    },
+    {
+      "file": "src/styles/transition.css",
+      "sha256": "55a4aaed3e800e30b890257202dac811292273cfa2fea6e581e0737b41b78106"
+    },
+    {
+      "file": "src/styles/waves.css",
+      "sha256": "fd1efae3109b67f61c1906b2894cea0183ae7be2efb2c96cbf37693b70e6e333"
+    },
+    {
+      "file": "src/styles/widget-responsive.css",
+      "sha256": "dbdb9ff7c3d4c1d6ac6ea2553a5a91f307aa095a0a1d20301d0fdadc8d209a4a"
+    },
+    {
+      "file": "dist/_astro/Layout.CeEQ242K.css",
+      "sha256": "28f365f59bcc696c3ac8076e9d3d415a52e0cb505159ca3a26906f5ec654f949"
+    },
+    {
+      "file": "dist/_astro/MainGridLayout.DKb-OjUk.css",
+      "sha256": "55a8b60806f35145248236e0edb44f63ec6a878a0e5e2f25db4ed8dd75e92674"
+    },
+    {
+      "file": "dist/_astro/_..BulBwWNp.css",
+      "sha256": "bc859bb9d61181e1b111bdc7548f043f2729f00d2f91fa4da69cad764751afe7"
+    },
+    {
+      "file": "dist/_astro/_..DfNIzt3-.css",
+      "sha256": "914a43e70c0cb38e075f25d08c1304e688d29b515fab13d0eda988d7dbd8d868"
+    },
+    {
+      "file": "dist/_astro/ec.gtzw0.css",
+      "sha256": "587257f4f7a128f2d67c60d9334620808e1e61fbc4307f4c1300e1723da6b1f9"
+    },
+    {
+      "file": "dist/_astro/fancybox-custom.o4NXtsHZ.css",
+      "sha256": "c64d7c882531e7e5978bc83bb3c47a9d571373d34e5ccf701cbf3857080ae8d7"
+    },
+    {
+      "file": "dist/_astro/fancybox.y3Ble-Pa.css",
+      "sha256": "99d68cc6b22d116ea130854924d3cab97d01eca092250544bf7995638376c1ee"
+    },
+    {
+      "file": "dist/_astro/index.-wlTiOjc.css",
+      "sha256": "17229e2bb5962ae4c851ca7ba6caeb16c03860bbe8bac11aae8db63aeee243f1"
+    },
+    {
+      "file": "dist/_astro/markdown-extend.CV7FOiE_.css",
+      "sha256": "f21c02f32f6f317fef3cbe30b510cea5979df12b0499a21365034b4c2b2b47ae"
+    }
+  ],
+  "differences": [],
+  "scope": "read-only existing source styles and previous dist CSS; string roundtrip corpus, not a fresh generated build"
+}

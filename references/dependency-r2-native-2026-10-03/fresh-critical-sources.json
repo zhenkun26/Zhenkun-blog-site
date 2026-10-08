@@ -1,0 +1,18 @@
+{
+  "scope": "Fresh public primary-source page reads for the additional sharp advisory and remaining cache blocker; not exhaustive new-advisory discovery",
+  "sharp": {
+    "url": "https://github.com/lovell/sharp/security/advisories/GHSA-wq5f-xc86-pv6w",
+    "ghsa": "GHSA-wq5f-xc86-pv6w",
+    "affected": "< 0.35.5",
+    "patched": ">= 0.35.5",
+    "prebuiltLibrsvg": "2.63.2",
+    "observation": "Maintainer advisory confirms these targets; Mac native proof does not establish Linux execution. An initial guessed global advisories URL returned 404 because the retained ledger uses the maintainer repository advisory. The canonical source above succeeded."
+  },
+  "cache": {
+    "url": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp",
+    "ghsa": "GHSA-ch52-4w7c-c8xp",
+    "affected": "<= 4.2.0",
+    "patched": null,
+    "observation": "Primary public page still lists no patched version. Fresh npm audit continues to report the candidate's 4.2.0. No new repair package lookup or waiver was performed."
+  }
+}

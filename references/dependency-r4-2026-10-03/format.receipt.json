@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "node_modules/@biomejs/biome/bin/biome",
+    "check",
+    "scripts/zhenkun-security-audit.mjs",
+    "scripts/zhenkun-test-security-audit.mjs",
+    "scripts/zhenkun-security-policy.json",
+    "--write"
+  ],
+  "exit": 0,
+  "at": "2026-10-03T16:03:20.794477+00:00"
+}

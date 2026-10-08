@@ -1,0 +1,266 @@
+{
+  "count": 26,
+  "images": [
+    {
+      "file": "astro-jpeg.png",
+      "parent": "Astro",
+      "input": "jpeg",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 127,
+      "sha256": "2fa06c4a3480b843eb377896c378e8098c246d3539a376dd998a0409400d43d5"
+    },
+    {
+      "file": "astro-jpeg.webp",
+      "parent": "Astro",
+      "input": "jpeg",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 84,
+      "sha256": "7a38854cda795170682e8439aac461a7a358b2f5f3985d13fbf9861fb36140d4"
+    },
+    {
+      "file": "astro-png.png",
+      "parent": "Astro",
+      "input": "png",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 127,
+      "sha256": "cec755ecf0637637c8bc1c1a507ff03877c52bc5c8c75d92feacd35da37731c1"
+    },
+    {
+      "file": "astro-png.webp",
+      "parent": "Astro",
+      "input": "png",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 86,
+      "sha256": "6b88d68d19d7dcbf2d49d3fe89cde25d82505bc7c63df48b14d0224fa40ad679"
+    },
+    {
+      "file": "astro-svg.png",
+      "parent": "Astro",
+      "input": "svg",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 123,
+      "sha256": "f2682bf007b8c5d0af993928f8bdc6fb8caac0174a2a910858b47ce8e8785ac9"
+    },
+    {
+      "file": "astro-svg.webp",
+      "parent": "Astro",
+      "input": "svg",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 116,
+      "sha256": "130d4c39467c6d87a07ad5968f8f0f166965d1db0f207b1694344ec504b94c73"
+    },
+    {
+      "file": "binding-jpeg.png",
+      "parent": "getImagesBinding",
+      "input": "jpeg",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 127,
+      "sha256": "2fa06c4a3480b843eb377896c378e8098c246d3539a376dd998a0409400d43d5"
+    },
+    {
+      "file": "binding-jpeg.webp",
+      "parent": "getImagesBinding",
+      "input": "jpeg",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 84,
+      "sha256": "7a38854cda795170682e8439aac461a7a358b2f5f3985d13fbf9861fb36140d4"
+    },
+    {
+      "file": "binding-png.png",
+      "parent": "getImagesBinding",
+      "input": "png",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 127,
+      "sha256": "cec755ecf0637637c8bc1c1a507ff03877c52bc5c8c75d92feacd35da37731c1"
+    },
+    {
+      "file": "binding-png.webp",
+      "parent": "getImagesBinding",
+      "input": "png",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 86,
+      "sha256": "6b88d68d19d7dcbf2d49d3fe89cde25d82505bc7c63df48b14d0224fa40ad679"
+    },
+    {
+      "file": "binding-svg.png",
+      "parent": "getImagesBinding",
+      "input": "svg",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 123,
+      "sha256": "f2682bf007b8c5d0af993928f8bdc6fb8caac0174a2a910858b47ce8e8785ac9"
+    },
+    {
+      "file": "binding-svg.webp",
+      "parent": "getImagesBinding",
+      "input": "svg",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 116,
+      "sha256": "130d4c39467c6d87a07ad5968f8f0f166965d1db0f207b1694344ec504b94c73"
+    },
+    {
+      "file": "cf-image.png",
+      "parent": "worker cf.image",
+      "input": "jpeg",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 127,
+      "sha256": "2fa06c4a3480b843eb377896c378e8098c246d3539a376dd998a0409400d43d5"
+    },
+    {
+      "file": "cf-image.webp",
+      "parent": "worker cf.image",
+      "input": "jpeg",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 84,
+      "sha256": "7a38854cda795170682e8439aac461a7a358b2f5f3985d13fbf9861fb36140d4"
+    },
+    {
+      "file": "miniflare-jpeg.png",
+      "parent": "Miniflare",
+      "input": "jpeg",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 127,
+      "sha256": "2fa06c4a3480b843eb377896c378e8098c246d3539a376dd998a0409400d43d5"
+    },
+    {
+      "file": "miniflare-jpeg.webp",
+      "parent": "Miniflare",
+      "input": "jpeg",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 84,
+      "sha256": "7a38854cda795170682e8439aac461a7a358b2f5f3985d13fbf9861fb36140d4"
+    },
+    {
+      "file": "miniflare-png.png",
+      "parent": "Miniflare",
+      "input": "png",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 127,
+      "sha256": "cec755ecf0637637c8bc1c1a507ff03877c52bc5c8c75d92feacd35da37731c1"
+    },
+    {
+      "file": "miniflare-png.webp",
+      "parent": "Miniflare",
+      "input": "png",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 86,
+      "sha256": "6b88d68d19d7dcbf2d49d3fe89cde25d82505bc7c63df48b14d0224fa40ad679"
+    },
+    {
+      "file": "miniflare-svg.png",
+      "parent": "Miniflare",
+      "input": "svg",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 123,
+      "sha256": "f2682bf007b8c5d0af993928f8bdc6fb8caac0174a2a910858b47ce8e8785ac9"
+    },
+    {
+      "file": "miniflare-svg.webp",
+      "parent": "Miniflare",
+      "input": "svg",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 116,
+      "sha256": "130d4c39467c6d87a07ad5968f8f0f166965d1db0f207b1694344ec504b94c73"
+    },
+    {
+      "file": "root-jpeg.png",
+      "parent": "root",
+      "input": "jpeg",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 127,
+      "sha256": "2fa06c4a3480b843eb377896c378e8098c246d3539a376dd998a0409400d43d5"
+    },
+    {
+      "file": "root-jpeg.webp",
+      "parent": "root",
+      "input": "jpeg",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 84,
+      "sha256": "7a38854cda795170682e8439aac461a7a358b2f5f3985d13fbf9861fb36140d4"
+    },
+    {
+      "file": "root-png.png",
+      "parent": "root",
+      "input": "png",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 127,
+      "sha256": "cec755ecf0637637c8bc1c1a507ff03877c52bc5c8c75d92feacd35da37731c1"
+    },
+    {
+      "file": "root-png.webp",
+      "parent": "root",
+      "input": "png",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 86,
+      "sha256": "6b88d68d19d7dcbf2d49d3fe89cde25d82505bc7c63df48b14d0224fa40ad679"
+    },
+    {
+      "file": "root-svg.png",
+      "parent": "root",
+      "input": "svg",
+      "width": 3,
+      "height": 4,
+      "format": "png",
+      "bytes": 123,
+      "sha256": "f2682bf007b8c5d0af993928f8bdc6fb8caac0174a2a910858b47ce8e8785ac9"
+    },
+    {
+      "file": "root-svg.webp",
+      "parent": "root",
+      "input": "svg",
+      "width": 3,
+      "height": 4,
+      "format": "webp",
+      "bytes": 116,
+      "sha256": "130d4c39467c6d87a07ad5968f8f0f166965d1db0f207b1694344ec504b94c73"
+    }
+  ],
+  "scope": "18 actual root/Astro/Miniflare native outputs, 6 direct Images binding outputs, 2 worker cf.image outputs; decoded 3x4 PNG/WebP."
+}

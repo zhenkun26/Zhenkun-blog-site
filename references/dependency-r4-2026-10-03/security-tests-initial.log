@@ -1,0 +1,506 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 3c594525361fbadeefb20de215cf53777d4824e929b63cc7586524e1e2d29e63; local raw original retained.
+✖ security: valid empty audits and no known affected versions pass (2.5375ms)
+✖ security: known37 ledger includes verified aliases and preserves CVE93750 source disagreement (0.102209ms)
+✖ security: every raw info finding blocks without a severity downgrade (0.290666ms)
+✖ security: every raw low finding blocks without a severity downgrade (0.187959ms)
+✖ security: every raw moderate finding blocks without a severity downgrade (0.18125ms)
+✖ security: every raw high finding blocks without a severity downgrade (0.246666ms)
+✖ security: every raw critical finding blocks without a severity downgrade (0.197583ms)
+✖ security: GHSA and CVE duplicates retain each raw version/path and highest severity (0.222667ms)
+✖ security: full audit cannot silently lose a prod finding (0.232625ms)
+✖ security: one affected version still fails when another is repaired (0.223542ms)
+✖ security: official-only cache CVE and sharp still fail an empty registry report (0.4495ms)
+✖ security: commas in official ranges and prereleases cannot hide affected versions (0.178083ms)
+✖ security: a narrower row cannot override the retained publisher affected range (2.623292ms)
+✖ security: unknown extra advisory fails closed even with low severity (0.203209ms)
+✖ security: a new unverified alias of a known advisory requires review (0.179166ms)
+✖ security: unknown GHSA/CVE overlap is deduplicated but never accepted (0.189375ms)
+✖ security: contradictory package identities and new withdrawal cannot pass (0.148459ms)
+✖ security: stale findings absent from the current graph are blocked (0.14225ms)
+✔ security parser: HTML is BLOCKED (0.178166ms)
+✔ security parser: broken JSON is BLOCKED (0.132833ms)
+✔ security parser: empty stdout is BLOCKED (0.138083ms)
+✔ security parser: zero-exit error object is BLOCKED (0.149584ms)
+✔ security parser: missing metadata is BLOCKED (0.130417ms)
+✔ security parser: missing severity count is BLOCKED (0.289708ms)
+✔ security parser: nonzero count without records is BLOCKED (0.140792ms)
+✔ security parser: unknown severity count is BLOCKED (0.128125ms)
+✔ security parser: missing dependency count is BLOCKED (0.129708ms)
+✔ security parser: empty dependency graph is BLOCKED (0.13275ms)
+✔ security parser: network exit is BLOCKED (0.143ms)
+✔ security parser: timeout with valid partial stdout is BLOCKED (0.12525ms)
+✔ security parser: signal with valid stdout is BLOCKED (0.121625ms)
+✖ security parser: nonzero empty report is BLOCKED (0.134625ms)
+✖ security parser: alert exit zero and incomplete findings are invalid (0.181208ms)
+✔ security policy: expiry is exact, unreviewed severity changes and invalid ranges fail closed (0.462708ms)
+✔ security policy: ignore/waiver keys and missing ledger entries are not supported (0.307542ms)
+✖ security: installed approved patch integrity does not grant a cache exception (11.719084ms)
+✔ security patch integrity: missing is BLOCKED (7.534667ms)
+✔ security patch integrity: tampered is BLOCKED (6.436375ms)
+✔ security patch integrity: registration is BLOCKED (5.583959ms)
+✔ security patch integrity: installed hash is BLOCKED (6.691417ms)
+✔ security collector: exactly prod/full once, lossless raw output and bounded command arguments (1.76625ms)
+✔ security collector: first transport failure still attempts full and saves both failures (1.04325ms)
+✖ security orchestration: retained current audit is FAIL, artifacts written without any live process (5.180417ms)
+✔ security orchestration: source mutation and dirty/mismatched HEAD block (5.279541ms)
+✔ security orchestration: missing project inputs still preserve both raw attempts and BLOCKED verdict (1.366708ms)
+✔ security snapshot binds actual checkout and exact source/lock bytes (304.027458ms)
+✔ security workflow: independent quality/peer/security jobs, immutable action and fail-closed upload (10.146167ms)
+ℹ tests 47
+ℹ suites 0
+ℹ pass 25
+ℹ fail 22
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 435.026166
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-security-audit.mjs:115:1
+✖ security: valid empty audits and no known affected versions pass (2.5375ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'PASS'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:117:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'PASS',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:122:1
+✖ security: known37 ledger includes verified aliases and preserves CVE93750 source disagreement (0.102209ms)
+  Error: POLICY_ADVISORY
+      at demand (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-security-audit.mjs:17:17)
+      at validatePolicy (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-security-audit.mjs:71:3)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:123:18)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+
+test at scripts/zhenkun-test-security-audit.mjs:137:2
+✖ security: every raw info finding blocks without a severity downgrade (0.290666ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:143:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:137:2
+✖ security: every raw low finding blocks without a severity downgrade (0.187959ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:143:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:137:2
+✖ security: every raw moderate finding blocks without a severity downgrade (0.18125ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:143:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:137:2
+✖ security: every raw high finding blocks without a severity downgrade (0.246666ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:143:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:137:2
+✖ security: every raw critical finding blocks without a severity downgrade (0.197583ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:143:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:152:1
+✖ security: GHSA and CVE duplicates retain each raw version/path and highest severity (0.222667ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  undefined !== 2
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:167:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:183:1
+✖ security: full audit cannot silently lose a prod finding (0.232625ms)
+  AssertionError [ERR_ASSERTION]: [{"code":"POLICY_ADVISORY","scope":"policy-or-graph"},{"code":"finding is not defined","scope":"prod"},{"code":"finding is not defined","scope":"full"}]
+      at blocked (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:87:9)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:184:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:192:1
+✖ security: one affected version still fails when another is repaired (0.223542ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:196:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:202:1
+✖ security: official-only cache CVE and sharp still fail an empty registry report (0.4495ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:206:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:214:1
+✖ security: commas in official ranges and prereleases cannot hide affected versions (0.178083ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:218:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:225:1
+✖ security: a narrower row cannot override the retained publisher affected range (2.623292ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:230:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:237:1
+✖ security: unknown extra advisory fails closed even with low severity (0.203209ms)
+  AssertionError [ERR_ASSERTION]: [{"code":"POLICY_ADVISORY","scope":"policy-or-graph"},{"code":"finding is not defined","scope":"prod"},{"code":"finding is not defined","scope":"full"}]
+      at blocked (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:87:9)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:243:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:251:1
+✖ security: a new unverified alias of a known advisory requires review (0.179166ms)
+  AssertionError [ERR_ASSERTION]: [{"code":"POLICY_ADVISORY","scope":"policy-or-graph"},{"code":"finding is not defined","scope":"prod"},{"code":"finding is not defined","scope":"full"}]
+      at blocked (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:87:9)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:253:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:261:1
+✖ security: unknown GHSA/CVE overlap is deduplicated but never accepted (0.189375ms)
+  AssertionError [ERR_ASSERTION]: [{"code":"POLICY_ADVISORY","scope":"policy-or-graph"},{"code":"finding is not defined","scope":"prod"},{"code":"finding is not defined","scope":"full"}]
+      at blocked (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:87:9)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:270:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:274:1
+✖ security: contradictory package identities and new withdrawal cannot pass (0.148459ms)
+  AssertionError [ERR_ASSERTION]: [{"code":"POLICY_ADVISORY","scope":"policy-or-graph"},{"code":"finding is not defined","scope":"prod"},{"code":"finding is not defined","scope":"full"}]
+      at blocked (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:87:9)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:275:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:289:1
+✖ security: stale findings absent from the current graph are blocked (0.14225ms)
+  AssertionError [ERR_ASSERTION]: [{"code":"POLICY_ADVISORY","scope":"policy-or-graph"},{"code":"finding is not defined","scope":"prod"},{"code":"finding is not defined","scope":"full"}]
+      at blocked (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:87:9)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:290:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:402:2
+✖ security parser: nonzero empty report is BLOCKED (0.134625ms)
+  AssertionError [ERR_ASSERTION]: [{"code":"POLICY_ADVISORY","scope":"policy-or-graph"},{"code":"finding is not defined","scope":"prod"},{"code":"finding is not defined","scope":"full"}]
+      at blocked (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:87:9)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:405:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:408:1
+✖ security parser: alert exit zero and incomplete findings are invalid (0.181208ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /AUDIT_EXIT_INCONSISTENT/. Input:
+  
+  'ReferenceError: finding is not defined'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:409:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: ReferenceError: finding is not defined
+        at parseAudit (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-security-audit.mjs:222:20)
+        at file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:410:9
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:409:9)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1397:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+        at Test.postRun (node:internal/test_runner/test:1537:19)
+        at Test.run (node:internal/test_runner/test:1462:12),
+    expected: /AUDIT_EXIT_INCONSISTENT/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:445:1
+✖ security: installed approved patch integrity does not grant a cache exception (11.719084ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:450:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:565:1
+✖ security orchestration: retained current audit is FAIL, artifacts written without any live process (5.180417ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  'BLOCKED' !== 'FAIL'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:576:9)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'BLOCKED',
+    expected: 'FAIL',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

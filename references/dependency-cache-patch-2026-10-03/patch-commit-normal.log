@@ -1,0 +1,14 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 83b4f75ee17e5a097d6e318b46ce37a16755bb1e6e588ba89e466db2efb81a48; local raw original retained.
+[ERR_SQLITE_ERROR] unable to open database file
+
+pnpm: unable to open database file
+    at file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102448:19
+    at sqliteRetry (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102358:14)
+    at StoreIndex.openDatabase (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102447:9)
+    at new StoreIndex (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102432:14)
+    at createNewStoreController (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:182737:83)
+    at async writePackage (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:275420:17)
+    at async getPatchContent (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:275697:3)
+    at async Object.handler44 [as patch-commit] (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:275661:24)
+    at async file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322592:19
+    at async main4 (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322560:30)

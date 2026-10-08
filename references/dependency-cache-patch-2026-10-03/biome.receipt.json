@@ -1,0 +1,24 @@
+{
+  "command": [
+    "pnpm",
+    "exec",
+    "biome",
+    "ci",
+    "src",
+    "scripts/zhenkun-test-swup-parents.mjs",
+    "scripts/zhenkun-swup-parent-types.ts",
+    "scripts/zhenkun-test-r1a-data.mjs",
+    "scripts/zhenkun-test-r1b-uri.mjs",
+    "scripts/zhenkun-test-r1-tail.mjs",
+    "scripts/zhenkun-test-unifont.mjs",
+    "scripts/zhenkun-test-r2-native.mjs",
+    "scripts/zhenkun-test-cache-policy.mjs"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1"
+  },
+  "start": "2026-10-03T15:40:14.268858+00:00",
+  "end": "2026-10-03T15:40:14.629107+00:00",
+  "exit": 0
+}

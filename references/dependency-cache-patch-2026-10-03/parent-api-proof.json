@@ -1,0 +1,89 @@
+{
+  "status": "PASS_ACTUAL_PEER_PARENTS_MDX_CONTAINER_RSS",
+  "parents": [
+    {
+      "parent": "root",
+      "entry": "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-cache/node_modules/.pnpm/@astrojs+markdown-satteri@0.3.7/node_modules/@astrojs/markdown-satteri/dist/index.js",
+      "version": "0.3.7",
+      "range": "0.3.7",
+      "satteri": "0.10.5",
+      "renderSha256": "d4d498a9cc3564b840ce2f2cded46389a9ef1a088ca5b078722d8545bd578633",
+      "headings": [
+        {
+          "depth": 2,
+          "slug": "owned-ω",
+          "text": "Owned Ω"
+        }
+      ]
+    },
+    {
+      "parent": "MDX",
+      "entry": "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-cache/node_modules/.pnpm/@astrojs+markdown-satteri@0.3.7/node_modules/@astrojs/markdown-satteri/dist/index.js",
+      "version": "0.3.7",
+      "range": "^0.3.1",
+      "satteri": "0.10.5",
+      "renderSha256": "d4d498a9cc3564b840ce2f2cded46389a9ef1a088ca5b078722d8545bd578633",
+      "headings": [
+        {
+          "depth": 2,
+          "slug": "owned-ω",
+          "text": "Owned Ω"
+        }
+      ]
+    },
+    {
+      "parent": "Astro",
+      "entry": "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-cache/node_modules/.pnpm/@astrojs+markdown-satteri@0.4.0/node_modules/@astrojs/markdown-satteri/dist/index.js",
+      "version": "0.4.0",
+      "range": "0.4.0",
+      "satteri": "0.10.5",
+      "renderSha256": "d4d498a9cc3564b840ce2f2cded46389a9ef1a088ca5b078722d8545bd578633",
+      "headings": [
+        {
+          "depth": 2,
+          "slug": "owned-ω",
+          "text": "Owned Ω"
+        }
+      ]
+    }
+  ],
+  "unifiedUnchanged": true,
+  "mdx": {
+    "version": "7.0.8",
+    "publicIntegrationHooks": true,
+    "entryFrontmatterDraft": true,
+    "actualReturnedVitePlugins": true,
+    "containerRenderer": {
+      "name": "astro:jsx",
+      "serverEntrypoint": "@astrojs/mdx/server.js"
+    },
+    "renderBytes": 111,
+    "renderSha256": "2436be673d750a79dc072cc4fe57d080651686682bd17c7f925644dc0e1ea712"
+  },
+  "rss": {
+    "version": "4.0.19",
+    "feeds": [
+      {
+        "base": "/",
+        "status": 200,
+        "link": "https://owned.invalid/posts/owned-fixture/",
+        "bytes": 677,
+        "sha256": "2a29ae3bc50753b51530f92a5699026b99a3d2667f30cdbdf830baeabd7736d6"
+      },
+      {
+        "base": "/Zhenkun-blog-site/",
+        "status": 200,
+        "link": "https://owned.invalid/Zhenkun-blog-site/posts/owned-fixture/",
+        "bytes": 731,
+        "sha256": "b8c6d1ebf1cdb4aba7c1e6e0969577a4bcd2d12202cdbd0b8a521e0a0314210f"
+      }
+    ]
+  },
+  "boundary": "Owned in-memory fixture and ignored compiled module only; no source content change or publication. Compatibility probes exercise public Satteri APIs without switching production unified. Actual MDX integration, prerender container and RSS APIs; full site pipelines separately verified. No remote/network.",
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "e915c74810e212f5fad16758affd14c2f64b6c23569cd93ae3a79b082a9fcb0a",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

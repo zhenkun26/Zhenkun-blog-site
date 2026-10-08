@@ -1,0 +1,9 @@
+{
+  "parent": "getImagesBinding",
+  "input": "jpeg",
+  "width": 3,
+  "height": 4,
+  "format": "webp",
+  "bytes": 84,
+  "sha256": "7a38854cda795170682e8439aac461a7a358b2f5f3985d13fbf9861fb36140d4"
+}

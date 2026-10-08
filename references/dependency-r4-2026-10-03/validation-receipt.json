@@ -1,0 +1,244 @@
+{
+  "sourceCommit": "ce800e5b1d2526b9fbe6cf67eac65a1f18b8405a",
+  "base": "66d8b1ec5d8eac585af69c5dfa74ea6eb9346e5a",
+  "branch": "codex/dependency-r4-security-20261003",
+  "scope": "R4 local CI/collector/parser/deny-ledger/offline tests only",
+  "model": "Requested Astra HIGH; runtime identity UNVERIFIED",
+  "platform": "Mac Darwin ARM64, Node24.20.0, copied independent installed dependency directory; no fresh install claim",
+  "sourceHashes": {
+    ".github/workflows/build.yml": "be080c8798c9ee961ab41b5cc44d37c36cc78905497d4f1e059e06da4d432fd0",
+    "scripts/zhenkun-security-audit.mjs": "4f4b6e77fde80a5a7f7bac01bc37cd240191e770960ef7be03235f93d76febb4",
+    "scripts/zhenkun-security-policy.json": "94866e6b9ce8697b8b7f46a73ca0dac420218c18f7a040d65bf9c10ef57d9daa",
+    "scripts/zhenkun-test-security-audit.mjs": "aa1a4f724c57c773f952731cced2022e51982746259455c8ee2c346ca1abf2e2",
+    "references/dependency-r4-2026-10-03/workflow-baseline.json": "dd2c43708defff13e0745d3b34277d94ecba08bdcf16511e419d22133df3023a",
+    "docs/DECISIONS.md": "317636282552c9db430cf628cd693d753da453df3d7ad9cd430ffa5d82a40972"
+  },
+  "commands": {
+    "types": {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--isolatedDeclarations"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": null
+      },
+      "start": "2026-10-03T16:07:38.047657+00:00",
+      "end": "2026-10-03T16:07:39.221449+00:00",
+      "exit": 0
+    },
+    "native-all": {
+      "command": [
+        "node",
+        "--test",
+        "scripts/zhenkun-test-cache-policy.mjs",
+        "scripts/zhenkun-test-capabilities.mjs",
+        "scripts/zhenkun-test-ci-artifacts.mjs",
+        "scripts/zhenkun-test-deployment.mjs",
+        "scripts/zhenkun-test-nav-menu.mjs",
+        "scripts/zhenkun-test-publication.mjs",
+        "scripts/zhenkun-test-r1-tail.mjs",
+        "scripts/zhenkun-test-r1a-data.mjs",
+        "scripts/zhenkun-test-r1b-uri.mjs",
+        "scripts/zhenkun-test-r2-native.mjs",
+        "scripts/zhenkun-test-search-session.mjs",
+        "scripts/zhenkun-test-security-audit.mjs",
+        "scripts/zhenkun-test-swup-parents.mjs",
+        "scripts/zhenkun-test-unifont.mjs"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1"
+      },
+      "start": "2026-10-03T16:06:46.992482+00:00",
+      "end": "2026-10-03T16:06:50.209381+00:00",
+      "exit": 0
+    },
+    "security-tests-fixed": {
+      "command": [
+        "node",
+        "--test",
+        "scripts/zhenkun-test-security-audit.mjs"
+      ],
+      "exit": 0,
+      "at": "2026-10-03T16:04:02.237382+00:00"
+    },
+    "types-strict": {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--ignoreConfig",
+        "--noEmit",
+        "--strict",
+        "--module",
+        "NodeNext",
+        "--moduleResolution",
+        "NodeNext",
+        "--target",
+        "ES2022",
+        "scripts/zhenkun-swup-parent-types.ts"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": null
+      },
+      "start": "2026-10-03T16:07:39.362739+00:00",
+      "end": "2026-10-03T16:07:39.799637+00:00",
+      "exit": 0
+    },
+    "security-tests-initial": {
+      "command": [
+        "node",
+        "--test",
+        "scripts/zhenkun-test-security-audit.mjs"
+      ],
+      "exit": 1,
+      "at": "2026-10-03T16:03:21.256495+00:00"
+    },
+    "check": {
+      "command": [
+        "node",
+        "node_modules/astro/astro.js",
+        "check"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1"
+      },
+      "start": "2026-10-03T16:06:50.209811+00:00",
+      "end": "2026-10-03T16:06:50.234503+00:00",
+      "exit": 1
+    },
+    "check-correct-entry": {
+      "command": [
+        "node",
+        "node_modules/astro/./bin/astro.mjs",
+        "check"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": null
+      },
+      "start": "2026-10-03T16:07:26.082055+00:00",
+      "end": "2026-10-03T16:07:38.047118+00:00",
+      "exit": 0
+    },
+    "biome-final": {
+      "command": [
+        "node",
+        "node_modules/@biomejs/biome/bin/biome",
+        "ci",
+        "src",
+        "scripts/zhenkun-security-audit.mjs",
+        "scripts/zhenkun-test-security-audit.mjs",
+        "scripts/zhenkun-security-policy.json"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": "66d8b1ec5d8eac585af69c5dfa74ea6eb9346e5a"
+      },
+      "start": "2026-10-03T16:09:30.234815+00:00",
+      "end": "2026-10-03T16:09:30.327788+00:00",
+      "exit": 0
+    },
+    "security-tests-ci-env": {
+      "command": [
+        "node",
+        "--test",
+        "scripts/zhenkun-test-security-audit.mjs"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": "66d8b1ec5d8eac585af69c5dfa74ea6eb9346e5a"
+      },
+      "start": "2026-10-03T16:07:39.800071+00:00",
+      "end": "2026-10-03T16:07:40.344585+00:00",
+      "exit": 0
+    },
+    "native-final-ci-env": {
+      "command": [
+        "node",
+        "--test",
+        "scripts/zhenkun-test-cache-policy.mjs",
+        "scripts/zhenkun-test-capabilities.mjs",
+        "scripts/zhenkun-test-ci-artifacts.mjs",
+        "scripts/zhenkun-test-deployment.mjs",
+        "scripts/zhenkun-test-nav-menu.mjs",
+        "scripts/zhenkun-test-publication.mjs",
+        "scripts/zhenkun-test-r1-tail.mjs",
+        "scripts/zhenkun-test-r1a-data.mjs",
+        "scripts/zhenkun-test-r1b-uri.mjs",
+        "scripts/zhenkun-test-r2-native.mjs",
+        "scripts/zhenkun-test-search-session.mjs",
+        "scripts/zhenkun-test-security-audit.mjs",
+        "scripts/zhenkun-test-swup-parents.mjs",
+        "scripts/zhenkun-test-unifont.mjs"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": "66d8b1ec5d8eac585af69c5dfa74ea6eb9346e5a"
+      },
+      "start": "2026-10-03T16:09:28.109315+00:00",
+      "end": "2026-10-03T16:09:30.234345+00:00",
+      "exit": 0
+    },
+    "biome": {
+      "command": [
+        "node",
+        "node_modules/@biomejs/biome/bin/biome",
+        "ci",
+        "src",
+        "scripts/zhenkun-security-audit.mjs",
+        "scripts/zhenkun-test-security-audit.mjs",
+        "scripts/zhenkun-security-policy.json"
+      ],
+      "environment": {
+        "CF_WORKERS": "unset",
+        "ASTRO_TELEMETRY_DISABLED": "1",
+        "GITHUB_SHA": null
+      },
+      "start": "2026-10-03T16:07:39.221963+00:00",
+      "end": "2026-10-03T16:07:39.362414+00:00",
+      "exit": 0
+    },
+    "format": {
+      "command": [
+        "node",
+        "node_modules/@biomejs/biome/bin/biome",
+        "check",
+        "scripts/zhenkun-security-audit.mjs",
+        "scripts/zhenkun-test-security-audit.mjs",
+        "scripts/zhenkun-security-policy.json",
+        "--write"
+      ],
+      "exit": 0,
+      "at": "2026-10-03T16:03:20.794477+00:00"
+    }
+  },
+  "finalNative": {
+    "total": 296,
+    "pass": 296,
+    "skip": 0,
+    "baseline": 247,
+    "newSecurity": 49
+  },
+  "quality": "Astro258/0errors/0warnings/12hints;formal isolatedDeclarations and strict Swup types PASS;Biome301files PASS",
+  "offlineExamples": "retained-findings FAIL/1;transport-error and invalid-json BLOCKED/2;all INJECTED_OFFLINE",
+  "liveAudit": "NOT_RUN;metadata disclosure authorization still pending;no alternate connector",
+  "GitHub": "No upload/push/PR/workflow execution/permissions/secrets/branch protection changes",
+  "hostedLinux": "NOT_RUN for R4 or exact cache patch",
+  "dualBase": "NOT_RUN this R4:459 application/dependency/deploy files unchanged, original quality job deep-equal. Prior cache build evidence is not relabeled as fresh R4 build.",
+  "localPeer": "NOT_RUN as a new standalone pnpm command; unchanged graph/prior source evidence retained, new compatibility job structurally tested only",
+  "GUI": "Inherited BLOCKED/NOT_RUN, no client workaround",
+  "cacheReview": "Coordinator supplied independent sourceaf1a0379/evidence66d8b1ec PASS/noP1P2, reviewer44/44 excluding installerD03; prior author45/45; current fullnative includes existing45. No CVE closure/waiver.",
+  "protection": "six protected checkouts including cache/peer/R2/R1/phase0/original and private hash exact match;4known fixture ports closed",
+  "review": "R4 independent review PENDING; security release status BLOCKED; no patch exception implemented"
+}

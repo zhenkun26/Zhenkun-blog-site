@@ -1,0 +1,3 @@
+[ERR_PNPM_PATCH_NO_LOCKFILE] The modules directory is not ready for patching
+
+Run pnpm install first

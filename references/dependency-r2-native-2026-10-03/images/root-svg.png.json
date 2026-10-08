@@ -1,0 +1,9 @@
+{
+  "parent": "root",
+  "input": "svg",
+  "width": 3,
+  "height": 4,
+  "format": "png",
+  "bytes": 123,
+  "sha256": "f2682bf007b8c5d0af993928f8bdc6fb8caac0174a2a910858b47ce8e8785ac9"
+}

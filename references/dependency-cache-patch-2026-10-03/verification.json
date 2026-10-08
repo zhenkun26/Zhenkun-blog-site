@@ -1,0 +1,29 @@
+{
+  "state": "PASS_LOCAL_EVIDENCE_CONSISTENCY",
+  "sourceCommit": "af1a0379ec9518931ef3d703dacdcbd4102daacf",
+  "time": "2026-10-03T15:47:45.360614+00:00",
+  "reportLocalLinks": [
+    "provenance-initial.json",
+    "design-v2/DESIGN.md",
+    "design-v2/TEST-MATRIX.md",
+    "matrix-execution.json",
+    "graph-verification.json",
+    "install-patched-frozen.log",
+    "validation-receipt.json",
+    "cache-matrix-clock-repaired.log",
+    "native-all.log",
+    "artifact-manifests.json",
+    "graph-verification.json",
+    "protection-final.json",
+    "cleanup.json",
+    "test-before-clock-repair.mjs.txt",
+    "audit-prod.json",
+    "audit-full.json",
+    "audit-refresh-blocked.json",
+    "advisory-reconciliation.json"
+  ],
+  "sourceCommitBytesMatchTestedHashes": true,
+  "applicationCIAndPriorEvidenceUnchanged": true,
+  "rawAuditRefresh": "BLOCKED; never substituted by fresh claim",
+  "acceptance": "Independent implementation/dynamic review pending; Linux NOT_RUN; GUI BLOCKED"
+}

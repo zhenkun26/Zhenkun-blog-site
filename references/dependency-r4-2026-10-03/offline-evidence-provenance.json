@@ -1,0 +1,84 @@
+{
+  "execution": "INJECTED_OFFLINE_ONLY",
+  "liveAudit": "NOT_RUN",
+  "dataSources": {
+    "prod": {
+      "path": "references/dependency-cache-patch-2026-10-03/audit-prod.json",
+      "sha256": "452df9b275eff15fa64ae825f9c25e0d64350de4d194cc262079f08a22c4a030",
+      "meaning": "Retained prior audit; not refreshed"
+    },
+    "full": {
+      "path": "references/dependency-cache-patch-2026-10-03/audit-full.json",
+      "sha256": "61321161e0cb006c871b7ed853f325c3707deb1f719542017dec3427ea0911c3",
+      "meaning": "Retained prior audit; not refreshed"
+    }
+  },
+  "results": {
+    "retained-findings": {
+      "calls": [
+        [
+          "pnpm",
+          "audit",
+          "--prod",
+          "--registry=https://registry.npmjs.org",
+          "--json"
+        ],
+        [
+          "pnpm",
+          "audit",
+          "--registry=https://registry.npmjs.org",
+          "--json"
+        ]
+      ],
+      "callsWereInjected": true,
+      "state": "FAIL",
+      "exitCode": 1,
+      "actualHead": "ce800e5b1d2526b9fbe6cf67eac65a1f18b8405a",
+      "lockSha256": "6f4a61e19f5e118ea4636a11984ae52f24e11764d6fdade9cab3d3101fd4d002"
+    },
+    "transport-error": {
+      "calls": [
+        [
+          "pnpm",
+          "audit",
+          "--prod",
+          "--registry=https://registry.npmjs.org",
+          "--json"
+        ],
+        [
+          "pnpm",
+          "audit",
+          "--registry=https://registry.npmjs.org",
+          "--json"
+        ]
+      ],
+      "callsWereInjected": true,
+      "state": "BLOCKED",
+      "exitCode": 2,
+      "actualHead": "ce800e5b1d2526b9fbe6cf67eac65a1f18b8405a",
+      "lockSha256": "6f4a61e19f5e118ea4636a11984ae52f24e11764d6fdade9cab3d3101fd4d002"
+    },
+    "invalid-json": {
+      "calls": [
+        [
+          "pnpm",
+          "audit",
+          "--prod",
+          "--registry=https://registry.npmjs.org",
+          "--json"
+        ],
+        [
+          "pnpm",
+          "audit",
+          "--registry=https://registry.npmjs.org",
+          "--json"
+        ]
+      ],
+      "callsWereInjected": true,
+      "state": "BLOCKED",
+      "exitCode": 2,
+      "actualHead": "ce800e5b1d2526b9fbe6cf67eac65a1f18b8405a",
+      "lockSha256": "6f4a61e19f5e118ea4636a11984ae52f24e11764d6fdade9cab3d3101fd4d002"
+    }
+  }
+}

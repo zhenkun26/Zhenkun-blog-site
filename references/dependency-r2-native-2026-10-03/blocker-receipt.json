@@ -1,0 +1,99 @@
+{
+  "capturedAt": "2026-10-03T12:50:29.734079+00:00",
+  "base": "d12dd98abf383d4c47bf9bf987516b953baf2904",
+  "baselineSource": "90704e36768c2dc64ea80b30a364dcd46e2752f2",
+  "protectedR1Head": "955c78b7009fadab0a0785cb2895e0256588d31c",
+  "branch": "codex/dependency-r2-native-20261003",
+  "checkout": "<local-home>/Documents/Codex/2026-10-03/task-4/zhenkun-r2",
+  "isolation": "Independent --no-hardlinks local clone; separate .git and no node_modules. Source repository not mutated.",
+  "query": {
+    "command": "pnpm view sharp@0.35.5 --json --registry=https://registry.npmjs.org",
+    "exit": 1,
+    "state": "BLOCKED",
+    "stdout": "sharp-target.json",
+    "errorCode": "ERR_PNPM_META_FETCH_FAIL",
+    "errorMessage": "GET https://registry.npmjs.org/sharp: fetch failed",
+    "cause": "UNVERIFIED; pnpm does not establish whether failure is policy, transport, DNS or registry.",
+    "retry": false
+  },
+  "boundaries": {
+    "noEscalatedRetry": false,
+    "noAlternateRegistryStoreOrPath": true,
+    "noLockMutation": true,
+    "noInstall": true,
+    "noSharedNodeModules": true,
+    "noRuntimeTests": true,
+    "noGitHubWrites": true,
+    "noSettingOrCredentialChanges": true,
+    "noEscalationBeyondSingleApprovedSharpQuery": true
+  },
+  "gates": {
+    "targetRegistryVerification": "PARTIAL: Sharp metadata PASS, Undici/Miniflare BLOCKED, platform children NOT_RUN",
+    "lockGeneration": "NOT_RUN",
+    "lockClosureReview": "NOT_RUN",
+    "frozenInstall": "NOT_RUN",
+    "r2Native": "NOT_RUN",
+    "fullNative": "NOT_RUN",
+    "formalTypes": "NOT_RUN",
+    "astroCheck": "NOT_RUN",
+    "biome": "NOT_RUN",
+    "dualBaseBuildAndPagefind": "NOT_RUN",
+    "artifactAndHTTP": "NOT_RUN",
+    "freshProdAudit": "NOT_RUN",
+    "freshFullAudit": "NOT_RUN",
+    "known36LedgerReevaluation": "NOT_RUN",
+    "Linux": "NOT_RUN"
+  },
+  "inheritedOpenGates": [
+    "Cache has no verified published repair or exemption",
+    "mdx/satteri peer FAIL remains historical and unwaived",
+    "GUI BLOCKED/NOT_RUN remains open"
+  ],
+  "parentSteering": "Parent relayed direct human permission for one exact Sharp query, which passed approval and exit0. Parent then authorized ordinary-sandbox R2 steps; two subsequent official metadata reads failed. Dependency gates stopped, grouped minimum confirmation package sent; no broad or install escalation is inferred.",
+  "modelPreference": {
+    "requested": "6.1 Sol xhigh, standard service tier, no Fast; complex work Astra high",
+    "actual": "UNVERIFIED"
+  },
+  "dependencyHashes": {
+    "package.json": "125a5bb9398ec975958056b5ba3adfed645377e186586bad8f3f24f9add0b8be",
+    "pnpm-workspace.yaml": "9be1da702c3a02c2f6d2263dd4c31d56eb4bb1827fe2e210a8340a4c99f6d5d2",
+    "pnpm-lock.yaml": "57ceaf09fe816440a0abb8b36e73e37e2460b497efd9c189d80c28c6ea70cfda"
+  },
+  "agentsSkills": "No .agents directory or repository-specific SKILL.md found in supplied baseline or original checkout; AGENTS, PROCESS, ADR-XB-016, plan and sealed reports read.",
+  "approvedSharpRetry": {
+    "command": "pnpm view sharp@0.35.5 --json --registry=https://registry.npmjs.org",
+    "sandbox": "require_escalated",
+    "explicitHumanPermissionAt": "2026-10-03 12:51:18 UTC",
+    "exit": 0,
+    "stdout": "sharp-target-approved.json",
+    "sha256": "853f54c10e886281b99da8cf41619b0c53248daba89777f5e7e4941d2c3769c2",
+    "state": "PASS_METADATA_ONLY",
+    "doesNotAuthorizeOtherEscalation": true
+  },
+  "subsequentOrdinaryQueries": [
+    {
+      "target": "undici@7.29.1",
+      "command": "env npm_config_fetch_retries=0 npm_config_fetch_timeout=10000 pnpm view undici@7.29.1 --json --registry=https://registry.npmjs.org",
+      "exit": 1,
+      "state": "BLOCKED",
+      "stdout": "undici-target-normal.json",
+      "stderr": "undici-target-normal.stderr",
+      "note": "A prior attempt used unsupported view CLI options and failed before network; those diagnostics are retained. Command-scoped environment timeout values were not exposed by pnpm config get, so effective time limits are unverified."
+    },
+    {
+      "target": "miniflare@5.20260828.0-alpha",
+      "command": "env npm_config_fetch_retries=0 npm_config_fetch_timeout=10000 pnpm view miniflare@5.20260828.0-alpha --json --registry=https://registry.npmjs.org",
+      "exit": 1,
+      "state": "BLOCKED",
+      "stdout": "miniflare-parent-normal.json",
+      "stderr": "miniflare-parent-normal.stderr",
+      "note": "A prior attempt used unsupported view CLI options and failed before network; those diagnostics are retained. Command-scoped environment timeout values were not exposed by pnpm config get, so effective time limits are unverified."
+    }
+  ],
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "9c44932e6602895d877171c0d27a157846971851ebb2c1cea5a76f2208d7011a",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

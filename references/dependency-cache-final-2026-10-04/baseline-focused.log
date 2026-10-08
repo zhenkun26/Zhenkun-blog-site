@@ -1,0 +1,150 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 43d4e575fe44237785a6877b26c3ab717abb11dceedcaf4acb7067c2f0061705; local raw original retained.
+CACHE_REACHABLE graphParents=1 actualLinks=2 source=55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89
+CACHE_PARENT Astro build owns an additional stale-file fallback outside this package patch; source-confirmed, not a covered mitigation.
+CACHE_BASELINE expected assertion failure: 93748 cookie max-stale
+CACHE_BASELINE expected assertion failure: 93748 no-cache direct SWR
+CACHE_BASELINE expected assertion failure: 93750 wildcard OWS
+CACHE_BASELINE expected assertion failure: 93750 own/inherited
+✔ A01 shared cookie restrictions cover five reuse APIs (1.971834ms)
+✔ A02 incoming max-stale cannot unlock shared cookies (0.346209ms)
+✔ A03 no-cache and qualified no-cache cover five APIs (0.21475ms)
+✔ A04 shared proxy-revalidate and private control (0.300875ms)
+✔ A05 all unstoreable policies deny stale reuse (0.321917ms)
+✔ A06 must-revalidate preserves fresh helpers and conservative evaluate (0.147959ms)
+✔ A07 shared s-maxage fresh boundary stale and zero cross error matrix (0.513917ms)
+✔ A08 shared false does not acquire proxy or s-maxage restriction (0.389209ms)
+✔ A09 public immutable and private cookie exceptions remain usable (0.588542ms)
+✔ A10 ordinary expiry max-stale keeps strict window boundary (0.204416ms)
+✔ A11 ordinary zero freshness is not a security restriction (0.18425ms)
+✔ A12 ordinary fresh no extensions remains a cache hit (0.075291ms)
+✔ A13 SWR inside boundary outside retains async contract (0.143459ms)
+✔ A14 SIE strict boundary all errors and non-error controls (0.164625ms)
+✔ A15 SIE requires URL host method and Vary matching (0.206084ms)
+✔ A16 incoming no-cache and pragma deny error fallback (0.090333ms)
+✔ A17 cross method error fallback denied normal HEAD validators preserved (0.162625ms)
+✔ A18 max-age versus shared s-maxage preserves fresh fallback (0.4455ms)
+✔ B01 wildcard and list wildcard forbid all reuse (0.504291ms)
+✔ B02 field case OWS duplicates empty items preserve values (0.127291ms)
+✔ B03 absent empty and empty lists introduce no variant (0.067375ms)
+✔ B04 own presence and value comparisons (0.102917ms)
+✔ B05 prototype tokens and null-prototype maps use own values (0.233084ms)
+✔ B06 own versus inherited same value is a mismatch both ways (0.0635ms)
+✔ B07 two inherited-only fields are both absent (0.04725ms)
+✔ B08 raw ASCII validation precedes lowercase and survives roundtrip (2.622167ms)
+✔ B09 variant mismatch cannot be rescued by stale extensions (0.086ms)
+✔ B10 wildcard validators are not attached to incoming requests (0.048875ms)
+✔ C01 version one serialization preserves every safety restriction (0.950875ms)
+✔ C02 trusted hand-authored historical v1 fixtures are restricted (0.342125ms)
+✔ C03 modes cookie opt-ins and own special fields survive JSON (0.287125ms)
+✔ C04 valid ETag Last-Modified 304 and 200 keep public result shape (0.195ms)
+✔ C05 first 304 cache-control restrictions are retained (0.195209ms)
+✔ C06 first 304 wildcard and cookie restrictions are retained (0.250375ms)
+✔ C07 first pragma no-cache retained existing cache-control precedence (0.103708ms)
+✔ C08 valid 304 can replace no-cache with public fresh policy (0.052833ms)
+✔ C09 non-target 304 validation and header merging stay baseline-compatible (0.277542ms)
+✔ C10 accessors preserve API types and do not authorize cookie reuse (0.042541ms)
+✔ C11 ordinary request cache-control pragma and method branches stay compatible (0.07225ms)
+✔ C12 independent clocks constructors returned policies and TTL rounding (0.102584ms)
+✔ D01 official source patch registration integrity and license (13.745542ms)
+✔ D02 all current graph and actual links resolve the approved candidate (382.330375ms)
+✖ D03 missing and corrupt patches fail the normal frozen offline installer (215.342417ms)
+✔ D04 actual Astro remote helpers use bounded synthetic fetch and real policy TTL (14.108959ms)
+✔ official baseline counterexamples reproduce bounded failures (0.849083ms)
+✔ security: valid empty audits and no known affected versions pass (3.381458ms)
+✔ security: known37 ledger includes verified aliases and preserves CVE93750 source disagreement (0.629084ms)
+✔ security: every raw info finding blocks without a severity downgrade (0.579792ms)
+✔ security: every raw low finding blocks without a severity downgrade (0.399625ms)
+✔ security: every raw moderate finding blocks without a severity downgrade (0.328666ms)
+✔ security: every raw high finding blocks without a severity downgrade (0.672375ms)
+✔ security: every raw critical finding blocks without a severity downgrade (0.339791ms)
+✔ security: GHSA and CVE duplicates retain each raw version/path and highest severity (0.6215ms)
+✔ security: full audit cannot silently lose a prod finding (0.378833ms)
+✔ security: one affected version still fails when another is repaired (0.305ms)
+✔ security: official-only cache CVE and sharp still fail an empty registry report (0.294292ms)
+✔ security: commas in official ranges and prereleases cannot hide affected versions (0.411792ms)
+✔ security: a narrower row cannot override the retained publisher affected range (0.280208ms)
+✔ security: unknown extra advisory fails closed even with low severity (0.265417ms)
+✔ security: a new unverified alias of a known advisory requires review (0.265125ms)
+✔ security: unknown GHSA/CVE overlap is deduplicated but never accepted (0.311333ms)
+✔ security: contradictory package identities and new withdrawal cannot pass (1.163167ms)
+✔ security: stale findings absent from the current graph are blocked (0.274167ms)
+✔ security parser: HTML is BLOCKED (0.270709ms)
+✔ security parser: broken JSON is BLOCKED (0.230625ms)
+✔ security parser: empty stdout is BLOCKED (0.22275ms)
+✔ security parser: zero-exit error object is BLOCKED (0.233833ms)
+✔ security parser: missing metadata is BLOCKED (0.264791ms)
+✔ security parser: missing severity count is BLOCKED (0.296417ms)
+✔ security parser: nonzero count without records is BLOCKED (0.26025ms)
+✔ security parser: unknown severity count is BLOCKED (0.25525ms)
+✔ security parser: missing dependency count is BLOCKED (0.269084ms)
+✔ security parser: empty dependency graph is BLOCKED (0.250208ms)
+✔ security parser: network exit is BLOCKED (0.411291ms)
+✔ security parser: timeout with valid partial stdout is BLOCKED (0.259708ms)
+✔ security parser: signal with valid stdout is BLOCKED (0.231042ms)
+✔ security parser: nonzero empty report is BLOCKED (0.211167ms)
+✔ security parser: alert exit zero and incomplete findings are invalid (0.329042ms)
+✔ security policy: expiry is exact, unreviewed severity changes and invalid ranges fail closed (0.468375ms)
+✔ security policy: ignore/waiver keys and missing ledger entries are not supported (0.393667ms)
+✔ security: installed approved patch integrity does not grant a cache exception (12.227041ms)
+✔ security patch integrity: missing is BLOCKED (7.965167ms)
+✔ security patch integrity: tampered is BLOCKED (7.3325ms)
+✔ security patch integrity: registration is BLOCKED (7.079791ms)
+✔ security patch integrity: installed hash is BLOCKED (7.328959ms)
+✔ security collector: exactly prod/full once, lossless raw output and bounded command arguments (2.06975ms)
+✔ security collector: first transport failure still attempts full and saves both failures (1.286542ms)
+✔ security orchestration: retained current audit is FAIL, artifacts written without any live process (6.908708ms)
+✔ security orchestration: source mutation and dirty/mismatched HEAD block (6.307375ms)
+✔ security orchestration: missing project inputs still preserve both raw attempts and BLOCKED verdict (1.25425ms)
+✔ security snapshot binds actual checkout and exact source/lock bytes (417.546333ms)
+✔ security orchestration: expected CI checkout SHA must match (6.578541ms)
+✔ security CLI refuses an invocation without explicit live collection selection (27.796667ms)
+✔ security bytes: review bytes retained exactly and rejected before JSON interpretation (49.704125ms)
+✔ security bytes: illegal byte inside otherwise parseable JSON retained exactly and rejected before JSON interpretation (46.738417ms)
+✔ security bytes: truncated multibyte sequences retained exactly and rejected before JSON interpretation (42.865208ms)
+✔ security bytes: stderr-only malformed byte retained exactly and rejected before JSON interpretation (42.842791ms)
+✔ security bytes: valid multibyte UTF-8 and literal replacement character remain accepted (43.229917ms)
+✔ security bytes: invalid prod still collects and parses valid full independently (42.851042ms)
+✔ security workflow: independent quality/peer/security jobs, immutable action and fail-closed upload (1.14425ms)
+ℹ tests 100
+ℹ suites 0
+ℹ pass 99
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 856.865
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-cache-policy.mjs:964:1
+✖ D03 missing and corrupt patches fail the normal frozen offline installer (215.342417ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /ENOENT.*http-cache-semantics@4\.2\.0\.patch/s. Input:
+  
+  '[ERR_SQLITE_ERROR] unable to open database file\n' +
+    '\n' +
+    'pnpm: unable to open database file\n' +
+    '    at file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102448:19\n' +
+    '    at sqliteRetry (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102358:14)\n' +
+    '    at StoreIndex.openDatabase (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102447:9)\n' +
+    '    at new StoreIndex (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102432:14)\n' +
+    '    at createNewStoreController (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:182737:83)\n' +
+    '    at async installDeps (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:219786:17)\n' +
+    '    at async Object.handler5 (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:220893:3)\n' +
+    '    at async file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322592:19\n' +
+    '    at async main4 (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322560:30)\n' +
+    '    at async runPnpm (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322856:5)\n'
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task-6/zhenkun-cache-final/scripts/zhenkun-test-cache-policy.mjs:989:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '[ERR_SQLITE_ERROR] unable to open database file\n\npnpm: unable to open database file\n    at file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102448:19\n    at sqliteRetry (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102358:14)\n    at StoreIndex.openDatabase (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102447:9)\n    at new StoreIndex (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:102432:14)\n    at createNewStoreController (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:182737:83)\n    at async installDeps (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:219786:17)\n    at async Object.handler5 (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:220893:3)\n    at async file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322592:19\n    at async main4 (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322560:30)\n    at async runPnpm (file://<local-home>/.cache/node/corepack/v1/pnpm/11.22.0/dist/pnpm.mjs:322856:5)\n',
+    expected: /ENOENT.*http-cache-semantics@4\.2\.0\.patch/s,
+    operator: 'match',
+    diff: 'simple'
+  }

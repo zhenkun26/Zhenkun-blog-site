@@ -1,0 +1,264 @@
+{
+  "basis": "design-v2/TEST-MATRIX.md is immutable pre-execution design; this file records actual execution",
+  "specificationGroups": 46,
+  "nodeGroups": 44,
+  "boundedOfficialCounterexampleNodeTests": 1,
+  "nodeTests": 45,
+  "nodePass": 45,
+  "nodeSkip": 0,
+  "rows": [
+    {
+      "id": "A01",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A02",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A03",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A04",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A05",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A06",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A07",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A08",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A09",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A10",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A11",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A12",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A13",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A14",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A15",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A16",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A17",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "A18",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "B01",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "B02",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "B03",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "B04",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "B05",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "B06",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "B07",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "B08",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "B09",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "B10",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C01",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C02",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C03",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C04",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C05",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C06",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C07",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C08",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C09",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C10",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C11",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "C12",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "D01",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "D02",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "D03",
+      "state": "PARTIAL_MAC_PASS_LINUX_NOT_RUN",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "D04",
+      "state": "PASS_MAC",
+      "evidence": "cache-matrix-clock-repaired.log"
+    },
+    {
+      "id": "D05",
+      "state": "PASS_MAC",
+      "evidence": [
+        "native-all.log",
+        "check.log",
+        "biome.log",
+        "type-check.log",
+        "parent-types-strict.log",
+        "build-root.log",
+        "build-project.log",
+        "artifacts-root.log",
+        "artifacts-project.log",
+        "http-root.log",
+        "http-project.log"
+      ]
+    },
+    {
+      "id": "D06",
+      "state": "PARTIAL_INDEPENDENT_DYNAMIC_REVIEW_PENDING",
+      "evidence": [
+        "report.md",
+        "advisory-reconciliation.json",
+        "audit-refresh-blocked.json"
+      ]
+    }
+  ],
+  "counterexamples": [
+    "shared-cookie max-stale",
+    "no-cache direct SWR",
+    "Vary OWS freshness",
+    "own/inherited same-value Vary"
+  ],
+  "D04Boundary": "Kelvin raw-header case covered B08; Web Headers rejects non-ByteString so not fed to actual Astro helper. No claim every loop iteration executed or browser/remote-service coverage."
+}

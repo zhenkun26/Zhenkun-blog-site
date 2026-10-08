@@ -1,0 +1,72 @@
+{
+  "state": "PASS_BEHAVIOR_AND_BOUNDARY_REBIND",
+  "basis": "Exact bounded five-family lock; 62 cache/Astro controls incl six normal frozen/offline patch negatives. Original37 ledger entries, both installed patches, four Astro file hashes and eight actual paths preserved. Fresh primary collection and same-run original-generator proof remain required by the live gate.",
+  "oldBindings": {
+    "ledger": "bf714abd1214e2d40d037557c74521d7453e6b646b780c6dc2ca666207e45ea3",
+    "patches": "038b97e2663f36f1e72a57480e440e23400a796007a4c8ca0da08bdcb3d000e1",
+    "boundary": "995950540a337e65e078c6b0d2ed8a52a8205c43e243d400010aea1e96e14aa0",
+    "tests": {
+      "scripts/zhenkun-test-cache-policy.mjs": "182d29169a3c2da0955369a7d9272877b2ee72e93f0180f18c44f3f997b946b9",
+      "scripts/zhenkun-test-astro-cache-generator.mjs": "614943f8c8a28dc84a9baaacbdfe0b2e93f4facda36792f4686e4ae37dcc1c70",
+      "references/dependency-cache-patch-2026-10-03/verified-official-baseline.cjs": "01b7d66c854b2fe53ac05c98feb6e0d64722ab8898a778e2d2426a8b468d178f",
+      "references/dependency-cache-final-2026-10-04/astro-generator-official.js": "d35fda4e0a924ab0034f2c43983ccad4a7918667333fe381f355f057d9cb20db"
+    }
+  },
+  "newBindings": {
+    "ledger": "72ecffba9b8d4c3092ee68da0d0cdfb57066bee8090ec9abedb6bb39325ed649",
+    "patches": "6f77af3b69dcbc44ec8e2b14c60d16053938ecf7808a3b79ad9fc5a039f4db7c",
+    "boundary": "9a143668d1199e2bab59dc3704e1eddcd422c325cffb22f23bface754de1bed4",
+    "tests": {
+      "scripts/zhenkun-test-cache-policy.mjs": "a71c65964bd02257793339bce64832b7b3ecaad2e78e9f2965506d8c4dd5e850",
+      "scripts/zhenkun-test-astro-cache-generator.mjs": "614943f8c8a28dc84a9baaacbdfe0b2e93f4facda36792f4686e4ae37dcc1c70",
+      "references/dependency-cache-patch-2026-10-03/verified-official-baseline.cjs": "01b7d66c854b2fe53ac05c98feb6e0d64722ab8898a778e2d2426a8b468d178f",
+      "references/dependency-cache-final-2026-10-04/astro-generator-official.js": "d35fda4e0a924ab0034f2c43983ccad4a7918667333fe381f355f057d9cb20db"
+    }
+  },
+  "cacheSourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89",
+  "actualPaths": 8,
+  "reviewBy": "2026-10-14T14:27:22.000Z",
+  "negatives": [
+    {
+      "patch": "http-cache-semantics@4.2.0",
+      "variant": "missing",
+      "exitCode": 254
+    },
+    {
+      "patch": "http-cache-semantics@4.2.0",
+      "variant": "corrupt",
+      "exitCode": 1
+    },
+    {
+      "patch": "astro@7.2.10",
+      "variant": "missing",
+      "exitCode": 254
+    },
+    {
+      "patch": "astro@7.2.10",
+      "variant": "corrupt",
+      "exitCode": 1
+    },
+    {
+      "patch": "js-yaml@3.15.2",
+      "variant": "missing",
+      "exitCode": 254
+    },
+    {
+      "patch": "js-yaml@3.15.2",
+      "variant": "corrupt",
+      "exitCode": 1
+    }
+  ],
+  "rawPositiveSha256": "e53589f6d80a4ebb539a3a8338c9b75886b409e5490b9591bb9701a922e60713",
+  "lockSha256": "276b00be82d1860fa689504bd837e0c994936ebd606d1ce3d706a004ba4be6a0",
+  "formattingCorrection": {
+    "previousBoundary": "4598246881a6557f832513cfbdf59216656e110febaeea05d5131bc2e7517f1a",
+    "change": "Biome exact graph-checker style only; unchanged lock, all patch/source/test hashes and installed paths; graph validator re-executed PASS. Same-run live behavior proof still required."
+  },
+  "portableBaselineCorrection": {
+    "previousBoundary": "8fe256547f72a4dbc5004640bfaf514725893c0b6d64ffac16acc046eb7eab87",
+    "newBoundary": "9a143668d1199e2bab59dc3704e1eddcd422c325cffb22f23bface754de1bed4",
+    "change": "Graph checker reads the SHA-bound exact original lock/workspace fixtures instead of requiring unpublished local ancestry. No lock, patch, installed-source, parent or application bytes changed. Exact bounded graph rerun PASS; current-bound same-run live proof remains required."
+  }
+}

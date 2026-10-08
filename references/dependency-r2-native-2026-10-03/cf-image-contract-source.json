@@ -1,0 +1,18 @@
+{
+  "review": "Supplied independent Astra HIGH helper -> WorkerCore outbound contract diagnosis",
+  "package": "miniflare5.20260828.0-alpha",
+  "files": {
+    "node_modules/.pnpm/miniflare@5.20260828.0-alpha_@types+node@26.4.1/node_modules/miniflare/dist/src/index.js": "58ca83056cf67838add064edcbfd1d654ed204527b8eb01307ba208d7e59fa20",
+    "node_modules/.pnpm/miniflare@5.20260828.0-alpha_@types+node@26.4.1/node_modules/miniflare/dist/src/workers/core/outbound.worker.js": "cca515a5191b6ad53f136fe00d5edbdd80c45f6ba94e9f72011b9bd25153688f"
+  },
+  "metadataLine": 108189,
+  "svgRejectionLine": 108191,
+  "metadataBeforeSvgRejection": true,
+  "facts": [
+    "Sharp helper parses metadata before internal SVG error response.",
+    "WorkerCore outbound image wrapper returns the original response on unsuccessful transform.",
+    "Internal422 is source evidence only, not a captured public API response.",
+    "Probe demonstrates only selected local Miniflare public contract, not production Cloudflare."
+  ],
+  "runtimeEvidence": "cf-image-contract-probe.json and native-all.log"
+}

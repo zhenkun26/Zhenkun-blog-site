@@ -1,0 +1,835 @@
+{
+	"schemaVersion": 1,
+	"reviewedAt": "2026-10-07T14:27:22.000Z",
+	"reviewBy": "2026-10-14T14:27:22.000Z",
+	"owner": "dependency remediation coordinator",
+	"scope": "Retained 36 official GHSA plus separate publisher CVE-2026-93750, with five additional official GHSA reviewed 2026-10-08. Existing review deadline unchanged. Raw version findings and prod/full path differences are preserved; only separately proven cache repair changes its effective status. No vulnerability waiver.",
+	"knownAdvisories": [
+		{
+			"id": "GHSA-6j4f-fj2g-mc7p",
+			"aliases": ["GHSA-6j4f-fj2g-mc7p", "CVE-2026-102276"],
+			"package": "brace-expansion",
+			"severity": "high",
+			"affectedRanges": [
+				">= 4.0.0, < 5.0.10",
+				">= 3.0.0, < 3.0.7",
+				">= 2.0.0, < 2.1.5",
+				"< 1.1.19"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+					"severity": "high",
+					"affectedRanges": [
+						">= 4.0.0, < 5.0.10",
+						">= 3.0.0, < 3.0.7",
+						">= 2.0.0, < 2.1.5",
+						"< 1.1.19"
+					],
+					"updatedAt": "2026-09-29T23:44:59Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-q2hr-2g5m-vwhr",
+			"aliases": ["GHSA-q2hr-2g5m-vwhr", "CVE-2026-102277"],
+			"package": "brace-expansion",
+			"severity": "moderate",
+			"affectedRanges": [
+				">= 4.0.0, < 5.0.12",
+				">= 3.0.0, < 3.0.9",
+				">= 2.0.0, < 2.1.7",
+				"< 1.1.21"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+					"severity": "medium",
+					"affectedRanges": [
+						">= 4.0.0, < 5.0.12",
+						">= 3.0.0, < 3.0.9",
+						">= 2.0.0, < 2.1.7",
+						"< 1.1.21"
+					],
+					"updatedAt": "2026-09-29T23:45:39Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-qhr7-859c-m2p7",
+			"aliases": ["GHSA-qhr7-859c-m2p7", "CVE-2026-102278"],
+			"package": "brace-expansion",
+			"severity": "high",
+			"affectedRanges": [
+				">= 4.0.0, < 5.0.11",
+				">= 3.0.0, < 3.0.8",
+				">= 2.0.0, < 2.1.6",
+				"< 1.1.20"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+					"severity": "high",
+					"affectedRanges": [
+						">= 4.0.0, < 5.0.11",
+						">= 3.0.0, < 3.0.8",
+						">= 2.0.0, < 2.1.6",
+						"< 1.1.20"
+					],
+					"updatedAt": "2026-09-29T23:45:19Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-2wm5-q62r-hmrv",
+			"aliases": ["GHSA-2wm5-q62r-hmrv", "CVE-2026-85062"],
+			"package": "colord",
+			"severity": "moderate",
+			"affectedRanges": ["< 2.9.4"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-2wm5-q62r-hmrv",
+					"severity": "medium",
+					"affectedRanges": ["< 2.9.4"],
+					"updatedAt": "2026-09-08T20:51:58Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-4q55-j62x-fr9h",
+			"aliases": ["GHSA-4q55-j62x-fr9h"],
+			"package": "devalue",
+			"severity": "moderate",
+			"affectedRanges": ["<= 5.9.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-4q55-j62x-fr9h",
+					"severity": "medium",
+					"affectedRanges": ["<= 5.9.2"],
+					"updatedAt": "2026-10-01T15:13:25Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-hx4r-w6wj-j8fg",
+			"aliases": ["GHSA-hx4r-w6wj-j8fg"],
+			"package": "devalue",
+			"severity": "moderate",
+			"affectedRanges": ["<= 5.9.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-hx4r-w6wj-j8fg",
+					"severity": "medium",
+					"affectedRanges": ["<= 5.9.2"],
+					"updatedAt": "2026-10-01T15:17:43Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-j22f-vq7h-c4qm",
+			"aliases": ["GHSA-j22f-vq7h-c4qm", "CVE-2026-92708"],
+			"package": "devalue",
+			"severity": "high",
+			"affectedRanges": [">= 5.1.0, <= 5.9.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-j22f-vq7h-c4qm",
+					"severity": "high",
+					"affectedRanges": [">= 5.1.0, <= 5.9.2"],
+					"updatedAt": "2026-10-01T15:18:07Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-mcm9-63f2-9j32",
+			"aliases": ["GHSA-mcm9-63f2-9j32"],
+			"package": "devalue",
+			"severity": "high",
+			"affectedRanges": ["<= 5.9.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-mcm9-63f2-9j32",
+					"severity": "high",
+					"affectedRanges": ["<= 5.9.2"],
+					"updatedAt": "2026-10-01T15:17:30Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-wf3x-273g-mvxv",
+			"aliases": ["GHSA-wf3x-273g-mvxv"],
+			"package": "devalue",
+			"severity": "low",
+			"affectedRanges": [">= 1.0.0, <= 5.9.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-wf3x-273g-mvxv",
+					"severity": "low",
+					"affectedRanges": [">= 1.0.0, <= 5.9.2"],
+					"updatedAt": "2026-10-01T15:17:16Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-x5rw-q4pp-hg5g",
+			"aliases": ["GHSA-x5rw-q4pp-hg5g"],
+			"package": "devalue",
+			"severity": "high",
+			"affectedRanges": [">= 5.8.0, <= 5.9.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-x5rw-q4pp-hg5g",
+					"severity": "high",
+					"affectedRanges": [">= 5.8.0, <= 5.9.2"],
+					"updatedAt": "2026-10-01T15:15:15Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-5jgf-p345-68v8",
+			"aliases": ["GHSA-5jgf-p345-68v8", "CVE-2026-75931"],
+			"package": "fast-uri",
+			"severity": "high",
+			"affectedRanges": [
+				">= 2.4.2, < 2.4.5",
+				">= 3.1.3, < 3.1.6",
+				">= 4.0.1, < 4.1.3"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-5jgf-p345-68v8",
+					"severity": "high",
+					"affectedRanges": [
+						">= 2.4.2, < 2.4.5",
+						">= 3.1.3, < 3.1.6",
+						">= 4.0.1, < 4.1.3"
+					],
+					"updatedAt": "2026-09-02T15:44:32Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-f65p-4m7j-42xc",
+			"aliases": ["GHSA-f65p-4m7j-42xc", "CVE-2026-75975"],
+			"package": "fast-uri",
+			"severity": "high",
+			"affectedRanges": [
+				">= 2.3.1, < 2.4.5",
+				">= 3.0.0, < 3.1.6",
+				">= 4.0.0, < 4.1.3"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-f65p-4m7j-42xc",
+					"severity": "high",
+					"affectedRanges": [
+						">= 2.3.1, < 2.4.5",
+						">= 3.0.0, < 3.1.6",
+						">= 4.0.0, < 4.1.3"
+					],
+					"updatedAt": "2026-09-02T15:43:32Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-fph4-wmhf-6fwf",
+			"aliases": ["GHSA-fph4-wmhf-6fwf", "CVE-2026-75899"],
+			"package": "fast-uri",
+			"severity": "high",
+			"affectedRanges": [
+				">= 2.4.1, < 2.4.5",
+				">= 3.1.2, < 3.1.6",
+				">= 4.0.0, < 4.1.3"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-fph4-wmhf-6fwf",
+					"severity": "high",
+					"affectedRanges": [
+						">= 2.4.1, < 2.4.5",
+						">= 3.1.2, < 3.1.6",
+						">= 4.0.0, < 4.1.3"
+					],
+					"updatedAt": "2026-09-02T15:42:41Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-hrr3-gc8f-f4qj",
+			"aliases": ["GHSA-hrr3-gc8f-f4qj", "CVE-2026-86472"],
+			"package": "fast-uri",
+			"severity": "moderate",
+			"affectedRanges": ["< 2.4.7", ">= 3.0.0, < 3.1.8", ">= 4.0.0, < 4.1.5"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+					"severity": "medium",
+					"affectedRanges": [
+						"< 2.4.7",
+						">= 3.0.0, < 3.1.8",
+						">= 4.0.0, < 4.1.5"
+					],
+					"updatedAt": "2026-09-29T23:54:26Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-jqff-g426-hqxp",
+			"aliases": ["GHSA-jqff-g426-hqxp", "CVE-2026-76172"],
+			"package": "fast-uri",
+			"severity": "high",
+			"affectedRanges": [
+				">= 2.3.1, < 2.4.5",
+				">= 3.0.0, < 3.1.6",
+				">= 4.0.0, < 4.1.3"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-jqff-g426-hqxp",
+					"severity": "high",
+					"affectedRanges": [
+						">= 2.3.1, < 2.4.5",
+						">= 3.0.0, < 3.1.6",
+						">= 4.0.0, < 4.1.3"
+					],
+					"updatedAt": "2026-09-02T15:41:56Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-qw65-cvwx-89v3",
+			"aliases": ["GHSA-qw65-cvwx-89v3", "CVE-2026-84292"],
+			"package": "fast-uri",
+			"severity": "high",
+			"affectedRanges": ["< 2.4.6", ">= 3.0.0, < 3.1.7", ">= 4.0.0, < 4.1.4"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-qw65-cvwx-89v3",
+					"severity": "high",
+					"affectedRanges": [
+						"< 2.4.6",
+						">= 3.0.0, < 3.1.7",
+						">= 4.0.0, < 4.1.4"
+					],
+					"updatedAt": "2026-09-28T21:24:40Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-ch52-4w7c-c8xp",
+			"aliases": ["GHSA-ch52-4w7c-c8xp", "CVE-2026-93748"],
+			"package": "http-cache-semantics",
+			"severity": "high",
+			"affectedRanges": ["<= 4.2.0"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-ch52-4w7c-c8xp",
+					"severity": "high",
+					"affectedRanges": ["<= 4.2.0"],
+					"updatedAt": "2026-10-02T22:36:44Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-2883-xcg3-v3hh",
+			"aliases": ["GHSA-2883-xcg3-v3hh", "CVE-2026-84375"],
+			"package": "js-yaml",
+			"severity": "high",
+			"affectedRanges": [">= 4.0.0, < 4.3.2", ">= 3.0.0, < 3.15.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+					"severity": "high",
+					"affectedRanges": [">= 4.0.0, < 4.3.2", ">= 3.0.0, < 3.15.2"],
+					"updatedAt": "2026-09-08T21:24:52Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-5c6j-r48x-rmvq",
+			"aliases": ["GHSA-5c6j-r48x-rmvq"],
+			"package": "serialize-javascript",
+			"severity": "high",
+			"affectedRanges": ["<= 7.0.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-5c6j-r48x-rmvq",
+					"severity": "high",
+					"affectedRanges": ["<= 7.0.2"],
+					"updatedAt": "2026-03-02T16:17:37Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-gfhx-hw2g-v5hg",
+			"aliases": ["GHSA-gfhx-hw2g-v5hg", "CVE-2026-97711"],
+			"package": "serialize-javascript",
+			"severity": "low",
+			"affectedRanges": [">= 7.1.1, < 7.1.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-gfhx-hw2g-v5hg",
+					"severity": "low",
+					"affectedRanges": [">= 7.1.1, < 7.1.2"],
+					"updatedAt": "2026-09-30T15:40:06Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-qj8w-gfj5-8c6v",
+			"aliases": ["GHSA-qj8w-gfj5-8c6v", "CVE-2026-34043"],
+			"package": "serialize-javascript",
+			"severity": "moderate",
+			"affectedRanges": [">= 5.0.0, < 7.0.5"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-qj8w-gfj5-8c6v",
+					"severity": "medium",
+					"affectedRanges": [">= 5.0.0, < 7.0.5"],
+					"updatedAt": "2026-05-21T18:30:15Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-rgj7-g3m4-5g8c",
+			"aliases": ["GHSA-rgj7-g3m4-5g8c"],
+			"package": "sharp",
+			"severity": "high",
+			"affectedRanges": ["< 0.35.4"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+					"severity": "high",
+					"affectedRanges": ["< 0.35.4"],
+					"updatedAt": "2026-09-08T21:25:12Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-wq5f-xc86-pv6w",
+			"aliases": ["GHSA-wq5f-xc86-pv6w"],
+			"package": "sharp",
+			"severity": "high",
+			"affectedRanges": ["< 0.35.5"],
+			"sources": [
+				{
+					"url": "https://github.com/lovell/sharp/security/advisories/GHSA-wq5f-xc86-pv6w",
+					"severity": "high",
+					"affectedRanges": ["< 0.35.5"],
+					"updatedAt": "2026-09-30T19:22:51Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-4vpr-x523-8j87",
+			"aliases": ["GHSA-4vpr-x523-8j87", "CVE-2026-84369"],
+			"package": "svgo",
+			"severity": "moderate",
+			"affectedRanges": [
+				">= 1.0.0, < 2.8.4",
+				">= 3.0.0, < 3.3.5",
+				">= 4.0.0, < 4.1.0"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-4vpr-x523-8j87",
+					"severity": "medium",
+					"affectedRanges": [
+						">= 1.0.0, < 2.8.4",
+						">= 3.0.0, < 3.3.5",
+						">= 4.0.0, < 4.1.0"
+					],
+					"updatedAt": "2026-09-08T21:20:09Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-w27v-7q3p-w38r",
+			"aliases": ["GHSA-w27v-7q3p-w38r", "CVE-2026-84370"],
+			"package": "svgo",
+			"severity": "high",
+			"affectedRanges": [
+				">= 1.0.0, < 2.8.4",
+				">= 3.0.0, < 3.3.5",
+				">= 4.0.0, < 4.1.0"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-w27v-7q3p-w38r",
+					"severity": "high",
+					"affectedRanges": [
+						">= 1.0.0, < 2.8.4",
+						">= 3.0.0, < 3.3.5",
+						">= 4.0.0, < 4.1.0"
+					],
+					"updatedAt": "2026-09-08T21:20:30Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-2gqq-gqf2-x968",
+			"aliases": ["GHSA-2gqq-gqf2-x968", "CVE-2026-84947"],
+			"package": "undici",
+			"severity": "low",
+			"affectedRanges": [">= 7.1.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-2gqq-gqf2-x968",
+					"severity": "low",
+					"affectedRanges": [">= 7.1.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+					"updatedAt": "2026-09-29T18:18:52Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-2jfj-6hjv-fm6j",
+			"aliases": ["GHSA-2jfj-6hjv-fm6j", "CVE-2026-84933"],
+			"package": "undici",
+			"severity": "moderate",
+			"affectedRanges": [">= 7.0.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+					"severity": "medium",
+					"affectedRanges": [">= 7.0.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+					"updatedAt": "2026-09-29T18:19:59Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-3wwx-pv8p-q78v",
+			"aliases": ["GHSA-3wwx-pv8p-q78v", "CVE-2026-85024"],
+			"package": "undici",
+			"severity": "moderate",
+			"affectedRanges": [
+				">= 6.25.0, < 6.28.1",
+				">= 7.28.0, < 7.29.1",
+				">= 8.1.0, < 8.10.2"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-3wwx-pv8p-q78v",
+					"severity": "medium",
+					"affectedRanges": [
+						">= 6.25.0, < 6.28.1",
+						">= 7.28.0, < 7.29.1",
+						">= 8.1.0, < 8.10.2"
+					],
+					"updatedAt": "2026-09-28T21:42:38Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-3xpg-4rpp-hhhm",
+			"aliases": ["GHSA-3xpg-4rpp-hhhm", "CVE-2026-84890"],
+			"package": "undici",
+			"severity": "moderate",
+			"affectedRanges": [">= 7.15.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+					"severity": "medium",
+					"affectedRanges": [">= 7.15.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+					"updatedAt": "2026-09-29T18:20:38Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-8436-99hf-9mmv",
+			"aliases": ["GHSA-8436-99hf-9mmv", "CVE-2026-85008"],
+			"package": "undici",
+			"severity": "low",
+			"affectedRanges": [">= 7.0.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-8436-99hf-9mmv",
+					"severity": "low",
+					"affectedRanges": [">= 7.0.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+					"updatedAt": "2026-09-29T18:16:29Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-pmjh-fq2x-6v4x",
+			"aliases": ["GHSA-pmjh-fq2x-6v4x", "CVE-2026-18149"],
+			"package": "undici",
+			"severity": "moderate",
+			"affectedRanges": [">= 7.11.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+					"severity": "medium",
+					"affectedRanges": [">= 7.11.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+					"updatedAt": "2026-09-29T18:22:35Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-r53p-7pc4-xj5r",
+			"aliases": ["GHSA-r53p-7pc4-xj5r", "CVE-2026-18540"],
+			"package": "undici",
+			"severity": "low",
+			"affectedRanges": [
+				"< 6.28.1",
+				">= 7.0.0, < 7.29.1",
+				">= 8.0.0, < 8.10.2"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-r53p-7pc4-xj5r",
+					"severity": "low",
+					"affectedRanges": [
+						"< 6.28.1",
+						">= 7.0.0, < 7.29.1",
+						">= 8.0.0, < 8.10.2"
+					],
+					"updatedAt": "2026-09-29T18:22:08Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-rfgv-xxqx-mfg5",
+			"aliases": ["GHSA-rfgv-xxqx-mfg5", "CVE-2026-19534"],
+			"package": "undici",
+			"severity": "high",
+			"affectedRanges": [
+				">= 6.7.0, < 6.28.1",
+				">= 7.0.0, < 7.29.1",
+				">= 8.0.0, < 8.10.2"
+			],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+					"severity": "high",
+					"affectedRanges": [
+						">= 6.7.0, < 6.28.1",
+						">= 7.0.0, < 7.29.1",
+						">= 8.0.0, < 8.10.2"
+					],
+					"updatedAt": "2026-09-29T18:21:41Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-rx4f-c7p8-82vq",
+			"aliases": ["GHSA-rx4f-c7p8-82vq", "CVE-2026-85014"],
+			"package": "undici",
+			"severity": "moderate",
+			"affectedRanges": [">= 7.0.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-rx4f-c7p8-82vq",
+					"severity": "medium",
+					"affectedRanges": [">= 7.0.0, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+					"updatedAt": "2026-09-29T18:10:33Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-vp8m-p9jh-q5pm",
+			"aliases": ["GHSA-vp8m-p9jh-q5pm", "CVE-2026-85152"],
+			"package": "undici",
+			"severity": "high",
+			"affectedRanges": [">= 8.10.0, < 8.10.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-vp8m-p9jh-q5pm",
+					"severity": "high",
+					"affectedRanges": [">= 8.10.0, < 8.10.2"],
+					"updatedAt": "2026-09-29T18:15:14Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "GHSA-w293-vg96-wgc3",
+			"aliases": ["GHSA-w293-vg96-wgc3", "CVE-2026-84961"],
+			"package": "undici",
+			"severity": "high",
+			"affectedRanges": [">= 7.24.1, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-w293-vg96-wgc3",
+					"severity": "high",
+					"affectedRanges": [">= 7.24.1, < 7.29.1", ">= 8.0.0, < 8.10.2"],
+					"updatedAt": "2026-09-29T18:17:16Z",
+					"withdrawnAt": null
+				}
+			]
+		},
+		{
+			"id": "CVE-2026-93750",
+			"aliases": ["CVE-2026-93750"],
+			"package": "http-cache-semantics",
+			"severity": "high",
+			"affectedRanges": ["<=4.2.0"],
+			"sources": [
+				{
+					"url": "https://www.vulncheck.com/advisories/http-cache-semantics-through-4.2.0-cross-client-cache-disclosure-via-vary-wildcard",
+					"severity": "high",
+					"affectedRanges": ["<=4.2.0"],
+					"publishedAt": "2026-09-18",
+					"cvss": "4.0/8.2",
+					"withdrawnAt": null
+				},
+				{
+					"url": "https://github.com/kornelski/http-cache-semantics/issues/57",
+					"severity": "moderate",
+					"affectedRanges": ["<=4.1.1"],
+					"cvss": "3.1/5.9",
+					"withdrawnAt": null,
+					"scope": "Earlier reporter range; retained disagreement, not used to narrow publisher range"
+				}
+			]
+		},
+		{
+			"id": "GHSA-hp3w-g68c-fv3c",
+			"aliases": ["GHSA-hp3w-g68c-fv3c", "CVE-2026-97058"],
+			"package": "sprintf-js",
+			"severity": "moderate",
+			"affectedRanges": ["<= 1.1.3"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-hp3w-g68c-fv3c",
+					"severity": "medium",
+					"affectedRanges": ["<= 1.1.3"],
+					"updatedAt": "2026-10-05T23:47:35Z",
+					"withdrawnAt": null,
+					"firstPatchedVersion": null,
+					"observedAt": "2026-10-08"
+				}
+			]
+		},
+		{
+			"id": "GHSA-r4xh-jqrq-34v2",
+			"aliases": ["GHSA-r4xh-jqrq-34v2"],
+			"package": "smol-toml",
+			"severity": "moderate",
+			"affectedRanges": ["<= 1.8.0"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-r4xh-jqrq-34v2",
+					"severity": "medium",
+					"affectedRanges": ["<= 1.8.0"],
+					"updatedAt": "2026-10-05T23:41:15Z",
+					"withdrawnAt": null,
+					"firstPatchedVersion": "1.9.0",
+					"observedAt": "2026-10-08"
+				}
+			]
+		},
+		{
+			"id": "GHSA-238p-pmpm-9mq7",
+			"aliases": ["GHSA-238p-pmpm-9mq7", "CVE-2026-103923"],
+			"package": "katex",
+			"severity": "low",
+			"affectedRanges": [">= 0.11.0, < 0.18.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-238p-pmpm-9mq7",
+					"severity": "low",
+					"affectedRanges": [">= 0.11.0, < 0.18.2"],
+					"updatedAt": "2026-10-05T23:41:06Z",
+					"withdrawnAt": null,
+					"firstPatchedVersion": "0.18.2",
+					"observedAt": "2026-10-08"
+				}
+			]
+		},
+		{
+			"id": "GHSA-68fv-2mgg-jv7q",
+			"aliases": ["GHSA-68fv-2mgg-jv7q", "CVE-2026-93749"],
+			"package": "source-map-js",
+			"severity": "high",
+			"affectedRanges": [">= 1.0.0, < 1.2.2"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-68fv-2mgg-jv7q",
+					"severity": "high",
+					"affectedRanges": [">= 1.0.0, < 1.2.2"],
+					"updatedAt": "2026-10-05T23:31:22Z",
+					"withdrawnAt": null,
+					"firstPatchedVersion": "1.2.2",
+					"observedAt": "2026-10-08"
+				}
+			]
+		},
+		{
+			"id": "GHSA-rj75-hqrm-r3gf",
+			"aliases": ["GHSA-rj75-hqrm-r3gf", "CVE-2026-104844"],
+			"package": "postcss-selector-parser",
+			"severity": "moderate",
+			"affectedRanges": ["< 7.1.6"],
+			"sources": [
+				{
+					"url": "https://github.com/advisories/GHSA-rj75-hqrm-r3gf",
+					"severity": "medium",
+					"affectedRanges": ["< 7.1.6"],
+					"updatedAt": "2026-10-05T22:53:57Z",
+					"withdrawnAt": null,
+					"firstPatchedVersion": "7.1.6",
+					"observedAt": "2026-10-08"
+				}
+			]
+		}
+	],
+	"expectedPatches": {
+		"http-cache-semantics@4.2.0": {
+			"path": "scripts/patches/http-cache-semantics@4.2.0.patch",
+			"sha256": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3",
+			"installedSourceSha256": "55eefdf582537830c28f1a17d02c9b476ac3a820cc2eb0211ffb57d163f71c89",
+			"parent": "astro",
+			"module": "http-cache-semantics"
+		},
+		"astro@7.2.10": {
+			"path": "scripts/patches/astro@7.2.10.patch",
+			"sha256": "e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47",
+			"installedSourceSha256": "4a1d2ab3527330f97bfe77ab86c091ccaaab06a93fee02b466eee2ad149e33d8",
+			"parent": "astro",
+			"module": "astro",
+			"sourceRelative": "assets/build/generate.js"
+		},
+		"js-yaml@3.15.2": {
+			"path": "scripts/patches/js-yaml@3.15.2.patch",
+			"sha256": "07651746469f816f13a27e690c0f8b089f78b153b4c7e5318c48daefab34d942",
+			"installedSourceSha256": "9c8a8e8320bbba581c49876237ab97ad9caeb77ff6accd1f686a18c390e4ae6a",
+			"parent": "gray-matter",
+			"module": "js-yaml",
+			"sourceRelative": "bin/js-yaml.js"
+		}
+	}
+}

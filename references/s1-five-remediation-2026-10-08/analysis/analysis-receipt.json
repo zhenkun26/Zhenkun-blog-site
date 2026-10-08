@@ -1,0 +1,93 @@
+{
+  "completedAt": "2026-10-08T03:20:59.051761+00:00",
+  "baseHead": "1bde54cb488cfae291efef528391da2d511fb73c",
+  "candidateUnmodified": true,
+  "decisionSha256": "0d8cd01f5c23aff6e946df84dbf7c46f2c2eb926bf7f2496814d383d20445ef2",
+  "executedChecks": {
+    "originalArgparseOverride": "NOT_ACCEPTED: --version empty and deprecation warnings; preserved differential outputs",
+    "adaptedYamlCli": "PASS 10 cases, with documented help/diagnostic stream differences",
+    "katexParents": "PASS bounded rendering/security/mhchem controls; HTML differs across versions",
+    "katexParentTypes": "PASS tsc strict skipLibCheck=false, exit0",
+    "cssParents": "PASS bounded typography/nested fixtures",
+    "cssExistingCorpus": "PASS 2836 unique selectors compared against three old versions",
+    "toml": "PASS bounded key scanning/data/helper checks; null-prototype change explicitly retained",
+    "sourceMap": "PASS bounded invalid/nested/positive and css-tree/PostCSS checks",
+    "protectedOriginals": "PASS exact branch/head/status/index/private aggregate/symlink checks"
+  },
+  "notRun": [
+    "pnpm new graph generation or installation",
+    "fresh full application matrix",
+    "Astro file/settings and actual full Zod integration for new TOML",
+    "Tailwind-node/magicast new sourcemap integration",
+    "new browser/production GUI",
+    "new npm audit",
+    "Linux CI/push/merge/Pages"
+  ],
+  "knownProbeFailures": [
+    "Bare argparse2 override blank --version",
+    "TOML 1.9.0 vs1.8.0 strict equality fails because tables now have null prototypes; data and prototype facts subsequently tested separately"
+  ],
+  "authorizationBlockers": [],
+  "artifacts": [
+    {
+      "path": "sprintf-probe.json",
+      "sha256": "53dada50b2af9d3b4f0d7d79ee4fbcfdf6868ec4a74f135cd26bc8e67747466c"
+    },
+    {
+      "path": "sprintf-adapter-probe.json",
+      "sha256": "f7bd0afbefd1c9f880f1c6842efb7293841618205ae4e1b0de55f4ff88c97ef5"
+    },
+    {
+      "path": "katex-probe.json",
+      "sha256": "a00ab3b85a9134b53ce4d82522a9c8deaa0894a9a8c7d30489ca042e1a841004"
+    },
+    {
+      "path": "katex-types.mts",
+      "sha256": "a74f88eabd9ee48500f4447c01e3de49ea98b630166367fb3106ced68a719f48"
+    },
+    {
+      "path": "katex-types.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "katex-types.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "css-probe.json",
+      "sha256": "fe34bb99e44f50c74657207a1d304cb56efd467ac2666240e453f2d02ab7169b"
+    },
+    {
+      "path": "css-corpus-probe.json",
+      "sha256": "7d5ac440bd56534574ae3735901825eb2904c3806711c1635accc40e29d910db"
+    },
+    {
+      "path": "simple-fixes-probe.json",
+      "sha256": "47b7929617b8e36339c097e45f474846f3280a225b6cc46902f995f6dab150d7"
+    },
+    {
+      "path": "audit-path-matrix.json",
+      "sha256": "dd63912cf115db9b30fc858323027a4cc562958e5ea71c2554da5c19e9c4f27f"
+    },
+    {
+      "path": "official-receipt.json",
+      "sha256": "ff58a64953aa475982032c0e3c27dd523c222468177fd7e5efdf428fbb2581ba"
+    },
+    {
+      "path": "followup-receipt.json",
+      "sha256": "03f5a39b9787593e7d6509764450becf17e0e85be1c855c587a1d41dc6791f71"
+    },
+    {
+      "path": "final-fetch-receipt.json",
+      "sha256": "8d6b9cd813df6e066152711d05cbc0775d1b4ab6012a5019c3397525985e98cd"
+    },
+    {
+      "path": "protection-final.json",
+      "sha256": "be119a2b7119d55d3a32a6a1bfcd3ca9b866aef90b3ad19f340ca89e82d0b4b0"
+    },
+    {
+      "path": "js-yaml-cli-design.diff",
+      "sha256": "6aa4b7b5c3512ef4208e0d9eee42870f80bee5be0e129536e879c653c3513994"
+    }
+  ]
+}

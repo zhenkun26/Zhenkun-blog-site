@@ -1,0 +1,24 @@
+✓ Lockfile passes supply-chain policies (verified 1h ago)
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 78, reused 0, downloaded 0, added 0
+Progress: resolved 79, reused 0, downloaded 0, added 0
+Progress: resolved 80, reused 0, downloaded 0, added 0
+Progress: resolved 352, reused 0, downloaded 0, added 0
+Progress: resolved 353, reused 0, downloaded 0, added 0
+Progress: resolved 604, reused 0, downloaded 0, added 0
+Progress: resolved 605, reused 0, downloaded 0, added 0
+Progress: resolved 777, reused 0, downloaded 0, added 0
+Progress: resolved 781, reused 0, downloaded 0, added 0
+Progress: resolved 788, reused 0, downloaded 0, added 0
+Progress: resolved 796, reused 0, downloaded 0, added 0
+Progress: resolved 798, reused 0, downloaded 0, added 0
+Progress: resolved 800, reused 0, downloaded 0, added 0
+Progress: resolved 801, reused 0, downloaded 0, added 0
+Progress: resolved 802, reused 0, downloaded 0, added 0
+[WARN] Request took 15692ms: https://registry.npmjs.org/@img%2Fsharp-libvips-linux-riscv64
+Progress: resolved 803, reused 0, downloaded 0, added 0
+[WARN] 1 deprecated subdependencies found: glob@10.5.0
+Progress: resolved 922, reused 0, downloaded 0, added 0, done
+[WARN] Issues with peer dependencies found. Run "pnpm peers check" to list them.
+
+Done in 28.5s using pnpm v11.22.0

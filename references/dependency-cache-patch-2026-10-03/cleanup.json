@@ -1,0 +1,36 @@
+{
+  "state": "PASS_BOUNDED_PORTS_AND_PREVIEW_LOCK",
+  "ports": [
+    {
+      "port": 56574,
+      "connectExit": 61,
+      "closed": true
+    },
+    {
+      "port": 56584,
+      "connectExit": 61,
+      "closed": true
+    },
+    {
+      "port": 56850,
+      "connectExit": 61,
+      "closed": true
+    },
+    {
+      "port": 57053,
+      "connectExit": 61,
+      "closed": true
+    }
+  ],
+  "previewLockAbsent": true,
+  "previewPids": [
+    32554,
+    32791
+  ],
+  "nativeFixture": "existing test awaits dispose and server close; full native process exit0",
+  "retainedIgnoredSnapshots": [
+    "tmp/cache-artifacts/root",
+    "tmp/cache-artifacts/project"
+  ],
+  "boundary": "No global process scan claim. Ordinary ps query denied by sandbox and not retried. Exact owned preview daemons stopped by official CLI."
+}

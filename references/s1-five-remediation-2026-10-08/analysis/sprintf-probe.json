@@ -1,0 +1,182 @@
+{
+  "node": "v24.20.0",
+  "route": "js-yaml@3.15.2>argparse@2.0.1",
+  "cases": [
+    {
+      "id": "help",
+      "original": {
+        "status": 0,
+        "signal": null,
+        "stdout": "usage: js-yaml [-h] [-v] [-c] [-t] [file]\n\nPositional arguments:\n  file           File to read, utf-8 encoded without BOM\n\nOptional arguments:\n  -h, --help     Show this help message and exit.\n  -v, --version  Show program's version number and exit.\n  -c, --compact  Display errors in compact mode\n  -t, --trace    Show stack trace on error\n",
+        "stderr": ""
+      },
+      "argparse2": {
+        "status": 0,
+        "signal": null,
+        "stdout": "usage: js-yaml [-h] [-v] [-c] [-t] [file]\n\npositional arguments:\n  file           File to read, utf-8 encoded without BOM\n\noptional arguments:\n  -h, --help     show this help message and exit\n  -v, --version  show program's version number and exit\n  -c, --compact  Display errors in compact mode\n  -t, --trace    Show stack trace on error\n",
+        "stderr": ""
+      }
+    },
+    {
+      "id": "version",
+      "original": {
+        "status": 0,
+        "signal": null,
+        "stdout": "3.15.2\n",
+        "stderr": ""
+      },
+      "argparse2": {
+        "status": 0,
+        "signal": null,
+        "stdout": "",
+        "stderr": ""
+      }
+    },
+    {
+      "id": "yaml",
+      "original": {
+        "status": 0,
+        "signal": null,
+        "stdout": "{\n  \"title\": \"中文气象\",\n  \"tags\": [\n    \"天气\",\n    \"科学\"\n  ],\n  \"alias\": [\n    \"天气\",\n    \"科学\"\n  ],\n  \"draft\": true\n}\n",
+        "stderr": ""
+      },
+      "argparse2": {
+        "status": 0,
+        "signal": null,
+        "stdout": "{\n  \"title\": \"中文气象\",\n  \"tags\": [\n    \"天气\",\n    \"科学\"\n  ],\n  \"alias\": [\n    \"天气\",\n    \"科学\"\n  ],\n  \"draft\": true\n}\n",
+        "stderr": "(node:57879) DeprecationWarning: ArgumentParser(): following options are renamed: 'addHelp' -> 'add_help'\n(Use `node --trace-deprecation ...` to show where the warning was created)\n(node:57879) DeprecationWarning: The \"version\" argument to ArgumentParser is deprecated. Please use add_argument(..., { action: 'version', version: 'N', ... }) instead.\n(node:57879) DeprecationWarning: _ActionsContainer.addArgument() is renamed to _ActionsContainer.add_argument()\n(node:57879) DeprecationWarning: use add_argument('-c', '--compact', {...}) instead of add_argument([ '-c', '--compact' ], { ... })\n(node:57879) DeprecationWarning: {action: \"storeTrue\"} is renamed to {action: \"store_true\"}\n(node:57879) DeprecationWarning: use argparse.SUPPRESS instead of argparse.Const.SUPPRESS\n(node:57879) DeprecationWarning: add_argument(): following options are renamed: 'defaultValue' -> 'default'\n(node:57879) DeprecationWarning: ArgumentParser.parseArgs() is renamed to ArgumentParser.parse_args()\n"
+      }
+    },
+    {
+      "id": "json",
+      "original": {
+        "status": 0,
+        "signal": null,
+        "stdout": "title: Ω\ndraft: true\ntags:\n  - 气象\n\n",
+        "stderr": ""
+      },
+      "argparse2": {
+        "status": 0,
+        "signal": null,
+        "stdout": "title: Ω\ndraft: true\ntags:\n  - 气象\n\n",
+        "stderr": "(node:57881) DeprecationWarning: ArgumentParser(): following options are renamed: 'addHelp' -> 'add_help'\n(Use `node --trace-deprecation ...` to show where the warning was created)\n(node:57881) DeprecationWarning: The \"version\" argument to ArgumentParser is deprecated. Please use add_argument(..., { action: 'version', version: 'N', ... }) instead.\n(node:57881) DeprecationWarning: _ActionsContainer.addArgument() is renamed to _ActionsContainer.add_argument()\n(node:57881) DeprecationWarning: use add_argument('-c', '--compact', {...}) instead of add_argument([ '-c', '--compact' ], { ... })\n(node:57881) DeprecationWarning: {action: \"storeTrue\"} is renamed to {action: \"store_true\"}\n(node:57881) DeprecationWarning: use argparse.SUPPRESS instead of argparse.Const.SUPPRESS\n(node:57881) DeprecationWarning: add_argument(): following options are renamed: 'defaultValue' -> 'default'\n(node:57881) DeprecationWarning: ArgumentParser.parseArgs() is renamed to ArgumentParser.parse_args()\n"
+      }
+    },
+    {
+      "id": "multi-doc",
+      "original": {
+        "status": 0,
+        "signal": null,
+        "stdout": "[\n  {\n    \"a\": 1\n  },\n  {\n    \"a\": 2\n  }\n]\n",
+        "stderr": ""
+      },
+      "argparse2": {
+        "status": 0,
+        "signal": null,
+        "stdout": "[\n  {\n    \"a\": 1\n  },\n  {\n    \"a\": 2\n  }\n]\n",
+        "stderr": "(node:57883) DeprecationWarning: ArgumentParser(): following options are renamed: 'addHelp' -> 'add_help'\n(Use `node --trace-deprecation ...` to show where the warning was created)\n(node:57883) DeprecationWarning: The \"version\" argument to ArgumentParser is deprecated. Please use add_argument(..., { action: 'version', version: 'N', ... }) instead.\n(node:57883) DeprecationWarning: _ActionsContainer.addArgument() is renamed to _ActionsContainer.add_argument()\n(node:57883) DeprecationWarning: use add_argument('-c', '--compact', {...}) instead of add_argument([ '-c', '--compact' ], { ... })\n(node:57883) DeprecationWarning: {action: \"storeTrue\"} is renamed to {action: \"store_true\"}\n(node:57883) DeprecationWarning: use argparse.SUPPRESS instead of argparse.Const.SUPPRESS\n(node:57883) DeprecationWarning: add_argument(): following options are renamed: 'defaultValue' -> 'default'\n(node:57883) DeprecationWarning: ArgumentParser.parseArgs() is renamed to ArgumentParser.parse_args()\n"
+      }
+    },
+    {
+      "id": "compact-error",
+      "original": {
+        "status": 1,
+        "signal": null,
+        "stdout": "",
+        "stderr": "YAMLException: unexpected end of the stream within a flow collection\n"
+      },
+      "argparse2": {
+        "status": 1,
+        "signal": null,
+        "stdout": "",
+        "stderr": "(node:57887) DeprecationWarning: ArgumentParser(): following options are renamed: 'addHelp' -> 'add_help'\n(Use `node --trace-deprecation ...` to show where the warning was created)\n(node:57887) DeprecationWarning: The \"version\" argument to ArgumentParser is deprecated. Please use add_argument(..., { action: 'version', version: 'N', ... }) instead.\n(node:57887) DeprecationWarning: _ActionsContainer.addArgument() is renamed to _ActionsContainer.add_argument()\n(node:57887) DeprecationWarning: use add_argument('-c', '--compact', {...}) instead of add_argument([ '-c', '--compact' ], { ... })\n(node:57887) DeprecationWarning: {action: \"storeTrue\"} is renamed to {action: \"store_true\"}\n(node:57887) DeprecationWarning: use argparse.SUPPRESS instead of argparse.Const.SUPPRESS\n(node:57887) DeprecationWarning: add_argument(): following options are renamed: 'defaultValue' -> 'default'\n(node:57887) DeprecationWarning: ArgumentParser.parseArgs() is renamed to ArgumentParser.parse_args()\nYAMLException: unexpected end of the stream within a flow collection\n"
+      }
+    },
+    {
+      "id": "trace-error",
+      "original": {
+        "status": 1,
+        "signal": null,
+        "stdout": "",
+        "stderr": "YAMLException: unexpected end of the stream within a flow collection at line 2, column 1:\n    \n    ^\n    at generateError (<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/lib/js-yaml/loader.js:185:10)\n    at throwError (<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/lib/js-yaml/loader.js:191:9)\n    at readFlowCollection (<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/lib/js-yaml/loader.js:805:3)\n    at composeNode (<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/lib/js-yaml/loader.js:1395:11)\n    at readBlockMapping (<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/lib/js-yaml/loader.js:1124:11)\n    at composeNode (<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/lib/js-yaml/loader.js:1394:12)\n    at readDocument (<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/lib/js-yaml/loader.js:1560:3)\n    at loadDocuments (<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/lib/js-yaml/loader.js:1623:5)\n    at Object.loadAll (<local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/lib/js-yaml/loader.js:1636:19)\n    at <local-home>/Documents/Codex/2026-10-07/task-4/implementation/zhenkun-security-20261007/node_modules/.pnpm/js-yaml@3.15.2/node_modules/js-yaml/bin/js-yaml.js:108:14\n"
+      },
+      "argparse2": {
+        "status": 1,
+        "signal": null,
+        "stdout": "",
+        "stderr": "(node:57889) DeprecationWarning: ArgumentParser(): following options are renamed: 'addHelp' -> 'add_help'\n(Use `node --trace-deprecation ...` to show where the warning was created)\n(node:57889) DeprecationWarning: The \"version\" argument to ArgumentParser is deprecated. Please use add_argument(..., { action: 'version', version: 'N', ... }) instead.\n(node:57889) DeprecationWarning: _ActionsContainer.addArgument() is renamed to _ActionsContainer.add_argument()\n(node:57889) DeprecationWarning: use add_argument('-c', '--compact', {...}) instead of add_argument([ '-c', '--compact' ], { ... })\n(node:57889) DeprecationWarning: {action: \"storeTrue\"} is renamed to {action: \"store_true\"}\n(node:57889) DeprecationWarning: use argparse.SUPPRESS instead of argparse.Const.SUPPRESS\n(node:57889) DeprecationWarning: add_argument(): following options are renamed: 'defaultValue' -> 'default'\n(node:57889) DeprecationWarning: ArgumentParser.parseArgs() is renamed to ArgumentParser.parse_args()\nYAMLException: unexpected end of the stream within a flow collection at line 2, column 1:\n    \n    ^\n    at generateError (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2/lib/js-yaml/loader.js:185:10)\n    at throwError (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2/lib/js-yaml/loader.js:191:9)\n    at readFlowCollection (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2/lib/js-yaml/loader.js:805:3)\n    at composeNode (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2/lib/js-yaml/loader.js:1395:11)\n    at readBlockMapping (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2/lib/js-yaml/loader.js:1124:11)\n    at composeNode (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2/lib/js-yaml/loader.js:1394:12)\n    at readDocument (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2/lib/js-yaml/loader.js:1560:3)\n    at loadDocuments (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2/lib/js-yaml/loader.js:1623:5)\n    at Object.loadAll (<local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2/lib/js-yaml/loader.js:1636:19)\n    at <local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/yaml3-argparse2/bin/js-yaml.js:108:14\n"
+      }
+    },
+    {
+      "id": "unknown-option",
+      "original": {
+        "status": 2,
+        "signal": null,
+        "stdout": "usage: js-yaml [-h] [-v] [-c] [-t] [file]\n",
+        "stderr": "js-yaml: error: Unrecognized arguments: --no-such-option.\n"
+      },
+      "argparse2": {
+        "status": 2,
+        "signal": null,
+        "stdout": "",
+        "stderr": "usage: js-yaml [-h] [-v] [-c] [-t] [file]\njs-yaml: error: unrecognized arguments: --no-such-option\n"
+      }
+    },
+    {
+      "id": "missing-file",
+      "original": {
+        "status": 2,
+        "signal": null,
+        "stdout": "",
+        "stderr": "File not found: <local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/does-not-exist.yaml\n"
+      },
+      "argparse2": {
+        "status": 2,
+        "signal": null,
+        "stdout": "",
+        "stderr": "(node:57893) DeprecationWarning: ArgumentParser(): following options are renamed: 'addHelp' -> 'add_help'\n(Use `node --trace-deprecation ...` to show where the warning was created)\n(node:57893) DeprecationWarning: The \"version\" argument to ArgumentParser is deprecated. Please use add_argument(..., { action: 'version', version: 'N', ... }) instead.\n(node:57893) DeprecationWarning: _ActionsContainer.addArgument() is renamed to _ActionsContainer.add_argument()\n(node:57893) DeprecationWarning: use add_argument('-c', '--compact', {...}) instead of add_argument([ '-c', '--compact' ], { ... })\n(node:57893) DeprecationWarning: {action: \"storeTrue\"} is renamed to {action: \"store_true\"}\n(node:57893) DeprecationWarning: use argparse.SUPPRESS instead of argparse.Const.SUPPRESS\n(node:57893) DeprecationWarning: add_argument(): following options are renamed: 'defaultValue' -> 'default'\n(node:57893) DeprecationWarning: ArgumentParser.parseArgs() is renamed to ArgumentParser.parse_args()\nFile not found: <local-home>/Documents/Codex/2026-10-07/task-4/s1-analysis-20261008/probes/does-not-exist.yaml\n"
+      }
+    },
+    {
+      "id": "deprecated-json",
+      "original": {
+        "status": 0,
+        "signal": null,
+        "stdout": "{\n  \"x\": 1\n}\n",
+        "stderr": ""
+      },
+      "argparse2": {
+        "status": 0,
+        "signal": null,
+        "stdout": "{\n  \"x\": 1\n}\n",
+        "stderr": "(node:57895) DeprecationWarning: ArgumentParser(): following options are renamed: 'addHelp' -> 'add_help'\n(Use `node --trace-deprecation ...` to show where the warning was created)\n(node:57895) DeprecationWarning: The \"version\" argument to ArgumentParser is deprecated. Please use add_argument(..., { action: 'version', version: 'N', ... }) instead.\n(node:57895) DeprecationWarning: _ActionsContainer.addArgument() is renamed to _ActionsContainer.add_argument()\n(node:57895) DeprecationWarning: use add_argument('-c', '--compact', {...}) instead of add_argument([ '-c', '--compact' ], { ... })\n(node:57895) DeprecationWarning: {action: \"storeTrue\"} is renamed to {action: \"store_true\"}\n(node:57895) DeprecationWarning: use argparse.SUPPRESS instead of argparse.Const.SUPPRESS\n(node:57895) DeprecationWarning: add_argument(): following options are renamed: 'defaultValue' -> 'default'\n(node:57895) DeprecationWarning: ArgumentParser.parseArgs() is renamed to ArgumentParser.parse_args()\n"
+      }
+    }
+  ],
+  "oldPrecisionControls": [
+    {
+      "fmt": "%.101f",
+      "error": "RangeError"
+    },
+    {
+      "fmt": "%.101e",
+      "error": "RangeError"
+    },
+    {
+      "fmt": "%.101g",
+      "error": "RangeError"
+    },
+    {
+      "fmt": "%.0g",
+      "error": "RangeError"
+    }
+  ],
+  "remainingSprintfInShadowRequireCache": false,
+  "scope": "isolated copied js-yaml CLI; no package-manager resolution or candidate mutation",
+  "_publicProjection": {
+    "kind": "PUBLIC_PRIVACY_PROJECTION",
+    "originalSha256": "53dada50b2af9d3b4f0d7d79ee4fbcfdf6868ec4a74f135cd26bc8e67747466c",
+    "sourceCandidate": "73070dbb9ec359fbef2dc5cd8bc88cc173c2f6e4",
+    "redactions": "Local machine paths/identities, internal authorization receipt identifiers and private protection data; raw originals retained locally. Statuses, failure results and advisory ranges are not reclassified."
+  }
+}

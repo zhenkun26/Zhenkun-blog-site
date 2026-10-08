@@ -1,0 +1,17 @@
+✓ Lockfile passes supply-chain policies (verified 11h ago)
+Progress: resolved 1, reused 1, downloaded 0, added 0
+Progress: resolved 76, reused 77, downloaded 0, added 0
+Progress: resolved 79, reused 80, downloaded 0, added 0
+Progress: resolved 183, reused 152, downloaded 0, added 0
+Progress: resolved 348, reused 280, downloaded 0, added 0
+Progress: resolved 403, reused 333, downloaded 0, added 0
+Progress: resolved 566, reused 462, downloaded 0, added 0
+Progress: resolved 600, reused 488, downloaded 0, added 0
+Progress: resolved 770, reused 620, downloaded 0, added 0
+Progress: resolved 870, reused 710, downloaded 0, added 0
+Progress: resolved 893, reused 724, downloaded 5, added 0
+[WARN] 1 deprecated subdependencies found: glob@10.5.0
+Packages: -8
+--------
+Progress: resolved 899, reused 730, downloaded 5, added 12, done
+

@@ -1,0 +1,19 @@
+{
+  "newEvidenceHighConfidenceSecretPatterns": [],
+  "onlyOwnedPortsClosed": {
+    "4357": {
+      "errno": 61,
+      "closedConfirmed": true
+    },
+    "4358": {
+      "errno": 61,
+      "closedConfirmed": true
+    },
+    "4359": {
+      "errno": 61,
+      "closedConfirmed": true
+    }
+  },
+  "sourceDiffCheck": 0,
+  "portCheckMethod": "reviewed loopback connect_ex; only ECONNREFUSED establishes closed, sandbox EPERM is not acceptance"
+}

@@ -1,0 +1,86 @@
+{
+  "sourceCommit": "66d8b1ec5d8eac585af69c5dfa74ea6eb9346e5a",
+  "quality": {
+    "name": "Full quality (${{ matrix.base }})",
+    "runs-on": "ubuntu-latest",
+    "timeout-minutes": 20,
+    "strategy": {
+      "fail-fast": false,
+      "matrix": {
+        "base": [
+          "/",
+          "/Zhenkun-blog-site/"
+        ]
+      }
+    },
+    "env": {
+      "DEPLOY_BASE": "${{ matrix.base }}"
+    },
+    "steps": [
+      {
+        "name": "Checkout",
+        "uses": "actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683"
+      },
+      {
+        "name": "Setup Node.js",
+        "uses": "actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e",
+        "with": {
+          "node-version": "24.20.0"
+        }
+      },
+      {
+        "name": "Setup pnpm",
+        "uses": "pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda",
+        "with": {
+          "version": "11.22.0",
+          "run_install": false
+        }
+      },
+      {
+        "name": "Install dependencies",
+        "run": "pnpm install --frozen-lockfile"
+      },
+      {
+        "name": "Check source formatting and lint",
+        "run": "pnpm exec biome ci ./src --reporter=github"
+      },
+      {
+        "name": "Check Astro and content contracts",
+        "run": "pnpm check"
+      },
+      {
+        "name": "Check TypeScript",
+        "run": "pnpm type-check"
+      },
+      {
+        "name": "Run native contract regressions",
+        "run": "node --test scripts/zhenkun-test-*.mjs"
+      },
+      {
+        "name": "Build complete production site and Pagefind",
+        "run": "pnpm build"
+      },
+      {
+        "name": "Verify deployment artifacts and Pagefind",
+        "run": "node scripts/zhenkun-verify-ci-artifacts.mjs --base \"$DEPLOY_BASE\""
+      }
+    ]
+  },
+  "on": {
+    "push": {
+      "branches": [
+        "main"
+      ]
+    },
+    "pull_request": {
+      "branches": [
+        "main"
+      ]
+    },
+    "workflow_call": null
+  },
+  "permissions": {
+    "contents": "read"
+  },
+  "deploySha256": "08a335ca780a65f9f326d32511918bf12d4607fc17b5a33dba3223c2fd3311c0"
+}

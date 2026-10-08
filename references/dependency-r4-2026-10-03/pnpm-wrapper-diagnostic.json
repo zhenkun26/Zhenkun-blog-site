@@ -1,0 +1,6 @@
+{
+  "command": "pnpm exec biome check scripts/zhenkun-security-audit.mjs scripts/zhenkun-security-policy.json --write",
+  "exit": 1,
+  "observed": "Copied install triggered pnpm automatic install check; failed ERR_SQLITE_ERROR unable to open database before formatter ran. No install retry or live audit. Use existing direct installed tool entrypoints for authorized offline checks; not a clean-install claim.",
+  "toolOutputChunk": "dff4ff"
+}

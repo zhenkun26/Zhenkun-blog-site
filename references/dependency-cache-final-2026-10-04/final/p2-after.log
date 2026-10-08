@@ -1,0 +1,11 @@
+✔ P2 nested Astro original generator fails even when root and cache endpoints are patched (379.27375ms)
+✔ P2 nested Astro patched positive control inventories both real instances (339.703834ms)
+✔ P2 nested Astro changed version is rejected even with matching source files (316.071ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1091.507167

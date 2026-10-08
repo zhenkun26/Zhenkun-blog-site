@@ -1,0 +1,24 @@
+{
+  "head": "53b0cb559e6d037b1d6971dc3c4ec4c2051adcc1",
+  "command": [
+    "node",
+    "--test",
+    "scripts/zhenkun-test-astro-cache-generator.mjs",
+    "scripts/zhenkun-test-cache-policy.mjs",
+    "scripts/zhenkun-test-capabilities.mjs",
+    "scripts/zhenkun-test-ci-artifacts.mjs",
+    "scripts/zhenkun-test-deployment.mjs",
+    "scripts/zhenkun-test-nav-menu.mjs",
+    "scripts/zhenkun-test-publication.mjs",
+    "scripts/zhenkun-test-r1-tail.mjs",
+    "scripts/zhenkun-test-r1a-data.mjs",
+    "scripts/zhenkun-test-r1b-uri.mjs",
+    "scripts/zhenkun-test-r2-native.mjs",
+    "scripts/zhenkun-test-search-session.mjs",
+    "scripts/zhenkun-test-security-audit.mjs",
+    "scripts/zhenkun-test-swup-parents.mjs",
+    "scripts/zhenkun-test-unifont.mjs"
+  ],
+  "exitCode": 0,
+  "seconds": 3.924
+}

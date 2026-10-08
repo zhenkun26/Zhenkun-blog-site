@@ -1,0 +1,14 @@
+{
+  "command": [
+    "node",
+    "node_modules/astro/astro.js",
+    "check"
+  ],
+  "environment": {
+    "CF_WORKERS": "unset",
+    "ASTRO_TELEMETRY_DISABLED": "1"
+  },
+  "start": "2026-10-03T16:06:50.209811+00:00",
+  "end": "2026-10-03T16:06:50.234503+00:00",
+  "exit": 1
+}

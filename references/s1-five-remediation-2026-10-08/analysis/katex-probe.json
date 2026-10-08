@@ -1,0 +1,77 @@
+{
+  "node": "v24.20.0",
+  "ignoredInjectedKatexCalls": 0,
+  "comparisons": [
+    {
+      "value": "x^2 + y^2 = z^2",
+      "messages": [
+        0,
+        0
+      ],
+      "sameTree": false
+    },
+    {
+      "value": "\\frac{1}{2}",
+      "messages": [
+        0,
+        0
+      ],
+      "sameTree": false
+    },
+    {
+      "value": "\\sum_{i=0}^n i",
+      "messages": [
+        0,
+        0
+      ],
+      "sameTree": false
+    },
+    {
+      "value": "\\begin{aligned} a&=b\\\\ c&=d\\end{aligned}",
+      "messages": [
+        0,
+        0
+      ],
+      "sameTree": false
+    },
+    {
+      "value": "\\notACommand",
+      "messages": [
+        1,
+        1
+      ],
+      "sameTree": false
+    }
+  ],
+  "trust": [
+    {
+      "version": "0.16.47",
+      "defaultAnchors": 0,
+      "pollutedAnchors": 1,
+      "explicitTrustAnchors": 1
+    },
+    {
+      "version": "0.18.5",
+      "defaultAnchors": 0,
+      "pollutedAnchors": 0,
+      "explicitTrustAnchors": 1
+    }
+  ],
+  "direct": [
+    {
+      "version": "0.16.47",
+      "inheritedAnchor": true,
+      "pollutedDefaultAnchor": false,
+      "pollutedProcessorAnchor": true
+    },
+    {
+      "version": "0.18.5",
+      "inheritedAnchor": false,
+      "pollutedDefaultAnchor": false,
+      "pollutedProcessorAnchor": false
+    }
+  ],
+  "micromarkHtmlUsesNewRenderer": true,
+  "sharedMhchemWorks": true,
+  "scope": "isolated actual parent code and own inert HTML fixtures; no browser insertion or network request; installed root0.18.5 reused"
+}

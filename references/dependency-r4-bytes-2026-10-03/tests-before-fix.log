@@ -1,0 +1,182 @@
+# PUBLIC PRIVACY PROJECTION; original SHA256 699dec14821883d835fad631588005a1da9f85d1bc387f4a232f2f31b0d92908; local raw original retained.
+✖ security bytes: review bytes retained exactly and rejected before JSON interpretation (45.525833ms)
+✖ security bytes: illegal byte inside otherwise parseable JSON retained exactly and rejected before JSON interpretation (44.05525ms)
+✖ security bytes: truncated multibyte sequences retained exactly and rejected before JSON interpretation (44.578ms)
+✖ security bytes: stderr-only malformed byte retained exactly and rejected before JSON interpretation (42.96625ms)
+✖ security bytes: valid multibyte UTF-8 and literal replacement character remain accepted (41.82525ms)
+✖ security bytes: invalid prod still collects and parses valid full independently (44.378291ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 0
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 309.101875
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-security-audit.mjs:682:2
+✖ security bytes: review bytes retained exactly and rejected before JSON interpretation (45.525833ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + Buffer(5) [Uint8Array] [
+  - Buffer(3) [Uint8Array] [
+      49,
+  +   239,
+  +   191,
+  +   189,
+  -   255,
+      10
+    ]
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:688:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.start (node:internal/test_runner/test:1257:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: <Buffer 31 ef bf bd 0a>,
+    expected: <Buffer 31 ff 0a>,
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:682:2
+✖ security bytes: illegal byte inside otherwise parseable JSON retained exactly and rejected before JSON interpretation (44.05525ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+  + Buffer(1056) [Uint8Array] [
+  - Buffer(1054) [Uint8Array] [
+      123,
+      34,
+      97,
+      100,
+      118,
+  ...
+      34,
+  +   239,
+  +   191,
+  +   189,
+  -   255,
+      34,
+      44,
+      34,
+      109,
+      111,
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:688:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: <Buffer 7b 22 61 64 76 69 73 6f 72 69 65 73 22 3a 7b 22 31 32 34 30 39 39 31 22 3a 7b 22 66 69 6e 64 69 6e 67 73 22 3a 5b 7b 22 76 65 72 73 69 6f 6e 22 3a 22 ... 1006 more bytes>,
+    expected: <Buffer 7b 22 61 64 76 69 73 6f 72 69 65 73 22 3a 7b 22 31 32 34 30 39 39 31 22 3a 7b 22 66 69 6e 64 69 6e 67 73 22 3a 5b 7b 22 76 65 72 73 69 6f 6e 22 3a 22 ... 1004 more bytes>,
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:682:2
+✖ security bytes: truncated multibyte sequences retained exactly and rejected before JSON interpretation (44.578ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + Buffer(3) [Uint8Array] [
+  +   239,
+  +   191,
+  +   189
+  - Buffer(2) [Uint8Array] [
+  -   226,
+  -   130
+    ]
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:688:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: <Buffer ef bf bd>,
+    expected: <Buffer e2 82>,
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:682:2
+✖ security bytes: stderr-only malformed byte retained exactly and rejected before JSON interpretation (42.96625ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+  + Buffer(3) [Uint8Array] [
+  +   239,
+  +   191,
+  +   189
+  - Buffer(1) [Uint8Array] [
+  -   254
+    ]
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:689:11)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: <Buffer ef bf bd>,
+    expected: <Buffer fe>,
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:699:1
+✖ security bytes: valid multibyte UTF-8 and literal replacement character remain accepted (41.82525ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  
+  undefined !== []
+  
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:709:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-security-audit.mjs:714:1
+✖ security bytes: invalid prod still collects and parses valid full independently (44.378291ms)
+  AssertionError [ERR_ASSERTION]: [{"code":"Unexpected token '�', \"�\" is not valid JSON","scope":"prod"}]
+      at blocked (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:87:9)
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-03/task/zhenkun-r4/scripts/zhenkun-test-security-audit.mjs:720:2)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

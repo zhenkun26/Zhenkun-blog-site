@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "sourceCommit": "c55990fbdd6e0386c8689e92954520539edf7ae1",
+  "localReportLinks": [
+    "graph-verification.json",
+    "graph-check.mjs",
+    "parent-api-proof.json",
+    "parent-api-check.mjs",
+    "parent-api-proof.json",
+    "native-all.log",
+    "artifact-manifests.json",
+    "http-root.json",
+    "http-project.json",
+    "peers.log",
+    "advisory-reconciliation.json",
+    "protection-final.json",
+    "cleanup.json",
+    "validation-receipt.json",
+    "whitespace-receipt.json"
+  ],
+  "scope": "Peer report local links, exact source hash and evidence manifest verified; app/scripts/CI/R2 boundaries unchanged in protection-final."
+}

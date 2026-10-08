@@ -1,0 +1,22 @@
+{
+  "package.json": {
+    "unchanged": true,
+    "sha256": "d07c65f66bc29e18af0f69ffd7c11c37b87d722cb7f401b93fb9382ceb91decc"
+  },
+  "pnpm-lock.yaml": {
+    "unchanged": true,
+    "sha256": "14462544638481af75e4fb22587bcd143b99cbb3b73b1a01016cd78be888a895"
+  },
+  "pnpm-workspace.yaml": {
+    "unchanged": true,
+    "sha256": "7a8f1cd67a3bca177b0898e65839905d7a8bebf0b9acff51c4a6feddeb31b6fd"
+  },
+  "scripts/patches/astro@7.2.10.patch": {
+    "unchanged": true,
+    "sha256": "e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47"
+  },
+  "scripts/patches/http-cache-semantics@4.2.0.patch": {
+    "unchanged": true,
+    "sha256": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3"
+  }
+}

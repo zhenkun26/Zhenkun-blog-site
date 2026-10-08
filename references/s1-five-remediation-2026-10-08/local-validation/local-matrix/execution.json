@@ -1,0 +1,120 @@
+[
+  {
+    "name": "peers",
+    "command": [
+      "pnpm",
+      "peers",
+      "check"
+    ],
+    "head": "287ca3b6b52b1ba62743751957c2257c944178db",
+    "exitCode": 0,
+    "seconds": 0.206,
+    "finishedAt": "2026-10-08T04:09:00.139928+00:00"
+  },
+  {
+    "name": "biome",
+    "command": [
+      "pnpm",
+      "exec",
+      "biome",
+      "ci",
+      "src",
+      "scripts/zhenkun-security-audit.mjs",
+      "scripts/zhenkun-test-security-audit.mjs",
+      "scripts/zhenkun-security-policy.json",
+      "scripts/zhenkun-cache-remediation.mjs",
+      "scripts/zhenkun-cache-repair-contract.json",
+      "scripts/zhenkun-test-cache-policy.mjs",
+      "scripts/zhenkun-test-astro-cache-generator.mjs",
+      "scripts/zhenkun-five-remediation-graph.mjs",
+      "scripts/zhenkun-test-five-remediation.mjs",
+      "scripts/zhenkun-five-parent-types.mjs"
+    ],
+    "head": "287ca3b6b52b1ba62743751957c2257c944178db",
+    "exitCode": 0,
+    "seconds": 0.293,
+    "finishedAt": "2026-10-08T04:09:00.433851+00:00"
+  },
+  {
+    "name": "astro-check",
+    "command": [
+      "pnpm",
+      "check"
+    ],
+    "head": "287ca3b6b52b1ba62743751957c2257c944178db",
+    "exitCode": 0,
+    "seconds": 14.416,
+    "finishedAt": "2026-10-08T04:09:14.850153+00:00"
+  },
+  {
+    "name": "types",
+    "command": [
+      "pnpm",
+      "type-check"
+    ],
+    "head": "287ca3b6b52b1ba62743751957c2257c944178db",
+    "exitCode": 0,
+    "seconds": 1.742,
+    "finishedAt": "2026-10-08T04:09:16.592209+00:00"
+  },
+  {
+    "name": "strict-parent-types",
+    "command": [
+      "pnpm",
+      "exec",
+      "tsc",
+      "--ignoreConfig",
+      "--noEmit",
+      "--strict",
+      "--module",
+      "NodeNext",
+      "--moduleResolution",
+      "NodeNext",
+      "--target",
+      "ES2022",
+      "scripts/zhenkun-swup-parent-types.ts"
+    ],
+    "head": "287ca3b6b52b1ba62743751957c2257c944178db",
+    "exitCode": 0,
+    "seconds": 0.654,
+    "finishedAt": "2026-10-08T04:09:17.246310+00:00"
+  },
+  {
+    "name": "strict-math-parent-types",
+    "command": [
+      "node",
+      "scripts/zhenkun-five-parent-types.mjs"
+    ],
+    "head": "287ca3b6b52b1ba62743751957c2257c944178db",
+    "exitCode": 0,
+    "seconds": 0.645,
+    "finishedAt": "2026-10-08T04:09:17.892010+00:00"
+  },
+  {
+    "name": "native",
+    "command": [
+      "node",
+      "--test",
+      "scripts/zhenkun-test-astro-cache-generator.mjs",
+      "scripts/zhenkun-test-cache-policy.mjs",
+      "scripts/zhenkun-test-capabilities.mjs",
+      "scripts/zhenkun-test-ci-artifacts.mjs",
+      "scripts/zhenkun-test-deployment.mjs",
+      "scripts/zhenkun-test-five-remediation.mjs",
+      "scripts/zhenkun-test-nav-menu.mjs",
+      "scripts/zhenkun-test-publication.mjs",
+      "scripts/zhenkun-test-r1-tail.mjs",
+      "scripts/zhenkun-test-r1a-data.mjs",
+      "scripts/zhenkun-test-r1b-uri.mjs",
+      "scripts/zhenkun-test-r2-native.mjs",
+      "scripts/zhenkun-test-search-session.mjs",
+      "scripts/zhenkun-test-security-audit.mjs",
+      "scripts/zhenkun-test-swup-parents.mjs",
+      "scripts/zhenkun-test-unifont.mjs"
+    ],
+    "head": "287ca3b6b52b1ba62743751957c2257c944178db",
+    "exitCode": 1,
+    "seconds": 4.844,
+    "finishedAt": "2026-10-08T04:09:22.735801+00:00"
+  }
+]

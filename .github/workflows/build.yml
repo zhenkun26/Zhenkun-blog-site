@@ -66,6 +66,9 @@ jobs:
       - name: Verify deployment artifacts and Pagefind
         run: node scripts/zhenkun-verify-ci-artifacts.mjs --base "$DEPLOY_BASE"
 
+      - name: Audit rendered single-language interfaces
+        run: node scripts/zhenkun-audit-locale-html.mjs
+
   compatibility:
     name: Peer compatibility
     runs-on: ubuntu-latest

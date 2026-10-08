@@ -149,10 +149,11 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
-### S3/S4 continuation — 2026-10-08 — 进行中
+### S3/S4 continuation — 2026-10-08 — 进行中（S4 工程文档已交付）
 
 - **本批范围**：从实际 main `6445ddb` 继续 S4 维护说明，新增 [OPERATIONS](OPERATIONS.md) 并接入 README，校正已接纳双语/文章评论契约说明和公告旧状态；不改变应用、配置、依赖、补丁、工作流或稿件。两处安全截止保持 `2026-10-14T14:27:22Z`。
 - **本地验证完成**：隔离练习改一条中英文 UI、生成安全 draft 配对、解释 `f33ff92 → 57264e7` 的真实 smol-toml/锁修复、提交自身演示再 revert。locale/publication 定向 87/87、revert 后 locale 13/13，原 catalog 字节恢复，样例生产资格/配对拒绝；仅源码层演练，不声称整页/真实稿件/评论/站主学习验收。证据见 [S4 报告](../references/s4-operations-2026-10-08/report.md)。
+- **远端交付完成**：[PR30](https://github.com/zhenkun26/Zhenkun-blog-site/pull/30) 的 head `392951cf` / 测试 merge `04c720bc` / 正常 squash main `c9d356bf` 树一致。PR quality `37756090398` / Biome `37756090458`，main quality `37756588638` / Biome `37756588667` 及 Pages `37756588957` 全部成功；完整质量两 base 各 397/397、0 fail/skip。真实上传产物 274 文件，八个关键线上 HTTP 字节一致，正式两语言文章各 0、Pagefind 仅两篇 About。应用/依赖/测试/工作流相对 S2 部署 `29cde48` 完全一致，保留 S2 GUI 证据，不重复未改 UI 全矩阵。公开投影 [receipt](../references/s4-operations-2026-10-08/receipt.json) 不含本机原始现场/稿件审核包；本次文档收据可使 main 更新于部署 c9d356bf，但不扩展到新源码 CI 或人类验收。
 - **S3 实际断点**：giscus wrapper 已传页面语言与共享 term，文章 query 不覆盖派生身份；只读 GitHub 查询讨论数为 0。首稿仍 draft:true 且字节不变、无英文稿，旧名称/日期/分类需站主审阅。三方向在 About 有说明，首页尚无明确三方向展示，不能把 SEO keywords 或零文章分类栏当成已完成首页入口；小批信息组织仍属后续 S3，Logo/大改视觉不推进。
 - **最小人类验收**：站主按手册阅读两个首页并跟做一次本地改动/revert；审阅具体首稿版本与附件/URL/译文范围。真实 giscus 加载、访客/失败/线程和发送持久性在获批文章上另验；本轮未发评论/邮件或改 OAuth/权限，不用隔离模拟替代真实提交。
 

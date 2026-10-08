@@ -1,0 +1,56 @@
+{
+  "status": "ENGINEERING_DOCUMENTATION_DELIVERED",
+  "base": "6445ddb40012eed1d51b0d12de6c24b451b64c3e",
+  "pr": "https://github.com/zhenkun26/Zhenkun-blog-site/pull/30",
+  "head": "392951cf18cf104f3d0790c80c7f6099d03af624",
+  "testedMerge": "04c720bc21262447b0ad39e01347fb40c437f415",
+  "deployedSource": "c9d356bf7e060a35ec5e0cc3913b3d77f1829685",
+  "ci": {
+    "prQuality": 37756090398,
+    "prBiome": 37756090458,
+    "mainQuality": 37756588638,
+    "mainBiome": 37756588667,
+    "pages": 37756588957,
+    "all": "success",
+    "fullQualityPerBase": {
+      "passed": 397,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "localExercises": {
+    "localePublication": {
+      "passed": 87,
+      "failed": 0,
+      "skipped": 0
+    },
+    "revertLocale": {
+      "passed": 13,
+      "failed": 0,
+      "skipped": 0
+    },
+    "catalogBytesRestored": true,
+    "syntheticDraftsUploaded": false,
+    "scope": "source contracts, no owner GUI exercise"
+  },
+  "uploadedArtifactFiles": 274,
+  "actualHTTPResponses": 8,
+  "allHTTPByteEqualUploadedArtifact": true,
+  "transportFailuresOrMismatch": 0,
+  "formalChineseArticles": 0,
+  "formalEnglishArticles": 0,
+  "pagefindPages": 2,
+  "applicationDependencyTestWorkflowChanges": [],
+  "boundarySha256": "78a23881fc7d4b1bdcfe8f69b735e5e2edbe560ec86c1ec7395102a74c0dc1dd",
+  "bothReviewDeadlines": "2026-10-14T14:27:22.000Z",
+  "originalProtection": "PASS",
+  "newBrowserOrPreviewStarted": false,
+  "privateManuscriptPacketUploaded": false,
+  "ownerLearningAcceptance": "NOT_RUN",
+  "manuscriptPublication": "NOT_RUN",
+  "realCommentSubmission": "NOT_RUN",
+  "remainingHomepageDirections": "separate S3 information organization",
+  "measurementAt": "2026-10-08T09:31:50.218461+00:00",
+  "privacy": "public-safe receipt projection; local machine logs, helper paths and review packet retained locally",
+  "documentationReceipt": "may make main newer than deployedSource; executable source equivalence must remain exact"
+}

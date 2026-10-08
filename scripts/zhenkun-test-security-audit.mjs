@@ -874,7 +874,11 @@ test("security workflow: independent quality/peer/security jobs, immutable actio
 			"",
 		].join("\n"),
 	});
-	// Preserve the complete original quality job, plus only this exact gate.
+	expectedQuality.steps.push({
+		name: "Audit rendered single-language interfaces",
+		run: "node scripts/zhenkun-audit-locale-html.mjs",
+	});
+	// Preserve the complete original job plus the two exact additional gates.
 	assert.deepEqual(workflow.jobs.quality, expectedQuality);
 	assert.deepEqual(workflow.permissions, { contents: "read" });
 	assert.deepEqual(workflow.on, baseline.on);

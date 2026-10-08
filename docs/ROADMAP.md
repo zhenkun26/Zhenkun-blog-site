@@ -149,18 +149,19 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
-### S3 homepage directions — 2026-10-08 — 进行中
+### S3 homepage directions — 2026-10-08 — 完成（工程范围；余项人类验收）
 
 - **范围**：从实际 main `7a32c903` 补首页首屏的 AI / 大气科学 / 生活随笔说明；英文 AI / Atmospheric Science / Life Notes。共享首页读取现有双语 catalog 的 typed 数据，复用卡片/字体颜色和响应式 grid。保留施工提示、品牌/作者 Zhenkun、原内容列表/空态；不创造文章、数量、过滤链接或专业身份。
-- **本地门完成**：测量源 `d742d0b`，Astro 0 error/warning、15 existing hints；类型、Biome、native 397/397 通过。正式 root/Pages base 完整构建、artifact verifier、各16页面语言审计通过，正式文章仍两语言各0、搜索仅两篇About。用户 Mac 原生 headed Edge 各base八个首页状态确认三列/单列、明暗/无溢出、语义方向说明与键盘About/Swup返回/原生语言导航，0 runtime exception；截图已查看，手机是390px模拟。四个源文件静态差异经审查后仅改绑定hash，实际八父链/两cache/一Astro实例相符；保留dirty-HEAD拒绝，干净提交的真实时钟live gate有效PASS、raw两份各1high，两处截止未扩。证据见 [报告](../references/s3-home-directions-2026-10-08/report.md) / [收据](../references/s3-home-directions-2026-10-08/local-receipt.json)。精确 draft PR/main CI 与 Pages/真实部署仍待完成，不用本地PASS代替。
+- **本地门完成**：测量源 `d742d0b`，Astro 0 error/warning、15 existing hints；类型、Biome、native 397/397 通过。正式 root/Pages base 完整构建、artifact verifier、各16页面语言审计通过，正式文章仍两语言各0、搜索仅两篇About。用户 Mac 原生 headed Edge 各base八个首页状态确认三列/单列、明暗/无溢出、语义方向说明与键盘About/Swup返回/原生语言导航，0 runtime exception；截图已查看，手机是390px模拟。四个源文件静态差异经审查后仅改绑定hash，实际八父链/两cache/一Astro实例相符；保留dirty-HEAD拒绝，干净提交的真实时钟live gate有效PASS、raw两份各1high，两处截止未扩。证据见 [报告](../references/s3-home-directions-2026-10-08/report.md) / [本地收据](../references/s3-home-directions-2026-10-08/local-receipt.json)。
+- **远端/生产门完成**：[PR31](https://github.com/zhenkun26/Zhenkun-blog-site/pull/31) 按 draft→五项精确检查通过→ready→正常 squash merge，公开 head `4fa052d`、tested merge `ddfac07`、已部署 main `b2bbca9` 的完整树相同。PR quality/Biome `37762023252` / `37762023342`，main quality/Biome `37762670530` / `37762670506`，Pages `37762670897` 全部 success。实际上传 artifact `11542653919` 274文件，八个关键生产响应均首次200且逐字节相符；实际生产 GUI 八个首页状态与键盘/Swup/原生语言导航通过，0 runtime exception，已查看桌面/手机模拟截图；自有浏览器/端口关闭。公开 [交付收据](../references/s3-home-directions-2026-10-08/delivery-receipt.json) 与报告记录精确来源。后续仅 docs/evidence 收据走已授权正常 draft PR/CI/merge 流程；上述精确CI仍只归属其实际执行提交，新文档CI另记。
 - **保持的边界**：依赖/lock/patch/工作流/配置/草稿/评论服务与两个 `2026-10-14T14:27:22Z` 截止不变。首稿的私有审核材料另交站主；未批准正文/附件/英文稿，不发布文章或发送评论。此小批完成后，余项仅站主体验/跟做、首稿审核与真实评论，不新增工程需求。
 
-### S3/S4 continuation — 2026-10-08 — 进行中（S4 工程文档已交付）
+### S3/S4 continuation — 2026-10-08 — 完成（S4 工程文档；当时 S3 断点保留）
 
 - **本批范围**：从实际 main `6445ddb` 继续 S4 维护说明，新增 [OPERATIONS](OPERATIONS.md) 并接入 README，校正已接纳双语/文章评论契约说明和公告旧状态；不改变应用、配置、依赖、补丁、工作流或稿件。两处安全截止保持 `2026-10-14T14:27:22Z`。
 - **本地验证完成**：隔离练习改一条中英文 UI、生成安全 draft 配对、解释 `f33ff92 → 57264e7` 的真实 smol-toml/锁修复、提交自身演示再 revert。locale/publication 定向 87/87、revert 后 locale 13/13，原 catalog 字节恢复，样例生产资格/配对拒绝；仅源码层演练，不声称整页/真实稿件/评论/站主学习验收。证据见 [S4 报告](../references/s4-operations-2026-10-08/report.md)。
 - **远端交付完成**：[PR30](https://github.com/zhenkun26/Zhenkun-blog-site/pull/30) 的 head `392951cf` / 测试 merge `04c720bc` / 正常 squash main `c9d356bf` 树一致。PR quality `37756090398` / Biome `37756090458`，main quality `37756588638` / Biome `37756588667` 及 Pages `37756588957` 全部成功；完整质量两 base 各 397/397、0 fail/skip。真实上传产物 274 文件，八个关键线上 HTTP 字节一致，正式两语言文章各 0、Pagefind 仅两篇 About。应用/依赖/测试/工作流相对 S2 部署 `29cde48` 完全一致，保留 S2 GUI 证据，不重复未改 UI 全矩阵。公开投影 [receipt](../references/s4-operations-2026-10-08/receipt.json) 不含本机原始现场/稿件审核包；本次文档收据可使 main 更新于部署 c9d356bf，但不扩展到新源码 CI 或人类验收。
-- **S3 实际断点**：giscus wrapper 已传页面语言与共享 term，文章 query 不覆盖派生身份；只读 GitHub 查询讨论数为 0。首稿仍 draft:true 且字节不变、无英文稿，旧名称/日期/分类需站主审阅。三方向在 About 有说明，首页尚无明确三方向展示，不能把 SEO keywords 或零文章分类栏当成已完成首页入口；小批信息组织仍属后续 S3，Logo/大改视觉不推进。
+- **S3 当时断点**：giscus wrapper 已传页面语言与共享 term，文章 query 不覆盖派生身份；只读 GitHub 查询讨论数为 0。首稿仍 draft:true 且字节不变、无英文稿，旧名称/日期/分类需站主审阅。当时三方向只在 About 有说明，首页尚无明确展示；此首页断点现已由上方 S3/PR31 完成，历史零文章分类栏不作为入口完成证据。Logo/大改视觉不推进。
 - **最小人类验收**：站主按手册阅读两个首页并跟做一次本地改动/revert；审阅具体首稿版本与附件/URL/译文范围。真实 giscus 加载、访客/失败/线程和发送持久性在获批文章上另验；本轮未发评论/邮件或改 OAuth/权限，不用隔离模拟替代真实提交。
 
 ### S2 bilingual integration — 2026-10-08 — COMPLETE (PR28/29 / Pages)

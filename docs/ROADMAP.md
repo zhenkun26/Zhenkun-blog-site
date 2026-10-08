@@ -1,7 +1,7 @@
 > Historical local path references below were privacy-projected for publication; original hashes remain in publication-projection.json. Current delivery state is independently updated from actual CI/Pages receipts.
 # Zhenkun-blog-site 路线图（单一任务状态源）
 
-> 规则：任务状态只有 未开始 / 进行中 / 完成（完成必须附验证证据）。每次会话结束更新本文件；跨会话恢复先读本文件。当前断点见文末。
+> 规则：任务状态只有 未开始 / 进行中 / 完成（完成必须附验证证据）。每次会话结束更新本文件；跨会话恢复先读本文件。见“当前断点”一节，最新记录在前，旧记录保留为历史。
 
 ## M1 MVP —— Firefly 底座本地跑通（已完成）
 
@@ -29,7 +29,7 @@
 - [ ] 侧边栏：sidebarConfig（组件取舍）
 - [x] 页面开关：友链 / 留言板 / 动态 / 相册 / 书签导航 / 打赏 全部关闭（导航自动隐藏；上游推广菜单已移除，保留 MIT 署名）。2026-10-01 审查确认 Pages 产物是 HTTP 200 HTML 跳转占位页，当时跳转错误指向站外根路径；P2 修正候选与当前 G1 接纳范围见 M8
 - [x] 评论系统选型：giscus，已按 ADR-XB-005 配置；首篇文章发布后的真实评论交互仍待验收
-- [ ] 公告栏演示文案替换或关闭（announcementConfig.ts，侧栏"欢迎来到我的博客！这是一则示例公告"）——M2 遗留小项，可与 M4 一起处理
+- [x] 公告栏演示文案已替换；PR23 将施工提示放首页并关闭侧栏重复公告，S2 按页面语言显示。2026-10-08 再读当前配置/组件确认，保留施工提示；此条修正旧状态，不新增视觉改动。
 
 验收标准：改动后 `pnpm check` + dev 渲染正常，每项独立可回退。
 
@@ -142,12 +142,19 @@ The local-acceptance entries below retain their original scope and commit eviden
 | 2 静态 | 格式/改动范围、TypeScript/Astro、发布/URL/生命周期契约回归 | 适用检查无错误；现存 hints 逐项分级，不写成“零问题”。本次发布 fresh 151/151 原生回归、全源 Biome、精确 TypeScript 与 Astro 检查 PASS；其他旧日志按 SHA 保留为历史证据。 |
 | 3 完整构建 | `/` 与 `/Zhenkun-blog-site/` | 使用正式完整脚本链，包含生成步骤、Astro 与 Pagefind；不能用单独 astro build 代替。 |
 | 4 产物 | URL、公开资格、RSS/sitemap/robots、OG/图片及本地 HTTP | 无重复 base/错误 origin；仅合格内容入索引；OG 1200×630；草稿/关闭项负向断言。HTTP 状态、404 内容和 meta refresh 分开检查，不把当前 HTTP 200 stub 当真 404；不写死 sitemap 项数。 |
-| 5 交互 | 搜索、菜单、主题/导航 | 首次/重复/并发/清空/失败/退出、键盘与窄屏、SPA 往返均有实际浏览器证据；Chrome、Edge、手机模拟/实体设备及 viewport/version 分开记录。双语矩阵待 P8 调查决策后确定。 |
-| 6 发布门 | 独立复核、批准、远端精确 SHA/必需检查、部署后真实 URL | 本地接纳/已复核/批准/已发布分别记录；G3/G4 齐全才发布，检查线上响应/资源。本次38项候选已按明确授权完成精确 PR/main CI、部署产物和线上 HTTP/GUI 验收；不扩展为双语候选或真实文章/评论接纳。 |
+| 5 交互 | 搜索、菜单、主题/导航 | 首次/重复/并发/清空/失败/退出、键盘与窄屏、SPA 往返均有实际浏览器证据；Chrome、Edge、手机模拟/实体设备及 viewport/version 分开记录。S2 的已执行双语矩阵见最新交付，真实文章/评论和实体手机另验。 |
+| 6 发布门 | 实施自查、Auto-review 操作审批、远端精确 SHA/必需检查、部署后真实 URL | 工程发布沿当前已授范围，精确新 head CI 与 Pages/真实 URL 仍需证据；不设置例行额外 reviewer，复杂/多轮失败才有界升级。稿件/附件公开、真实评论发送和权限改变分别决定，不能由工程检查代替。 |
 
 两种 base 都检查：首页/公开样例/静态资源/canonical/OG/feed 的正向 URL；草稿、禁用模块、同名 Wiki、私有 metadata/附件的负向边界；RSS 日期/robots/sitemap/图像字节；慢网、缺资源、旧查询、重复监听、焦点与滚动锁。真实库目前只有一篇 draft、零公开文章；获准 synthetic 样例的证据不得代替真实文章/评论验收。
 
 ## 当前断点
+
+### S3/S4 continuation — 2026-10-08 — 进行中
+
+- **本批范围**：从实际 main `6445ddb` 继续 S4 维护说明，新增 [OPERATIONS](OPERATIONS.md) 并接入 README，校正已接纳双语/文章评论契约说明和公告旧状态；不改变应用、配置、依赖、补丁、工作流或稿件。两处安全截止保持 `2026-10-14T14:27:22Z`。
+- **本地验证完成**：隔离练习改一条中英文 UI、生成安全 draft 配对、解释 `f33ff92 → 57264e7` 的真实 smol-toml/锁修复、提交自身演示再 revert。locale/publication 定向 87/87、revert 后 locale 13/13，原 catalog 字节恢复，样例生产资格/配对拒绝；仅源码层演练，不声称整页/真实稿件/评论/站主学习验收。证据见 [S4 报告](../references/s4-operations-2026-10-08/report.md)。
+- **S3 实际断点**：giscus wrapper 已传页面语言与共享 term，文章 query 不覆盖派生身份；只读 GitHub 查询讨论数为 0。首稿仍 draft:true 且字节不变、无英文稿，旧名称/日期/分类需站主审阅。三方向在 About 有说明，首页尚无明确三方向展示，不能把 SEO keywords 或零文章分类栏当成已完成首页入口；小批信息组织仍属后续 S3，Logo/大改视觉不推进。
+- **最小人类验收**：站主按手册阅读两个首页并跟做一次本地改动/revert；审阅具体首稿版本与附件/URL/译文范围。真实 giscus 加载、访客/失败/线程和发送持久性在获批文章上另验；本轮未发评论/邮件或改 OAuth/权限，不用隔离模拟替代真实提交。
 
 ### S2 bilingual integration — 2026-10-08 — COMPLETE (PR28/29 / Pages)
 

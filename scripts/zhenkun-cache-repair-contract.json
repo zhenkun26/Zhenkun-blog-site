@@ -6,24 +6,24 @@
 		"cve": "3978aaaa849d764766e0bdd6e22ead35ca234f7c8729fe569575db10c0e037c7",
 		"latest": "989dbda5d00cc99697648ac16755c0f3afc73ce2e1f478e54a476838a70a7746"
 	},
-	"ledgerSha256": "72ecffba9b8d4c3092ee68da0d0cdfb57066bee8090ec9abedb6bb39325ed649",
-	"patchesSha256": "6f77af3b69dcbc44ec8e2b14c60d16053938ecf7808a3b79ad9fc5a039f4db7c",
-	"boundarySha256": "065c3798d3bbfbe3aa5b59cbef0771d34548c0bbf68c55e6db37965b998847c2",
+	"ledgerSha256": "f43b79df97172c7cc75c7d1803f908b89323d546c8192d128ab347aca54723f5",
+	"patchesSha256": "cf70e890cb30dcd04a7fbdbbae2ba00359fcfcb777d7455643e64fa52a384c00",
+	"boundarySha256": "b95e8682bd2e844a21589a20e6e6ee18490c650e31137a52bbb3137e9dd2af90",
 	"testFiles": {
-		"scripts/zhenkun-test-cache-policy.mjs": "a71c65964bd02257793339bce64832b7b3ecaad2e78e9f2965506d8c4dd5e850",
-		"scripts/zhenkun-test-astro-cache-generator.mjs": "614943f8c8a28dc84a9baaacbdfe0b2e93f4facda36792f4686e4ae37dcc1c70",
+		"scripts/zhenkun-test-cache-policy.mjs": "a444c0a5ba41a162f596e01efa0f6d214d891b917b356b9bf5018cff535231fa",
+		"scripts/zhenkun-test-astro-cache-generator.mjs": "8ba8725c8b6b9e5cb69ec8a8b48c04a1b04249f4f5f188d91d89fcb9d30f7508",
 		"references/dependency-cache-patch-2026-10-03/verified-official-baseline.cjs": "01b7d66c854b2fe53ac05c98feb6e0d64722ab8898a778e2d2426a8b468d178f",
-		"references/dependency-cache-final-2026-10-04/astro-generator-official.js": "d35fda4e0a924ab0034f2c43983ccad4a7918667333fe381f355f057d9cb20db"
+		"references/security-review-2026-10-20/astro-generator-official-7.3.3.js": "564b12c0c9aa83d573c84bd2433ee1d6b35f2f521cd803fe31c2d214cf02b30e"
 	},
 	"astroFiles": {
-		"assets/build/generate.js": "4a1d2ab3527330f97bfe77ab86c091ccaaab06a93fee02b466eee2ad149e33d8",
+		"assets/build/generate.js": "0c5e9af63d305b14ad3135eaaac12c79c165f511d9c6403a7c1371523d0193ac",
 		"assets/build/remote.js": "f373fa76e3112446db327c79b34e2bbb1ef1dcad41affb60788adf30edc9588e",
 		"assets/utils/redirectValidation.js": "1c142b4b5042e87fa644a75245af8e8938ea2fd8d8bbfd28180f8ffdccefa688",
-		"assets/internal.js": "c4e3b53849a8294c3ff0e60c6fb0191570c7b6d6455f1a04bd4f3e3d37074c3b"
+		"assets/internal.js": "96c23b64b24aab0a606e193ac19e634b4610e18d2f9cae6a0c5b2a0acde4864c"
 	},
 	"parents": [
 		{
-			"owner": "astro@7.2.10(patch_hash=e57c87dc38b486c1a42a92bbb48830822df8218f0d27887bf856c2a9980d2d47)(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
+			"owner": "astro@7.3.3(patch_hash=f34e6ed1f3b6210f3a3dc0d502fccc901f3981c20a66bc020337548efb7a583e)(@astrojs/markdown-remark@7.3.0(supports-color@10.2.2))(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.4.1)(jiti@2.7.0)(stylus@0.64.0(supports-color@10.2.2))(terser@5.50.0)(tsx@4.23.13)(yaml@2.9.0)",
 			"name": "http-cache-semantics",
 			"version": "4.2.0(patch_hash=64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3)"
 		}
@@ -57,7 +57,7 @@
 	},
 	"installedVersions": {
 		"http-cache-semantics": "4.2.0",
-		"astro": "7.2.10"
+		"astro": "7.3.3"
 	},
 	"reviewedUpstream": {
 		"package": "http-cache-semantics",
@@ -65,10 +65,10 @@
 		"integrity": "sha512-M5t5LlJpS1UHMjvwRQVdFHvPISGeLAxNcrWuJkeGh0KxsqCHZ1O3NXZU/8x7cD0BDcGW8kapxMKTvwlqrNkHkA==",
 		"tarball": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.3.0.tgz",
 		"sourceSha256": "ede1cc404a492fa348eb9d97a3007a0d72aa717bd22cd86a56bd0824c19729ca",
-		"reviewedAt": "2026-10-13T12:22:05.000Z",
-		"reviewBy": "2026-10-20T12:22:05.000Z",
-		"reviewedBy": "Implementation self-check2026-10-13: current official-source, frozen graph, actual installed-parent and behavior refresh; prior independent review remains historical evidence",
+		"reviewedAt": "2026-10-20T06:27:50.000Z",
+		"reviewBy": "2026-10-27T06:27:50.000Z",
+		"reviewedBy": "Implementation self-check2026-10-20: current43GHSA/publisherCVE, coordinated minimal Astro/MDX graph, actual installed parents and same-run behavior/official counterexamples; prior independent review remains historical",
 		"decision": "retain-reviewed-local-patches",
-		"reason": "Current41GHSA and publisher CVE scope, all three exact primary projections, official4.3.0 integrity/full source and the unchanged frozen graph support retaining the approved local cache4.2.0/Astro7.2.10 patches. Actual eight parent paths, two cache links, one Astro instance and all three installed patch identities match. Fresh62 cache/parent positives, four official counterexamples, original generator15expected failures/2controls and same-run live gate pass while raw prod/full each retain1high/exit1. Latest Astro parent was only read, not installed or executed; no dependency upgrade is part of this bounded decision. This new candidate still requires its own current-clock live proof and exact quality/CI acceptance."
+		"reason": "Substantive repair replaces vulnerable Astro7.2.10 with exact7.3.3 and coordinated MDX8.0.1/satteri0.4.1; ledger adds two repository-only advisories. Fresh41retainedGHSA/publisherCVE semantics and all three primary records agree; official cache4.3.0 integrity/full source unchanged. New892packages/895snapshots/28guards retain every prior applicable guard and exact cache/yaml patches. Actual eight parent paths/three cache links/one7.3.3Astro match. New408native/0skip, 11render controls (old7.2.10:8expected failures/3controls),62cache tests/four official controls/six frozen negatives and7.3.3official generator15expected failures/2controls pass. Both complete builds/Pagefind/artifact/locale and types/peers pass. Clean77e2e4c live gate independently collects rawprod/full each1high/exit1 and proves both cache identities with no unresolved/blocked. Retain necessary cache patches; exact final candidate and remote gates still required."
 	}
 }

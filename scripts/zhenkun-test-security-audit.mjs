@@ -128,9 +128,9 @@ test("security: valid empty audits and no known affected versions pass", () => {
 	assert.equal(result.raw.full.recordCount, 0);
 	assert.deepEqual(result.effective.knownAffected, []);
 });
-test("security: known42 ledger includes verified aliases and preserves CVE93750 source disagreement", () => {
+test("security: known44 ledger includes verified aliases and preserves CVE93750 source disagreement", () => {
 	const aliases = validatePolicy(policy, semver, now());
-	assert.equal(policy.knownAdvisories.length, 42);
+	assert.equal(policy.knownAdvisories.length, 44);
 	assert.equal(aliases.get("CVE-2026-93748").id, "GHSA-ch52-4w7c-c8xp");
 	const row = aliases.get("CVE-2026-93750");
 	assert.equal(row.severity, "high");
@@ -142,6 +142,16 @@ test("security: known42 ledger includes verified aliases and preserves CVE93750 
 		],
 	);
 });
+for (const version of ["7.2.10", "7.3.3"]) {
+	test(`security: repository-only Astro advisories enforce installed ${version} despite absent npm records`, () => {
+		const result = verdict({ versions: { astro: [version] } });
+		assert.equal(result.raw.full.recordCount, 0);
+		const ids = result.effective.knownAffected.map((row) => row.id);
+		for (const id of ["GHSA-98hj-9722-w3j8", "GHSA-mpr7-6m5w-76rw"])
+			assert.equal(ids.includes(id), version === "7.2.10");
+		assert.equal(result.state, version === "7.2.10" ? "FAIL" : "PASS");
+	});
+}
 for (const severity of ["info", "low", "moderate", "high", "critical"]) {
 	test(`security: every raw ${severity} finding blocks without a severity downgrade`, () => {
 		const row = { ...clone(original), severity };
@@ -1060,7 +1070,7 @@ test("repair inspection: ledger and expected installed hashes cannot silently ch
 		/REPAIR_LEDGER_CHANGED/,
 	);
 	const q = clone(policy);
-	q.expectedPatches["astro@7.2.10"].installedSourceSha256 = "0".repeat(64);
+	q.expectedPatches["astro@7.3.3"].installedSourceSha256 = "0".repeat(64);
 	assert.throws(
 		() => inspectCacheBoundary(cwd, q, {}),
 		/REPAIR_PATCH_POLICY_CHANGED/,
@@ -1266,7 +1276,7 @@ function nestedAstroFixture(t) {
 	writeFileSync(join(mdx, "index.cjs"), "// resolution-only owned fixture\n");
 	writeFileSync(
 		join(nested, "package.json"),
-		JSON.stringify({ name: "astro", version: "7.2.10", main: "dist/index.js" }),
+		JSON.stringify({ name: "astro", version: "7.3.3", main: "dist/index.js" }),
 	);
 	writeFileSync(
 		join(nested, "dist/index.js"),
@@ -1294,7 +1304,7 @@ function nestedAstroFixture(t) {
 test("P2 nested Astro original generator fails even when root and cache endpoints are patched", (t) => {
 	const { dir, nested } = nestedAstroFixture(t);
 	copyFileSync(
-		"references/dependency-cache-final-2026-10-04/astro-generator-official.js",
+		"references/security-review-2026-10-20/astro-generator-official-7.3.3.js",
 		join(nested, "dist/assets/build/generate.js"),
 	);
 	assert.throws(
@@ -1314,7 +1324,7 @@ test("P2 nested Astro patched positive control inventories both real instances",
 		),
 	);
 	for (const instance of result.astroInstances)
-		assert.equal(instance.version, "7.2.10");
+		assert.equal(instance.version, "7.3.3");
 });
 test("P2 nested Astro changed version is rejected even with matching source files", (t) => {
 	const { dir, nested } = nestedAstroFixture(t);

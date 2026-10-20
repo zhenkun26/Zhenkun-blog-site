@@ -65,7 +65,7 @@ export function validatePolicy(policy, semver, now = new Date()) {
 	demand(text(policy.owner) && text(policy.scope), "POLICY_PROVENANCE");
 	demand(
 		Array.isArray(policy.knownAdvisories) &&
-			policy.knownAdvisories.length >= 42,
+			policy.knownAdvisories.length >= 44,
 		"POLICY_LEDGER_INCOMPLETE",
 	);
 	const aliases = new Map();
@@ -121,7 +121,7 @@ export function validatePolicy(policy, semver, now = new Date()) {
 		);
 		demand(
 			patch.sourceRelative === undefined ||
-				(key === "astro@7.2.10" &&
+				(key === "astro@7.3.3" &&
 					patch.sourceRelative === "assets/build/generate.js") ||
 				(key === "js-yaml@3.15.2" &&
 					patch.parent === "gray-matter" &&
@@ -551,7 +551,7 @@ export function snapshot(cwd) {
 		POLICY,
 		"scripts/zhenkun-security-audit.mjs",
 		"scripts/patches/http-cache-semantics@4.2.0.patch",
-		"scripts/patches/astro@7.2.10.patch",
+		"scripts/patches/astro@7.3.3.patch",
 		"scripts/zhenkun-cache-remediation.mjs",
 		contractPath,
 		"scripts/zhenkun-test-cache-policy.mjs",

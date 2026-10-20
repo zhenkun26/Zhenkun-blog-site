@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "executionMode": "LIVE",
+  "registry": "https://registry.npmjs.org",
+  "node": "v24.20.0",
+  "expectedHead": null,
+  "startedAt": "2026-10-20T06:26:39.750Z",
+  "before": {
+    "head": "77e2e4c51064ee93184338b2f0b70b75edaa8472",
+    "trackedDirty": false,
+    "files": {
+      "package.json": "cb4c1a4994d88e75dfd5b6c8adb0e1d8c4d424589b33064ec3448e9c67777824",
+      "pnpm-lock.yaml": "28f3aa1279f2b8764a4b344b7e682b5bb1354c10fc3fc4c9355acb185a369fcf",
+      "pnpm-workspace.yaml": "b2e9cc10b49ac3dba8c912340a5dfdcf33cb4afd79e9c03dfcee91c018af3152",
+      "scripts/zhenkun-security-policy.json": "9709de2490d973636a1eead590fe31ebf73b5238668e312ed89ea4a28c976d25",
+      "scripts/zhenkun-security-audit.mjs": "9f7db4f74a663290d5ec347868c7b4ec2be5df805a2f308d136a674f5b2463ca",
+      "scripts/patches/http-cache-semantics@4.2.0.patch": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3",
+      "scripts/patches/astro@7.3.3.patch": "f34e6ed1f3b6210f3a3dc0d502fccc901f3981c20a66bc020337548efb7a583e",
+      "scripts/zhenkun-cache-remediation.mjs": "1336d32f89d1f72601f764cc997bfb0dae9900497f13a2a1dcf05685a448f158",
+      "scripts/zhenkun-cache-repair-contract.json": "ee3557e4bd8b4756108b0743448d881650139246ae706aebb23654fa5f2dd3f8",
+      "scripts/zhenkun-test-cache-policy.mjs": "a444c0a5ba41a162f596e01efa0f6d214d891b917b356b9bf5018cff535231fa",
+      "scripts/zhenkun-test-astro-cache-generator.mjs": "8ba8725c8b6b9e5cb69ec8a8b48c04a1b04249f4f5f188d91d89fcb9d30f7508"
+    }
+  },
+  "captures": {
+    "prod": {
+      "command": [
+        "pnpm",
+        "audit",
+        "--prod",
+        "--registry=https://registry.npmjs.org",
+        "--json"
+      ],
+      "startedAt": "2026-10-20T06:26:39.753Z",
+      "endedAt": "2026-10-20T06:26:42.172Z",
+      "exitCode": 1,
+      "signal": null,
+      "error": null,
+      "stdoutSha256": "02b64d06bf153ee7b447a79f3f0c27e6acb668bb899181f7c2a6ebfc6efde107",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decodingErrors": []
+    },
+    "full": {
+      "command": [
+        "pnpm",
+        "audit",
+        "--registry=https://registry.npmjs.org",
+        "--json"
+      ],
+      "startedAt": "2026-10-20T06:26:42.172Z",
+      "endedAt": "2026-10-20T06:26:44.538Z",
+      "exitCode": 1,
+      "signal": null,
+      "error": null,
+      "stdoutSha256": "dde87f2651d627d3abfb29b65d135b5a2a3292913a9c944bafc715cfeaf9e307",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decodingErrors": []
+    }
+  },
+  "after": {
+    "head": "77e2e4c51064ee93184338b2f0b70b75edaa8472",
+    "trackedDirty": false,
+    "files": {
+      "package.json": "cb4c1a4994d88e75dfd5b6c8adb0e1d8c4d424589b33064ec3448e9c67777824",
+      "pnpm-lock.yaml": "28f3aa1279f2b8764a4b344b7e682b5bb1354c10fc3fc4c9355acb185a369fcf",
+      "pnpm-workspace.yaml": "b2e9cc10b49ac3dba8c912340a5dfdcf33cb4afd79e9c03dfcee91c018af3152",
+      "scripts/zhenkun-security-policy.json": "9709de2490d973636a1eead590fe31ebf73b5238668e312ed89ea4a28c976d25",
+      "scripts/zhenkun-security-audit.mjs": "9f7db4f74a663290d5ec347868c7b4ec2be5df805a2f308d136a674f5b2463ca",
+      "scripts/patches/http-cache-semantics@4.2.0.patch": "64774074b0bcda954d8e01db3c04999f48f2c96f26e99769d4f9fd7ba746ffb3",
+      "scripts/patches/astro@7.3.3.patch": "f34e6ed1f3b6210f3a3dc0d502fccc901f3981c20a66bc020337548efb7a583e",
+      "scripts/zhenkun-cache-remediation.mjs": "1336d32f89d1f72601f764cc997bfb0dae9900497f13a2a1dcf05685a448f158",
+      "scripts/zhenkun-cache-repair-contract.json": "ee3557e4bd8b4756108b0743448d881650139246ae706aebb23654fa5f2dd3f8",
+      "scripts/zhenkun-test-cache-policy.mjs": "a444c0a5ba41a162f596e01efa0f6d214d891b917b356b9bf5018cff535231fa",
+      "scripts/zhenkun-test-astro-cache-generator.mjs": "8ba8725c8b6b9e5cb69ec8a8b48c04a1b04249f4f5f188d91d89fcb9d30f7508"
+    }
+  },
+  "endedAt": "2026-10-20T06:26:44.552Z"
+}

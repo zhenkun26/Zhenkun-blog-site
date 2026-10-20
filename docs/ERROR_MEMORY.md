@@ -308,3 +308,9 @@
 - Prevention: check available quota before repeating a whole official batch, reserve capacity for same-run primary requests, and explicitly gate dependent commands on the completed upstream result. Never overwrite failed attempts, inject an earlier PASS, hide raw high findings or change auth/client/global configuration to force a green result.
 
 - Recovery observed after reset: quota55 supports a reserved45request budget; a new41GHSA capture and exact original live gate independently pass on c384ee8. Original HTTP403/blocked outputs remain retained. No auth/client/global configuration changed. New candidate acceptance is separately required; this does not rewrite the earlier BLOCKED result.
+
+## 2026-10-20 — coordinated MDX test API and contextual escaping
+
+- MDX8 removes its internal dist/plugins.js factory. Existing publication fixtures initially fail import. Use the production configured unified().createMdxRenderer API with unchanged assertions. Direct style strings use CSS escaping while arrays may use HTML escaping; test element-boundary safety and both legitimate encodings. Actual old7.2.10 still fails8security assertions;11new controls and all408native tests pass.
+- A first live-audit invocation used a control directory outside project tmp and was rejected before collection. Use the original CLI's fresh tmp subdirectory; do not weaken its output guard. Public projected TAP logs trim trailing whitespace while original bytes remain local.
+- Preview defaults must match DEPLOY_BASE used for the build; the initial root-config/project-artifact mismatch produced a diagnostic404. Restart only the task-owned preview with the exact base and verify actual content before acceptance.

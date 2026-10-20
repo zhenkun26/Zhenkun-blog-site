@@ -149,6 +149,16 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
+### Security review — 2026-10-20 — 进行中（隔离修复与重新验证）
+
+- **恢复实测**：Mac zhenkundeMacBook-Air.local / Darwin25.5 arm64，Node24.20.0，corepack pnpm11.22.0。原博客b6c3e39仅未跟踪.workbuddy保留，历史writer9e9d1c4干净；新隔离副本基于远端main5d96deb，分支codex/blog-security-review-20261020。CLI gh401，已有GitHub connector读取可用；不改凭据或全局设置。
+- **本轮范围**：两条2026-10-12仓库官方公告GHSA-98hj-9722-w3j8 / GHSA-mpr7-6m5w-76rw确证旧7.2.10受影响，全局API404保留为渠道差异。最小协调升级Astro7.3.3/MDX8.0.1/markdown-satteri0.4.1；保留迁移缓存entry补丁、cache与yaml补丁、所有仍适用精确guard。PR37关闭未合并，其Merman/peer/boundary失败不构成本轮接纳。
+- **新基线**：frozen离线安装PASS，159定向cache/generator/security回归0fail/skip；该结果仅属于未改动5d96deb基线。后续候选完整测试/双base/live审计/PR/main/Pages均待重新执行。禁止沿用历史397或宣称原始审计零漏洞；原两处期限暂不延长，首稿保持draft。
+- **本轮实证**：候选77e2e4c新408native/0fail/skip、七质量检查、双base完整build/Pagefind/artifact与16page语言审计PASS。新11render控制全PASS；实际旧7.2.10有8预期安全失败/3controls。当前clean-source livegate实际prod/full仍各1high/exit1，两VERIFIED_LOCAL_REPAIR且无unresolved/blocked；62cache/parent、四官方policy反例、六frozen负例与新7.3.3原生成器15预期失败/2controls均通过。892packages/895snapshots/28guards，八父链/三cache links/一Astro7.3.3；已有27guard与cache/yaml补丁保留。双base HTTP与Edge桌面/390mobile真实英文Pagefind验收PASS。实质决策2026-10-20T06:27:50Z→2026-10-27T06:27:50Z，非延期绕门；最终renewed候选/PR/main/Pages仍待精确执行。证据[report](../references/security-review-2026-10-20/report.md)。
+- **最终本地**：renewed f5a3687精确16checks与两base各410/410native、完整build/Pagefind/artifact/locale重跑PASS；同head独立live raw各1high/exit1、两VERIFIED_LOCAL_REPAIR、无unresolved/blocked。HTTP各73、实际Edge桌面/390mobile英文About+Pagefind通过；手机截图用直接浏览器API纠正缩略canvas。远端main推送前仍5d96deb；后续仅证据记录，不改受测实现或复审期限。PR/Linux/main/Pages待精确验收。
+
+
+
 ### Security retained-graph review — 2026-10-13 — 完成（实质复审与生产交付）
 
 - **当前范围/来源**：同一隔离分支，fresh main dbf0b70；保留c384ee8限流断点与全部原证据。quota恢复后预检55，保留45预算；新41GHSA/CVE/三个primary与官方cache4.3.0完整性/全源码通过，原livegate在clean c384ee8重新采集并证明两身份，PASS/exit0，raw prod/full仍各1high/exit1。

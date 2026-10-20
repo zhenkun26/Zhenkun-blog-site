@@ -1,0 +1,181 @@
+✖ GHSA-98hj dynamic script children cannot close their element (0.805542ms)
+✔ GHSA-98hj trusted literal script content retains executable syntax (0.342166ms)
+✖ GHSA-98hj dynamic style children cannot close their element (0.154666ms)
+✔ GHSA-98hj trusted literal style content retains executable syntax (0.089458ms)
+✖ GHSA-mpr7 duration cannot escape its CSS declaration (3.309583ms)
+✖ GHSA-mpr7 delay cannot escape its CSS declaration (0.144334ms)
+✖ GHSA-mpr7 easing cannot escape its CSS declaration (0.074333ms)
+✖ GHSA-mpr7 direction cannot escape its CSS declaration (0.079791ms)
+✖ GHSA-mpr7 fillMode cannot escape its CSS declaration (0.089125ms)
+✖ GHSA-mpr7 name cannot escape its CSS declaration (0.106792ms)
+✔ GHSA-mpr7 normal CSS functions, names and numeric durations remain compatible (0.068667ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 3
+ℹ fail 8
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 91.70125
+
+✖ failing tests:
+
+test at scripts/zhenkun-test-astro-security-20261020.mjs:27:2
+✖ GHSA-98hj dynamic script children cannot close their element (0.805542ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  2 !== 1
+
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-20/task-2/implementation/scripts/zhenkun-test-astro-security-20261020.mjs:31:11)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-security-20261020.mjs:27:2
+✖ GHSA-98hj dynamic style children cannot close their element (0.154666ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+  2 !== 1
+
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-20/task-2/implementation/scripts/zhenkun-test-astro-security-20261020.mjs:31:11)
+      at async Test.run (node:internal/test_runner/test:1404:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-security-20261020.mjs:58:2
+✖ GHSA-mpr7 duration cannot escape its CSS declaration (3.309583ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(!css.includes("#target{color:red}"))
+
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-20/task-2/implementation/scripts/zhenkun-test-astro-security-20261020.mjs:61:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-security-20261020.mjs:58:2
+✖ GHSA-mpr7 delay cannot escape its CSS declaration (0.144334ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(!css.includes("#target{color:red}"))
+
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-20/task-2/implementation/scripts/zhenkun-test-astro-security-20261020.mjs:61:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-security-20261020.mjs:58:2
+✖ GHSA-mpr7 easing cannot escape its CSS declaration (0.074333ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(!css.includes("#target{color:red}"))
+
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-20/task-2/implementation/scripts/zhenkun-test-astro-security-20261020.mjs:61:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-security-20261020.mjs:58:2
+✖ GHSA-mpr7 direction cannot escape its CSS declaration (0.079791ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(!css.includes("#target{color:red}"))
+
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-20/task-2/implementation/scripts/zhenkun-test-astro-security-20261020.mjs:61:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-security-20261020.mjs:58:2
+✖ GHSA-mpr7 fillMode cannot escape its CSS declaration (0.089125ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(!css.includes("#target{color:red}"))
+
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-20/task-2/implementation/scripts/zhenkun-test-astro-security-20261020.mjs:61:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at scripts/zhenkun-test-astro-security-20261020.mjs:58:2
+✖ GHSA-mpr7 name cannot escape its CSS declaration (0.106792ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+    assert.ok(!css.includes("#target{color:red}"))
+
+      at TestContext.<anonymous> (file://<local-home>/Documents/Codex/2026-10-20/task-2/implementation/scripts/zhenkun-test-astro-security-20261020.mjs:61:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1397:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:969:18)
+      at Test.postRun (node:internal/test_runner/test:1537:19)
+      at Test.run (node:internal/test_runner/test:1462:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:969:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

@@ -79,7 +79,7 @@ const edges = [
 		"postcss-selector-parser",
 		"7.1.6",
 	],
-	["astro", "7.2.10", "smol-toml", "1.9.0"],
+	["astro", "7.3.3", "smol-toml", "1.9.0"],
 	["@astrojs/internal-helpers", "0.10.4", "smol-toml", "1.9.0"],
 	["@astrojs/internal-helpers", "0.11.0", "smol-toml", "1.9.0"],
 	["postcss", "8.5.26", "source-map-js", "1.2.2"],
@@ -498,7 +498,7 @@ test("TOML: actual helpers/schema/ID accept null tables, Unicode, Date, BigInt a
 
 test("TOML: actual Astro data-entry/file loader and bounded dot-free parser", async (t) => {
 	const temp = owned(t);
-	const astroDir = packageDir("astro", "7.2.10");
+	const astroDir = packageDir("astro", "7.3.3");
 	const { createBaseSettings } = await import(
 		pathToFileURL(join(astroDir, "dist/core/config/settings.js"))
 	);

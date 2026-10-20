@@ -204,7 +204,7 @@ export function inspectCacheBoundary(cwd, policy, env = process.env) {
 		);
 	demand(
 		contract.installedVersions?.["http-cache-semantics"] === "4.2.0" &&
-			contract.installedVersions?.astro === "7.2.10",
+			contract.installedVersions?.astro === "7.3.3",
 		"REPAIR_INSTALLED_CONTRACT_CHANGED",
 	);
 	const require = createRequire(resolve(cwd, "package.json"));

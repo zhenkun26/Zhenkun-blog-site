@@ -65,10 +65,10 @@
 		"integrity": "sha512-M5t5LlJpS1UHMjvwRQVdFHvPISGeLAxNcrWuJkeGh0KxsqCHZ1O3NXZU/8x7cD0BDcGW8kapxMKTvwlqrNkHkA==",
 		"tarball": "https://registry.npmjs.org/http-cache-semantics/-/http-cache-semantics-4.3.0.tgz",
 		"sourceSha256": "ede1cc404a492fa348eb9d97a3007a0d72aa717bd22cd86a56bd0824c19729ca",
-		"reviewedAt": "2026-10-13T12:22:05.000Z",
-		"reviewBy": "2026-10-20T12:22:05.000Z",
-		"reviewedBy": "Implementation self-check2026-10-13: current official-source, frozen graph, actual installed-parent and behavior refresh; prior independent review remains historical evidence",
+		"reviewedAt": "2026-10-20T06:27:50.000Z",
+		"reviewBy": "2026-10-27T06:27:50.000Z",
+		"reviewedBy": "Implementation self-check2026-10-20: current43GHSA/publisherCVE, coordinated minimal Astro/MDX graph, actual installed parents and same-run behavior/official counterexamples; prior independent review remains historical",
 		"decision": "retain-reviewed-local-patches",
-		"reason": "Current41GHSA and publisher CVE scope, all three exact primary projections, official4.3.0 integrity/full source and the unchanged frozen graph support retaining the approved local cache4.2.0/Astro7.2.10 patches. Actual eight parent paths, two cache links, one Astro instance and all three installed patch identities match. Fresh62 cache/parent positives, four official counterexamples, original generator15expected failures/2controls and same-run live gate pass while raw prod/full each retain1high/exit1. Latest Astro parent was only read, not installed or executed; no dependency upgrade is part of this bounded decision. This new candidate still requires its own current-clock live proof and exact quality/CI acceptance."
+		"reason": "Substantive repair replaces vulnerable Astro7.2.10 with exact7.3.3 and coordinated MDX8.0.1/satteri0.4.1; ledger adds two repository-only advisories. Fresh41retainedGHSA/publisherCVE semantics and all three primary records agree; official cache4.3.0 integrity/full source unchanged. New892packages/895snapshots/28guards retain every prior applicable guard and exact cache/yaml patches. Actual eight parent paths/three cache links/one7.3.3Astro match. New408native/0skip, 11render controls (old7.2.10:8expected failures/3controls),62cache tests/four official controls/six frozen negatives and7.3.3official generator15expected failures/2controls pass. Both complete builds/Pagefind/artifact/locale and types/peers pass. Clean77e2e4c live gate independently collects rawprod/full each1high/exit1 and proves both cache identities with no unresolved/blocked. Retain necessary cache patches; exact final candidate and remote gates still required."
 	}
 }

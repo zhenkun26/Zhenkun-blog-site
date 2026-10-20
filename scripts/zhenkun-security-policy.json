@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
-	"reviewedAt": "2026-10-13T12:22:05.000Z",
-	"reviewBy": "2026-10-20T12:22:05.000Z",
+	"reviewedAt": "2026-10-20T06:27:50.000Z",
+	"reviewBy": "2026-10-27T06:27:50.000Z",
 	"owner": "dependency remediation coordinator",
 	"scope": "Retained44 ledger (43 official GHSA including two repository-only Astro advisories plus publisher CVE-2026-93750); current 2026-10-20 official sources, exact coordinated Astro7.3.3/MDX8.0.1/satteri0.4.1 graph and retained cache/yaml patches. Raw npm findings remain visible; only same-run proven cache repair changes effective status. No waiver.",
 	"knownAdvisories": [

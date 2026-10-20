@@ -1,0 +1,77 @@
+{
+  "sourceCommit": "77e2e4c51064ee93184338b2f0b70b75edaa8472",
+  "role": "clean implementation proof before substantive renewal",
+  "rawAudit": {
+    "prod": {
+      "high": 1,
+      "exit": 1
+    },
+    "full": {
+      "high": 1,
+      "exit": 1
+    }
+  },
+  "effective": "PASS",
+  "verifiedLocalRepair": [
+    "GHSA-ch52-4w7c-c8xp",
+    "CVE-2026-93750"
+  ],
+  "native": {
+    "pass": 408,
+    "fail": 0,
+    "skip": 0
+  },
+  "dualBase": "both complete build/artifact/Pagefind/16-page locale audits PASS",
+  "sourceFilesUntouched": [
+    "src/**",
+    "public/**",
+    "astro.config.mjs",
+    ".github/**"
+  ],
+  "officialCurrentFiles": {
+    "GHSA-238p-pmpm-9mq7.json": "adc0c3b04d175a2413f3095e5b8075871d440f0e240b4340b268c4bf73770d70",
+    "GHSA-2wm5-q62r-hmrv.json": "4bfe376d0979a0e9463b67a6075c16037b65872ce8c27f4540b0e6c693309bd9",
+    "latest.json": "c4c95cf8d3becce754366907d8a99b44c6e7a10ce725cc01a5f7b859c0682493",
+    "GHSA-3wwx-pv8p-q78v.json": "85ff845cc87d6f708fae0d8b197f80c32b796b2950b1ff2a0c409fab72cb12a4",
+    "GHSA-6j4f-fj2g-mc7p.json": "68d581319e0dbc01b25ee81cc715cf0eb3adabbc540ee7b300d88cb73278069c",
+    "GHSA-4q55-j62x-fr9h.json": "8151479dae948b919d6d6ed953865de7afbaabf2a1ce20dc0c4a2943fbf4cce9",
+    "GHSA-3xpg-4rpp-hhhm.json": "adf7797c9ce383e8bada4e5e40ba5c1d0a14151f153fff95ac32b10fc07aaa61",
+    "GHSA-w27v-7q3p-w38r.json": "e15e29b7e2fff943845befa3e8188c82f53b38f796fd88c2cde2f10bdc43bd89",
+    "GHSA-r4xh-jqrq-34v2.json": "77b4998991d006cd4e084939b7b3ec377bcbaede476261c0f0ca4e4022eb1133",
+    "GHSA-68fv-2mgg-jv7q.json": "65adb5c38cc20f2723370067654b43cefb020a45d9f714c464ccb0164b5aa0dc",
+    "GHSA-j22f-vq7h-c4qm.json": "5e69ce23c5c8110e522f00164628795a7782bfb6654c063158436dd4949f3c95",
+    "GHSA-2jfj-6hjv-fm6j.json": "ca684eeaf0b7819709ed4a205a47939d25473627cf124b3748427817bc8f6bad",
+    "GHSA-hrr3-gc8f-f4qj.json": "0b3973b89d8fae4653a7b2aeb4d82673b6001e89172f46312e055a8b56f92297",
+    "GHSA-f65p-4m7j-42xc.json": "3061f5cf247372a7b972d075b30d8207d962b342e789d01b4437028dd220bdb7",
+    "GHSA-hp3w-g68c-fv3c.json": "30338ea36adb159b1bda8d3d4c7acd1945fcdf6b3432bfa846e210e59d23387f",
+    "GHSA-qhr7-859c-m2p7.json": "dcfe619676fd60df9b78c5c843abfe28c914d9c367f3a4e60c720b318dae0262",
+    "GHSA-jqff-g426-hqxp.json": "670c8c64bb9744cb18c8bf300b154d63c25b6db84cc8e91e1dc07a5204e6e2d5",
+    "GHSA-5c6j-r48x-rmvq.json": "889d383850ba597afea0c646698900b375fef9fddeb8e1f31b36b0b36c13594a",
+    "GHSA-rfgv-xxqx-mfg5.json": "7a4635aa7f341426778be6c9e7ee8eb151a534402c201e0e2b512f2dc6617e9a",
+    "GHSA-wf3x-273g-mvxv.json": "1399d4be7de23fda2dcf838ad14b2038963a4be639d4f551b492e079c48854d1",
+    "GHSA-vp8m-p9jh-q5pm.json": "24be8fce2f4342858507127d3b95d424bc9d9a3f8946cc4b4fc2f85e66d981c1",
+    "GHSA-hx4r-w6wj-j8fg.json": "02c3c1ff62df109dfa6117e64ffc7648ba912d889679e5a68ab2b6d183b81655",
+    "GHSA-rj75-hqrm-r3gf.json": "030d3ca6a54f498d3217ce6caea3cfc299734bfbeaf31c73b5b96b20ee960b45",
+    "GHSA-qw65-cvwx-89v3.json": "a1469803890cbd5557ff6a755878cd64651d49fd7f0d59950fbd3c516619276f",
+    "GHSA-w293-vg96-wgc3.json": "ffe1c26933e6ee2d6e59f73ddfd2231476a027c713ac65aad8ebaf0169d57c7f",
+    "GHSA-5jgf-p345-68v8.json": "6683c13d68a9dbc568d52fc4fcf96db9f09463c0b1a8f7d6ae3a4b4e23485139",
+    "GHSA-gfhx-hw2g-v5hg.json": "0cca419272f138ced838939c9c88eada0c7e8be28bfffb13c0c22bcf6a8ceb8b",
+    "GHSA-q2hr-2g5m-vwhr.json": "8ce04f5fb47a163e74554b9c82598d394271e4478aee7a443cc1a24dd2636d89",
+    "GHSA-rx4f-c7p8-82vq.json": "adb96616c794cc10b61bdb2421d32fb3637f5bdc7630a5d14abefe45adf4a7fa",
+    "GHSA-pmjh-fq2x-6v4x.json": "e49bb0fbcd8457dd0f3862a092f6907dc9ad3bd1260677b6accde96fe4bebc18",
+    "GHSA-rgj7-g3m4-5g8c.json": "7102fc68047f5a8335b63587120bc97c8906e5a06e9ae031c96070116fae1d04",
+    "GHSA-fph4-wmhf-6fwf.json": "bf0ffe9bfa20ca59c06833881a2f46f5118bf8aeb4338eb2f594cc35a1b208a1",
+    "GHSA-mcm9-63f2-9j32.json": "11c7b679c4c9ad9a45cca2a4aab9fa8175b74d08490e43bb472b719f9c843ea5",
+    "GHSA-8436-99hf-9mmv.json": "56d7a1762697e527397e9f12dadf8cb910f817080706b930198d31a6b1e223a1",
+    "GHSA-wq5f-xc86-pv6w.json": "f5230a33e96a5930b84f822c83d53f1193727705724b9027def30fea58c10a5a",
+    "CVE-2026-93750.json": "3978aaaa849d764766e0bdd6e22ead35ca234f7c8729fe569575db10c0e037c7",
+    "GHSA-qj8w-gfj5-8c6v.json": "b675206210c203f5bc66df8c830119ef693657ad9205a9c6d05dbe47cf9bec58",
+    "GHSA-2gqq-gqf2-x968.json": "f1d27a4f9ebc43867a0cec8648563d98e051deaa707ea04b29429cd70ab82b97",
+    "GHSA-r53p-7pc4-xj5r.json": "5086119b0715c92ef561c66f53b18cec5d0ca7c38b8c0d071f55b946cc3d9a6a",
+    "GHSA-2883-xcg3-v3hh.json": "f858b0c59b3631d6ec0c51cde22c8559b9dfe5fe978d6a11d9d80d7c15b79648",
+    "GHSA-4vpr-x523-8j87.json": "da73aef081ad6dc089a3721493c756ade8ae24dfe9887f4131d4da959c50e02f",
+    "GHSA-x5rw-q4pp-hg5g.json": "702f57991a330b09868bc59b6cd548828c806952659c0c1d82bb9ae7b55cd5ab",
+    "GHSA-ch52-4w7c-c8xp.json": "c50f5e63ef3627cb3f988004833c0610fd700ed5818ca31f45f171c7ab8d708b"
+  },
+  "projection": "local home paths and trailing whitespace projected in public copies; original bytes remain in private local control"
+}

@@ -142,6 +142,16 @@ test("security: known44 ledger includes verified aliases and preserves CVE93750 
 		],
 	);
 });
+for (const version of ["7.2.10", "7.3.3"]) {
+	test(`security: repository-only Astro advisories enforce installed ${version} despite absent npm records`, () => {
+		const result = verdict({ versions: { astro: [version] } });
+		assert.equal(result.raw.full.recordCount, 0);
+		const ids = result.effective.knownAffected.map((row) => row.id);
+		for (const id of ["GHSA-98hj-9722-w3j8", "GHSA-mpr7-6m5w-76rw"])
+			assert.equal(ids.includes(id), version === "7.2.10");
+		assert.equal(result.state, version === "7.2.10" ? "FAIL" : "PASS");
+	});
+}
 for (const severity of ["info", "low", "moderate", "high", "critical"]) {
 	test(`security: every raw ${severity} finding blocks without a severity downgrade`, () => {
 		const row = { ...clone(original), severity };

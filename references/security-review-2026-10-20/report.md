@@ -23,3 +23,11 @@ Fresh full native:408pass/0fail/0skip. Astro:291files/0errors/0warnings (15retai
 Raw npm audits remain to be collected on a clean new commit. The existing review deadline2026-10-20T12:22:05Z is still unchanged at this checkpoint. No PR/merge/deployment is claimed.
 
 Public logs replace the local home prefix; original bytes remain in the private local control directory.
+
+## Substantive decision and clean proof
+
+Clean implementation77e2e4c independently passes the live gate at the actual clock, with raw prod/full each1high/exit1 and two VERIFIED_LOCAL_REPAIR identities, no unresolved/blocked. New sources and behaviors justify the actual2026-10-20T06:27:50Z decision through2026-10-27T06:27:50Z. Both current review records now contain that seven-day window and scope-bearing provenance. See clean-source-proof/ and review-decision.json. This changes no upstream CVE status or raw finding. Final renewed candidate and exact remote checks remain separate.
+
+Actual project preview HTTP verifies73requests; the retained root artifact is served read-only for the same73checks. Edge desktop1462x839 confirms Chinese Home, English navigation and About; mobile390x844 confirms English About and a real Pagefind meteorology result linking to English About. Screenshots retain the actual current content. Initial mismatched-base404 was diagnostic only and is excluded from acceptance.
+
+Final candidate adds two explicit ledger regressions: a clear synthetic npm audit cannot conceal affected Astro7.2.10, while7.3.3 is outside both new ranges. These extend the native total to410; final exact execution is recorded separately.

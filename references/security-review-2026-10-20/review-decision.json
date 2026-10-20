@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-20T06:27:50.000Z",
+  "reviewBy": "2026-10-27T06:27:50.000Z",
+  "proofCommit": "77e2e4c51064ee93184338b2f0b70b75edaa8472",
+  "decision": "repair-two-Astro-advisories-and-retain-proven-cache-patches",
+  "remaining": "final exact candidate gates and PR/main/Pages"
+}

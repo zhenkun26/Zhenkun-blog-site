@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "at": "2026-10-20T06:46:36.654521+00:00",
+  "base": "5d96deb5ab45043d5a2cafae08c8c9c6a767382b",
+  "pr": {
+    "number": 39,
+    "url": "https://github.com/zhenkun26/Zhenkun-blog-site/pull/39",
+    "publicHead": "1d7f8e84bcf2a061f4f002ca4abde01bfebc05e1",
+    "testedHead": "4ac8c9367862ac28257e0b50d13f4069e7603698",
+    "qualityRun": 39381289349,
+    "biomeRun": 39381289337
+  },
+  "main": "4eb3d5a573812f250e5c43080c807e1721baef14",
+  "fullTree": "96c145f93ba0ecdeed1c0a8aea8e05182007b6b6",
+  "equalPrTestedMainFullTrees": true,
+  "mainRuns": {
+    "quality": 39381763366,
+    "biome": 39381763469,
+    "pages": 39381763430
+  },
+  "pagesActualDeploy": "SUCCESS",
+  "pagesArtifact": 12244979082,
+  "pagesArtifactFiles": 274,
+  "productionHttp": {
+    "matched": 8,
+    "allEqualUploadedArtifact": true
+  },
+  "productionGui": "PASS; Home/English About/real Pagefind; production-gui.json",
+  "formalArticles": {
+    "zh": 0,
+    "en": 0
+  },
+  "pagefindPages": 2,
+  "eachHostedBase": {
+    "nativeTests": 410,
+    "fail": 0,
+    "skip": 0,
+    "completeBuildPagefindArtifactLocale": "PASS",
+    "frozenStrictParentsTypesAstroBiome": "PASS"
+  },
+  "security": {
+    "rawEachProdFull": {
+      "high": 1,
+      "exit": 1
+    },
+    "verifiedLocalRepair": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "unresolved": 0,
+    "blocked": 0,
+    "independentActualArtifacts": [
+      "PR39",
+      "main",
+      "Pages"
+    ],
+    "evidence": "actual-remote-security-proof.json"
+  },
+  "review": {
+    "at": "2026-10-20T06:27:50.000Z",
+    "by": "2026-10-27T06:27:50.000Z",
+    "basis": "new advisory repair + current official records/full source/actual graph/positive and counterexample proofs; no date-only extension"
+  },
+  "protection": {
+    "originalCheckout": "b6c3e39 retained, only original untracked.workbuddy",
+    "historicalWriter": "9e9d1c4 clean and unchanged",
+    "applicationAndDraftFiles": "unchanged",
+    "credentialsAndSecuritySettings": "unchanged"
+  },
+  "remainingAuthorization": [],
+  "followup": "documentation receipt follows normal PR/CI; its exact final remote readback remains a separate local receipt to avoid self-reference"
+}

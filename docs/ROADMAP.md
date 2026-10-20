@@ -149,15 +149,13 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
-### Security review — 2026-10-20 — 进行中（隔离修复与重新验证）
+### Security repair review — 2026-10-20 — 完成（PR39 / main / Pages 实质修复交付）
 
-- **恢复实测**：Mac zhenkundeMacBook-Air.local / Darwin25.5 arm64，Node24.20.0，corepack pnpm11.22.0。原博客b6c3e39仅未跟踪.workbuddy保留，历史writer9e9d1c4干净；新隔离副本基于远端main5d96deb，分支codex/blog-security-review-20261020。CLI gh401，已有GitHub connector读取可用；不改凭据或全局设置。
-- **本轮范围**：两条2026-10-12仓库官方公告GHSA-98hj-9722-w3j8 / GHSA-mpr7-6m5w-76rw确证旧7.2.10受影响，全局API404保留为渠道差异。最小协调升级Astro7.3.3/MDX8.0.1/markdown-satteri0.4.1；保留迁移缓存entry补丁、cache与yaml补丁、所有仍适用精确guard。PR37关闭未合并，其Merman/peer/boundary失败不构成本轮接纳。
-- **新基线**：frozen离线安装PASS，159定向cache/generator/security回归0fail/skip；该结果仅属于未改动5d96deb基线。后续候选完整测试/双base/live审计/PR/main/Pages均待重新执行。禁止沿用历史397或宣称原始审计零漏洞；原两处期限暂不延长，首稿保持draft。
-- **本轮实证**：候选77e2e4c新408native/0fail/skip、七质量检查、双base完整build/Pagefind/artifact与16page语言审计PASS。新11render控制全PASS；实际旧7.2.10有8预期安全失败/3controls。当前clean-source livegate实际prod/full仍各1high/exit1，两VERIFIED_LOCAL_REPAIR且无unresolved/blocked；62cache/parent、四官方policy反例、六frozen负例与新7.3.3原生成器15预期失败/2controls均通过。892packages/895snapshots/28guards，八父链/三cache links/一Astro7.3.3；已有27guard与cache/yaml补丁保留。双base HTTP与Edge桌面/390mobile真实英文Pagefind验收PASS。实质决策2026-10-20T06:27:50Z→2026-10-27T06:27:50Z，非延期绕门；最终renewed候选/PR/main/Pages仍待精确执行。证据[report](../references/security-review-2026-10-20/report.md)。
-- **最终本地**：renewed f5a3687精确16checks与两base各410/410native、完整build/Pagefind/artifact/locale重跑PASS；同head独立live raw各1high/exit1、两VERIFIED_LOCAL_REPAIR、无unresolved/blocked。HTTP各73、实际Edge桌面/390mobile英文About+Pagefind通过；手机截图用直接浏览器API纠正缩略canvas。远端main推送前仍5d96deb；后续仅证据记录，不改受测实现或复审期限。PR/Linux/main/Pages待精确验收。
-
-
+- **修复/复审**：从fresh main5d96deb隔离续接，确认两条仓库官方新公告GHSA-98hj-9722-w3j8（7.3.2修复）与GHSA-mpr7-6m5w-76rw（7.3.3修复）被旧42台账漏记；现44条。精确Astro7.3.3/MDX8.0.1/markdown-satteri0.4.1最小协调升级，Merman及其他根依赖不动，不复用已关闭PR37。892packages/895snapshots/28guards，保留原27适用guard、cache/yaml补丁及迁移后的Astro本地图片cache限制；没有因升级删除必要修复。
+- **实际行为/质量**：当前41retainedGHSA/publisherCVE语义、三个primary与官方cache4.3.0完整性/源码一致。八父链/当前Astro与cache实际源码、62cache/parent、四官方policy反例、六frozen缺失/损坏负例及7.3.3原生成器15预期失败/2controls均通过。新11render控制在7.3.3全PASS，在旧7.2.10有8预期安全失败/3controls；另两项台账回归确保npm无记录时仍阻断旧Astro。精确本地f5a3687及PR/main/Pages每base新410native/0fail/skip、frozen/peer/Astro/types/严格父声明/Biome、完整build/Pagefind/artifact与16page语言审计PASS。旧397不作本轮结果。
+- **精确远端**：[PR39](https://github.com/zhenkun26/Zhenkun-blog-site/pull/39)正常squash合并；public1d7f8e8/tested4ac8c936/main4eb3d5a完整树96c145f9相同。PR quality/Biome39381289349/39381289337；main quality/Biome39381763366/39381763469；[Pages39381763430](https://github.com/zhenkun26/Zhenkun-blog-site/actions/runs/39381763430)全部success并actual deploy完成。三处下载的实际安全Artifact分别绑定其source，raw prod/full仍各1high/exit1，两VERIFIED_LOCAL_REPAIR且无unresolved/blocked；不声称原始审计零漏洞。
+- **生产/证据**：实际Pages artifact12244979082含274files，八个线上GET与上传逐字节一致；本地双base各73HTTP、Edge桌面/390mobile及生产中文Home→英文Home/About→真实Pagefind检索通过。两语言正式文章0/0、Pagefind仅2About，draft与真实评论边界不变。[完整报告](../references/security-review-2026-10-20/report.md) / [交付收据](../references/security-review-2026-10-20/delivery-receipt.json)。后续文档收据不改变受测安全输入、依赖、补丁或期限，按正常PR/CI交付。
+- **期限/保护**：实质决策2026-10-20T06:27:50Z，两个reviewBy均2026-10-27T06:27:50Z；新增公告、源码/父图/暴露变化提前触发复审，禁止延期绕门。原博客b6c3e39及.workbuddy保留，历史writer9e9d1c4干净不变。Mac shell正常，短暂executor通道中断在确认未执行后恢复；既有GitHub身份由用户恢复，未创建凭据/改全局或安全设置。首次merge邮箱校验失败确认未执行后沿已公开身份正常合并。没有首篇文章、其他项目或权限变更。
 
 ### Security retained-graph review — 2026-10-13 — 完成（实质复审与生产交付）
 

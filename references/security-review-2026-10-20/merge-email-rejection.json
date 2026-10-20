@@ -1,0 +1,6 @@
+{
+  "operation": "ordinary squash merge PR39",
+  "firstAttempt": "GitHub rejected specified noreply author email; merge did not execute",
+  "freshPrState": "OPEN",
+  "retryBasis": "existing connected GitHub profile and published repository identity zzk26ai@163.com; no credential/config change"
+}

@@ -149,6 +149,12 @@ The local-acceptance entries below retain their original scope and commit eviden
 
 ## 当前断点
 
+### Security review — 2026-10-20 — 进行中（隔离修复与重新验证）
+
+- **恢复实测**：Mac zhenkundeMacBook-Air.local / Darwin25.5 arm64，Node24.20.0，corepack pnpm11.22.0。原博客b6c3e39仅未跟踪.workbuddy保留，历史writer9e9d1c4干净；新隔离副本基于远端main5d96deb，分支codex/blog-security-review-20261020。CLI gh401，已有GitHub connector读取可用；不改凭据或全局设置。
+- **本轮范围**：两条2026-10-12仓库官方公告GHSA-98hj-9722-w3j8 / GHSA-mpr7-6m5w-76rw确证旧7.2.10受影响，全局API404保留为渠道差异。最小协调升级Astro7.3.3/MDX8.0.1/markdown-satteri0.4.1；保留迁移缓存entry补丁、cache与yaml补丁、所有仍适用精确guard。PR37关闭未合并，其Merman/peer/boundary失败不构成本轮接纳。
+- **新基线**：frozen离线安装PASS，159定向cache/generator/security回归0fail/skip；该结果仅属于未改动5d96deb基线。后续候选完整测试/双base/live审计/PR/main/Pages均待重新执行。禁止沿用历史397或宣称原始审计零漏洞；原两处期限暂不延长，首稿保持draft。
+
 ### Security retained-graph review — 2026-10-13 — 完成（实质复审与生产交付）
 
 - **当前范围/来源**：同一隔离分支，fresh main dbf0b70；保留c384ee8限流断点与全部原证据。quota恢复后预检55，保留45预算；新41GHSA/CVE/三个primary与官方cache4.3.0完整性/全源码通过，原livegate在clean c384ee8重新采集并证明两身份，PASS/exit0，raw prod/full仍各1high/exit1。

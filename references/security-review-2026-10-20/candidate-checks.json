@@ -1,0 +1,22 @@
+[
+  {
+    "check": "source-biome",
+    "exit": 0
+  },
+  {
+    "check": "security-biome",
+    "exit": 0
+  },
+  {
+    "check": "type-check",
+    "exit": 0
+  },
+  {
+    "check": "strict-swup-types",
+    "exit": 0
+  },
+  {
+    "check": "strict-five-types",
+    "exit": 0
+  }
+]

@@ -13,7 +13,7 @@ import { createRequire, syncBuiltinESMExports } from "node:module";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { createMarkdownProcessor } from "@astrojs/markdown-remark";
+import { createMarkdownProcessor, unified } from "@astrojs/markdown-remark";
 import { fromHtml } from "hast-util-from-html";
 import { remarkWikiLink } from "../src/plugins/remark-wiki-link.js";
 import {
@@ -31,10 +31,6 @@ const { getContentEntryIdAndSlug } = await import(
 );
 const { getRouteGenerator } = await import(
 	new URL("./dist/core/routing/generator.js", astroPackage).href
-);
-const mdxPackage = pathToFileURL(require.resolve("@astrojs/mdx/package.json"));
-const { createMdxProcessor } = await import(
-	new URL("./dist/plugins.js", mdxPackage).href
 );
 // Synthetic files live under an approved source root but never exist on disk.
 const fixtureRoot = fileURLToPath(
@@ -132,7 +128,7 @@ async function render(markdown, options = {}, frontmatter = {}) {
 	}
 }
 
-// This is the same installed MDX processor factory used by the Astro integration.
+// The current MDX integration calls the configured processor.createMdxRenderer.
 // Observe its actual HAST without replacing parsing or the Wiki transformer.
 async function compileMdx(source, options = {}, frontmatter = {}) {
 	const messages = [];
@@ -140,40 +136,45 @@ async function compileMdx(source, options = {}, frontmatter = {}) {
 	const originalWarn = console.warn;
 	console.warn = (...values) => messages.push(values.map(String).join(" "));
 	try {
-		const processor = createMdxProcessor(
-			{
-				syntaxHighlight: false,
-				smartypants: false,
-				gfm: true,
-				optimize: false,
-				recmaPlugins: [],
-				remarkRehype: {},
-				remarkPlugins: [
-					[
-						remarkWikiLink,
-						{
-							base: "/",
-							production: true,
-							postIndex: defaultIndex,
-							...options,
-						},
-					],
-				],
-				rehypePlugins: [
-					() => (tree) => {
-						observedTree = structuredClone(tree);
+		const configured = unified({
+			syntaxHighlight: false,
+			smartypants: false,
+			gfm: true,
+			optimize: false,
+			recmaPlugins: [],
+			remarkRehype: {},
+			remarkPlugins: [
+				[
+					remarkWikiLink,
+					{
+						base: "/",
+						production: true,
+						postIndex: defaultIndex,
+						...options,
 					},
 				],
-			},
-			{ sourcemap: false },
-		);
-		const compiled = await processor.process({
-			value: source,
-			path: fileURLToPath(sourceURL).replace(/\.md$/, ".mdx"),
-			data: { astro: { frontmatter } },
+			],
+			rehypePlugins: [
+				() => (tree) => {
+					observedTree = structuredClone(tree);
+				},
+			],
 		});
+		const processor = await configured.createMdxRenderer(
+			{ syntaxHighlight: false, smartypants: false, gfm: true },
+			{
+				optimize: false,
+				sourcemap: false,
+				srcDir: new URL("../src/", import.meta.url),
+			},
+		);
+		const compiled = await processor.process(
+			source,
+			fileURLToPath(sourceURL).replace(/\.md$/, ".mdx"),
+			frontmatter,
+		);
 		return {
-			result: { code: String(compiled.value), tree: observedTree },
+			result: { code: compiled.code, tree: observedTree },
 			messages,
 		};
 	} catch (error) {

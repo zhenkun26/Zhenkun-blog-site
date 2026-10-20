@@ -883,7 +883,7 @@ test("D01 official source patch registration integrity and license", () => {
 	const yaml = astroRequire("js-yaml");
 	const ws = yaml.load(readFileSync("pnpm-workspace.yaml", "utf8"));
 	assert.deepEqual(ws.patchedDependencies, {
-		"astro@7.2.10": "scripts/patches/astro@7.2.10.patch",
+		"astro@7.3.3": "scripts/patches/astro@7.3.3.patch",
 		"js-yaml@3.15.2": "scripts/patches/js-yaml@3.15.2.patch",
 		"http-cache-semantics@4.2.0":
 			"scripts/patches/http-cache-semantics@4.2.0.patch",
@@ -921,7 +921,7 @@ test("D02 all current graph and actual links resolve the approved candidate", ()
 				}
 			}
 	assert.equal(owners.length, 1);
-	assert.ok(owners[0].startsWith("astro@7.2.10("));
+	assert.ok(owners[0].startsWith("astro@7.3.3("));
 	const links = [];
 	function scan(directory) {
 		for (const file of readdirSync(directory, { withFileTypes: true })) {
@@ -966,7 +966,7 @@ test("D02 all current graph and actual links resolve the approved candidate", ()
 test("D03 missing and corrupt patches fail the normal frozen offline installer", () => {
 	for (const target of [
 		"http-cache-semantics@4.2.0",
-		"astro@7.2.10",
+		"astro@7.3.3",
 		"js-yaml@3.15.2",
 	])
 		for (const variant of ["missing", "corrupt"]) {
@@ -981,7 +981,7 @@ test("D03 missing and corrupt patches fail the normal frozen offline installer",
 				mkdirSync(join(directory, "scripts/patches"), { recursive: true });
 				for (const other of [
 					"http-cache-semantics@4.2.0",
-					"astro@7.2.10",
+					"astro@7.3.3",
 					"js-yaml@3.15.2",
 				]) {
 					if (other === target && variant === "missing") continue;

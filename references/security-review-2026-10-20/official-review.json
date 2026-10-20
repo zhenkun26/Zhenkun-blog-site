@@ -1,0 +1,440 @@
+{
+  "state": "PASS",
+  "at": "2026-10-20T06:19:03.585994+00:00",
+  "officialGhsaCount": 41,
+  "publisherCve": "CVE-2026-93750",
+  "advisories": [
+    {
+      "id": "GHSA-6j4f-fj2g-mc7p",
+      "package": "brace-expansion",
+      "url": "https://api.github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T23:44:59Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-q2hr-2g5m-vwhr",
+      "package": "brace-expansion",
+      "url": "https://api.github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T23:45:39Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-qhr7-859c-m2p7",
+      "package": "brace-expansion",
+      "url": "https://api.github.com/advisories/GHSA-qhr7-859c-m2p7",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T23:45:19Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-2wm5-q62r-hmrv",
+      "package": "colord",
+      "url": "https://api.github.com/advisories/GHSA-2wm5-q62r-hmrv",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-08T20:51:58Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-4q55-j62x-fr9h",
+      "package": "devalue",
+      "url": "https://api.github.com/advisories/GHSA-4q55-j62x-fr9h",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-01T15:13:25Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-hx4r-w6wj-j8fg",
+      "package": "devalue",
+      "url": "https://api.github.com/advisories/GHSA-hx4r-w6wj-j8fg",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-01T15:17:43Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-j22f-vq7h-c4qm",
+      "package": "devalue",
+      "url": "https://api.github.com/advisories/GHSA-j22f-vq7h-c4qm",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-01T15:18:07Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-mcm9-63f2-9j32",
+      "package": "devalue",
+      "url": "https://api.github.com/advisories/GHSA-mcm9-63f2-9j32",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-01T15:17:30Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-wf3x-273g-mvxv",
+      "package": "devalue",
+      "url": "https://api.github.com/advisories/GHSA-wf3x-273g-mvxv",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-01T15:17:16Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-x5rw-q4pp-hg5g",
+      "package": "devalue",
+      "url": "https://api.github.com/advisories/GHSA-x5rw-q4pp-hg5g",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-01T15:15:15Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-5jgf-p345-68v8",
+      "package": "fast-uri",
+      "url": "https://api.github.com/advisories/GHSA-5jgf-p345-68v8",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-02T15:44:32Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-f65p-4m7j-42xc",
+      "package": "fast-uri",
+      "url": "https://api.github.com/advisories/GHSA-f65p-4m7j-42xc",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-02T15:43:32Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-fph4-wmhf-6fwf",
+      "package": "fast-uri",
+      "url": "https://api.github.com/advisories/GHSA-fph4-wmhf-6fwf",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-02T15:42:41Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-hrr3-gc8f-f4qj",
+      "package": "fast-uri",
+      "url": "https://api.github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T23:54:26Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-jqff-g426-hqxp",
+      "package": "fast-uri",
+      "url": "https://api.github.com/advisories/GHSA-jqff-g426-hqxp",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-02T15:41:56Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-qw65-cvwx-89v3",
+      "package": "fast-uri",
+      "url": "https://api.github.com/advisories/GHSA-qw65-cvwx-89v3",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-28T21:24:40Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-ch52-4w7c-c8xp",
+      "package": "http-cache-semantics",
+      "url": "https://api.github.com/advisories/GHSA-ch52-4w7c-c8xp",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-02T22:36:44Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-2883-xcg3-v3hh",
+      "package": "js-yaml",
+      "url": "https://api.github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-08T21:24:52Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-5c6j-r48x-rmvq",
+      "package": "serialize-javascript",
+      "url": "https://api.github.com/advisories/GHSA-5c6j-r48x-rmvq",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-03-02T16:17:37Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-gfhx-hw2g-v5hg",
+      "package": "serialize-javascript",
+      "url": "https://api.github.com/advisories/GHSA-gfhx-hw2g-v5hg",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-30T15:40:06Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-qj8w-gfj5-8c6v",
+      "package": "serialize-javascript",
+      "url": "https://api.github.com/advisories/GHSA-qj8w-gfj5-8c6v",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-05-21T18:30:15Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-rgj7-g3m4-5g8c",
+      "package": "sharp",
+      "url": "https://api.github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-08T21:25:12Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-wq5f-xc86-pv6w",
+      "package": "sharp",
+      "url": "https://api.github.com/advisories/GHSA-wq5f-xc86-pv6w",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-06T13:43:58Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-4vpr-x523-8j87",
+      "package": "svgo",
+      "url": "https://api.github.com/advisories/GHSA-4vpr-x523-8j87",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-08T21:20:09Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-w27v-7q3p-w38r",
+      "package": "svgo",
+      "url": "https://api.github.com/advisories/GHSA-w27v-7q3p-w38r",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-08T21:20:30Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-2gqq-gqf2-x968",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-2gqq-gqf2-x968",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T18:18:52Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-2jfj-6hjv-fm6j",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-2jfj-6hjv-fm6j",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T18:19:59Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-3wwx-pv8p-q78v",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-3wwx-pv8p-q78v",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-28T21:42:38Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-3xpg-4rpp-hhhm",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-3xpg-4rpp-hhhm",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T18:20:38Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-8436-99hf-9mmv",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-8436-99hf-9mmv",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T18:16:29Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-pmjh-fq2x-6v4x",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-pmjh-fq2x-6v4x",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T18:22:35Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-r53p-7pc4-xj5r",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-r53p-7pc4-xj5r",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T18:22:08Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-rfgv-xxqx-mfg5",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-rfgv-xxqx-mfg5",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T18:21:41Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-rx4f-c7p8-82vq",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-rx4f-c7p8-82vq",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T18:10:33Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-vp8m-p9jh-q5pm",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-vp8m-p9jh-q5pm",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T18:15:14Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-w293-vg96-wgc3",
+      "package": "undici",
+      "url": "https://api.github.com/advisories/GHSA-w293-vg96-wgc3",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-09-29T18:17:16Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-hp3w-g68c-fv3c",
+      "package": "sprintf-js",
+      "url": "https://api.github.com/advisories/GHSA-hp3w-g68c-fv3c",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-05T23:47:35Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-r4xh-jqrq-34v2",
+      "package": "smol-toml",
+      "url": "https://api.github.com/advisories/GHSA-r4xh-jqrq-34v2",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-05T23:41:15Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-238p-pmpm-9mq7",
+      "package": "katex",
+      "url": "https://api.github.com/advisories/GHSA-238p-pmpm-9mq7",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-05T23:41:06Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-68fv-2mgg-jv7q",
+      "package": "source-map-js",
+      "url": "https://api.github.com/advisories/GHSA-68fv-2mgg-jv7q",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-05T23:31:22Z",
+      "withdrawnAt": null
+    },
+    {
+      "id": "GHSA-rj75-hqrm-r3gf",
+      "package": "postcss-selector-parser",
+      "url": "https://api.github.com/advisories/GHSA-rj75-hqrm-r3gf",
+      "status": 200,
+      "semanticDelta": [],
+      "previousRawDeltaKeys": [],
+      "updatedAt": "2026-10-05T22:53:57Z",
+      "withdrawnAt": null
+    }
+  ],
+  "primary": {
+    "ghsa": {
+      "sha256": "a78682ff5bcd3a36f73c2ef90d48fdad48b61d446a2b0ecf9b1d7892ed8213ef",
+      "matchesContract": true
+    },
+    "cve": {
+      "sha256": "3978aaaa849d764766e0bdd6e22ead35ca234f7c8729fe569575db10c0e037c7",
+      "matchesContract": true
+    },
+    "latest": {
+      "sha256": "989dbda5d00cc99697648ac16755c0f3afc73ce2e1f478e54a476838a70a7746",
+      "matchesContract": true
+    }
+  },
+  "upstream": {
+    "version": "4.3.0",
+    "integrityVerified": true,
+    "sourceSha256": "ede1cc404a492fa348eb9d97a3007a0d72aa717bd22cd86a56bd0824c19729ca",
+    "matchesReviewedSource": true
+  },
+  "auditExecuted": false,
+  "upstreamInstalledOrExecuted": false
+}

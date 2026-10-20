@@ -20,11 +20,11 @@ const generatorURL = pathToFileURL(
 const baseline = process.env.ZHENKUN_ASTRO_CACHE_BASELINE === "1";
 if (baseline) {
 	const source = readFileSync(
-		"references/dependency-cache-final-2026-10-04/astro-generator-official.js",
+		"references/security-review-2026-10-20/astro-generator-official-7.3.3.js",
 	);
 	assert.equal(
 		createHash("sha256").update(source).digest("hex"),
-		"d35fda4e0a924ab0034f2c43983ccad4a7918667333fe381f355f057d9cb20db",
+		"564b12c0c9aa83d573c84bd2433ee1d6b35f2f521cd803fe31c2d214cf02b30e",
 	);
 	registerHooks({
 		load(url, context, nextLoad) {

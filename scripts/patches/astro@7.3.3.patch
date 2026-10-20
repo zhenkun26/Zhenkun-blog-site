@@ -1,0 +1,29 @@
+diff --git a/dist/assets/build/generate.js b/dist/assets/build/generate.js
+--- a/dist/assets/build/generate.js
++++ b/dist/assets/build/generate.js
+@@ -89,6 +89,8 @@
+     const cachedFileURL = new URL(cacheFile, env.assetsCacheDir);
+     const cacheMetaFile = cacheFile + ".json";
+     const cachedMetaFileURL = new URL(cacheMetaFile, env.assetsCacheDir);
++    // Remote metadata omits policy restrictions. Never reuse its persistent cache.
++    if (isLocalImage) {
+     try {
+       if (isLocalImage) {
+         await fs.promises.copyFile(cachedFileURL, finalFileURL, fs.constants.COPYFILE_FICLONE);
+@@ -151,6 +153,7 @@
+         throw new Error(`An error was encountered while reading the cache file. Error: ${e}`);
+       }
+     }
++    }
+     const originalImagePath = isLocalImage ? options.src.src : options.src;
+     if (!originalImage) {
+       originalImage = await loadImage(originalFilePath, env);
+@@ -183,7 +186,7 @@
+       throw error;
+     }
+     try {
+-      if (env.useCache) {
++      if (env.useCache && isLocalImage) {
+         if (isLocalImage) {
+           await fs.promises.writeFile(cachedFileURL, resultData.data);
+         } else {

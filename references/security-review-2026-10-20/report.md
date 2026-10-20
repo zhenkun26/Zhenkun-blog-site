@@ -1,6 +1,6 @@
 # Security repair review — 2026-10-20
 
-Status: local substantive checks complete; clean-source live audit, final renewal decision and exact remote delivery pending.
+Status: production security repair COMPLETE through PR39/main4eb3d5a/Pages39381763430. Earlier checkpoints below retain their original evidence scope; final delivery is recorded at the end.
 
 The resumed shell runs on the same Mac (Darwin25.5 arm64), Node24.20.0 and corepack pnpm11.22.0. Original checkout and historical writer were read only. Baseline main is5d96deb5ab45043d5a2cafae08c8c9c6a767382b; existing CLI authentication initially returned401 and later a read-only user lookup confirmed zhenkun26 after the owner restored the connection. No credential or global configuration was created or changed.
 
@@ -33,3 +33,11 @@ Actual project preview HTTP verifies73requests; the retained root artifact is se
 Final candidate adds two explicit ledger regressions: a clear synthetic npm audit cannot conceal affected Astro7.2.10, while7.3.3 is outside both new ranges. These extend the native total to410; final exact execution is recorded separately.
 
 Final renewed implementation f5a3687ec48497869169da4c15e39ed2974246cf independently completes16checks, including410/410native per base, frozen/peers/all quality gates and both full build/Pagefind/artifact/locale chains. Its separate current-clock live collection also passes with the same two verified cache repairs and raw each1high/exit1. No test or prior run is reassigned to this head. The first native screenshot wrapper produced a scaled desktop canvas for the mobile viewport; the retained mobile image is replaced with a direct browser screenshot after confirming the real English Pagefind result at390x844 (encoded375x812). The original capture stays diagnostic in local history. This evidence-only follow-up changes no review input or deployed byte.
+
+## Completed production delivery
+
+[PR39](https://github.com/zhenkun26/Zhenkun-blog-site/pull/39) public1d7f8e8, actual tested4ac8c936 and merged main4eb3d5a share full tree96c145f9. Exact PR quality/Biome39381289349/39381289337, main quality/Biome39381763366/39381763469 and [Pages39381763430](https://github.com/zhenkun26/Zhenkun-blog-site/actions/runs/39381763430) succeed. Each hosted full base freshly executes410native/0fail/skip plus frozen/types/strict parents/Astro/Biome, complete build/Pagefind/artifact and locale checks. Downloaded actual PR/main/Pages security artifacts independently bind their checkout heads, raw prod/full each1high/exit1 and two VERIFIED_LOCAL_REPAIR identities; no unresolved/blocked. Artifact retention is seven days as configured.
+
+Actual uploaded Pages artifact12244979082 contains274files. Eight production GETs (both homes/About pages, both article metadata endpoints, Pagefind entry and CSS) exactly equal uploaded bytes. All canonical/language checks pass;0Chinese/0English formal articles and2About search pages remain. Existing Edge verifies actual Chinese Home, English navigation/fully replaced About content and a real meteorology result linking to English About; captures and separate GUI receipt are retained. No real comment submission or article release occurred.
+
+The existing reviewed records expire2026-10-27T06:27:50Z, sooner on source/advisory/exposure/graph drift. Raw npm high findings remain published and visible. Delivery receipt and all source/CI/production identities are in delivery-receipt.json. Documentation-only receipts follow normal CI without modifying security inputs or dates.

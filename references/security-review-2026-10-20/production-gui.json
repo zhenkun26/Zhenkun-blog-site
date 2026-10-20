@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "at": "2026-10-20T06:46:36.654228+00:00",
+  "source": "4eb3d5a573812f250e5c43080c807e1721baef14",
+  "browser": "existing Edge; task-owned tabs closed; temporary viewport reset",
+  "observations": [
+    "Chinese production Home includes Astro7.3.3 and zero published posts",
+    "actual English navigation and completed About content, titleAbout-Zhenkun/langen",
+    "real production Pagefind meteorology result links toEnglishAbout"
+  ],
+  "viewport": {
+    "width": 1462,
+    "height": 839
+  },
+  "captures": {
+    "production-home.png": "fe17e4bc92039fe5bdbe42edeb054c1ccb8da6b305af3f36f3553719260bff04",
+    "production-en-search.png": "05b266743f44d9dfb59a465499635a3871c4941528fbdc1b5bfd81779c1d28cd"
+  },
+  "physicalDeviceClaim": false
+}

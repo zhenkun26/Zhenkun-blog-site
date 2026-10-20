@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "at": "2026-10-20T06:44:15.257587+00:00",
+  "source": "4eb3d5a573812f250e5c43080c807e1721baef14",
+  "pagesRun": 39381763430,
+  "artifactFiles": 274,
+  "actualHTTPResponses": 8,
+  "allEqualUploadedArtifact": true,
+  "formalChineseArticles": 0,
+  "formalEnglishArticles": 0,
+  "pagefindPages": 2,
+  "attempts": [
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/",
+      "attempt": 1,
+      "status": 200,
+      "equalUploadedArtifact": true,
+      "sha256": "edcfcd17910f35c7a60380a33534ee6cb2a0ac620311ef9265d4ab5ab8b28843"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/en/",
+      "attempt": 1,
+      "status": 200,
+      "equalUploadedArtifact": true,
+      "sha256": "a5a4965df8e4954c9f0944216dd802183d6402248587fbe9192e3327e67e9e01"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/about/",
+      "attempt": 1,
+      "status": 200,
+      "equalUploadedArtifact": true,
+      "sha256": "146649dcf60e76d7b536e1afaa5e25393fca1ab81dca68f9d67f14519c0333f0"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/en/about/",
+      "attempt": 1,
+      "status": 200,
+      "equalUploadedArtifact": true,
+      "sha256": "da7e421145a90438fb23420dec5bb163e8934e6395a23e413403ea83a6b3ff22"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/api/allPostMeta.json",
+      "attempt": 1,
+      "status": 200,
+      "equalUploadedArtifact": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/en/api/allPostMeta.json",
+      "attempt": 1,
+      "status": 200,
+      "equalUploadedArtifact": true,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/pagefind/pagefind-entry.json",
+      "attempt": 1,
+      "status": 200,
+      "equalUploadedArtifact": true,
+      "sha256": "9f06201d8706c7384bdb6104fd018bbb17cdcdc85d5dee123e3fb5c6d4b456da"
+    },
+    {
+      "url": "https://zhenkun26.github.io/Zhenkun-blog-site/_astro/Layout.IhjMupk9.css",
+      "attempt": 1,
+      "status": 200,
+      "equalUploadedArtifact": true,
+      "sha256": "57b0120be93bb35a93ef50647ac3718c91c989da663f45c311e7d4065a425bf0"
+    }
+  ],
+  "gui": "Current security repair local GUI verified; actual production GUI separately required",
+  "realCommentSubmission": "NOT_RUN"
+}

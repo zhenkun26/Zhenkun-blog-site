@@ -1,0 +1,122 @@
+{
+  "pr39": {
+    "head": "4ac8c9367862ac28257e0b50d13f4069e7603698",
+    "state": "PASS",
+    "raw": {
+      "prod": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      },
+      "full": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      }
+    },
+    "rawExits": {
+      "prod": 1,
+      "full": 1
+    },
+    "verified": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "blocked": [],
+    "lockSha256": "28f3aa1279f2b8764a4b344b7e682b5bb1354c10fc3fc4c9355acb185a369fcf",
+    "startedAt": "2026-10-20T06:37:00.377Z",
+    "endedAt": "2026-10-20T06:37:02.079Z"
+  },
+  "main": {
+    "head": "4eb3d5a573812f250e5c43080c807e1721baef14",
+    "state": "PASS",
+    "raw": {
+      "prod": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      },
+      "full": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      }
+    },
+    "rawExits": {
+      "prod": 1,
+      "full": 1
+    },
+    "verified": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "blocked": [],
+    "lockSha256": "28f3aa1279f2b8764a4b344b7e682b5bb1354c10fc3fc4c9355acb185a369fcf",
+    "startedAt": "2026-10-20T06:40:54.878Z",
+    "endedAt": "2026-10-20T06:40:56.778Z"
+  },
+  "pages": {
+    "head": "4eb3d5a573812f250e5c43080c807e1721baef14",
+    "state": "PASS",
+    "raw": {
+      "prod": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      },
+      "full": {
+        "state": "VALID",
+        "recordCount": 1,
+        "counts": {
+          "info": 0,
+          "low": 0,
+          "moderate": 0,
+          "high": 1,
+          "critical": 0
+        }
+      }
+    },
+    "rawExits": {
+      "prod": 1,
+      "full": 1
+    },
+    "verified": [
+      "GHSA-ch52-4w7c-c8xp",
+      "CVE-2026-93750"
+    ],
+    "blocked": [],
+    "lockSha256": "28f3aa1279f2b8764a4b344b7e682b5bb1354c10fc3fc4c9355acb185a369fcf",
+    "startedAt": "2026-10-20T06:40:57.562Z",
+    "endedAt": "2026-10-20T06:40:59.321Z"
+  }
+}
